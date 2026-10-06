@@ -34,7 +34,7 @@ export const destinations: Destination[] = [
     card: "Glaciers & wildlife",
     image: "/media/alaskan.jpg",
     alt: "A tidewater glacier meeting dark water in a steep fjord",
-    lede: "Most people take one Alaska cruise, so the month matters as much as the ship. The glaciers are larger in spring. The salmon and the bears show up later. The evenings stay light all summer.",
+    lede: "Most people take Alaska once. May and August on the same ship are different trips. In May the glaciers are larger. In August the salmon are running and the bears are on the rivers. The ship does not change that.",
     paragraphs: [
       "Most Alaska sailings run seven to fourteen nights round trip from Seattle, or one way between Seattle or Vancouver and Seward or Whittier. Royal Caribbean, Carnival, Norwegian, Holland America, Princess, and Celebrity sail the Inside Passage. Holland America and Princess use Vancouver often, including one-way Gulf sailings. Cunard does in some seasons, not every year. We compare them side by side, with no obligation to any one line.",
       "The reason to go is the coast: Juneau, Ketchikan, Skagway, Seward, and the fjords between them. You can hear a glacier calve. A lot of the wildlife is not something you will see from a road.",
