@@ -360,8 +360,8 @@ export const destinations: Destination[] = [
     alt: "Pink sand and clear shallow water on an empty Bermuda beach",
     lede: "Ships dock at the Royal Naval Dockyard, on the west end. Horseshoe Bay, the pink-sand beach, is a bus or taxi ride to the south shore. It is not next to the pier.",
     paragraphs: [
-      "Most Bermuda sailings run about seven nights from Boston, New York, or Baltimore. Many stay overnight, which is what leaves time for the beach and for Hamilton. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly call. A five-hour stop is the Dockyard, not a beach day.",
-      "A Boston departure still has a sea day each way. That is shorter than a Caribbean sailing from New York, but the ocean is part of the week. The overnight in Bermuda is what makes those sea days worth it.",
+      "Most Bermuda sailings run about seven nights from Boston, New York, or Baltimore. Many stay overnight, which means the ship is still there the next morning. That extra time can be Horseshoe Bay or Hamilton. It is a choice, not both, and it is not automatically a beach day. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly call. A five-hour stop is the Dockyard.",
+      "A Boston departure still has a sea day each way. That is shorter than a Caribbean sailing from New York. The ocean is part of the week either way.",
       "Bermuda also works as a destination of its own: an island stay, or a sailing that departs from the island. The two combine easily, and we will arrange both.",
     ],
     lists: [
@@ -387,7 +387,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "The cruise season runs from April through October. Late spring and early fall are the easier months. A five-hour call is rarely enough.",
-    planning: "Ask for an overnight. A five-hour call is the Dockyard. It is not Horseshoe Bay.",
+    planning: "Ask whether the ship stays overnight. That is extra time in port. Horseshoe Bay is still a separate ride, and a five-hour call does not include it.",
     itineraries: [
       {
         title: "Bermuda overnight",

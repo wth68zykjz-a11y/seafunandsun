@@ -62,7 +62,7 @@ const ashoreLeads: Record<string, string> = {
   mediterranean: "Barcelona is a walk into the old city. Rome’s ship docks at Civitavecchia, about an hour out. Athens is the Acropolis when the call is long enough.",
   european: "Lisbon, the London ports, and the Mediterranean cities on these routes are short if the ship leaves in the afternoon. Extra nights are how you see one of them properly.",
   hawaii: "These island calls run longer than a Caribbean stop. Pride of America often stays into the evening. A luau still needs the ship in port after dark.",
-  bermuda: "The ship is at the Dockyard. Horseshoe Bay is across the island. An overnight is what leaves time for the pink sand and for Hamilton.",
+  bermuda: "The ship is at the Dockyard. Horseshoe Bay is a ride to the south shore. An overnight is extra time in port. It is not the same thing as a day at the beach.",
   "northern-europe": "Bergen is the wharf. Copenhagen is Nyhavn if the call is long enough. Ocean ships for Amsterdam dock at IJmuiden, so the museum day is longer than it looks.",
   "canada-new-england": "Boston is the harbor and the old streets. Quebec is the upper town above the river. A fall sailing is more likely to leave late than a short summer stop.",
   river: "The ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village.",
