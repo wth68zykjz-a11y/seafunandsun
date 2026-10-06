@@ -34,7 +34,7 @@ export const destinations: Destination[] = [
     card: "Glaciers & wildlife",
     image: "/media/alaskan.jpg",
     alt: "A tidewater glacier meeting dark water in a steep fjord",
-    lede: "An Alaska cruise in May and the same cruise in August are not the same week, even when the ship and the ports do not change. In May the tidewater glaciers are larger, because less of the winter ice has melted, and the days are colder. In August the salmon are running. Bears come to the rivers to feed, the evenings are longer, and the glacier faces have already lost some of that spring ice.",
+    lede: "You can sail the same ship and the same ports in May or in August. The month changes what you see. In May the tidewater glaciers are larger, because less of the winter ice has melted, and the days are colder. In August the salmon are running. Bears come to the rivers to feed, the evenings are longer, and the glacier faces have already lost some of that spring ice.",
     paragraphs: [
       "Most Alaska sailings run seven to fourteen nights round trip from Seattle, or one way between Seattle or Vancouver and Seward or Whittier. Royal Caribbean, Carnival, Norwegian, Holland America, Princess, and Celebrity sail the Inside Passage. Holland America and Princess sail from Vancouver often, including one-way Gulf sailings. Cunard does in some seasons, not every year. We compare them side by side, with no obligation to any one line.",
       "Juneau, Ketchikan, Skagway, Seward, and the fjords between them are the coast. You can hear a glacier calve. Whales, bears, and eagles are on the water, not on a highway.",
@@ -111,7 +111,7 @@ export const destinations: Destination[] = [
           "Nassau and Freeport",
           "St. Thomas and St. Maarten",
           "Costa Maya — a western Caribbean beach stop",
-          "Antigua — an eastern island, not on the same week as Costa Maya",
+          "Antigua is on an eastern Caribbean cruise. Costa Maya is on a western one. They are not stops on one seven-night sailing",
           "Aruba, Bonaire, and Curaçao — a southern routing, usually from San Juan",
           "Martinique, at Fort-de-France — not the small coves down the coast",
         ],

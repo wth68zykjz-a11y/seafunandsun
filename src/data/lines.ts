@@ -143,7 +143,7 @@ export const linePages: LinePage[] = [
     ],
     notes: [
       "A Vancouver embarkation needs a passport. Prices in the city are in Canadian dollars. If you stay a few days before or after the cruise, the ship is not counting you back. You can walk the harbor in the daytime or after dark, talk with people, and eat where you want, such as a seafood counter on the water at lunch or a quieter dining room in the evening.",
-      "The ship and the ports can match in May and in August. The week does not. In May the tidewater glaciers are larger, because less of the winter ice has melted, and the weather is colder. In August the salmon are running and the bears are on the rivers to feed.",
+      "The ship and the ports can match in May and in August. What you see still changes. In May the tidewater glaciers are larger, because less of the winter ice has melted, and the weather is colder. In August the salmon are running and the bears are on the rivers to feed.",
     ],
     benefits: [
       {
