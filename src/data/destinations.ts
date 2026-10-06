@@ -1025,7 +1025,7 @@ export const destinations: Destination[] = [
     lede: "A Panama Canal cruise is a transit, not a loop of beaches. A full transit changes oceans. A partial transit goes into Gatun Lake and turns around.",
     paragraphs: [
       "Most full transits run fourteen to seventeen nights, one way. Fort Lauderdale, Miami, or New Orleans is the usual Caribbean start. Los Angeles or San Diego is the usual Pacific end, and some sailings continue to Seattle or Vancouver. Princess, Holland America, Celebrity, Norwegian, Carnival, Royal Caribbean, and Cunard schedule them, mainly in spring and fall, when ships move between the Caribbean and the West Coast or Alaska. Regent, Silversea, Oceania, and Viking ocean do as well. Many of those sailings are quoted.",
-      "A partial transit is shorter, often ten or eleven nights, round trip from Florida. The ship enters the locks, spends time on Gatun Lake, and comes back out the same side. You see the locks. You do not finish in a different ocean. The word canal is on both products. Ask which one you are booking.",
+      "The same brochure word covers two different trips. The comparison below is the one to use before you look at a fare.",
     ],
     lists: [
       {

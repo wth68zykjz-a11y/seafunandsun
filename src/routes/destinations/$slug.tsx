@@ -181,6 +181,66 @@ export function DestinationArticle({
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
+        {place.slug === "panama-canal" ? (
+          <div className="mt-10">
+            <h2 className="font-display text-4xl">Full transit or partial transit</h2>
+            <p className="mt-3 max-w-3xl text-lg leading-relaxed text-ink">
+              Both sailings use the canal. Only a full transit goes from one ocean to the other. A partial transit enters from the Caribbean, crosses Gatun Lake, and comes back out the same locks.
+            </p>
+            <div className="mt-6 grid gap-4 lg:grid-cols-2">
+              <article className="rounded-xl border border-line bg-foam p-5">
+                <h3 className="font-display text-2xl">Full transit</h3>
+                <dl className="mt-4 grid gap-3 text-base leading-relaxed text-ink">
+                  <div>
+                    <dt className="font-medium text-tide">Direction</dt>
+                    <dd>One way, Atlantic to Pacific, or the reverse. The ship passes every lock and the Culebra Cut.</dd>
+                  </div>
+                  <div>
+                    <dt className="font-medium text-tide">Start and finish</dt>
+                    <dd>You board in one city and leave the ship in another. Florida to California is the common pair. Some sailings start in Seattle or Vancouver and end in Florida.</dd>
+                  </div>
+                  <div>
+                    <dt className="font-medium text-tide">Length</dt>
+                    <dd>Usually 14 to 17 nights. A voyage that also includes Mexico or an Alaska repositioning runs longer.</dd>
+                  </div>
+                  <div>
+                    <dt className="font-medium text-tide">Flights</dt>
+                    <dd>Two airports. The flight home does not leave from the city where you boarded.</dd>
+                  </div>
+                  <div>
+                    <dt className="font-medium text-tide">What you see</dt>
+                    <dd>Both sets of locks, the lake, and the cut. Cartagena is a common call, and the Pacific side often adds a Mexican or Central American port.</dd>
+                  </div>
+                </dl>
+              </article>
+              <article className="rounded-xl border border-line bg-foam p-5">
+                <h3 className="font-display text-2xl">Partial transit</h3>
+                <dl className="mt-4 grid gap-3 text-base leading-relaxed text-ink">
+                  <div>
+                    <dt className="font-medium text-tide">Direction</dt>
+                    <dd>A round trip. The ship uses the Caribbean locks, spends time on Gatun Lake, turns around, and exits the same side.</dd>
+                  </div>
+                  <div>
+                    <dt className="font-medium text-tide">Start and finish</dt>
+                    <dd>You return to the port where you boarded, usually Fort Lauderdale or Miami.</dd>
+                  </div>
+                  <div>
+                    <dt className="font-medium text-tide">Length</dt>
+                    <dd>Often 10 or 11 nights. It is still longer than a standard Caribbean week.</dd>
+                  </div>
+                  <div>
+                    <dt className="font-medium text-tide">Flights</dt>
+                    <dd>One airport. The flight out and the flight home use the same city.</dd>
+                  </div>
+                  <div>
+                    <dt className="font-medium text-tide">What you see</dt>
+                    <dd>The Caribbean locks and the lake. You do not pass the Culebra Cut or the Pacific locks. The other days are often Cartagena or a Caribbean call.</dd>
+                  </div>
+                </dl>
+              </article>
+            </div>
+          </div>
+        ) : null}
         <div className="mt-10 grid gap-4 lg:grid-cols-2">
           {place.lists.map((list) => (
             <article key={list.heading} className="rounded-xl border border-line bg-foam p-5">
