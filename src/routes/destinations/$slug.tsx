@@ -23,6 +23,54 @@ export const Route = createFileRoute("/destinations/$slug")({
   component: DestinationPage,
 });
 
+const ashoreNotes: Record<string, string> = {
+  alaskan:
+    "Most Alaska calls end in the afternoon, so the meal ashore is lunch: salmon in Juneau, or crab in Ketchikan. Dinner in town is realistic only on a late sailaway or an overnight, which some Juneau calls allow. A glacier day has no pier. Nights in Seattle or Vancouver are not cut off by all-aboard, so use them for the market and a dinner the port call never had time for.",
+  caribbean:
+    "A typical island call ends in the afternoon, so plan lunch ashore rather than a long dinner. Cozumel, Nassau, and the private islands work that way. San Juan, and the occasional overnight, are when a restaurant in town makes sense. Nights in Miami, Fort Lauderdale, or San Juan are a different kind of day: a neighborhood, a beach morning, or a dinner you book ahead.",
+  mediterranean:
+    "Many calls end in the afternoon, so lunch is the meal ashore. Rome’s pier is Civitavecchia, about an hour out, which is why extra nights in the city matter more than a rushed port lunch. Barcelona and Athens are where a museum morning belongs. When the ship stays overnight, or sails as late as 10 p.m., dinner in the city is possible. Ask us for a Michelin table in Rome, Barcelona, or Athens before you sail.",
+  european:
+    "Lunch is the sure meal on a daytime call. Lisbon, the London ports, and the Mediterranean cities on these routes are easier with a night or two before or after, when all-aboard is not the deadline. An overnight, or a departure as late as 10 p.m., is when dinner in the city works. Tell us which cities you already know, and we will put the extra nights on the ones you do not.",
+  hawaii:
+    "Inter-island days run longer than a Caribbean call, and Pride of America often stays into the evening. A plate lunch or poke is the easy meal. A luau or a reserved dinner needs the ship still in port after dark, which is common on these sailings. Nights on Oahu before or after a California crossing are for Pearl Harbor or a Honolulu neighborhood, without watching the gangway.",
+  bermuda:
+    "Many Bermuda sailings stay overnight, so dinner in Hamilton is a normal part of the call. A short stop is different: the beach is the day, and lunch is the meal. Sailings from Boston, New York, or Baltimore include sea days each way. Extra nights on the island are for the pink-sand beaches and a dinner that does not have to end at the pier.",
+  "northern-europe":
+    "Baltic and Norway calls often end in the afternoon. Count on lunch: shrimp at the Bergen fish market, or smørrebrød in Copenhagen. Ocean ships for Amsterdam dock at IJmuiden, so the city takes longer than the map suggests. An overnight in Copenhagen or Stockholm is when dinner ashore is realistic. Extra nights in London, Amsterdam, or Copenhagen are for the Rijksmuseum, Nyhavn, or a restaurant you reserve ahead.",
+  "canada-new-england":
+    "These are town calls more than beach piers, and many end in the afternoon. Lunch is the meal ashore: chowder in Boston, lobster along the coast, or a meal in Quebec when the ship is on the St. Lawrence. A late departure is more common on a fall foliage sailing than on a quick stop. Extra nights in Boston or Quebec let you stay out after dark.",
+  river:
+    "A river ship ties up in town. This is not an ocean port day. You can walk off for lunch, and on many evenings for dinner, because the ship stays alongside. On the Danube that might be a café in Budapest or a reserved table in Vienna. A Mississippi sailing is a different country and a different menu. Extra nights in Budapest, Paris, Amsterdam, or New Orleans are for the museum and the neighborhood the ship only passes.",
+  expedition:
+    "Most expedition days are landings, not cities, and both meals stay on the ship. The gateway towns are the exception: Ushuaia before Antarctica, or Longyearbyen in the Arctic. Dinner in those towns belongs to the nights before or after the voyage. Tell us the region and we will say whether the itinerary has a real town in it, or only ice and a beach.",
+  asia:
+    "Singapore and Tokyo often keep the ship in port into the evening, and some sail as late as 10 p.m., so dinner ashore is a real plan: a hawker center, a noodle shop, or a sushi counter. A short beach call is still a lunch day. Nights before or after in Singapore, Tokyo, or Hong Kong are for a museum, a neighborhood, and a table you reserve, including a Michelin restaurant. Ask us before you sail.",
+  "south-america":
+    "In Rio and Buenos Aires the local dinner hour is late, which works when the ship stays overnight or sails late. On a daytime call, lunch is the meal ashore: a churrasco or a café, not a 10 p.m. table. Extra nights in either city are when the evening belongs to you. A famous grill, or a Michelin table, should be reserved before you arrive.",
+  world:
+    "A world cruise spends many days at sea, so a port is an event. A short call leaves time for lunch and not much else. An overnight is the dinner worth reserving. The cities where you join or leave the ship, often Southampton, Sydney, or Singapore, deserve extra nights. That is where a museum and a reserved dinner belong, because the ship is not waiting.",
+  "australia-new-zealand":
+    "Sydney and Auckland calls can cover lunch in the city and a walk on the harbor. Dinner ashore depends on a late sailaway or an overnight, which some itineraries include. Brisbane and Melbourne turn fewer ships. Extra nights in Sydney or Auckland are for the Opera House, a harbor neighborhood, and a dinner you book ahead instead of a race back to the pier.",
+};
+
+const ashoreLeads: Record<string, string> = {
+  alaskan: "You are ashore only while the ship is alongside. The notes below say what a Juneau, Ketchikan, or Skagway call usually allows.",
+  caribbean: "You are ashore only while the ship is alongside. The notes below separate a beach call from a longer stop such as San Juan.",
+  mediterranean: "You are ashore only while the ship is alongside. The notes below say what fits in Barcelona, Rome, or Athens, and what needs an extra night.",
+  european: "You are ashore only while the ship is alongside. The notes below are the cities. Extra nights are how you see one of them properly.",
+  hawaii: "You are ashore only while the ship is alongside. These island calls run long, and the notes below say what still needs a reservation.",
+  bermuda: "You are ashore only while the ship is alongside. An overnight in Hamilton changes the day. A short call does not.",
+  "northern-europe": "You are ashore only while the ship is alongside. The notes below cover Bergen, Copenhagen, Amsterdam, and the other northern calls.",
+  "canada-new-england": "You are ashore only while the ship is alongside. The notes below are the New England and Canada towns on a fall sailing.",
+  river: "You step off into town. The notes below are the rivers, and the evenings when dinner off the ship is ordinary.",
+  expedition: "A landing day is not a city day. The notes below say when there is a town, and when the day is ice, a beach, or a Zodiac.",
+  asia: "You are ashore only while the ship is alongside. The notes below separate a long Singapore or Tokyo call from a short beach stop.",
+  "south-america": "You are ashore only while the ship is alongside. The notes below are Rio, Buenos Aires, and the calls that do not keep the ship after dark.",
+  world: "Ports are fewer than the sea days. The notes below say which calls are a walk and a lunch, and which are worth a reserved dinner.",
+  "australia-new-zealand": "You are ashore only while the ship is alongside. The notes below are Sydney, Auckland, and the coast calls that are shorter.",
+};
+
 function DestinationPage() {
   const place = Route.useLoaderData();
   if (!place) {
@@ -124,7 +172,7 @@ export function DestinationArticle({ place, rail = false }: { place: NonNullable
           {place.lists.map((list) => (
             <article key={list.heading} className="rounded-xl border border-line bg-foam p-5">
               <h2 className="font-display text-2xl">{list.heading}</h2>
-              <ul className="mt-3 grid gap-2 text-sm text-mute">
+              <ul className="mt-3 grid gap-2 text-base text-ink">
                 {list.items.map((item) => (
                   <li key={item} className="border-t border-line pt-2 first:border-0 first:pt-0">
                     {item}
@@ -134,10 +182,10 @@ export function DestinationArticle({ place, rail = false }: { place: NonNullable
             </article>
           ))}
         </div>
-        <p className="mt-4 max-w-3xl text-sm text-mute">
+        <p className="mt-6 max-w-3xl text-lg leading-relaxed text-ink">
           {rail
             ? "Time off the train belongs to the town, whether that is a morning, an afternoon, or an evening. You can walk until you want to sit down, and you can talk with people. You might eat where the room is already full, at a famous restaurant if that is why you stopped, or at a small local place such as a wine bar or a café with a short menu. You can visit a museum if you want to be indoors."
-            : "On many port days the ship leaves in the afternoon, so lunch is the meal you can count on ashore. Dinner fits when the ship stays overnight or sails as late as 10 p.m. A few days before or after the cruise are not timed to all-aboard. You might spend the morning in a museum or walking, then sit in a café or follow a neighborhood the port call would have skipped. Lunch can be a small local place with no reservation. Dinner can be a table you reserve ahead, such as a Michelin restaurant. Those days are for being in the city, with the people who live there, from morning through the evening."}
+            : ashoreNotes[place.slug]}
         </p>
         <article className="mt-4 rounded-xl p-5 text-foam" style={{ backgroundColor: tone }}>
           <h2 className="font-display text-2xl">When to go</h2>
@@ -158,16 +206,16 @@ export function DestinationArticle({ place, rail = false }: { place: NonNullable
             <div>
               <p className="text-sm font-medium text-tide">{rail ? "On the route" : "In port"}</p>
               <h2 className="mt-2 font-display text-4xl">{rail ? "What to expect on the route" : "What to expect in port"}</h2>
-              <p className="mt-3 text-sm text-mute">
+              <p className="mt-3 text-lg leading-relaxed text-ink">
                 {rail
                   ? "Most of the day is on the train. A stop is short. The notes below say what you can see from the window, and what will not fit at the station."
-                  : "You are ashore only while the ship is in port. On many calls that means lunch, not dinner. Dinner fits if the ship stays overnight or leaves as late as 10 p.m. Days before or after the cruise are not cut off by all-aboard, so a museum, a neighborhood, or a reserved dinner can be part of the stay. Where the Michelin Guide covers the city, ask us for a starred table before you sail."}
+                  : ashoreLeads[place.slug]}
               </p>
               <dl className="mt-5 grid gap-4 sm:grid-cols-2">
                 {portGuides[place.slug].facts.map((fact) => (
                   <div key={fact.label}>
-                    <dt className="text-sm font-medium text-tide">{fact.label}</dt>
-                    <dd className="mt-1 text-sm text-mute">{fact.text}</dd>
+                    <dt className="text-base font-medium text-tide">{fact.label}</dt>
+                    <dd className="mt-1 text-base leading-relaxed text-ink">{fact.text}</dd>
                   </div>
                 ))}
               </dl>
