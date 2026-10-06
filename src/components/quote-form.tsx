@@ -162,8 +162,8 @@ export function QuoteForm({
   }
 
   return (
-    <form onSubmit={onSubmit} className="rounded-xl border border-line bg-foam p-4 shadow-card">
-      <h3 className="font-display text-2xl text-ink">Request a quote</h3>
+    <form onSubmit={onSubmit} className="mx-auto w-full max-w-lg rounded-xl border border-line bg-foam p-3 shadow-card sm:p-4 lg:mx-0">
+      <h3 className="font-display text-xl text-ink">Request a quote</h3>
       <p className="mt-1 text-sm text-mute">Name, email, and the trip. No separate agent fee.</p>
       {chooseTrip ? (
         <label className="mt-4 grid gap-1 text-sm font-medium">
@@ -200,7 +200,7 @@ export function QuoteForm({
           {active === "cruise" ? <option value="Not sure yet">Not sure yet</option> : null}
         </select>
       </label>
-      <div className={`${chooseTrip ? "mt-3" : "mt-4"} grid gap-3 sm:grid-cols-2`}>
+      <div className={`${chooseTrip ? "mt-2" : "mt-3"} grid grid-cols-2 gap-2`}>
         <label className="grid gap-1 text-sm font-medium">
           Name
           <input className={field} name="name" autoComplete="name" required placeholder="Full name" />
@@ -217,7 +217,7 @@ export function QuoteForm({
           When
           <input className={field} name="travelWindow" placeholder="Optional" />
         </label>
-        <label className="grid gap-1 text-sm font-medium sm:col-span-2">
+        <label className="col-span-2 grid gap-1 text-sm font-medium">
           Who is traveling
           <input className={field} name="partySize" placeholder="Optional" />
         </label>
@@ -228,7 +228,7 @@ export function QuoteForm({
       </label>
       <label className="mt-3 grid gap-1 text-sm font-medium">
         Travel plans
-        <textarea className={`${field} min-h-32 py-3`} name="plans" defaultValue={note} placeholder="Optional" />
+        <textarea className={`${field} min-h-20 py-2`} name="plans" defaultValue={note} placeholder="Optional" />
       </label>
       <label className="mt-3 flex items-start gap-3 text-sm text-mute">
         <input name="marketingOptIn" type="checkbox" className="mt-1 size-4 accent-tide" />
