@@ -9,8 +9,8 @@ export const Route = createFileRoute("/lines/$slug")({
     pageHead({
       title: loaderData ? `${loaderData.title} cruise lines` : "Cruise lines",
       description: loaderData
-        ? clip(`${loaderData.lede} Typical ship size and a general price range. Not a quote.`)
-        : "Cruise line comparison by ship size and region. Passenger counts and general price ranges. Not a quote.",
+        ? clip(`${loaderData.lede} The page gives a typical ship size and a general price range. It is not a quote.`)
+        : "Cruise line comparison by ship size and region, with passenger counts and general price ranges. It is not a quote.",
       path: loaderData ? `/lines/${loaderData.slug}` : "/lines",
       image: loaderData?.image,
     }),
@@ -48,7 +48,7 @@ function LineRegionPage() {
           <div className={`mt-8 grid gap-4 ${page.photos.length > 1 ? "md:grid-cols-2" : ""}`}>
             {page.photos.map((photo) => (
               <figure key={photo.src + photo.caption} className="overflow-hidden rounded-xl border border-line bg-foam">
-                <img src={photo.src} alt={photo.alt} className="aspect-photo w-full object-cover" />
+                <img src={photo.src} alt={photo.alt} width={1400} height={933} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
                 <figcaption className="px-4 py-3 text-sm text-mute">{photo.caption}</figcaption>
               </figure>
             ))}

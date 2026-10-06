@@ -8,7 +8,7 @@ export const Route = createFileRoute("/lines/")({
     pageHead({
       title: "Cruise line comparison",
       description:
-        "Cruise line comparisons by ship size and region. Large ships, Caribbean, Alaska, Europe, river, luxury, and yachts. Passenger counts and general price ranges. Not a quote.",
+        "Cruise line comparisons by ship size and region, including large ships, the Caribbean, Alaska, Europe, river ships, luxury ships, and yachts. You will see passenger counts and general price ranges. These pages are not a quote.",
       path: "/lines",
     }),
   component: LinesPage,

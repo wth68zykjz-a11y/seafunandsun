@@ -576,7 +576,7 @@ export const portGuides: Record<string, PortGuide> = {
     outings: [
       { fits: "A full, easy city day. The transfer eats the extra stop you were hoping to add.", bring: "Layers. Canal weather changes, and the square is windier than the pier." },
       { fits: "People who want France that is not a Paris bus. The cliff path is optional.", bring: "A wind jacket. The town lunch works even if you skip the cliff." },
-      { fits: "A focused morning: the Alcázar, one Lisbon hill, or a Riviera town. Not a coach of every sight.", bring: "Good walking shoes. The Cádiz-to-Seville drive is longer than it looks on a map." },
+      { fits: "A focused morning at the Alcázar, one Lisbon hill, or a Riviera town. This is not a coach tour of every sight.", bring: "Good walking shoes. The Cádiz-to-Seville drive is longer than it looks on a map." },
     ],
   },
   hawaii: {
@@ -590,7 +590,7 @@ export const portGuides: Record<string, PortGuide> = {
     ],
     outings: [
       { fits: "Comfortable swimmers. The calm side of the island depends on that day’s wind.", bring: "Reef-safe sunscreen. Whales in winter are a bonus, not a promise." },
-      { fits: "Spend a respectful half day at the memorial, then go to the beach. Do not try to circle the island. The memorial has security screening and time on your feet, so go early or choose another plan.", bring: "Time. The memorial has security and standing. Go early or don’t go." },
+      { fits: "Spend a respectful half day at the memorial, then go to the beach. Do not try to circle the island. The memorial has security screening and time on your feet, so go early or choose another plan.", bring: "Allow time for security screening. You will be standing." },
       { fits: "Only a sailing that stays the night in Maui. A dawn-to-dusk call is too short.", bring: "Patience in a car. The road is the excursion, not a checklist of waterfalls." },
     ],
   },
@@ -606,7 +606,7 @@ export const portGuides: Record<string, PortGuide> = {
     outings: [
       { fits: "The morning beach, before it becomes a ship party.", bring: "Reef shoes if you are tender-footed. The sand is soft; the walk in can be rocky." },
       { fits: "People who are done with another beach and want pastel streets and lunch.", bring: "A ferry schedule. St. George’s is the quieter town." },
-      { fits: "One activity: the flat green trail, or the cool caves. Not both.", bring: "A light layer for the caves. They are short and colder than the beach." },
+      { fits: "Choose one activity, either the flat green trail or the cool caves. Do not try to do both.", bring: "A light layer for the caves. They are short and colder than the beach." },
     ],
   },
   "northern-europe": {
@@ -679,7 +679,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Often a poor fit", text: "A bus that promises three temples and a market. Ha Long Bay only counts when the ship is already in that bay." },
     ],
     outings: [
-      { fits: "The Grand Palace at opening, then a noodle lunch nearby. Not a second temple, and not a floating market the same morning.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
+      { fits: "See the Grand Palace at opening, then have a noodle lunch nearby. Do not add a second temple or a floating market the same morning.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
       { fits: "Only when the itinerary is already in that scenery. Easy if you can sit on a boat.", bring: "Sun cover and a tolerance for some chop. A distant port is not the bay." },
       { fits: "One district — Fushimi Inari or Arashiyama — unless the ship overnights.", bring: "A transit card plan and walking shoes. Two famous sights in one call is how you see neither." },
     ],
