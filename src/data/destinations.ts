@@ -34,7 +34,7 @@ export const destinations: Destination[] = [
     card: "Glaciers & wildlife",
     image: "/media/alaskan.jpg",
     alt: "A tidewater glacier meeting dark water in a steep fjord",
-    lede: "May and August on the same ship are different trips. In May the glaciers are larger, because less of the winter ice has melted. In August the salmon are running, and the bears are on the rivers to feed.",
+    lede: "An Alaska cruise in May and the same cruise in August are not the same week, even when the ship and the ports do not change. In May the tidewater glaciers are larger, because less of the winter ice has melted, and the days are colder. In August the salmon are running. Bears come to the rivers to feed, the evenings are longer, and the glacier faces have already lost some of that spring ice.",
     paragraphs: [
       "Most Alaska sailings run seven to fourteen nights round trip from Seattle, or one way between Seattle or Vancouver and Seward or Whittier. Royal Caribbean, Carnival, Norwegian, Holland America, Princess, and Celebrity sail the Inside Passage. Holland America and Princess sail from Vancouver often, including one-way Gulf sailings. Cunard does in some seasons, not every year. We compare them side by side, with no obligation to any one line.",
       "Juneau, Ketchikan, Skagway, Seward, and the fjords between them are the coast. You can hear a glacier calve. Whales, bears, and eagles are on the water, not on a highway.",
@@ -60,8 +60,8 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The season runs from May through September. August and early September bring the salmon run, the bears, and the longest evenings. Spring leaves the glaciers at their largest. Midsummer gives you the light. We will match the month to what you most want to see.",
-    planning: "August for the bears, or May for the glaciers. A round-trip Alaska cruise from Seattle uses one airport. A one-way cruise to Seward or Whittier needs a flight at that end. If the cruise departs from Vancouver, stay a few days before or after. The Fairmont Pacific Rim looks over the harbor and the mountains.",
+    when: "The season runs from May through September. May is the colder start, and the glaciers are at their largest then. June and July are the busiest weeks and the longest days. August and early September bring the salmon run, the bears at the rivers, and long evenings.",
+    planning: "Tell us whether you want May, for the larger glaciers, or August, for the salmon and the bears. The ship can be the same in either month. A round-trip Alaska cruise from Seattle uses one airport. A one-way cruise to Seward or Whittier needs a flight at that end. If the cruise departs from Vancouver, stay a few days before or after. The Fairmont Pacific Rim looks over the harbor and the mountains.",
     itineraries: [
       {
         title: "Inside Passage classic",

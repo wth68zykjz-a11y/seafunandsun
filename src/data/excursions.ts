@@ -53,7 +53,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-alaskan.jpg",
     photoAlt: "A small boat near a whale in a cold Alaskan fjord",
     intro:
-      "Alaska days split in two. The ship does the glaciers. The shore day is the wildlife or the railroad. Most stops last four to eight hours. The useful one matches the month: bears later, ice earlier. A bus to a gift shop is not one of them.",
+      "A May day and an August day can use the same ports. May still has the larger glaciers, and it is colder. August is when the salmon run and the bears come to the rivers. Most stops last four to eight hours. The ship does the glacier day. The time ashore is the wildlife or the railroad. A bus to a gift shop is not one of those.",
     excursions: [
       {
         title: "Glacier water, up close",
