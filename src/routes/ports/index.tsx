@@ -28,7 +28,7 @@ function PortsIndex() {
         <div className="relative z-10">
       <PageIntro
         kicker="Departure ports"
-        title="You will remember the city you sailed from."
+        title="Some ports get you on the ship. Some cities are worth the extra days."
         lede="Each region lists the homeports and turnaround ports, where those ships usually go, and which airlines serve the city. A cruise date and an airline schedule do not stay lined up on their own. The flight has to land in time to embark, and the flight home has to leave after the ship is back. We book that pair for the sailing you choose."
       />
       <p className="mx-auto max-w-6xl px-4 pb-6 text-mute">
