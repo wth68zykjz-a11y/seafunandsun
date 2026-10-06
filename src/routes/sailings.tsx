@@ -130,7 +130,7 @@ function dealsFromFeed(offers: SupplierOffer[]) {
     if (seen.has(key)) continue;
     seen.add(key);
     picked.push({ offer, guide });
-    if (picked.length === 6) break;
+    if (picked.length === 7) break;
   }
   return picked;
 }
@@ -209,9 +209,9 @@ export const Route = createFileRoute("/sailings")({
   },
   head: () =>
     pageHead({
-      title: "Cruise deals of the week",
+      title: "Daily cruise promotions",
       description:
-        "The cruise promotions currently in the booking system. Each card names the line, and the port that line usually uses, when we know it.",
+        "Seven cruise promotions from the Sea Fun & Sun booking system, checked once a day. The card names the line and a port that line usually uses.",
       path: "/sailings",
       image: "/media/page-sailings.jpg",
     }),
@@ -222,16 +222,13 @@ function DealsOfTheWeek({ offers, checked }: { offers: SupplierOffer[]; checked:
   const deals = dealsFromFeed(offers);
   return (
     <div>
-      <h2 className="font-display text-3xl">Deals of the week</h2>
-      <p className="mt-2 max-w-3xl text-base text-ink">
-        These six promotions come from the booking system. The site checks that list once a day, so a promotion added today shows up after the next check. The city on the card is a port that line usually uses. The same promotion may include other ports.
-      </p>
+      <h2 className="font-display text-3xl">Daily promotions</h2>
       <p className="mt-2 text-sm text-mute">Last check: {checked} Eastern.</p>
       <JsonLd
         data={{
           "@context": "https://schema.org",
           "@type": "ItemList",
-          name: "Cruise deals of the week",
+          name: "Daily cruise promotions",
           itemListElement: deals.map((deal, index) => ({
             "@type": "ListItem",
             position: index + 1,
