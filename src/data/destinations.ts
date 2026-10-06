@@ -749,7 +749,7 @@ export const destinations: Destination[] = [
     card: "Rio & Cape Horn",
     image: "/media/south-america.jpg",
     alt: "A Patagonian fjord with a distant glacier",
-    lede: "Rio, the Brazilian coast, and the southern fjords. The ship and the port list matter more here than on a one-week Caribbean sailing.",
+    lede: "Rio, the Brazilian coast, and the southern fjords. Compare the ship and the port list before you pick a week.",
     paragraphs: [
       "Many current sailings begin in Rio de Janeiro and run the Brazilian coast. The older pattern was an Atlantic crossing from New York. Carnival, Norwegian, Holland America, and Cunard still touch the region, and the routes into the Patagonian fjords belong mainly to the expedition lines. We compare the lines that are actually scheduled, not the ones that sailed it years ago.",
       "Tell us whether you want the coast and the cities or the glaciers, and we will build the trip around the ports that match.",
@@ -959,7 +959,7 @@ export const destinations: Destination[] = [
     card: "Reefs & fiords",
     image: "/media/australia-new-zealand.jpg",
     alt: "Sydney Opera House and a cruise ship on the harbor",
-    lede: "Sydney, the Great Barrier Reef, and the fiords of the South Island. The flight from the Northeast is long, so the season and the ship matter more than they do on a week from Miami.",
+    lede: "Sydney, the Great Barrier Reef, and the fiords of the South Island. The flight from the Northeast is long, so check the season and the ship before you book.",
     paragraphs: [
       "Most sailings run ten to twenty-one nights from Sydney, Auckland, or Brisbane. Longer repositioning voyages come down from Hawaii or the West Coast. Princess, Holland America, Celebrity, Royal Caribbean, Cunard, and the smaller luxury lines sail the region in the southern summer. The comparison is the port list, not a preference for one line.",
       "The useful split is the Australian coast, a New Zealand circuit, or one sailing that crosses the Tasman and does both. Tell us which of those you want. We will start from the ports, not from a brand.",
