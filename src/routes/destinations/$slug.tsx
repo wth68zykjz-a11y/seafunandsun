@@ -83,7 +83,7 @@ export function DestinationArticle({ place, rail = false }: { place: NonNullable
             {place.nav}
           </p>
           <p className="mt-3 text-sm font-medium text-foam/80">{place.card}</p>
-          <h1 className="mt-2 font-display text-5xl">{place.title}</h1>
+          <h1 className="mt-2 font-display text-3xl sm:text-5xl">{place.title}</h1>
           <p className="mt-4 text-lg text-foam/85">{place.lede}</p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Link

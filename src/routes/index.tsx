@@ -109,15 +109,15 @@ const doors: Door[] = [
 function DoorFace({ door }: { door: Door }) {
   return (
     <div className={`grid lg:grid-cols-2 ${door.tone === "sea" ? "bg-sea text-foam" : "bg-foam text-ink"}`}>
-      <div className="relative min-h-72 overflow-hidden lg:min-h-[32rem]">
+      <div className="relative h-48 overflow-hidden sm:h-64 lg:h-auto lg:min-h-[32rem]">
         <img src={door.image} alt={door.alt} draggable={false} className="absolute inset-0 h-full w-full object-cover" />
       </div>
-      <div className="flex flex-col justify-center px-6 py-10 lg:px-12">
+      <div className="flex flex-col justify-center px-5 py-6 lg:px-12 lg:py-10">
         <p className={`text-sm font-medium ${door.tone === "sea" ? "text-foam/80" : "text-tide"}`}>{door.kicker}</p>
-        <h2 className="mt-3 font-display text-5xl">{door.title}</h2>
-        <p className={`mt-4 max-w-md text-lg ${door.tone === "sea" ? "text-foam/85" : "text-mute"}`}>{door.body}</p>
+        <h2 className="mt-2 font-display text-4xl lg:mt-3 lg:text-5xl">{door.title}</h2>
+        <p className={`mt-3 line-clamp-4 max-w-md text-base lg:mt-4 lg:line-clamp-none lg:text-lg ${door.tone === "sea" ? "text-foam/85" : "text-mute"}`}>{door.body}</p>
         <span
-          className={`mt-8 inline-flex min-h-11 w-fit items-center rounded-md px-5 text-sm font-medium ${
+          className={`mt-5 inline-flex min-h-11 w-fit items-center rounded-md px-5 text-sm font-medium lg:mt-8 ${
             door.tone === "sea" ? "bg-gold text-ink" : "bg-coral text-foam"
           }`}
         >
@@ -251,19 +251,19 @@ function Home() {
         />
         <JsonLd data={faqLd(faqs)} />
         <section className="mx-auto max-w-6xl px-4 pt-6 lg:pt-10">
-          <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-[#0c2340] via-[#1a4d73] to-[#d4923c] px-6 py-10 text-foam lg:px-12 lg:py-16">
+          <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-[#0c2340] via-[#1a4d73] to-[#d4923c] px-5 py-8 text-foam lg:px-12 lg:py-16">
             <div className="relative grid items-center gap-8 lg:grid-cols-[1fr_15rem]">
               <div>
                 <p className="text-sm font-medium text-foam/75">Independent travel company · Farmington, CT</p>
-                <h1 className="mt-4 font-display text-5xl leading-none text-foam sm:text-6xl">
+                <h1 className="mt-3 font-display text-4xl leading-none text-foam sm:mt-4 sm:text-6xl">
                   The right trip,
                   <span className="mt-2 block font-medium italic text-gold">booked with care.</span>
                 </h1>
-                <p className="mt-6 max-w-xl text-lg text-foam/85">
+                <p className="mt-4 max-w-xl text-base text-foam/85 sm:mt-6 sm:text-lg">
                   We book cruises, resorts, ski vacations, rail trips, and expeditions. One travel agent manages your booking, from the first quote until you return home.
                 </p>
-                <div className="mt-8 inline-flex flex-col items-center">
-                  <div className="flex flex-col gap-3 sm:flex-row">
+                <div className="mt-6 inline-flex w-full flex-col items-center sm:mt-8 sm:w-auto">
+                  <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
                     <Link to="/quote" className="inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
                       Request a quote
                     </Link>
@@ -271,14 +271,14 @@ function Home() {
                       Select a category
                     </a>
                   </div>
-                  <dl className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-center text-gold">
-              <div className="flex items-center gap-3">
-                <svg viewBox="0 0 36 36" className="size-9 shrink-0" fill="none" aria-hidden="true">
+                  <dl className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-center text-gold sm:mt-8 sm:gap-x-8">
+              <div className="flex items-center gap-2">
+                <svg viewBox="0 0 36 36" className="size-8 shrink-0" fill="none" aria-hidden="true">
                   <circle cx="16" cy="11" r="4" stroke="currentColor" strokeWidth="1.6" />
                   <path d="M8 26c1.4-4.2 4-6.2 8-6.2s6.6 2 8 6.2" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
                   <path d="M24 22.5l1.2 2.4 2.6.4-1.9 1.8.5 2.6L24 28.4l-2.4 1.3.5-2.6-1.9-1.8 2.6-.4L24 22.5z" fill="currentColor" />
                 </svg>
-                <dd className="font-display text-4xl leading-none">1</dd>
+                <dd className="font-display text-3xl leading-none sm:text-4xl">1</dd>
                 <dt className="text-xs font-medium uppercase leading-tight tracking-wide">
                   Dedicated point
                   <br />
@@ -286,12 +286,12 @@ function Home() {
                 </dt>
               </div>
               <div className="hidden h-10 w-px bg-gold sm:block" aria-hidden="true" />
-              <div className="flex items-center gap-3">
-                <svg viewBox="0 0 36 36" className="size-9 shrink-0" fill="none" aria-hidden="true">
+              <div className="flex items-center gap-2">
+                <svg viewBox="0 0 36 36" className="size-8 shrink-0" fill="none" aria-hidden="true">
                   <circle cx="18" cy="18" r="11" stroke="currentColor" strokeWidth="1.6" />
                   <path d="M18 11v14M15 14.5c.8-1 1.8-1.5 3-1.5 1.8 0 3 1 3 2.4S19.8 18 18 18s-3 .8-3 2.3 1.3 2.4 3.1 2.4c1.2 0 2.2-.4 3-1.3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
                 </svg>
-                <dd className="font-display text-4xl leading-none">$0</dd>
+                <dd className="font-display text-3xl leading-none sm:text-4xl">$0</dd>
                 <dt className="text-xs font-medium uppercase leading-tight tracking-wide">
                   Agent fee,
                   <br />
@@ -301,14 +301,14 @@ function Home() {
             </dl>
                 </div>
               </div>
-              <LogoMark className="mx-auto w-44 lg:w-56" />
+              <LogoMark className="mx-auto hidden w-44 lg:block lg:w-56" />
             </div>
           </div>
         </section>
 
-        <section id="trips" className="mx-auto max-w-6xl scroll-mt-24 px-4 pt-14 pb-16">
+        <section id="trips" className="mx-auto max-w-6xl scroll-mt-24 px-4 pt-8 pb-10 lg:pt-14 lg:pb-16">
           <p className="text-sm font-medium text-tide">Select one</p>
-          <h2 className="mt-2 max-w-2xl font-display text-4xl text-ink">Select a category.</h2>
+          <h2 className="mt-2 max-w-2xl font-display text-3xl text-ink sm:text-4xl">Select a category.</h2>
           <div className="mt-8">
             <TripCarousel items={doors} />
           </div>
@@ -319,15 +319,18 @@ function Home() {
             <img
               src="/media/ports/miami.jpg"
               alt="Miami’s waterfront, a common departure port for Caribbean cruises"
-              className="aspect-photo h-full w-full object-cover"
+              className="aspect-photo h-48 w-full object-cover md:h-full"
             />
             <div className="flex flex-col p-6 sm:p-8">
               <p className="text-sm font-medium text-tide">Departure ports</p>
               <h3 className="mt-2 font-display text-3xl text-ink">Learn about common departure ports</h3>
-              <p className="mt-3 text-ink">
+              <p className="mt-3 text-ink md:hidden">
+                The city a ship leaves from changes the trip. Miami and Fort Lauderdale spend more nights in the Caribbean than New York, New Jersey, Baltimore, or Boston. Alaska usually starts in Seattle or Vancouver. A few days in the city before or after is worth it if you want to walk it.
+              </p>
+              <p className="mt-3 hidden text-ink md:block">
                 The city a ship leaves from changes the trip. A week from Miami or Fort Lauderdale spends more nights in the Caribbean than the same week from New York, New Jersey, Baltimore, or Boston, which adds sea days. Alaska usually starts in Seattle or Vancouver. Seattle is the round trip through the Inside Passage. Vancouver is the Canadian start, often one way to Seward or Whittier, and a passport is required. Barcelona, Rome, Southampton, Singapore, Tokyo, and Sydney decide the coast the same way in their own regions.
               </p>
-              <p className="mt-3 text-ink">
+              <p className="mt-3 hidden text-ink md:block">
                 It is worth a few days in the city before you sail, or after you return, if you want time to walk it. Vancouver is a good example: the mountains and the harbor are right there, and you are already in town for the ship. The pages list where those ships usually go, which airlines serve the city, the local time, and the currency you will use. In Vancouver that currency is the Canadian dollar.
               </p>
               <span className="mt-5 inline-flex min-h-11 w-fit items-center rounded-md bg-coral px-5 text-sm font-medium text-foam">
@@ -338,7 +341,7 @@ function Home() {
         </section>
 
         <section className="mx-auto max-w-6xl px-4 pb-16">
-          <h2 className="font-display text-4xl">Frequently asked questions</h2>
+          <h2 className="font-display text-3xl sm:text-4xl">Frequently asked questions</h2>
           <div className="mt-6 divide-y divide-line border-y border-line">
             {faqs.map((item) => (
               <details key={item.q} className="group py-4">
@@ -364,7 +367,7 @@ function Home() {
         <section className="relative mx-auto grid max-w-6xl gap-8 px-4 pb-20 lg:grid-cols-2">
           <div>
             <p className="text-sm font-medium text-tide">A quote</p>
-            <h2 className="mt-2 font-display text-4xl">Tell us the trip, or let us propose it.</h2>
+            <h2 className="mt-2 font-display text-3xl sm:text-4xl">Tell us the trip, or let us propose it.</h2>
             <p className="mt-4 text-mute">The category, the month, and who is traveling. We reply the same day in most cases.</p>
             <ul className="mt-6 grid gap-2 text-sm">
               <li>

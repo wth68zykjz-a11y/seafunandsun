@@ -49,7 +49,7 @@ function Wordmark({ tone = "ink" }: { tone?: "ink" | "foam" }) {
         <span className={`block font-logo text-[0.95rem] tracking-[0.08em] sm:text-[1.05rem] sm:tracking-[0.1em] ${onDark ? "text-foam" : "text-ink"}`}>
           SEA FUN & SUN
         </span>
-        <span className="mt-1 flex items-center gap-1.5">
+        <span className="mt-1 hidden items-center gap-1.5 sm:flex">
           <span className={`h-px w-3 ${onDark ? "bg-gold" : "bg-gold-ink"}`} />
           <span className={`text-[0.58rem] font-semibold tracking-[0.18em] sm:tracking-[0.22em] ${onDark ? "text-gold" : "text-gold-ink"}`}>
             TRAVEL COMPANY
@@ -139,7 +139,7 @@ export function Header() {
 export function Footer() {
   return (
     <footer className="border-t border-line bg-sea text-foam">
-      <div className="mx-auto max-w-6xl px-4 py-12">
+      <div className="mx-auto max-w-6xl px-4 py-8 lg:py-12">
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.6fr)_minmax(0,0.7fr)]">
           <div>
             <Wordmark tone="foam" />
@@ -256,10 +256,10 @@ export function PageIntro({
   lede: string;
 }) {
   return (
-    <div className="mx-auto max-w-6xl px-4 pt-12 pb-6">
+    <div className="mx-auto max-w-6xl px-4 pt-8 pb-4 sm:pt-12 sm:pb-6">
       <p className="text-sm font-medium text-tide">{kicker}</p>
-      <h1 className="mt-2 max-w-3xl font-display text-4xl text-ink sm:text-5xl">{title}</h1>
-      <p className="mt-4 max-w-2xl text-lg text-mute">{lede}</p>
+      <h1 className="mt-2 max-w-3xl font-display text-3xl text-ink sm:text-5xl">{title}</h1>
+      <p className="mt-3 max-w-2xl text-base text-mute sm:mt-4 sm:text-lg">{lede}</p>
     </div>
   );
 }

@@ -36,7 +36,7 @@ function PolicyPage() {
     <Shell>
       <article className="mx-auto max-w-3xl px-4 py-12 pb-20">
         <p className="text-sm font-medium text-tide">Sea Fun & Sun Travel Company</p>
-        <h1 className="mt-2 font-display text-5xl">{doc.title}</h1>
+        <h1 className="mt-2 font-display text-3xl sm:text-5xl">{doc.title}</h1>
         <p className="mt-4 text-lg text-mute">{doc.dek}</p>
         <p className="mt-3 text-sm text-mute">{doc.meta}</p>
         <img
