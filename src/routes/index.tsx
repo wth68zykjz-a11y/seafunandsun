@@ -351,13 +351,13 @@ function Home() {
               <p className="text-sm font-medium text-tide">Departure ports</p>
               <h3 className="mt-2 font-display text-3xl text-ink">Learn about common departure ports</h3>
               <p className="mt-3 text-ink md:hidden">
-                The city a ship leaves from changes the trip. Miami and Fort Lauderdale spend more nights in the Caribbean than New York, New Jersey, Baltimore, or Boston. Alaska usually starts in Seattle or Vancouver. A few days before or after have no all-aboard. Walk, talk to people, and eat where you feel like eating.
+                The city a ship leaves from changes the trip. Miami and Fort Lauderdale spend more nights in the Caribbean than New York, New Jersey, Baltimore, or Boston. Alaska usually starts in Seattle or Vancouver. A few days before or after, the ship is not counting you back. Stay out, talk to people, and eat where the room is already full.
               </p>
               <p className="mt-3 hidden text-ink md:block">
                 The city a ship leaves from changes the trip. A week from Miami or Fort Lauderdale spends more nights in the Caribbean than the same week from New York, New Jersey, Baltimore, or Boston, which adds sea days. Alaska usually starts in Seattle or Vancouver. Seattle is the round trip through the Inside Passage. Vancouver is the Canadian start, often one way to Seward or Whittier, and a passport is required. Barcelona, Rome, Southampton, Singapore, Tokyo, and Sydney decide the coast the same way in their own regions.
               </p>
               <p className="mt-3 hidden text-ink md:block">
-                It is worth a few days in the city before you sail, or after you return. Those days have no all-aboard. Walk until a street is worth turning down. Talk to people. Drink where they are already sitting. Eat at a famous restaurant if that meal is why you stayed, or at a small local place. See a museum, or skip it and stay outside. Vancouver is a good example: the mountains and the harbor are right there, and you are already in town for the ship. The pages list where those ships usually go, which airlines serve the city, the local time, and the currency you will use. In Vancouver that currency is the Canadian dollar.
+                It is worth a few days in the city before you sail, or after you return. The ship is not counting you back. Stay out after dark. Walk until you want to sit down. Talk to people. Drink where the room is already full. Eat at a famous restaurant one night, or at a small local place the next. A museum if you want the morning indoors. Vancouver is a good example: the mountains and the harbor are right there, and you are already in town for the ship. The pages list where those ships usually go, which airlines serve the city, the local time, and the currency you will use. In Vancouver that currency is the Canadian dollar.
               </p>
               <span className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam sm:w-fit">
                 See the departure and embarkation ports

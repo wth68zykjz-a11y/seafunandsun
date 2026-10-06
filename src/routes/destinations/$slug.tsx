@@ -136,8 +136,8 @@ export function DestinationArticle({ place, rail = false }: { place: NonNullable
         </div>
         <p className="mt-4 max-w-3xl text-sm text-mute">
           {rail
-            ? "A night off the train has no schedule to catch. Walk the town, talk to people, and eat where it looks good. A museum if you want the morning indoors. A famous restaurant if that meal is why you stopped. A small local place if you would rather sit where the regulars sit."
-            : "On a port day, you can squeeze in lunch only if the ship leaves later. A few nights before or after are free in a way a port call is not. There is no all-aboard. Walk until a street is worth turning down. Talk to the person at the counter, or at the next table. Drink where people are already sitting. Eat at a famous restaurant one night if that is the meal you stayed for, or at a small local place with a short menu. Spend a morning in a museum, or skip it and stay outside."}
+            ? "A night off the train is an evening that belongs to the town. Walk until you want to sit. Talk to people. Eat where the room is already full: a famous restaurant if that was why you stopped, or a small local place. A museum in the morning if you want one."
+            : "On a port day, lunch is the only meal you can add, and only if the ship leaves later. A few nights before or after are different. The ship is not waiting. You can stay out after dark, follow a street because the light looks good, and sit where the room is already full of people talking. Order what the next table is having. One night that might be a famous restaurant, because the cooking is why you stayed. Another night it is a small place with no reservation and a menu you cannot quite read. A morning can disappear inside a museum, or you can skip it and keep walking. Those nights are for being in the city with the people who live there."}
         </p>
         <article className="mt-4 rounded-xl p-5 text-foam" style={{ backgroundColor: tone }}>
           <h2 className="font-display text-2xl">When to go</h2>
@@ -161,7 +161,7 @@ export function DestinationArticle({ place, rail = false }: { place: NonNullable
               <p className="mt-3 text-sm text-mute">
                 {rail
                   ? "Most of the day is on the train. A stop is short. The notes below say what you can see from the window, and what will not fit at the station."
-                  : "You are ashore only while the ship is there, so lunch is all you can add, and only if the ship leaves later. Stay a few nights before or after and there is no all-aboard. Walk, talk to people, and drink where the locals are already sitting. Eat at a famous restaurant or a small local place. See a museum, or don't. Where the Michelin Guide covers the city, a starred table has to be requested before you sail."}
+                  : "You are ashore only while the ship is there, so lunch is the meal you can add, and only if it leaves later. Stay a few nights before or after and the evening is yours. Walk until you want to sit. Talk to the person pouring the drink. Eat at a famous restaurant, or at a small local place that was never on a tour. A museum if the morning pulls you inside. Where the Michelin Guide covers the city, ask for a starred table before you sail."}
               </p>
               <dl className="mt-5 grid gap-4 sm:grid-cols-2">
                 {portGuides[place.slug].facts.map((fact) => (
