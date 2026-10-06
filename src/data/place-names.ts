@@ -1,0 +1,16 @@
+export const cruisePlaces = [
+  { slug: "alaskan", title: "Alaskan Cruises" },
+  { slug: "caribbean", title: "Caribbean Cruises" },
+  { slug: "mediterranean", title: "Mediterranean Cruises" },
+  { slug: "european", title: "European Cruises" },
+  { slug: "hawaii", title: "Hawaii Cruises" },
+  { slug: "bermuda", title: "Bermuda Cruises" },
+  { slug: "northern-europe", title: "Northern Europe Cruises" },
+  { slug: "canada-new-england", title: "Canada & New England Cruises" },
+  { slug: "river", title: "River Cruises" },
+  { slug: "expedition", title: "Expedition Cruises" },
+  { slug: "asia", title: "Asia Cruises" },
+  { slug: "south-america", title: "South America Cruises" },
+  { slug: "world", title: "World Cruises" },
+  { slug: "australia-new-zealand", title: "Australia & New Zealand Cruises" },
+] as const;

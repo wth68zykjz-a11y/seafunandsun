@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Link } from "@tanstack/react-router";
-import { destinations } from "@/data/destinations";
+import { cruisePlaces } from "@/data/place-names";
 import { submitInquiry } from "@/lib/inquiries";
 
 const field =
@@ -81,7 +81,7 @@ export function QuoteForm({
 }) {
   const knownPreset =
     preset &&
-    (destinations.some((item) => item.title === preset) ||
+    (cruisePlaces.some((item) => item.title === preset) ||
       tripPlaces.expedition.includes(preset) ||
       tripPlaces.resort.includes(preset) ||
       tripPlaces.ski.includes(preset) ||
@@ -101,7 +101,6 @@ export function QuoteForm({
   const [error, setError] = useState("");
   const active: Trip = chooseTrip ? trip : kind === "ski" ? "ski" : kind === "land" ? "land" : "cruise";
   const style = styleCopy[active];
-  const cruisePlaces = destinations.filter((item) => item.slug !== "rail");
   const placeDefault =
     active === "cruise"
       ? cruisePlaces.some((item) => item.title === knownPreset)

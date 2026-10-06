@@ -3,7 +3,7 @@ import { createRootRoute, HeadContent, Link, Outlet, Scripts } from "@tanstack/r
 import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import { agencyGraph, JsonLd } from "@/lib/seo";
-import appCss from "../styles.css?url";
+import appCss from "../styles.css?inline";
 
 const APP_NAME = "Sea Fun & Sun";
 
@@ -63,13 +63,13 @@ function RootShell({ children }: { children: ReactNode }) {
         />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Marcellus&family=Outfit:wght@400;500;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Marcellus&family=Outfit:wght@400;500;600&display=optional"
           media="print"
           onLoad={(event) => {
             event.currentTarget.media = "all";
           }}
         />
-        <link id="site-css" rel="stylesheet" href={appCss} />
+        <style dangerouslySetInnerHTML={{ __html: appCss }} />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-R12KCXY9XE" />
         <script
           dangerouslySetInnerHTML={{

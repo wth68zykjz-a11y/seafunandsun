@@ -117,8 +117,8 @@ function DoorFace({ door, eager }: { door: Door; eager?: boolean }) {
           height={733}
           draggable={false}
           decoding="async"
-          loading="lazy"
-          fetchPriority="low"
+          loading={eager ? "eager" : "lazy"}
+          fetchPriority={eager ? "high" : "low"}
           className="absolute inset-0 h-full w-full object-cover"
         />
       </div>
@@ -220,9 +220,9 @@ function TripCarousel({ items }: { items: Door[] }) {
           }
         }}
       >
-        {items.map((door) => (
+        {items.map((door, i) => (
           <div key={door.title} className="min-w-full shrink-0 basis-full snap-start">
-            <DoorSlide door={door} />
+            <DoorSlide door={door} eager={i === 0} />
           </div>
         ))}
       </div>
