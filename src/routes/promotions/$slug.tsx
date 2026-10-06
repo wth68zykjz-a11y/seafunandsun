@@ -10,7 +10,7 @@ export const Route = createFileRoute("/promotions/$slug")({
     pageHead({
       title: loaderData ? `${loaderData.title} — Sea Fun & Sun` : "Promotion",
       description: loaderData
-        ? `${explainPromotion(loaderData.title)} Booked with Sea Fun & Sun in Farmington, Connecticut.`
+        ? `${loaderData.line ? `${loaderData.line}. ` : ""}${loaderData.starting ? `${loaderData.title} starts at ${loaderData.starting}. ` : explainPromotion(loaderData.title)} Booked with Sea Fun & Sun in Farmington, Connecticut.`
         : "A Sea Fun & Sun promotion.",
       path: loaderData ? `/promotions/${loaderData.slug}` : "/sailings",
     }),
@@ -36,7 +36,13 @@ function PromoPageView() {
       <PageIntro
         kicker="A Sea Fun & Sun promotion"
         title={promo.title}
-        lede={explainPromotion(promo.title)}
+        lede={
+          promo.line && promo.starting
+            ? `${promo.line}. ${promo.title} starts at ${promo.starting}.`
+            : promo.line
+              ? `${promo.line}. ${explainPromotion(promo.title)}`
+              : explainPromotion(promo.title)
+        }
       />
       <div className="mx-auto max-w-6xl px-4 pb-20">
         {promo.images.length > 0 ? (

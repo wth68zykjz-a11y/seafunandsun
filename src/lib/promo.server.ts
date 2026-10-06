@@ -10,6 +10,8 @@ export type PromoPage = {
   travelDates: string;
   days: PromoDay[];
   prices: PromoPrice[];
+  line: string;
+  starting: string;
   disclaimer: string;
 };
 
@@ -29,6 +31,18 @@ function decode(value: string) {
     text = next;
   }
   return text.replace(/\s+/g, " ").trim();
+}
+
+export function offerFacts(html: string): { line: string; starting: string } {
+  const heads = [...html.matchAll(/fl-heading-text">([^<]+)/g)]
+    .map((match) => decode(match[1]).replace(/®/g, "").trim())
+    .filter((head) => head && !/want more information/i.test(head));
+  const line = heads.length >= 2 ? heads[0] : "";
+  const amounts = [...html.matchAll(/Starting At\s*(?:&#36;|\$)\s*([0-9,]+)/g)]
+    .map((match) => Number(match[1].replace(/,/g, "")))
+    .filter((amount) => amount > 0);
+  const starting = amounts.length ? `$${Math.min(...amounts).toLocaleString("en-US")}` : "";
+  return { line, starting };
 }
 
 function field(html: string, className: string) {
@@ -83,6 +97,7 @@ export function parsePromoHtml(slug: string, html: string): PromoPage {
     if (dates && price) prices.push({ dates, price });
   }
   const disclaimer = decode(html.match(/class="offer-disclaimer">([\s\S]*?)<\/div>/)?.[1] ?? "");
+  const facts = offerFacts(html);
   return {
     slug,
     title,
@@ -91,6 +106,8 @@ export function parsePromoHtml(slug: string, html: string): PromoPage {
     travelDates: field(html, "dates_from"),
     days: days.slice(0, 24),
     prices: prices.slice(0, 8),
+    line: facts.line,
+    starting: facts.starting,
     disclaimer,
   };
 }

@@ -170,12 +170,20 @@ function featuredBrands(offers: SupplierOffer[]) {
   return { featured, used };
 }
 
+function offerHeading(offer: SupplierOffer, guide?: { line: string; port: string } | null) {
+  const line = offer.line?.replace(/®/g, "").trim();
+  const first = line?.split(" ")[0]?.toLowerCase();
+  if (line && first && !offer.title.toLowerCase().includes(first)) return `${line}: ${offer.title}`;
+  if (guide) return `${guide.line} from ${guide.port}`;
+  return offer.title;
+}
+
 function OfferCard({ offer }: { offer: SupplierOffer }) {
   const slug = offer.href.match(/\/offer\/([a-z0-9-]+)/i)?.[1]?.toLowerCase();
   const body = (
     <>
-      <p className="text-xs font-medium text-tide">{offer.tag}</p>
-      <h3 className="mt-2 font-display text-2xl">{offer.title}</h3>
+      <p className="text-xs font-medium text-tide">{offer.line || offer.tag}</p>
+      <h3 className="mt-2 font-display text-2xl">{offerHeading(offer)}</h3>
       <p className="mt-2 text-sm text-mute">{offer.detail}</p>
     </>
   );
@@ -240,10 +248,10 @@ function DealsOfTheWeek({ offers, checked }: { offers: SupplierOffer[]; checked:
       <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {deals.map((deal) => {
           const slug = deal.offer.href.match(/\/offer\/([a-z0-9-]+)/i)?.[1]?.toLowerCase();
-          const heading = deal.guide ? `${deal.guide.line} from ${deal.guide.port}` : deal.offer.title;
+          const heading = offerHeading(deal.offer, deal.guide);
           return (
             <article key={deal.offer.href} className="flex flex-col rounded-xl border border-line bg-foam p-5">
-              <p className="text-xs font-medium text-tide">{deal.guide ? deal.guide.port : deal.offer.tag}</p>
+              <p className="text-xs font-medium text-tide">{deal.offer.line || (deal.guide ? deal.guide.port : deal.offer.tag)}</p>
               <h3 className="mt-2 font-display text-2xl">{heading}</h3>
               <p className="mt-2 text-sm leading-6 text-ink">{deal.offer.detail}</p>
               {deal.guide ? (

@@ -1,4 +1,5 @@
 import { promotionDetail } from "@/lib/offer-copy";
+import { offerFacts } from "@/lib/promo.server";
 
 export type OfferGroup = "Luxury" | "Ocean" | "Land and Resorts";
 
@@ -8,6 +9,7 @@ export type SupplierOffer = {
   href: string;
   tag: string;
   group: OfferGroup;
+  line?: string;
 };
 
 export type OfferFeed = {
@@ -95,6 +97,28 @@ async function readFeed(url: string, source: (typeof FEEDS)[number][1]) {
   return parseOfferHtml(await response.text(), source);
 }
 
+async function enrichOffer(offer: SupplierOffer): Promise<SupplierOffer> {
+  const named = /princess|celebrity|norwegian|virgin|regent|windstar|riviera|amawater|cunard|viking|carnival|royal caribbean|msc|disney|holland america|star clipper|palladium|waldorf|conrad|cie tours|globus|united vacation/i;
+  const deal = /%|\$|free |upgrade|credit|saving/i;
+  if (named.test(offer.title) && deal.test(offer.title)) return offer;
+  try {
+    const response = await fetch(offer.href, {
+      headers: { "user-agent": "SeaFunAndSun/1.0 (offer page)" },
+      signal: AbortSignal.timeout(8000),
+    });
+    if (!response.ok) return offer;
+    const facts = offerFacts(await response.text());
+    const line = facts.line;
+    let detail = offer.detail;
+    if (line && facts.starting) detail = `${line}. ${offer.title} starts at ${facts.starting}.`;
+    else if (facts.starting) detail = `${offer.title} starts at ${facts.starting}.`;
+    else if (line && !named.test(offer.detail)) detail = `${line}. ${offer.detail}`;
+    return line ? { ...offer, line, detail } : { ...offer, detail };
+  } catch {
+    return offer;
+  }
+}
+
 export async function loadSupplierOffers(): Promise<OfferFeed> {
   const now = Date.now();
   if (cache && now - cache.at < freshFor) return cache.feed;
@@ -114,7 +138,8 @@ export async function loadSupplierOffers(): Promise<OfferFeed> {
       }
     }
     if (offers.length === 0) throw new Error("No offers");
-    const feed: OfferFeed = { offers, updatedAt: new Date().toISOString(), live: true };
+    const enriched = await Promise.all(offers.map((offer) => enrichOffer(offer)));
+    const feed: OfferFeed = { offers: enriched, updatedAt: new Date().toISOString(), live: true };
     cache = { at: now, feed };
     return feed;
   } catch {
