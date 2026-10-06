@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
     const head = pageHead({
       title: "Sea Fun & Sun | Cruises, resorts, ski vacations, and rail trips — Farmington, CT",
       description:
-        "Cruises, beach resorts, ski vacations, and rail trips from Sea Fun & Sun in Farmington, Connecticut. No separate agent fee. Call or text (959) 666-2062.",
+        "We book a cruise, a resort, a ski vacation, or a rail trip. Sea Fun & Sun, Farmington, Connecticut. No separate agent fee. Call or text (959) 666-2062.",
       path: "/",
       image: "/media/card-cruises.webp",
     });
@@ -317,7 +317,7 @@ function Home() {
                   <span className="mt-2 block font-medium italic text-gold">booked with care.</span>
                 </h1>
                 <p className="mt-4 max-w-xl text-base text-foam/85 sm:mt-6 sm:text-lg">
-                  We book cruises, resorts, ski vacations, rail trips, and expeditions. One travel agent manages your booking, from the first quote until you return home.
+                  We book a cruise, a resort, a ski vacation, or a rail trip, and one travel agent manages it from the first quote until you are home.
                 </p>
                 <div className="mt-6 w-full sm:mt-8 sm:inline-flex sm:w-auto sm:flex-col sm:items-center">
                   <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">

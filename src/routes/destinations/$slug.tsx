@@ -9,7 +9,6 @@ import { breadcrumbLd, clip, JsonLd, pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/destinations/$slug")({
   beforeLoad: ({ params }) => {
     if (params.slug === "rail") throw redirect({ to: "/rail", statusCode: 301 });
-    if (params.slug === "panama-canal") throw redirect({ to: "/region", statusCode: 301 });
   },
   loader: ({ params }) => destinationBySlug(params.slug) ?? null,
   head: ({ loaderData }) =>

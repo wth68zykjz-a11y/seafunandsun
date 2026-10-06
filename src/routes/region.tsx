@@ -1,24 +1,11 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { DestinationArticle } from "@/routes/destinations/$slug";
-import { destinationBySlug } from "@/data/destinations";
-import { clip, pageHead } from "@/lib/seo";
-
-const place = destinationBySlug("panama-canal");
+import { createFileRoute, redirect } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/region")({
-  head: () =>
-    pageHead({
-      title: place?.title ?? "Panama Canal Cruises",
-      description: place
-        ? clip(`Panama Canal cruises booked by Sea Fun & Sun in Farmington, Connecticut. ${place.lede}`)
-        : "Panama Canal cruises booked by Sea Fun & Sun in Farmington, Connecticut.",
-      path: "/region",
-      image: place?.image,
-    }),
-  component: RegionPage,
+  beforeLoad: () => {
+    throw redirect({
+      to: "/destinations/$slug",
+      params: { slug: "panama-canal" },
+      statusCode: 301,
+    });
+  },
 });
-
-function RegionPage() {
-  if (!place) return null;
-  return <DestinationArticle place={place} path="/region" />;
-}
