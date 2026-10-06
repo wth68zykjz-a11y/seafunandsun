@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "Where are you based?",
-    a: "We are based in Farmington, Connecticut. There is no office to visit. You call, text, or email, and one agent handles the booking. That is the same for a traveler in Connecticut and for a traveler in another state.",
+    a: "We are based in Farmington, Connecticut. You call, text, or email, and one agent handles the booking and arranges the trip. That is the same if you live in Connecticut, elsewhere in New England, or farther away.",
   },
   {
     q: "Why is there no fare for some trips?",
@@ -402,9 +402,9 @@ function Home() {
         <section className="mx-auto grid max-w-6xl items-center gap-8 px-4 pb-16 lg:grid-cols-2">
           <div>
             <p className="text-sm font-medium text-tide">Farmington, Connecticut</p>
-            <h2 className="mt-2 font-display text-3xl text-ink sm:text-4xl">Based here. The booking is by phone.</h2>
+            <h2 className="mt-2 font-display text-3xl text-ink sm:text-4xl">The booking process</h2>
             <p className="mt-4 text-lg text-ink">
-              Sea Fun & Sun is a Farmington company. There is no office to visit. A quote starts by phone, text, or email. One agent handles the booking and arranges the trip from your home to the destination, and the return home. That is the same if you live in Connecticut, elsewhere in New England, or farther away.
+              Sea Fun & Sun is a Farmington company. A quote starts by phone, text, or email. One agent handles the booking and arranges the trip from your home to the destination, and the return home. That is the same if you live in Connecticut, elsewhere in New England, or farther away.
             </p>
           </div>
           <iframe
