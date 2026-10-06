@@ -25,50 +25,50 @@ export const Route = createFileRoute("/destinations/$slug")({
 
 const ashoreNotes: Record<string, string> = {
   alaskan:
-    "Most Alaska calls end in the afternoon, so the meal ashore is lunch: salmon in Juneau, or crab in Ketchikan. Dinner in town is realistic only on a late sailaway or an overnight, which some Juneau calls allow. A glacier day has no pier. Nights in Seattle or Vancouver are not cut off by all-aboard, so use them for the market and a dinner the port call never had time for.",
+    "Most Alaska calls end in the afternoon. Juneau is the glacier and the harbor. Ketchikan is the creek and the totem poles. Skagway is a short town under the pass. A glacier day has no pier at all. Some Juneau calls stay late enough for the evening in town. Nights in Seattle or Vancouver are not cut off by all-aboard. Salmon or crab can be lunch if you want it.",
   caribbean:
-    "A typical island call ends in the afternoon, so plan lunch ashore rather than a long dinner. Cozumel, Nassau, and the private islands work that way. San Juan, and the occasional overnight, are when a restaurant in town makes sense. Nights in Miami, Fort Lauderdale, or San Juan are a different kind of day: a neighborhood, a beach morning, or a dinner you book ahead.",
+    "A typical island call ends in the afternoon. Cozumel and the private islands are a beach and a swim. Nassau and the older towns are a walk from the pier. San Juan can hold a longer afternoon, and an overnight is when the evening in town is open. Nights in Miami or Fort Lauderdale are for the city, not the gangway.",
   mediterranean:
-    "Many calls end in the afternoon, so lunch is the meal ashore. Rome’s pier is Civitavecchia, about an hour out, which is why extra nights in the city matter more than a rushed port lunch. Barcelona and Athens are where a museum morning belongs. When the ship stays overnight, or sails as late as 10 p.m., dinner in the city is possible. Ask us for a Michelin table in Rome, Barcelona, or Athens before you sail.",
+    "Many calls end in the afternoon. Barcelona is a walk from the pier into the old city. Rome’s ship docks at Civitavecchia, about an hour from the center, so the Colosseum and a museum morning belong to nights before or after the cruise. Athens is the Acropolis when the call is long enough. When the ship stays overnight, or sails as late as 10 p.m., the evening in the city is open. A reserved dinner can be part of those extra nights.",
   european:
-    "Lunch is the sure meal on a daytime call. Lisbon, the London ports, and the Mediterranean cities on these routes are easier with a night or two before or after, when all-aboard is not the deadline. An overnight, or a departure as late as 10 p.m., is when dinner in the city works. Tell us which cities you already know, and we will put the extra nights on the ones you do not.",
+    "A daytime call leaves the afternoon short. Lisbon, the London ports, and the Mediterranean cities on these routes are easier with a night or two before or after, when all-aboard is not the deadline. An overnight, or a departure as late as 10 p.m., leaves the evening free. Tell us which cities you already know. We will put the extra nights on the ones you do not.",
   hawaii:
-    "Inter-island days run longer than a Caribbean call, and Pride of America often stays into the evening. A plate lunch or poke is the easy meal. A luau or a reserved dinner needs the ship still in port after dark, which is common on these sailings. Nights on Oahu before or after a California crossing are for Pearl Harbor or a Honolulu neighborhood, without watching the gangway.",
+    "Inter-island days run longer than a Caribbean call, and Pride of America often stays into the evening. The day might be a beach, a drive, or the north shore. Pearl Harbor belongs to a night on Oahu before or after a California crossing, when you are not watching the gangway. A luau needs the ship still in port after dark.",
   bermuda:
-    "Many Bermuda sailings stay overnight, so dinner in Hamilton is a normal part of the call. A short stop is different: the beach is the day, and lunch is the meal. Sailings from Boston, New York, or Baltimore include sea days each way. Extra nights on the island are for the pink-sand beaches and a dinner that does not have to end at the pier.",
+    "Many Bermuda sailings stay overnight, so Hamilton in the evening is part of the call. A short stop is the pink sand and a swim, then back to the ship. Sailings from Boston, New York, or Baltimore include sea days each way. Extra nights on the island are for the beaches and the town after the ship has gone.",
   "northern-europe":
-    "Baltic and Norway calls often end in the afternoon. Count on lunch: shrimp at the Bergen fish market, or smørrebrød in Copenhagen. Ocean ships for Amsterdam dock at IJmuiden, so the city takes longer than the map suggests. An overnight in Copenhagen or Stockholm is when dinner ashore is realistic. Extra nights in London, Amsterdam, or Copenhagen are for the Rijksmuseum, Nyhavn, or a restaurant you reserve ahead.",
+    "Baltic and Norway calls often end in the afternoon. Bergen is the wharf. Copenhagen is the harbor and Nyhavn. Ocean ships for Amsterdam dock at IJmuiden, so the Rijksmuseum takes more of the day than a pier in the center would. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for one museum and one neighborhood.",
   "canada-new-england":
-    "These are town calls more than beach piers, and many end in the afternoon. Lunch is the meal ashore: chowder in Boston, lobster along the coast, or a meal in Quebec when the ship is on the St. Lawrence. A late departure is more common on a fall foliage sailing than on a quick stop. Extra nights in Boston or Quebec let you stay out after dark.",
+    "These are town calls, and many end in the afternoon. Boston is the harbor and the old streets. Quebec is the upper town above the river. A late departure shows up more often on a fall foliage sailing than on a quick stop. Extra nights in Boston or Quebec let you stay out after dark.",
   river:
-    "A river ship ties up in town. This is not an ocean port day. You can walk off for lunch, and on many evenings for dinner, because the ship stays alongside. On the Danube that might be a café in Budapest or a reserved table in Vienna. A Mississippi sailing is a different country and a different menu. Extra nights in Budapest, Paris, Amsterdam, or New Orleans are for the museum and the neighborhood the ship only passes.",
+    "A river ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village, and a bike ride is a common afternoon. A Mississippi sailing is a different river and a different set of towns. Extra nights in Budapest, Paris, Amsterdam, or New Orleans are for the parts of the city the ship only passes.",
   expedition:
-    "Most expedition days are landings, not cities, and both meals stay on the ship. The gateway towns are the exception: Ushuaia before Antarctica, or Longyearbyen in the Arctic. Dinner in those towns belongs to the nights before or after the voyage. Tell us the region and we will say whether the itinerary has a real town in it, or only ice and a beach.",
+    "An expedition day may never reach a town. You put on the boots and the parka the ship issues, ride a Zodiac to a beach or the ice, and walk the path the guides mark. You may stand near penguins or seals and take pictures from the distance they set. If the water is calm, some ships add a kayak or a canoe for people who asked. Weather can cancel the landing and leave you on deck. Ushuaia or Longyearbyen, before or after the voyage, is the town. The landing day is not.",
   asia:
-    "Singapore and Tokyo often keep the ship in port into the evening, and some sail as late as 10 p.m., so dinner ashore is a real plan: a hawker center, a noodle shop, or a sushi counter. A short beach call is still a lunch day. Nights before or after in Singapore, Tokyo, or Hong Kong are for a museum, a neighborhood, and a table you reserve, including a Michelin restaurant. Ask us before you sail.",
+    "Singapore and Tokyo often keep the ship in port into the evening, and some sail as late as 10 p.m. A beach call is still only a few hours. Nights before or after in Singapore, Tokyo, or Hong Kong are for one district or a museum, not three cities in a day. A hawker stall, a sushi counter, or a reserved table can be part of that stay if you want it booked before you sail.",
   "south-america":
-    "In Rio and Buenos Aires the local dinner hour is late, which works when the ship stays overnight or sails late. On a daytime call, lunch is the meal ashore: a churrasco or a café, not a 10 p.m. table. Extra nights in either city are when the evening belongs to you. A famous grill, or a Michelin table, should be reserved before you arrive.",
+    "Rio is the harbor and the hills. Buenos Aires is a walking city, and the evening starts late, which lines up when the ship stays overnight or sails late. A daytime call is the waterfront and one neighborhood. Extra nights are when you can stay out. A grill can be part of those nights if you want a table held.",
   world:
-    "A world cruise spends many days at sea, so a port is an event. A short call leaves time for lunch and not much else. An overnight is the dinner worth reserving. The cities where you join or leave the ship, often Southampton, Sydney, or Singapore, deserve extra nights. That is where a museum and a reserved dinner belong, because the ship is not waiting.",
+    "A world cruise spends many days at sea. A short call is a walk around the harbor. An overnight is the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights. The ship is not waiting then.",
   "australia-new-zealand":
-    "Sydney and Auckland calls can cover lunch in the city and a walk on the harbor. Dinner ashore depends on a late sailaway or an overnight, which some itineraries include. Brisbane and Melbourne turn fewer ships. Extra nights in Sydney or Auckland are for the Opera House, a harbor neighborhood, and a dinner you book ahead instead of a race back to the pier.",
+    "A Sydney call can cover the harbor and the Opera House. Auckland is the waterfront, and a volcanic cone if the call is long. The evening in town depends on a late sailaway or an overnight, which some itineraries have. Brisbane and Melbourne turn fewer ships. Extra nights in Sydney or Auckland are for the city after the ship has sailed.",
 };
 
 const ashoreLeads: Record<string, string> = {
-  alaskan: "You are ashore only while the ship is alongside. The notes below say what a Juneau, Ketchikan, or Skagway call usually allows.",
+  alaskan: "You are ashore only while the ship is alongside. The notes below are Juneau, Ketchikan, Skagway, and the glacier days with no pier.",
   caribbean: "You are ashore only while the ship is alongside. The notes below separate a beach call from a longer stop such as San Juan.",
-  mediterranean: "You are ashore only while the ship is alongside. The notes below say what fits in Barcelona, Rome, or Athens, and what needs an extra night.",
-  european: "You are ashore only while the ship is alongside. The notes below are the cities. Extra nights are how you see one of them properly.",
-  hawaii: "You are ashore only while the ship is alongside. These island calls run long, and the notes below say what still needs a reservation.",
-  bermuda: "You are ashore only while the ship is alongside. An overnight in Hamilton changes the day. A short call does not.",
-  "northern-europe": "You are ashore only while the ship is alongside. The notes below cover Bergen, Copenhagen, Amsterdam, and the other northern calls.",
+  mediterranean: "You are ashore only while the ship is alongside. The notes below are Barcelona, Rome, and Athens, including the calls that need an extra night.",
+  european: "You are ashore only while the ship is alongside. The notes below are the cities. Extra nights are for seeing one of them without a deadline.",
+  hawaii: "You are ashore only while the ship is alongside. These island calls run long. The notes below say what still needs a reservation.",
+  bermuda: "You are ashore only while the ship is alongside. An overnight in Hamilton is a different day from a short beach call.",
+  "northern-europe": "You are ashore only while the ship is alongside. The notes below are Bergen, Copenhagen, Amsterdam, and the other northern calls.",
   "canada-new-england": "You are ashore only while the ship is alongside. The notes below are the New England and Canada towns on a fall sailing.",
-  river: "You step off into town. The notes below are the rivers, and the evenings when dinner off the ship is ordinary.",
-  expedition: "A landing day is not a city day. The notes below say when there is a town, and when the day is ice, a beach, or a Zodiac.",
+  river: "You step off into town. The notes below are the rivers, and the evenings the ship stays alongside.",
+  expedition: "A landing day is not a city day. You may put on gear, ride a Zodiac, walk a beach, and take pictures. Weather can cancel it.",
   asia: "You are ashore only while the ship is alongside. The notes below separate a long Singapore or Tokyo call from a short beach stop.",
-  "south-america": "You are ashore only while the ship is alongside. The notes below are Rio, Buenos Aires, and the calls that do not keep the ship after dark.",
-  world: "Ports are fewer than the sea days. The notes below say which calls are a walk and a lunch, and which are worth a reserved dinner.",
-  "australia-new-zealand": "You are ashore only while the ship is alongside. The notes below are Sydney, Auckland, and the coast calls that are shorter.",
+  "south-america": "You are ashore only while the ship is alongside. The notes below are Rio, Buenos Aires, and the calls that end before dark.",
+  world: "Ports are fewer than the sea days. The notes below separate a short harbor walk from an overnight.",
+  "australia-new-zealand": "You are ashore only while the ship is alongside. The notes below are Sydney, Auckland, and the shorter coast calls.",
 };
 
 function DestinationPage() {

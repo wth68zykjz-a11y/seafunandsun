@@ -317,7 +317,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-expedition.jpg",
     photoAlt: "A distant zodiac among sea ice in pale polar light",
     intro:
-      "On an expedition ship the excursion is the landing or the Zodiac ride, run by the ship’s staff. Weather and wildlife can rewrite the day. The ship is chosen for the expedition team and for how active you want to be.",
+      "An expedition day starts with the gear the ship issues: boots, a parka, and a life jacket. You ride a Zodiac to a beach or the ice, walk where the guides mark the path, and take pictures from the distance they set. A kayak or a canoe may be offered if the water is calm. Weather can cancel the landing.",
     excursions: [
       {
         title: "A landing, if the ice allows",
@@ -325,7 +325,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "An hour or two ashore",
         pace: "Wet boots, short walk",
         detail:
-          "You stand with the colony at a set distance. There is no schedule you can hold the ship to. Boots and a real parka matter more than a camera lens.",
+          "You dress on the ship, ride the Zodiac in, and step onto rock, snow, or a beach. The walk is short. You may be with penguins or seals, or with nothing but ice. Pictures are from the line the staff holds. Then the Zodiac takes you back.",
       },
       {
         title: "Galápagos with the naturalist",
@@ -333,7 +333,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Uneven lava, some steps",
         detail:
-          "The naturalist matters more than the size of the ship. The useful comparison is how much time is on the islands versus how much is on the ship. A bigger ship is not a better Galápagos day.",
+          "You land dry, or you come in by panga. The naturalist sets the trail over lava or a boardwalk, and you stop where the animals are. A swim or a short ride may be part of the same morning. The park rules set the pace.",
       },
       {
         title: "Kayak or a polar plunge, only if you mean it",
@@ -341,7 +341,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "An hour",
         pace: "Active, cold",
         detail:
-          "Optional, limited spaces, and not a personality test. It belongs on the plan only when someone asks for it. A landing day does not need it.",
+          "Some ships offer a kayak, a canoe, or a polar plunge when the water allows. You put on the suit they provide and go out for about an hour. It is optional. A landing day does not require it.",
       },
     ],
   },
@@ -658,15 +658,15 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-expedition.jpg",
     detailAlt: "Expedition boots and a red parka on a zodiac, with sea ice beyond",
     facts: [
-      { label: "Time in port", text: "There often is no port. Landings are an hour or two, and weather can cancel the one you wanted." },
-      { label: "Worth the time", text: "You came for the wildlife, not a restaurant. There is nowhere ashore for a Michelin meal. You eat on the ship." },
-      { label: "Best for", text: "People who will accept a change of plan. The expedition team matters more than the entertainment staff." },
-      { label: "Often a poor fit", text: "Ships that sell a bigger theater instead of more time off the ship. A bigger ship is not a better Galápagos day." },
+      { label: "Time in port", text: "There often is no port. You may spend an hour or two ashore after a Zodiac ride, or the landing may be called off." },
+      { label: "Worth the time", text: "The day may be gear, a Zodiac, a short walk, and pictures. A kayak or a canoe is separate, and only if the water allows." },
+      { label: "Best for", text: "People who will accept a change of plan. The guides run the day." },
+      { label: "Often a poor fit", text: "A fixed schedule, or a ship that sells a bigger theater instead of time off the ship." },
     ],
     outings: [
-      { fits: "Anyone who can step into a zodiac and stand with a colony at a distance. No fixed schedule.", bring: "The ship’s boots and a real parka. A longer lens matters less than staying warm." },
-      { fits: "Travelers who want hours on the islands with a naturalist, not a floating hotel.", bring: "Shoes for lava, a tolerance for steps, and patience with the park rules." },
-      { fits: "Only if you ask. It is not a personality test, and spaces are limited.", bring: "A wetsuit the ship provides, and a clear no if you are there for the landings instead." },
+      { fits: "You put on the ship’s boots and parka, ride a Zodiac, and walk a short path. The landing can be canceled.", bring: "The boots and parka the ship issues. Keep the camera inside the jacket until you are ashore." },
+      { fits: "A panga or a dry landing with a naturalist. You follow the trail and take pictures from the marked line.", bring: "Shoes for lava, and patience with the park rules." },
+      { fits: "A kayak, a canoe, or a plunge, only if you ask and the water is calm.", bring: "The suit the ship provides. Skip it if you came for the landing." },
     ],
   },
   asia: {

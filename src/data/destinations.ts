@@ -620,7 +620,7 @@ export const destinations: Destination[] = [
     lede: "Small ships, Zodiacs, and guides. The ship decides which landings are possible, and weather can change the day.",
     paragraphs: [
       "Lindblad, Ponant, and Hapag-Lloyd sail Antarctica, the Arctic, and the Galápagos, along with the expedition ships of Viking and Silversea. Patagonia uses those same small ships. UnCruise sails Alaska and the Pacific Northwest. It does not sail Antarctica or the Galápagos.",
-      "Timing and the size of the ship matter more here than on a standard sailing. Tell us the region and the months, and we will set out the options that match the trip you have in mind.",
+      "Tell us the region and the months. A smaller ship spends more of the day off the ship. We will set out the options that match.",
     ],
     lists: [
       {
@@ -647,7 +647,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "Antarctica runs from November through March. The Arctic runs from June through September. Cabins sell by route, and the better ships fill early.",
-    planning: "Antarctica, the Arctic, or the Galápagos. The month and the size of the ship matter more than the brochure.",
+    planning: "Antarctica, the Arctic, or the Galápagos, and the month. We match the ship to how much time you want off it.",
     itineraries: [
       {
         title: "Antarctic peninsula",
