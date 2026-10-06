@@ -29,15 +29,15 @@ const ashoreNotes: Record<string, string> = {
   caribbean:
     "A typical island stop ends in the afternoon. Cozumel and the private islands have a beach and a swim. Nassau and the older towns have a walk from the pier. San Juan can hold a longer afternoon, and an overnight is when the evening in town is open. Nights in Miami or Fort Lauderdale are for the city, not the gangway.",
   mediterranean:
-    "Many stops end in the afternoon. Barcelona has an old city you can walk to from the pier. Rome has the Colosseum and museums. The ship docks at Civitavecchia, about an hour out. Athens has the Acropolis. When the ship stays overnight, or sails as late as 10 p.m., the evening in the city is open. A reserved dinner can be part of those extra nights.",
+    "Many stops end in the afternoon. Barcelona has an old city you can walk to from the pier. Rome has the Colosseum and museums. Civitavecchia is about an hour to an hour and a half away. Athens has the Acropolis, about 30 to 45 minutes from Piraeus. When the ship stays overnight, or sails as late as 10 p.m., the evening in the city is open. A reserved dinner can be part of those extra nights.",
   european:
     "A daytime stop leaves the afternoon short. Lisbon, the London ports, and the Mediterranean cities on these routes are easier with a night or two before or after, when all-aboard is not the deadline. An overnight, or a departure as late as 10 p.m., leaves the evening free. Tell us which cities you already know. We will put the extra nights on the ones you do not.",
   hawaii:
     "Inter-island days run longer than a Caribbean day, and Pride of America often stays into the evening. The day might be a beach, a drive, or the north shore. Pearl Harbor belongs to a night on Oahu before or after a California crossing, when you are not watching the gangway. A luau needs the ship still in port after dark.",
   bermuda:
-    "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is a bus or taxi ride to the south shore. Hamilton is a ferry or a bus. St. George's is farther east, another bus ride. An overnight is enough time for the beach, Hamilton, and St. George's. On a short stop, use the excursion sold by the ship if you want to leave the Dockyard. If that tour is late, the ship waits. Sailings from Boston, New York, or Baltimore include sea days each way.",
+    "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi. Hamilton is about 20 minutes by ferry. St. George's is about an hour by bus. An overnight is enough time for the beach, Hamilton, and St. George's. On a short stop, use the excursion sold by the ship if you want to leave the Dockyard. If that tour is late, the ship waits. Sailings from Boston, New York, or Baltimore include sea days each way.",
   "northern-europe":
-    "Baltic and Norway days in port often end in the afternoon. Bergen has the wharf. Copenhagen has the harbor and Nyhavn. Ocean ships for Amsterdam dock at IJmuiden, and the city has the Rijksmuseum. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for museums and neighborhoods.",
+    "Baltic and Norway days in port often end in the afternoon. Bergen has the wharf. Copenhagen has the harbor and Nyhavn. Ocean ships for Amsterdam dock at IJmuiden, about 30 to 45 minutes from the city, and Amsterdam has the Rijksmuseum. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for museums and neighborhoods.",
   "canada-new-england":
     "These are town days, and many end in the afternoon. Boston has the harbor and the old streets. Quebec has the upper town above the river. A late departure shows up more often on a fall foliage sailing than on a quick stop. Extra nights in Boston or Quebec let you stay out after dark.",
   river:
@@ -59,11 +59,11 @@ const ashoreNotes: Record<string, string> = {
 const ashoreLeads: Record<string, string> = {
   alaskan: "Juneau has the glacier and the harbor. Ketchikan has the creek and the totem poles. Skagway has the town under the pass. A glacier day has no pier.",
   caribbean: "Cozumel and the private islands have a beach and a swim. Nassau and the older towns have a walk from the pier. San Juan can hold a longer afternoon.",
-  mediterranean: "Barcelona has an old city you can walk to from the pier. Rome has the Colosseum. The ship docks at Civitavecchia, about an hour out. Athens has the Acropolis.",
+  mediterranean: "Barcelona has an old city you can walk to from the pier. Rome has the Colosseum. Civitavecchia is about an hour to an hour and a half away. Athens has the Acropolis, about 30 to 45 minutes from Piraeus.",
   european: "Lisbon, the London ports, and the Mediterranean cities on these routes are short if the ship leaves in the afternoon. Extra nights are how you see one of them properly.",
   hawaii: "These island days run longer than a Caribbean day. Pride of America often stays into the evening. A luau still needs the ship in port after dark.",
-  bermuda: "The ship is at the Dockyard. Horseshoe Bay is a ride to the south shore, Hamilton is a ferry or a bus, and St. George's is at the east end. If the ship stays overnight, there is time for all three.",
-  "northern-europe": "Bergen has the wharf. Copenhagen has Nyhavn. Ocean ships for Amsterdam dock at IJmuiden, and the city has the Rijksmuseum.",
+  bermuda: "The ship is at the Dockyard. Horseshoe Bay is about 30 minutes by taxi, Hamilton is about 20 minutes by ferry, and St. George's is about an hour by bus. If the ship stays overnight, there is time for all three.",
+  "northern-europe": "Bergen has the wharf. Copenhagen has Nyhavn. Ocean ships for Amsterdam dock at IJmuiden, about 30 to 45 minutes from the city, and Amsterdam has the Rijksmuseum.",
   "canada-new-england": "Boston has the harbor and the old streets. Quebec has the upper town above the river. A fall sailing is more likely to leave late than a short summer stop.",
   river: "The ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village.",
   expedition: "A landing day is not a city day. You may put on the gear, ride a Zodiac, walk a beach, and take pictures. Weather can cancel it.",
