@@ -107,7 +107,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "Short island days",
-        text: "A typical call is morning to late afternoon. One plan is enough: a beach, a reef, or a town. The ship is the rest of the day. Bermuda is the exception. Those sailings usually stay long enough to see the island, and the ships are smaller.",
+        text: "A typical day in port is morning to late afternoon. One plan is enough: a beach, a reef, or a town. The ship is the rest of the day. Bermuda is the exception. Those sailings usually stay long enough to see the island, and the ships are smaller.",
       },
       {
         title: "What these ships leave out",
@@ -156,7 +156,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "Time in port, and time on deck",
-        text: "Most calls last about six to eight hours. Juneau, Skagway, and Ketchikan are the walking ports. A glacier day may not include a landing at all. Bring a warm layer. The pools are open, and the weather does not always agree.",
+        text: "Most stops last about six to eight hours. Juneau, Skagway, and Ketchikan are the walking ports. A glacier day may not include a landing at all. Bring a warm layer. The pools are open, and the weather does not always agree.",
       },
       {
         title: "What these ships leave out",
@@ -208,7 +208,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "The port is a city",
-        text: "These are walking days. The useful call starts early, before the heat and the crowds. A large ship tendering into a small harbor spends the first hour just getting people ashore. Large ships do not embark in the Venice lagoon.",
+        text: "These are walking days. The useful day starts early, before the heat and the crowds. A large ship tendering into a small harbor spends the first hour just getting people ashore. Large ships do not embark in the Venice lagoon.",
       },
       {
         title: "What these ships leave out",
@@ -325,7 +325,7 @@ export const linePages: LinePage[] = [
         caption: "Ilma carries about 450 passengers. The marina is at the stern. Four Seasons I is smaller, about 220. SeaDream is about 112.",
       },
     ],
-    lede: "These are the smallest ships we book on the ocean. They call at harbors the large ships do not enter. Almost all of them are quoted.",
+    lede: "These are the smallest ships we book on the ocean. They stop in harbors the large ships do not enter. Almost all of them are quoted.",
     size: "A yacht in this group carries about 100 to 450 passengers. Windstar’s largest ships are about 340. Four Seasons I carries about 220.",
     rows: [
       { line: "Ritz-Carlton Yacht Collection", ships: "Evrima about 300. Ilma and Luminara about 450.", where: "Mediterranean, Caribbean, and a smaller set of other coasts. Drinks and gratuities are included. Most excursions are not.", fare: "A week is often $8,000–$20,000 a person. Quoted." },
@@ -348,7 +348,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "Harbors the large ships skip",
-        text: "These ships call in town, or at anchor close to it. Tahiti on Windstar, and small Mediterranean harbors, are the reason to book this size. You will know a large share of the other guests by the third day.",
+        text: "These ships stop in town, or at anchor close to it. Tahiti on Windstar, and small Mediterranean harbors, are the reason to book this size. You will know a large share of the other guests by the third day.",
       },
       {
         title: "What these ships leave out",

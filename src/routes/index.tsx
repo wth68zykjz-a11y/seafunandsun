@@ -70,7 +70,7 @@ const doors: Door[] = [
   {
     kicker: "Ships",
     title: "Cruises",
-    body: "Ocean and river cruises, with a page for each region, the usual routing, and the common ports of call.",
+    body: "Ocean and river cruises, with a page for each region, the usual routing, and the common stops along the way.",
     image: "/media/card-cruises.webp",
     mobileImage: "/media/card-cruises-sm.webp",
     alt: "Cruise ships docked along a pier in turquoise water",

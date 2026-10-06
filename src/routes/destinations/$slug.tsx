@@ -25,53 +25,53 @@ export const Route = createFileRoute("/destinations/$slug")({
 
 const ashoreNotes: Record<string, string> = {
   alaskan:
-    "Most Alaska calls end in the afternoon. Juneau is the glacier and the harbor. Ketchikan is the creek and the totem poles. Skagway is a short town under the pass. A glacier day has no pier at all. Some Juneau calls stay late enough for the evening in town. Nights in Seattle or Vancouver are not cut off by all-aboard. Salmon or crab can be lunch if you want it.",
+    "Most Alaska days in port end in the afternoon. Juneau is the glacier and the harbor. Ketchikan is the creek and the totem poles. Skagway is a short town under the pass. A glacier day has no pier at all. Some Juneau days stay late enough for the evening in town. Nights in Seattle or Vancouver are not cut off by all-aboard. Salmon or crab can be lunch if you want it.",
   caribbean:
-    "A typical island call ends in the afternoon. Cozumel and the private islands are a beach and a swim. Nassau and the older towns are a walk from the pier. San Juan can hold a longer afternoon, and an overnight is when the evening in town is open. Nights in Miami or Fort Lauderdale are for the city, not the gangway.",
+    "A typical island stop ends in the afternoon. Cozumel and the private islands are a beach and a swim. Nassau and the older towns are a walk from the pier. San Juan can hold a longer afternoon, and an overnight is when the evening in town is open. Nights in Miami or Fort Lauderdale are for the city, not the gangway.",
   mediterranean:
-    "Many calls end in the afternoon. Barcelona is a walk from the pier into the old city. Rome’s ship docks at Civitavecchia, about an hour from the center, so the Colosseum and a museum morning belong to nights before or after the cruise. Athens is the Acropolis when the call is long enough. When the ship stays overnight, or sails as late as 10 p.m., the evening in the city is open. A reserved dinner can be part of those extra nights.",
+    "Many stops end in the afternoon. Barcelona is a walk from the pier into the old city. Rome’s ship docks at Civitavecchia, about an hour from the center, so the Colosseum and a museum morning belong to nights before or after the cruise. Athens is the Acropolis when the day is long enough. When the ship stays overnight, or sails as late as 10 p.m., the evening in the city is open. A reserved dinner can be part of those extra nights.",
   european:
-    "A daytime call leaves the afternoon short. Lisbon, the London ports, and the Mediterranean cities on these routes are easier with a night or two before or after, when all-aboard is not the deadline. An overnight, or a departure as late as 10 p.m., leaves the evening free. Tell us which cities you already know. We will put the extra nights on the ones you do not.",
+    "A daytime stop leaves the afternoon short. Lisbon, the London ports, and the Mediterranean cities on these routes are easier with a night or two before or after, when all-aboard is not the deadline. An overnight, or a departure as late as 10 p.m., leaves the evening free. Tell us which cities you already know. We will put the extra nights on the ones you do not.",
   hawaii:
-    "Inter-island days run longer than a Caribbean call, and Pride of America often stays into the evening. The day might be a beach, a drive, or the north shore. Pearl Harbor belongs to a night on Oahu before or after a California crossing, when you are not watching the gangway. A luau needs the ship still in port after dark.",
+    "Inter-island days run longer than a Caribbean day, and Pride of America often stays into the evening. The day might be a beach, a drive, or the north shore. Pearl Harbor belongs to a night on Oahu before or after a California crossing, when you are not watching the gangway. A luau needs the ship still in port after dark.",
   bermuda:
-    "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is a bus or taxi ride to the south shore. Hamilton is a ferry or a bus. St. George's is farther east, another bus ride. An overnight is enough time for the beach, Hamilton, and St. George's. On a short call, use the excursion sold by the ship if you want to leave the Dockyard. If that tour is late, the ship waits. Sailings from Boston, New York, or Baltimore include sea days each way.",
+    "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is a bus or taxi ride to the south shore. Hamilton is a ferry or a bus. St. George's is farther east, another bus ride. An overnight is enough time for the beach, Hamilton, and St. George's. On a short stop, use the excursion sold by the ship if you want to leave the Dockyard. If that tour is late, the ship waits. Sailings from Boston, New York, or Baltimore include sea days each way.",
   "northern-europe":
-    "Baltic and Norway calls often end in the afternoon. Bergen is the wharf. Copenhagen is the harbor and Nyhavn. Ocean ships for Amsterdam dock at IJmuiden, so the Rijksmuseum takes more of the day than a pier in the center would. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for one museum and one neighborhood.",
+    "Baltic and Norway days in port often end in the afternoon. Bergen is the wharf. Copenhagen is the harbor and Nyhavn. Ocean ships for Amsterdam dock at IJmuiden, so the Rijksmuseum takes more of the day than a pier in the center would. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for one museum and one neighborhood.",
   "canada-new-england":
-    "These are town calls, and many end in the afternoon. Boston is the harbor and the old streets. Quebec is the upper town above the river. A late departure shows up more often on a fall foliage sailing than on a quick stop. Extra nights in Boston or Quebec let you stay out after dark.",
+    "These are town days, and many end in the afternoon. Boston is the harbor and the old streets. Quebec is the upper town above the river. A late departure shows up more often on a fall foliage sailing than on a quick stop. Extra nights in Boston or Quebec let you stay out after dark.",
   river:
     "A river ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village, and a bike ride is a common afternoon. A Mississippi sailing is a different river and a different set of towns. Extra nights in Budapest, Paris, Amsterdam, or New Orleans are for the parts of the city the ship only passes.",
   expedition:
     "An expedition day may never reach a town. You put on the boots and the parka the ship issues, ride a Zodiac to a beach or the ice, and walk the path the guides mark. You may stand near penguins or seals and take pictures from the distance they set. If the water is calm, some ships add a kayak or a canoe for people who asked. Weather can cancel the landing and leave you on deck. Ushuaia or Longyearbyen, before or after the voyage, is the town. The landing day is not.",
   asia:
-    "Singapore and Tokyo often keep the ship in port into the evening, and some sail as late as 10 p.m. A beach call is still only a few hours. Nights before or after in Singapore, Tokyo, or Hong Kong are for one district or a museum, not three cities in a day. A hawker stall, a sushi counter, or a reserved table can be part of that stay if you want it booked before you sail.",
+    "Singapore and Tokyo often keep the ship in port into the evening, and some sail as late as 10 p.m. A beach stop is still only a few hours. Nights before or after in Singapore, Tokyo, or Hong Kong are for one district or a museum, not three cities in a day. A hawker stall, a sushi counter, or a reserved table can be part of that stay if you want it booked before you sail.",
   "south-america":
-    "Rio is the harbor and the hills. Buenos Aires is a walking city, and the evening starts late, which lines up when the ship stays overnight or sails late. A daytime call is the waterfront and one neighborhood. Extra nights are when you can stay out. A grill can be part of those nights if you want a table held.",
+    "Rio is the harbor and the hills. Buenos Aires is a walking city, and the evening starts late, which lines up when the ship stays overnight or sails late. A daytime stop is the waterfront and one neighborhood. Extra nights are when you can stay out. A grill can be part of those nights if you want a table held.",
   world:
-    "A world cruise spends many days at sea. A short call is a walk around the harbor. An overnight is the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights. The ship is not waiting then.",
+    "A world cruise spends many days at sea. A short stop is a walk around the harbor. An overnight is the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights. The ship is not waiting then.",
   "australia-new-zealand":
-    "A Sydney call can cover the harbor and the Opera House. Auckland is the waterfront, and a volcanic cone if the call is long. The evening in town depends on a late sailaway or an overnight, which some itineraries have. Brisbane and Melbourne turn fewer ships. Extra nights in Sydney or Auckland are for the city after the ship has sailed.",
+    "A day in Sydney can cover the harbor and the Opera House. Auckland is the waterfront, and a volcanic cone if the day is long. The evening in town depends on a late sailaway or an overnight, which some itineraries have. Brisbane and Melbourne turn fewer ships. Extra nights in Sydney or Auckland are for the city after the ship has sailed.",
   "panama-canal":
-    "The canal day is spent on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. Cartagena is the city call on a lot of these routes. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego, when the ship is not counting you back.",
+    "The canal day is spent on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. Cartagena is the city stop on a lot of these routes. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego, when the ship is not counting you back.",
 };
 
 const ashoreLeads: Record<string, string> = {
   alaskan: "Juneau is the glacier and the harbor. Ketchikan is the creek and the totem poles. Skagway is a short town under the pass. A glacier day has no pier.",
   caribbean: "Cozumel and the private islands are a beach and a swim. Nassau and the older towns are a walk from the pier. San Juan can hold a longer afternoon.",
-  mediterranean: "Barcelona is a walk into the old city. Rome’s ship docks at Civitavecchia, about an hour out. Athens is the Acropolis when the call is long enough.",
+  mediterranean: "Barcelona is a walk into the old city. Rome’s ship docks at Civitavecchia, about an hour out. Athens is the Acropolis when the day is long enough.",
   european: "Lisbon, the London ports, and the Mediterranean cities on these routes are short if the ship leaves in the afternoon. Extra nights are how you see one of them properly.",
-  hawaii: "These island calls run longer than a Caribbean stop. Pride of America often stays into the evening. A luau still needs the ship in port after dark.",
+  hawaii: "These island days run longer than a Caribbean day. Pride of America often stays into the evening. A luau still needs the ship in port after dark.",
   bermuda: "The ship is at the Dockyard. Horseshoe Bay is a ride to the south shore, Hamilton is a ferry or a bus, and St. George's is at the east end. If the ship stays overnight, there is time for all three.",
-  "northern-europe": "Bergen is the wharf. Copenhagen is Nyhavn if the call is long enough. Ocean ships for Amsterdam dock at IJmuiden, so the museum day is longer than it looks.",
+  "northern-europe": "Bergen is the wharf. Copenhagen is Nyhavn if the day is long enough. Ocean ships for Amsterdam dock at IJmuiden, so the museum day is longer than it looks.",
   "canada-new-england": "Boston is the harbor and the old streets. Quebec is the upper town above the river. A fall sailing is more likely to leave late than a short summer stop.",
   river: "The ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village.",
   expedition: "A landing day is not a city day. You may put on the gear, ride a Zodiac, walk a beach, and take pictures. Weather can cancel it.",
-  asia: "Singapore and Tokyo often keep the ship in port into the evening. A beach call is still only a few hours.",
+  asia: "Singapore and Tokyo often keep the ship in port into the evening. A beach stop is still only a few hours.",
   "south-america": "Rio is the harbor and the hills. Buenos Aires is a walking city, and the evening starts late, which only helps if the ship stays.",
-  world: "A world cruise has more sea days than port days. A short call is a walk around the harbor. An overnight is the evening in that city.",
-  "australia-new-zealand": "Sydney can cover the harbor and the Opera House. Auckland is the waterfront, and a volcanic cone if the call is long.",
-  "panama-canal": "The canal day is spent on deck. You are not ashore unless the itinerary lists a dock. Cartagena is the city call on a lot of these routes.",
+  world: "A world cruise has more sea days than port days. A short stop is a walk around the harbor. An overnight is the evening in that city.",
+  "australia-new-zealand": "Sydney can cover the harbor and the Opera House. Auckland is the waterfront, and a volcanic cone if the day is long.",
+  "panama-canal": "The canal day is spent on deck. You are not ashore unless the itinerary lists a dock. Cartagena is the city stop on a lot of these routes.",
 };
 
 function DestinationPage() {
@@ -208,7 +208,7 @@ export function DestinationArticle({
                   </div>
                   <div>
                     <dt className="font-medium text-tide">What you see</dt>
-                    <dd>Both sets of locks, the lake, and the cut. Cartagena is a common call, and the Pacific side often adds a Mexican or Central American port.</dd>
+                    <dd>Both sets of locks, the lake, and the cut. Cartagena is a common stop, and the Pacific side often adds a Mexican or Central American port.</dd>
                   </div>
                   <div>
                     <dt className="font-medium text-tide">Cruise fare</dt>
@@ -237,7 +237,7 @@ export function DestinationArticle({
                   </div>
                   <div>
                     <dt className="font-medium text-tide">What you see</dt>
-                    <dd>The Caribbean locks and the lake. You do not pass the Culebra Cut or the Pacific locks. The other days are often Cartagena or a Caribbean call.</dd>
+                    <dd>The Caribbean locks and the lake. You do not pass the Culebra Cut or the Pacific locks. The other days are often Cartagena or a Caribbean stop.</dd>
                   </div>
                   <div>
                     <dt className="font-medium text-tide">Cruise fare</dt>

@@ -60,7 +60,7 @@ export const liveOffers = [
   },
   {
     title: "Alexandria from Port Said",
-    detail: "A private shore day, Best of Alexandria, for sailings that call at Port Said. Group size and timing sit with the operator.",
+    detail: "A private shore day, Best of Alexandria, for sailings that stop at Port Said. Group size and timing sit with the operator.",
     href: "https://tap13.myagentgenie.com/seafunandsun/offer/private-best-of-alexandria-from-port-said/",
     tag: "Shore trip",
   },

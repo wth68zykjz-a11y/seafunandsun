@@ -55,7 +55,7 @@ export function explainPromotion(title: string): string {
     return "Explora Journeys is a luxury cruise line. The staterooms are suites, and the fare usually includes drinks, Wi-Fi, and gratuities.";
   }
   if (/alexandria|port said/i.test(t)) {
-    return "A private day in Alexandria for ships that call at Port Said.";
+    return "A private day in Alexandria for ships that stop at Port Said.";
   }
   const pct = t.match(/(\d+)\s*%\s*off/i);
   if (pct) return `The price is reduced by as much as ${pct[1]}% on the trips this offer covers.`;
