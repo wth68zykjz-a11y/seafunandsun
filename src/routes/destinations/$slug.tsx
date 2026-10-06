@@ -57,21 +57,21 @@ const ashoreNotes: Record<string, string> = {
 };
 
 const ashoreLeads: Record<string, string> = {
-  alaskan: "You are ashore only while the ship is alongside. The notes below are Juneau, Ketchikan, Skagway, and the glacier days with no pier.",
-  caribbean: "You are ashore only while the ship is alongside. The notes below separate a beach call from a longer stop such as San Juan.",
-  mediterranean: "You are ashore only while the ship is alongside. The notes below are Barcelona, Rome, and Athens, including the calls that need an extra night.",
-  european: "You are ashore only while the ship is alongside. The notes below are the cities. Extra nights are for seeing one of them without a deadline.",
-  hawaii: "You are ashore only while the ship is alongside. These island calls run long. The notes below say what still needs a reservation.",
-  bermuda: "You are ashore only while the ship is alongside. An overnight in Hamilton is a different day from a short beach call.",
-  "northern-europe": "You are ashore only while the ship is alongside. The notes below are Bergen, Copenhagen, Amsterdam, and the other northern calls.",
-  "canada-new-england": "You are ashore only while the ship is alongside. The notes below are the New England and Canada towns on a fall sailing.",
-  river: "You step off into town. The notes below are the rivers, and the evenings the ship stays alongside.",
-  expedition: "A landing day is not a city day. You may put on gear, ride a Zodiac, walk a beach, and take pictures. Weather can cancel it.",
-  asia: "You are ashore only while the ship is alongside. The notes below separate a long Singapore or Tokyo call from a short beach stop.",
-  "south-america": "You are ashore only while the ship is alongside. The notes below are Rio, Buenos Aires, and the calls that end before dark.",
-  world: "Ports are fewer than the sea days. The notes below separate a short harbor walk from an overnight.",
-  "australia-new-zealand": "You are ashore only while the ship is alongside. The notes below are Sydney, Auckland, and the shorter coast calls.",
-  "panama-canal": "The canal day is not a port day. The notes below separate the transit from the calls that do have a pier.",
+  alaskan: "Juneau is the glacier and the harbor. Ketchikan is the creek and the totem poles. Skagway is a short town under the pass. A glacier day has no pier.",
+  caribbean: "Cozumel and the private islands are a beach and a swim. Nassau and the older towns are a walk from the pier. San Juan can hold a longer afternoon.",
+  mediterranean: "Barcelona is a walk into the old city. Rome’s ship docks at Civitavecchia, about an hour out. Athens is the Acropolis when the call is long enough.",
+  european: "Lisbon, the London ports, and the Mediterranean cities on these routes are short if the ship leaves in the afternoon. Extra nights are how you see one of them properly.",
+  hawaii: "These island calls run longer than a Caribbean stop. Pride of America often stays into the evening. A luau still needs the ship in port after dark.",
+  bermuda: "An overnight in Hamilton is a different day from a short beach call. The pink sand needs the longer one.",
+  "northern-europe": "Bergen is the wharf. Copenhagen is Nyhavn if the call is long enough. Ocean ships for Amsterdam dock at IJmuiden, so the museum day is longer than it looks.",
+  "canada-new-england": "Boston is the harbor and the old streets. Quebec is the upper town above the river. A fall sailing is more likely to leave late than a short summer stop.",
+  river: "The ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village.",
+  expedition: "A landing day is not a city day. You may put on the gear, ride a Zodiac, walk a beach, and take pictures. Weather can cancel it.",
+  asia: "Singapore and Tokyo often keep the ship in port into the evening. A beach call is still only a few hours.",
+  "south-america": "Rio is the harbor and the hills. Buenos Aires is a walking city, and the evening starts late, which only helps if the ship stays.",
+  world: "A world cruise has more sea days than port days. A short call is a walk around the harbor. An overnight is the evening in that city.",
+  "australia-new-zealand": "Sydney can cover the harbor and the Opera House. Auckland is the waterfront, and a volcanic cone if the call is long.",
+  "panama-canal": "The canal day is spent on deck. You are not ashore unless the itinerary lists a dock. Cartagena is the city call on a lot of these routes.",
 };
 
 function DestinationPage() {

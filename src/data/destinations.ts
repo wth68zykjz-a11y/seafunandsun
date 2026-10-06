@@ -34,10 +34,10 @@ export const destinations: Destination[] = [
     card: "Glaciers & wildlife",
     image: "/media/alaskan.jpg",
     alt: "A tidewater glacier meeting dark water in a steep fjord",
-    lede: "Most people take one Alaska cruise, so choose the month with the same care as the ship. Ice is earlier in the season, wildlife is later, and the evenings stay light through the summer.",
+    lede: "Most people take one Alaska cruise, so the month matters as much as the ship. The glaciers are larger in spring. The salmon and the bears show up later. The evenings stay light all summer.",
     paragraphs: [
       "Most Alaska sailings run seven to fourteen nights round trip from Seattle, or one way between Seattle or Vancouver and Seward or Whittier. Royal Caribbean, Carnival, Norwegian, Holland America, Princess, and Celebrity sail the Inside Passage. Holland America and Princess use Vancouver often, including one-way Gulf sailings. Cunard does in some seasons, not every year. We compare them side by side, with no obligation to any one line.",
-      "The ports are the reason for the trip: Juneau, Seward, Ketchikan, Skagway, and the fjords between them. The glacier walls are close enough to hear, and much of the wildlife is not something you will see from a road.",
+      "The reason to go is the coast: Juneau, Ketchikan, Skagway, Seward, and the fjords between them. You can hear a glacier calve. A lot of the wildlife is not something you will see from a road.",
     ],
     lists: [
       {
@@ -100,7 +100,7 @@ export const destinations: Destination[] = [
     paragraphs: [
       "Round-trip sailings run seven to eleven nights from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
       "Northeast departures mean more sea days. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port. We will say how many sea days are on the one you are looking at before you book it.",
-      "Ports range from a beach day to a town with a culture of its own, so the mix of stops does much of the work. Tell us the dates and who is traveling, and we will set out the sailings that fit.",
+      "A beach day and a town with its own history are different calls. Cozumel is not Antigua, and a private island is not San Juan. That mix is what makes one week feel different from another.",
     ],
     lists: [
       {
@@ -165,7 +165,7 @@ export const destinations: Destination[] = [
     card: "Ports & culture",
     image: "/media/mediterranean.jpg",
     alt: "A whitewashed harbor town above a small Mediterranean port",
-    lede: "The coast changes most mornings. Choose the ship for the ports you want, not for the brochure cover.",
+    lede: "The coast is different most mornings. Pick the ship for the ports you want, not for the photograph on the cover.",
     paragraphs: [
       "Sailings run seven to fourteen nights from Barcelona, Civitavecchia for Rome, and Piraeus for Athens. Royal Caribbean, MSC, Norwegian, Celebrity, and Cunard all sail the region, and the luxury lines sail it too. A Venice call is usually Ravenna or Trieste, not a dock in the lagoon. We compare the routes, the ports, and what the fare includes, then match the ship to how you like to travel.",
       "Greece and the Adriatic pull north. Spain and the Riviera pull west. Tell us which coast you want, and we will start from there.",
@@ -190,11 +190,11 @@ export const destinations: Destination[] = [
           "A long-table lunch in Amalfi",
           "In Athens, you can see the Acropolis, then the museum next door or the Ancient Agora. Stay at Hotel Grande Bretagne before or after the cruise if you want the rest of the city.",
           "Ships for Venice dock in Ravenna or Trieste. On a port call you can see St. Mark’s and the Doge’s Palace. Stay at The Gritti Palace, on the Grand Canal, before or after the cruise if you want the lagoon rather than a highway day.",
-          "From Civitavecchia, you can see St. Peter's and the Vatican Museums, or the Colosseum and the Forum. You can squeeze in lunch if the ship leaves later, stays overnight, or sails in the evening. If you want time for the city and the country around it, stay at Rome Cavalieri, a Waldorf Astoria hotel, before or after the cruise.",
-          "From Livorno, you can see the Duomo and the Baptistery in Florence, or the Uffizi. You cannot do both, and you cannot add Pisa on the same day. You can squeeze in lunch if the ship leaves later, stays overnight, or sails in the evening. Stay at Belmond Villa San Michele in Fiesole, above the city, before or after the cruise.",
+          "From Civitavecchia, St. Peter’s and the Vatican Museums are one morning. The Colosseum and the Forum are another. Lunch fits only if the ship leaves late, stays overnight, or sails in the evening. For the city and the country around it, stay at Rome Cavalieri, a Waldorf Astoria hotel, before or after the cruise.",
+          "From Livorno, Florence is the Duomo and the Baptistery, or the Uffizi. Not both, and not Pisa on the same day. Lunch fits only if the ship leaves late. Belmond Villa San Michele, in Fiesole above the city, is the stay if you want Florence before or after the cruise.",
           "In Dubrovnik, you can walk the city walls. Stay at Hotel Excelsior, which looks at the old town, before or after the cruise if you want the coast rather than one afternoon.",
           "A lavender or olive-oil stop on the French coast",
-          "In Barcelona, go to La Boqueria in the morning for fruit and a counter lunch if the ship leaves later, stays overnight, or sails in the evening. Stay at Hotel Arts, on the waterfront, before or after the cruise if you want the city and the coast.",
+          "In Barcelona, La Boqueria in the morning can include a counter lunch if the ship leaves late or stays overnight. Hotel Arts, on the waterfront, is the stay if you want the city and the coast before or after the cruise.",
         ],
       },
     ],
@@ -234,7 +234,7 @@ export const destinations: Destination[] = [
     card: "Cities by sea",
     image: "/media/european.jpg",
     alt: "A historic canal and stone bridge in soft morning light",
-    lede: "A European cruise puts several cities on one ticket. If you have already been to a port, we leave it off the routing.",
+    lede: "One sailing can cover several cities. If you have already been somewhere, leave it off and spend the days somewhere new.",
     paragraphs: [
       "Sailings run seven to fourteen nights from Barcelona, Rome, Lisbon, and London. Longer itineraries work up the Adriatic and back toward the Mediterranean. Cunard, MSC, Celebrity, Royal Caribbean, and the all-inclusive lines all sail Europe. We compare them, and we build the trip around the cities you want.",
       "The usual mistake in Europe is trying to see too much. Tell us which cities you have already visited, and we will build the sailing around the ones you have not.",
@@ -260,9 +260,9 @@ export const destinations: Destination[] = [
           "The Alcázar gardens and a flamenco evening in Seville",
           "Pompeii — the city that froze in place",
           "Tuscany — hills, vineyards, and a village lunch",
-          "From Le Havre, you can see the Louvre, Notre-Dame, or the Eiffel Tower. You cannot see all three on a port call. You can squeeze in lunch if the ship leaves later, stays overnight, or sails in the evening. To see Paris properly, stay at Shangri-La Paris, which looks toward the tower, before or after the cruise.",
+          "From Le Havre, the Louvre, Notre-Dame, or the Eiffel Tower is one stop, not all three. Lunch fits only if the ship leaves late. Shangri-La Paris, looking toward the tower, is the stay if you want Paris before or after the cruise.",
           "From Southampton, you can see Westminster Abbey or the Tower of London. You will not have time for both. The Savoy is the hotel if you want to stay in the city.",
-          "In Lisbon, you can go to Time Out Market if the ship leaves later, stays overnight, or sails in the evening. Choose Belém or Alfama. You will not have time for both. Stay at the Four Seasons Hotel Ritz if you want to see the city properly.",
+          "In Lisbon, choose Belém or Alfama. You will not have time for both. Time Out Market works if the ship leaves late. The Four Seasons Hotel Ritz is the stay if you want the city before or after the cruise.",
         ],
       },
     ],
@@ -358,7 +358,7 @@ export const destinations: Destination[] = [
     card: "Pink sand beaches",
     image: "/media/bermuda.jpg",
     alt: "Pink sand and clear shallow water on an empty Bermuda beach",
-    lede: "The beach is close to the pier only when the ship stays long enough to use it. Some Bermuda sailings do. A short call does not.",
+    lede: "Bermuda is a beach day only if the ship stays long enough. An overnight does. A five-hour call does not.",
     paragraphs: [
       "Most Bermuda sailings run about seven nights from Boston, and also from New York and from Baltimore in Maryland. Many stay overnight. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly call. We will show you the difference between a short stop and a full day ashore.",
       "A Boston departure still has a sea day each way. That is shorter than a Caribbean sailing from New York, but the ocean is part of the week. The overnight in Bermuda is what makes those sea days worth it.",
@@ -368,12 +368,12 @@ export const destinations: Destination[] = [
       {
         heading: "In port",
         items: [
-          "Horseshoe Bay — the pink sand, from the beach",
-          "Snorkel beside the ship at anchor. You can see the hull from the water.",
-          "Downtown Hamilton — the shops and the waterfront",
-          "Gibbs Hill — the lighthouse, with the airport below",
-          "Take a ferry across Hamilton Harbour. This is not a New England riverboat.",
-          "A rum and pineapple plantation tour",
+          "Horseshoe Bay, for the pink sand",
+          "A swim from the beach, close enough that you can see the ship",
+          "Hamilton, for the shops and the waterfront",
+          "Gibbs Hill lighthouse, with the airport below",
+          "The ferry across Hamilton Harbour",
+          "A rum and pineapple stop",
         ],
       },
       {
@@ -414,7 +414,7 @@ export const destinations: Destination[] = [
     card: "Fjords & Iceland",
     image: "/media/northern-europe.jpg",
     alt: "A steep fjord with a thin waterfall and low clouds",
-    lede: "Fjords, ice, and midnight sun. On these routes the size of the ship changes the day more than the brochure does.",
+    lede: "Fjords, ice, and the midnight sun. A ship of 200 guests and a ship of 2,500 do not have the same day in a narrow fjord.",
     paragraphs: [
       "Holland America, Princess, Norwegian, Celebrity, MSC, Viking, and Cunard sail the fjords, Iceland, and the Baltic from Amsterdam, Copenhagen, Southampton, and the Norwegian ports. Hapag-Lloyd and the expedition lines go farther north, toward Svalbard and Greenland. A fjord looks different from a ship of 2,500 guests than from a ship of 200.",
       "Tell us whether you want the well-known fjords or ice farther north, and we will choose the sailing that matches that.",
@@ -436,7 +436,7 @@ export const destinations: Destination[] = [
           "Fjord days with waterfall walks",
           "Reykjavik and a whale watch",
           "The red fishing cabins of the Lofotens",
-          "In Copenhagen, you can see Nyhavn or Rosenborg. You will not have time for both. Hotel d’Angleterre is the hotel if you are staying. You can squeeze in lunch if the ship leaves later, stays overnight, or sails in the evening.",
+          "In Copenhagen, Nyhavn or Rosenborg, not both, on a daytime call. Lunch fits if the ship leaves late or stays overnight. Hotel d’Angleterre is the stay if you want the city before or after the cruise.",
           "Stockholm: Gamla Stan or the Vasa Museum. Grand Hôtel looks across the water at the palace.",
           "The northern lights, when the season and the sky cooperate",
         ],
@@ -478,10 +478,10 @@ export const destinations: Destination[] = [
     card: "Fall foliage",
     image: "/media/new-england.jpg",
     alt: "A white lighthouse and autumn trees on a rocky New England point",
-    lede: "The terminals are a short drive from much of the Northeast, and the fall color along this coast is hard to see as well by car.",
+    lede: "Boston and New York are easy starts if you live in the Northeast. In October, the color along this coast is the reason to go.",
     paragraphs: [
       "Most sailings run three to eleven nights from Boston, with longer departures from New York. Royal Caribbean, Carnival, Norwegian, Celebrity, and Princess all sail the region. We compare them directly, without a preference for any one line.",
-      "The ports carry the trip: Cape Cod, Halifax, Québec, and Bermuda on some loops. Much of the scenery is close enough to enjoy from the deck. The better days are still spent ashore.",
+      "The ports are the trip: Cape Cod, Halifax, Quebec, and Bermuda on some loops. You can see a lot from the deck. The better days are still the ones ashore.",
     ],
     lists: [
       {
@@ -541,11 +541,10 @@ export const destinations: Destination[] = [
     card: "European and American rivers",
     image: "/media/river.jpg",
     alt: "A riverside town and vineyards at dusk",
-    lede: "You follow one river and walk into the towns. Compare the ship, the cabin, and what the fare includes each day.",
+    lede: "You follow one river and walk off into the towns. The ship, the cabin, and what the fare includes are the comparison.",
     paragraphs: [
-      "On the Danube, the Rhine, the Seine, and the Douro, we compare Viking, AmaWaterways, Avalon, Uniworld, and Scenic. American Cruise Lines does not sail those rivers. It is a U.S. line: the Mississippi, the Ohio, the Columbia and Snake, and the Great Lakes. Viking also sails the Mississippi. Windstar is an ocean line. It does not sail these rivers.",
-      "Tell us the river and the season, and we will set the ships next to one another.",
-      "We also book American rivers. American Cruise Lines runs U.S.-flagged ships on the Mississippi, the Ohio, the Columbia and Snake, and the Great Lakes. Viking sails the Mississippi. Neither of those is a substitute for a European river ship, or the other way around.",
+      "On the Danube, the Rhine, the Seine, and the Douro, the usual lines are Viking, AmaWaterways, Avalon, Uniworld, and Scenic. American Cruise Lines does not sail those rivers. It is a U.S. line: the Mississippi, the Ohio, the Columbia and Snake, and the Great Lakes. Viking also sails the Mississippi. Windstar is an ocean line and does not sail any of these.",
+      "A Danube ship and a Mississippi ship are not substitutes for each other. Name the river and the season, and the quote puts the ships that actually sail it next to one another.",
     ],
     lists: [
       {
@@ -568,7 +567,7 @@ export const destinations: Destination[] = [
           "A full port day with a guided walk included",
           "Cycling or a bike tour on quiet roads",
           "A wine or olive-oil stop the ship arranges",
-          "Evenings on deck, while the river provides the scenery",
+          "Evenings on deck, with the river as the view",
           "Excursions that fit in one day, not a whole weekend",
         ],
       },
@@ -682,7 +681,7 @@ export const destinations: Destination[] = [
     card: "Temples & cities",
     image: "/media/asia.jpg",
     alt: "Hong Kong and Victoria Harbour at dusk",
-    lede: "Singapore and Tokyo are the usual starts, with long days at sea on the South China Sea. Plan the flights with the cruise, not after it.",
+    lede: "Singapore and Tokyo are the usual starts. The South China Sea adds long days at sea, so the flights belong in the same booking as the cruise.",
     paragraphs: [
       "Princess, Holland America, Celebrity, Royal Caribbean, and Norwegian sail Asia from Singapore, Tokyo, and Hong Kong. Cunard comes through on longer voyages. It is not a weekly Asia ship. We compare the ones that are actually scheduled, and we match the routing to the time you have.",
       "The ports are unlike a standard Caribbean or Mediterranean list. Tell us the dates, and we will shape the trip around the ones you care about.",
@@ -749,7 +748,7 @@ export const destinations: Destination[] = [
     card: "Rio & Cape Horn",
     image: "/media/south-america.jpg",
     alt: "A Patagonian fjord with a distant glacier",
-    lede: "Rio, the Brazilian coast, and the southern fjords. Compare the ship and the port list before you pick a week.",
+    lede: "Rio and the Brazilian coast are one trip. The southern fjords and Cape Horn are another. The ship and the port list should match the one you want.",
     paragraphs: [
       "Many current sailings begin in Rio de Janeiro and run the Brazilian coast. The older pattern was an Atlantic crossing from New York. Carnival, Norwegian, Holland America, and Cunard still touch the region, and the routes into the Patagonian fjords belong mainly to the expedition lines. We compare the lines that are actually scheduled, not the ones that sailed it years ago.",
       "Tell us whether you want the coast and the cities or the glaciers, and we will build the trip around the ports that match.",
@@ -811,7 +810,7 @@ export const destinations: Destination[] = [
     card: "Grand voyages",
     image: "/media/world.jpg",
     alt: "A large cruise ship crossing open ocean",
-    lede: "These voyages run about 70 to 120 days and call at ports a shorter cruise cannot combine. We go through the calendar and the fare before you give a season to one ship.",
+    lede: "These voyages run about 70 to 120 days and call at ports a shorter cruise cannot combine. The calendar and the fare both need a look before you give a season to one ship.",
     paragraphs: [
       "Cunard, Regent, Silversea, and Holland America run full and partial world cruises. Other large lines run the transatlantic crossings and the season-long loops. We compare the routes, the port lists, and the inclusions. On a ninety-day voyage, what the fare includes is a larger question than it is on a week.",
       "Tell us the months you can be away and the places you do not want to miss. We will show you the sailings that satisfy both.",
