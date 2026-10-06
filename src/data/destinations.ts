@@ -694,7 +694,7 @@ export const destinations: Destination[] = [
           "Singapore — the marina at night and Gardens by the Bay",
           "Tokyo, Yokohama & Tokyo Bay",
           "Shanghai & Hong Kong",
-          "Phuket & the South China Sea",
+          "Phuket — a beach, Old Town, or a boat toward Phi Phi. Not all three, and the ship does not dock on the sand",
           "Saigon, the Mekong & Halong Bay",
           "Busan, Jeju & the Korean coast",
           "Trans-Pacific crossings with a stop at Honolulu or Fiji",
@@ -722,7 +722,7 @@ export const destinations: Destination[] = [
         season: "December–March",
         ship: "Princess, Holland America, Celebrity, or a luxury peer",
         path: "Singapore round trip or open-jaw",
-        ports: ["Phuket or a Thai coast stop", "Vietnam", "A sea day across the South China Sea"],
+        ports: ["Phuket", "Vietnam", "A sea day across the South China Sea"],
       },
       {
         title: "Japan",
