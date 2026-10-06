@@ -97,10 +97,44 @@ async function readFeed(url: string, source: (typeof FEEDS)[number][1]) {
   return parseOfferHtml(await response.text(), source);
 }
 
+let windstarJob: Promise<string> | null = null;
+
+function plainPage(html: string) {
+  return decode(html.replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<style[\s\S]*?<\/style>/gi, " "));
+}
+
+function windstarFromLine() {
+  if (!windstarJob) {
+    windstarJob = (async () => {
+      try {
+        const response = await fetch("https://www.windstarcruises.com/specials/yes/", {
+          headers: {
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+            accept: "text/html",
+          },
+          signal: AbortSignal.timeout(12000),
+        });
+        if (!response.ok) return "";
+        const text = plainPage(await response.text());
+        const offer = text.match(/Book by [^.]{10,240}\./i)?.[0];
+        const loyalty = text.match(/As a returning guest[^.]+\./i)?.[0];
+        return offer ? `Windstar. ${offer}${loyalty ? ` ${loyalty}` : ""}` : "";
+      } catch {
+        return "";
+      }
+    })();
+  }
+  return windstarJob;
+}
+
 async function enrichOffer(offer: SupplierOffer): Promise<SupplierOffer> {
   const named = /princess|celebrity|norwegian|virgin|regent|windstar|riviera|amawater|cunard|viking|carnival|royal caribbean|msc|disney|holland america|star clipper|palladium|waldorf|conrad|cie tours|globus|united vacation/i;
   const deal = /%|\$|free |upgrade|credit|saving/i;
   if (named.test(offer.title) && deal.test(offer.title)) return offer;
+  if (/windstar/i.test(offer.title)) {
+    const fromLine = await windstarFromLine();
+    if (fromLine) return { ...offer, line: "Windstar", detail: fromLine };
+  }
   try {
     const response = await fetch(offer.href, {
       headers: { "user-agent": "SeaFunAndSun/1.0 (offer page)" },
@@ -138,6 +172,7 @@ export async function loadSupplierOffers(): Promise<OfferFeed> {
       }
     }
     if (offers.length === 0) throw new Error("No offers");
+    windstarJob = null;
     const enriched = await Promise.all(offers.map((offer) => enrichOffer(offer)));
     const feed: OfferFeed = { offers: enriched, updatedAt: new Date().toISOString(), live: true };
     cache = { at: now, feed };
