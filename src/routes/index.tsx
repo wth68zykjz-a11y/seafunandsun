@@ -313,7 +313,7 @@ function Home() {
                   </dl>
                 </div>
               </div>
-              <LogoMark className="mx-auto hidden w-44 lg:block lg:w-56" />
+              <LogoMark className="hero-logo mx-auto hidden w-44 lg:block lg:w-56" />
             </div>
           </div>
         </section>

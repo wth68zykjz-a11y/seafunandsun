@@ -15,7 +15,7 @@ const nav = [
 
 export function LogoMark({ className }: { className: string }) {
   return (
-    <svg viewBox="0 0 120 120" className={className} fill="none" aria-hidden="true">
+    <svg viewBox="0 0 120 120" width="36" height="36" className={className} fill="none" aria-hidden="true">
       <circle cx="60" cy="60" r="52" stroke="#E4C56A" strokeWidth="1.5" />
       <g stroke="#E4C56A" strokeLinecap="round" strokeWidth="1.6">
         <path d="M75.5 41.9L94.8 36.7" />
@@ -43,7 +43,7 @@ function Wordmark({ tone = "ink" }: { tone?: "ink" | "foam" }) {
   return (
     <Link to="/" className="flex min-w-0 items-center gap-2 sm:gap-3">
       <span className="grid size-9 shrink-0 place-items-center sm:size-11">
-        <LogoMark className="size-9 sm:size-11" />
+        <LogoMark className="logo-mark size-9 sm:size-11" />
       </span>
       <span className="min-w-0 leading-none">
         <span className={`block font-logo text-[0.78rem] tracking-[0.06em] sm:text-[1.05rem] sm:tracking-[0.1em] ${onDark ? "text-foam" : "text-ink"}`}>
