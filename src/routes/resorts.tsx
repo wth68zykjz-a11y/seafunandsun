@@ -9,7 +9,7 @@ export const Route = createFileRoute("/resorts")({
     pageHead({
       title: "All-inclusive resorts",
       description:
-        "All-inclusive beach resorts and Disney park stays from Sea Fun & Sun. The quote names the room and can include flights, transfers, and excursions.",
+        "All-inclusive beach resorts and Disney park stays from Sea Fun & Sun. The quote says which room you are booking, such as a garden view or a suite, and it can include flights, transfers, and excursions.",
       path: "/resorts",
       image: "/media/resort-villas.jpg",
     }),
@@ -83,7 +83,7 @@ function ResortsPage() {
           <p className="text-sm font-medium text-tide">All-inclusive resorts</p>
           <h1 className="mt-2 font-display text-3xl sm:text-5xl">The rate includes the meals.</h1>
           <p className="mt-4 text-lg text-mute">
-            The quote names the room, and it can also include the flights, the transfer, and the excursions. We look at what the rate covers, which airport you fly from, and whether the property fits the people traveling.
+            The quote says which room you are booking, such as a garden view or an ocean-view suite, and it can also include the flights, the transfer, and the excursions. We look at what the rate covers, which airport you fly from, and whether the property fits the people traveling.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Link
