@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-logo: "Marcellus", Georgia, serif;
+  --font-sans: "Outfit", "Avenir Next", system-ui, sans-serif;
+
+  --color-paper: #e6f0ec;
+  --color-foam: #f7fbf9;
+  --color-ink: #122033;
+  --color-mute: #3e5368;
+  --color-line: #c5d6cf;
+  --color-tide: #1e4d7b;
+  --color-tide-deep: #16365c;
+  --color-sea: #0c2340;
+  --color-sea-2: #16365a;
+  --color-gold: #d4a24a;
+  --color-gold-deep: #b8862e;
+  --color-gold-ink: #9a6210;
+  --color-coral: #c24b36;
+  --color-coral-deep: #a33d2c;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+
+  --shadow-card: 0 16px 40px rgb(12 35 64 / 0.12);
+  --aspect-photo: 3 / 2;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-paper);
+    color: var(--color-ink);
+    line-height: 1.5;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: #d5e6df;
+    color: var(--color-ink);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

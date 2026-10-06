@@ -1,0 +1,57 @@
+# Sea Fun & Sun — public pages are open to search and AI crawlers.
+# The request log is private.
+# Facts for assistants: https://seafunandsun.com/llms.txt
+
+User-agent: *
+Allow: /
+Disallow: /desk
+
+User-agent: GPTBot
+Allow: /
+Disallow: /desk
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /desk
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /desk
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /desk
+
+User-agent: Claude-User
+Allow: /
+Disallow: /desk
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /desk
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /desk
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /desk
+
+User-agent: Bingbot
+Allow: /
+Disallow: /desk
+
+User-agent: GrokBot
+Allow: /
+Disallow: /desk
+
+User-agent: xAI-SearchBot
+Allow: /
+Disallow: /desk
+
+User-agent: xAI-Grok
+Allow: /
+Disallow: /desk
+
+Sitemap: https://seafunandsun.com/sitemap.xml
