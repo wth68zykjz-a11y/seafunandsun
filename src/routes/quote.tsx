@@ -13,7 +13,7 @@ export const Route = createFileRoute("/quote")({
     pageHead({
       title: "Request a quote",
       description:
-        "Request a quote for a cruise, an expedition, a resort, a ski vacation, or a rail trip from Sea Fun & Sun in Farmington, Connecticut. Saved for us. No separate agent fee.",
+        "Request a cruise, resort, ski, or rail quote from Sea Fun & Sun in Farmington, Connecticut. No separate agent fee.",
       path: "/quote",
       image: "/media/page-quote.jpg",
     }),

@@ -71,7 +71,7 @@ function ItinerariesPage() {
               <div className="mt-4 grid gap-4 overflow-hidden rounded-xl border border-line bg-foam md:grid-cols-[220px_1fr]">
                 <img src={item.image} alt={item.alt} loading="lazy" decoding="async" className="h-48 w-full object-cover md:h-full" />
                 <div className="p-4">
-                  <p className="text-sm text-mute">{item.lede}</p>
+                  <p className="text-base leading-relaxed text-ink">{item.lede}</p>
                   <Link to="/destinations/$slug" params={{ slug: item.slug }} className="mt-3 inline-flex min-h-11 items-center text-sm font-medium text-tide">
                     More on {item.nav}, including excursions
                   </Link>

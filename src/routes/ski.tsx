@@ -9,7 +9,7 @@ export const Route = createFileRoute("/ski")({
     pageHead({
       title: "Ski vacations",
       description:
-        "Ski vacations from Sea Fun & Sun. One Club Med rate often includes meals, the lift pass, and group lessons. Luxury hotels in Aspen, Banff, Mammoth, Whistler, the Alps, and Niseko usually leave the pass separate. Some of those mountains take Ikon or Epic.",
+        "Ski vacations from Sea Fun & Sun: Club Med with meals and lifts often included, or luxury hotels in the Alps, Japan, Banff, and the Rockies.",
       path: "/ski",
       image: "/media/ski-alps.jpg",
     }),
@@ -69,30 +69,30 @@ function SkiPage() {
           <article className="rounded-xl border border-line bg-foam p-5">
             <img src="/media/ski-north.jpg" alt="Snow-covered pines on a ridge at sunrise" loading="lazy" decoding="async" className="aspect-photo w-full rounded-xl object-cover" />
             <h3 className="mt-4 font-display text-2xl">North America</h3>
-            <p className="mt-2 text-sm text-mute">
+            <p className="mt-2 text-base leading-relaxed text-ink">
               Aspen, Jackson Hole, Deer Valley, Vail, Banff, Mammoth, and Whistler. The Little Nell is ski-in at Aspen Mountain. Four Seasons is in Teton Village at Jackson Hole, and at Whistler. In Banff, the Fairmont hotels are in town and at Lake Louise, and the lifts are at Sunshine, Lake Louise, and Norquay. At Mammoth, the stay is a village hotel at the base, not a grand Alpine hotel. A room in town and a room at the base of the mountain are not the same stay.
             </p>
           </article>
           <article className="rounded-xl border border-line bg-foam p-5">
             <img src="/media/ski-alps-run.jpg" alt="A skier on a slope with the Matterhorn behind" loading="lazy" decoding="async" className="aspect-photo w-full rounded-xl object-cover" />
             <h3 className="mt-4 font-display text-2xl">The Alps</h3>
-            <p className="mt-2 text-sm text-mute">
+            <p className="mt-2 text-base leading-relaxed text-ink">
               Courchevel 1850 for Les 3 Vallées: Cheval Blanc, Les Airelles, and Aman Le Mélézin. Those rooms are requested, not taken off a public calendar. Megève is quieter skiing: Four Seasons is ski-in on Mont d’Arbois and reopens for winter on December 16, 2026. In St. Moritz the grand hotels are in town, not on the piste. Zermatt is car-free, under the Matterhorn.
             </p>
-            <p className="mt-2 text-sm text-mute">
+            <p className="mt-2 text-base leading-relaxed text-ink">
               A few dates are worth planning around. White Turf is the horse race on the frozen lake at St. Moritz, usually on three Sundays in February. Some Alpine villages open a floodlit slope in the evening and sell it as moonlight skiing. It runs on a scheduled evening, and not at every mountain. In Austria, a December week can include a Christmas market in Innsbruck, Salzburg, or a resort village such as Kitzbühel. Most markets are finished by Christmas Eve. Those belong on the trip only when the dates match.
             </p>
           </article>
           <article className="rounded-xl border border-line bg-foam p-5">
             <img src="/media/ski-japan.jpg" alt="Mount Yotei above the ski runs at Niseko, Japan" loading="lazy" decoding="async" className="aspect-photo w-full rounded-xl object-cover" />
             <h3 className="mt-4 font-display text-2xl">Japan</h3>
-            <p className="mt-2 text-sm text-mute">
+            <p className="mt-2 text-base leading-relaxed text-ink">
               Choose Niseko, on Hokkaido, when you want powder rather than an Alpine village. Mount Yotei sits above the runs. Park Hyatt Niseko Hanazono is ski-in, ski-out, with onsen baths in the hotel. January and early February are the deep weeks, and they are also the busiest. Mid-December and March are the quieter request, if the snow is in. Niseko also runs night skiing on lit slopes. That is a ticket for a set evening, not a promise of a full moon.
             </p>
           </article>
         </div>
         <p className="mt-6 max-w-3xl text-sm text-mute">
-          Beach resorts are a different page.{" "}
+          Beach resorts, including all-inclusive stays, are on a separate page.{" "}
           <Link to="/resorts" className="font-medium text-tide">
             All-inclusive resorts
           </Link>

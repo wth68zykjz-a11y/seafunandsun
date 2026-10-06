@@ -9,7 +9,7 @@ export const Route = createFileRoute("/ports/")({
     pageHead({
       title: "Cruise departure ports",
       description:
-        "Where cruise ships leave from, where those sailings tend to go, and which airlines serve the city. United States, Canada, Europe, Asia, Australia, and New Zealand.",
+        "Cruise embarkation ports in the United States, Canada, Europe, Asia, and Australia. See where the ships go and which airlines serve each city.",
       path: "/ports",
     }),
   component: PortsIndex,

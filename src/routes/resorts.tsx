@@ -9,7 +9,7 @@ export const Route = createFileRoute("/resorts")({
     pageHead({
       title: "All-inclusive resorts",
       description:
-        "All-inclusive beach resorts, plus Disney park stays. The quote names the room category, what the rate covers, and whether the property is adults-only or for families. Ski vacations are on a separate page.",
+        "All-inclusive beach resorts and Disney park stays from Sea Fun & Sun. The quote names the room category and what the rate covers.",
       path: "/resorts",
       image: "/media/resort-villas.jpg",
     }),
@@ -44,7 +44,7 @@ const regions = [
   },
   {
     title: "Mexico",
-    body: "Cancún and the Riviera Maya for a short flight and a long beach. Los Cabos and Puerto Vallarta when you want the Pacific and a drier winter. Hyatt Ziva and Zilara, Secrets, Excellence, and Palace are the lines we set side by side. The beach in front of the hotel matters more than the brochure map of the coast.",
+    body: "Cancún and the Riviera Maya for a short flight and a long beach. Los Cabos and Puerto Vallarta when you want the Pacific and a drier winter. Hyatt Ziva and Zilara, Secrets, Excellence, and Palace are the lines we set side by side. We look at the beach in front of the hotel, not the brochure map of the coast.",
   },
   {
     title: "Punta Cana",
@@ -146,7 +146,7 @@ function ResortsPage() {
           {regions.map((item) => (
             <article key={item.title} className="rounded-xl border border-line p-5">
               <h2 className="font-display text-2xl">{item.title}</h2>
-              <p className="mt-2 text-sm text-mute">{item.body}</p>
+              <p className="mt-2 text-base leading-relaxed text-ink">{item.body}</p>
             </article>
           ))}
         </div>

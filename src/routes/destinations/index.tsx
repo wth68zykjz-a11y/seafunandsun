@@ -9,7 +9,7 @@ export const Route = createFileRoute("/destinations/")({
     pageHead({
       title: "Cruise destinations",
       description:
-        "Fourteen cruise regions, listed A to Z. Alaska, the Caribbean, the Mediterranean, Australia and New Zealand, river cruises, and more. Rail is booked on its own page.",
+        "Cruise regions from Alaska to Australia, including river and expedition ships. Booked by Sea Fun & Sun in Farmington, Connecticut.",
       path: "/destinations",
     }),
   component: DestinationsPage,
@@ -50,7 +50,7 @@ function DestinationsPage() {
             <div className="p-4">
               <p className="text-xs font-medium text-tide">{item.card}</p>
               <h2 className="mt-1 font-display text-3xl">{item.title}</h2>
-              <p className="mt-2 text-sm text-mute">{item.lede}</p>
+              <p className="mt-2 text-base leading-relaxed text-ink">{item.lede}</p>
               {shores[item.slug] ? (
                 <p className="mt-3 border-t border-line pt-3 text-xs text-mute">
                   Excursions you can add: {shores[item.slug].excursions.map((trip) => trip.title).join(" · ")}

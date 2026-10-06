@@ -34,7 +34,7 @@ export const destinations: Destination[] = [
     card: "Glaciers & wildlife",
     image: "/media/alaskan.jpg",
     alt: "A tidewater glacier meeting dark water in a steep fjord",
-    lede: "Most people take one Alaska cruise, so the month matters as much as the ship. Ice is earlier in the season, wildlife is later, and the evenings stay light through the summer.",
+    lede: "Most people take one Alaska cruise, so choose the month with the same care as the ship. Ice is earlier in the season, wildlife is later, and the evenings stay light through the summer.",
     paragraphs: [
       "Most Alaska sailings run seven to fourteen nights round trip from Seattle, or one way between Seattle or Vancouver and Seward or Whittier. Royal Caribbean, Carnival, Norwegian, Holland America, Princess, and Celebrity sail the Inside Passage. Holland America and Princess use Vancouver often, including one-way Gulf sailings. Cunard does in some seasons, not every year. We compare them side by side, with no obligation to any one line.",
       "The ports are the reason for the trip: Juneau, Seward, Ketchikan, Skagway, and the fjords between them. The glacier walls are close enough to hear, and much of the wildlife is not something you will see from a road.",
@@ -681,7 +681,7 @@ export const destinations: Destination[] = [
     title: "Asian Cruises",
     card: "Temples & cities",
     image: "/media/asia.jpg",
-    alt: "A quiet harbor at blue hour with lights on the water",
+    alt: "A lit waterfront skyline at dusk, the kind of harbor an Asian cruise uses",
     lede: "Singapore and Tokyo are the usual starts, with long days at sea on the South China Sea. Plan the flights with the cruise, not after it.",
     paragraphs: [
       "Princess, Holland America, Celebrity, Royal Caribbean, and Norwegian sail Asia from Singapore, Tokyo, and Hong Kong. Cunard comes through on longer voyages. It is not a weekly Asia ship. We compare the ones that are actually scheduled, and we match the routing to the time you have.",

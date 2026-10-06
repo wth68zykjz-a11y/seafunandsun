@@ -37,7 +37,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "3 to 4 hours",
         pace: "Moderate if the chop is up",
         detail:
-          "Humpbacks are the usual show from late spring. Seasickness matters more than fitness. A small boat is a poor plan if anyone in the cabin gets motion-sick.",
+          "Humpbacks are the usual show from late spring. Seasickness rules out a small boat more often than fitness does. Skip it if anyone in the cabin gets motion-sick.",
       },
       {
         title: "White Pass from Skagway",
@@ -157,7 +157,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-hawaii.jpg",
     photoAlt: "Black lava rock, turquoise water, and an empty canoe on a Hawaiian beach",
     intro:
-      "Inter-island ships often stay overnight, which is why a Road to Hana day can work. A sailing from the West Coast spends more of the week at sea. The excursion has to match which of those two trips you booked.",
+      "Inter-island ships often stay overnight, so a Road to Hana day can work. A sailing from the West Coast spends more of the week at sea. The excursion has to match which of those two trips you booked.",
     excursions: [
       {
         title: "Turtles in the water",
@@ -445,7 +445,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-rail.jpg",
     photoAlt: "A silver train crossing a high trestle above a mountain river",
     intro:
-      "On a rail trip the train is the day. A dome car, a stop for fresh air, or a roomette instead of a coach seat is the choice that matters. A city night is added only where the connection needs it.",
+      "On a rail trip the train is the day. Choose a dome car, a stop for fresh air, or a roomette instead of a coach seat. A city night is added only where the connection needs it.",
     excursions: [
       {
         title: "The sightseer lounge, not just a seat",
@@ -524,12 +524,12 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "Most calls are four to eight hours. Glacier days can be the ship’s scenic sail, with no gangway at all." },
       { label: "Worth the time", text: "Stop in Juneau to visit the Mendenhall Glacier. You can eat salmon in town, or go out for a few hours and try to catch one. Stop in Skagway for the train up the White Pass. Neither port has a Michelin restaurant." },
-      { label: "Best for", text: "People who want wildlife and ice more than nightlife. A balcony matters here more than a big ship theater." },
+      { label: "Best for", text: "People who want wildlife and ice more than nightlife. A balcony is the better cabin here than a seat in a big theater." },
       { label: "Often a poor fit", text: "Gift-shop bus loops, and any “flightseeing plus six other stops” that spends the day in a van." },
     ],
     outings: [
       { fits: "Anyone who wants to hear the ice, including people who will not hike.", bring: "A wind layer, a hat, and shoes that can take spray. July is not warm on the water." },
-      { fits: "Cabins where everyone can handle a small boat. Motion sickness matters more than fitness.", bring: "Layers you can peel, and a dry bag if you are bringing a phone on deck." },
+      { fits: "Cabins where everyone can handle a small boat. Motion sickness rules this out more often than fitness does.", bring: "Layers you can peel, and a dry bag if you are bringing a phone on deck." },
       { fits: "The easy port day — families, knees that dislike trails, first-timers.", bring: "Almost nothing. A light jacket for the summit, which is colder than the pier." },
     ],
   },

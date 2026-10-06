@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
     const head = pageHead({
       title: "Sea Fun & Sun | Cruises, resorts, ski vacations, and rail trips — Farmington, CT",
       description:
-        "Independent travel agency in Farmington, Connecticut. We book cruises by region, beach resorts, ski vacations including Club Med, expedition ships, and rail trips, including luxury European trains. No separate agent fee. (959) 666-2062.",
+        "Cruises, beach resorts, ski vacations, and rail trips from Sea Fun & Sun in Farmington, Connecticut. No separate agent fee. Call or text (959) 666-2062.",
       path: "/",
       image: "/media/card-cruises.webp",
     });
@@ -336,10 +336,10 @@ function Home() {
                         <path d="M24 22.5l1.2 2.4 2.6.4-1.9 1.8.5 2.6L24 28.4l-2.4 1.3.5-2.6-1.9-1.8 2.6-.4L24 22.5z" fill="currentColor" />
                       </svg>
                       <dd className="font-display text-3xl leading-none sm:text-4xl">1</dd>
-                      <dt className="mt-1 text-[0.65rem] font-medium uppercase leading-tight tracking-wide sm:mt-0 sm:text-xs">
-                        Dedicated point
+                      <dt className="mt-1 text-sm font-medium leading-tight sm:mt-0">
+                        One agent
                         <br />
-                        of contact
+                        on your booking
                       </dt>
                     </div>
                     <div className="hidden h-10 w-px bg-gold sm:block" aria-hidden="true" />
@@ -349,10 +349,8 @@ function Home() {
                         <path d="M18 11v14M15 14.5c.8-1 1.8-1.5 3-1.5 1.8 0 3 1 3 2.4S19.8 18 18 18s-3 .8-3 2.3 1.3 2.4 3.1 2.4c1.2 0 2.2-.4 3-1.3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
                       </svg>
                       <dd className="font-display text-3xl leading-none sm:text-4xl">$0</dd>
-                      <dt className="mt-1 text-[0.65rem] font-medium uppercase leading-tight tracking-wide sm:mt-0 sm:text-xs">
-                        Agent fee,
-                        <br />
-                        ever
+                      <dt className="mt-1 text-sm font-medium leading-tight sm:mt-0">
+                        No agent fee
                       </dt>
                     </div>
                   </dl>

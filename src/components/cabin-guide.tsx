@@ -17,7 +17,7 @@ export function CabinGuide() {
         {categories.map((item) => (
           <div key={item.name} className="rounded-xl border border-line bg-foam p-5">
             <dt className="font-display text-2xl text-ink">{item.name}</dt>
-            <dd className="mt-2 text-sm text-mute">{item.text}</dd>
+            <dd className="mt-2 text-base leading-relaxed text-ink">{item.text}</dd>
           </div>
         ))}
       </dl>

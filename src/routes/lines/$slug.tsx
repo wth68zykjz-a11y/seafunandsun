@@ -7,10 +7,10 @@ export const Route = createFileRoute("/lines/$slug")({
   loader: ({ params }) => linePageBySlug(params.slug),
   head: ({ loaderData }) =>
     pageHead({
-      title: loaderData ? `${loaderData.title} cruise lines` : "Cruise lines",
+      title: loaderData?.title ?? "Cruise lines",
       description: loaderData
-        ? clip(`${loaderData.lede} The page gives a typical ship size and a general price range. It is not a quote.`)
-        : "Cruise line comparison by ship size and region, with passenger counts and general price ranges. It is not a quote.",
+        ? clip(`${loaderData.title}. ${loaderData.lede} Typical passenger counts and a general price range. Not a quote.`)
+        : "Cruise line comparison by ship size and region, with passenger counts and general price ranges. Not a quote.",
       path: loaderData ? `/lines/${loaderData.slug}` : "/lines",
       image: loaderData?.image,
     }),
@@ -54,7 +54,7 @@ function LineRegionPage() {
             ))}
           </div>
         ) : null}
-        <p className="mt-3 max-w-3xl text-sm text-mute">
+        <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink">
           Ranges are per person, two to a cabin. They move with the month and the cabin, and they are not a quote. On the large ships, taxes, port charges, and gratuities are usually extra. On river, expedition, luxury, and yacht ships, more of that is already in the fare.
         </p>
         {page.benefits ? (
@@ -62,7 +62,7 @@ function LineRegionPage() {
             {page.benefits.map((item) => (
               <article key={item.title} className="rounded-xl border border-line bg-foam p-5">
                 <h2 className="font-display text-2xl">{item.title}</h2>
-                <p className="mt-2 text-sm text-mute">{item.text}</p>
+                <p className="mt-2 text-base leading-relaxed text-ink">{item.text}</p>
               </article>
             ))}
           </div>

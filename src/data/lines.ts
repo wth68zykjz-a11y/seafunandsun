@@ -103,7 +103,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "Restaurants",
-        text: "The main dining room and the buffet are in the fare. Specialty rooms are usually extra. A ship of 4,000 passengers needs more than one restaurant, which is why the list is long. On a 2,000-passenger ship the list is shorter and the rooms are less crowded.",
+        text: "The main dining room and the buffet are in the fare. Specialty rooms are usually extra. A ship of 4,000 passengers needs more than one restaurant, so the list is long. On a 2,000-passenger ship the list is shorter and the rooms are less crowded.",
       },
       {
         title: "Short island days",

@@ -4,14 +4,16 @@ import { cruisePlaces } from "@/data/place-names";
 import { airlineNote, portPageBySlug, portPages, type Port, type PortCall } from "@/data/ports";
 import { CabinGuide } from "@/components/cabin-guide";
 import { LocalClock } from "@/components/local-clock";
-import { pageHead } from "@/lib/seo";
+import { clip, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/ports/$region")({
   loader: ({ params }) => portPageBySlug(params.region),
   head: ({ loaderData }) =>
     pageHead({
       title: loaderData ? `${loaderData.title} cruise ports` : "Cruise ports",
-      description: loaderData?.lede ?? "Departure ports and the airlines that serve them.",
+      description: loaderData
+        ? clip(`${loaderData.title} cruise ports. ${loaderData.lede} Airlines, local time, and currency for each city.`)
+        : "Departure ports, the airlines that serve them, and where those ships tend to go.",
       path: loaderData ? `/ports/${loaderData.slug}` : "/ports",
     }),
   component: PortRegionPage,
@@ -35,16 +37,16 @@ function PortCard({ port }: { port: Port }) {
       <div className="p-5">
       <p className="text-xs font-medium text-tide">{port.place}</p>
       <h3 className="mt-1 font-display text-2xl text-ink">{port.name}</h3>
-      <p className="mt-2 text-sm text-mute">
+      <p className="mt-2 text-base leading-relaxed text-ink">
         <span className="font-medium text-ink">Sails to: </span>
         {port.goes}
       </p>
-      <p className="mt-2 text-sm text-mute">
+      <p className="mt-2 text-base leading-relaxed text-ink">
         <span className="font-medium text-ink">Airlines: </span>
         {port.air}
       </p>
       <LocalClock zone={port.zone} />
-      <p className="mt-2 text-sm text-mute">
+      <p className="mt-2 text-base leading-relaxed text-ink">
         <span className="font-medium text-ink">Currency: </span>
         {port.money}
       </p>
@@ -70,13 +72,13 @@ function CallCard({ call }: { call: PortCall }) {
       <div className="p-5">
       <p className="text-xs font-medium text-tide">{call.place}</p>
       <h3 className="mt-1 font-display text-2xl text-ink">{call.name}</h3>
-      <p className="mt-2 text-sm text-mute">{call.note}</p>
-      <p className="mt-2 text-sm text-mute">
+      <p className="mt-2 text-base leading-relaxed text-ink">{call.note}</p>
+      <p className="mt-2 text-base leading-relaxed text-ink">
         <span className="font-medium text-ink">Airlines: </span>
         {call.air}
       </p>
       <LocalClock zone={call.zone} />
-      <p className="mt-2 text-sm text-mute">
+      <p className="mt-2 text-base leading-relaxed text-ink">
         <span className="font-medium text-ink">Currency: </span>
         {call.money}
       </p>
@@ -144,7 +146,7 @@ function PortRegionPage() {
           </div>
         </section>
       ) : null}
-      <p className="mx-auto max-w-6xl px-4 pb-8 text-sm text-mute">
+      <p className="mx-auto max-w-6xl px-4 pb-8 text-base leading-relaxed text-ink">
         {airlineNote} Most ships sold in the United States bill in US dollars. Ashore, use the local currency named on the card, or a card. US cash is reliable in the United States and Puerto Rico, and a poor default everywhere else.
       </p>
       <CabinGuide />

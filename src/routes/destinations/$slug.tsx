@@ -15,7 +15,7 @@ export const Route = createFileRoute("/destinations/$slug")({
     pageHead({
       title: loaderData?.title ?? "Destination",
       description: loaderData
-        ? clip(loaderData.lede)
+        ? clip(`${loaderData.title} booked by Sea Fun & Sun in Farmington, Connecticut. ${loaderData.lede}`)
         : "Cruise destinations booked by Sea Fun & Sun in Farmington, Connecticut.",
       path: loaderData ? `/destinations/${loaderData.slug}` : "/destinations",
       image: loaderData?.image,
