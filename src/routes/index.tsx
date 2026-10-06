@@ -1,25 +1,19 @@
-import { lazy, Suspense, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { QuoteForm } from "@/components/quote-form";
 import { LogoMark, Shell } from "@/components/site-chrome";
 import { phone, phoneHref } from "@/data/links";
 import { faqLd, JsonLd, pageHead } from "@/lib/seo";
 
-const QuoteForm = lazy(() => import("@/components/quote-form").then((mod) => ({ default: mod.QuoteForm })));
-
 export const Route = createFileRoute("/")({
-  head: () => {
-    const head = pageHead({
+  head: () =>
+    pageHead({
       title: "Sea Fun & Sun | Cruises, resorts, ski vacations, and rail trips — Farmington, CT",
       description:
         "Independent travel agency in Farmington, Connecticut. We book cruises by region, beach resorts, ski vacations including Club Med, expedition ships, and rail trips, including luxury European trains. No separate agent fee. (959) 666-2062.",
       path: "/",
       image: "/media/card-cruises.webp",
-    });
-    return {
-      ...head,
-      links: [...(head.links ?? []), { rel: "preload", as: "image", href: "/media/card-cruises.webp", fetchPriority: "high" }],
-    };
-  },
+    }),
   component: Home,
 });
 
@@ -123,8 +117,8 @@ function DoorFace({ door, eager }: { door: Door; eager?: boolean }) {
           height={733}
           draggable={false}
           decoding="async"
-          loading={eager ? "eager" : "lazy"}
-          fetchPriority={eager ? "high" : "low"}
+          loading="lazy"
+          fetchPriority="low"
           className="absolute inset-0 h-full w-full object-cover"
         />
       </div>
@@ -226,9 +220,9 @@ function TripCarousel({ items }: { items: Door[] }) {
           }
         }}
       >
-        {items.map((door, i) => (
+        {items.map((door) => (
           <div key={door.title} className="min-w-full shrink-0 basis-full snap-start">
-            <DoorSlide door={door} eager={i === 0} />
+            <DoorSlide door={door} />
           </div>
         ))}
       </div>
@@ -414,9 +408,7 @@ function Home() {
               </li>
             </ul>
           </div>
-          <Suspense fallback={<div className="min-h-[32rem] rounded-xl border border-line bg-foam" aria-hidden="true" />}>
-            <QuoteForm preset="" chooseTrip />
-          </Suspense>
+          <QuoteForm preset="" chooseTrip />
         </section>
       </div>
     </Shell>
