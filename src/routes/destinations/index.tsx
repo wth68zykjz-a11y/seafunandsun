@@ -25,7 +25,7 @@ function DestinationsPage() {
       />
       <div className="mx-auto max-w-6xl px-4 pb-2">
         <p className="max-w-2xl text-mute">
-          Where the ship leaves from is part of the region’s charm.{" "}
+          Leaving from the right city makes the trip feel fuller.{" "}
           <Link to="/ports" className="font-medium text-tide">
             See where the major ports tend to go.
           </Link>{" "}
