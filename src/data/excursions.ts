@@ -515,7 +515,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A train crossing a wooden trestle above a misty spruce valley",
     facts: [
       { label: "Time in port", text: "Most calls are four to eight hours. Glacier days can be the ship’s scenic sail, with no gangway at all." },
-      { label: "Worth the time", text: "Juneau is salmon and the Mendenhall Glacier. Skagway is the White Pass railroad. A glacier day can be from the ship, with no stop ashore." },
+      { label: "Worth the time", text: "Juneau is salmon and the Mendenhall Glacier. Skagway is the White Pass railroad. The Michelin Guide does not cover these ports." },
       { label: "Best for", text: "People who want wildlife and ice more than nightlife. A balcony matters here more than a big ship theater." },
       { label: "Often a poor fit", text: "Gift-shop bus loops, and any “flightseeing plus six other stops” that spends the day in a van." },
     ],
@@ -530,7 +530,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A snorkel mask and fins on limestone beside clear reef water",
     facts: [
       { label: "Time in port", text: "Usually morning to late afternoon. Private-island calls are the ship’s own beach, not a town." },
-      { label: "Worth the time", text: "San Juan is El Morro and the cathedral. Martinique is a bakery. A beach call is the reef or a chair, not a landmark." },
+      { label: "Worth the time", text: "San Juan is El Morro and the cathedral. Martinique is a bakery. The Michelin Guide does not cover these islands, so the local plate is the meal." },
       { label: "Best for", text: "A first cruise, a family, or anyone who wants short flights from the East Coast and a port every morning." },
       { label: "Often a poor fit", text: "Stacking a zip line on a catamaran in one call, and any beach club that is worse than the one the ship already owns." },
     ],
@@ -545,7 +545,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Empty blue chairs on a terrace above a caldera harbor at dawn",
     facts: [
       { label: "Time in port", text: "Often a long day, sometimes a tender. The useful hours are early, before the alleys fill." },
-      { label: "Worth the time", text: "Athens is the Acropolis. From Civitavecchia, St. Peter’s is the church if the ship stays long enough. Amalfi is a long lunch." },
+      { label: "Worth the time", text: "Athens is the Acropolis. A Michelin-starred lunch in Rome fits only a long call from Civitavecchia, and only if it was booked ahead. Amalfi is a long lunch of the coast’s own cooking." },
       { label: "Best for", text: "Travelers who want a different country at breakfast and will walk for it. Shoulder months beat August." },
       { label: "Often a poor fit", text: "Three-ruin coach loops, and any Santorini plan that starts after the other ships have tendered." },
     ],
@@ -560,7 +560,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Bicycles beside a misty canal and a stone bridge in an old European town",
     facts: [
       { label: "Time in port", text: "City calls run most of the day, but the pier is often an hour from the place you actually want." },
-      { label: "Worth the time", text: "Bruges is the belfry and a bowl of mussels. Barcelona is the Sagrada Família. Camp Nou only fits when a match falls inside the hours in port." },
+      { label: "Worth the time", text: "Bruges is the belfry and a bowl of mussels. In Barcelona, Cocina Hermanos Torres is a Michelin-starred kitchen cooking Catalan food. Reserve it before the cruise. Camp Nou fits only when a match falls inside the hours in port." },
       { label: "Best for", text: "Travelers who have a city they still want, or who would rather have one garden than three capitals." },
       { label: "Often a poor fit", text: "Paris from a short Le Havre call, and any “two cities in one day” that is mostly highway." },
     ],
@@ -575,7 +575,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A sea turtle in clear shallows beside black volcanic sand",
     facts: [
       { label: "Time in port", text: "Inter-island ships often overnight. A West Coast sailing spends more days just getting there." },
-      { label: "Worth the time", text: "Oahu is the USS Arizona and a plate lunch. Iolani Palace is the building if you want an hour in town. Maui is the water." },
+      { label: "Worth the time", text: "Oahu is the USS Arizona and a plate lunch. The Michelin Guide does not cover Hawaii." },
       { label: "Best for", text: "People who want the islands, not a new port every morning. Match the excursion to the kind of Hawaii trip you booked." },
       { label: "Often a poor fit", text: "Hana on a dawn-to-dusk call, and stacking a snorkel on a kayak in the same bay." },
     ],
@@ -590,7 +590,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Pink sand curving toward a pastel cottage and clear water",
     facts: [
       { label: "Time in port", text: "Ships usually stay more than a day, so you do not have to see the island between breakfast and all-aboard." },
-      { label: "Worth the time", text: "St. George’s is St. Peter’s Church. Hamilton is a fish sandwich on raisin bread. The south shore is the pink sand." },
+      { label: "Worth the time", text: "St. George’s is St. Peter’s Church. Hamilton is a fish sandwich on raisin bread. The Michelin Guide does not cover Bermuda." },
       { label: "Best for", text: "A short East Coast sailing that still feels like a real island, not a dash through three countries." },
       { label: "Often a poor fit", text: "Six-stop island tours, and Horseshoe Bay at the hour every ship arrives." },
     ],
@@ -605,7 +605,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A row of painted wooden wharf houses reflected in calm water",
     facts: [
       { label: "Time in port", text: "Fjord villages can be a tender of a few hours. Baltic capitals are longer city days." },
-      { label: "Worth the time", text: "Bergen is the Bryggen wharf and a shrimp sandwich at the fish market. A fjord village is the view. A Baltic old town is a church and a square." },
+      { label: "Worth the time", text: "Bergen is the Bryggen wharf and a shrimp sandwich at the fish market. Copenhagen has Michelin-starred kitchens cooking New Nordic food. Those tables are reserved before the cruise, not from the gangway." },
       { label: "Best for", text: "Long summer light, small ports, and people who like weather to be part of the trip." },
       { label: "Often a poor fit", text: "A scenic boat with no backup plan. If the tender cancels, you want a town walk already in mind." },
     ],
@@ -635,7 +635,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Bicycles by a vineyard wall, with a river ship on the water below",
     facts: [
       { label: "Time in port", text: "You dock in town, often overnight. Mornings are the walking tour. Afternoons can be a bike or a tasting." },
-      { label: "Worth the time", text: "Budapest is the Parliament and a bowl of goulash. Melk is the abbey. Vienna is a café and a slice of Sachertorte, not every palace." },
+      { label: "Worth the time", text: "Budapest is the Parliament and a bowl of goulash. In Vienna, Steirereck is the Michelin-starred table for Austrian cooking. Book it before the cruise. Sachertorte still fits a shorter afternoon." },
       { label: "Best for", text: "Travelers who want the city at the gangway and are happy with one river, not a new ocean every week." },
       { label: "Often a poor fit", text: "A paid tour that repeats the walk already in the fare, and a 90-minute coach for one glass of wine." },
     ],
@@ -650,7 +650,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Expedition boots and a red parka on a zodiac, with sea ice beyond",
     facts: [
       { label: "Time in port", text: "There often is no port. Landings are an hour or two, and weather can cancel the one you wanted." },
-      { label: "Worth the time", text: "The sight is the wildlife, not a church, a stadium, or a famous kitchen. Landings are short. Meals are on the ship." },
+      { label: "Worth the time", text: "The sight is the wildlife. The Michelin Guide does not cover a landing. Meals are on the ship." },
       { label: "Best for", text: "People who will accept a change of plan. The expedition team matters more than the entertainment staff." },
       { label: "Often a poor fit", text: "Ships that sell a bigger theater instead of more time off the ship. A bigger ship is not a better Galápagos day." },
     ],
@@ -665,7 +665,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Empty stone temple steps in warm morning light, with incense smoke",
     facts: [
       { label: "Time in port", text: "The ship often docks outside the city. The drive can take as long as the visit." },
-      { label: "Worth the time", text: "Bangkok is the Grand Palace, then noodles. Tokyo is Sensō-ji and sushi. Singapore is chicken rice at a hawker centre." },
+      { label: "Worth the time", text: "Bangkok is the Grand Palace, then noodles. Tokyo has more Michelin-starred restaurants than any other city. A sushi counter is the local table, and it is reserved before you sail. In Singapore, a starred kitchen and a hawker centre are different meals. Pick one." },
       { label: "Best for", text: "Travelers who will see one place properly. The Grand Palace, or one district in Kyoto. Not a list of both." },
       { label: "Often a poor fit", text: "A bus that promises three temples and a market. Ha Long Bay only counts when the ship is already in that bay." },
     ],
@@ -680,7 +680,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "An empty terrace looking across a bay toward a granite peak at morning",
     facts: [
       { label: "Time in port", text: "City calls can be long. Cape Horn is often a scenic hour from the deck, with no landing." },
-      { label: "Worth the time", text: "Rio is Christ the Redeemer or Sugarloaf, not both. Maracanã is worth it only when a match fits the hours in port. Buenos Aires is a steak in San Telmo." },
+      { label: "Worth the time", text: "Rio is Christ the Redeemer or Sugarloaf, not both. The Michelin Guide covers Rio. A starred dinner needs a late ship and a reservation made ahead. A steak in San Telmo is the Buenos Aires meal that usually fits." },
       { label: "Best for", text: "A longer voyage where the city days are the memory and the scenic days are the ship’s job." },
       { label: "Often a poor fit", text: "Both Rio statues in one day, and a tango show that ends after the gangway closes." },
     ],
@@ -725,7 +725,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A glacial lake and snow-dusted mountains on New Zealand’s South Island",
     facts: [
       { label: "Time in port", text: "Sydney and Auckland can be long city calls. Reef ports need a full day. Milford is often a scenic sail, with no gangway." },
-      { label: "Worth the time", text: "Sydney is the Opera House and a meat pie on the quay. Auckland is the harbor and a lamb lunch. The reef and Milford Sound are the scenery, not a monument." },
+      { label: "Worth the time", text: "Sydney is the Opera House. A Michelin-starred lunch of Australian produce can be booked ahead. A meat pie on the quay is the meal that fits a shorter call." },
       { label: "Best for", text: "Travelers who can give the southern summer to one region, and who will fly to Sydney or Auckland to start." },
       { label: "Often a poor fit", text: "A reef and a capital in one call, and any Blue Mountains loop that spends the Sydney day on a highway." },
     ],
