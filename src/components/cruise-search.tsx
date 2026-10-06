@@ -85,10 +85,10 @@ export function CruiseSearch({
         Search opens the booking system in this window. Choose the sailing and the cabin there. Payment goes to the cruise line. We do not hold the card.
       </p>
       <form onSubmit={onSubmit} className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        <label className="grid gap-1 text-sm font-medium">
-          Destination
-          <select className={field} value={destination} onChange={(event) => setDestination(event.target.value)}>
-            <option value="">Anywhere</option>
+        <label className="grid gap-1 text-sm font-medium sm:col-span-2">
+          Region
+          <select className={field} value={destination} onChange={(event) => setDestination(event.target.value)} aria-label="Region">
+            <option value="">Any region</option>
             {options.map((option) => (
               <option key={option.value} value={option.value}>
                 {option.label}

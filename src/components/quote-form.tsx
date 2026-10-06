@@ -182,6 +182,24 @@ export function QuoteForm({
           </select>
         </label>
       ) : null}
+      <label className="mt-3 grid gap-1 text-sm font-medium">
+        {active === "cruise" ? "Region" : "Place"}
+        <select className={field} name="destination" key={active + placeDefault} defaultValue={placeDefault} required aria-label={active === "cruise" ? "Region" : "Place"}>
+          <option value="">{active === "cruise" ? "Select a region" : "Select a place"}</option>
+          {active === "cruise"
+            ? cruisePlaces.map((item) => (
+                <option key={item.slug} value={item.title}>
+                  {item.title}
+                </option>
+              ))
+            : tripPlaces[active].map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))}
+          {active === "cruise" ? <option value="Not sure yet">Not sure yet</option> : null}
+        </select>
+      </label>
       <div className={`${chooseTrip ? "mt-3" : "mt-4"} grid gap-3 sm:grid-cols-2`}>
         <label className="grid gap-1 text-sm font-medium">
           Name
@@ -196,28 +214,10 @@ export function QuoteForm({
           <input className={field} name="phone" type="tel" autoComplete="tel" placeholder="Optional" />
         </label>
         <label className="grid gap-1 text-sm font-medium">
-          Where
-          <select className={field} name="destination" key={active + placeDefault} defaultValue={placeDefault} required aria-label="Where">
-            <option value="">Select a place</option>
-            {active === "cruise"
-              ? cruisePlaces.map((item) => (
-                  <option key={item.slug} value={item.title}>
-                    {item.title}
-                  </option>
-                ))
-              : tripPlaces[active].map((item) => (
-                  <option key={item} value={item}>
-                    {item}
-                  </option>
-                ))}
-            {active === "cruise" ? <option value="Not sure yet">Not sure yet</option> : null}
-          </select>
-        </label>
-        <label className="grid gap-1 text-sm font-medium">
           When
           <input className={field} name="travelWindow" placeholder="Optional" />
         </label>
-        <label className="grid gap-1 text-sm font-medium">
+        <label className="grid gap-1 text-sm font-medium sm:col-span-2">
           Who is traveling
           <input className={field} name="partySize" placeholder="Optional" />
         </label>
