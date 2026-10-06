@@ -25,7 +25,7 @@ export const Route = createFileRoute("/destinations/$slug")({
 
 const ashoreNotes: Record<string, string> = {
   alaskan:
-    "Most Alaska days in port end in the afternoon. Mendenhall Glacier is in Juneau, about 20 minutes from the cruise docks on Gastineau Channel. Creek Street is in downtown Ketchikan, and the totem poles at Saxman and Totem Bight are a short ride from there. Skagway sits at the foot of White Pass, and the White Pass and Yukon Route railroad climbs from town to the pass. A day in Glacier Bay or Tracy Arm has no pier at all. Some Juneau days stay late enough for the evening in town. Nights in Seattle or Vancouver are not cut off by all-aboard. Salmon or crab can be lunch if you want it.",
+    "Most Alaska days in port end in the afternoon. Mendenhall Glacier is in Juneau, about 20 minutes from the cruise docks on Gastineau Channel. Creek Street is in downtown Ketchikan, and the totem poles at Saxman and Totem Bight are a short ride from there. Skagway sits at the foot of White Pass, and the White Pass and Yukon Route railroad climbs from town to the pass. A day in Glacier Bay or Tracy Arm has no pier at all. Some Juneau days stay late enough for the evening in town. Nights in Seattle or Vancouver are not cut off by all-aboard. Steamed Dungeness crab can be lunch if you want it.",
   caribbean:
     "A typical island stop ends in the afternoon. Cozumel and the private islands have a beach and a swim. Nassau and the older towns have a walk from the pier. San Juan can hold a longer afternoon, and an overnight is when the evening in town is open. Nights in Miami or Fort Lauderdale are for the city, not the gangway.",
   mediterranean:

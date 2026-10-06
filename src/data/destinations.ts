@@ -123,9 +123,9 @@ export const destinations: Destination[] = [
           "Sunset catamaran sail with drinks in hand",
           "A full beach day — loungers, snacks, swim stops",
           "Zip lines and jungle ATV rides",
-          "Conch fritters in Nassau, and time at the beach",
+          "Conch fritters in Nassau, chopped conch fried in a seasoned batter, and time at the beach",
           "A dive with a local guide — the reef is better from underwater",
-          "Croissants and pain au chocolat in a Martinique bakery",
+          "In a Martinique bakery, a croissant, layered dough of flour and butter, or a pain au chocolat, that dough around a bar of chocolate",
         ],
       },
     ],
@@ -325,7 +325,7 @@ export const destinations: Destination[] = [
           "Snorkel with sea turtles, from the ship or by kayak",
           "A day trip up the Road to Hana",
           "A plantation lunch on the island",
-          "A luau, on the evenings the ship stays in port long enough",
+          "A luau, on the evenings the ship stays in port long enough: kalua pig, pork cooked in an underground oven, and poi, pounded taro",
           "Pearl Harbor by morning, a beach by afternoon",
         ],
       },
@@ -498,7 +498,7 @@ export const destinations: Destination[] = [
       {
         heading: "In port",
         items: [
-          "Lighthouse and clam-bake day trips",
+          "Lighthouse walks, and a clam bake: clams, lobster, corn, and potatoes steamed together",
           "Cape Cod beach towns — Chatham, Hyannis, Provincetown",
           "Snorkel cays off Bermuda, when the routing goes there",
           "Old Quebec or Halifax, at your own pace",
@@ -703,10 +703,10 @@ export const destinations: Destination[] = [
       {
         heading: "Worth going ashore for",
         items: [
-          "In Singapore, visit Gardens by the Bay, then Hainanese chicken rice or laksa at a hawker centre",
+          "In Singapore, visit Gardens by the Bay, then Hainanese chicken rice, poached chicken with rice cooked in the chicken fat and stock, or laksa, rice noodles in a spicy coconut broth with prawns",
           "Visit the Grand Palace in Bangkok, then boat noodles nearby: rice noodles in a pork or beef broth, darkened with spices and a little blood, with sliced meat and morning glory. The bowls are small",
-          "Walk Tokyo’s outer market, then nigiri at a sushi counter. The dawn tuna auction is not a cruise-day plan",
-          "Visit Ho Chi Minh City’s District 1, and have a banh mi while you are there",
+          "Walk Tokyo’s outer market, then nigiri: a slice of raw fish on a small pad of vinegared rice. The dawn tuna auction is not a cruise-day plan",
+          "Visit Ho Chi Minh City’s District 1, and have a banh mi: a baguette with pâté, pork, pickled carrot and daikon, cilantro, and chili",
           "The Peak, the Star Ferry, and theme parks are in Hong Kong. The Peninsula is a stay in the city before or after the cruise.",
           "The French Concession and the Bund are in Shanghai. The Fairmont Peace Hotel is a stay in the city.",
           "A boat in Ha Long Bay, only when the ship is already in the bay",
