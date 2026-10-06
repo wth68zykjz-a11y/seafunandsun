@@ -48,11 +48,11 @@ function DestinationsPage() {
           >
             <img src={item.image} alt={item.alt} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
             <div className="p-4">
-              <p className="text-xs font-medium text-tide">{item.card}</p>
+              <p className="text-sm font-medium text-tide">{item.card}</p>
               <h2 className="mt-1 font-display text-3xl">{item.title}</h2>
               <p className="mt-2 text-base leading-relaxed text-ink">{item.lede}</p>
               {shores[item.slug] ? (
-                <p className="mt-3 border-t border-line pt-3 text-xs text-mute">
+                <p className="mt-3 border-t border-line pt-3 text-sm text-mute">
                   Excursions you can add: {shores[item.slug].excursions.map((trip) => trip.title).join(" · ")}
                 </p>
               ) : null}

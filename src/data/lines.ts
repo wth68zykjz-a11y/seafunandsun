@@ -139,7 +139,7 @@ export const linePages: LinePage[] = [
       { line: "Carnival", ships: "About 2,100–4,000, from Seattle rather than Vancouver.", where: "Inside Passage round trips.", fare: "Balcony, 7 nights, often $900–$2,200." },
       { line: "Disney", ships: "Disney Wonder, about 2,700.", where: "Alaska round trips, including some from Vancouver.", fare: "Often $3,000–$6,000 a person for a week." },
       { line: "Silversea and Seabourn", ships: "About 450–600 on the Alaska ships.", where: "One-way between Vancouver and Seward, and a smaller set of coastal weeks.", fare: "Often $6,000–$14,000 a person for 7 nights. More is included than on the lines above. Many of these are quoted." },
-      { line: "Norwegian, Pride of America", ships: "About 2,200.", where: "This ship sails among the Hawaiian islands from Honolulu. It does not sail Alaska. A cruise from California on Holland America, Princess, or Celebrity spends days at sea before the islands and is usually longer.", fare: "A week is often $1,200–$2,800." },
+      { line: "Norwegian, Pride of America", ships: "About 2,200.", where: "This ship sails among the Hawaiian islands from Honolulu. It does not sail an Alaska cruise. A cruise from California on Holland America, Princess, or Celebrity spends days at sea before the islands and is usually longer.", fare: "A week is often $1,200–$2,800." },
     ],
     notes: [
       "A Vancouver embarkation needs a passport. Prices in the city are in Canadian dollars. If you stay a few days before or after the cruise, the ship is not counting you back. You can walk the harbor in the daytime or after dark, talk with people, and eat where you want, such as a seafood counter on the water at lunch or a quieter dining room in the evening.",

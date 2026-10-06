@@ -35,10 +35,10 @@ function PortCard({ port }: { port: Port }) {
     <article className="overflow-hidden rounded-xl border border-line bg-foam">
       <img src={port.image} alt={port.alt} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
       <div className="p-5">
-      <p className="text-xs font-medium text-tide">{port.place}</p>
+      <p className="text-sm font-medium text-tide">{port.place}</p>
       <h3 className="mt-1 font-display text-2xl text-ink">{port.name}</h3>
       <p className="mt-2 text-base leading-relaxed text-ink">
-        <span className="font-medium text-ink">Sails to: </span>
+        <span className="font-medium text-ink">Cruises go to: </span>
         {port.goes}
       </p>
       <p className="mt-2 text-base leading-relaxed text-ink">
@@ -70,7 +70,7 @@ function CallCard({ call }: { call: PortCall }) {
     <article className="overflow-hidden rounded-xl border border-line bg-foam">
       <img src={call.image} alt={call.alt} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
       <div className="p-5">
-      <p className="text-xs font-medium text-tide">{call.place}</p>
+      <p className="text-sm font-medium text-tide">{call.place}</p>
       <h3 className="mt-1 font-display text-2xl text-ink">{call.name}</h3>
       <p className="mt-2 text-base leading-relaxed text-ink">{call.note}</p>
       <p className="mt-2 text-base leading-relaxed text-ink">

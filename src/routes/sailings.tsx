@@ -26,7 +26,7 @@ const weeklyDeals = [
     ports: "americas",
     destination: "caribbean",
     region: "Caribbean cruises",
-    text: "Cape Liberty, in Bayonne, New Jersey, is Royal Caribbean’s Northeast homeport. A Caribbean cruise that departs from there has more sea days than a cruise to the same islands that departs from Miami.",
+    text: "Cape Liberty, in Bayonne, New Jersey, is the port Royal Caribbean uses in the Northeast. A Caribbean cruise that departs from there has more sea days than a cruise to the same islands that departs from Miami.",
   },
   {
     line: "Norwegian Cruise Line",
@@ -182,7 +182,7 @@ function OfferCard({ offer }: { offer: SupplierOffer }) {
   const slug = offer.href.match(/\/offer\/([a-z0-9-]+)/i)?.[1]?.toLowerCase();
   const body = (
     <>
-      <p className="text-xs font-medium text-tide">{offer.line || offer.tag}</p>
+      <p className="text-sm font-medium text-tide">{offer.line || offer.tag}</p>
       <h3 className="mt-2 font-display text-2xl">{offerHeading(offer)}</h3>
       <p className="mt-2 text-sm text-mute">{offer.detail}</p>
     </>
@@ -251,7 +251,7 @@ function DealsOfTheWeek({ offers, checked }: { offers: SupplierOffer[]; checked:
           const heading = offerHeading(deal.offer, deal.guide);
           return (
             <article key={deal.offer.href} className="flex flex-col rounded-xl border border-line bg-foam p-5">
-              <p className="text-xs font-medium text-tide">{deal.offer.line || (deal.guide ? deal.guide.port : deal.offer.tag)}</p>
+              <p className="text-sm font-medium text-tide">{deal.offer.line || (deal.guide ? deal.guide.port : deal.offer.tag)}</p>
               <h3 className="mt-2 font-display text-2xl">{heading}</h3>
               <p className="mt-2 text-sm leading-6 text-ink">{deal.offer.detail}</p>
               {deal.guide ? (
@@ -370,7 +370,7 @@ function SailingsPage() {
             </div>
           );
         })}
-        <p className="mt-8 max-w-3xl text-xs leading-5 text-mute">{licenseLine}</p>
+        <p className="mt-8 max-w-3xl text-sm leading-6 text-mute">{licenseLine}</p>
       </section>
     </Shell>
   );

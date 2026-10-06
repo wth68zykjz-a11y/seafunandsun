@@ -160,7 +160,7 @@ function DoorFace({ door, eager }: { door: Door; eager?: boolean }) {
         )}
       </div>
       <div className="flex flex-col justify-center px-5 py-5 lg:px-12 lg:py-10">
-        <p className={`text-xs font-semibold uppercase tracking-[0.16em] ${door.tone === "sea" ? "text-gold" : "text-tide"}`}>{door.kicker}</p>
+        <p className={`text-sm font-semibold uppercase tracking-[0.12em] ${door.tone === "sea" ? "text-gold" : "text-tide"}`}>{door.kicker}</p>
         <h2 className="mt-2 font-display text-3xl lg:text-5xl">{door.title}</h2>
         <p className={`mt-3 line-clamp-3 max-w-md text-base leading-relaxed lg:line-clamp-none lg:text-lg ${door.tone === "sea" ? "text-foam/85" : "text-mute"}`}>{door.body}</p>
         <span

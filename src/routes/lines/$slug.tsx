@@ -67,8 +67,9 @@ function LineRegionPage() {
             ))}
           </div>
         ) : null}
-        <div className="mt-8 overflow-x-auto rounded-xl border border-line bg-foam">
-          <table className="w-full min-w-[44rem] text-left text-sm">
+        <p className="mt-8 text-sm text-mute md:hidden">Swipe sideways to see the passengers, the route, and the fare.</p>
+        <div className="mt-3 overflow-x-auto rounded-xl border border-line bg-foam md:mt-8">
+          <table className="w-full min-w-[44rem] text-left text-base">
             <thead className="border-b border-line text-mute">
               <tr>
                 <th className="px-4 py-3 font-medium">Line</th>

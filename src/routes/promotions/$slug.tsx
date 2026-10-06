@@ -58,13 +58,13 @@ function PromoPageView() {
           <dl className="mt-8 grid gap-4 sm:grid-cols-2">
             {promo.bookingDates ? (
               <div className="rounded-xl border border-line bg-foam p-5">
-                <dt className="text-xs font-medium text-tide">Book by</dt>
+                <dt className="text-sm font-medium text-tide">Book by</dt>
                 <dd className="mt-1 font-display text-2xl">{promo.bookingDates}</dd>
               </div>
             ) : null}
             {promo.travelDates ? (
               <div className="rounded-xl border border-line bg-foam p-5">
-                <dt className="text-xs font-medium text-tide">Travel</dt>
+                <dt className="text-sm font-medium text-tide">Travel</dt>
                 <dd className="mt-1 font-display text-2xl">{promo.travelDates}</dd>
               </div>
             ) : null}
@@ -89,7 +89,7 @@ function PromoPageView() {
             <ol className="mt-4 grid gap-3">
               {promo.days.map((day) => (
                 <li key={day.label + day.text} className="rounded-xl border border-line bg-foam p-5">
-                  <p className="text-xs font-medium text-tide">{day.label}</p>
+                  <p className="text-sm font-medium text-tide">{day.label}</p>
                   {day.text ? <p className="mt-1 text-ink">{day.text}</p> : null}
                   {day.times ? <p className="mt-1 text-sm text-mute">{day.times}</p> : null}
                 </li>

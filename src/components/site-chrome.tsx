@@ -226,7 +226,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-foam/15">
-        <div className="mx-auto max-w-6xl px-4 py-4 text-xs leading-5 text-foam/70">
+        <div className="mx-auto max-w-6xl px-4 py-4 text-sm leading-6 text-foam/90">
           <p>© {new Date().getFullYear()} Sea Fun & Sun · Farmington, CT</p>
           <p className="mt-1">Booking engine powered by Outside Agents</p>
           <p className="mt-1">{licenseLine}</p>

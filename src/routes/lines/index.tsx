@@ -34,7 +34,7 @@ function LinesPage() {
           <Link key={page.slug} to="/lines/$slug" params={{ slug: page.slug }} className="group overflow-hidden rounded-xl border border-line bg-foam hover:border-tide">
             <img src={page.image} alt={page.alt} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
             <div className="p-5">
-              <p className="text-xs font-medium text-tide">{page.card}</p>
+              <p className="text-sm font-medium text-tide">{page.card}</p>
               <h2 className="mt-1 font-display text-3xl">{page.title}</h2>
               <p className="mt-2 text-sm text-mute">{page.size}</p>
               <span className="mt-4 inline-flex text-sm font-medium text-tide group-hover:underline">Learn more</span>

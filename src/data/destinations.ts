@@ -129,7 +129,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The region sails year-round. December through April is peak season: the steadiest weather, and the highest fares. August through October is hurricane season. Named storms rarely reach a ship at sea, and the fares are lower.",
+    when: "Ships sail the Caribbean year-round. December through April is the peak season: the steadiest weather, and the highest cruise fares. August through October is hurricane season. Named storms rarely reach a ship at sea, and the cruise fares are lower.",
     planning: "Send the month and the departure port. A seven-night Caribbean cruise that departs from Miami spends more nights in the islands. A cruise of the same length that departs from New York, Baltimore, or Boston adds sea days each way. Those sea days should be on the itinerary before you choose.",
     itineraries: [
       {
@@ -198,7 +198,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "May and June are the most comfortable months: warm water, long light, and fares that have not yet reached August. September keeps the warmth with fewer people in the ports. In winter the Mediterranean is mostly a crossing season, which is a different kind of voyage.",
+    when: "May and June are the most comfortable months: warm water, long light, and cruise fares that have not yet reached the August fare. September keeps the warmth with fewer people in the ports. In winter, most of these cruises are repositioning crossings, with more days at sea and fewer days in port.",
     planning: "Name the coast: Greece, the Adriatic, or Spain and France. We price the ships that actually stop there.",
     itineraries: [
       {
@@ -267,7 +267,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "May through September is the classic season. The shoulder months keep the same ports with fewer crowds, and the light is often better. In winter, the transatlantic crossings make the ocean the trip.",
-    planning: "Tell us which cities you have already seen. The Mediterranean week lives on its own page, so this one stays on the Atlantic and the north.",
+    planning: "Tell us which cities you have already seen. Mediterranean cruises are on their own page. This page stays on the Atlantic and the north.",
     itineraries: [
       {
         title: "Atlantic capitals",
@@ -330,7 +330,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The islands sail year-round. Winter brings the gentlest seas and whale season. Summer ports are busier. A San Diego departure is the practical way to add Tahiti if you are not already in Hawaii.",
+    when: "Ships sail among the islands year-round. Winter brings the gentlest seas and the whale season. The ports are busier in summer. A cruise that departs from San Diego is the practical way to add Tahiti if you are not already in Hawaii.",
     planning: "Say whether you are already in the islands or leaving from California. The flight, or the extra sea days, belongs in the quote.",
     itineraries: [
       {
@@ -444,7 +444,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "June through August is the season for the fjords and the midnight sun. September can add the aurora. Farther north, the window is shorter.",
-    planning: "Fjords, Iceland, or the Baltic. Pick one. A seven-night ship does not do all three.",
+    planning: "Choose the fjords, Iceland, or the Baltic. A seven-night cruise does not cover all three.",
     itineraries: [
       {
         title: "Fjord classic",
@@ -515,7 +515,7 @@ export const destinations: Destination[] = [
         season: "Late September–October",
         ship: "From Boston or New York",
         path: "Canada & New England loop",
-        ports: ["Bar Harbor or Portland", "Halifax", "Sydney, Nova Scotia, on the weeks that go that far", "A sea day"],
+        ports: ["Bar Harbor or Portland", "Halifax", "Sydney, Nova Scotia, on the cruises that reach it", "A sea day"],
       },
       {
         title: "A long weekend from Boston",
@@ -573,7 +573,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "April through October, and the window depends on the river. Spring is the Rhine in blossom. Fall is vineyard color and better light. The ships run on a season, so the dates matter as much as the fare.",
+    when: "The season runs from April through October, and the dates depend on the river. Spring is the Rhine in blossom. Fall is vineyard color and better light. The ships run on a season, so the dates matter as much as the fare.",
     planning: "Name the river. A Danube ship and a Mississippi ship are not interchangeable, and many of these fares are quoted rather than posted.",
     itineraries: [
       {
@@ -617,7 +617,7 @@ export const destinations: Destination[] = [
     card: "Remote coasts",
     image: "/media/expedition.jpg",
     alt: "Sea ice under pale polar light",
-    lede: "Small ships, Zodiacs, and guides. The ship decides which landings are possible, and weather can change the day.",
+    lede: "The ships are small. You go ashore by Zodiac with a guide. The ship decides which landings are possible, and weather can change the day.",
     paragraphs: [
       "Lindblad, Ponant, and Hapag-Lloyd sail Antarctica, the Arctic, and the Galápagos, along with the expedition ships of Viking and Silversea. Patagonia uses those same small ships. UnCruise sails Alaska and the Pacific Northwest. It does not sail Antarctica or the Galápagos.",
       "Tell us the region and the months. A smaller ship spends more of the day off the ship. We will set out the options that match.",
@@ -646,7 +646,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "Antarctica runs from November through March. The Arctic runs from June through September. Cabins sell by route, and the better ships fill early.",
+    when: "Antarctica runs from November through March. The Arctic runs from June through September. Cabins are booked by the route, and the better ships fill early.",
     planning: "Antarctica, the Arctic, or the Galápagos, and the month. We match the ship to how much time you want off it.",
     itineraries: [
       {
@@ -840,7 +840,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "World cruises sell by route and by year. The better sailings are usually chosen twelve to eighteen months ahead.",
-    planning: "A world cruise is a season, not a week. Tell us the months you can be away and the ports you will not skip.",
+    planning: "A world cruise lasts about three to four months, not seven nights. Tell us the months you can be away and the ports you will not skip.",
     itineraries: [
       {
         title: "Full circle",
@@ -875,7 +875,7 @@ export const destinations: Destination[] = [
     card: "Scenic train trips",
     image: "/media/rail.jpg",
     alt: "A passenger train beside a western river with mountains behind",
-    lede: "Scenic trains in North America, sleeper trains in Europe, and the hotel nights that connect them.",
+    lede: "We book scenic trains in North America, sleeper trains in Europe, and the hotel nights that connect them.",
     paragraphs: [
       "Amtrak, VIA Rail, and the scenic railways of North America run through some of the finest country on the continent. We build the trip around the routing you want, including the nights on either end.",
       "Europe has two kinds of train. The Venice Simplon-Orient-Express, La Dolce Vita Orient Express, the Golden Eagle Danube Express, and the Royal Scotsman are overnight trips: you sleep on the train, meals are usually included, and the cabin you choose is what changes the price. Many of those dates are quoted rather than posted. A scenic day train, such as the Glacier Express or the Bernina Express, is only the ride. You get off in the evening and sleep in a hotel.",
@@ -959,9 +959,9 @@ export const destinations: Destination[] = [
     card: "Reefs & fiords",
     image: "/media/australia-new-zealand.jpg",
     alt: "Sydney Opera House and a cruise ship on the harbor",
-    lede: "Sydney, the Great Barrier Reef, and the fiords of the South Island. The flight from the Northeast is long, so check the season and the ship before you book.",
+    lede: "The cruise can include Sydney, the Great Barrier Reef, and the fiords of the South Island. The flight from the Northeast is long, so check the season and the ship before you book.",
     paragraphs: [
-      "Most cruises run ten to twenty-one nights and depart from Sydney, Auckland, or Brisbane. Longer repositioning voyages come down from Hawaii or the West Coast. Princess, Holland America, Celebrity, Royal Caribbean, Cunard, and the smaller luxury lines sail the region in the southern summer. The comparison is the port list, not a preference for one line.",
+      "Most cruises run ten to twenty-one nights and depart from Sydney, Auckland, or Brisbane. Longer repositioning voyages come down from Hawaii or the West Coast. Princess, Holland America, Celebrity, Royal Caribbean, Cunard, and the smaller luxury lines sail the region in the southern summer. We compare the ports on the itinerary. We do not start from a favorite line.",
       "The useful split is the Australian coast, a New Zealand circuit, or one sailing that crosses the Tasman and does both. Tell us which of those you want. We will start from the ports, not from a brand.",
     ],
     lists: [
