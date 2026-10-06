@@ -515,7 +515,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A train crossing a wooden trestle above a misty spruce valley",
     facts: [
       { label: "Time in port", text: "Most calls are four to eight hours. Glacier days can be the ship’s scenic sail, with no gangway at all." },
-      { label: "Worth the time", text: "In Juneau, the outing is the Mendenhall Glacier. Fresh salmon is the meal in town, not a place you visit. In Skagway, ride the White Pass railroad. These ports are not in the Michelin Guide." },
+      { label: "Worth the time", text: "In Juneau, visit the Mendenhall Glacier. For salmon, eat it in town or book a short trip and try to catch one. In Skagway, ride the White Pass railroad. These ports are not in the Michelin Guide." },
       { label: "Best for", text: "People who want wildlife and ice more than nightlife. A balcony matters here more than a big ship theater." },
       { label: "Often a poor fit", text: "Gift-shop bus loops, and any “flightseeing plus six other stops” that spends the day in a van." },
     ],
