@@ -216,8 +216,12 @@ async function enrichOffer(offer: SupplierOffer): Promise<SupplierOffer> {
     const facts = offerFacts(await response.text());
     const line = facts.line;
     let detail = offer.detail;
-    if (line && facts.starting) detail = `${line}. ${offer.title} starts at ${facts.starting}.`;
-    else if (facts.starting) detail = `${offer.title} starts at ${facts.starting}.`;
+    if (line && facts.starting) {
+      detail =
+        /explora/i.test(line) && facts.journey
+          ? `Explora Journeys is a luxury cruise line. The staterooms are suites, and the fare usually includes drinks, Wi-Fi, and gratuities. ${facts.journey} Fares start at ${facts.starting}.`
+          : `${line}. ${offer.title} starts at ${facts.starting}.`;
+    } else if (facts.starting) detail = `${offer.title} starts at ${facts.starting}.`;
     else if (line && !named.test(offer.detail)) detail = `${line}. ${offer.detail}`;
     return line ? { ...offer, line, detail } : { ...offer, detail };
   } catch {

@@ -52,7 +52,7 @@ export function explainPromotion(title: string): string {
     return "Booking a 2028 cruise early adds a bonus from the line, usually money off the fare or onboard credit.";
   }
   if (/explora|historic gateway|middle eastern|red sea|arabian/i.test(t)) {
-    return "This is a set Explora Journeys itinerary. The title is the route, and the price is the cruise fare for those nights.";
+    return "Explora Journeys is a luxury cruise line. The staterooms are suites, and the fare usually includes drinks, Wi-Fi, and gratuities.";
   }
   if (/alexandria|port said/i.test(t)) {
     return "A private day in Alexandria for ships that call at Port Said.";

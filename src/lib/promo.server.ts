@@ -12,6 +12,7 @@ export type PromoPage = {
   prices: PromoPrice[];
   line: string;
   starting: string;
+  journey: string;
   disclaimer: string;
 };
 
@@ -33,7 +34,7 @@ function decode(value: string) {
   return text.replace(/\s+/g, " ").trim();
 }
 
-export function offerFacts(html: string): { line: string; starting: string } {
+export function offerFacts(html: string): { line: string; starting: string; journey: string } {
   const heads = [...html.matchAll(/fl-heading-text">([^<]+)/g)]
     .map((match) => decode(match[1]).replace(/®/g, "").trim())
     .filter((head) => head && !/want more information/i.test(head));
@@ -42,7 +43,8 @@ export function offerFacts(html: string): { line: string; starting: string } {
     .map((match) => Number(match[1].replace(/,/g, "")))
     .filter((amount) => amount > 0);
   const starting = amounts.length ? `$${Math.min(...amounts).toLocaleString("en-US")}` : "";
-  return { line, starting };
+  const journey = decode(html).match(/\b(?:A|An)\s+\d+-night journey[^.]{8,180}\./i)?.[0] ?? "";
+  return { line, starting, journey };
 }
 
 function field(html: string, className: string) {
@@ -108,6 +110,7 @@ export function parsePromoHtml(slug: string, html: string): PromoPage {
     prices: prices.slice(0, 8),
     line: facts.line,
     starting: facts.starting,
+    journey: facts.journey,
     disclaimer,
   };
 }

@@ -37,11 +37,13 @@ function PromoPageView() {
         kicker="A Sea Fun & Sun promotion"
         title={promo.title}
         lede={
-          promo.line && promo.starting
-            ? `${promo.line}. ${promo.title} starts at ${promo.starting}.`
-            : promo.line
-              ? `${promo.line}. ${explainPromotion(promo.title)}`
-              : explainPromotion(promo.title)
+          /explora/i.test(promo.line)
+            ? `Explora Journeys is a luxury cruise line. The staterooms are suites, and the fare usually includes drinks, Wi-Fi, and gratuities. ${promo.journey ? `${promo.journey} ` : ""}${promo.starting ? `Fares start at ${promo.starting}.` : ""}`.trim()
+            : promo.line && promo.starting
+              ? `${promo.line}. ${promo.title} starts at ${promo.starting}.`
+              : promo.line
+                ? `${promo.line}. ${explainPromotion(promo.title)}`
+                : explainPromotion(promo.title)
         }
       />
       <div className="mx-auto max-w-6xl px-4 pb-20">
@@ -81,7 +83,7 @@ function PromoPageView() {
             </ul>
           </section>
         ) : null}
-        {promo.days.length > 0 ? (
+        {promo.days.length > 0 && !/explora/i.test(promo.line) ? (
           <section className="mt-10">
             <h2 className="font-display text-3xl">The routing</h2>
             <ol className="mt-4 grid gap-3">
