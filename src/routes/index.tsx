@@ -1,19 +1,25 @@
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { QuoteForm } from "@/components/quote-form";
 import { LogoMark, Shell } from "@/components/site-chrome";
 import { phone, phoneHref } from "@/data/links";
 import { faqLd, JsonLd, pageHead } from "@/lib/seo";
 
+const QuoteForm = lazy(() => import("@/components/quote-form").then((mod) => ({ default: mod.QuoteForm })));
+
 export const Route = createFileRoute("/")({
-  head: () =>
-    pageHead({
+  head: () => {
+    const head = pageHead({
       title: "Sea Fun & Sun | Cruises, resorts, ski vacations, and rail trips — Farmington, CT",
       description:
         "Independent travel agency in Farmington, Connecticut. We book cruises by region, beach resorts, ski vacations including Club Med, expedition ships, and rail trips, including luxury European trains. No separate agent fee. (959) 666-2062.",
       path: "/",
-      image: "/media/hero-ship.jpg",
-    }),
+      image: "/media/card-cruises.webp",
+    });
+    return {
+      ...head,
+      links: [...(head.links ?? []), { rel: "preload", as: "image", href: "/media/card-cruises.webp", fetchPriority: "high" }],
+    };
+  },
   component: Home,
 });
 
@@ -52,7 +58,7 @@ const doors: Door[] = [
     kicker: "Ships",
     title: "Cruises",
     body: "Ocean and river cruises, with a page for each region, the usual routing, and the common ports of call.",
-    image: "/media/card-cruises.jpg",
+    image: "/media/card-cruises.webp",
     alt: "Cruise ships docked along a pier in turquoise water",
     cta: "See destinations",
     tone: "sea",
@@ -63,7 +69,7 @@ const doors: Door[] = [
     kicker: "Beach",
     title: "Resorts",
     body: "Sandals, Beaches, Hyatt, Secrets, and Club Med on the beach. The quote names what the rate does not cover.",
-    image: "/media/card-resorts.jpg",
+    image: "/media/card-resorts.webp",
     alt: "A palm-lined pool above the open ocean",
     cta: "See resorts",
     tone: "foam",
@@ -74,7 +80,7 @@ const doors: Door[] = [
     kicker: "Snow",
     title: "Ski",
     body: "Club Med, with meals and often the pass and lessons in one rate. Luxury hotels in Aspen, Banff, Mammoth, Whistler, the Alps, and Niseko, where the pass is usually separate. Some of those mountains take Ikon or Epic.",
-    image: "/media/card-ski.jpg",
+    image: "/media/card-ski.webp",
     alt: "A person in a red jacket facing the Matterhorn across a snowfield",
     cta: "See ski vacations",
     tone: "sea",
@@ -85,7 +91,7 @@ const doors: Door[] = [
     kicker: "Small ships",
     title: "Expedition",
     body: "Antarctica, the Arctic, and the Galápagos, on ships small enough that the landing is the day.",
-    image: "/media/card-expedition.jpg",
+    image: "/media/card-expedition.webp",
     alt: "Northern lights over a snowfield",
     cta: "See expedition cruises",
     tone: "foam",
@@ -97,7 +103,7 @@ const doors: Door[] = [
     kicker: "On the ground",
     title: "Rail and land",
     body: "Scenic trains in North America, luxury sleepers in Europe, and the hotel nights between them. A guided tour may be available, depending on the city.",
-    image: "/media/card-rail.jpg",
+    image: "/media/card-rail.webp",
     alt: "A passenger train beside a western river with mountains behind",
     cta: "See rail and land",
     tone: "sea",
@@ -113,8 +119,8 @@ function DoorFace({ door, eager }: { door: Door; eager?: boolean }) {
         <img
           src={door.image}
           alt={door.alt}
-          width={1400}
-          height={933}
+          width={1100}
+          height={733}
           draggable={false}
           decoding="async"
           loading={eager ? "eager" : "lazy"}
@@ -265,11 +271,9 @@ function Home() {
   return (
     <Shell>
       <div className="relative">
-        <img
-          src="/media/page-map.png"
-          alt=""
+        <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.045]"
+          className="pointer-events-none absolute inset-0 bg-[url('/media/page-map.png')] bg-cover bg-center opacity-[0.045]"
         />
         <JsonLd data={faqLd(faqs)} />
         <section className="mx-auto max-w-6xl px-4 pt-6 lg:pt-10">
@@ -339,7 +343,7 @@ function Home() {
             className="mt-8 grid overflow-hidden rounded-xl border border-line bg-foam md:grid-cols-[18rem_1fr]"
           >
             <img
-              src="/media/ports/miami.jpg"
+              src="/media/ports/miami.webp"
               alt="Miami’s waterfront, a common departure port for Caribbean cruises"
               width={1400}
               height={933}
@@ -410,7 +414,9 @@ function Home() {
               </li>
             </ul>
           </div>
-          <QuoteForm preset="" chooseTrip />
+          <Suspense fallback={<div className="min-h-[32rem] rounded-xl border border-line bg-foam" aria-hidden="true" />}>
+            <QuoteForm preset="" chooseTrip />
+          </Suspense>
         </section>
       </div>
     </Shell>
