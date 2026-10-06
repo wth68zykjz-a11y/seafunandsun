@@ -782,7 +782,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "Sydney and Auckland can be long city days. Reef ports need a full day. Milford is often a scenic sail, with no gangway." },
       { label: "Worth the time", text: "Stop in Sydney to see the Opera House. It sits next to where most ships dock. If the ship leaves later, squeeze lunch in, or get a meat pie on the quay. To see more than the harbor, stay at the Park Hyatt Sydney, across from the Opera House, before the cruise or after you return. In Auckland, walk the harbor and have lamb for lunch." },
-      { label: "Best for", text: "Travelers who can give the southern summer to one region, and who will fly to Sydney or Auckland to start." },
+      { label: "Best for", text: "Travelers who can spend October through April, Australia’s summer, in one place, and who will fly to Sydney or Auckland to start." },
       { label: "Often a poor fit", text: "A reef and a capital in one day, and any Blue Mountains loop that spends the Sydney day on a highway." },
     ],
     outings: [
