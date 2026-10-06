@@ -43,8 +43,8 @@ export const destinations: Destination[] = [
       {
         heading: "The routes",
         items: [
-          "Seattle round trips — the Inside Passage, 7 to 14 nights",
-          "Vancouver — one way to Seward or Whittier, and some Inside Passage round trips. A passport is required. The currency ashore is the Canadian dollar",
+          "Round-trip cruises from Seattle through the Inside Passage, 7 to 14 nights",
+          "Vancouver is the departure port for a one-way cruise to Seward or Whittier, and for some Inside Passage round trips. A passport is required. The currency ashore is the Canadian dollar",
           "Seattle to Seward or Whittier — one way, across the Gulf of Alaska",
           "Glacier-focused sailings — Tracy Arm, Endicott Arm, College Fjord, Glacier Bay",
         ],
@@ -61,7 +61,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "The season runs from May through September. August and early September bring the salmon run, the bears, and the longest evenings. Spring leaves the glaciers at their largest. Midsummer gives you the light. We will match the month to what you most want to see.",
-    planning: "August for the bears, or May for the glaciers. A Seattle round trip uses one airport. A one-way to Seward or Whittier needs a flight at that end. If the ship starts in Vancouver, stay a few days before or after. The Fairmont Pacific Rim looks over the harbor and the mountains.",
+    planning: "August for the bears, or May for the glaciers. A round-trip Alaska cruise from Seattle uses one airport. A one-way cruise to Seward or Whittier needs a flight at that end. If the cruise departs from Vancouver, stay a few days before or after. The Fairmont Pacific Rim looks over the harbor and the mountains.",
     itineraries: [
       {
         title: "Inside Passage classic",
@@ -1024,7 +1024,7 @@ export const destinations: Destination[] = [
     alt: "A ship in the Miraflores Locks on the Panama Canal",
     lede: "A Panama Canal cruise is a transit, not a loop of beaches. A full transit changes oceans. A partial transit goes into Gatun Lake and turns around.",
     paragraphs: [
-      "Most full transits run fourteen to seventeen nights, one way. Fort Lauderdale, Miami, or New Orleans is the usual Caribbean start. Los Angeles or San Diego is the usual Pacific end, and some sailings continue to Seattle or Vancouver. Princess, Holland America, Celebrity, Norwegian, Carnival, Royal Caribbean, and Cunard schedule them, mainly in spring and fall, when ships move between the Caribbean and the West Coast or Alaska. Regent, Silversea, Oceania, and Viking ocean do as well. Many of those sailings are quoted.",
+      "Most full transits run fourteen to seventeen nights, one way. The usual departure port on the Caribbean side is Fort Lauderdale, Miami, or New Orleans. Los Angeles or San Diego is the usual Pacific end, and some sailings continue to Seattle or Vancouver. Princess, Holland America, Celebrity, Norwegian, Carnival, Royal Caribbean, and Cunard schedule them, mainly in spring and fall, when ships move between a Caribbean cruise and the West Coast or an Alaska cruise. Regent, Silversea, Oceania, and Viking ocean do as well. Many of those sailings are quoted.",
       "The same brochure word covers two different trips. The comparison below is the one to use before you look at a fare.",
     ],
     lists: [

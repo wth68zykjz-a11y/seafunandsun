@@ -69,9 +69,9 @@ export const portRegions: PortRegion[] = [
   {
     id: "pacific",
     title: "Alaska, the West Coast, and Hawaii",
-    lede: "Alaska ships turn in the Pacific Northwest. Hawaii and Mexico ships turn in California. Honolulu is an inter-island embarkation, not the start of a crossing from the mainland.",
+    lede: "Ships on an Alaska cruise turn around in the Pacific Northwest. Ships on a Hawaii or Mexico cruise turn around in California. Honolulu is the departure port for an inter-island cruise, not the start of a crossing from the mainland.",
     ports: [
-      { name: "Seattle", place: "Washington", goes: "Alaska. Round trips through the Inside Passage, and one-way sailings to Seward or Whittier.", air: "Alaska Airlines and Delta have the most flights. American, United, and Southwest also serve it.", zone: "America/Los_Angeles", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/seattle.jpg", alt: "The Seattle waterfront", slug: "alaskan" },
+      { name: "Seattle", place: "Washington", goes: "Alaska cruises. Seattle is the departure port for a round-trip cruise through the Inside Passage, and for some one-way cruises to Seward or Whittier.", air: "Alaska Airlines and Delta have the most flights. American, United, and Southwest also serve it.", zone: "America/Los_Angeles", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/seattle.jpg", alt: "The Seattle waterfront", slug: "alaskan" },
       { name: "Seward", place: "Alaska", goes: "One-way Alaska, including the Gulf. Big ships rarely round-trip from here.", air: "Fly Anchorage. Alaska, Delta, United, and American. Then about 2.5 hours down the Seward Highway.", zone: "America/Anchorage", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/seward.jpg", alt: "The harbor at Seward, Alaska", slug: "alaskan" },
       { name: "Whittier", place: "Alaska", goes: "The port for Anchorage and for one-way Gulf of Alaska sailings. Not a round-trip homeport.", air: "Fly Anchorage, then about 1.5 hours, including the Anton Anderson Memorial Tunnel.", zone: "America/Anchorage", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/whittier.jpg", alt: "Whittier, Alaska, on the water", slug: "alaskan" },
       { name: "San Diego", place: "California", goes: "Mexican Riviera, Hawaii, and Panama Canal repositioning.", air: "Southwest, Alaska, Delta, American, and United.", zone: "America/Los_Angeles", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/san-diego.jpg", alt: "Downtown San Diego", slug: "hawaii" },
@@ -85,7 +85,7 @@ export const portRegions: PortRegion[] = [
     title: "Canada",
     lede: "Vancouver is an Alaska homeport. Quebec and Montreal are fall ports for Canada and New England. Halifax is usually a stop, not a turnaround.",
     ports: [
-      { name: "Vancouver", place: "British Columbia", goes: "Alaska. One-way to Seward or Whittier, and some round trips down the Inside Passage.", air: "Air Canada and WestJet, plus United, Alaska, and Delta.", zone: "America/Vancouver", money: "Canadian dollar. Order it from your bank before you travel, or use a card with no international transaction fee. Shops that take US bills usually give a worse rate.", image: "/media/ports/vancouver.jpg", alt: "Vancouver harbor and the mountains", slug: "alaskan" },
+      { name: "Vancouver", place: "British Columbia", goes: "Alaska cruises. Vancouver is the Canadian departure port, often for a one-way cruise to Seward or Whittier, and for some round-trip cruises through the Inside Passage.", air: "Air Canada and WestJet, plus United, Alaska, and Delta.", zone: "America/Vancouver", money: "Canadian dollar. Order it from your bank before you travel, or use a card with no international transaction fee. Shops that take US bills usually give a worse rate.", image: "/media/ports/vancouver.jpg", alt: "Vancouver harbor and the mountains", slug: "alaskan" },
       { name: "Quebec City", place: "Quebec", goes: "Canada and New England in the fall, on ships that come up the St. Lawrence.", air: "Air Canada and WestJet. Many itineraries connect in Montreal or Toronto.", zone: "America/Toronto", money: "Canadian dollar. Order it from your bank before you travel, or use a card with no international transaction fee. Shops that take US bills usually give a worse rate.", image: "/media/ports/quebec-city.jpg", alt: "Quebec City above the St. Lawrence", slug: "canada-new-england" },
       { name: "Montreal", place: "Quebec", goes: "Some of those same fall sailings stop here. It is not a summer Caribbean port.", air: "Air Canada has the hub. WestJet, Air Transat, Porter, and the US majors also fly it.", zone: "America/Toronto", money: "Canadian dollar. Order it from your bank before you travel, or use a card with no international transaction fee. Shops that take US bills usually give a worse rate.", image: "/media/ports/montreal.jpg", alt: "Montreal and the river", slug: "canada-new-england" },
       { name: "Halifax", place: "Nova Scotia", goes: "Usually a stop. A few Canada and New England sailings turn around here.", air: "Air Canada, WestJet, and Porter.", zone: "America/Halifax", money: "Canadian dollar. Order it from your bank before you travel, or use a card with no international transaction fee. Shops that take US bills usually give a worse rate.", image: "/media/ports/halifax.jpg", alt: "Halifax harbor", slug: "canada-new-england" },
@@ -112,7 +112,7 @@ export const portRegions: PortRegion[] = [
   {
     id: "northern-europe",
     title: "Northern Europe and the Atlantic",
-    lede: "Southampton is the port that can point almost anywhere. The others are Norway, the Baltic, or the islands off Africa.",
+    lede: "Southampton is a departure port for many different cruises. The other ports here are mainly for a cruise to Norway, the Baltic, or the Canary Islands.",
     ports: [
       { name: "Southampton", place: "England", goes: "Norway, the Baltic, the Mediterranean, the Canaries, and the transatlantic crossing.", air: "Fly London Heathrow or Gatwick. British Airways, Virgin Atlantic, American, Delta, and United. Heathrow is about 1.5 hours from the port. Southampton Airport itself is a small field.", zone: "Europe/London", money: "Pound sterling. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/southampton.jpg", alt: "The port of Southampton", slug: "northern-europe" },
       { name: "Dover", place: "England", goes: "Norway and shorter Northern Europe sailings. The white cliffs are at the port.", air: "Same London airports as Southampton. Heathrow is about 1.5 to 2 hours from Dover.", zone: "Europe/London", money: "Pound sterling. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/dover.jpg", alt: "The white cliffs at Dover", slug: "northern-europe" },
@@ -142,7 +142,7 @@ export const portRegions: PortRegion[] = [
   {
     id: "asia",
     title: "Asian embarkation ports",
-    lede: "Singapore and Tokyo are the embarkations you can plan around. Hong Kong and Shanghai run when the season is open. They do not sail every year.",
+    lede: "Singapore and Tokyo are departure ports you can plan around. Ships sail from Hong Kong and Shanghai in the years a season is scheduled. Those cruises do not depart from those ports every year.",
     ports: [
       { name: "Singapore", place: "Singapore", goes: "Thailand, Vietnam, Malaysia, and Indonesia.", air: "Singapore Airlines has the hub. Scoot flies the shorter routes. United, ANA, JAL, Qantas, Emirates, Qatar, and Cathay Pacific also serve the city.", zone: "Asia/Singapore", money: "Singapore dollar. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/singapore.jpg", alt: "Marina Bay in Singapore", slug: "asia" },
       { name: "Hong Kong", place: "China", goes: "The China coast, Vietnam, and Japan, in the years the ships are based here.", air: "Cathay Pacific and HK Express. Long-haul partners include British Airways, Qantas, and the US lines when a nonstop is scheduled.", zone: "Asia/Hong_Kong", money: "Hong Kong dollar. Cards are accepted. The Hong Kong dollar is pegged to the US dollar, but shops price in Hong Kong dollars.", image: "/media/ports/hong-kong.jpg", alt: "Victoria Harbour in Hong Kong", slug: "asia" },
@@ -154,7 +154,7 @@ export const portRegions: PortRegion[] = [
   {
     id: "australia",
     title: "Australia",
-    lede: "Sydney is the port that carries the season. The others turn ships, but not as often.",
+    lede: "Sydney is the main departure port from October through April. Brisbane and Melbourne are departure ports less often.",
     ports: [
       { name: "Sydney", place: "Australia", goes: "The Australian coast, New Zealand, and the South Pacific.", air: "Qantas has the hub. Virgin Australia and Jetstar fly domestically. United, American, Delta, Air New Zealand, Singapore Airlines, Emirates, Qatar, and Cathay Pacific fly the long haul.", zone: "Australia/Sydney", money: "Australian dollar. Cards are accepted.", image: "/media/ports/sydney.jpg", alt: "Sydney Harbour", slug: "australia-new-zealand" },
       { name: "Brisbane", place: "Australia", goes: "The Queensland coast and the South Pacific. The cruise terminal is at the Port of Brisbane, about 30 minutes from the city.", air: "Qantas, Virgin Australia, and Jetstar. International flights include Air New Zealand, Singapore Airlines, Emirates, and Qatar.", zone: "Australia/Brisbane", money: "Australian dollar. Cards are accepted. Queensland does not change the clocks for summer.", image: "/media/ports/brisbane.jpg", alt: "Brisbane and the river", slug: "australia-new-zealand" },
@@ -164,7 +164,7 @@ export const portRegions: PortRegion[] = [
   {
     id: "new-zealand",
     title: "New Zealand",
-    lede: "Auckland is the usual turnaround. The other cities are stops on a Sydney or Auckland sailing.",
+    lede: "Auckland is the usual departure port. The other cities are stops on a cruise that departs from Sydney or Auckland.",
     ports: [
       { name: "Auckland", place: "New Zealand", goes: "New Zealand, and across the Tasman to Australia.", air: "Air New Zealand has the hub. Qantas and Jetstar fly the Tasman. United, American, Delta, and Hawaiian fly from the US, some of them only in season.", zone: "Pacific/Auckland", money: "New Zealand dollar. Cards are accepted.", image: "/media/ports/auckland.jpg", alt: "Auckland harbor", slug: "australia-new-zealand" },
     ],

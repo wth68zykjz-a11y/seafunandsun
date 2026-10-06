@@ -53,7 +53,7 @@ const weeklyDeals = [
     ports: "americas",
     destination: "alaskan",
     region: "Alaska cruises",
-    text: "Princess sails Alaska from Seattle, including round trips through the Inside Passage and one-way sailings toward Seward or Whittier.",
+    text: "Princess sails an Alaska cruise from Seattle, including a round-trip cruise through the Inside Passage and a one-way cruise toward Seward or Whittier.",
   },
   {
     line: "Holland America",
