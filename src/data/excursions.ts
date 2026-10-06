@@ -221,7 +221,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-bermuda.jpg",
     photoAlt: "A curve of pink sand and clear water toward pastel houses",
     intro:
-      "Bermuda sailings usually stay more than a day, so the island does not have to be done at a sprint. Pink sand, the town, and one activity is a full plan. Horseshoe Bay in the middle of a ship day is crowded.",
+      "Bermuda sailings usually stay more than a day, so the island does not have to be done at a sprint. On a short call, book the excursion through the ship if you want to leave the Dockyard. If that tour runs late, the ship waits. A tour you arranged yourself does not.",
     excursions: [
       {
         title: "Pink sand, earlier than the ship",

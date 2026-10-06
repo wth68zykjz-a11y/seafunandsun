@@ -35,7 +35,7 @@ const ashoreNotes: Record<string, string> = {
   hawaii:
     "Inter-island days run longer than a Caribbean call, and Pride of America often stays into the evening. The day might be a beach, a drive, or the north shore. Pearl Harbor belongs to a night on Oahu before or after a California crossing, when you are not watching the gangway. A luau needs the ship still in port after dark.",
   bermuda:
-    "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is a bus or taxi ride to the south shore. Hamilton is a ferry or a bus. St. George's is farther east, another bus ride. An overnight is enough time for the beach, Hamilton, and St. George's. A short stop is the Dockyard. Sailings from Boston, New York, or Baltimore include sea days each way.",
+    "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is a bus or taxi ride to the south shore. Hamilton is a ferry or a bus. St. George's is farther east, another bus ride. An overnight is enough time for the beach, Hamilton, and St. George's. On a short call, use the excursion sold by the ship if you want to leave the Dockyard. If that tour is late, the ship waits. Sailings from Boston, New York, or Baltimore include sea days each way.",
   "northern-europe":
     "Baltic and Norway calls often end in the afternoon. Bergen is the wharf. Copenhagen is the harbor and Nyhavn. Ocean ships for Amsterdam dock at IJmuiden, so the Rijksmuseum takes more of the day than a pier in the center would. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for one museum and one neighborhood.",
   "canada-new-england":
