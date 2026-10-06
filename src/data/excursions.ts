@@ -570,7 +570,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A train crossing a wooden trestle above a misty spruce valley",
     facts: [
       { label: "Time in port", text: "Most stops are four to eight hours. Glacier days can be the ship’s scenic sail, with no gangway at all." },
-      { label: "Worth the time", text: "Stop in Juneau to visit the Mendenhall Glacier. You can eat salmon in town, or go out for a few hours and try to catch one. Stop in Skagway for the train up the White Pass. Neither port has a Michelin restaurant." },
+      { label: "Worth the time", text: "Stop in Juneau to visit the Mendenhall Glacier. You can eat salmon in town, or go out for a few hours and try to catch one. Stop in Skagway for the train up the White Pass." },
       { label: "Best for", text: "People who want wildlife and ice more than nightlife. A balcony is the better cabin here than a seat in a big theater." },
       { label: "Often a poor fit", text: "Gift-shop bus loops, and any “flightseeing plus six other stops” that spends the day in a van." },
     ],
@@ -585,7 +585,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A snorkel mask and fins on limestone beside clear reef water",
     facts: [
       { label: "Time in port", text: "Usually morning to late afternoon. Private-island days are the ship’s own beach, not a town." },
-      { label: "Worth the time", text: "Stop in Old San Juan and walk up to El Morro and the cathedral. In Martinique, stop at a bakery instead of a jewelry shop. Michelin does not cover these islands, so eat what the port actually cooks." },
+      { label: "Worth the time", text: "Stop in Old San Juan and walk up to El Morro and the cathedral. In Martinique, stop at a bakery instead of a jewelry shop." },
       { label: "Best for", text: "A first cruise, a family, or anyone who wants short flights from the East Coast and a port every morning." },
       { label: "Often a poor fit", text: "Stacking a zip line on a catamaran in one day, and any beach club that is worse than the one the ship already owns." },
     ],
@@ -631,7 +631,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A sea turtle in clear shallows beside black volcanic sand",
     facts: [
       { label: "Time in port", text: "Inter-island ships often overnight. A West Coast sailing spends more days just getting there." },
-      { label: "Worth the time", text: "Stop on Oahu to visit the USS Arizona Memorial. After that, a plate lunch is enough. Hawaii is not in the Michelin Guide." },
+      { label: "Worth the time", text: "Stop on Oahu to visit the USS Arizona Memorial. After that, a plate lunch is an idea." },
       { label: "Best for", text: "People who want the islands, not a new port every morning. Match the excursion to the kind of Hawaii trip you booked." },
       { label: "Often a poor fit", text: "Hana on a dawn-to-dusk stop, and stacking a snorkel on a kayak in the same bay." },
     ],
@@ -646,7 +646,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Pink sand curving toward a pastel cottage and clear water",
     facts: [
       { label: "Time in port", text: "Ships usually stay more than a day, so you do not have to see the island between breakfast and all-aboard." },
-      { label: "Worth the time", text: "Stop in St. George’s to see St. Peter’s Church. The town is quiet enough that you do not need a timed tour. In Hamilton, get the fish sandwich on raisin bread. Bermuda is not in the Michelin Guide." },
+      { label: "Worth the time", text: "Stop in St. George’s to see St. Peter’s Church. The town is quiet enough that you do not need a timed tour. In Hamilton, the fish sandwich on raisin bread is an idea." },
       { label: "Best for", text: "A short East Coast sailing that still feels like a real island, not a dash through three countries." },
       { label: "Often a poor fit", text: "Six-stop island tours, and Horseshoe Bay at the hour every ship arrives." },
     ],
