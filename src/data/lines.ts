@@ -62,7 +62,7 @@ export const linePages: LinePage[] = [
         text: "The theater, the kids’ club, a sports court, and a casino are on these ships. A day at sea is the resort, not a day spent waiting for port.",
       },
       {
-        title: "What you give up",
+        title: "What these ships leave out",
         text: "Getting off takes longer, some harbors cannot take a ship this size, and you will not know the other passengers.",
       },
     ],
@@ -110,7 +110,7 @@ export const linePages: LinePage[] = [
         text: "A typical call is morning to late afternoon. One plan is enough: a beach, a reef, or a town. The ship is the rest of the day. Bermuda is the exception. Those sailings usually stay long enough to see the island, and the ships are smaller.",
       },
       {
-        title: "What you give up",
+        title: "What these ships leave out",
         text: "A week from the Northeast on the same size ship spends more nights at sea. The water park does not change that. If the point is a quiet ship or a harbor the large ships cannot enter, look at the luxury and yacht pages.",
       },
     ],
@@ -159,7 +159,7 @@ export const linePages: LinePage[] = [
         text: "Most calls last about six to eight hours. Juneau, Skagway, and Ketchikan are the walking ports. A glacier day may not include a landing at all. Bring a warm layer. The pools are open, and the weather does not always agree.",
       },
       {
-        title: "What you give up",
+        title: "What these ships leave out",
         text: "You do not get the newest 6,000-passenger ships, or their water parks. A one-way to Seward or Whittier shows more of the Gulf and needs a flight at one end. A Seattle round trip is one airport. Hawaii’s Pride of America is a different week: the islands, overnight, and no glaciers.",
       },
     ],
@@ -211,7 +211,7 @@ export const linePages: LinePage[] = [
         text: "These are walking days. The useful call starts early, before the heat and the crowds. A large ship tendering into a small harbor spends the first hour just getting people ashore. Large ships do not embark in the Venice lagoon.",
       },
       {
-        title: "What you give up",
+        title: "What these ships leave out",
         text: "July and August are hot in the Mediterranean, and the ships are full. A quieter week is May, June, or September, often on a smaller ship. The luxury and yacht pages are the ones that trade the water park for a harbor in the middle of town.",
       },
     ],
@@ -261,7 +261,7 @@ export const linePages: LinePage[] = [
         text: "On an expedition ship the day’s plan is a landing or a Zodiac ride, run by the ship’s staff. Weather and wildlife can change it. Antarctica and the Galápagos are sold as that uncertainty. A printed list of ports is not a promise.",
       },
       {
-        title: "What you give up",
+        title: "What these ships leave out",
         text: "You see the same people all week. There is no second show if you skip the first one. The fare looks high next to a Caribbean interior because the meals, the guide, and the smaller ship are already in it.",
       },
     ],
@@ -307,7 +307,7 @@ export const linePages: LinePage[] = [
         text: "You can learn the names of the people at the next table. The ship can dock in harbors that a 5,000-passenger ship tenders to, or skips. Staffing is higher. Silversea puts a butler in every suite. The others do not all do that.",
       },
       {
-        title: "What you give up",
+        title: "What these ships leave out",
         text: "There is no water park, no large kids’ club on most of these ships, and no fare you can grab from a public search on many sailings. A family that wants slides and a character breakfast wants a different ship.",
       },
     ],
@@ -351,7 +351,7 @@ export const linePages: LinePage[] = [
         text: "These ships call in town, or at anchor close to it. Tahiti on Windstar, and small Mediterranean harbors, are the reason to book this size. You will know a large share of the other guests by the third day.",
       },
       {
-        title: "What you give up",
+        title: "What these ships leave out",
         text: "No theater lineup, no kids’ water park, and almost no published fare. A week that needs a show every night, or a cabin under $2,000, is a different ship.",
       },
     ],

@@ -125,7 +125,7 @@ function PortRegionPage() {
       ))}
       {page.calls && page.calls.length > 0 ? (
         <section className="mx-auto max-w-6xl px-4 pb-14">
-          <h2 className="font-display text-3xl text-ink">Calls, not starts</h2>
+          <h2 className="font-display text-3xl text-ink">Where ships stop</h2>
           <p className="mt-2 max-w-3xl text-mute">Ships stop here. They rarely begin the cruise here.</p>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             {page.calls.map((call) => (
