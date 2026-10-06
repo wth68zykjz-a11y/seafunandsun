@@ -304,7 +304,7 @@ export const policies: PolicyDoc[] = [
     slug: "privacy",
     title: "Privacy Policy",
     dek: "What we collect, how we use it, and how calls and texts are handled.",
-    meta: "Sea Fun & Sun · Farmington, Connecticut · Effective: August 21, 2026 · Revised: October 5, 2026",
+    meta: "Sea Fun & Sun · Farmington, Connecticut · Effective: August 21, 2026 · Revised: October 6, 2026",
     sections: [
       {
         heading: "1. Who We Are",
@@ -414,7 +414,7 @@ export const policies: PolicyDoc[] = [
         blocks: [
           {
             type: "p",
-            text: "Our website may use cookies or similar technologies to remember your preferences and to understand how the site is used. You can control or disable cookies through your browser settings. Some features may not work as well if cookies are disabled.",
+            text: "We use Google Analytics to count visits and see which pages people open. It sets a cookie in your browser. The measurement ID on this site is G-R12KCXY9XE. It does not receive what you type into the quote form. You can control or disable cookies through your browser settings.",
           },
         ],
       },

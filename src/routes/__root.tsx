@@ -70,6 +70,13 @@ function RootShell({ children }: { children: ReactNode }) {
           }}
         />
         <link id="site-css" rel="stylesheet" href={appCss} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R12KCXY9XE" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-R12KCXY9XE');",
+          }}
+        />
         <HeadContent />
       </head>
       <body>
