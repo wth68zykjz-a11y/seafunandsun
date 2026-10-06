@@ -189,7 +189,7 @@ export const destinations: Destination[] = [
           "Santorini, before the afternoon boats arrive",
           "A long-table lunch in Amalfi",
           "The Acropolis in Athens, then the museum next door or the Ancient Agora",
-          "Rome from Civitavecchia: St. Peter’s and the Vatican Museums, or the Colosseum and the Forum",
+          "Rome from Civitavecchia: St. Peter’s and the Vatican Museums, or the Colosseum and the Forum. Squeeze in lunch if the ship leaves later. Stay at Rome Cavalieri, a Waldorf Astoria hotel, before or after the cruise if you want time for the city and the country around it",
           "Kotor's old town, walked rather than cruised",
           "A lavender or olive-oil stop on the French coast",
           "La Boqueria in Barcelona, in the morning. Go for fruit and a counter lunch. It is crowded by noon.",

@@ -109,7 +109,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Most of the port day, including the drive",
         pace: "A lot of walking, and a long ride each way",
         detail:
-          "The drive from the port takes about an hour and a half. Choose St. Peter's and the Vatican Museums, which include the Sistine Chapel, or choose the Colosseum, the Forum, and the Palatine. The Borghese Gallery is a third choice, and it needs a timed ticket booked ahead. Do not combine them.",
+          "The drive from the port takes about an hour and a half. Choose St. Peter's and the Vatican Museums, which include the Sistine Chapel, or choose the Colosseum, the Forum, and the Palatine. The Borghese Gallery is a third choice, and it needs a timed ticket booked ahead. Do not combine them. If the ship leaves later, you can squeeze lunch in. To see the city properly, and the country around it, stay at Rome Cavalieri, a Waldorf Astoria hotel, before the cruise or after you get off the ship.",
       },
       {
         title: "Kotor’s walls, or an Amalfi table",
@@ -553,7 +553,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Empty blue chairs on a terrace above a caldera harbor at dawn",
     facts: [
       { label: "Time in port", text: "Often a long day, sometimes a tender. The useful hours are early, before the alleys fill." },
-      { label: "Worth the time", text: "Stop in Athens for the Acropolis. The museum is beside it, and the Ancient Agora is the other ruin you can walk to. The National Archaeological Museum is a different day. Rome is a long ride from Civitavecchia. Choose St. Peter’s and the Vatican Museums, or the Colosseum and the Forum. A Michelin lunch only fits if the ship stays late and the table was booked before you left home. On the Amalfi coast, sit down for a long lunch." },
+      { label: "Worth the time", text: "Stop in Athens for the Acropolis. The museum is beside it, and the Ancient Agora is the other ruin you can walk to. The National Archaeological Museum is a different day. Rome is a long ride from Civitavecchia. Choose St. Peter’s and the Vatican Museums, or the Colosseum and the Forum. If the ship leaves later, squeeze lunch in. To see Rome properly, and the country around it, stay at Rome Cavalieri, a Waldorf Astoria hotel, before the cruise or after you return. On the Amalfi coast, sit down for a long lunch." },
       { label: "Best for", text: "Travelers who want a different country at breakfast and will walk for it. Shoulder months beat August." },
       { label: "Often a poor fit", text: "Three-ruin coach loops, and any Santorini plan that starts after the other ships have tendered." },
     ],
