@@ -97,11 +97,83 @@ async function readFeed(url: string, source: (typeof FEEDS)[number][1]) {
   return parseOfferHtml(await response.text(), source);
 }
 
-let windstarJob: Promise<string> | null = null;
+const browser = {
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+  accept: "text/html",
+};
+
+let royalJob: Promise<string> | null = null;
+
+function royalFromLine() {
+  if (!royalJob) {
+    royalJob = (async () => {
+      try {
+        const response = await fetch("https://www.royalcaribbean.com/terms-and-conditions/promotions", {
+          headers: browser,
+          signal: AbortSignal.timeout(12000),
+        });
+        if (!response.ok) return "";
+        const text = plainPage(await response.text());
+        const second = text.match(/provides 60% off the cruise fare of the second guest/i);
+        const kids = text.match(/\$0 cruise fare for additional guest 12 years old and younger/i);
+        const until = text.match(/made\s+([A-Z][a-z]+ \d+\s+[–-]\s+[A-Z][a-z]+ \d+, \d{4})/);
+        if (!second && !kids) return "";
+        const window = until ? `For bookings from ${until[1].replace(/\s+[–-]\s+/, " through ")}, ` : "";
+        const parts = [
+          second ? "the second guest’s cruise fare is 60% off" : "",
+          kids ? "a child 12 or under sails free as a third or fourth guest on select sailings of 3 nights or longer, though taxes and port fees are still charged" : "",
+        ].filter(Boolean);
+        return `Royal Caribbean. ${window}${parts.join(", and ")}.`;
+      } catch {
+        return "";
+      }
+    })();
+  }
+  return royalJob;
+}
+
+let mscJob: Promise<string> | null = null;
+
+function mscFromLine() {
+  if (!mscJob) {
+    mscJob = (async () => {
+      try {
+        const response = await fetch("https://www.msccruisesusa.com/cruise-deals/promo-terms-and-conditions", {
+          headers: browser,
+          signal: AbortSignal.timeout(12000),
+        });
+        if (!response.ok) return "";
+        const text = plainPage(await response.text());
+        const headline = text.match(/CRUISE FROM \$[0-9,]+[^.]{0,80}/i)?.[0];
+        const expires = text.match(/Expiration Date:\s*([A-Z][a-z]+ \d+, \d{4})/);
+        if (!headline) return "";
+        const when = expires ? ` The posted end date is ${expires[1]}.` : "";
+        return `MSC Cruises. ${headline.replace(/\s+/g, " ").trim()}.${when}`;
+      } catch {
+        return "";
+      }
+    })();
+  }
+  return mscJob;
+}
+
+async function lineOffer(name: string, detail: string): Promise<SupplierOffer | null> {
+  if (!detail) return null;
+  return {
+    title: name,
+    detail,
+    href: "/quote",
+    tag: "Ocean",
+    group: "Ocean",
+    line: name,
+  };
+}
 
 function plainPage(html: string) {
   return decode(html.replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<style[\s\S]*?<\/style>/gi, " "));
 }
+
+let windstarJob: Promise<string> | null = null;
 
 function windstarFromLine() {
   if (!windstarJob) {
@@ -173,8 +245,20 @@ export async function loadSupplierOffers(): Promise<OfferFeed> {
     }
     if (offers.length === 0) throw new Error("No offers");
     windstarJob = null;
+    royalJob = null;
+    mscJob = null;
     const enriched = await Promise.all(offers.map((offer) => enrichOffer(offer)));
-    const feed: OfferFeed = { offers: enriched, updatedAt: new Date().toISOString(), live: true };
+    const have = enriched.map((offer) => `${offer.title} ${offer.line ?? ""}`).join(" ");
+    const added: SupplierOffer[] = [];
+    if (!/royal caribbean/i.test(have)) {
+      const royal = await lineOffer("Royal Caribbean", await royalFromLine());
+      if (royal) added.push(royal);
+    }
+    if (!/\bmsc\b/i.test(have)) {
+      const msc = await lineOffer("MSC Cruises", await mscFromLine());
+      if (msc) added.push(msc);
+    }
+    const feed: OfferFeed = { offers: [...added, ...enriched], updatedAt: new Date().toISOString(), live: true };
     cache = { at: now, feed };
     return feed;
   } catch {

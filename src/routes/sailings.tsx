@@ -190,9 +190,9 @@ function OfferCard({ offer }: { offer: SupplierOffer }) {
   const className = "rounded-xl border border-line bg-foam p-5 hover:border-tide";
   if (!slug) {
     return (
-      <a href={offer.href} className={className}>
+      <Link to="/quote" search={{ place: offer.line ?? offer.title, note: offer.detail }} className={className}>
         {body}
-      </a>
+      </Link>
     );
   }
   return (
@@ -276,7 +276,7 @@ function DealsOfTheWeek({ offers, checked }: { offers: SupplierOffer[]; checked:
               ) : (
                 <Link
                   to="/quote"
-                  search={{ place: deal.guide?.line ?? "Cruise", note: deal.offer.title }}
+                  search={{ place: deal.offer.line ?? deal.guide?.line ?? "Cruise", note: deal.offer.detail }}
                   className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
                 >
                   Request this quote
