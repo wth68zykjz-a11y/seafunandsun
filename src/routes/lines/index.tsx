@@ -8,7 +8,7 @@ export const Route = createFileRoute("/lines/")({
     pageHead({
       title: "Cruise line comparison",
       description:
-        "Compare cruise lines by ship size and region. Passenger counts and typical fares for large ships, Alaska, Europe, rivers, luxury ships, and yachts.",
+        "Compare cruise lines by ship size. Passenger counts and typical fares for yacht ships, river and expedition ships, luxury ocean ships, mid-size ocean ships, and the largest ocean ships.",
       path: "/lines",
     }),
   component: LinesPage,
@@ -20,7 +20,7 @@ function LinesPage() {
       <PageIntro
         kicker="Cruise lines"
         title="Ship size, from the smallest to the largest."
-        lede="Select a card. The heading is the passenger count. Each card opens those ships, where they sail, and a general price range."
+        lede="Select a card. The heading is the passenger count. The line above it is the type of ship."
       />
       <p className="mx-auto max-w-6xl px-4 pb-6 text-mute">
         Fort Lauderdale gets you on the ship. Miami, Vancouver, and Barcelona are good cities to explore before or after.{" "}

@@ -70,7 +70,7 @@ export const linePages: LinePage[] = [
   {
     slug: "caribbean",
     title: "About 2,000 to 7,000 passengers",
-    card: "Caribbean and Bermuda",
+    card: "Large ocean ships",
     image: "/media/caribbean.jpg",
     alt: "Turquoise water and a Caribbean beach",
     photos: [
@@ -81,7 +81,7 @@ export const linePages: LinePage[] = [
       },
     ],
     lede: "The biggest ships sail Caribbean cruises that depart from Florida. Bermuda cruises that depart from the Northeast are usually on a smaller ship, and the ship stays longer because Bermuda is the destination.",
-    size: "The ships that turn in Miami, Fort Lauderdale, and Port Canaveral are often 4,000 to about 7,000 passengers. Bermuda and many of the smaller-island weeks use ships of about 2,000 to 4,000.",
+    size: "These are large ocean ships. Many carry 4,000 to about 7,000 passengers. Some of the ships on the shorter cruises carry about 2,000 to 4,000.",
     rows: [
       { line: "Holland America", ships: "Older ships about 1,400–1,900. Pinnacle class about 2,650.", where: "Caribbean cruises, Alaska cruises, and longer voyages.", fare: "Balcony often $1,300–$2,600." },
       { line: "Celebrity", ships: "Older Millennium ships about 2,000. Solstice class about 2,850. Edge class about 3,200.", where: "Caribbean cruises from Fort Lauderdale, plus Europe and Alaska.", fare: "Balcony often $1,300–$2,800." },
@@ -118,7 +118,7 @@ export const linePages: LinePage[] = [
   {
     slug: "alaska",
     title: "About 1,800 to 4,200 passengers",
-    card: "Alaska and Hawaii",
+    card: "Mid-size ocean ships",
     image: "/media/ship-alaska.jpg",
     alt: "A mid-size cruise ship in a narrow Alaskan channel",
     photos: [
@@ -129,7 +129,7 @@ export const linePages: LinePage[] = [
       },
     ],
     lede: "An Alaska cruise uses a mid-size ship. Seattle is the departure port for a round-trip cruise through the Inside Passage. Vancouver is the Canadian departure port, often for a one-way cruise to Seward or Whittier. Hawaii’s inter-island ship is smaller and sails from Honolulu.",
-    size: "Most Alaska ships carry about 1,800 to 4,200 passengers. Hawaii’s inter-island ship is smaller. The longer Hawaii sailings from California are mid-size.",
+    size: "These are mid-size ocean ships. Most carry about 1,800 to 4,200 passengers. One ship in this group is smaller and stays among the islands.",
     rows: [
       { line: "Silversea and Seabourn", ships: "About 450–600 on the Alaska ships.", where: "One-way cruises between Vancouver and Seward, and a smaller set of coastal cruises.", fare: "Often $6,000–$14,000 a person for 7 nights. More is included than on the lines above. Many of these are quoted." },
       { line: "Holland America", ships: "About 1,400–2,650.", where: "Round-trip cruises from Seattle, and one-way cruises between Vancouver and Whittier or Seward, including Glacier Bay.", fare: "Balcony, 7 nights, often $1,600–$3,200. A 10- to 14-night one-way is often $2,400–$5,000." },
@@ -167,7 +167,7 @@ export const linePages: LinePage[] = [
   {
     slug: "europe",
     title: "About 1,500 to 6,000 passengers",
-    card: "Mediterranean and northern Europe",
+    card: "Mid-size and large ocean ships",
     image: "/media/mediterranean.jpg",
     alt: "A Mediterranean coast and hillside town",
     photos: [
@@ -183,7 +183,7 @@ export const linePages: LinePage[] = [
       },
     ],
     lede: "A western Mediterranean cruise that departs from Barcelona, Rome, or Athens can be on a ship of 4,000 to 6,000 passengers. A cruise to the Greek islands, the Baltic, or Norway is more often on a ship of about 1,500 to 3,500. Venice is reached from Ravenna or Trieste.",
-    size: "Barcelona and Civitavecchia (Rome) regularly see ships of 4,000 to 6,000 passengers. Norway, the Baltic, and many Greek-island weeks are about 1,500 to 3,500.",
+    size: "This group mixes mid-size and large ocean ships. Some carry about 1,500 to 3,500 passengers. Others carry 4,000 to 6,000.",
     rows: [
       { line: "Princess and Holland America", ships: "About 1,900–3,600.", where: "Mediterranean, British Isles, Baltic, and Norway cruises.", fare: "Balcony, 7 nights, often $1,500–$3,400." },
       { line: "Cunard", ships: "Queen Elizabeth and Queen Anne about 2,000–3,000. Queen Mary 2 about 2,700.", where: "Cruises from Southampton, including the Atlantic crossing, Norway, and northern Europe.", fare: "A 7-night crossing or a northern Europe cruise is often $1,500–$4,000 a person. Suites are quoted." },
@@ -235,7 +235,7 @@ export const linePages: LinePage[] = [
       },
     ],
     lede: "These ships are chosen for the river or the landing, not for the number of restaurants. The luxury ocean ships and the yachts are on their own pages.",
-    size: "A European river ship is about 150 to 190 passengers. An expedition ship is often 100 to 400.",
+    size: "A river ship is about 150 to 190 passengers. An expedition ship is often 100 to 400.",
     rows: [
       { line: "Lindblad, Quark, Silversea expedition, Ponant", ships: "About 100–400.", where: "Antarctica, the Arctic, and the Galápagos. Weather rewrites the landing list.", fare: "An Antarctica trip of 10 to 14 nights is often $8,000–$20,000 a person. Galápagos weeks are often $6,000–$12,000. Quoted." },
       { line: "American Cruise Lines paddlewheelers", ships: "American Heritage, Splendor, Pride, and West, about 110–180. Heritage is about 150.", where: "Mississippi, Ohio, Columbia and Snake, and the Great Lakes. The red wheel turns, with modern engines behind it.", fare: "Often $4,500–$8,000 a person for a week. Quoted." },
