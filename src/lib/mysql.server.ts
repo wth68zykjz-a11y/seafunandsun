@@ -26,12 +26,18 @@ export function mysqlEnabled() {
   return Boolean(env("DB_HOST") && env("DB_USER") && env("DB_NAME"));
 }
 
+function mysqlHost(host: string | undefined) {
+  // Hostinger refuses Node at "localhost" because that opens the IPv6 door.
+  if (!host || host === "localhost") return "127.0.0.1";
+  return host;
+}
+
 function createPool() {
   const url = env("DATABASE_URL");
   if (url && /^mysql:\/\//i.test(url)) {
     const parsed = new URL(url);
     return mysql.createPool({
-      host: parsed.hostname,
+      host: mysqlHost(parsed.hostname),
       port: parsed.port ? Number(parsed.port) : 3306,
       user: decodeURIComponent(parsed.username),
       password: decodeURIComponent(parsed.password),
@@ -42,7 +48,7 @@ function createPool() {
     });
   }
   return mysql.createPool({
-    host: env("DB_HOST"),
+    host: mysqlHost(env("DB_HOST")),
     port: Number(env("DB_PORT") ?? 3306),
     user: env("DB_USER"),
     password: env("DB_PASSWORD") ?? "",
