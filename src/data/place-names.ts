@@ -2,7 +2,7 @@ export const cruisePlaces = [
   { slug: "alaskan", title: "Alaskan Cruises" },
   { slug: "caribbean", title: "Caribbean Cruises" },
   { slug: "mediterranean", title: "Mediterranean Cruises" },
-  { slug: "european", title: "European Cruises" },
+  { slug: "european", title: "Europe Cruises" },
   { slug: "hawaii", title: "Hawaii Cruises" },
   { slug: "bermuda", title: "Bermuda Cruises" },
   { slug: "northern-europe", title: "Northern Europe Cruises" },

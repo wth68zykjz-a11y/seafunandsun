@@ -229,8 +229,8 @@ export const destinations: Destination[] = [
   },
   {
     slug: "european",
-    nav: "European",
-    title: "European Cruises",
+    nav: "Europe",
+    title: "Europe Cruises",
     card: "Cities by sea",
     image: "/media/european.jpg",
     alt: "A historic canal and stone bridge in soft morning light",
