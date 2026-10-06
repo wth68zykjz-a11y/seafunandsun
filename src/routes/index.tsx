@@ -407,7 +407,7 @@ function Home() {
               Sea Fun & Sun is a Farmington company. There is no office to visit. A quote starts by phone, text, or email, and one agent stays with it. Travelers in Connecticut book this way, and so do travelers in other states.
             </p>
             <p className="mt-4 text-ink">
-              When the trip starts with a flight from here, we check Bradley first, then Boston and the New York airports. The ship or the resort can still leave from Miami, Seattle, Vancouver, or whichever port the itinerary needs.
+              When the trip starts with a flight from here, we check Bradley first, then Boston and the New York airports. A cruise still sails from Miami, Seattle, Vancouver, or whichever port that itinerary uses. A resort is the place you fly to and stay.
             </p>
           </div>
           <iframe
