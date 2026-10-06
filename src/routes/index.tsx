@@ -109,15 +109,15 @@ const doors: Door[] = [
 function DoorFace({ door }: { door: Door }) {
   return (
     <div className={`grid lg:grid-cols-2 ${door.tone === "sea" ? "bg-sea text-foam" : "bg-foam text-ink"}`}>
-      <div className="relative h-48 overflow-hidden sm:h-64 lg:h-auto lg:min-h-[32rem]">
+      <div className="relative h-52 overflow-hidden sm:h-64 lg:h-auto lg:min-h-[32rem]">
         <img src={door.image} alt={door.alt} draggable={false} className="absolute inset-0 h-full w-full object-cover" />
       </div>
-      <div className="flex flex-col justify-center px-5 py-6 lg:px-12 lg:py-10">
-        <p className={`text-sm font-medium ${door.tone === "sea" ? "text-foam/80" : "text-tide"}`}>{door.kicker}</p>
-        <h2 className="mt-2 font-display text-4xl lg:mt-3 lg:text-5xl">{door.title}</h2>
-        <p className={`mt-3 line-clamp-4 max-w-md text-base lg:mt-4 lg:line-clamp-none lg:text-lg ${door.tone === "sea" ? "text-foam/85" : "text-mute"}`}>{door.body}</p>
+      <div className="flex flex-col justify-center px-5 py-5 lg:px-12 lg:py-10">
+        <p className={`text-xs font-semibold uppercase tracking-[0.16em] ${door.tone === "sea" ? "text-gold" : "text-tide"}`}>{door.kicker}</p>
+        <h2 className="mt-2 font-display text-3xl lg:text-5xl">{door.title}</h2>
+        <p className={`mt-3 line-clamp-3 max-w-md text-base leading-relaxed lg:line-clamp-none lg:text-lg ${door.tone === "sea" ? "text-foam/85" : "text-mute"}`}>{door.body}</p>
         <span
-          className={`mt-5 inline-flex min-h-11 w-fit items-center rounded-md px-5 text-sm font-medium lg:mt-8 ${
+          className={`mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md px-5 text-sm font-medium lg:w-fit lg:justify-start ${
             door.tone === "sea" ? "bg-gold text-ink" : "bg-coral text-foam"
           }`}
         >
@@ -216,23 +216,35 @@ function TripCarousel({ items }: { items: Door[] }) {
           </div>
         ))}
       </div>
-      <div className="mt-4 flex items-center justify-between gap-3">
+      <div className="mt-3 flex items-center justify-between gap-3">
         <button
           type="button"
           onClick={() => scrollToIndex(index - 1)}
-          className="inline-flex min-h-11 items-center rounded-md border border-line bg-foam px-4 text-sm font-medium text-ink"
+          aria-label="Previous category"
+          className="inline-flex size-11 items-center justify-center rounded-md border border-line bg-foam text-lg text-ink sm:w-auto sm:px-4 sm:text-sm sm:font-medium"
         >
-          Previous
+          <span className="sm:hidden" aria-hidden="true">‹</span>
+          <span className="hidden sm:inline">Previous</span>
         </button>
-        <p className="text-sm font-medium text-ink" aria-live="polite">
+        <div className="flex items-center gap-1.5 sm:hidden" aria-hidden="true">
+          {items.map((door, dot) => (
+            <span key={door.title} className={`h-1.5 rounded-full ${dot === index ? "w-6 bg-tide" : "w-1.5 bg-line"}`} />
+          ))}
+        </div>
+        <p className="hidden text-sm font-medium text-ink sm:block" aria-live="polite">
           {items[index]?.title} · {index + 1} of {count}
+        </p>
+        <p className="sr-only" aria-live="polite">
+          {items[index]?.title}, {index + 1} of {count}
         </p>
         <button
           type="button"
           onClick={() => scrollToIndex(index + 1)}
-          className="inline-flex min-h-11 items-center rounded-md bg-tide px-4 text-sm font-medium text-foam"
+          aria-label="Next category"
+          className="inline-flex size-11 items-center justify-center rounded-md bg-tide text-lg text-foam sm:w-auto sm:px-4 sm:text-sm sm:font-medium"
         >
-          Next
+          <span className="sm:hidden" aria-hidden="true">›</span>
+          <span className="hidden sm:inline">Next</span>
         </button>
       </div>
     </div>
@@ -262,7 +274,7 @@ function Home() {
                 <p className="mt-4 max-w-xl text-base text-foam/85 sm:mt-6 sm:text-lg">
                   We book cruises, resorts, ski vacations, rail trips, and expeditions. One travel agent manages your booking, from the first quote until you return home.
                 </p>
-                <div className="mt-6 inline-flex w-full flex-col items-center sm:mt-8 sm:w-auto">
+                <div className="mt-6 w-full sm:mt-8 sm:inline-flex sm:w-auto sm:flex-col sm:items-center">
                   <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
                     <Link to="/quote" className="inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
                       Request a quote
@@ -271,34 +283,34 @@ function Home() {
                       Select a category
                     </a>
                   </div>
-                  <dl className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-center text-gold sm:mt-8 sm:gap-x-8">
-              <div className="flex items-center gap-2">
-                <svg viewBox="0 0 36 36" className="size-8 shrink-0" fill="none" aria-hidden="true">
-                  <circle cx="16" cy="11" r="4" stroke="currentColor" strokeWidth="1.6" />
-                  <path d="M8 26c1.4-4.2 4-6.2 8-6.2s6.6 2 8 6.2" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-                  <path d="M24 22.5l1.2 2.4 2.6.4-1.9 1.8.5 2.6L24 28.4l-2.4 1.3.5-2.6-1.9-1.8 2.6-.4L24 22.5z" fill="currentColor" />
-                </svg>
-                <dd className="font-display text-3xl leading-none sm:text-4xl">1</dd>
-                <dt className="text-xs font-medium uppercase leading-tight tracking-wide">
-                  Dedicated point
-                  <br />
-                  of contact
-                </dt>
-              </div>
-              <div className="hidden h-10 w-px bg-gold sm:block" aria-hidden="true" />
-              <div className="flex items-center gap-2">
-                <svg viewBox="0 0 36 36" className="size-8 shrink-0" fill="none" aria-hidden="true">
-                  <circle cx="18" cy="18" r="11" stroke="currentColor" strokeWidth="1.6" />
-                  <path d="M18 11v14M15 14.5c.8-1 1.8-1.5 3-1.5 1.8 0 3 1 3 2.4S19.8 18 18 18s-3 .8-3 2.3 1.3 2.4 3.1 2.4c1.2 0 2.2-.4 3-1.3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-                </svg>
-                <dd className="font-display text-3xl leading-none sm:text-4xl">$0</dd>
-                <dt className="text-xs font-medium uppercase leading-tight tracking-wide">
-                  Agent fee,
-                  <br />
-                  ever
-                </dt>
-              </div>
-            </dl>
+                  <dl className="mt-5 grid w-full grid-cols-2 divide-x divide-gold/40 border-t border-gold/30 pt-4 text-center text-gold sm:mt-8 sm:flex sm:w-auto sm:items-center sm:justify-center sm:gap-x-8 sm:divide-x-0 sm:border-0 sm:pt-0">
+                    <div className="px-2 sm:flex sm:items-center sm:gap-3 sm:px-0">
+                      <svg viewBox="0 0 36 36" className="mx-auto hidden size-9 sm:block" fill="none" aria-hidden="true">
+                        <circle cx="16" cy="11" r="4" stroke="currentColor" strokeWidth="1.6" />
+                        <path d="M8 26c1.4-4.2 4-6.2 8-6.2s6.6 2 8 6.2" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                        <path d="M24 22.5l1.2 2.4 2.6.4-1.9 1.8.5 2.6L24 28.4l-2.4 1.3.5-2.6-1.9-1.8 2.6-.4L24 22.5z" fill="currentColor" />
+                      </svg>
+                      <dd className="font-display text-3xl leading-none sm:text-4xl">1</dd>
+                      <dt className="mt-1 text-[0.65rem] font-medium uppercase leading-tight tracking-wide sm:mt-0 sm:text-xs">
+                        Dedicated point
+                        <br />
+                        of contact
+                      </dt>
+                    </div>
+                    <div className="hidden h-10 w-px bg-gold sm:block" aria-hidden="true" />
+                    <div className="px-2 sm:flex sm:items-center sm:gap-3 sm:px-0">
+                      <svg viewBox="0 0 36 36" className="mx-auto hidden size-9 sm:block" fill="none" aria-hidden="true">
+                        <circle cx="18" cy="18" r="11" stroke="currentColor" strokeWidth="1.6" />
+                        <path d="M18 11v14M15 14.5c.8-1 1.8-1.5 3-1.5 1.8 0 3 1 3 2.4S19.8 18 18 18s-3 .8-3 2.3 1.3 2.4 3.1 2.4c1.2 0 2.2-.4 3-1.3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                      </svg>
+                      <dd className="font-display text-3xl leading-none sm:text-4xl">$0</dd>
+                      <dt className="mt-1 text-[0.65rem] font-medium uppercase leading-tight tracking-wide sm:mt-0 sm:text-xs">
+                        Agent fee,
+                        <br />
+                        ever
+                      </dt>
+                    </div>
+                  </dl>
                 </div>
               </div>
               <LogoMark className="mx-auto hidden w-44 lg:block lg:w-56" />
@@ -333,7 +345,7 @@ function Home() {
               <p className="mt-3 hidden text-ink md:block">
                 It is worth a few days in the city before you sail, or after you return, if you want time to walk it. Vancouver is a good example: the mountains and the harbor are right there, and you are already in town for the ship. The pages list where those ships usually go, which airlines serve the city, the local time, and the currency you will use. In Vancouver that currency is the Canadian dollar.
               </p>
-              <span className="mt-5 inline-flex min-h-11 w-fit items-center rounded-md bg-coral px-5 text-sm font-medium text-foam">
+              <span className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam sm:w-fit">
                 See the departure and embarkation ports
               </span>
             </div>

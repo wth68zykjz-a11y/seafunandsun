@@ -1,6 +1,6 @@
 import { useState, type ReactNode } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Facebook, Instagram, Menu, X } from "lucide-react";
+import { Facebook, Instagram, Menu, Phone, X } from "lucide-react";
 import { destinations } from "@/data/destinations";
 import { bookingEmail, facebook, instagram, licenseLine, phone, phoneHref } from "@/data/links";
 
@@ -41,20 +41,20 @@ export function LogoMark({ className }: { className: string }) {
 function Wordmark({ tone = "ink" }: { tone?: "ink" | "foam" }) {
   const onDark = tone === "foam";
   return (
-    <Link to="/" className="flex min-w-0 items-center gap-3">
-      <span className="grid size-11 shrink-0 place-items-center">
-        <LogoMark className="size-11" />
+    <Link to="/" className="flex min-w-0 items-center gap-2 sm:gap-3">
+      <span className="grid size-9 shrink-0 place-items-center sm:size-11">
+        <LogoMark className="size-9 sm:size-11" />
       </span>
       <span className="min-w-0 leading-none">
-        <span className={`block font-logo text-[0.95rem] tracking-[0.08em] sm:text-[1.05rem] sm:tracking-[0.1em] ${onDark ? "text-foam" : "text-ink"}`}>
+        <span className={`block font-logo text-[0.78rem] tracking-[0.06em] sm:text-[1.05rem] sm:tracking-[0.1em] ${onDark ? "text-foam" : "text-ink"}`}>
           SEA FUN & SUN
         </span>
-        <span className="mt-1 hidden items-center gap-1.5 sm:flex">
-          <span className={`h-px w-3 ${onDark ? "bg-gold" : "bg-gold-ink"}`} />
-          <span className={`text-[0.58rem] font-semibold tracking-[0.18em] sm:tracking-[0.22em] ${onDark ? "text-gold" : "text-gold-ink"}`}>
+        <span className="mt-1 flex items-center gap-1.5">
+          <span className={`h-px w-2 sm:w-3 ${onDark ? "bg-gold" : "bg-gold-ink"}`} />
+          <span className={`text-[0.5rem] font-semibold tracking-[0.14em] sm:text-[0.58rem] sm:tracking-[0.22em] ${onDark ? "text-gold" : "text-gold-ink"}`}>
             TRAVEL COMPANY
           </span>
-          <span className={`h-px w-3 ${onDark ? "bg-gold" : "bg-gold-ink"}`} />
+          <span className={`h-px w-2 sm:w-3 ${onDark ? "bg-gold" : "bg-gold-ink"}`} />
         </span>
       </span>
     </Link>
@@ -95,25 +95,34 @@ export function Header() {
             {phone}
           </a>
         </nav>
-        <button
-          type="button"
-          className="inline-flex size-11 items-center justify-center rounded-md bg-foam text-sea lg:hidden"
-          aria-expanded={open}
-          aria-label={open ? "Close menu" : "Open menu"}
-          onClick={() => setOpen((value) => !value)}
-        >
-          {open ? <X className="size-5" /> : <Menu className="size-5" />}
-        </button>
+        <div className="flex shrink-0 items-center gap-2 lg:hidden">
+          <a
+            href={phoneHref}
+            aria-label={`Call or text ${phone}`}
+            className="inline-flex size-11 items-center justify-center rounded-md bg-coral text-foam"
+          >
+            <Phone className="size-5" aria-hidden="true" />
+          </a>
+          <button
+            type="button"
+            className="inline-flex size-11 items-center justify-center rounded-md bg-foam text-sea"
+            aria-expanded={open}
+            aria-label={open ? "Close menu" : "Open menu"}
+            onClick={() => setOpen((value) => !value)}
+          >
+            {open ? <X className="size-5" /> : <Menu className="size-5" />}
+          </button>
+        </div>
       </div>
       {open ? (
-        <div className="border-t border-sea bg-sea px-4 py-4 text-foam lg:hidden">
-          <nav className="grid gap-1" aria-label="Mobile">
+        <div className="border-t border-foam/15 bg-sea px-4 py-3 text-foam lg:hidden">
+          <nav className="grid" aria-label="Mobile">
             {nav.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="min-h-11 rounded-md px-3 py-3 text-base font-medium"
+                className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium"
               >
                 {item.label}
               </Link>
@@ -122,11 +131,11 @@ export function Header() {
               to="/sailings"
               hash="promotions"
               onClick={() => setOpen(false)}
-              className="inline-flex min-h-11 items-center rounded-md bg-gold px-3 text-base font-medium text-ink"
+              className="mt-3 inline-flex min-h-11 items-center justify-center rounded-md bg-gold px-3 text-base font-medium text-ink"
             >
               Promotions
             </Link>
-            <a href={phoneHref} className="min-h-11 rounded-md bg-coral px-3 py-3 text-foam">
+            <a href={phoneHref} className="mt-2 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-3 text-base font-medium text-foam">
               Call or text {phone}
             </a>
           </nav>
