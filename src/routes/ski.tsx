@@ -91,13 +91,6 @@ function SkiPage() {
             </p>
           </article>
         </div>
-        <p className="mt-6 max-w-3xl text-sm text-mute">
-          Beach resorts, including all-inclusive stays, are on a separate page.{" "}
-          <Link to="/resorts" className="font-medium text-tide">
-            All-inclusive resorts
-          </Link>
-          .
-        </p>
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-8 px-4 pb-20 lg:grid-cols-2">
