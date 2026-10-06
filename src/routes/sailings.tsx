@@ -224,7 +224,7 @@ function DealsOfTheWeek({ offers, checked }: { offers: SupplierOffer[]; checked:
     <div>
       <h2 className="font-display text-3xl">Deals of the week</h2>
       <p className="mt-2 max-w-3xl text-base text-ink">
-        These six promotions are read from the booking system when this page loads. The site checks that list once a day, so a fare posted this morning can show up on the next day’s visit. The port is the city that line usually uses. The promotion itself may cover more than one port. The fare still belongs to the line.
+        These six promotions come from the booking system. The site checks that list once a day, so a promotion added today shows up after the next check. The city on the card is a port that line usually uses. The same promotion may include other ports.
       </p>
       <p className="mt-2 text-sm text-mute">Last check: {checked} Eastern.</p>
       <JsonLd
