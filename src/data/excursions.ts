@@ -141,7 +141,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half to full day",
         pace: "A short cliff path, or the view from the town",
         detail:
-          "This is the France day that is not Paris. Paris from Le Havre is a long bus, and it fits only when the ship stays late enough.",
+          "This is the France day that is not Paris. Paris from Le Havre is a long ride. If that is the city you want, pick one sight and, if the ship leaves later, squeeze lunch in. To see Paris properly, stay at Shangri-La Paris before the cruise or after you return.",
       },
       {
         title: "One garden, not the whole city",
@@ -149,7 +149,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "4 hours",
         pace: "Walking, some hills",
         detail:
-          "Alcázar in the morning, or a Lisbon neighborhood and a mirador, beats a “best of” coach. A call at Seville via Cádiz includes a longer drive than the map suggests.",
+          "Alcázar in the morning, or a Lisbon neighborhood and a mirador, beats a “best of” coach. A call at Seville via Cádiz includes a longer drive than the map suggests. In Lisbon, choose Belém or Alfama. If the ship leaves later, squeeze lunch in at Time Out Market. To see the city properly, stay at the Four Seasons Hotel Ritz before the cruise or after you return.",
       },
     ],
   },
@@ -569,7 +569,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Bicycles beside a misty canal and a stone bridge in an old European town",
     facts: [
       { label: "Time in port", text: "City calls run most of the day, but the pier is often an hour from the place you actually want." },
-      { label: "Worth the time", text: "Stop in Bruges for the belfry, then have mussels. If the ship is in Barcelona and you want a serious Catalan meal, Cocina Hermanos Torres has Michelin stars, but reserve it before the cruise. Camp Nou is only worth leaving the ship for if there is a match that day." },
+      { label: "Worth the time", text: "Stop in Bruges for the belfry, then have mussels. Paris is a long ride from Le Havre. Pick the Louvre, or Notre-Dame, or the Eiffel Tower. If the ship leaves later, squeeze lunch in. To see the city properly, stay at Shangri-La Paris before the cruise or after you return. It looks toward the Eiffel Tower. London from Southampton works the same way: Westminster Abbey or the Tower, not both. The Savoy is the hotel if you want nights in the city. In Barcelona, the Sagrada Família or the Gothic Quarter. Cocina Hermanos Torres is the Michelin table if you reserved it ahead, and Camp Nou only if there is a match that day. In Lisbon, Belém or Alfama. Hotel Arts is the Barcelona stay. The Four Seasons Hotel Ritz is the Lisbon stay." },
       { label: "Best for", text: "Travelers who have a city they still want, or who would rather have one garden than three capitals." },
       { label: "Often a poor fit", text: "Paris from a short Le Havre call, and any “two cities in one day” that is mostly highway." },
     ],
@@ -614,7 +614,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A row of painted wooden wharf houses reflected in calm water",
     facts: [
       { label: "Time in port", text: "Fjord villages can be a tender of a few hours. Baltic capitals are longer city days." },
-      { label: "Worth the time", text: "Stop in Bergen to walk the Bryggen wharf and have a shrimp sandwich at the fish market. A New Nordic tasting menu in Copenhagen is a Michelin table, and those are booked before you sail, not from the gangway." },
+      { label: "Worth the time", text: "Stop in Bergen to walk the Bryggen wharf and have a shrimp sandwich at the fish market. A New Nordic tasting menu in Copenhagen is a Michelin table, and those are booked before you sail, not from the gangway. Amsterdam’s ocean ships dock at IJmuiden, not in the canals. Choose the Rijksmuseum or the Anne Frank House. If the ship leaves later, squeeze lunch in. To see the city properly, stay at the Waldorf Astoria Amsterdam before the cruise or after you return." },
       { label: "Best for", text: "Long summer light, small ports, and people who like weather to be part of the trip." },
       { label: "Often a poor fit", text: "A scenic boat with no backup plan. If the tender cancels, you want a town walk already in mind." },
     ],
@@ -674,7 +674,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Empty stone temple steps in warm morning light, with incense smoke",
     facts: [
       { label: "Time in port", text: "The ship often docks outside the city. The drive can take as long as the visit." },
-      { label: "Worth the time", text: "Do the Grand Palace early, then eat noodles close by. That is a Bangkok day. Tokyo has more Michelin restaurants than any other city, and a sushi counter has to be reserved before you sail. In Singapore, pick a starred dining room or a hawker centre. You will not do both well." },
+      { label: "Worth the time", text: "Do the Grand Palace early, then eat noodles close by. That is a Bangkok day. Tokyo has more Michelin restaurants than any other city, and a sushi counter has to be reserved before you sail. To see more than one district, stay at The Peninsula Tokyo before the cruise or after you return. In Singapore, pick a starred dining room or a hawker centre. Raffles is the hotel if you want nights in the city, not only lunch." },
       { label: "Best for", text: "This suits travelers who will see one place well, such as the Grand Palace or one district in Kyoto. Do not try to do both on the same call." },
       { label: "Often a poor fit", text: "A bus that promises three temples and a market. Ha Long Bay only counts when the ship is already in that bay." },
     ],
@@ -734,7 +734,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A glacial lake and snow-dusted mountains on New Zealand’s South Island",
     facts: [
       { label: "Time in port", text: "Sydney and Auckland can be long city calls. Reef ports need a full day. Milford is often a scenic sail, with no gangway." },
-      { label: "Worth the time", text: "Stop in Sydney to see the Opera House. It sits next to where most ships dock. A Michelin lunch of Australian food is possible if you book it ahead. If not, get a meat pie on the quay. In Auckland, walk the harbor and have lamb for lunch." },
+      { label: "Worth the time", text: "Stop in Sydney to see the Opera House. It sits next to where most ships dock. If the ship leaves later, squeeze lunch in, or get a meat pie on the quay. To see more than the harbor, stay at the Park Hyatt Sydney, across from the Opera House, before the cruise or after you return. In Auckland, walk the harbor and have lamb for lunch." },
       { label: "Best for", text: "Travelers who can give the southern summer to one region, and who will fly to Sydney or Auckland to start." },
       { label: "Often a poor fit", text: "A reef and a capital in one call, and any Blue Mountains loop that spends the Sydney day on a highway." },
     ],
