@@ -216,20 +216,20 @@ export function QuoteForm({
         </label>
         <label className="grid gap-1 text-sm font-medium">
           When
-          <input className={field} name="travelWindow" placeholder="June 2027, or a two-week window in the fall" />
+          <input className={field} name="travelWindow" placeholder="Optional" />
         </label>
         <label className="grid gap-1 text-sm font-medium">
           Who is traveling
-          <input className={field} name="partySize" placeholder="Two adults, or a family of five" />
+          <input className={field} name="partySize" placeholder="Optional" />
         </label>
       </div>
       <label className="mt-3 grid gap-1 text-sm font-medium">
         {style.label}
-        <input className={field} name="cabin" placeholder={style.placeholder} />
+        <input className={field} name="cabin" placeholder="Optional" />
       </label>
       <label className="mt-3 grid gap-1 text-sm font-medium">
         Travel plans
-        <textarea className={`${field} min-h-32 py-3`} name="plans" required defaultValue={note} placeholder={style.plans} />
+        <textarea className={`${field} min-h-32 py-3`} name="plans" defaultValue={note} placeholder="Optional" />
       </label>
       <label className="mt-3 flex items-start gap-3 text-sm text-mute">
         <input name="marketingOptIn" type="checkbox" className="mt-1 size-4 accent-tide" />

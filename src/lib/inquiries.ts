@@ -82,12 +82,6 @@ export const submitInquiry = createServerFn({ method: "POST" })
       return { ok: false as const, error: "Please add a real email." };
     }
     if (destination.length < 2) return { ok: false as const, error: "Choose a destination." };
-    if (plans.length < 8) {
-      return {
-        ok: false as const,
-        error: "Add a few words on the trip — dates, who’s coming, or the kind of stay you want.",
-      };
-    }
 
     const reference = `SFS-${Math.random().toString(36).slice(2, 8).toUpperCase()}`;
     const optedIn = Boolean(data.marketingOptIn);
