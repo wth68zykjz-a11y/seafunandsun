@@ -37,7 +37,7 @@ export type PortPage = {
 };
 
 export const airlineNote =
-  "These are airlines that serve the city. A route can be seasonal, and a nonstop on one date may be a connection on another. We match the flight to the ship before you book it.";
+  "These are airlines that serve the city. A route can be seasonal, and a nonstop on one date may be a connection on another. We check the flight against the ship's embarkation and return before you book it.";
 
 export const portRegions: PortRegion[] = [
   {
