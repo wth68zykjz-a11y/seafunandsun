@@ -64,6 +64,14 @@ export default async function grokPwaMiddleware(
   event: GrokPwaEvent,
   next: () => unknown | Promise<unknown>,
 ): Promise<unknown> {
+  const host = requestHost(event).split(":")[0]?.toLowerCase();
+  if (host === "www.seafunandsun.com") {
+    return new Response(null, {
+      status: 301,
+      headers: { location: `https://seafunandsun.com${event.url.pathname}${event.url.search}` },
+    });
+  }
+
   const method = (event.req.method ?? "GET").toUpperCase();
   if (method !== "GET") return next();
 
