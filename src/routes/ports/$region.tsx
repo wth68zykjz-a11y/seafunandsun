@@ -149,7 +149,7 @@ function PortRegionPage() {
       <div className="mx-auto max-w-6xl space-y-3 px-4 pb-8 text-base leading-relaxed text-ink">
         <p>{airlineNote}</p>
         <p>
-          The cruise fare is usually billed in US dollars. On shore, prices are in the currency named on that city’s card. A card is the simplest way to pay. US cash works in the United States and Puerto Rico. In other countries, including Canada, a shop that takes US bills usually sets its own exchange rate, and that rate is worse than the rate on a card.
+          The cruise fare is usually billed in US dollars. On shore, prices are in the currency named on that city’s card. US cash works in the United States and Puerto Rico. Elsewhere, including Canada, a shop that takes US bills usually sets a worse rate than your bank. If you want cash, order the local currency from your bank before you leave. A travel card with no international transaction fee is the other way to pay.
         </p>
       </div>
       <CabinGuide />
