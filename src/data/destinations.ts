@@ -37,7 +37,7 @@ export const destinations: Destination[] = [
     lede: "May and August on the same ship are different trips. In May the glaciers are larger, because less of the winter ice has melted. In August the salmon are running, and the bears are on the rivers to feed.",
     paragraphs: [
       "Most Alaska sailings run seven to fourteen nights round trip from Seattle, or one way between Seattle or Vancouver and Seward or Whittier. Royal Caribbean, Carnival, Norwegian, Holland America, Princess, and Celebrity sail the Inside Passage. Holland America and Princess use Vancouver often, including one-way Gulf sailings. Cunard does in some seasons, not every year. We compare them side by side, with no obligation to any one line.",
-      "The reason to go is the coast: Juneau, Ketchikan, Skagway, Seward, and the fjords between them. You can hear a glacier calve. A lot of the wildlife is not something you will see from a road.",
+      "Juneau, Ketchikan, Skagway, Seward, and the fjords between them are the coast. You can hear a glacier calve. Whales, bears, and eagles are on the water, not on a highway.",
     ],
     lists: [
       {
@@ -61,7 +61,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "The season runs from May through September. August and early September bring the salmon run, the bears, and the longest evenings. Spring leaves the glaciers at their largest. Midsummer gives you the light. We will match the month to what you most want to see.",
-    planning: "August for the bears, or May for the glaciers. A Seattle round trip and a one-way from Vancouver or Seattle to Seward are both ordinary requests. If the ship starts in Vancouver, stay a few days before or after. The Fairmont Pacific Rim looks over the harbor and the mountains.",
+    planning: "August for the bears, or May for the glaciers. A Seattle round trip uses one airport. A one-way to Seward or Whittier needs a flight at that end. If the ship starts in Vancouver, stay a few days before or after. The Fairmont Pacific Rim looks over the harbor and the mountains.",
     itineraries: [
       {
         title: "Inside Passage classic",
@@ -136,7 +136,7 @@ export const destinations: Destination[] = [
         title: "Western Caribbean",
         nights: "7 nights",
         season: "Year-round; best value in late summer",
-        ship: "Resort ship. Miami and Fort Lauderdale are not the same week as Galveston",
+        ship: "From Florida the week is often Cozumel, Grand Cayman, and Jamaica. From Galveston it is often Cozumel and Costa Maya",
         path: "Round trip from South Florida or the Gulf",
         ports: ["From Florida: Cozumel, Grand Cayman, Jamaica", "From Galveston: Cozumel and Costa Maya", "A sea day each way"],
       },
@@ -986,7 +986,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The season runs from October through April, which is summer down there. November through March is the core. The reef and the fiords do not share the same weather in the same week, so a combined sailing is a compromise. We will say which end of the trip is the reason to go.",
+    when: "The season runs from October through April, which is summer down there. November through March is the core. The Great Barrier Reef is warm water. Milford Sound and the other fiords are cold. A sailing that does both is a compromise between those two.",
     planning: "Flights to Sydney or Auckland belong in the quote. A fare that ignores them is not a fare.",
     itineraries: [
       {

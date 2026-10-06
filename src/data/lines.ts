@@ -111,7 +111,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "What these ships leave out",
-        text: "A week from the Northeast on the same size ship spends more nights at sea. The water park does not change that. If the point is a quiet ship or a harbor the large ships cannot enter, look at the luxury and yacht pages.",
+        text: "A week from the Northeast on the same size ship spends more nights at sea. A water park does not remove those sea days. If you want a quiet ship, or a harbor the large ships cannot enter, look at the luxury and yacht pages.",
       },
     ],
   },
@@ -348,7 +348,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "Harbors the large ships skip",
-        text: "These ships stop in town, or at anchor close to it. Tahiti on Windstar, and small Mediterranean harbors, are the reason to book this size. You will know a large share of the other guests by the third day.",
+        text: "These ships stop in town, or at anchor close to it. A large ship skips many of those harbors. Tahiti on Windstar, and small Mediterranean harbors, are examples. You will know a large share of the other guests by the third day.",
       },
       {
         title: "What these ships leave out",

@@ -25,7 +25,7 @@ function DestinationsPage() {
       />
       <div className="mx-auto max-w-6xl px-4 pb-2">
         <p className="max-w-2xl text-mute">
-          Some ports just get you on the ship. Fort Lauderdale is one of them. Miami, Vancouver, and Barcelona are worth a few extra days.{" "}
+          Some ports just get you on the ship. Fort Lauderdale is one of them. Miami, Vancouver, and Barcelona are cities you can use for a few days before or after.{" "}
           <Link to="/ports" className="font-medium text-tide">
             See where the major ports tend to go.
           </Link>{" "}

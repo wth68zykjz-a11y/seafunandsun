@@ -163,7 +163,7 @@ function ResortsPage() {
             <p className="text-sm font-medium text-tide">Parks</p>
             <h2 className="mt-2 font-display text-3xl">Disney</h2>
             <p className="mt-3 text-sm text-mute">
-              Walt Disney World and Disneyland are park stays, not all-inclusive beach weeks. The room, the park tickets, and a dining plan are usually separate unless the package says otherwise. A value resort and a monorail or Skyliner resort are not the same stay.
+              Walt Disney World and Disneyland are park stays, not all-inclusive beach weeks. The room, the park tickets, and a dining plan are usually separate unless the package says otherwise. A value resort is farther from the parks. A monorail or Skyliner resort is on the park transport.
             </p>
             <p className="mt-3 text-sm text-mute">
               Aulani, on Oahu, is a Disney resort without a theme park next door. Disney Cruise Line is a ship, and it is booked with the other cruises. A few days at the resort before or after the ship is a separate stay.

@@ -23,7 +23,7 @@ function LinesPage() {
         lede="Select a card. Each one opens the ships in that group, the passenger counts, and a general price range."
       />
       <p className="mx-auto max-w-6xl px-4 pb-6 text-mute">
-        Not every departure city is worth lingering in. Fort Lauderdale gets you on the ship. Miami, Vancouver, and Barcelona are worth the extra days.{" "}
+        Fort Lauderdale gets you on the ship. Miami, Vancouver, and Barcelona are cities you can use before or after.{" "}
         <Link to="/ports" className="font-medium text-tide">
           See the departure and embarkation ports
         </Link>

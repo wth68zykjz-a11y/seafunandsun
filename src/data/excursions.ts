@@ -592,7 +592,7 @@ export const portGuides: Record<string, PortGuide> = {
     outings: [
       { fits: "Swimmers, planned for the least confident person in the cabin, not the keenest.", bring: "Reef-safe sunscreen already on, and a rash guard if you burn. The boat may not have shade." },
       { fits: "People who want one thing: water, a chair, lunch, back to the ship.", bring: "Cash for a chair upgrade if the included setup is a patch of sand." },
-      { fits: "Travelers who have done the beach and want a town that is not a jewelry stop.", bring: "Bring comfortable shoes for cobblestone streets. In Martinique, the bakery is the reason for the stop." },
+      { fits: "Travelers who have done the beach and want a town that is not a jewelry stop.", bring: "Bring comfortable shoes for cobblestone streets. In Martinique, the bakery is on the stop." },
     ],
   },
   mediterranean: {
@@ -681,7 +681,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Often a poor fit", text: "A bus to a prettier brochure photo, and any “best of Acadia” that is mostly van time." },
     ],
     outings: [
-      { fits: "An easy path near the pier in late September or early October.", bring: "A fleece. The leaves are the reason to go. The wind off the water is colder than it looks." },
+      { fits: "An easy path near the pier in late September or early October.", bring: "A fleece. The maples are in color. The wind off the water is colder than it looks." },
       { fits: "A half day on your own feet — citadel view or the walls above the river.", bring: "Comfortable shoes. Québec is steeper than the waterfront in Halifax." },
       { fits: "Carriage roads if you want gravel and trees, or the town shore path if you want it shorter.", bring: "Nothing fancy. Skip the outlet mall. It is not why the ship stopped." },
     ],
