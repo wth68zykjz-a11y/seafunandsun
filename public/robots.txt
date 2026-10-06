@@ -42,6 +42,10 @@ User-agent: Bingbot
 Allow: /
 Disallow: /desk
 
+User-agent: msnbot
+Allow: /
+Disallow: /desk
+
 User-agent: GrokBot
 Allow: /
 Disallow: /desk
