@@ -141,7 +141,7 @@ function DoorFace({ door, eager }: { door: Door; eager?: boolean }) {
               draggable={false}
               decoding="async"
               loading={eager ? "eager" : "lazy"}
-              fetchPriority="low"
+              fetchPriority={eager ? "high" : "low"}
               className="absolute inset-0 h-full w-full object-cover"
             />
           </picture>
