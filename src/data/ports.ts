@@ -141,7 +141,7 @@ export const portRegions: PortRegion[] = [
   },
   {
     id: "asia",
-    title: "Where Asia cruises start",
+    title: "Where Asian cruises start",
     lede: "Singapore and Tokyo are the reliable starts. Hong Kong and Shanghai run when the season is open. They do not sail every year.",
     ports: [
       { name: "Singapore", place: "Singapore", goes: "Thailand, Vietnam, Malaysia, and Indonesia.", air: "Singapore Airlines has the hub. Scoot flies the shorter routes. United, ANA, JAL, Qantas, Emirates, Qatar, and Cathay Pacific also serve the city.", zone: "Asia/Singapore", money: "Singapore dollar. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/singapore.jpg", alt: "Marina Bay in Singapore", slug: "asia" },
