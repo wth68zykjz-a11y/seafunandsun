@@ -106,11 +106,21 @@ const doors: Door[] = [
   },
 ];
 
-function DoorFace({ door }: { door: Door }) {
+function DoorFace({ door, eager }: { door: Door; eager?: boolean }) {
   return (
     <div className={`grid lg:grid-cols-2 ${door.tone === "sea" ? "bg-sea text-foam" : "bg-foam text-ink"}`}>
       <div className="relative h-52 overflow-hidden sm:h-64 lg:h-auto lg:min-h-[32rem]">
-        <img src={door.image} alt={door.alt} draggable={false} className="absolute inset-0 h-full w-full object-cover" />
+        <img
+          src={door.image}
+          alt={door.alt}
+          width={1400}
+          height={933}
+          draggable={false}
+          decoding="async"
+          loading={eager ? "eager" : "lazy"}
+          fetchPriority={eager ? "high" : "low"}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
       </div>
       <div className="flex flex-col justify-center px-5 py-5 lg:px-12 lg:py-10">
         <p className={`text-xs font-semibold uppercase tracking-[0.16em] ${door.tone === "sea" ? "text-gold" : "text-tide"}`}>{door.kicker}</p>
@@ -128,18 +138,18 @@ function DoorFace({ door }: { door: Door }) {
   );
 }
 
-function DoorSlide({ door }: { door: Door }) {
+function DoorSlide({ door, eager }: { door: Door; eager?: boolean }) {
   const className = "block h-full";
   if (door.to === "/destinations/$slug") {
     return (
       <Link to="/destinations/$slug" params={{ slug: door.slug }} className={className}>
-        <DoorFace door={door} />
+        <DoorFace door={door} eager={eager} />
       </Link>
     );
   }
   return (
     <Link to={door.to} className={className}>
-      <DoorFace door={door} />
+      <DoorFace door={door} eager={eager} />
     </Link>
   );
 }
@@ -210,9 +220,9 @@ function TripCarousel({ items }: { items: Door[] }) {
           }
         }}
       >
-        {items.map((door) => (
+        {items.map((door, i) => (
           <div key={door.title} className="min-w-full shrink-0 basis-full snap-start">
-            <DoorSlide door={door} />
+            <DoorSlide door={door} eager={i === 0} />
           </div>
         ))}
       </div>
@@ -331,19 +341,23 @@ function Home() {
             <img
               src="/media/ports/miami.jpg"
               alt="Miami’s waterfront, a common departure port for Caribbean cruises"
+              width={1400}
+              height={933}
+              loading="lazy"
+              decoding="async"
               className="aspect-photo h-48 w-full object-cover md:h-full"
             />
             <div className="flex flex-col p-6 sm:p-8">
               <p className="text-sm font-medium text-tide">Departure ports</p>
               <h3 className="mt-2 font-display text-3xl text-ink">Learn about common departure ports</h3>
               <p className="mt-3 text-ink md:hidden">
-                The city a ship leaves from changes the trip. Miami and Fort Lauderdale spend more nights in the Caribbean than New York, New Jersey, Baltimore, or Boston. Alaska usually starts in Seattle or Vancouver. A few days before or after are free: walk, talk to people, and eat where you feel like eating.
+                The city a ship leaves from changes the trip. Miami and Fort Lauderdale spend more nights in the Caribbean than New York, New Jersey, Baltimore, or Boston. Alaska usually starts in Seattle or Vancouver. A few days before or after have no all-aboard. Walk, talk to people, and eat where you feel like eating.
               </p>
               <p className="mt-3 hidden text-ink md:block">
                 The city a ship leaves from changes the trip. A week from Miami or Fort Lauderdale spends more nights in the Caribbean than the same week from New York, New Jersey, Baltimore, or Boston, which adds sea days. Alaska usually starts in Seattle or Vancouver. Seattle is the round trip through the Inside Passage. Vancouver is the Canadian start, often one way to Seward or Whittier, and a passport is required. Barcelona, Rome, Southampton, Singapore, Tokyo, and Sydney decide the coast the same way in their own regions.
               </p>
               <p className="mt-3 hidden text-ink md:block">
-                It is worth a few days in the city before you sail, or after you return. Those days are free. Walk, talk to people, and eat and drink as you go. A famous restaurant, a small local place, or a museum. Vancouver is a good example: the mountains and the harbor are right there, and you are already in town for the ship. The pages list where those ships usually go, which airlines serve the city, the local time, and the currency you will use. In Vancouver that currency is the Canadian dollar.
+                It is worth a few days in the city before you sail, or after you return. Those days have no all-aboard. Walk until a street is worth turning down. Talk to people. Drink where they are already sitting. Eat at a famous restaurant if that meal is why you stayed, or at a small local place. See a museum, or skip it and stay outside. Vancouver is a good example: the mountains and the harbor are right there, and you are already in town for the ship. The pages list where those ships usually go, which airlines serve the city, the local time, and the currency you will use. In Vancouver that currency is the Canadian dollar.
               </p>
               <span className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam sm:w-fit">
                 See the departure and embarkation ports
