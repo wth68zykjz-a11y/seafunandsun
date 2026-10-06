@@ -82,7 +82,7 @@ export function parsePromoHtml(slug: string, html: string): PromoPage {
     const price = decode(match[2]);
     if (dates && price) prices.push({ dates, price });
   }
-  const disclaimer = decode(html.match(/class="offer-disclaimer">([\s\S]*?)<\/div>/)?.[1] ?? "") || "The supplier can change the fare. We confirm it before you book.";
+  const disclaimer = decode(html.match(/class="offer-disclaimer">([\s\S]*?)<\/div>/)?.[1] ?? "");
   return {
     slug,
     title,

@@ -30,19 +30,19 @@ export const agentQuoteNote =
 export const liveOffers = [
   {
     title: "Windstar — more reasons to say yes",
-    detail: "Small-ship sailings on the current Windstar promotion. The terms belong to the line. Ask us to compare the offer with the rest of the fleet.",
+    detail: "Windstar is discounting small-ship sailings under this offer.",
     href: "https://tap13.myagentgenie.com/seafunandsun/offer/more-reasons-to-say-yes-with-windstar/",
     tag: "Small ship",
   },
   {
     title: "Norwegian — Free at Sea",
-    detail: "Norwegian’s Free at Sea offer, as the line is publishing it. We will check whether the included extras are worth more than a lower fare on another ship.",
+    detail: "Norwegian adds drinks, specialty dining, Wi-Fi, or an excursion credit to the cruise. Which of those is included depends on the sailing.",
     href: "https://tap13.myagentgenie.com/seafunandsun/offer/norwegian-cruise-lines-free-at-sea-offer/",
     tag: "Resort ship",
   },
   {
     title: "Celebrity — the savings on the table",
-    detail: "A current Celebrity promotion. The conditions are on the offer page. We will translate them into what you receive on board.",
+    detail: "Celebrity is discounting the cruise fare. The amount depends on the ship, the date, and the cabin.",
     href: "https://tap13.myagentgenie.com/seafunandsun/offer/the-vacation-you-want-the-savings-you-deserve-with-celebrity-cruises/",
     tag: "Premium",
   },
@@ -66,7 +66,7 @@ export const liveOffers = [
   },
   {
     title: "Explora Journeys — Egypt to Athens",
-    detail: "Five nights from Ain Sokhna to Piraeus. A published Explora sailing. We confirm the date and what the rate includes before you book.",
+    detail: "Five nights from Ain Sokhna, on the Red Sea, to Piraeus, the port for Athens.",
     href: "https://tap13.myagentgenie.com/seafunandsun/offer/a-grand-journey-of-historic-gateways-cultural-treasures-4/",
     tag: "Luxury",
   },
@@ -96,7 +96,7 @@ export const liveOffers = [
   },
   {
     title: "Princess — up to 40% and $300 off",
-    detail: "The line’s instant-savings offer on Alaska, Europe, and Caribbean sailings. The percentage and the credit depend on the date. We check both against a fare with fewer strings.",
+    detail: "Princess is taking as much as 40% off the cruise fare, and some sailings also include $300 off, on Alaska, Europe, and Caribbean dates.",
     href: "https://tap13.myagentgenie.com/seafunandsun/offer/up-to-40-off-300-instant-savings/",
     tag: "Premium",
   },
@@ -114,7 +114,7 @@ export const liveOffers = [
   },
   {
     title: "Virgin Voyages — up to $1,000 off",
-    detail: "Instant savings as Virgin is publishing them. These are adults-only ships. We will say whether the reduced fare still beats another line on the same week.",
+    detail: "Virgin Voyages takes as much as $1,000 off the fare at booking. The ships are adults only.",
     href: "https://tap13.myagentgenie.com/seafunandsun/offer/up-to-1000-instant-savings-with-virgin-voyages/",
     tag: "Resort ship",
   },
@@ -171,7 +171,7 @@ export const deskDoors = [
   },
   {
     title: "Hot deals",
-    detail: "Published promotions. Fares move, so treat the page as a starting point we will confirm.",
+    detail: "The promotions currently posted, including fare discounts, included flights, and hotel credits.",
     href: desk.deals,
     tag: "Deals",
   },

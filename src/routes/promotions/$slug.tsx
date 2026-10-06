@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageIntro, Shell } from "@/components/site-chrome";
 import { getPromo } from "@/lib/promo";
+import { explainPromotion } from "@/lib/offer-copy";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/promotions/$slug")({
@@ -9,7 +10,7 @@ export const Route = createFileRoute("/promotions/$slug")({
     pageHead({
       title: loaderData ? `${loaderData.title} — Sea Fun & Sun` : "Promotion",
       description: loaderData
-        ? `${loaderData.title}. A current promotion booked with Sea Fun & Sun in Farmington, Connecticut. We confirm the fare before you pay.`
+        ? `${explainPromotion(loaderData.title)} Booked with Sea Fun & Sun in Farmington, Connecticut.`
         : "A Sea Fun & Sun promotion.",
       path: loaderData ? `/promotions/${loaderData.slug}` : "/sailings",
     }),
@@ -35,11 +36,7 @@ function PromoPageView() {
       <PageIntro
         kicker="A Sea Fun & Sun promotion"
         title={promo.title}
-        lede={
-          /resort|hotel|tour|rail|train|globus|palladium|united vacation/i.test(promo.title)
-            ? "Booked through Sea Fun & Sun. The supplier sets the fare. We check the dates and the rules before you pay."
-            : "Booked through Sea Fun & Sun. The cruise line sets the fare. We check the dates and the rules before you pay."
-        }
+        lede={explainPromotion(promo.title)}
       />
       <div className="mx-auto max-w-6xl px-4 pb-20">
         {promo.images.length > 0 ? (
@@ -92,7 +89,6 @@ function PromoPageView() {
             </ol>
           </section>
         ) : null}
-        <p className="mt-8 max-w-3xl text-sm text-mute">{promo.disclaimer}</p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
             to="/quote"

@@ -245,7 +245,7 @@ function DealsOfTheWeek({ offers, checked }: { offers: SupplierOffer[]; checked:
             <article key={deal.offer.href} className="flex flex-col rounded-xl border border-line bg-foam p-5">
               <p className="text-xs font-medium text-tide">{deal.guide ? deal.guide.port : deal.offer.tag}</p>
               <h3 className="mt-2 font-display text-2xl">{heading}</h3>
-              <p className="mt-2 text-sm leading-6 text-ink">{deal.offer.title}. {deal.offer.detail}</p>
+              <p className="mt-2 text-sm leading-6 text-ink">{deal.offer.detail}</p>
               {deal.guide ? (
                 <p className="mt-3 text-sm">
                   <Link to="/destinations/$slug" params={{ slug: deal.guide.destination }} className="font-medium text-tide">
@@ -326,8 +326,8 @@ function SailingsPage() {
         <h2 className="mt-14 font-display text-3xl">Offers available right now</h2>
         <p className="mt-2 max-w-2xl text-sm text-mute">
           {feed.live
-            ? `Updated from our booking system on ${updated} Eastern. Fares change, and the rules belong to the supplier. A public offer is not always the lower price.`
-            : "The booking system did not respond just now, so these are the offers saved on this site. Fares move. We confirm the current terms before you book."}
+            ? `Updated from the booking system on ${updated} Eastern.`
+            : "The booking system did not respond just now, so these are the promotions saved on this site."}
         </p>
         {offerGroups.map((group) => {
           const cruise = cruiseOffers(feed.offers);

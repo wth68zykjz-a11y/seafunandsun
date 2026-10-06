@@ -1,3 +1,5 @@
+import { promotionDetail } from "@/lib/offer-copy";
+
 export type OfferGroup = "Luxury" | "Ocean" | "Land and Resorts";
 
 export type SupplierOffer = {
@@ -74,7 +76,7 @@ export function parseOfferHtml(html: string, source: (typeof FEEDS)[number][1]):
       href,
       group,
       tag: tagFor(group, title),
-      detail: summary.length > 220 ? summary.slice(0, 220).replace(/\s+\S*$/, "") : summary || "A current promotion. The fare and the rules belong to the supplier. We confirm both before you book.",
+      detail: promotionDetail(title, summary.length > 280 ? summary.slice(0, 280).replace(/\s+\S*$/, "") : summary),
     });
   }
   return offers;
