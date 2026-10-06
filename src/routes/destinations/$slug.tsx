@@ -134,6 +134,11 @@ export function DestinationArticle({ place, rail = false }: { place: NonNullable
             </article>
           ))}
         </div>
+        <p className="mt-4 max-w-3xl text-sm text-mute">
+          {rail
+            ? "A night off the train can include dinner and a day in that city. It does not have to be only the hotel."
+            : "On a port day, lunch fits only if the ship leaves later. If you stay before or after the cruise, dinners and other travel can be added with the hotel. That might be a table in the city, a train, or a day outside it."}
+        </p>
         <article className="mt-4 rounded-xl p-5 text-foam" style={{ backgroundColor: tone }}>
           <h2 className="font-display text-2xl">When to go</h2>
           <p className="mt-3 max-w-3xl text-foam/85">{place.when}</p>
@@ -156,7 +161,7 @@ export function DestinationArticle({ place, rail = false }: { place: NonNullable
               <p className="mt-3 text-sm text-mute">
                 {rail
                   ? "Most of the day is on the train. A stop is short. The notes below say what you can see from the window, and what will not fit at the station."
-                  : "You are ashore only while the ship is there. These notes are what people usually do with that time. If the Michelin Guide covers the city, we can request a starred table that cooks the local food. It has to be booked before you sail, and the ship has to stay long enough to eat."}
+                  : "You are ashore only while the ship is there. Lunch on that day fits only if the ship leaves later. If you stay before or after the cruise, dinners and other travel can be added with the hotel: a table in the city, a train, or a day outside it. Where the Michelin Guide covers the city, a starred table has to be requested before you sail."}
               </p>
               <dl className="mt-5 grid gap-4 sm:grid-cols-2">
                 {portGuides[place.slug].facts.map((fact) => (
