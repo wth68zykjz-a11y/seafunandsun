@@ -131,7 +131,7 @@ export const portRegions: PortRegion[] = [
   {
     id: "rivers",
     title: "River embarkations",
-    lede: "A river ship is not an ocean ship with a different brochure. These are the towns where the European river cruises actually start.",
+    lede: "A river ship is not an ocean ship with a different brochure. These are the towns where European river cruises embark.",
     ports: [
       { name: "Budapest, Vienna, and Passau", place: "The Danube", goes: "Danube river cruises between Hungary, Austria, and Germany.", air: "Fly Budapest, Vienna, or Munich for Passau. Austrian and Lufthansa cover Vienna and Munich. Budapest is usually a connection.", zone: "Europe/Vienna", money: "Euro in Vienna and Passau. Hungarian forint in Budapest. Cards are accepted. Euro cash is not the local currency in Hungary.", image: "/media/ports/budapest.jpg", alt: "Budapest along the Danube", slug: "river" },
       { name: "Amsterdam and Basel", place: "The Rhine", goes: "Rhine river cruises. The ocean ships in Amsterdam leave from IJmuiden, not these berths.", air: "Fly Amsterdam (KLM, Delta, United) or Zurich and Basel (SWISS).", zone: "Europe/Amsterdam", money: "Euro in Amsterdam. Swiss franc in Basel. Cards are accepted in both.", image: "/media/ports/basel.jpg", alt: "Basel on the Rhine", slug: "river" },
@@ -141,8 +141,8 @@ export const portRegions: PortRegion[] = [
   },
   {
     id: "asia",
-    title: "Where Asian cruises start",
-    lede: "Singapore and Tokyo are the reliable starts. Hong Kong and Shanghai run when the season is open. They do not sail every year.",
+    title: "Asian embarkation ports",
+    lede: "Singapore and Tokyo are the embarkations you can plan around. Hong Kong and Shanghai run when the season is open. They do not sail every year.",
     ports: [
       { name: "Singapore", place: "Singapore", goes: "Thailand, Vietnam, Malaysia, and Indonesia.", air: "Singapore Airlines has the hub. Scoot flies the shorter routes. United, ANA, JAL, Qantas, Emirates, Qatar, and Cathay Pacific also serve the city.", zone: "Asia/Singapore", money: "Singapore dollar. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/singapore.jpg", alt: "Marina Bay in Singapore", slug: "asia" },
       { name: "Hong Kong", place: "China", goes: "The China coast, Vietnam, and Japan, in the years the ships are based here.", air: "Cathay Pacific and HK Express. Long-haul partners include British Airways, Qantas, and the US lines when a nonstop is scheduled.", zone: "Asia/Hong_Kong", money: "Hong Kong dollar. Cards are accepted. The Hong Kong dollar is pegged to the US dollar, but shops price in Hong Kong dollars.", image: "/media/ports/hong-kong.jpg", alt: "Victoria Harbour in Hong Kong", slug: "asia" },
@@ -164,7 +164,7 @@ export const portRegions: PortRegion[] = [
   {
     id: "new-zealand",
     title: "New Zealand",
-    lede: "Auckland is the start. The other cities are calls on a Sydney or Auckland sailing.",
+    lede: "Auckland is the usual turnaround. The other cities are calls on a Sydney or Auckland sailing.",
     ports: [
       { name: "Auckland", place: "New Zealand", goes: "New Zealand, and across the Tasman to Australia.", air: "Air New Zealand has the hub. Qantas and Jetstar fly the Tasman. United, American, Delta, and Hawaiian fly from the US, some of them only in season.", zone: "Pacific/Auckland", money: "New Zealand dollar. Cards are accepted.", image: "/media/ports/auckland.jpg", alt: "Auckland harbor", slug: "australia-new-zealand" },
     ],
@@ -194,13 +194,13 @@ export const portPages: PortPage[] = [
   {
     slug: "europe",
     title: "Europe",
-    lede: "Barcelona, Rome, and Athens cover the Mediterranean. Southampton, Amsterdam, and Copenhagen cover the north. River ships start in a different set of cities.",
+    lede: "Barcelona, Rome, and Athens cover the Mediterranean. Southampton, Amsterdam, and Copenhagen cover the north. River ships embark in a different set of cities.",
     regionIds: ["mediterranean", "northern-europe", "rivers"],
   },
   {
     slug: "asia",
     title: "Asia",
-    lede: "Singapore and Tokyo are the starts you can plan around. The other Asian ports are real, and many of them are calls rather than the first day of the cruise.",
+    lede: "Singapore and Tokyo are the embarkations you can plan around. The other Asian ports are real, and many of them are calls rather than the first day of the cruise.",
     regionIds: ["asia"],
     calls: [
       { name: "Bangkok", place: "Laem Chabang, Thailand", note: "A regular call on Singapore sailings. Some ships overnight.", air: "Fly Bangkok. Thai Airways and Bangkok Airways, plus the Middle East and Asian long-haul lines.", zone: "Asia/Bangkok", money: "Thai baht. Cards are accepted in the city. Markets often want cash.", image: "/media/ports/bangkok.jpg", alt: "Bangkok along the river" },
@@ -231,7 +231,7 @@ export const portPages: PortPage[] = [
   {
     slug: "other",
     title: "Middle East, Africa, and South America",
-    lede: "Seasonal homeports. Useful when the trip is the Arabian Gulf, the Brazilian coast, or Antarctica. Not where a Caribbean week starts.",
+    lede: "Seasonal homeports. Useful when the trip is the Arabian Gulf, the Brazilian coast, or Antarctica. Not a Caribbean embarkation.",
     regionIds: ["elsewhere"],
   },
 ];
