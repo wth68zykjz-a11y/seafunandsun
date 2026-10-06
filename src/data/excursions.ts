@@ -515,7 +515,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A train crossing a wooden trestle above a misty spruce valley",
     facts: [
       { label: "Time in port", text: "Most calls are four to eight hours. Glacier days can be the ship’s scenic sail, with no gangway at all." },
-      { label: "Worth the time", text: "In Juneau, the stop worth making is fresh salmon and the Mendenhall Glacier. In Skagway, it is the White Pass railroad. These ports are not in the Michelin Guide." },
+      { label: "Worth the time", text: "In Juneau, the outing is the Mendenhall Glacier. Fresh salmon is the meal in town, not a place you visit. In Skagway, ride the White Pass railroad. These ports are not in the Michelin Guide." },
       { label: "Best for", text: "People who want wildlife and ice more than nightlife. A balcony matters here more than a big ship theater." },
       { label: "Often a poor fit", text: "Gift-shop bus loops, and any “flightseeing plus six other stops” that spends the day in a van." },
     ],
@@ -620,7 +620,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A gravel carriage road through peak autumn color near a rocky coast",
     facts: [
       { label: "Time in port", text: "Small Maine ports are half days. Halifax and Québec, when the ship goes upriver, are city calls." },
-      { label: "Worth the time", text: "In Halifax, see the Citadel. When the ship sails up the St. Lawrence, the landmark in Québec is the Château Frontenac. In a Maine harbor, the simple plan is a lobster roll and a lighthouse." },
+      { label: "Worth the time", text: "In Halifax, see the Citadel. When the ship sails up the St. Lawrence, the landmark in Québec is the Château Frontenac. In a Maine harbor, see a lighthouse and eat a lobster roll." },
       { label: "Best for", text: "Fall color and small harbors, often without a flight. Peak leaves are a narrow window." },
       { label: "Often a poor fit", text: "A bus to a prettier brochure photo, and any “best of Acadia” that is mostly van time." },
     ],
