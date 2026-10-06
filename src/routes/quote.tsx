@@ -29,6 +29,20 @@ function QuotePage() {
         title="Tell us where you want to go."
         lede="Cruises, expeditions, resorts, ski vacations, and rail trips. We reply the same day in most cases. The request is kept for us and is not posted on the site. There is no separate agent fee."
       />
+      <ol className="mx-auto grid max-w-6xl gap-4 px-4 pb-10 sm:grid-cols-2">
+        {[
+          ["1. Tell us the trip", "Use the form, call, or text. For a cruise with a public fare, you can also search sailings and pick the ship yourself."],
+          ["2. We price the pieces separately", "The cruise or hotel, the flight, and any nights before or after are quoted on their own, so you can see which one moved."],
+          ["3. You choose", "On a published sailing, you pick the date and the cabin in the booking system. Yacht sailings, many luxury hotels, and European sleeper trains have no public fare. Those come back as a quote."],
+          ["4. You pay the supplier", "The card payment goes to the cruise line, resort, hotel, or operator. We do not hold the card. There is no separate agent fee. The supplier pays our commission."],
+          ["5. One agent stays with it", "The same person handles the deposit, the final-payment date, a change, and the flight against the ship’s embarkation and return."],
+        ].map(([title, text]) => (
+          <li key={title} className="rounded-xl border border-line bg-foam p-5">
+            <h2 className="font-display text-2xl text-ink">{title}</h2>
+            <p className="mt-2 text-sm text-mute">{text}</p>
+          </li>
+        ))}
+      </ol>
       <div className="mx-auto grid max-w-6xl gap-8 px-4 pb-20 lg:grid-cols-5">
         <div className="lg:col-span-3">
           <img
