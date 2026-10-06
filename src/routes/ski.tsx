@@ -35,7 +35,7 @@ function SkiPage() {
         />
         <div className="flex flex-col justify-center">
           <p className="text-sm font-medium text-tide">Ski</p>
-          <h1 className="mt-2 font-display text-3xl sm:text-5xl">Club Med includes the skiing. A hotel does not.</h1>
+          <h1 className="mt-2 font-display text-3xl sm:text-5xl">At Club Med the lift pass is usually included. At a hotel it usually is not.</h1>
           <p className="mt-4 text-lg text-mute">
             A Club Med ski week usually includes the room, the meals, the lift pass, and group lessons. In Québec, that is Le Massif de Charlevoix. In France, it is Val d’Isère, Tignes, Val Thorens, La Plagne, Les Arcs, Alpe d’Huez, and Grand Massif Samoëns. In Switzerland, it is Saint-Moritz. We check what that village includes, and the youngest age the kids’ club accepts. Time away from the slopes is extra unless the rate says it is included.
           </p>

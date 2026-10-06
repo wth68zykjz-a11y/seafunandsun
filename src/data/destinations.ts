@@ -211,7 +211,7 @@ export const destinations: Destination[] = [
         nights: "7–10 nights",
         season: "Shoulder months",
         ship: "MSC, Celebrity, and the luxury lines, compared",
-        path: "Ravenna or Trieste. Not a dock in Venice",
+        path: "The ship docks in Ravenna or Trieste. Large ships do not dock in Venice.",
         ports: ["Dubrovnik", "Kotor or Split", "A sea day"],
       },
       {
