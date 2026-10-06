@@ -96,12 +96,20 @@ export const shores: Record<string, DestinationShore> = {
           "The cable car and the donkeys both have lines by late morning. The useful plan is the first tender and a short stay up top, not a six-hour photo chase. It is a poor fit if knees are a problem.",
       },
       {
-        title: "Acropolis, then Plaka slowly",
+        title: "The Acropolis, and one stop nearby",
         where: "Athens, from Piraeus",
         length: "Half day",
         pace: "Uneven stone, real walking",
         detail:
-          "The Acropolis is the visit. The rest of the city can wait for another trip. A guide who finishes in Plaka for lunch is a better day than a bus loop of three ruins.",
+          "See the Acropolis in the morning. If you want one more stop, use the Acropolis Museum next door, or walk down to the Ancient Agora. The National Archaeological Museum is across the city, so leave it for a longer stay. Lunch in Plaka is the right ending.",
+      },
+      {
+        title: "St. Peter's, or the Colosseum",
+        where: "Rome, from Civitavecchia",
+        length: "Most of the port day, including the drive",
+        pace: "A lot of walking, and a long ride each way",
+        detail:
+          "The drive from the port takes about an hour and a half. Choose St. Peter's and the Vatican Museums, which include the Sistine Chapel, or choose the Colosseum, the Forum, and the Palatine. The Borghese Gallery is a third choice, and it needs a timed ticket booked ahead. Do not combine them.",
       },
       {
         title: "Kotor’s walls, or an Amalfi table",
@@ -545,13 +553,14 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Empty blue chairs on a terrace above a caldera harbor at dawn",
     facts: [
       { label: "Time in port", text: "Often a long day, sometimes a tender. The useful hours are early, before the alleys fill." },
-      { label: "Worth the time", text: "Stop in Athens for the Acropolis, then go back to the ship. Rome is a long ride from Civitavecchia, so a Michelin lunch only works if the ship stays late and the table was booked before you left home. On the Amalfi coast, sit down for a long lunch. That is the day." },
+      { label: "Worth the time", text: "Stop in Athens for the Acropolis. The museum is beside it, and the Ancient Agora is the other ruin you can walk to. The National Archaeological Museum is a different day. Rome is a long ride from Civitavecchia. Choose St. Peter’s and the Vatican Museums, or the Colosseum and the Forum. A Michelin lunch only fits if the ship stays late and the table was booked before you left home. On the Amalfi coast, sit down for a long lunch." },
       { label: "Best for", text: "Travelers who want a different country at breakfast and will walk for it. Shoulder months beat August." },
       { label: "Often a poor fit", text: "Three-ruin coach loops, and any Santorini plan that starts after the other ships have tendered." },
     ],
     outings: [
       { fits: "This suits people who can manage the steps and are happy with a short stay at the top. Tell us if anyone has trouble with knees.", bring: "Sun protection, water, and shoes with a grip. The marble is polished by crowds." },
-      { fits: "Spend half the day at the Acropolis, then have lunch in Plaka. This is not a tour of the whole city.", bring: "A hat and a bottle. The site is exposed, and the good cafes are after, not on the hill." },
+      { fits: "Spend the morning at the Acropolis, then one nearby stop: the museum or the Ancient Agora. Have lunch in Plaka. Leave the big museum across town for another trip.", bring: "A hat and a bottle. The site is exposed, and the good cafes are after, not on the hill." },
+      { fits: "One Rome plan only. St. Peter’s and the Vatican Museums, or the Colosseum and the Forum, or the Borghese Gallery if the timed ticket is already booked.", bring: "Comfortable shoes and patience with the drive from Civitavecchia. The day is lost in traffic if you try to see all three." },
       { fits: "A walking day in Kotor, or a seated lunch in Amalfi if the ship’s hours are honest.", bring: "All-aboard decides whether the day is a walk or a long lunch. Cash still helps in the old towns." },
     ],
   },
