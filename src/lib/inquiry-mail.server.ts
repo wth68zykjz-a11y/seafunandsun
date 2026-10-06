@@ -1,4 +1,6 @@
-import { connect } from "node:tls";
+// nodemailer 7 does not ship its own types in this install.
+// @ts-expect-error types are not bundled
+import nodemailer from "nodemailer";
 import { bookingEmail, phone } from "@/data/links";
 import { env } from "@/lib/env.server";
 
@@ -98,107 +100,69 @@ async function sendResend(lead: InquiryMail, key: string): Promise<void> {
   }
 }
 
-function dotStuff(body: string) {
-  return body
-    .replace(/\r?\n/g, "\r\n")
-    .split("\r\n")
-    .map((line) => (line.startsWith(".") ? `.${line}` : line))
-    .join("\r\n");
+function mailFailure(err: unknown) {
+  const message = err instanceof Error ? err.message : "send failed";
+  const lower = message.toLowerCase();
+  if (lower.includes("535") || lower.includes("authentication")) return "failed: mailbox password rejected";
+  if (lower.includes("timed out") || lower.includes("timeout")) return "failed: timed out";
+  if (lower.includes("econnrefused") || lower.includes("enotfound") || lower.includes("econnreset")) {
+    return "failed: could not reach mail server";
+  }
+  const short = message.replace(/\s+/g, " ").trim().slice(0, 120);
+  return `failed: ${short}`;
 }
 
-function smtpSend(outbound: Outbound[], user: string, pass: string): Promise<void> {
+function mailboxPassword(value: string) {
+  const trimmed = value.trim();
+  if (
+    (trimmed.startsWith('"') && trimmed.endsWith('"') && trimmed.length > 1) ||
+    (trimmed.startsWith("'") && trimmed.endsWith("'") && trimmed.length > 1)
+  ) {
+    return trimmed.slice(1, -1);
+  }
+  return trimmed;
+}
+
+async function deliver(outbound: Outbound[], user: string, pass: string) {
   const host = env("SMTP_HOST") ?? "smtp.hostinger.com";
-  const port = Number(env("SMTP_PORT") ?? 465);
-  return new Promise((resolve, reject) => {
-    const socket = connect({ host, port, servername: host });
-    const lines: string[] = [];
-    const waiters: { resolve: (line: string) => void; reject: (err: Error) => void }[] = [];
-    let buffer = "";
-    let settled = false;
-
-    function fail(err: Error) {
-      if (settled) return;
-      settled = true;
-      socket.destroy();
-      while (waiters.length) waiters.shift()?.reject(err);
-      reject(err);
-    }
-
-    function pushLine(line: string) {
-      if (/^\d{3}-/.test(line)) return;
-      const waiter = waiters.shift();
-      if (waiter) waiter.resolve(line);
-      else lines.push(line);
-    }
-
-    function read() {
-      const existing = lines.shift();
-      if (existing !== undefined) return Promise.resolve(existing);
-      return new Promise<string>((resolveLine, rejectLine) => {
-        waiters.push({ resolve: resolveLine, reject: rejectLine });
-      });
-    }
-
-    async function expect(code: string) {
-      const line = await read();
-      if (!line.startsWith(code)) throw new Error(`SMTP ${line}`);
-    }
-
-    socket.setTimeout(8000);
-    socket.on("timeout", () => fail(new Error("SMTP timed out")));
-    socket.on("error", fail);
-    socket.on("data", (chunk) => {
-      buffer += chunk.toString("utf8");
-      let index = buffer.indexOf("\n");
-      while (index !== -1) {
-        pushLine(buffer.slice(0, index).replace(/\r$/, ""));
-        buffer = buffer.slice(index + 1);
-        index = buffer.indexOf("\n");
-      }
+  const requested = Number(env("SMTP_PORT") ?? 465);
+  const attempts = requested === 587 ? [587] : [requested, 587];
+  let last: unknown;
+  for (const port of attempts) {
+    const transport = nodemailer.createTransport({
+      host,
+      port,
+      secure: port === 465,
+      auth: { user, pass },
+      connectionTimeout: 15000,
+      greetingTimeout: 15000,
+      socketTimeout: 20000,
     });
-
-    void (async () => {
-      try {
-        await expect("220");
-        socket.write("EHLO seafunandsun.com\r\n");
-        await expect("250");
-        socket.write("AUTH LOGIN\r\n");
-        await expect("334");
-        socket.write(`${Buffer.from(user, "utf8").toString("base64")}\r\n`);
-        await expect("334");
-        socket.write(`${Buffer.from(pass, "utf8").toString("base64")}\r\n`);
-        await expect("235");
-        for (const message of outbound) {
-          socket.write(`MAIL FROM:<${user}>\r\n`);
-          await expect("250");
-          socket.write(`RCPT TO:<${message.to}>\r\n`);
-          await expect("250");
-          socket.write("DATA\r\n");
-          await expect("354");
-          const headers = [
-            `From: Sea Fun & Sun <${user}>`,
-            `To: ${message.to}`,
-            ...(message.replyTo ? [`Reply-To: ${message.replyTo}`] : []),
-            `Subject: ${message.subject}`,
-            "MIME-Version: 1.0",
-            "Content-Type: text/plain; charset=UTF-8",
-          ];
-          socket.write(`${headers.join("\r\n")}\r\n\r\n${dotStuff(message.text)}\r\n.\r\n`);
-          await expect("250");
-        }
-        socket.write("QUIT\r\n");
-        settled = true;
-        socket.end();
-        resolve();
-      } catch (err) {
-        fail(err instanceof Error ? err : new Error("SMTP failed"));
+    try {
+      for (const message of outbound) {
+        await transport.sendMail({
+          from: `Sea Fun & Sun <${user}>`,
+          to: message.to,
+          replyTo: message.replyTo,
+          subject: message.subject,
+          text: message.text,
+        });
       }
-    })();
-  });
+      return;
+    } catch (err) {
+      last = err;
+      const message = err instanceof Error ? err.message.toLowerCase() : "";
+      const blocked = message.includes("econnrefused") || message.includes("timed out") || message.includes("timeout") || message.includes("enotfound");
+      if (!blocked || port === attempts[attempts.length - 1]) throw err;
+    } finally {
+      transport.close();
+    }
+  }
+  throw last instanceof Error ? last : new Error("SMTP failed");
 }
 
 /** Desk copy plus a short note to the traveler. Never throws. */
-export async function notifyInquiry(lead: InquiryMail): Promise<"sent" | "not-configured" | "failed"> {
+export async function notifyInquiry(lead: InquiryMail): Promise<string> {
   const resend = env("RESEND_API_KEY");
   const user = env("SMTP_USER");
   const pass = env("SMTP_PASS");
@@ -209,12 +173,12 @@ export async function notifyInquiry(lead: InquiryMail): Promise<"sent" | "not-co
     }
     if (user && pass) {
       const deskTo = env("INQUIRY_TO") ?? bookingEmail;
-      await smtpSend(messages(lead, user, deskTo), user, pass);
+      await deliver(messages(lead, user, deskTo), user, mailboxPassword(pass));
       return "sent";
     }
     return "not-configured";
   } catch (err) {
     console.error("[inquiry-mail]", err instanceof Error ? err.message : "send failed");
-    return "failed";
+    return mailFailure(err);
   }
 }

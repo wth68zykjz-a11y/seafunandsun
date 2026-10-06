@@ -83,7 +83,7 @@ async function getPool() {
         cabin varchar(80) not null default '',
         plans text not null,
         marketing_opt_in tinyint(1) not null default 0,
-        email_status varchar(40) not null default '',
+        email_status varchar(160) not null default '',
         created_at timestamp not null default current_timestamp,
         primary key (id),
         unique key inquiries_reference (reference)
@@ -91,12 +91,15 @@ async function getPool() {
     `);
     try {
       await pool.query(
-        "alter table inquiries add column email_status varchar(40) not null default ''",
+        "alter table inquiries add column email_status varchar(160) not null default ''",
       );
     } catch (err) {
       const code = (err as { code?: string }).code;
       if (code !== "ER_DUP_FIELDNAME") throw err;
     }
+    await pool.query(
+      "alter table inquiries modify email_status varchar(160) not null default ''",
+    );
     return pool;
   })().catch((err) => {
     poolPromise = null;
