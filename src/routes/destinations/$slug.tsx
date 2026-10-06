@@ -211,6 +211,10 @@ export function DestinationArticle({
                     <dt className="font-medium text-tide">What you see</dt>
                     <dd>Both sets of locks, the lake, and the cut. Cartagena is a common call, and the Pacific side often adds a Mexican or Central American port.</dd>
                   </div>
+                  <div>
+                    <dt className="font-medium text-tide">Cruise fare</dt>
+                    <dd>On Princess, Holland America, or Celebrity, an interior cabin is often about $1,200–$2,200 per person for 14 to 17 nights. A balcony is often about $2,200–$4,000. A sale can put an interior near $1,000. That is the cruise only, for two people in the cabin.</dd>
+                  </div>
                 </dl>
               </article>
               <article className="rounded-xl border border-line bg-foam p-5">
@@ -236,9 +240,16 @@ export function DestinationArticle({
                     <dt className="font-medium text-tide">What you see</dt>
                     <dd>The Caribbean locks and the lake. You do not pass the Culebra Cut or the Pacific locks. The other days are often Cartagena or a Caribbean call.</dd>
                   </div>
+                  <div>
+                    <dt className="font-medium text-tide">Cruise fare</dt>
+                    <dd>On those same lines, an interior cabin is often about $800–$1,800 per person for 10 to 12 nights. A balcony is often about $1,500–$3,000. A round trip to Florida is the usual flight, and it is booked separately.</dd>
+                  </div>
                 </dl>
               </article>
             </div>
+            <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink">
+              These are recent published ranges, not a quote. Taxes and port fees can add a few hundred dollars. Drinks, gratuities, and Wi-Fi are extra on most of these ships unless the fare says they are included. Regent, Silversea, and Viking ocean are a different price, often several thousand dollars higher, and those sailings are quoted. A full transit also needs a flight into one coast and a flight home from the other.
+            </p>
           </div>
         ) : null}
         <div className="mt-10 grid gap-4 lg:grid-cols-2">
