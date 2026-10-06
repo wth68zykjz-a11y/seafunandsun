@@ -20,10 +20,14 @@ export type MysqlInquiry = {
 let poolPromise: Promise<mysql.Pool> | null = null;
 
 /** True when Hostinger (or any MySQL server) has been configured. */
-export function mysqlEnabled() {
-  const url = env("DATABASE_URL");
-  if (url && /^mysql:\/\//i.test(url)) return true;
+function separateMysql() {
   return Boolean(env("DB_HOST") && env("DB_USER") && env("DB_NAME"));
+}
+
+export function mysqlEnabled() {
+  if (separateMysql()) return true;
+  const url = env("DATABASE_URL");
+  return Boolean(url && /^mysql:\/\//i.test(url));
 }
 
 function mysqlHost(host: string | undefined) {
@@ -33,19 +37,22 @@ function mysqlHost(host: string | undefined) {
 }
 
 function createPool() {
-  const url = env("DATABASE_URL");
-  if (url && /^mysql:\/\//i.test(url)) {
-    const parsed = new URL(url);
-    return mysql.createPool({
-      host: mysqlHost(parsed.hostname),
-      port: parsed.port ? Number(parsed.port) : 3306,
-      user: decodeURIComponent(parsed.username),
-      password: decodeURIComponent(parsed.password),
-      database: decodeURIComponent(parsed.pathname.replace(/^\//, "")),
-      waitForConnections: true,
-      connectionLimit: 5,
-      dateStrings: true,
-    });
+  if (!separateMysql()) {
+    const url = env("DATABASE_URL");
+    if (url && /^mysql:\/\//i.test(url)) {
+      const parsed = new URL(url);
+      return mysql.createPool({
+        host: mysqlHost(parsed.hostname),
+        port: parsed.port ? Number(parsed.port) : 3306,
+        user: decodeURIComponent(parsed.username),
+        password: decodeURIComponent(parsed.password),
+        database: decodeURIComponent(parsed.pathname.replace(/^\//, "")),
+        waitForConnections: true,
+        connectionLimit: 5,
+        connectTimeout: 8000,
+        dateStrings: true,
+      });
+    }
   }
   return mysql.createPool({
     host: mysqlHost(env("DB_HOST")),
@@ -55,6 +62,7 @@ function createPool() {
     database: env("DB_NAME"),
     waitForConnections: true,
     connectionLimit: 5,
+    connectTimeout: 8000,
     dateStrings: true,
   });
 }

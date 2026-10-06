@@ -33,6 +33,30 @@ export type InquiryRow = {
   created_at: string;
 };
 
+function saveError(err: unknown) {
+  const code = (err as { code?: string }).code ?? "";
+  const message = err instanceof Error ? err.message : "";
+  console.error("[inquiry] save failed", code || message);
+  if (!mysqlEnabled()) {
+    return "The database settings are not on the server. Add DB_HOST, DB_NAME, DB_USER, and DB_PASSWORD, then redeploy.";
+  }
+  if (code === "ER_ACCESS_DENIED_ERROR" || /access denied/i.test(message)) {
+    return "The database rejected the username or password. Use the full username and the full database name, including the prefix Hostinger adds.";
+  }
+  if (code === "ER_BAD_DB_ERROR") {
+    return "That database name was not found. Copy the full name from the database list, including the prefix.";
+  }
+  if (
+    code === "ECONNREFUSED" ||
+    code === "ETIMEDOUT" ||
+    code === "ENOTFOUND" ||
+    /ECONNREFUSED|ETIMEDOUT|ENOTFOUND/.test(message)
+  ) {
+    return "The website cannot reach the database. Open Remote MySQL in hPanel, allow this database, and set DB_HOST to the hostname shown there. It is not 127.0.0.1.";
+  }
+  return "The database did not accept the request. Check the host, database name, username, and password, then redeploy.";
+}
+
 function clean(value: string, max: number) {
   return value.replace(/\s+/g, " ").trim().slice(0, max);
 }
@@ -67,23 +91,27 @@ export const submitInquiry = createServerFn({ method: "POST" })
 
     const reference = `SFS-${Math.random().toString(36).slice(2, 8).toUpperCase()}`;
     const optedIn = Boolean(data.marketingOptIn);
-    if (mysqlEnabled()) {
-      await mysqlQuery(
-        `insert into inquiries (
-          reference, name, email, phone, destination, travel_window, party_size, cabin, plans, marketing_opt_in
-        ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-        [reference, name, email, phone, destination, travelWindow, partySize, cabin, plans, optedIn ? 1 : 0],
-      );
-    } else {
-      const sql = await getSql();
-      await sql`
-        insert into inquiries (
-          reference, name, email, phone, destination, travel_window, party_size, cabin, plans, marketing_opt_in
-        ) values (
-          ${reference}, ${name}, ${email}, ${phone}, ${destination}, ${travelWindow},
-          ${partySize}, ${cabin}, ${plans}, ${optedIn}
-        )
-      `;
+    try {
+      if (mysqlEnabled()) {
+        await mysqlQuery(
+          `insert into inquiries (
+            reference, name, email, phone, destination, travel_window, party_size, cabin, plans, marketing_opt_in
+          ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+          [reference, name, email, phone, destination, travelWindow, partySize, cabin, plans, optedIn ? 1 : 0],
+        );
+      } else {
+        const sql = await getSql();
+        await sql`
+          insert into inquiries (
+            reference, name, email, phone, destination, travel_window, party_size, cabin, plans, marketing_opt_in
+          ) values (
+            ${reference}, ${name}, ${email}, ${phone}, ${destination}, ${travelWindow},
+            ${partySize}, ${cabin}, ${plans}, ${optedIn}
+          )
+        `;
+      }
+    } catch (err) {
+      return { ok: false as const, error: saveError(err) };
     }
 
     let emailStatus = "not-configured";
