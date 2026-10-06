@@ -72,12 +72,12 @@ export const shores: Record<string, DestinationShore> = {
           "Loungers, a swim, lunch, back to the ship. Skip this if the ship already has a beach club that is better.",
       },
       {
-        title: "Town, market, and a bakery",
-        where: "Martinique, Old San Juan, or St. Maarten",
-        length: "3 hours on foot",
+        title: "A bakery, then the market",
+        where: "Fort-de-France, Martinique",
+        length: "About 3 hours on foot",
         pace: "Easy walking",
         detail:
-          "Pastries in Martinique, a market, a slow street. That is a better use of the call than a packaged “cultural overview” that is mostly a jewelry stop. Leave time for the last tender.",
+          "Start at a bakery for a croissant. Then walk the covered market on Rue Isambert. One street is enough. If you came by tender, leave time for the last boat.",
       },
     ],
   },
@@ -237,7 +237,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Walking",
         detail:
-          "Walls, a square, coffee. A palace and a museum do not fit in the same morning.",
+          "Walk the old walls, stop in one square, and sit for coffee. A palace and a museum will not fit in the same morning.",
       },
     ],
   },
@@ -341,15 +341,15 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-asia.jpg",
     photoAlt: "Lantern light on a calm harbor with limestone karsts beyond",
     intro:
-      "Asian port days run hot, and the interesting part of town is often a transfer from the pier. One neighborhood is enough: a temple and a market, or a shrine and a train.",
+      "The pier is often an hour from the place you came to see. The heat shortens the day. See one site, eat nearby, and go back.",
     excursions: [
       {
-        title: "Temple, then the market",
-        where: "Bangkok, Ho Chi Minh City, or a similar call",
-        length: "Half day",
-        pace: "Walking, heat",
+        title: "The Grand Palace, then lunch",
+        where: "Bangkok. Most ships dock at Laem Chabang, about two hours away.",
+        length: "Half day, including the drive",
+        pace: "Walking in the heat. Shoes come off in the palace grounds.",
         detail:
-          "Go early. Shoes off at the temple, then a market that sells food, not only souvenirs. Water and shade matter as much as the sights.",
+          "Arrive at opening. See the palace and leave. A noodle lunch nearby is the right second stop. A floating market on the same morning turns the day into traffic.",
       },
       {
         title: "Karsts from the water",
@@ -612,7 +612,7 @@ export const portGuides: Record<string, PortGuide> = {
     outings: [
       { fits: "The view from the village. Add a walk only if the path is dry and the group wants it.", bring: "A real rain jacket. The ship’s fjord sail already did half the day’s work." },
       { fits: "Spend an easy hour on Bryggen’s cobblestone streets, rain or not. Take the funicular only if the cloud is above the hill.", bring: "Wear shoes that can take wet stone. A harbor walk in the rain is still the right use of a day in Bergen." },
-      { fits: "One old town — walls, a square, coffee — not a palace plus a museum plus a palace.", bring: "A layer. Baltic mornings stay cool even when the brochure looks like July." },
+      { fits: "Walls, one square, and coffee. A palace and a museum will not fit in the same morning.", bring: "A layer. Baltic mornings stay cool even when the brochure looks like July." },
     ],
   },
   "canada-new-england": {
@@ -642,7 +642,7 @@ export const portGuides: Record<string, PortGuide> = {
     outings: [
       { fits: "This is the morning walk the fare already includes. Sometimes that walk is enough.", bring: "Bring the ship’s listening set if the guide uses one, and wear shoes for uneven stone." },
       { fits: "The villages between the capitals. The shorter loop is the one if anyone is unsure.", bring: "A light layer. The point is the stops, not the mileage." },
-      { fits: "A tasting that sits on the way the ship is already going.", bring: "An honest answer about whether the point is the wine or the view. The two are different days." },
+      { fits: "A tasting on the route the ship is already sailing. Say whether you want the wine or the view. They are different stops.", bring: "Nothing formal. Skip it if the coach ride is longer than the tasting." },
     ],
   },
   expedition: {
@@ -664,13 +664,13 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-asia.jpg",
     detailAlt: "Empty stone temple steps in warm morning light, with incense smoke",
     facts: [
-      { label: "Time in port", text: "The pier is often outside the city you want. A half day is one neighborhood, not a whole capital." },
-      { label: "On your feet", text: "Heat, temples with shoes off, and markets. Kyoto is a train, not a stroll from the ship." },
-      { label: "Best for", text: "Travelers who will pick a temple and a market and leave the rest of the city for another trip." },
-      { label: "Often a poor fit", text: "Greatest-hits buses, and a Ha Long day invented out of a pier that is not in that bay." },
+      { label: "Time in port", text: "The ship often docks outside the city. The drive can take as long as the visit." },
+      { label: "On your feet", text: "Palace and temple grounds mean shoes off, hot stone, and little shade. Kyoto is a train from Osaka or Kobe. It is not a walk from the pier." },
+      { label: "Best for", text: "Travelers who will see one place properly. The Grand Palace, or one district in Kyoto. Not a list of both." },
+      { label: "Often a poor fit", text: "A bus that promises three temples and a market. Ha Long Bay only counts when the ship is already in that bay." },
     ],
     outings: [
-      { fits: "An early start. Shoes off, then food that is actually food.", bring: "Water, a scarf or socks for shrine floors, and a pace that includes shade." },
+      { fits: "The Grand Palace at opening, then a noodle lunch nearby. Not a second temple, and not a floating market the same morning.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
       { fits: "Only when the itinerary is already in that scenery. Easy if you can sit on a boat.", bring: "Sun cover and a tolerance for some chop. A distant port is not the bay." },
       { fits: "One district — Fushimi Inari or Arashiyama — unless the ship overnights.", bring: "A transit card plan and walking shoes. Two famous sights in one call is how you see neither." },
     ],

@@ -152,11 +152,11 @@ export function DestinationArticle({ place, rail = false }: { place: NonNullable
             />
             <div>
               <p className="text-sm font-medium text-tide">{rail ? "On the route" : "In port"}</p>
-              <h2 className="mt-2 font-display text-4xl">{rail ? "A typical day on the route" : "A typical day in port"}</h2>
+              <h2 className="mt-2 font-display text-4xl">{rail ? "What to expect on the route" : "What to expect in port"}</h2>
               <p className="mt-3 text-sm text-mute">
                 {rail
-                  ? "How long the train stops, how much of the day is spent seated, and what kind of trip this route suits."
-                  : "How long the ship stays, how much walking the day takes, and what kind of trip this region suits."}
+                  ? "The train is the trip. These notes cover the stops, the time you spend seated, and who the route suits."
+                  : "Ships do not stay all day. These notes cover the usual hours ashore, the walking, and who this region suits."}
               </p>
               <dl className="mt-5 grid gap-4 sm:grid-cols-2">
                 {portGuides[place.slug].facts.map((fact) => (
