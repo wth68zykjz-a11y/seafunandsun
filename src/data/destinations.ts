@@ -55,7 +55,7 @@ export const destinations: Destination[] = [
           "Watch a grizzly on the Kenai River, from a float plane or from the water",
           "Whale watching out of Juneau or Seward",
           "Skagway — the White Pass railroad and the Klondike gold camps",
-          "Ketchikan's totem poles and salmon",
+          "Ketchikan — Creek Street, and the totem poles at Saxman and Totem Bight",
           "A glacier lagoon, if your ship takes you past one",
         ],
       },
@@ -758,7 +758,7 @@ export const destinations: Destination[] = [
       {
         heading: "The stops",
         items: [
-          "Rio de Janeiro — the beaches, the mountain, the city in between",
+          "Rio de Janeiro — the beaches, Sugarloaf, and Corcovado, with the city between them",
           "The Brazilian coast — Salvador, Recife, Florianópolis",
           "Patagonia — fjords, glaciers, Ushuaia",
           "The Andean coast — Callao, Valparaíso",

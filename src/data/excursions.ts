@@ -555,7 +555,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "The Miraflores Locks building beside a ship in the Panama Canal",
     facts: [
       { label: "Time in port", text: "The canal day has no gangway. A stop in Cartagena is usually a morning or an afternoon. Panama City is a port only when the itinerary says the ship docks." },
-      { label: "Worth the time", text: "Watch the locks from the deck. In Cartagena, walk the old city and eat there. Do not trade that for a long coach to a beach unless the beach is the point." },
+      { label: "Worth the time", text: "Watch the locks from the deck. In Cartagena, the walled city is the walk, and you can eat there. A long coach to a beach is a different plan." },
       { label: "Best for", text: "Travelers who want the transit itself, and who can fly home from a different coast on a full transit." },
       { label: "Often a poor fit", text: "A seven-night Caribbean loop. This is a longer voyage, and a partial transit is not the same as a full one." },
     ],
