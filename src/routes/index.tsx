@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "Where are you based?",
-    a: "We are in Farmington, Connecticut, and we book trips for travelers across the country. Call or text (959) 666-2062.",
+    a: "We are based in Farmington, Connecticut. There is no office to visit. You call, text, or email, and one agent handles the booking. That is the same for a traveler in Connecticut and for a traveler in another state.",
   },
   {
     q: "Why is there no fare for some trips?",
@@ -397,6 +397,26 @@ function Home() {
               </span>
             </div>
           </Link>
+        </section>
+
+        <section className="mx-auto grid max-w-6xl items-center gap-8 px-4 pb-16 lg:grid-cols-2">
+          <div>
+            <p className="text-sm font-medium text-tide">Farmington, Connecticut</p>
+            <h2 className="mt-2 font-display text-3xl text-ink sm:text-4xl">Based here. The booking is by phone.</h2>
+            <p className="mt-4 text-lg text-ink">
+              Sea Fun & Sun is a Farmington company. There is no office to visit. A quote starts by phone, text, or email, and one agent stays with it. Travelers in Connecticut book this way, and so do travelers in other states.
+            </p>
+            <p className="mt-4 text-ink">
+              When the trip starts with a flight from here, we check Bradley first, then Boston and the New York airports. The ship or the resort can still leave from Miami, Seattle, Vancouver, or whichever port the itinerary needs.
+            </p>
+          </div>
+          <iframe
+            title="Map of Farmington, Connecticut"
+            src="https://maps.google.com/maps?q=Farmington,%20Connecticut&hl=en&z=11&output=embed"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="h-72 w-full rounded-xl border border-line"
+          />
         </section>
 
         <section className="mx-auto max-w-6xl px-4 pb-16">

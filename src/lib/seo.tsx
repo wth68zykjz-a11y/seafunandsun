@@ -74,9 +74,20 @@ export function agencyGraph() {
           "@type": "PostalAddress",
           addressLocality: "Farmington",
           addressRegion: "CT",
+          postalCode: "06032",
           addressCountry: "US",
         },
-        areaServed: { "@type": "Country", name: "United States" },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: 41.7196,
+          longitude: -72.832,
+        },
+        hasMap: "https://www.google.com/maps/search/?api=1&query=Farmington%2C%20Connecticut",
+        areaServed: [
+          { "@type": "City", name: "Farmington" },
+          { "@type": "State", name: "Connecticut" },
+          { "@type": "Country", name: "United States" },
+        ],
         currenciesAccepted: "USD",
         openingHoursSpecification: {
           "@type": "OpeningHoursSpecification",
