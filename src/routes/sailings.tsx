@@ -120,15 +120,19 @@ const weeklyDeals = [
   },
 ] as const;
 
-function dealsThisWeek() {
-  const start = Date.UTC(2026, 0, 5);
-  const week = Math.floor((Date.now() - start) / (7 * 24 * 60 * 60 * 1000));
-  const index = ((week % weeklyDeals.length) + weeklyDeals.length) % weeklyDeals.length;
-  return Array.from({ length: 6 }, (_, step) => weeklyDeals[(index + step) % weeklyDeals.length]);
-}
-
-function matchingOffer(deal: (typeof weeklyDeals)[number], offers: SupplierOffer[]) {
-  return offers.find((offer) => offer.group !== "Land and Resorts" && deal.match.test(`${offer.title} ${offer.href}`));
+function dealsFromFeed(offers: SupplierOffer[]) {
+  const picked: { offer: SupplierOffer; guide: (typeof weeklyDeals)[number] | null }[] = [];
+  const seen = new Set<string>();
+  for (const offer of offers) {
+    if (offer.group === "Land and Resorts") continue;
+    const guide = weeklyDeals.find((deal) => deal.match.test(`${offer.title} ${offer.href}`)) ?? null;
+    const key = guide?.line ?? offer.href;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    picked.push({ offer, guide });
+    if (picked.length === 6) break;
+  }
+  return picked;
 }
 
 function labelExplora(offer: SupplierOffer): SupplierOffer {
@@ -207,21 +211,22 @@ export const Route = createFileRoute("/sailings")({
     pageHead({
       title: "Cruise deals of the week",
       description:
-        "This week’s cruise deals name the line and the port: Celebrity from Miami, Princess from Seattle, Holland America from Vancouver, Viking and MSC from Barcelona, Cunard from Southampton, and Explora from Athens.",
+        "The cruise promotions currently in the booking system. Each card names the line, and the port that line usually uses, when we know it.",
       path: "/sailings",
       image: "/media/page-sailings.jpg",
     }),
   component: SailingsPage,
 });
 
-function DealsOfTheWeek({ offers }: { offers: SupplierOffer[] }) {
-  const deals = dealsThisWeek();
+function DealsOfTheWeek({ offers, checked }: { offers: SupplierOffer[]; checked: string }) {
+  const deals = dealsFromFeed(offers);
   return (
     <div>
       <h2 className="font-display text-3xl">Deals of the week</h2>
       <p className="mt-2 max-w-3xl text-base text-ink">
-        Each deal names the cruise line and the port the ship uses. If that line has a promotion in the booking system this week, the card links to it. If it does not, we price the sailing from a quote. The fare still belongs to the line.
+        These six promotions are read from the booking system when this page loads. The site checks that list once a day, so a fare posted this morning can show up on the next day’s visit. The port is the city that line usually uses. The promotion itself may cover more than one port. The fare still belongs to the line.
       </p>
+      <p className="mt-2 text-sm text-mute">Last check: {checked} Eastern.</p>
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -230,29 +235,31 @@ function DealsOfTheWeek({ offers }: { offers: SupplierOffer[] }) {
           itemListElement: deals.map((deal, index) => ({
             "@type": "ListItem",
             position: index + 1,
-            name: `${deal.line} from ${deal.port}`,
-            description: deal.text,
+            name: deal.guide ? `${deal.guide.line} from ${deal.guide.port}` : deal.offer.title,
+            description: deal.offer.detail || deal.offer.title,
           })),
         }}
       />
       <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {deals.map((deal) => {
-          const offer = matchingOffer(deal, offers);
-          const slug = offer?.href.match(/\/offer\/([a-z0-9-]+)/i)?.[1]?.toLowerCase();
+          const slug = deal.offer.href.match(/\/offer\/([a-z0-9-]+)/i)?.[1]?.toLowerCase();
+          const heading = deal.guide ? `${deal.guide.line} from ${deal.guide.port}` : deal.offer.title;
           return (
-            <article key={deal.line} className="flex flex-col rounded-xl border border-line bg-foam p-5">
-              <p className="text-xs font-medium text-tide">{deal.port}</p>
-              <h3 className="mt-2 font-display text-2xl">{deal.line} from {deal.port}</h3>
-              <p className="mt-2 text-sm leading-6 text-ink">{deal.text}</p>
-              <p className="mt-3 text-sm">
-                <Link to="/destinations/$slug" params={{ slug: deal.destination }} className="font-medium text-tide">
-                  {deal.region}
-                </Link>
-                {" · "}
-                <Link to="/ports/$region" params={{ region: deal.ports }} className="font-medium text-tide">
-                  {deal.port} and nearby ports
-                </Link>
-              </p>
+            <article key={deal.offer.href} className="flex flex-col rounded-xl border border-line bg-foam p-5">
+              <p className="text-xs font-medium text-tide">{deal.guide ? deal.guide.port : deal.offer.tag}</p>
+              <h3 className="mt-2 font-display text-2xl">{heading}</h3>
+              <p className="mt-2 text-sm leading-6 text-ink">{deal.offer.title}. {deal.offer.detail}</p>
+              {deal.guide ? (
+                <p className="mt-3 text-sm">
+                  <Link to="/destinations/$slug" params={{ slug: deal.guide.destination }} className="font-medium text-tide">
+                    {deal.guide.region}
+                  </Link>
+                  {" · "}
+                  <Link to="/ports/$region" params={{ region: deal.guide.ports }} className="font-medium text-tide">
+                    {deal.guide.port} and nearby ports
+                  </Link>
+                </p>
+              ) : null}
               {slug ? (
                 <Link
                   to="/promotions/$slug"
@@ -264,7 +271,7 @@ function DealsOfTheWeek({ offers }: { offers: SupplierOffer[] }) {
               ) : (
                 <Link
                   to="/quote"
-                  search={{ place: deal.line, note: `${deal.line} from ${deal.port}` }}
+                  search={{ place: deal.guide?.line ?? "Cruise", note: deal.offer.title }}
                   className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
                 >
                   Request this quote
@@ -318,7 +325,7 @@ function SailingsPage() {
         <img src="/media/ex-world.jpg" alt="A large cruise ship crossing open ocean" loading="lazy" decoding="async" className="aspect-photo hidden w-full rounded-xl object-cover sm:block" />
       </div>
       <section id="promotions" className="mx-auto max-w-6xl scroll-mt-24 px-4 pb-20">
-        <DealsOfTheWeek offers={cruiseOffers(feed.offers)} />
+        <DealsOfTheWeek offers={cruiseOffers(feed.offers)} checked={updated} />
         <h2 className="mt-14 font-display text-3xl">Offers available right now</h2>
         <p className="mt-2 max-w-2xl text-sm text-mute">
           {feed.live

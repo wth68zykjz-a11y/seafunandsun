@@ -25,7 +25,7 @@ const exploraName = /explora|grand-journey|historic-gateways|middle-eastern-char
 const resortName = /resort|hotel|palladium|waldorf|conrad|sandals|hyatt/i;
 
 let cache: { at: number; feed: OfferFeed } | null = null;
-const freshFor = 5 * 60 * 1000;
+const freshFor = 24 * 60 * 60 * 1000;
 
 function decode(value: string) {
   let text = value.replace(/<[^>]+>/g, " ");
