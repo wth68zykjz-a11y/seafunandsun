@@ -28,7 +28,7 @@ function PortsIndex() {
         <div className="relative z-10">
       <PageIntro
         kicker="Departure ports"
-        title="The embarkation port changes the trip."
+        title="Where you sail from stays with you."
         lede="Each region lists the homeports and turnaround ports, where those ships usually go, and which airlines serve the city. A cruise date and an airline schedule do not stay lined up on their own. The flight has to land in time to embark, and the flight home has to leave after the ship is back. We book that pair for the sailing you choose."
       />
       <p className="mx-auto max-w-6xl px-4 pb-6 text-mute">
