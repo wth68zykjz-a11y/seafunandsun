@@ -1,5 +1,3 @@
-// nodemailer 7 does not ship its own types in this install.
-// @ts-expect-error types are not bundled
 import nodemailer from "nodemailer";
 import { bookingEmail, phone } from "@/data/links";
 import { env } from "@/lib/env.server";
