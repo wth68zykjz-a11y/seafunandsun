@@ -141,7 +141,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Most of the port day, including the drive",
         pace: "A lot of walking, and a long ride each way",
         detail:
-          "The drive from the port takes about an hour and a half. Choose St. Peter's and the Vatican Museums, which include the Sistine Chapel, or choose the Colosseum, the Forum, and the Palatine. The Borghese Gallery is a third choice, and it needs a timed ticket booked ahead. Do not combine them. If the ship leaves later, you can squeeze lunch in. To see the city properly, and the country around it, stay at Rome Cavalieri, a Waldorf Astoria hotel, before the cruise or after you get off the ship.",
+          "The drive from the port takes about an hour and a half. Ideas include St. Peter's and the Vatican Museums, the Colosseum, the Forum, and the Palatine, and the Borghese Gallery if you have a timed ticket. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay before or after the cruise.",
       },
       {
         title: "Kotor’s walls, or an Amalfi table",
@@ -157,7 +157,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-european.jpg",
     photoAlt: "A misty canal, a stone bridge, and bicycles along the quay",
     intro:
-      "A European port day is a city day with a pier attached. Three capitals in one day is too many. If you have already been somewhere, the hours go to the place that is new.",
+      "A European day in port is a city day. Ideas include the capitals on that sailing. If you have already been somewhere, the hours can go to a place that is new.",
     excursions: [
       {
         title: "Bruges from the Zeebrugge pier",
@@ -197,7 +197,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "2 to 3 hours",
         pace: "Comfortable swimmer",
         detail:
-          "Snorkel or a sit-on kayak, not both. Winter whale season is a bonus from the boat, not a guarantee. The calm side of the island depends on that day’s wind.",
+          "Ideas include a snorkel and a sit-on kayak. Winter whale season is a bonus from the boat, not a guarantee. The calm side of the island depends on that day’s wind.",
       },
       {
         title: "Pearl Harbor in the morning",
@@ -405,7 +405,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half to full day",
         pace: "Trains and walking",
         detail:
-          "To reach Kyoto you take a train from Osaka or Kobe. You cannot walk there from the ship. One district is enough for the day: Fushimi Inari or Arashiyama, not both, unless the ship stays overnight.",
+          "To reach Kyoto you take a train from Osaka or Kobe. You cannot walk there from the ship. Ideas include Fushimi Inari and Arashiyama.",
       },
     ],
   },
@@ -417,11 +417,11 @@ export const shores: Record<string, DestinationShore> = {
     excursions: [
       {
         title: "Rio with one view",
-        where: "Sugarloaf or Corcovado, not both",
+        where: "Sugarloaf and Corcovado",
         length: "Half day",
         pace: "Crowds and some standing",
         detail:
-          "Pick the view you actually want and leave time for the beach neighborhood if the ship is in port long enough. Doing both statues is how the day becomes traffic.",
+          "Ideas include Sugarloaf, Corcovado, and time in a beach neighborhood if the ship is in port long enough.",
       },
       {
         title: "Buenos Aires after dark, or a market by day",
@@ -600,14 +600,14 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Empty blue chairs on a terrace above a caldera harbor at dawn",
     facts: [
       { label: "Time in port", text: "Often a long day, sometimes a tender. The useful hours are early, before the alleys fill." },
-      { label: "Worth the time", text: "Stop in Athens for the Acropolis. The museum is beside it, and the Ancient Agora is the other ruin you can walk to. The National Archaeological Museum is a different day. Rome is a long ride from Civitavecchia. Choose St. Peter’s and the Vatican Museums, or the Colosseum and the Forum. If the ship leaves later, squeeze lunch in. To see Rome properly, and the country around it, stay at Rome Cavalieri, a Waldorf Astoria hotel, before the cruise or after you return. On the Amalfi coast, sit down for a long lunch." },
+      { label: "Worth the time", text: "Stop in Athens for the Acropolis. The museum is beside it, and the Ancient Agora is nearby. The National Archaeological Museum is another idea. Rome is a long ride from Civitavecchia. Ideas include St. Peter’s and the Vatican Museums, and the Colosseum and the Forum. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay before or after the cruise. On the Amalfi coast, a long lunch is another idea." },
       { label: "Best for", text: "Travelers who want a different country at breakfast and will walk for it. Shoulder months beat August." },
       { label: "Often a poor fit", text: "Three-ruin coach loops, and any Santorini plan that starts after the other ships have tendered." },
     ],
     outings: [
       { fits: "This suits people who can manage the steps and are happy with a short stay at the top. Tell us if anyone has trouble with knees.", bring: "Sun protection, water, and shoes with a grip. The marble is polished by crowds." },
-      { fits: "Spend the morning at the Acropolis, then one nearby stop: the museum or the Ancient Agora. Have lunch in Plaka. Leave the big museum across town for another trip.", bring: "A hat and a bottle. The site is exposed, and the good cafes are after, not on the hill." },
-      { fits: "One Rome plan only. St. Peter’s and the Vatican Museums, or the Colosseum and the Forum, or the Borghese Gallery if the timed ticket is already booked.", bring: "Comfortable shoes and patience with the drive from Civitavecchia. The day is lost in traffic if you try to see all three." },
+      { fits: "Ideas include the Acropolis, the museum beside it, the Ancient Agora, and lunch in Plaka.", bring: "A hat and a bottle. The site is exposed, and the good cafes are after, not on the hill." },
+      { fits: "Ideas include St. Peter’s and the Vatican Museums, the Colosseum and the Forum, and the Borghese Gallery if the timed ticket is already booked.", bring: "Comfortable shoes. The drive from Civitavecchia is part of the day." },
       { fits: "A walking day in Kotor, or a seated lunch in Amalfi if the ship’s hours are honest.", bring: "All-aboard decides whether the day is a walk or a long lunch. Cash still helps in the old towns." },
     ],
   },
@@ -616,7 +616,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Bicycles beside a misty canal and a stone bridge in an old European town",
     facts: [
       { label: "Time in port", text: "A city day uses most of the hours, but the pier is often an hour from the place you actually want." },
-      { label: "Worth the time", text: "Stop in Bruges for the belfry, then have mussels. Paris is a long ride from Le Havre. Pick the Louvre, or Notre-Dame, or the Eiffel Tower. If the ship leaves later, squeeze lunch in. To see the city properly, stay at Shangri-La Paris before the cruise or after you return. It looks toward the Eiffel Tower. London from Southampton works the same way: Westminster Abbey or the Tower, not both. The Savoy is the hotel if you want nights in the city. In Barcelona, the Sagrada Família or the Gothic Quarter. Cocina Hermanos Torres is the Michelin table if you reserved it ahead, and Camp Nou only if there is a match that day. In Lisbon, Belém or Alfama. Hotel Arts is the Barcelona stay. The Four Seasons Hotel Ritz is the Lisbon stay." },
+      { label: "Worth the time", text: "Stop in Bruges for the belfry, then have mussels. Paris is a long ride from Le Havre. Ideas include the Louvre, Notre-Dame, and the Eiffel Tower. Lunch can fit if the ship leaves later. Shangri-La Paris, looking toward the Eiffel Tower, is a stay before or after the cruise. In London, ideas include Westminster Abbey and the Tower of London. The Savoy is a stay in the city. In Barcelona, ideas include the Sagrada Família and the Gothic Quarter. Cocina Hermanos Torres is a Michelin table if you reserved it ahead, and Camp Nou is an idea when there is a match. In Lisbon, ideas include Belém and Alfama. Hotel Arts is a Barcelona stay. The Four Seasons Hotel Ritz is a Lisbon stay." },
       { label: "Best for", text: "Travelers who have a city they still want, or who would rather have one garden than three capitals." },
       { label: "Often a poor fit", text: "Paris from a short stop in Le Havre, and any “two cities in one day” that is mostly highway." },
     ],
@@ -637,7 +637,7 @@ export const portGuides: Record<string, PortGuide> = {
     ],
     outings: [
       { fits: "Comfortable swimmers. The calm side of the island depends on that day’s wind.", bring: "Reef-safe sunscreen. Whales in winter are a bonus, not a promise." },
-      { fits: "Spend a respectful half day at the memorial, then go to the beach. Do not try to circle the island. The memorial has security screening and time on your feet, so go early or choose another plan.", bring: "Allow time for security screening. You will be standing." },
+      { fits: "Ideas include the memorial and the beach. The memorial has security screening, so go early if you want both.", bring: "Allow time for security screening. You will be standing." },
       { fits: "Only a sailing that stays the night in Maui. A dawn-to-dusk stop is too short.", bring: "Patience in a car. The road is the excursion, not a checklist of waterfalls." },
     ],
   },
@@ -653,7 +653,7 @@ export const portGuides: Record<string, PortGuide> = {
     outings: [
       { fits: "The morning beach, before it becomes a ship party.", bring: "Reef shoes if you are tender-footed. The sand is soft; the walk in can be rocky." },
       { fits: "People who are done with another beach and want pastel streets and lunch.", bring: "A ferry schedule. St. George’s is the quieter town." },
-      { fits: "Choose one activity, either the flat green trail or the cool caves. Do not try to do both.", bring: "A light layer for the caves. They are short and colder than the beach." },
+      { fits: "Ideas include the flat green trail and the cool caves.", bring: "A light layer for the caves. They are short and colder than the beach." },
     ],
   },
   "northern-europe": {
@@ -661,7 +661,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A row of painted wooden wharf houses reflected in calm water",
     facts: [
       { label: "Time in port", text: "Fjord villages can be a tender of a few hours. Baltic capitals are longer city days." },
-      { label: "Worth the time", text: "Stop in Bergen to walk the Bryggen wharf and have a shrimp sandwich at the fish market. A New Nordic tasting menu in Copenhagen is a Michelin table, and those are booked before you sail, not from the gangway. Amsterdam’s ocean ships dock at IJmuiden, not in the canals. Choose the Rijksmuseum or the Anne Frank House. If the ship leaves later, squeeze lunch in. To see the city properly, stay at the Waldorf Astoria Amsterdam before the cruise or after you return. In Copenhagen, choose Nyhavn or Rosenborg, and stay at Hotel d’Angleterre if you want the night. In Stockholm, Gamla Stan or the Vasa Museum. Grand Hôtel looks across the water at the palace." },
+      { label: "Worth the time", text: "Stop in Bergen to walk the Bryggen wharf and have a shrimp sandwich at the fish market. A New Nordic tasting menu in Copenhagen is a Michelin table, and those are booked before you sail. Amsterdam’s ocean ships dock at IJmuiden, not in the canals. Ideas include the Rijksmuseum and the Anne Frank House. Lunch can fit if the ship leaves later. The Waldorf Astoria Amsterdam is a stay before or after the cruise. In Copenhagen, ideas include Nyhavn and Rosenborg. Hotel d’Angleterre is a stay if you want the night. In Stockholm, ideas include Gamla Stan and the Vasa Museum. Grand Hôtel looks across the water at the palace." },
       { label: "Best for", text: "Long summer light, small ports, and people who like weather to be part of the trip." },
       { label: "Often a poor fit", text: "A scenic boat with no backup plan. If the tender cancels, you want a town walk already in mind." },
     ],
@@ -722,11 +722,11 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "The ship often docks outside the city. The drive can take as long as the visit." },
       { label: "Worth the time", text: "Do the Grand Palace early, then eat noodles close by. That is a Bangkok day. Tokyo has more Michelin restaurants than any other city, and a sushi counter has to be reserved before you sail. To see more than one district, stay at The Peninsula Tokyo before the cruise or after you return. In Singapore, pick a starred dining room or a hawker centre. Raffles is the hotel if you want nights in the city, not only lunch. In Hong Kong, choose the Peak or a Star Ferry across the harbor. The Peninsula is the stay." },
-      { label: "Best for", text: "This suits travelers who will see one place well, such as the Grand Palace or one district in Kyoto. Do not try to do both on the same day." },
+      { label: "Best for", text: "Ideas include the Grand Palace and a district in Kyoto, such as Fushimi Inari or Arashiyama." },
       { label: "Often a poor fit", text: "A bus that promises three temples and a market. Ha Long Bay only counts when the ship is already in that bay." },
     ],
     outings: [
-      { fits: "See the Grand Palace at opening, then have a noodle lunch nearby. Do not add a second temple or a floating market the same morning.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
+      { fits: "Ideas include the Grand Palace, another temple, a floating market, and a noodle lunch nearby.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
       { fits: "Only when the itinerary is already in that scenery. Easy if you can sit on a boat.", bring: "Sun cover and a tolerance for some chop. A distant port is not the bay." },
       { fits: "One district — Fushimi Inari or Arashiyama — unless the ship overnights.", bring: "A transit card plan and walking shoes. Two famous sights in one day is how you see neither." },
     ],
@@ -736,7 +736,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "An empty terrace looking across a bay toward a granite peak at morning",
     facts: [
       { label: "Time in port", text: "City days can be long. Cape Horn is often a scenic hour from the deck, with no landing." },
-      { label: "Worth the time", text: "Choose Christ the Redeemer or Sugarloaf. Rio traffic will not give you both. A Michelin dinner only works if the ship stays late and you reserved it ahead. In Buenos Aires, steak in San Telmo fits the hours most ships actually give you." },
+      { label: "Worth the time", text: "Ideas include Christ the Redeemer and Sugarloaf. A Michelin dinner is another idea when the ship stays late and you reserved it ahead. In Buenos Aires, steak in San Telmo is an idea." },
       { label: "Best for", text: "A longer voyage where the city days are the memory and the scenic days are the ship’s job." },
       { label: "Often a poor fit", text: "Both Rio statues in one day, and a tango show that ends after the gangway closes." },
     ],
