@@ -3,13 +3,133 @@ import { CruiseSearch } from "@/components/cruise-search";
 import { PageIntro, Shell } from "@/components/site-chrome";
 import { agentQuoteNote, licenseLine } from "@/data/links";
 import { getLiveOffers, isExploraOffer, type SupplierOffer } from "@/lib/offers";
-import { pageHead } from "@/lib/seo";
+import { JsonLd, pageHead } from "@/lib/seo";
 
 type SailingsSearch = { destinations?: string; destinationtype?: string };
 
 const offerGroups = ["Luxury", "Ocean"] as const;
 
-const fallbackBrands = [/celebrity/i, /holland america/i, /princess/i];
+const weeklyDeals = [
+  {
+    line: "Celebrity Cruises",
+    match: /celebrity/i,
+    port: "Miami",
+    ports: "americas",
+    destination: "caribbean",
+    region: "Caribbean cruises",
+    text: "Celebrity’s Caribbean weeks usually turn in Miami or Fort Lauderdale. The short Bahamas sailings leave from Miami.",
+  },
+  {
+    line: "Royal Caribbean",
+    match: /royal caribbean/i,
+    port: "Cape Liberty",
+    ports: "americas",
+    destination: "caribbean",
+    region: "Caribbean cruises",
+    text: "Cape Liberty, in Bayonne, New Jersey, is Royal Caribbean’s Northeast homeport. A Caribbean week from there has more sea days than the same islands from Miami.",
+  },
+  {
+    line: "Norwegian Cruise Line",
+    match: /norwegian/i,
+    port: "Port Canaveral",
+    ports: "americas",
+    destination: "caribbean",
+    region: "Caribbean cruises",
+    text: "Norwegian uses Port Canaveral for the Bahamas and the Eastern Caribbean. The airport is Orlando, about an hour from the ship.",
+  },
+  {
+    line: "Carnival",
+    match: /carnival/i,
+    port: "Galveston",
+    ports: "americas",
+    destination: "caribbean",
+    region: "Caribbean cruises",
+    text: "Carnival’s Galveston sailings go to the Western Caribbean and the Mexican coast. The flight is into Houston.",
+  },
+  {
+    line: "Princess Cruises",
+    match: /princess/i,
+    port: "Seattle",
+    ports: "americas",
+    destination: "alaskan",
+    region: "Alaska cruises",
+    text: "Princess sails Alaska from Seattle, including round trips through the Inside Passage and one-way sailings toward Seward or Whittier.",
+  },
+  {
+    line: "Holland America",
+    match: /holland america/i,
+    port: "Vancouver",
+    ports: "americas",
+    destination: "alaskan",
+    region: "Alaska cruises",
+    text: "Holland America uses Vancouver for Alaska, often one way to Seward or Whittier. A passport is required for that start.",
+  },
+  {
+    line: "Disney Cruise Line",
+    match: /disney/i,
+    port: "Port Canaveral",
+    ports: "americas",
+    destination: "caribbean",
+    region: "Caribbean cruises",
+    text: "Disney’s Bahamas and Caribbean sailings leave from Port Canaveral. Fly into Orlando.",
+  },
+  {
+    line: "MSC Cruises",
+    match: /\bmsc\b/i,
+    port: "Barcelona",
+    ports: "europe",
+    destination: "mediterranean",
+    region: "Mediterranean cruises",
+    text: "MSC uses Barcelona for Western Mediterranean weeks. Some Caribbean sailings turn at Port Canaveral instead.",
+  },
+  {
+    line: "Viking",
+    match: /viking/i,
+    port: "Barcelona",
+    ports: "europe",
+    destination: "mediterranean",
+    region: "Mediterranean cruises",
+    text: "Viking’s ocean ships turn in Barcelona for the Western Mediterranean. The river ships are a separate trip and embark in cities such as Budapest and Amsterdam.",
+  },
+  {
+    line: "Cunard",
+    match: /cunard/i,
+    port: "Southampton",
+    ports: "europe",
+    destination: "northern-europe",
+    region: "Northern Europe cruises",
+    text: "Cunard’s Southampton sailings include the Atlantic crossing, Northern Europe, and some Mediterranean voyages. Some crossings also embark in New York.",
+  },
+  {
+    line: "Explora Journeys",
+    match: /explora/i,
+    port: "Athens",
+    ports: "europe",
+    destination: "mediterranean",
+    region: "Mediterranean cruises",
+    text: "Explora Journeys uses Athens, at Piraeus, for Eastern Mediterranean sailings. Some published trips finish there after an Egypt or Red Sea start.",
+  },
+  {
+    line: "Windstar",
+    match: /windstar/i,
+    port: "Lisbon",
+    ports: "europe",
+    destination: "european",
+    region: "European cruises",
+    text: "Windstar’s small ships use Lisbon for Atlantic Europe and some Western Mediterranean sailings. The fare is often a quote rather than a public price.",
+  },
+] as const;
+
+function dealsThisWeek() {
+  const start = Date.UTC(2026, 0, 5);
+  const week = Math.floor((Date.now() - start) / (7 * 24 * 60 * 60 * 1000));
+  const index = ((week % weeklyDeals.length) + weeklyDeals.length) % weeklyDeals.length;
+  return Array.from({ length: 6 }, (_, step) => weeklyDeals[(index + step) % weeklyDeals.length]);
+}
+
+function matchingOffer(deal: (typeof weeklyDeals)[number], offers: SupplierOffer[]) {
+  return offers.find((offer) => offer.group !== "Land and Resorts" && deal.match.test(`${offer.title} ${offer.href}`));
+}
 
 function labelExplora(offer: SupplierOffer): SupplierOffer {
   if (!isExploraOffer(offer) || /explora/i.test(offer.title)) return offer;
@@ -23,6 +143,8 @@ function cruiseOffers(offers: SupplierOffer[]) {
 function brandText(offer: SupplierOffer) {
   return `${offer.title} ${offer.href}`;
 }
+
+const fallbackBrands = [/celebrity/i, /holland america/i, /princess/i];
 
 function featuredBrands(offers: SupplierOffer[]) {
   const used = new Set<string>();
@@ -83,14 +205,78 @@ export const Route = createFileRoute("/sailings")({
   },
   head: () =>
     pageHead({
-      title: "Search cruise sailings",
+      title: "Cruise deals of the week",
       description:
-        "Search live cruise sailings with Sea Fun & Sun. Some lines, and most yacht sailings, are not on a public fare and need a quote from an agent.",
+        "This week’s cruise deals name the line and the port: Celebrity from Miami, Princess from Seattle, Holland America from Vancouver, Viking and MSC from Barcelona, Cunard from Southampton, and Explora from Athens.",
       path: "/sailings",
       image: "/media/page-sailings.jpg",
     }),
   component: SailingsPage,
 });
+
+function DealsOfTheWeek({ offers }: { offers: SupplierOffer[] }) {
+  const deals = dealsThisWeek();
+  return (
+    <div>
+      <h2 className="font-display text-3xl">Deals of the week</h2>
+      <p className="mt-2 max-w-3xl text-base text-ink">
+        Each deal names the cruise line and the port the ship uses. If that line has a promotion in the booking system this week, the card links to it. If it does not, we price the sailing from a quote. The fare still belongs to the line.
+      </p>
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Cruise deals of the week",
+          itemListElement: deals.map((deal, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: `${deal.line} from ${deal.port}`,
+            description: deal.text,
+          })),
+        }}
+      />
+      <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {deals.map((deal) => {
+          const offer = matchingOffer(deal, offers);
+          const slug = offer?.href.match(/\/offer\/([a-z0-9-]+)/i)?.[1]?.toLowerCase();
+          return (
+            <article key={deal.line} className="flex flex-col rounded-xl border border-line bg-foam p-5">
+              <p className="text-xs font-medium text-tide">{deal.port}</p>
+              <h3 className="mt-2 font-display text-2xl">{deal.line} from {deal.port}</h3>
+              <p className="mt-2 text-sm leading-6 text-ink">{deal.text}</p>
+              <p className="mt-3 text-sm">
+                <Link to="/destinations/$slug" params={{ slug: deal.destination }} className="font-medium text-tide">
+                  {deal.region}
+                </Link>
+                {" · "}
+                <Link to="/ports/$region" params={{ region: deal.ports }} className="font-medium text-tide">
+                  {deal.port} and nearby ports
+                </Link>
+              </p>
+              {slug ? (
+                <Link
+                  to="/promotions/$slug"
+                  params={{ slug }}
+                  className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
+                >
+                  See the current offer
+                </Link>
+              ) : (
+                <Link
+                  to="/quote"
+                  search={{ place: deal.line, note: `${deal.line} from ${deal.port}` }}
+                  className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
+                >
+                  Request this quote
+                </Link>
+              )}
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
 
 function SailingsPage() {
   const { destinations: destinationId, destinationtype } = Route.useSearch();
@@ -132,7 +318,8 @@ function SailingsPage() {
         <img src="/media/ex-world.jpg" alt="A large cruise ship crossing open ocean" loading="lazy" decoding="async" className="aspect-photo hidden w-full rounded-xl object-cover sm:block" />
       </div>
       <section id="promotions" className="mx-auto max-w-6xl scroll-mt-24 px-4 pb-20">
-        <h2 className="font-display text-3xl">Offers available right now</h2>
+        <DealsOfTheWeek offers={cruiseOffers(feed.offers)} />
+        <h2 className="mt-14 font-display text-3xl">Offers available right now</h2>
         <p className="mt-2 max-w-2xl text-sm text-mute">
           {feed.live
             ? `Updated from our booking system on ${updated} Eastern. Fares change, and the rules belong to the supplier. A public offer is not always the lower price.`
