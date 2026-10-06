@@ -17,6 +17,38 @@ export const shoreNote =
   "This is how a day usually goes in the ports ships actually call. You can add an excursion. It is not in the fare unless the line includes it. Who runs it, how long it takes, and what it costs depend on the ship and the date.";
 
 export const shores: Record<string, DestinationShore> = {
+  "panama-canal": {
+    photo: "/media/panama-canal.jpg",
+    photoAlt: "A ship in the Miraflores Locks on the Panama Canal",
+    intro:
+      "The transit is the reason for the cruise, and it happens from the deck. A shore day is separate. Cartagena is the usual city. Panama City only counts when the ship docks.",
+    excursions: [
+      {
+        title: "The locks, from the ship",
+        where: "Gatun or Agua Clara, then Miraflores or Cocoli",
+        length: "Most of one day",
+        pace: "None. You stay aboard.",
+        detail:
+          "The ship moves through the locks. You watch from the deck. There is no pier and no tour to book for the transit itself.",
+      },
+      {
+        title: "Cartagena’s old city",
+        where: "Cartagena, Colombia, when the itinerary calls there",
+        length: "A morning or an afternoon",
+        pace: "Easy walking on stone streets",
+        detail:
+          "The walls, the squares, and one lunch are a full call. A bus that also promises a beach leaves less time in the old city.",
+      },
+      {
+        title: "Panama City, only if you dock",
+        where: "A listed call, not the transit day",
+        length: "The hours the ship is alongside",
+        pace: "A drive, then a walk",
+        detail:
+          "The old quarter and the canal visitor areas are different stops. If the itinerary does not list a dock, you will not get off.",
+      },
+    ],
+  },
   alaskan: {
     photo: "/media/ex-alaskan.jpg",
     photoAlt: "A small boat near a whale in a cold Alaskan fjord",
@@ -518,6 +550,21 @@ export type PortGuide = {
 };
 
 export const portGuides: Record<string, PortGuide> = {
+  "panama-canal": {
+    detail: "/media/panama-canal.jpg",
+    detailAlt: "The Miraflores Locks building beside a ship in the Panama Canal",
+    facts: [
+      { label: "Time in port", text: "The canal day has no gangway. A Cartagena call is usually a morning or an afternoon. Panama City is a port only when the itinerary says the ship docks." },
+      { label: "Worth the time", text: "Watch the locks from the deck. In Cartagena, walk the old city and eat there. Do not trade that for a long coach to a beach unless the beach is the point." },
+      { label: "Best for", text: "Travelers who want the transit itself, and who can fly home from a different coast on a full transit." },
+      { label: "Often a poor fit", text: "A seven-night Caribbean loop. This is a longer voyage, and a partial transit is not the same as a full one." },
+    ],
+    outings: [
+      { fits: "Everyone on the ship. There is nothing to book.", bring: "A hat and sun cover. The day is hot, and rain is ordinary." },
+      { fits: "A walking day in a walled city. Skip it if you wanted a beach call.", bring: "Comfortable shoes. The streets are stone." },
+      { fits: "Only a sailing that lists a Panama City dock.", bring: "Nothing extra. Confirm the dock before you plan a tour." },
+    ],
+  },
   alaskan: {
     detail: "/media/day-alaskan.jpg",
     detailAlt: "A train crossing a wooden trestle above a misty spruce valley",

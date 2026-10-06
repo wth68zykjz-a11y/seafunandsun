@@ -15,6 +15,7 @@ import { Route as ItinerariesRouteImport } from './routes/itineraries'
 import { Route as PortsRouteImport } from './routes/ports'
 import { Route as QuoteRouteImport } from './routes/quote'
 import { Route as RailRouteImport } from './routes/rail'
+import { Route as RegionRouteImport } from './routes/region'
 import { Route as ResortsRouteImport } from './routes/resorts'
 import { Route as SailingsRouteImport } from './routes/sailings'
 import { Route as SkiRouteImport } from './routes/ski'
@@ -56,6 +57,11 @@ const QuoteRoute = QuoteRouteImport.update({
 const RailRoute = RailRouteImport.update({
   id: '/rail',
   path: '/rail',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RegionRoute = RegionRouteImport.update({
+  id: '/region',
+  path: '/region',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ResortsRoute = ResortsRouteImport.update({
@@ -126,6 +132,7 @@ export interface FileRoutesByFullPath {
   '/ports': typeof PortsRouteWithChildren
   '/quote': typeof QuoteRoute
   '/rail': typeof RailRoute
+  '/region': typeof RegionRoute
   '/resorts': typeof ResortsRoute
   '/sailings': typeof SailingsRoute
   '/ski': typeof SkiRoute
@@ -145,6 +152,7 @@ export interface FileRoutesByTo {
   '/itineraries': typeof ItinerariesRoute
   '/quote': typeof QuoteRoute
   '/rail': typeof RailRoute
+  '/region': typeof RegionRoute
   '/resorts': typeof ResortsRoute
   '/sailings': typeof SailingsRoute
   '/ski': typeof SkiRoute
@@ -166,6 +174,7 @@ export interface FileRoutesById {
   '/ports': typeof PortsRouteWithChildren
   '/quote': typeof QuoteRoute
   '/rail': typeof RailRoute
+  '/region': typeof RegionRoute
   '/resorts': typeof ResortsRoute
   '/sailings': typeof SailingsRoute
   '/ski': typeof SkiRoute
@@ -188,6 +197,7 @@ export interface FileRouteTypes {
     | '/ports'
     | '/quote'
     | '/rail'
+    | '/region'
     | '/resorts'
     | '/sailings'
     | '/ski'
@@ -207,6 +217,7 @@ export interface FileRouteTypes {
     | '/itineraries'
     | '/quote'
     | '/rail'
+    | '/region'
     | '/resorts'
     | '/sailings'
     | '/ski'
@@ -227,6 +238,7 @@ export interface FileRouteTypes {
     | '/ports'
     | '/quote'
     | '/rail'
+    | '/region'
     | '/resorts'
     | '/sailings'
     | '/ski'
@@ -248,6 +260,7 @@ export interface RootRouteChildren {
   PortsRoute: typeof PortsRouteWithChildren
   QuoteRoute: typeof QuoteRoute
   RailRoute: typeof RailRoute
+  RegionRoute: typeof RegionRoute
   ResortsRoute: typeof ResortsRoute
   SailingsRoute: typeof SailingsRoute
   SkiRoute: typeof SkiRoute
@@ -302,6 +315,13 @@ declare module '@tanstack/react-router' {
       path: '/rail'
       fullPath: '/rail'
       preLoaderRoute: typeof RailRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/region': {
+      id: '/region'
+      path: '/region'
+      fullPath: '/region'
+      preLoaderRoute: typeof RegionRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/resorts': {
@@ -410,6 +430,7 @@ const rootRouteChildren: RootRouteChildren = {
   PortsRoute: PortsRouteWithChildren,
   QuoteRoute: QuoteRoute,
   RailRoute: RailRoute,
+  RegionRoute: RegionRoute,
   ResortsRoute: ResortsRoute,
   SailingsRoute: SailingsRoute,
   SkiRoute: SkiRoute,

@@ -1015,6 +1015,68 @@ export const destinations: Destination[] = [
       },
     ],
   },
+  {
+    slug: "panama-canal",
+    nav: "Panama Canal",
+    title: "Panama Canal Cruises",
+    card: "Full and partial transits",
+    image: "/media/panama-canal.jpg",
+    alt: "A ship in the Miraflores Locks on the Panama Canal",
+    lede: "A Panama Canal cruise is a transit, not a loop of beaches. A full transit changes oceans. A partial transit goes into Gatun Lake and turns around.",
+    paragraphs: [
+      "Most full transits run fourteen to seventeen nights, one way. Fort Lauderdale, Miami, or New Orleans is the usual Caribbean start. Los Angeles or San Diego is the usual Pacific end, and some sailings continue to Seattle or Vancouver. Princess, Holland America, Celebrity, Norwegian, Carnival, Royal Caribbean, and Cunard schedule them, mainly in spring and fall, when ships move between the Caribbean and the West Coast or Alaska. Regent, Silversea, Oceania, and Viking ocean do as well. Many of those sailings are quoted.",
+      "A partial transit is shorter, often ten or eleven nights, round trip from Florida. The ship enters the locks, spends time on Gatun Lake, and comes back out the same side. You see the locks. You do not finish in a different ocean. The word canal is on both products. Ask which one you are booking.",
+    ],
+    lists: [
+      {
+        heading: "The routes",
+        items: [
+          "Full transit, Caribbean to Pacific — Fort Lauderdale or Miami to San Diego or Los Angeles, about 14 to 17 nights",
+          "Full transit the other way — a West Coast, Seattle, or Vancouver start, ending in Florida",
+          "Partial transit — a Florida round trip into Gatun Lake, often 10 or 11 nights",
+          "A longer repositioning — the canal is one day of a voyage that also includes Mexico or Alaska. That is a different trip.",
+        ],
+      },
+      {
+        heading: "The canal day",
+        items: [
+          "You stay on the ship. The locks are the sightseeing.",
+          "Caribbean side: Gatun Locks, or Agua Clara if the ship uses the newer, larger locks",
+          "Gatun Lake and the Culebra Cut",
+          "Pacific side: Pedro Miguel and Miraflores, or Cocoli on the newer locks",
+          "The Bridge of the Americas or the Atlantic Bridge, depending on the direction",
+        ],
+      },
+    ],
+    when: "Most canal sailings run in spring and fall, when the fleets reposition. Winter has fewer full transits. The canal day is hot, and rain is normal. It does not stop the transit. A passport is required. Panama uses the US dollar.",
+    planning: "Tell us which coast you want to fly home from. A full transit ends in a different city than it starts. A partial transit brings you back to Florida. A night in Panama City only works when the itinerary docks there. Many ships only pass through.",
+    itineraries: [
+      {
+        title: "Full transit to the Pacific",
+        nights: "14–17 nights",
+        season: "Spring and fall",
+        ship: "Princess, Holland America, Celebrity, or a quoted luxury ship",
+        path: "Fort Lauderdale or Miami to San Diego or Los Angeles",
+        ports: ["Cartagena", "The canal day", "A Central American or Mexican call", "The Pacific port where you fly home"],
+      },
+      {
+        title: "Partial transit",
+        nights: "10–11 nights",
+        season: "Fall through spring",
+        ship: "A Florida round trip, compared across the lines that publish one",
+        path: "Fort Lauderdale or Miami, back to the same port",
+        ports: ["Into Gatun Lake and back out", "Often Cartagena or a western Caribbean call", "No change of ocean"],
+      },
+      {
+        title: "Pacific to the Caribbean",
+        nights: "15–20 nights",
+        season: "Spring and fall",
+        ship: "Often a repositioning, including some from Vancouver or Seattle",
+        path: "Los Angeles, San Diego, Seattle, or Vancouver to Florida",
+        ports: ["A Mexican port such as Cabo", "The canal day", "Cartagena", "Fort Lauderdale or Miami"],
+      },
+    ],
+  },
 ];
 
 destinations.sort((a, b) => a.nav.localeCompare(b.nav, "en"));
@@ -1036,6 +1098,7 @@ export const destinationTone: Record<string, string> = {
   rail: "#4a3f32",
   river: "#1a5558",
   "south-america": "#6b4024",
+  "panama-canal": "#0e4d5c",
   world: "#102a4a",
 };
 

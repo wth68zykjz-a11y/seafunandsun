@@ -6,6 +6,7 @@ export const cruisePlaces = [
   { slug: "hawaii", title: "Hawaii Cruises" },
   { slug: "bermuda", title: "Bermuda Cruises" },
   { slug: "northern-europe", title: "Northern Europe Cruises" },
+  { slug: "panama-canal", title: "Panama Canal Cruises" },
   { slug: "canada-new-england", title: "Canada & New England Cruises" },
   { slug: "river", title: "River Cruises" },
   { slug: "expedition", title: "Expedition Cruises" },

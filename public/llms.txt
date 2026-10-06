@@ -45,6 +45,7 @@ Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It is 
 - [Hawaii](https://seafunandsun.com/destinations/hawaii)
 - [Mediterranean](https://seafunandsun.com/destinations/mediterranean)
 - [Northern Europe](https://seafunandsun.com/destinations/northern-europe)
+- [Panama Canal](https://seafunandsun.com/region): full transits change oceans. Partial transits enter Gatun Lake and turn around. Most sail in spring and fall.
 - [Rail](https://seafunandsun.com/rail)
 - [River](https://seafunandsun.com/destinations/river)
 - [South America](https://seafunandsun.com/destinations/south-america)

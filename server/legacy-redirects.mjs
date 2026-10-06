@@ -31,6 +31,7 @@ const legacy = {
   "/sailings.html": "/sailings",
   "/itineraries.html": "/itineraries",
   "/ports.html": "/ports",
+  "/panama-canal-cruises.html": "/region",
   "/index.html": "/",
 };
 

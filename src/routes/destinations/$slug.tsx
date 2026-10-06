@@ -9,6 +9,7 @@ import { breadcrumbLd, clip, JsonLd, pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/destinations/$slug")({
   beforeLoad: ({ params }) => {
     if (params.slug === "rail") throw redirect({ to: "/rail", statusCode: 301 });
+    if (params.slug === "panama-canal") throw redirect({ to: "/region", statusCode: 301 });
   },
   loader: ({ params }) => destinationBySlug(params.slug) ?? null,
   head: ({ loaderData }) =>
@@ -52,6 +53,8 @@ const ashoreNotes: Record<string, string> = {
     "A world cruise spends many days at sea. A short call is a walk around the harbor. An overnight is the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights. The ship is not waiting then.",
   "australia-new-zealand":
     "A Sydney call can cover the harbor and the Opera House. Auckland is the waterfront, and a volcanic cone if the call is long. The evening in town depends on a late sailaway or an overnight, which some itineraries have. Brisbane and Melbourne turn fewer ships. Extra nights in Sydney or Auckland are for the city after the ship has sailed.",
+  "panama-canal":
+    "The canal day is spent on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. Cartagena is the city call on a lot of these routes. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego, when the ship is not counting you back.",
 };
 
 const ashoreLeads: Record<string, string> = {
@@ -69,6 +72,7 @@ const ashoreLeads: Record<string, string> = {
   "south-america": "You are ashore only while the ship is alongside. The notes below are Rio, Buenos Aires, and the calls that end before dark.",
   world: "Ports are fewer than the sea days. The notes below separate a short harbor walk from an overnight.",
   "australia-new-zealand": "You are ashore only while the ship is alongside. The notes below are Sydney, Auckland, and the shorter coast calls.",
+  "panama-canal": "The canal day is not a port day. The notes below separate the transit from the calls that do have a pier.",
 };
 
 function DestinationPage() {
@@ -89,8 +93,17 @@ function DestinationPage() {
   return <DestinationArticle place={place} />;
 }
 
-export function DestinationArticle({ place, rail = false }: { place: NonNullable<ReturnType<typeof destinationBySlug>>; rail?: boolean }) {
+export function DestinationArticle({
+  place,
+  rail = false,
+  path,
+}: {
+  place: NonNullable<ReturnType<typeof destinationBySlug>>;
+  rail?: boolean;
+  path?: string;
+}) {
   const tone = destinationTone[place.slug] ?? "#0c2340";
+  const pagePath = path ?? `/destinations/${place.slug}`;
   return (
     <Shell>
       <div className="relative">
@@ -110,7 +123,7 @@ export function DestinationArticle({ place, rail = false }: { place: NonNullable
             : [
                 { name: "Home", path: "/" },
                 { name: "Destinations", path: "/destinations" },
-                { name: place.nav, path: `/destinations/${place.slug}` },
+                { name: place.nav, path: pagePath },
               ],
         )}
       />
