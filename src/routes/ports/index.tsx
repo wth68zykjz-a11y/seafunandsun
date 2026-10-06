@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { CabinGuide } from "@/components/cabin-guide";
 import { PageIntro, Shell } from "@/components/site-chrome";
 import { airlineNote, portPages } from "@/data/ports";
 import { pageHead } from "@/lib/seo";
@@ -27,8 +28,8 @@ function PortsIndex() {
         <div className="relative z-10">
       <PageIntro
         kicker="Departure ports"
-        title="Where the ship starts changes the trip."
-        lede="Each region lists the turnaround ports, where those ships usually go, and which airlines serve the city. Schedules change. We match the flight to the ship."
+        title="The embarkation port changes the trip."
+        lede="Each region lists homeports and turnaround ports, where those ships usually go, and which airlines serve the city. Schedules change. We match the flight to the ship."
       />
       <p className="mx-auto max-w-6xl px-4 pb-6 text-mute">
         Ship size and a general price range are on the{" "}
@@ -46,6 +47,7 @@ function PortsIndex() {
           </Link>
         ))}
       </div>
+      <CabinGuide />
       <p className="mx-auto max-w-6xl px-4 pb-20 text-sm text-mute">{airlineNote}</p>
         </div>
       </div>

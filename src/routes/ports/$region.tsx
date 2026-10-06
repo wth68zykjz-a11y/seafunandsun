@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageIntro, Shell } from "@/components/site-chrome";
 import { airlineNote, portPageBySlug, portPages, type Port, type PortCall } from "@/data/ports";
+import { CabinGuide } from "@/components/cabin-guide";
 import { LocalClock } from "@/components/local-clock";
 import { pageHead } from "@/lib/seo";
 
@@ -31,7 +32,7 @@ function PortCard({ port }: { port: Port }) {
       <p className="text-xs font-medium text-tide">{port.place}</p>
       <h3 className="mt-1 font-display text-2xl text-ink">{port.name}</h3>
       <p className="mt-2 text-sm text-mute">
-        <span className="font-medium text-ink">Tends to go: </span>
+        <span className="font-medium text-ink">Sails to: </span>
         {port.goes}
       </p>
       <p className="mt-2 text-sm text-mute">
@@ -125,8 +126,8 @@ function PortRegionPage() {
       ))}
       {page.calls && page.calls.length > 0 ? (
         <section className="mx-auto max-w-6xl px-4 pb-14">
-          <h2 className="font-display text-3xl text-ink">Where ships stop</h2>
-          <p className="mt-2 max-w-3xl text-mute">Ships stop here. They rarely begin the cruise here.</p>
+          <h2 className="font-display text-3xl text-ink">Ports of call</h2>
+          <p className="mt-2 max-w-3xl text-mute">These are stops in the middle of a sailing. The ship rarely turns around here.</p>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             {page.calls.map((call) => (
               <CallCard key={call.name} call={call} />
@@ -137,6 +138,7 @@ function PortRegionPage() {
       <p className="mx-auto max-w-6xl px-4 pb-8 text-sm text-mute">
         {airlineNote} Most ships sold in the United States bill in US dollars. Ashore, use the local currency named on the card, or a card. US cash is reliable in the United States and Puerto Rico, and a poor default everywhere else.
       </p>
+      <CabinGuide />
       <section className="mx-auto max-w-6xl px-4 pb-20">
         <div className="rounded-xl bg-sea px-6 py-8 text-foam">
           <h2 className="font-display text-3xl">Not sure which port fits?</h2>

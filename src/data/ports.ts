@@ -43,7 +43,7 @@ export const portRegions: PortRegion[] = [
   {
     id: "florida-gulf",
     title: "Florida and the Gulf",
-    lede: "The short Caribbean sailings start here. A week from Florida spends more nights in port than the same week from New York.",
+    lede: "The short Caribbean sailings embark here. A week from Florida spends more nights in port than the same week from New York.",
     ports: [
       { name: "Miami", place: "Florida", goes: "Bahamas, Eastern Caribbean, and Western Caribbean. The three- and four-night Bahamas sailings leave from here.", air: "American, Delta, United, JetBlue, and Southwest, plus European long-haul lines.", zone: "America/New_York", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/miami.jpg", alt: "Downtown Miami", slug: "caribbean" },
       { name: "Fort Lauderdale", place: "Florida", goes: "Caribbean and Bahamas, including longer southern routes. Spring and fall repositioning crosses to Europe.", air: "JetBlue, Spirit, Southwest, Delta, United, and American. Many travelers also fly Miami.", zone: "America/New_York", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/fort-lauderdale.jpg", alt: "Fort Lauderdale waterfront", slug: "caribbean" },
@@ -69,7 +69,7 @@ export const portRegions: PortRegion[] = [
   {
     id: "pacific",
     title: "Alaska, the West Coast, and Hawaii",
-    lede: "Alaska ships turn in the Pacific Northwest. Hawaii and Mexico ships turn in California. Honolulu is an inter-island start, not the start of a crossing from the mainland.",
+    lede: "Alaska ships turn in the Pacific Northwest. Hawaii and Mexico ships turn in California. Honolulu is an inter-island embarkation, not the start of a crossing from the mainland.",
     ports: [
       { name: "Seattle", place: "Washington", goes: "Alaska. Round trips through the Inside Passage, and one-way sailings to Seward or Whittier.", air: "Alaska Airlines and Delta have the most flights. American, United, and Southwest also serve it.", zone: "America/Los_Angeles", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/seattle.jpg", alt: "The Seattle waterfront", slug: "alaskan" },
       { name: "Seward", place: "Alaska", goes: "One-way Alaska, including the Gulf. Big ships rarely round-trip from here.", air: "Fly Anchorage. Alaska, Delta, United, and American. Then a transfer to the ship.", zone: "America/Anchorage", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/seward.jpg", alt: "The harbor at Seward, Alaska", slug: "alaskan" },
@@ -77,13 +77,13 @@ export const portRegions: PortRegion[] = [
       { name: "San Diego", place: "California", goes: "Mexican Riviera, Hawaii, and Panama Canal repositioning.", air: "Southwest, Alaska, Delta, American, and United.", zone: "America/Los_Angeles", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/san-diego.jpg", alt: "Downtown San Diego", slug: "hawaii" },
       { name: "Los Angeles", place: "San Pedro, California", goes: "Mexico, Hawaii, the Panama Canal, and coastal Pacific sailings.", air: "American, Delta, United, Southwest, Alaska, and JetBlue, plus the international lines.", zone: "America/Los_Angeles", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/los-angeles.jpg", alt: "The Port of Los Angeles at San Pedro", slug: "hawaii" },
       { name: "San Francisco", place: "California", goes: "Fewer sailings than Los Angeles. Coastal California, Hawaii, and Alaska repositioning.", air: "United has the hub. Alaska, Delta, American, and Southwest also fly it.", zone: "America/Los_Angeles", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/san-francisco.jpg", alt: "San Francisco and the bay", slug: "alaskan" },
-      { name: "Honolulu", place: "Oahu", goes: "Inter-island Hawaii, year-round on Norwegian's Pride of America. Mainland ships call here. They usually started in California.", air: "Hawaiian, Southwest, Alaska, United, Delta, and American.", zone: "Pacific/Honolulu", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/honolulu.jpg", alt: "Honolulu and the water", slug: "hawaii" },
+      { name: "Honolulu", place: "Oahu", goes: "Inter-island Hawaii, year-round on Norwegian's Pride of America. Mainland ships call here. They usually embarked in California.", air: "Hawaiian, Southwest, Alaska, United, Delta, and American.", zone: "Pacific/Honolulu", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/honolulu.jpg", alt: "Honolulu and the water", slug: "hawaii" },
     ],
   },
   {
     id: "canada",
     title: "Canada",
-    lede: "Vancouver is an Alaska port. Quebec and Montreal are fall ports for Canada and New England. Halifax is usually a call, not a start.",
+    lede: "Vancouver is an Alaska homeport. Quebec and Montreal are fall ports for Canada and New England. Halifax is usually a port of call, not a turnaround.",
     ports: [
       { name: "Vancouver", place: "British Columbia", goes: "Alaska. One-way to Seward or Whittier, and some round trips down the Inside Passage.", air: "Air Canada and WestJet, plus United, Alaska, and Delta.", zone: "America/Vancouver", money: "Canadian dollar. Cards are accepted. US cash is a poor bargain here.", image: "/media/ports/vancouver.jpg", alt: "Vancouver harbor and the mountains", slug: "alaskan" },
       { name: "Quebec City", place: "Quebec", goes: "Canada and New England in the fall, on ships that come up the St. Lawrence.", air: "Air Canada and WestJet. Many itineraries connect in Montreal or Toronto.", zone: "America/Toronto", money: "Canadian dollar. Cards are accepted. US cash is a poor bargain here.", image: "/media/ports/quebec-city.jpg", alt: "Quebec City above the St. Lawrence", slug: "canada-new-england" },
@@ -94,7 +94,7 @@ export const portRegions: PortRegion[] = [
   {
     id: "mediterranean",
     title: "Mediterranean",
-    lede: "Barcelona, Rome, and Athens are the three starts that cover most of the sea. Large ships do not embark in the Venice lagoon.",
+    lede: "Barcelona, Rome, and Athens are the three embarkations that cover most of the sea. Large ships do not embark in the Venice lagoon.",
     ports: [
       { name: "Barcelona", place: "Spain", goes: "Western Mediterranean: France, Italy, and the Balearics. In winter, some ships turn toward the Canaries.", air: "Vueling, Iberia, Ryanair, and easyJet, plus American, Delta, and United.", zone: "Europe/Madrid", money: "Euro. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/barcelona.jpg", alt: "Barcelona and the waterfront", slug: "mediterranean" },
       { name: "Civitavecchia", place: "Rome, Italy", goes: "Western Mediterranean and sailings that continue toward Greece.", air: "Fly Rome Fiumicino. ITA Airways, Ryanair, and easyJet, plus American, Delta, and United. The port is about an hour by road or train.", zone: "Europe/Rome", money: "Euro. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/civitavecchia.jpg", alt: "The harbor at Civitavecchia, the port for Rome", slug: "mediterranean" },
@@ -122,7 +122,7 @@ export const portRegions: PortRegion[] = [
       { name: "Hamburg and Kiel", place: "Germany", goes: "The Baltic and Norway.", air: "Fly Hamburg. Lufthansa and Eurowings. Kiel is a drive from that airport.", zone: "Europe/Berlin", money: "Euro. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/hamburg.jpg", alt: "Hamburg harbor", slug: "northern-europe" },
       { name: "Bergen", place: "Norway", goes: "The Norwegian coast and the fjords.", air: "SAS, Norwegian, and Widerøe. US trips connect in Oslo or a European hub.", zone: "Europe/Oslo", money: "Norwegian krone. Cards are accepted. Euro cash is not the local currency.", image: "/media/ports/bergen.jpg", alt: "Bergen and the harbor", slug: "northern-europe" },
       { name: "Oslo", place: "Norway", goes: "The fjords.", air: "SAS, Norwegian, and Widerøe.", zone: "Europe/Oslo", money: "Norwegian krone. Cards are accepted. Euro cash is not the local currency.", image: "/media/ports/oslo.jpg", alt: "The Oslofjord", slug: "northern-europe" },
-      { name: "Stockholm", place: "Sweden", goes: "The Baltic. More often a call than a start.", air: "SAS and Norwegian. Arlanda is the airport for the cruise calls.", zone: "Europe/Stockholm", money: "Swedish krona. Cards are accepted. Cash is rarely needed.", image: "/media/ports/stockholm.jpg", alt: "Stockholm", slug: "northern-europe" },
+      { name: "Stockholm", place: "Sweden", goes: "The Baltic. More often a port of call than a turnaround.", air: "SAS and Norwegian. Arlanda is the airport for the cruise calls.", zone: "Europe/Stockholm", money: "Swedish krona. Cards are accepted. Cash is rarely needed.", image: "/media/ports/stockholm.jpg", alt: "Stockholm", slug: "northern-europe" },
       { name: "Reykjavik", place: "Iceland", goes: "Iceland, Greenland, and the Arctic. Expedition ships turn here. Many ocean ships only call.", air: "Icelandair and Play, with nonstops from several US cities.", zone: "Atlantic/Reykjavik", money: "Icelandic króna. Cards are accepted almost everywhere. Cash is rarely needed.", image: "/media/ports/reykjavik.jpg", alt: "Reykjavik harbor", slug: "northern-europe" },
       { name: "Lisbon", place: "Portugal", goes: "The Canaries, Atlantic Europe, the Western Mediterranean, and transatlantic crossings.", air: "TAP has the hub. Ryanair and easyJet fly Europe. United, Delta, and American fly from the US.", zone: "Europe/Lisbon", money: "Euro. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/lisbon.jpg", alt: "Lisbon above the river", slug: "european" },
       { name: "Málaga", place: "Spain", goes: "The Canaries, Morocco, and the Western Mediterranean.", air: "Ryanair, Vueling, easyJet, Iberia, and British Airways.", zone: "Europe/Madrid", money: "Euro. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/malaga.jpg", alt: "Málaga and the harbor", slug: "mediterranean" },
@@ -172,14 +172,14 @@ export const portRegions: PortRegion[] = [
   {
     id: "elsewhere",
     title: "Middle East, Africa, and South America",
-    lede: "These are seasonal or expedition starts. A world cruise may call and not turn around.",
+    lede: "These are seasonal homeports, or expedition embarkations. A world cruise may call and not turn around.",
     ports: [
       { name: "Dubai", place: "United Arab Emirates", goes: "The Arabian Gulf, with longer sailings toward the Red Sea and India.", air: "Emirates has the hub. flydubai covers the shorter routes. Most long-haul airlines serve Dubai.", zone: "Asia/Dubai", money: "UAE dirham. Cards are accepted. Some hotels take US dollars. Shops price in dirhams.", image: "/media/ports/dubai.jpg", alt: "The Dubai waterfront", slug: "asia" },
       { name: "Abu Dhabi", place: "United Arab Emirates", goes: "The Arabian Gulf.", air: "Etihad has the hub. Many travelers fly Dubai and transfer.", zone: "Asia/Dubai", money: "UAE dirham. Cards are accepted.", image: "/media/ports/abu-dhabi.jpg", alt: "The Abu Dhabi skyline", slug: "asia" },
       { name: "Cape Town", place: "South Africa", goes: "The African coast, and segments of world cruises.", air: "British Airways, Virgin Atlantic, Emirates, Qatar, KLM, and Air France. South African Airways flies the region. A US nonstop should be checked, not assumed.", zone: "Africa/Johannesburg", money: "South African rand. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/cape-town.jpg", alt: "Cape Town and the coast", slug: "world" },
       { name: "Rio de Janeiro", place: "Brazil", goes: "The Brazilian coast, in the southern summer.", air: "LATAM, Gol, and Azul, plus American and United.", zone: "America/Sao_Paulo", money: "Brazilian real. Cards are accepted. US dollars are not reliable as cash.", image: "/media/ports/rio.jpg", alt: "Rio de Janeiro and the harbor", slug: "south-america" },
       { name: "Buenos Aires", place: "Argentina", goes: "The South American coast, and longer runs toward the Chilean fjords.", air: "Aerolíneas Argentinas and LATAM, plus American and United.", zone: "America/Argentina/Buenos_Aires", money: "Argentine peso. Cards are accepted. US dollar cash is widely used by visitors, and the rate moves.", image: "/media/ports/buenos-aires.jpg", alt: "Buenos Aires along the water", slug: "south-america" },
-      { name: "Ushuaia", place: "Argentina", goes: "Antarctica. This is the expedition start, not a city cruise.", air: "No long-haul flights. Aerolíneas Argentinas and JetSMART connect from Buenos Aires.", zone: "America/Argentina/Ushuaia", money: "Argentine peso. Cards are accepted in town. The ship to Antarctica usually bills in US dollars.", image: "/media/ports/ushuaia.jpg", alt: "Ushuaia at the end of the continent", slug: "expedition" },
+      { name: "Ushuaia", place: "Argentina", goes: "Antarctica. This is the expedition embarkation, not a city cruise.", air: "No long-haul flights. Aerolíneas Argentinas and JetSMART connect from Buenos Aires.", zone: "America/Argentina/Ushuaia", money: "Argentine peso. Cards are accepted in town. The ship to Antarctica usually bills in US dollars.", image: "/media/ports/ushuaia.jpg", alt: "Ushuaia at the end of the continent", slug: "expedition" },
     ],
   },
 ];
