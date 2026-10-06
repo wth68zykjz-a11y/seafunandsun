@@ -109,7 +109,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "2 to 4 hours",
         pace: "Stairs in Kotor; a car and a table in Amalfi",
         detail:
-          "Kotor is a walk, not a museum. Amalfi is a long lunch only when the ship’s time in port is long enough. All-aboard decides which of those days is real.",
+          "Kotor is a town you walk through, not a museum you tour. Amalfi is a long lunch only when the ship’s time in port is long enough. All-aboard decides which of those days is real.",
       },
     ],
   },
@@ -365,7 +365,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half to full day",
         pace: "Trains and walking",
         detail:
-          "Kyoto is a train, not a stroll from the ship. One district is the day: Fushimi Inari or Arashiyama, not both, unless the ship overnights.",
+          "To reach Kyoto you take a train from Osaka or Kobe. You cannot walk there from the ship. One district is enough for the day: Fushimi Inari or Arashiyama, not both, unless the ship stays overnight.",
       },
     ],
   },
@@ -530,7 +530,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A snorkel mask and fins on limestone beside clear reef water",
     facts: [
       { label: "Time in port", text: "Usually morning to late afternoon. Private-island calls are the ship’s own beach, not a town." },
-      { label: "Worth the time", text: "Old San Juan is a walk up to El Morro and the cathedral. Martinique is better spent at a bakery than in a jewelry shop. Michelin does not cover these islands, so eat what the port actually cooks." },
+      { label: "Worth the time", text: "Stop in Old San Juan and walk up to El Morro and the cathedral. In Martinique, stop at a bakery instead of a jewelry shop. Michelin does not cover these islands, so eat what the port actually cooks." },
       { label: "Best for", text: "A first cruise, a family, or anyone who wants short flights from the East Coast and a port every morning." },
       { label: "Often a poor fit", text: "Stacking a zip line on a catamaran in one call, and any beach club that is worse than the one the ship already owns." },
     ],
@@ -545,7 +545,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Empty blue chairs on a terrace above a caldera harbor at dawn",
     facts: [
       { label: "Time in port", text: "Often a long day, sometimes a tender. The useful hours are early, before the alleys fill." },
-      { label: "Worth the time", text: "Athens means the Acropolis, and then you are done. Rome is a long ride from Civitavecchia, so a Michelin lunch only works if the ship stays late and the table was booked before you left home. On the Amalfi coast, a long lunch is the whole point." },
+      { label: "Worth the time", text: "Stop in Athens for the Acropolis, then go back to the ship. Rome is a long ride from Civitavecchia, so a Michelin lunch only works if the ship stays late and the table was booked before you left home. On the Amalfi coast, sit down for a long lunch. That is the day." },
       { label: "Best for", text: "Travelers who want a different country at breakfast and will walk for it. Shoulder months beat August." },
       { label: "Often a poor fit", text: "Three-ruin coach loops, and any Santorini plan that starts after the other ships have tendered." },
     ],
@@ -560,7 +560,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Bicycles beside a misty canal and a stone bridge in an old European town",
     facts: [
       { label: "Time in port", text: "City calls run most of the day, but the pier is often an hour from the place you actually want." },
-      { label: "Worth the time", text: "Bruges is the belfry, then mussels. If you are in Barcelona and want a serious Catalan meal, Cocina Hermanos Torres has Michelin stars, but reserve it before the cruise. Camp Nou is only worth it if there is a match while the ship is in port." },
+      { label: "Worth the time", text: "Stop in Bruges for the belfry, then have mussels. If the ship is in Barcelona and you want a serious Catalan meal, Cocina Hermanos Torres has Michelin stars, but reserve it before the cruise. Camp Nou is only worth leaving the ship for if there is a match that day." },
       { label: "Best for", text: "Travelers who have a city they still want, or who would rather have one garden than three capitals." },
       { label: "Often a poor fit", text: "Paris from a short Le Havre call, and any “two cities in one day” that is mostly highway." },
     ],
@@ -575,7 +575,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A sea turtle in clear shallows beside black volcanic sand",
     facts: [
       { label: "Time in port", text: "Inter-island ships often overnight. A West Coast sailing spends more days just getting there." },
-      { label: "Worth the time", text: "The USS Arizona is the reason to get off on Oahu. After that, a plate lunch is enough. Hawaii is not in the Michelin Guide." },
+      { label: "Worth the time", text: "Stop on Oahu to visit the USS Arizona Memorial. After that, a plate lunch is enough. Hawaii is not in the Michelin Guide." },
       { label: "Best for", text: "People who want the islands, not a new port every morning. Match the excursion to the kind of Hawaii trip you booked." },
       { label: "Often a poor fit", text: "Hana on a dawn-to-dusk call, and stacking a snorkel on a kayak in the same bay." },
     ],
@@ -590,7 +590,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Pink sand curving toward a pastel cottage and clear water",
     facts: [
       { label: "Time in port", text: "Ships usually stay more than a day, so you do not have to see the island between breakfast and all-aboard." },
-      { label: "Worth the time", text: "St. George’s is quiet enough for St. Peter’s Church without a schedule. In Hamilton, get the fish sandwich on raisin bread. Bermuda is not in the Michelin Guide." },
+      { label: "Worth the time", text: "Stop in St. George’s to see St. Peter’s Church. The town is quiet enough that you do not need a timed tour. In Hamilton, get the fish sandwich on raisin bread. Bermuda is not in the Michelin Guide." },
       { label: "Best for", text: "A short East Coast sailing that still feels like a real island, not a dash through three countries." },
       { label: "Often a poor fit", text: "Six-stop island tours, and Horseshoe Bay at the hour every ship arrives." },
     ],
@@ -605,7 +605,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A row of painted wooden wharf houses reflected in calm water",
     facts: [
       { label: "Time in port", text: "Fjord villages can be a tender of a few hours. Baltic capitals are longer city days." },
-      { label: "Worth the time", text: "Bergen is a walk on the Bryggen wharf and a shrimp sandwich at the fish market. A New Nordic tasting menu in Copenhagen is a Michelin table, and those are booked before you sail, not from the gangway." },
+      { label: "Worth the time", text: "Stop in Bergen to walk the Bryggen wharf and have a shrimp sandwich at the fish market. A New Nordic tasting menu in Copenhagen is a Michelin table, and those are booked before you sail, not from the gangway." },
       { label: "Best for", text: "Long summer light, small ports, and people who like weather to be part of the trip." },
       { label: "Often a poor fit", text: "A scenic boat with no backup plan. If the tender cancels, you want a town walk already in mind." },
     ],
@@ -620,7 +620,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A gravel carriage road through peak autumn color near a rocky coast",
     facts: [
       { label: "Time in port", text: "Small Maine ports are half days. Halifax and Québec, when the ship goes upriver, are city calls." },
-      { label: "Worth the time", text: "Halifax is the Citadel, and you can do it on foot. If the ship goes up to Québec, the view people want is from the Château Frontenac. In Maine, a lighthouse and a lobster roll are a full day." },
+      { label: "Worth the time", text: "Stop in Halifax to see the Citadel. You can do it on foot. If the ship goes up to Québec, stop there for the view from the Château Frontenac. In Maine, stop for a lighthouse and a lobster roll. That is a full day." },
       { label: "Best for", text: "Fall color and small harbors, often without a flight. Peak leaves are a narrow window." },
       { label: "Often a poor fit", text: "A bus to a prettier brochure photo, and any “best of Acadia” that is mostly van time." },
     ],
@@ -635,7 +635,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Bicycles by a vineyard wall, with a river ship on the water below",
     facts: [
       { label: "Time in port", text: "You dock in town, often overnight. Mornings are the walking tour. Afternoons can be a bike or a tasting." },
-      { label: "Worth the time", text: "Budapest gives you the Parliament building and a real bowl of goulash. In Vienna, Steirereck is the Michelin restaurant for Austrian cooking, so book it before the cruise. If the afternoon is short, have Sachertorte in a café instead." },
+      { label: "Worth the time", text: "Stop in Budapest to see the Parliament and have a bowl of goulash. In Vienna, Steirereck is the Michelin restaurant for Austrian cooking, so book it before the cruise. If the afternoon is short, have Sachertorte in a café instead." },
       { label: "Best for", text: "Travelers who want the city at the gangway and are happy with one river, not a new ocean every week." },
       { label: "Often a poor fit", text: "A paid tour that repeats the walk already in the fare, and a 90-minute coach for one glass of wine." },
     ],
@@ -725,7 +725,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A glacial lake and snow-dusted mountains on New Zealand’s South Island",
     facts: [
       { label: "Time in port", text: "Sydney and Auckland can be long city calls. Reef ports need a full day. Milford is often a scenic sail, with no gangway." },
-      { label: "Worth the time", text: "The Opera House is the Sydney stop that is actually next to the ship. A Michelin lunch of Australian food is possible if you book it ahead. If not, get a meat pie on the quay. Auckland is simpler: walk the harbor and have lamb for lunch." },
+      { label: "Worth the time", text: "Stop in Sydney to see the Opera House. It sits next to where most ships dock. A Michelin lunch of Australian food is possible if you book it ahead. If not, get a meat pie on the quay. In Auckland, walk the harbor and have lamb for lunch." },
       { label: "Best for", text: "Travelers who can give the southern summer to one region, and who will fly to Sydney or Auckland to start." },
       { label: "Often a poor fit", text: "A reef and a capital in one call, and any Blue Mountains loop that spends the Sydney day on a highway." },
     ],

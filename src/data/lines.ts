@@ -93,7 +93,7 @@ export const linePages: LinePage[] = [
       { line: "Holland America", ships: "Pinnacle class about 2,650. Older ships about 1,400–1,900.", where: "Fewer Caribbean weeks than the lines above. More of the fleet is in Alaska and longer voyages.", fare: "Balcony often $1,300–$2,600." },
     ],
     notes: [
-      "Bermuda weeks from New York, Boston, or Baltimore are usually 5 to 7 nights on ships of about 2,000 to 4,000 passengers. The useful ones stay in port long enough to use the island.",
+      "Bermuda weeks from New York, Boston, or Baltimore are usually 5 to 7 nights on ships of about 2,000 to 4,000 passengers. The useful ones stay in port long enough to see the island.",
       "A Northeast departure to the Caribbean adds sea days. The ship can be the same size. The week is not.",
     ],
     benefits: [
@@ -107,7 +107,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "Short island days",
-        text: "A typical call is morning to late afternoon. One plan is enough: a beach, a reef, or a town. The ship is the rest of the day. Bermuda is the exception. Those sailings usually stay long enough to use the island, and the ships are smaller.",
+        text: "A typical call is morning to late afternoon. One plan is enough: a beach, a reef, or a town. The ship is the rest of the day. Bermuda is the exception. Those sailings usually stay long enough to see the island, and the ships are smaller.",
       },
       {
         title: "What you give up",
@@ -128,7 +128,7 @@ export const linePages: LinePage[] = [
         caption: "Alaska ships are about 1,800 to 4,200 passengers, small enough for a narrow channel. The 6,000-passenger ships do not sail here.",
       },
     ],
-    lede: "Alaska does not use the 6,000-passenger ships. Seattle is the round-trip Inside Passage. Vancouver is the Canadian start, often one way to Seward or Whittier.",
+    lede: "The 6,000-passenger ships do not sail Alaska. Seattle is the round-trip Inside Passage. Vancouver is the Canadian start, often one way to Seward or Whittier.",
     size: "Most Alaska ships carry about 1,800 to 4,200 passengers. Hawaii’s inter-island ship is smaller. The longer Hawaii sailings from California are mid-size.",
     rows: [
       { line: "Holland America", ships: "About 1,400–2,650.", where: "Seattle round trips, and one-way sailings between Vancouver and Whittier or Seward. A regular Glacier Bay line.", fare: "Balcony, 7 nights, often $1,600–$3,200. A 10- to 14-night one-way is often $2,400–$5,000." },
