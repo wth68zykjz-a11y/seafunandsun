@@ -389,7 +389,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day, including the drive",
         pace: "Walking in the heat. Shoes come off in the palace grounds.",
         detail:
-          "Arrive at opening. See the palace and leave. A noodle lunch nearby is the right second stop. A floating market on the same morning turns the day into traffic.",
+          "Arrive at opening. See the palace and leave. A noodle lunch nearby is the right second stop.",
       },
       {
         title: "Karsts from the water",
@@ -517,7 +517,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day on foot",
         pace: "Easy, some hills if you leave the water",
         detail:
-          "The ship is often already in the city. Walk the quay, see the house, and stop. A coach tour of Bondi plus the Blue Mountains plus the zoo is how the day becomes traffic.",
+          "The ship is often already in the city. Walk the quay and see the house.",
       },
       {
         title: "The reef, only if the hours are real",
@@ -741,7 +741,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Often a poor fit", text: "Both Rio statues in one day, and a tango show that ends after the gangway closes." },
     ],
     outings: [
-      { fits: "Pick one view. Leave the other, and the beach neighborhood, for time you actually have.", bring: "Patience with traffic. The day fails in the car, not at the viewpoint." },
+      { fits: "Pick one view. Leave the other, and the beach neighborhood, for time you actually have.", bring: "Comfortable shoes for the viewpoint." },
       { fits: "A market afternoon is the simple plan. A show only if all-aboard is honestly late.", bring: "Comfortable shoes for San Telmo, and a backup that does not depend on the evening." },
       { fits: "Everyone. You stay aboard. Hiking boots will not get you onto the cape.", bring: "A jacket for the rail, and a camera. Weather decides if you see it." },
     ],
