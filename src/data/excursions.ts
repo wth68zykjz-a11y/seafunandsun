@@ -141,7 +141,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Most of the port day, including the drive",
         pace: "A lot of walking, and a long ride each way",
         detail:
-          "The drive from the port takes about an hour and a half. Rome has St. Peter's, the Vatican Museums, the Colosseum, the Forum, the Palatine, and the Borghese Gallery if you have a timed ticket. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay before or after the cruise.",
+          "The drive from the port takes about an hour and a half. St. Peter's, the Vatican Museums, the Colosseum, the Forum, the Palatine, and the Borghese Gallery are in Rome. The gallery needs a timed ticket. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise.",
       },
       {
         title: "Kotor’s walls, or an Amalfi table",
@@ -600,14 +600,14 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Empty blue chairs on a terrace above a caldera harbor at dawn",
     facts: [
       { label: "Time in port", text: "Often a long day, sometimes a tender. The useful hours are early, before the alleys fill." },
-      { label: "Worth the time", text: "Athens has the Acropolis, the museum beside it, and the Ancient Agora. The National Archaeological Museum is another place in the city. Rome is a long ride from Civitavecchia. Rome has St. Peter’s, the Vatican Museums, the Colosseum, and the Forum. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay before or after the cruise. The Amalfi coast has long lunches." },
+      { label: "Worth the time", text: "The Acropolis is in Athens, along with the museum beside it and the Ancient Agora. The National Archaeological Museum is another place in the city. Rome is a long ride from Civitavecchia. St. Peter’s, the Vatican Museums, the Colosseum, and the Forum are in Rome. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. Long lunches are on the Amalfi coast." },
       { label: "Best for", text: "Travelers who want a different country at breakfast and will walk for it. Shoulder months beat August." },
       { label: "Often a poor fit", text: "Three-ruin coach loops, and any Santorini plan that starts after the other ships have tendered." },
     ],
     outings: [
       { fits: "This suits people who can manage the steps and are happy with a short stay at the top. Tell us if anyone has trouble with knees.", bring: "Sun protection, water, and shoes with a grip. The marble is polished by crowds." },
       { fits: "Ideas include the Acropolis, the museum beside it, the Ancient Agora, and lunch in Plaka.", bring: "A hat and a bottle. The site is exposed, and the good cafes are after, not on the hill." },
-      { fits: "Rome has St. Peter’s, the Vatican Museums, the Colosseum, the Forum, and the Borghese Gallery if the timed ticket is already booked.", bring: "Comfortable shoes. The drive from Civitavecchia is part of the day." },
+      { fits: "St. Peter’s, the Vatican Museums, the Colosseum, the Forum, and the Borghese Gallery are in Rome. The gallery needs a timed ticket booked ahead.", bring: "Comfortable shoes. The drive from Civitavecchia is part of the day." },
       { fits: "A walking day in Kotor, or a seated lunch in Amalfi if the ship’s hours are honest.", bring: "All-aboard decides whether the day is a walk or a long lunch. Cash still helps in the old towns." },
     ],
   },
@@ -616,7 +616,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Bicycles beside a misty canal and a stone bridge in an old European town",
     facts: [
       { label: "Time in port", text: "A city day uses most of the hours, but the pier is often an hour from the place you actually want." },
-      { label: "Worth the time", text: "Bruges has the belfry, and mussels. Paris is a long ride from Le Havre. Paris has the Louvre, Notre-Dame, and the Eiffel Tower. Lunch can fit if the ship leaves later. Shangri-La Paris, looking toward the Eiffel Tower, is a stay before or after the cruise. London has Westminster Abbey and the Tower of London. The Savoy is a stay in the city. Barcelona has the Sagrada Família and the Gothic Quarter. Cocina Hermanos Torres is a Michelin table if you reserved it ahead, and Camp Nou is there when there is a match. Lisbon has Belém and Alfama. Hotel Arts is a Barcelona stay. The Four Seasons Hotel Ritz is a Lisbon stay." },
+      { label: "Worth the time", text: "The belfry is in Bruges, and mussels are on the menus there. Paris is a long ride from Le Havre. The Louvre, Notre-Dame, and the Eiffel Tower are in Paris. Lunch can fit if the ship leaves later. Shangri-La Paris, looking toward the Eiffel Tower, is a stay in the city before or after the cruise. Westminster Abbey and the Tower of London are in London. The Savoy is a stay in the city. The Sagrada Família and the Gothic Quarter are in Barcelona. Cocina Hermanos Torres is a Michelin table in the city if you reserved it ahead, and Camp Nou is there when there is a match. Belém and Alfama are in Lisbon. Hotel Arts is a stay in Barcelona. The Four Seasons Hotel Ritz is a stay in Lisbon." },
       { label: "Best for", text: "Travelers who have a city they still want, or who would rather have one garden than three capitals." },
       { label: "Often a poor fit", text: "Paris from a short stop in Le Havre, and any “two cities in one day” that is mostly highway." },
     ],
@@ -661,7 +661,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A row of painted wooden wharf houses reflected in calm water",
     facts: [
       { label: "Time in port", text: "Fjord villages can be a tender of a few hours. Baltic capitals are longer city days." },
-      { label: "Worth the time", text: "Bergen has the Bryggen wharf and a shrimp sandwich at the fish market. Copenhagen has New Nordic tasting menus, and those tables are booked before you sail. Amsterdam’s ocean ships dock at IJmuiden, not in the canals. Amsterdam has the Rijksmuseum and the Anne Frank House. Lunch can fit if the ship leaves later. The Waldorf Astoria Amsterdam is a stay before or after the cruise. Copenhagen has Nyhavn and Rosenborg. Hotel d’Angleterre is a stay if you want the night. Stockholm has Gamla Stan and the Vasa Museum. Grand Hôtel looks across the water at the palace." },
+      { label: "Worth the time", text: "The Bryggen wharf is in Bergen, and the fish market there serves shrimp sandwiches. New Nordic tasting menus are in Copenhagen, and those tables are booked before you sail. Amsterdam’s ocean ships dock at IJmuiden, not in the canals. The Rijksmuseum and the Anne Frank House are in Amsterdam. Lunch can fit if the ship leaves later. The Waldorf Astoria Amsterdam is a stay in the city before or after the cruise. Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a stay in the city if you want the night. Gamla Stan and the Vasa Museum are in Stockholm. Grand Hôtel looks across the water at the palace." },
       { label: "Best for", text: "Long summer light, small ports, and people who like weather to be part of the trip." },
       { label: "Often a poor fit", text: "A scenic boat with no backup plan. If the tender cancels, you want a town walk already in mind." },
     ],
@@ -721,7 +721,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "The Singapore skyline across Marina Bay at night",
     facts: [
       { label: "Time in port", text: "The ship often docks outside the city. The drive can take as long as the visit." },
-      { label: "Worth the time", text: "Do the Grand Palace early, then eat noodles close by. Bangkok has both. Tokyo has more Michelin restaurants than any other city, and a sushi counter has to be reserved before you sail. The Peninsula Tokyo is a stay before or after the cruise. Singapore has starred dining rooms and hawker centres. Raffles is a stay in the city. Hong Kong has the Peak and the Star Ferry. The Peninsula is a stay there." },
+      { label: "Worth the time", text: "The Grand Palace is in Bangkok, and noodle shops are nearby. Tokyo has more Michelin restaurants than any other city, and a sushi counter has to be reserved before you sail. The Peninsula Tokyo is a stay in the city before or after the cruise. Starred dining rooms and hawker centres are in Singapore. Raffles is a stay in the city. The Peak and the Star Ferry are in Hong Kong. The Peninsula is a stay there." },
       { label: "Best for", text: "Ideas include the Grand Palace and a district in Kyoto, such as Fushimi Inari or Arashiyama." },
       { label: "Often a poor fit", text: "A bus that promises three temples and a market. Ha Long Bay only counts when the ship is already in that bay." },
     ],

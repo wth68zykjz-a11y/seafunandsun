@@ -25,11 +25,11 @@ export const Route = createFileRoute("/destinations/$slug")({
 
 const ashoreNotes: Record<string, string> = {
   alaskan:
-    "Most Alaska days in port end in the afternoon. Juneau has the glacier and the harbor. Ketchikan has the creek and the totem poles. Skagway has the town under the pass. A glacier day has no pier at all. Some Juneau days stay late enough for the evening in town. Nights in Seattle or Vancouver are not cut off by all-aboard. Salmon or crab can be lunch if you want it.",
+    "Most Alaska days in port end in the afternoon. The glacier and the harbor are in Juneau. The creek and the totem poles are in Ketchikan. Skagway is a town under the pass, and the railroad is in that town. A glacier day has no pier at all. Some Juneau days stay late enough for the evening in town. Nights in Seattle or Vancouver are not cut off by all-aboard. Salmon or crab can be lunch if you want it.",
   caribbean:
     "A typical island stop ends in the afternoon. Cozumel and the private islands have a beach and a swim. Nassau and the older towns have a walk from the pier. San Juan can hold a longer afternoon, and an overnight is when the evening in town is open. Nights in Miami or Fort Lauderdale are for the city, not the gangway.",
   mediterranean:
-    "Many stops end in the afternoon. Barcelona has an old city you can walk to from the pier. Rome has the Colosseum and museums. Civitavecchia is about an hour to an hour and a half away. Athens has the Acropolis, about 30 to 45 minutes from Piraeus. When the ship stays overnight, or sails as late as 10 p.m., the evening in the city is open. A reserved dinner can be part of those extra nights.",
+    "Many stops end in the afternoon. The old city is in Barcelona, and you can walk there from the pier. The Colosseum and the museums are in Rome. Civitavecchia is about an hour to an hour and a half away. The Acropolis is in Athens, about 30 to 45 minutes from Piraeus. When the ship stays overnight, or sails as late as 10 p.m., the evening in the city is open. A reserved dinner can be part of those extra nights.",
   european:
     "A daytime stop leaves the afternoon short. Lisbon, the London ports, and the Mediterranean cities on these routes are easier with a night or two before or after, when all-aboard is not the deadline. An overnight, or a departure as late as 10 p.m., leaves the evening free. Tell us which cities you already know. We will put the extra nights on the ones you do not.",
   hawaii:
@@ -37,9 +37,9 @@ const ashoreNotes: Record<string, string> = {
   bermuda:
     "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi. Hamilton is about 20 minutes by ferry. St. George's is about an hour by bus. An overnight is enough time for the beach, Hamilton, and St. George's. On a short stop, use the excursion sold by the ship if you want to leave the Dockyard. If that tour is late, the ship waits. Sailings from Boston, New York, or Baltimore include sea days each way.",
   "northern-europe":
-    "Baltic and Norway days in port often end in the afternoon. Bergen has the wharf. Copenhagen has the harbor and Nyhavn. Ocean ships for Amsterdam dock at IJmuiden, about 30 to 45 minutes from the city, and Amsterdam has the Rijksmuseum. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for museums and neighborhoods.",
+    "Baltic and Norway days in port often end in the afternoon. The wharf is in Bergen. The harbor and Nyhavn are in Copenhagen. Ocean ships for Amsterdam dock at IJmuiden, about 30 to 45 minutes from the city, and the Rijksmuseum is in Amsterdam. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for museums and neighborhoods.",
   "canada-new-england":
-    "These are town days, and many end in the afternoon. Boston has the harbor and the old streets. Quebec has the upper town above the river. A late departure shows up more often on a fall foliage sailing than on a quick stop. Extra nights in Boston or Quebec let you stay out after dark.",
+    "These are town days, and many end in the afternoon. The harbor and the old streets are in Boston. The upper town is in Quebec, above the river. A late departure shows up more often on a fall foliage sailing than on a quick stop. Extra nights in Boston or Quebec let you stay out after dark.",
   river:
     "A river ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village, and a bike ride is a common afternoon. A Mississippi sailing is a different river and a different set of towns. Extra nights in Budapest, Paris, Amsterdam, or New Orleans are for the parts of the city the ship only passes.",
   expedition:
@@ -47,30 +47,30 @@ const ashoreNotes: Record<string, string> = {
   asia:
     "Singapore and Tokyo often keep the ship in port into the evening, and some sail as late as 10 p.m. A beach stop is still only a few hours. Nights before or after in Singapore, Tokyo, or Hong Kong are for one district or a museum, not three cities in a day. A hawker stall, a sushi counter, or a reserved table can be part of that stay if you want it booked before you sail.",
   "south-america":
-    "Rio has the harbor and the hills. Buenos Aires is a walking city, and the evening starts late, which lines up when the ship stays overnight or sails late. A daytime stop can include the waterfront and a neighborhood. Extra nights are when you can stay out. A grill can be part of those nights if you want a table held.",
+    "The harbor and the hills are in Rio. Buenos Aires is a walking city, and the evening starts late, which lines up when the ship stays overnight or sails late. A daytime stop can include the waterfront and a neighborhood. Extra nights are when you can stay out. A grill can be part of those nights if you want a table held.",
   world:
     "A world cruise spends many days at sea. A short stop is a walk around the harbor. An overnight is the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights. The ship is not waiting then.",
   "australia-new-zealand":
-    "Sydney has the harbor and the Opera House. Auckland has the waterfront and volcanic cones. The evening in town depends on a late sailaway or an overnight, which some itineraries have. Brisbane and Melbourne turn fewer ships. Extra nights in Sydney or Auckland are for the city after the ship has sailed.",
+    "The harbor and the Opera House are in Sydney. The waterfront and the volcanic cones are in Auckland. The evening in town depends on a late sailaway or an overnight, which some itineraries have. Brisbane and Melbourne turn fewer ships. Extra nights in Sydney or Auckland are for the city after the ship has sailed.",
   "panama-canal":
     "The canal day is spent on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. Cartagena is the city stop on a lot of these routes. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego, when the ship is not counting you back.",
 };
 
 const ashoreLeads: Record<string, string> = {
-  alaskan: "Juneau has the glacier and the harbor. Ketchikan has the creek and the totem poles. Skagway has the town under the pass. A glacier day has no pier.",
-  caribbean: "Cozumel and the private islands have a beach and a swim. Nassau and the older towns have a walk from the pier. San Juan can hold a longer afternoon.",
-  mediterranean: "Barcelona has an old city you can walk to from the pier. Rome has the Colosseum. Civitavecchia is about an hour to an hour and a half away. Athens has the Acropolis, about 30 to 45 minutes from Piraeus.",
+  alaskan: "The glacier and the harbor are in Juneau. The creek and the totem poles are in Ketchikan. Skagway is a town under the pass. A glacier day has no pier.",
+  caribbean: "Cozumel and the private islands have beaches. Nassau and the older towns have streets you can walk from the pier. San Juan can hold a longer afternoon.",
+  mediterranean: "The old city is in Barcelona, and you can walk there from the pier. The Colosseum is in Rome. Civitavecchia is about an hour to an hour and a half away. The Acropolis is in Athens, about 30 to 45 minutes from Piraeus.",
   european: "Lisbon, the London ports, and the Mediterranean cities on these routes are short if the ship leaves in the afternoon. Extra nights are how you see one of them properly.",
   hawaii: "These island days run longer than a Caribbean day. Pride of America often stays into the evening. A luau still needs the ship in port after dark.",
   bermuda: "The ship is at the Dockyard. Horseshoe Bay is about 30 minutes by taxi, Hamilton is about 20 minutes by ferry, and St. George's is about an hour by bus. If the ship stays overnight, there is time for all three.",
-  "northern-europe": "Bergen has the wharf. Copenhagen has Nyhavn. Ocean ships for Amsterdam dock at IJmuiden, about 30 to 45 minutes from the city, and Amsterdam has the Rijksmuseum.",
-  "canada-new-england": "Boston has the harbor and the old streets. Quebec has the upper town above the river. A fall sailing is more likely to leave late than a short summer stop.",
+  "northern-europe": "The wharf is in Bergen. Nyhavn is in Copenhagen. Ocean ships for Amsterdam dock at IJmuiden, about 30 to 45 minutes from the city, and the Rijksmuseum is in Amsterdam.",
+  "canada-new-england": "The harbor and the old streets are in Boston. The upper town is in Quebec, above the river. A fall sailing is more likely to leave late than a short summer stop.",
   river: "The ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village.",
   expedition: "A landing day is not a city day. You may put on the gear, ride a Zodiac, walk a beach, and take pictures. Weather can cancel it.",
   asia: "Singapore and Tokyo often keep the ship in port into the evening. A beach stop is still only a few hours.",
-  "south-america": "Rio has the harbor and the hills. Buenos Aires is a walking city, and the evening starts late, which only helps if the ship stays.",
+  "south-america": "The harbor and the hills are in Rio. Buenos Aires is a walking city, and the evening starts late, which only helps if the ship stays.",
   world: "A world cruise has more sea days than port days. A short stop is a walk around the harbor. An overnight is the evening in that city.",
-  "australia-new-zealand": "Sydney has the harbor and the Opera House. Auckland has the waterfront and volcanic cones.",
+  "australia-new-zealand": "The harbor and the Opera House are in Sydney. The waterfront and the volcanic cones are in Auckland.",
   "panama-canal": "The canal day is spent on deck. You are not ashore unless the itinerary lists a dock. Cartagena is the city stop on a lot of these routes.",
 };
 
