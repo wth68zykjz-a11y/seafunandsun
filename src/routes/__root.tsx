@@ -19,7 +19,6 @@ export const Route = createRootRoute({
     ],
     links: [
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
-      { rel: "stylesheet", href: appCss },
       { rel: "manifest", href: "/__grok/manifest.webmanifest" },
       { rel: "apple-touch-icon", href: "/__grok/icon-180.png" },
       { rel: "sitemap", type: "application/xml", href: "/sitemap.xml" },
@@ -28,7 +27,7 @@ export const Route = createRootRoute({
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Marcellus&family=Outfit:wght@400;500;600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Marcellus&family=Outfit:wght@400;500;600&display=optional",
       },
     ],
   }),
@@ -63,7 +62,18 @@ function RootShell({ children }: { children: ReactNode }) {
         <style
           dangerouslySetInnerHTML={{
             __html:
-              "html,body{margin:0;background:#e6f0ec;color:#122033}body{font-family:Outfit,'Avenir Next',system-ui,sans-serif}header{background:#0c2340;color:#f7fbf9}a{color:inherit}svg.logo-mark{width:2.25rem;height:2.25rem;display:block}svg.hero-logo{display:none;width:11rem;height:auto}@media(min-width:640px){svg.logo-mark{width:2.75rem;height:2.75rem}}@media(min-width:1024px){svg.hero-logo{display:block;width:14rem}}",
+              "html{background:#e6f0ec}html.booting body{opacity:0}html,body{margin:0;background:#e6f0ec;color:#122033}body{font-family:Outfit,'Avenir Next',system-ui,sans-serif}header{background:#0c2340;color:#f7fbf9}a{color:inherit}svg.logo-mark{width:2.25rem;height:2.25rem;display:block}svg.hero-logo{display:none;width:11rem;height:auto}@media(min-width:640px){svg.logo-mark{width:2.75rem;height:2.75rem}}@media(min-width:1024px){svg.hero-logo{display:block;width:14rem}}",
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('booting');setTimeout(function(){document.documentElement.classList.remove('booting')},2500)",
+          }}
+        />
+        <link id="site-css" rel="stylesheet" href={appCss} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.remove('booting')",
           }}
         />
         <HeadContent />

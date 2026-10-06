@@ -81,7 +81,7 @@ function ResortsPage() {
         />
         <div className="flex flex-col justify-center">
           <p className="text-sm font-medium text-tide">All-inclusive resorts</p>
-          <h1 className="mt-2 font-display text-3xl sm:text-5xl">Meals are included. The quote names the room category.</h1>
+          <h1 className="mt-2 font-display text-3xl sm:text-5xl">Meals are part of the rate. The quote is for a specific room.</h1>
           <p className="mt-4 text-lg text-mute">
             We look at what the rate covers, which airport you fly from, and whether the property fits the people traveling.
           </p>
