@@ -66,7 +66,7 @@ export const liveOffers = [
   },
   {
     title: "Explora Journeys — Egypt to Athens",
-    detail: "Five nights from Ain Sokhna, on the Red Sea, to Piraeus, the port for Athens.",
+    detail: "Five nights, departing from Ain Sokhna, on the Red Sea, and ending in Piraeus, the port for Athens.",
     href: "https://tap13.myagentgenie.com/seafunandsun/offer/a-grand-journey-of-historic-gateways-cultural-treasures-4/",
     tag: "Luxury",
   },
@@ -84,13 +84,13 @@ export const liveOffers = [
   },
   {
     title: "Explora Journeys — Dubai to Egypt",
-    detail: "Thirteen nights from Dubai to Ain Sokhna. The longer of the published Explora routings.",
+    detail: "Thirteen nights, departing from Dubai and ending in Ain Sokhna. The longer of the published Explora routings.",
     href: "https://tap13.myagentgenie.com/seafunandsun/offer/an-extended-journey-of-arabian-delights-red-sea-majesty-5/",
     tag: "Luxury",
   },
   {
     title: "Explora Journeys — Dubai to Jeddah",
-    detail: "Eight nights from Dubai to Jeddah. A shorter Arabian routing if thirteen nights is more than you want.",
+    detail: "Eight nights, departing from Dubai and ending in Jeddah. A shorter Arabian routing if thirteen nights is more than you want.",
     href: "https://tap13.myagentgenie.com/seafunandsun/offer/a-journey-of-arabian-marvels-sumptuous-souks-5/",
     tag: "Luxury",
   },
@@ -126,7 +126,7 @@ export const liveOffers = [
   },
   {
     title: "Star Clippers — Malta, the Balearics, and Spain",
-    detail: "Ten nights from Malta through Sardinia, Menorca, Ibiza, Cartagena, and Málaga.",
+    detail: "Ten nights, departing from Malta, through Sardinia, Menorca, Ibiza, Cartagena, and Málaga.",
     href: "https://tap13.myagentgenie.com/seafunandsun/offer/malta-balearics-spain-5/",
     tag: "Small ship",
   },

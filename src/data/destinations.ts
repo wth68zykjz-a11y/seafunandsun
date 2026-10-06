@@ -98,7 +98,7 @@ export const destinations: Destination[] = [
     alt: "A quiet Caribbean cove with pale sand and clear water",
     lede: "More ships sail here than in any other region, and most piers are a short walk from town. Many travelers start in the Caribbean, then come back for a particular ship and a shorter list of ports.",
     paragraphs: [
-      "Round-trip sailings run seven to eleven nights from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
+      "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
       "Northeast departures mean more sea days. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port. We will say how many sea days are on the one you are looking at before you book it.",
       "A beach day and a town with its own history are different days. Cozumel is not Antigua, and a private island is not San Juan. That mix is what makes one week feel different from another.",
     ],
@@ -130,30 +130,30 @@ export const destinations: Destination[] = [
       },
     ],
     when: "The region sails year-round. December through April is peak season: the steadiest weather, and the highest fares. August through October is hurricane season. Named storms rarely reach a ship at sea, and the fares are lower.",
-    planning: "Send the month and the homeport. A week from Miami spends more nights in the islands. A week from New York, Baltimore, or Boston adds sea days each way. Those sea days should be on the itinerary before you choose.",
+    planning: "Send the month and the departure port. A seven-night Caribbean cruise that departs from Miami spends more nights in the islands. A cruise of the same length that departs from New York, Baltimore, or Boston adds sea days each way. Those sea days should be on the itinerary before you choose.",
     itineraries: [
       {
         title: "Western Caribbean",
         nights: "7 nights",
         season: "Year-round; best value in late summer",
-        ship: "From Florida the week is often Cozumel, Grand Cayman, and Jamaica. From Galveston it is often Cozumel and Costa Maya",
-        path: "Round trip from South Florida or the Gulf",
+        ship: "A cruise that departs from Florida often stops at Cozumel, Grand Cayman, and Jamaica. A cruise that departs from Galveston often stops at Cozumel and Costa Maya",
+        path: "Round trip, departing from South Florida or the Gulf",
         ports: ["From Florida: Cozumel, Grand Cayman, Jamaica", "From Galveston: Cozumel and Costa Maya", "A sea day each way"],
       },
       {
         title: "Eastern Caribbean",
-        nights: "7 nights from San Juan. Longer from Miami",
+        nights: "7 nights, departing from San Juan. Longer if the cruise departs from Miami",
         season: "December–April",
         ship: "Resort or premium",
-        path: "San Juan for the week. Miami if you can add nights",
+        path: "A seven-night cruise departs from San Juan. A longer cruise departs from Miami",
         ports: ["St. Thomas", "St. Maarten", "Martinique or Antigua on the longer sailings"],
       },
       {
         title: "Aruba, Bonaire, and Curaçao",
-        nights: "7 nights from San Juan. 8–11 from Florida",
+        nights: "7 nights, departing from San Juan. 8–11 nights if the cruise departs from Florida",
         season: "Shoulder months",
         ship: "A line that is actually scheduled into Aruba, Bonaire, and Curaçao",
-        path: "San Juan round trip, or a longer loop from southern Florida",
+        path: "Round trip, departing from San Juan, or a longer loop that departs from southern Florida",
         ports: ["Aruba", "Bonaire", "Curaçao"],
       },
     ],
@@ -167,7 +167,7 @@ export const destinations: Destination[] = [
     alt: "A whitewashed harbor town above a small Mediterranean port",
     lede: "Most mornings you wake up in a different port. One day can be Barcelona and the next a smaller harbor. Pick the ship for those ports, not for the photograph on the cover.",
     paragraphs: [
-      "Sailings run seven to fourteen nights from Barcelona, Civitavecchia for Rome, and Piraeus for Athens. Royal Caribbean, MSC, Norwegian, Celebrity, and Cunard all sail the region, and the luxury lines sail it too. A Venice stop is usually Ravenna or Trieste, not a dock in the lagoon. We compare the routes, the ports, and what the fare includes, then match the ship to how you like to travel.",
+      "Cruises run seven to fourteen nights and depart from Barcelona, Civitavecchia for Rome, and Piraeus for Athens. Royal Caribbean, MSC, Norwegian, Celebrity, and Cunard all sail the region, and the luxury lines sail it too. A Venice stop is usually Ravenna or Trieste, not a dock in the lagoon. We compare the routes, the ports, and what the fare includes, then match the ship to how you like to travel.",
       "Greece and the Adriatic pull north. Spain and the Riviera pull west. Tell us which coast you want, and we will start from there.",
     ],
     lists: [
@@ -236,7 +236,7 @@ export const destinations: Destination[] = [
     alt: "A historic canal and stone bridge in soft morning light",
     lede: "One sailing can cover several cities. If you have already been somewhere, leave it off and spend the days somewhere new.",
     paragraphs: [
-      "Sailings run seven to fourteen nights from Barcelona, Rome, Lisbon, and London. Longer itineraries work up the Adriatic and back toward the Mediterranean. Cunard, MSC, Celebrity, Royal Caribbean, and the all-inclusive lines all sail Europe. We compare them, and we build the trip around the cities you want.",
+      "Cruises run seven to fourteen nights and depart from Barcelona, Rome, Lisbon, and London. Longer itineraries work up the Adriatic and back toward the Mediterranean. Cunard, MSC, Celebrity, Royal Caribbean, and the all-inclusive lines all sail Europe. We compare them, and we build the trip around the cities you want.",
       "The usual mistake in Europe is trying to see too much. Tell us which cities you have already visited, and we will build the sailing around the ones you have not.",
     ],
     lists: [
@@ -287,10 +287,10 @@ export const destinations: Destination[] = [
       },
       {
         title: "Canary Islands",
-        nights: "7 nights from Lisbon or Málaga. About 12 from Southampton",
+        nights: "7 nights, departing from Lisbon or Málaga. About 12 nights if the cruise departs from Southampton",
         season: "Winter",
         ship: "From Lisbon, Málaga, or Southampton",
-        path: "A winter Atlantic loop, not a Mediterranean week",
+        path: "A winter Atlantic cruise, not a Mediterranean cruise",
         ports: ["Tenerife or Gran Canaria", "Lanzarote or Funchal", "A sea day back toward Europe"],
       },
     ],
@@ -360,8 +360,8 @@ export const destinations: Destination[] = [
     alt: "Pink sand and clear shallow water on an empty Bermuda beach",
     lede: "Ships dock at the Royal Naval Dockyard, on the west end. Horseshoe Bay, the pink-sand beach, is about 30 minutes by taxi and closer to 45 by bus. It is not next to the pier.",
     paragraphs: [
-      "Most Bermuda sailings run about seven nights from Boston, New York, or Baltimore. Many stay overnight, which means the ship is still there the next morning. That is enough time for Horseshoe Bay, Hamilton, and St. George's, at the east end. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly sail there. A five-hour stop is the Dockyard, unless you take an excursion sold by the ship. If that tour runs late, the ship waits. A taxi or a tour you booked on your own does not come with that.",
-      "A Boston departure still has a sea day each way. That is shorter than a Caribbean sailing from New York. The ocean is part of the week either way.",
+      "Most Bermuda cruises run about seven nights and depart from Boston, New York, or Baltimore. Many stay overnight, which means the ship is still there the next morning. That is enough time for Horseshoe Bay, Hamilton, and St. George's, at the east end. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly sail there. A five-hour stop is the Dockyard, unless you take an excursion sold by the ship. If that tour runs late, the ship waits. A taxi or a tour you booked on your own does not come with that.",
+      "A cruise that departs from Boston still has a sea day each way. That is shorter than a Caribbean cruise that departs from New York. The ocean is part of either cruise.",
       "Bermuda also works as a destination of its own: an island stay, or a sailing that departs from the island. The two combine easily, and we will arrange both.",
     ],
     lists: [
@@ -481,7 +481,7 @@ export const destinations: Destination[] = [
     alt: "A white lighthouse and autumn trees on a rocky New England point",
     lede: "Boston and New York are easy starts if you live in the Northeast. In October the maples are in color along this coast.",
     paragraphs: [
-      "Most sailings run three to eleven nights from Boston, with longer departures from New York. Royal Caribbean, Carnival, Norwegian, Celebrity, and Princess all sail the region. We compare them directly, without a preference for any one line.",
+      "Most cruises run three to eleven nights and depart from Boston. Longer cruises depart from New York. Royal Caribbean, Carnival, Norwegian, Celebrity, and Princess all sail the region. We compare them directly, without a preference for any one line.",
       "The ports are the trip: Cape Cod, Halifax, Quebec, and Bermuda on some loops. You can see a lot from the deck. The better days are still the ones ashore.",
     ],
     lists: [
@@ -662,7 +662,7 @@ export const destinations: Destination[] = [
         nights: "7–14 nights",
         season: "Year-round, with wildlife peaks by island",
         ship: "A small expedition ship, not a big liner",
-        path: "Island loop from Baltra or San Cristóbal",
+        path: "An island loop, departing from Baltra or San Cristóbal",
         ports: ["A naturalist sets the landing", "Snorkel stops", "No two weeks follow the same animals"],
       },
       {
@@ -961,7 +961,7 @@ export const destinations: Destination[] = [
     alt: "Sydney Opera House and a cruise ship on the harbor",
     lede: "Sydney, the Great Barrier Reef, and the fiords of the South Island. The flight from the Northeast is long, so check the season and the ship before you book.",
     paragraphs: [
-      "Most sailings run ten to twenty-one nights from Sydney, Auckland, or Brisbane. Longer repositioning voyages come down from Hawaii or the West Coast. Princess, Holland America, Celebrity, Royal Caribbean, Cunard, and the smaller luxury lines sail the region in the southern summer. The comparison is the port list, not a preference for one line.",
+      "Most cruises run ten to twenty-one nights and depart from Sydney, Auckland, or Brisbane. Longer repositioning voyages come down from Hawaii or the West Coast. Princess, Holland America, Celebrity, Royal Caribbean, Cunard, and the smaller luxury lines sail the region in the southern summer. The comparison is the port list, not a preference for one line.",
       "The useful split is the Australian coast, a New Zealand circuit, or one sailing that crosses the Tasman and does both. Tell us which of those you want. We will start from the ports, not from a brand.",
     ],
     lists: [

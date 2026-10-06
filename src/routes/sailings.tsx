@@ -26,7 +26,7 @@ const weeklyDeals = [
     ports: "americas",
     destination: "caribbean",
     region: "Caribbean cruises",
-    text: "Cape Liberty, in Bayonne, New Jersey, is Royal Caribbean’s Northeast homeport. A Caribbean week from there has more sea days than the same islands from Miami.",
+    text: "Cape Liberty, in Bayonne, New Jersey, is Royal Caribbean’s Northeast homeport. A Caribbean cruise that departs from there has more sea days than a cruise to the same islands that departs from Miami.",
   },
   {
     line: "Norwegian Cruise Line",

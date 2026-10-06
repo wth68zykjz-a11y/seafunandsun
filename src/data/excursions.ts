@@ -189,7 +189,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-hawaii.jpg",
     photoAlt: "Black lava rock, turquoise water, and an empty canoe on a Hawaiian beach",
     intro:
-      "Inter-island ships often stay overnight, so a Road to Hana day can work. A sailing from the West Coast spends more of the week at sea. The excursion has to match which of those two trips you booked.",
+      "Inter-island ships often stay overnight, so a Road to Hana day can work. A cruise that departs from the West Coast spends more of the week at sea. The excursion has to match which of those two cruises you booked.",
     excursions: [
       {
         title: "Turtles in the water",

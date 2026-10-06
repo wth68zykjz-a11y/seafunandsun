@@ -77,14 +77,14 @@ export const linePages: LinePage[] = [
       {
         src: "/media/ship-symphony.jpg",
         alt: "Symphony of the Seas, a large ship used on Caribbean weeks",
-        caption: "A Florida week often uses a ship this size. Bermuda weeks are usually smaller, about 2,000 to 4,000 passengers.",
+        caption: "A Caribbean cruise that departs from Florida often uses a ship this size. A Bermuda cruise is usually on a smaller ship, about 2,000 to 4,000 passengers.",
       },
     ],
-    lede: "A week from Florida is where the biggest ships sail. Bermuda sailings from the Northeast are usually smaller, and the ship stays longer because Bermuda is the destination.",
+    lede: "The biggest ships sail Caribbean cruises that depart from Florida. Bermuda cruises that depart from the Northeast are usually on a smaller ship, and the ship stays longer because Bermuda is the destination.",
     size: "The ships that turn in Miami, Fort Lauderdale, and Port Canaveral are often 4,000 to about 7,000 passengers. Bermuda and many of the smaller-island weeks use ships of about 2,000 to 4,000.",
     rows: [
-      { line: "Royal Caribbean", ships: "Oasis and Icon classes about 5,600–7,600. Freedom and Voyager classes about 3,100–4,300.", where: "Short Caribbean weeks from Florida, and some longer ones from the Northeast.", fare: "Interior often $500–$1,400. Balcony often $900–$2,400. A holiday week can be well above that." },
-      { line: "Carnival", ships: "Excel class (Mardi Gras and newer) about 5,200–6,500. Older Fantasy and Spirit ships about 2,100–2,600.", where: "Florida, and some Bahamas and Caribbean weeks from other East Coast ports.", fare: "Interior often $400–$1,100. Balcony often $800–$1,800." },
+      { line: "Royal Caribbean", ships: "Oasis and Icon classes about 5,600–7,600. Freedom and Voyager classes about 3,100–4,300.", where: "Short Caribbean cruises that depart from Florida, and some longer cruises that depart from the Northeast.", fare: "Interior often $500–$1,400. Balcony often $900–$2,400. A holiday week can be well above that." },
+      { line: "Carnival", ships: "Excel class (Mardi Gras and newer) about 5,200–6,500. Older Fantasy and Spirit ships about 2,100–2,600.", where: "Florida, and some Bahamas and Caribbean cruises that depart from other East Coast ports.", fare: "Interior often $400–$1,100. Balcony often $800–$1,800." },
       { line: "Norwegian", ships: "Encore and Breakaway classes about 4,000. Prima class about 3,100. Older Jewel-class ships about 2,400.", where: "Florida and the Northeast. Private-island days are common on the short weeks.", fare: "Interior often $500–$1,300. Balcony often $900–$2,200." },
       { line: "MSC", ships: "World class about 6,700. Seaside class about 4,100. Smaller ships about 2,500–3,200.", where: "Miami and Port Canaveral for the Caribbean. Also the Mediterranean, on the Europe page.", fare: "Interior often $400–$1,100. Balcony often $800–$1,900. Drinks and gratuities are sometimes bundled, sometimes not." },
       { line: "Disney", ships: "Wish class about 4,000. Dream and Fantasy about 4,000. Magic and Wonder about 2,700.", where: "Port Canaveral for most Caribbean weeks. Wonder also does Alaska, on that page.", fare: "A week is often $2,000–$4,500 a person. Peak school holidays sit higher. The fare is not comparable to Carnival’s." },
@@ -93,8 +93,8 @@ export const linePages: LinePage[] = [
       { line: "Holland America", ships: "Pinnacle class about 2,650. Older ships about 1,400–1,900.", where: "Fewer Caribbean weeks than the lines above. More of the fleet is in Alaska and longer voyages.", fare: "Balcony often $1,300–$2,600." },
     ],
     notes: [
-      "Bermuda weeks from New York, Boston, or Baltimore are usually 5 to 7 nights on ships of about 2,000 to 4,000 passengers. The useful ones stay in port long enough to see the island.",
-      "A Northeast departure to the Caribbean adds sea days. The ship can be the same size. The week is not.",
+      "Bermuda cruises that depart from New York, Boston, or Baltimore are usually 5 to 7 nights on ships of about 2,000 to 4,000 passengers. The useful ones stay in port long enough to see the island.",
+      "A Caribbean cruise that departs from the Northeast adds sea days. The ship can be the same size. Those extra sea days are still on the itinerary.",
     ],
     benefits: [
       {
@@ -111,7 +111,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "What these ships leave out",
-        text: "A week from the Northeast on the same size ship spends more nights at sea. A water park does not remove those sea days. If you want a quiet ship, or a harbor the large ships cannot enter, look at the luxury and yacht pages.",
+        text: "A Caribbean cruise of the same length that departs from the Northeast, on a ship of the same size, spends more nights at sea. A water park does not remove those sea days. If you want a quiet ship, or a harbor the large ships cannot enter, look at the luxury and yacht pages.",
       },
     ],
   },
@@ -182,7 +182,7 @@ export const linePages: LinePage[] = [
         caption: "Norway, the Baltic, and many Greek-island weeks use a smaller ship. Seabourn Ovation carries about 600.",
       },
     ],
-    lede: "Western Mediterranean weeks from Barcelona, Rome, and Athens can be on very large ships. The Greek islands, the Baltic, and Norway are more often mid-size. Large ships do not embark in the Venice lagoon.",
+    lede: "Western Mediterranean cruises that depart from Barcelona, Rome, and Athens can be on very large ships. Cruises to the Greek islands, the Baltic, and Norway are more often on a mid-size ship. Large ships do not depart from the Venice lagoon.",
     size: "Barcelona and Civitavecchia (Rome) regularly see ships of 4,000 to 6,000 passengers. Norway, the Baltic, and many Greek-island weeks are about 1,500 to 3,500.",
     rows: [
       { line: "MSC", ships: "Often 4,000–6,700 in the western Mediterranean. Smaller ships on some eastern routes.", where: "Barcelona, Rome, and Athens.", fare: "Balcony, 7 nights, often $900–$2,200. August is the high end." },
@@ -200,7 +200,7 @@ export const linePages: LinePage[] = [
     benefits: [
       {
         title: "Pools on the large ships, decks on the smaller ones",
-        text: "A western Mediterranean week from Barcelona or Rome can be on a ship with several pools and a long list of restaurants. Norway, the Baltic, and many Greek-island weeks use smaller ships. Those have a pool and a show. They do not have a water park, and they can dock in harbors the large ships miss.",
+        text: "A seven-night western Mediterranean cruise that departs from Barcelona or Rome can be on a ship with several pools and a long list of restaurants. Cruises to Norway, the Baltic, and many Greek islands use smaller ships. Those have a pool and a show. They do not have a water park, and they can dock in harbors the large ships miss.",
       },
       {
         title: "Restaurants",
