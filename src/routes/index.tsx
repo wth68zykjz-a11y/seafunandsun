@@ -6,14 +6,28 @@ import { phone, phoneHref } from "@/data/links";
 import { faqLd, JsonLd, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/")({
-  head: () =>
-    pageHead({
+  head: () => {
+    const head = pageHead({
       title: "Sea Fun & Sun | Cruises, resorts, ski vacations, and rail trips — Farmington, CT",
       description:
         "Independent travel agency in Farmington, Connecticut. We book cruises by region, beach resorts, ski vacations including Club Med, expedition ships, and rail trips, including luxury European trains. No separate agent fee. (959) 666-2062.",
       path: "/",
       image: "/media/card-cruises.webp",
-    }),
+    });
+    return {
+      ...head,
+      links: [
+        {
+          rel: "preload",
+          as: "image",
+          href: "/media/card-cruises-sm.webp",
+          media: "(max-width: 1023px)",
+          fetchPriority: "high",
+        },
+        ...(head.links ?? []),
+      ],
+    };
+  },
   component: Home,
 });
 
@@ -45,6 +59,7 @@ type Door = {
   title: string;
   body: string;
   image: string;
+  mobileImage?: string;
   alt: string;
   cta: string;
   tone: "sea" | "foam";
@@ -57,6 +72,7 @@ const doors: Door[] = [
     title: "Cruises",
     body: "Ocean and river cruises, with a page for each region, the usual routing, and the common ports of call.",
     image: "/media/card-cruises.webp",
+    mobileImage: "/media/card-cruises-sm.webp",
     alt: "Cruise ships docked along a pier in turquoise water",
     cta: "See destinations",
     tone: "sea",
@@ -114,17 +130,34 @@ function DoorFace({ door, eager }: { door: Door; eager?: boolean }) {
   return (
     <div className={`grid lg:grid-cols-2 ${door.tone === "sea" ? "bg-sea text-foam" : "bg-foam text-ink"}`}>
       <div className="relative h-52 overflow-hidden sm:h-64 lg:h-auto lg:min-h-[32rem]">
-        <img
-          src={door.image}
-          alt={door.alt}
-          width={1100}
-          height={733}
-          draggable={false}
-          decoding="async"
-          loading={eager ? "eager" : "lazy"}
-          fetchPriority={eager ? "high" : "low"}
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+        {door.mobileImage ? (
+          <picture>
+            <source media="(max-width: 1023px)" srcSet={door.mobileImage} />
+            <img
+              src={door.image}
+              alt={door.alt}
+              width={1100}
+              height={733}
+              draggable={false}
+              decoding="async"
+              loading={eager ? "eager" : "lazy"}
+              fetchPriority="low"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          </picture>
+        ) : (
+          <img
+            src={door.image}
+            alt={door.alt}
+            width={1100}
+            height={733}
+            draggable={false}
+            decoding="async"
+            loading={eager ? "eager" : "lazy"}
+            fetchPriority="low"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        )}
       </div>
       <div className="flex flex-col justify-center px-5 py-5 lg:px-12 lg:py-10">
         <p className={`text-xs font-semibold uppercase tracking-[0.16em] ${door.tone === "sea" ? "text-gold" : "text-tide"}`}>{door.kicker}</p>
