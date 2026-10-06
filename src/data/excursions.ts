@@ -614,7 +614,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A row of painted wooden wharf houses reflected in calm water",
     facts: [
       { label: "Time in port", text: "Fjord villages can be a tender of a few hours. Baltic capitals are longer city days." },
-      { label: "Worth the time", text: "Stop in Bergen to walk the Bryggen wharf and have a shrimp sandwich at the fish market. A New Nordic tasting menu in Copenhagen is a Michelin table, and those are booked before you sail, not from the gangway. Amsterdam’s ocean ships dock at IJmuiden, not in the canals. Choose the Rijksmuseum or the Anne Frank House. If the ship leaves later, squeeze lunch in. To see the city properly, stay at the Waldorf Astoria Amsterdam before the cruise or after you return." },
+      { label: "Worth the time", text: "Stop in Bergen to walk the Bryggen wharf and have a shrimp sandwich at the fish market. A New Nordic tasting menu in Copenhagen is a Michelin table, and those are booked before you sail, not from the gangway. Amsterdam’s ocean ships dock at IJmuiden, not in the canals. Choose the Rijksmuseum or the Anne Frank House. If the ship leaves later, squeeze lunch in. To see the city properly, stay at the Waldorf Astoria Amsterdam before the cruise or after you return. In Copenhagen, choose Nyhavn or Rosenborg, and stay at Hotel d’Angleterre if you want the night. In Stockholm, Gamla Stan or the Vasa Museum. Grand Hôtel looks across the water at the palace." },
       { label: "Best for", text: "Long summer light, small ports, and people who like weather to be part of the trip." },
       { label: "Often a poor fit", text: "A scenic boat with no backup plan. If the tender cancels, you want a town walk already in mind." },
     ],
@@ -629,7 +629,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A gravel carriage road through peak autumn color near a rocky coast",
     facts: [
       { label: "Time in port", text: "Small Maine ports are half days. Halifax and Québec, when the ship goes upriver, are city calls." },
-      { label: "Worth the time", text: "Stop in Halifax to see the Citadel. You can do it on foot. If the ship goes up to Québec, stop there for the view from the Château Frontenac. In Maine, stop for a lighthouse and a lobster roll. That is a full day." },
+      { label: "Worth the time", text: "Stop in Halifax to see the Citadel. You can do it on foot. If the ship goes up to Québec, stop there for the view from the Château Frontenac. You can also stay in that hotel before or after the cruise. In Maine, stop for a lighthouse and a lobster roll. That is a full day." },
       { label: "Best for", text: "Fall color and small harbors, often without a flight. Peak leaves are a narrow window." },
       { label: "Often a poor fit", text: "A bus to a prettier brochure photo, and any “best of Acadia” that is mostly van time." },
     ],
@@ -644,7 +644,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Bicycles by a vineyard wall, with a river ship on the water below",
     facts: [
       { label: "Time in port", text: "You dock in town, often overnight. Mornings are the walking tour. Afternoons can be a bike or a tasting." },
-      { label: "Worth the time", text: "Stop in Budapest to see the Parliament and have a bowl of goulash. In Vienna, Steirereck is the Michelin restaurant for Austrian cooking, so book it before the cruise. If the afternoon is short, have Sachertorte in a café instead." },
+      { label: "Worth the time", text: "Stop in Budapest to see the Parliament and have a bowl of goulash. In Vienna, Steirereck is the Michelin restaurant for Austrian cooking, so book it before the cruise. If the afternoon is short, have Sachertorte in a café instead. To see either city properly, stay before or after the cruise: Four Seasons Hotel Gresham Palace in Budapest, on the Danube, or Hotel Sacher in Vienna." },
       { label: "Best for", text: "Travelers who want the city at the gangway and are happy with one river, not a new ocean every week." },
       { label: "Often a poor fit", text: "A paid tour that repeats the walk already in the fare, and a 90-minute coach for one glass of wine." },
     ],
@@ -674,7 +674,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Empty stone temple steps in warm morning light, with incense smoke",
     facts: [
       { label: "Time in port", text: "The ship often docks outside the city. The drive can take as long as the visit." },
-      { label: "Worth the time", text: "Do the Grand Palace early, then eat noodles close by. That is a Bangkok day. Tokyo has more Michelin restaurants than any other city, and a sushi counter has to be reserved before you sail. To see more than one district, stay at The Peninsula Tokyo before the cruise or after you return. In Singapore, pick a starred dining room or a hawker centre. Raffles is the hotel if you want nights in the city, not only lunch." },
+      { label: "Worth the time", text: "Do the Grand Palace early, then eat noodles close by. That is a Bangkok day. Tokyo has more Michelin restaurants than any other city, and a sushi counter has to be reserved before you sail. To see more than one district, stay at The Peninsula Tokyo before the cruise or after you return. In Singapore, pick a starred dining room or a hawker centre. Raffles is the hotel if you want nights in the city, not only lunch. In Hong Kong, choose the Peak or a Star Ferry across the harbor. The Peninsula is the stay." },
       { label: "Best for", text: "This suits travelers who will see one place well, such as the Grand Palace or one district in Kyoto. Do not try to do both on the same call." },
       { label: "Often a poor fit", text: "A bus that promises three temples and a market. Ha Long Bay only counts when the ship is already in that bay." },
     ],
