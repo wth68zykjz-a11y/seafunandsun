@@ -70,17 +70,19 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Wordmark tone="foam" />
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
-          {nav.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              className={`rounded-md px-2.5 py-2 text-sm font-medium ${
-                path.startsWith(item.to) ? "bg-foam text-sea" : "text-foam hover:bg-sea"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {nav.map((item) => {
+            const active = path.startsWith(item.to);
+            return (
+              <Link
+                key={item.to}
+                to={item.to}
+                className={`rounded-md px-2.5 py-2 text-sm font-medium ${active ? "bg-foam" : "hover:bg-sea-2"}`}
+                style={active ? { backgroundColor: "#f7fbf9", color: "#0c2340" } : { color: "#f7fbf9" }}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
           <Link
             to="/sailings"
             hash="promotions"
@@ -105,7 +107,8 @@ export function Header() {
           </a>
           <button
             type="button"
-            className="inline-flex size-11 items-center justify-center rounded-md bg-foam text-sea"
+            className="inline-flex size-11 items-center justify-center rounded-md bg-foam"
+            style={{ backgroundColor: "#f7fbf9", color: "#0c2340" }}
             aria-expanded={open}
             aria-label={open ? "Close menu" : "Open menu"}
             onClick={() => setOpen((value) => !value)}
