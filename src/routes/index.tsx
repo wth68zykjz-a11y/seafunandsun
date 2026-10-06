@@ -404,10 +404,7 @@ function Home() {
             <p className="text-sm font-medium text-tide">Farmington, Connecticut</p>
             <h2 className="mt-2 font-display text-3xl text-ink sm:text-4xl">Based here. The booking is by phone.</h2>
             <p className="mt-4 text-lg text-ink">
-              Sea Fun & Sun is a Farmington company. There is no office to visit. A quote starts by phone, text, or email, and one agent stays with it.
-            </p>
-            <p className="mt-4 text-ink">
-              The booking is the same if you live in Connecticut, elsewhere in New England, or farther away. We arrange the travel from your home to the destination, and the return home.
+              Sea Fun & Sun is a Farmington company. There is no office to visit. A quote starts by phone, text, or email. One agent handles the booking and arranges the trip from your home to the destination, and the return home. That is the same if you live in Connecticut, elsewhere in New England, or farther away.
             </p>
           </div>
           <iframe

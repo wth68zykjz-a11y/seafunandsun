@@ -35,7 +35,7 @@ function QuotePage() {
           ["2. We price the pieces separately", "The cruise or hotel, the flight, and any nights before or after are quoted on their own, so you can see which one moved. A past-passenger number may improve the cruise price. A frequent-flyer number may improve the airfare. Military discounts are often available on both. Tell us if one of these applies."],
           ["3. You choose", "On a published sailing, you pick the date and the cabin in the booking system. Yacht sailings, many luxury hotels, and European sleeper trains have no public fare. Those come back as a quote."],
           ["4. You pay the supplier", "The card payment goes to the cruise line, resort, hotel, or operator. We do not hold the card. There is no separate agent fee. The supplier pays our commission."],
-          ["5. One agent stays with it", "The same person handles the deposit, the final-payment date, a change, and the flight against the ship’s embarkation and return."],
+          ["5. One agent handles the booking", "That person arranges the trip, takes the deposit, watches the final-payment date, makes a change if you need one, and matches the flight to the ship’s embarkation and return."],
         ].map(([title, text]) => (
           <li key={title} className="rounded-xl border border-line bg-foam p-5">
             <h2 className="font-display text-2xl text-ink">{title}</h2>
