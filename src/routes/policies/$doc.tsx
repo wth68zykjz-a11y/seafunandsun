@@ -1,11 +1,15 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Shell } from "@/components/site-chrome";
 import { policyBySlug } from "@/data/policies";
 import { adminEmail, phone, phoneHref } from "@/data/links";
 import { clip, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/policies/$doc")({
-  loader: ({ params }) => policyBySlug(params.doc) ?? null,
+  loader: ({ params }) => {
+    const doc = policyBySlug(params.doc);
+    if (!doc) throw notFound();
+    return doc;
+  },
   head: ({ loaderData }) =>
     pageHead({
       title: loaderData?.title ?? "Policy",
@@ -13,6 +17,7 @@ export const Route = createFileRoute("/policies/$doc")({
         ? clip(loaderData.dek)
         : "Policies for Sea Fun & Sun, Farmington, Connecticut.",
       path: loaderData ? `/policies/${loaderData.slug}` : "/policies",
+      noindex: !loaderData,
     }),
   component: PolicyPage,
 });

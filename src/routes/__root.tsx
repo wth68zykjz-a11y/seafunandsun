@@ -38,6 +38,8 @@ export const Route = createRootRoute({
   ),
   notFoundComponent: () => (
     <main className="mx-auto flex min-h-screen max-w-lg flex-col justify-center gap-4 px-6">
+      <title>Page not found — Sea Fun & Sun</title>
+      <meta name="robots" content="noindex, nofollow" />
       <p className="text-sm font-medium text-tide">Sea Fun & Sun</p>
       <h1 className="font-display text-4xl text-ink">That page is not on this site.</h1>
       <p className="text-mute">The link may be old. The home page and the quote form are both still here.</p>

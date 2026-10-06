@@ -1,4 +1,4 @@
-import { createFileRoute, Link, redirect } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import { QuoteForm } from "@/components/quote-form";
 import { Shell } from "@/components/site-chrome";
 import { destinationBySlug, destinationTone, sampleNote } from "@/data/destinations";
@@ -10,7 +10,11 @@ export const Route = createFileRoute("/destinations/$slug")({
   beforeLoad: ({ params }) => {
     if (params.slug === "rail") throw redirect({ to: "/rail", statusCode: 301 });
   },
-  loader: ({ params }) => destinationBySlug(params.slug) ?? null,
+  loader: ({ params }) => {
+    const place = destinationBySlug(params.slug);
+    if (!place) throw notFound();
+    return place;
+  },
   head: ({ loaderData }) =>
     pageHead({
       title: loaderData?.title ?? "Destination",
@@ -19,6 +23,7 @@ export const Route = createFileRoute("/destinations/$slug")({
         : "Cruise destinations booked by Sea Fun & Sun in Farmington, Connecticut.",
       path: loaderData ? `/destinations/${loaderData.slug}` : "/destinations",
       image: loaderData?.image,
+      noindex: !loaderData,
     }),
   component: DestinationPage,
 });

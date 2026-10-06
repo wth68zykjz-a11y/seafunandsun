@@ -1,11 +1,15 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { PageIntro, Shell } from "@/components/site-chrome";
 import { getPromo } from "@/lib/promo";
 import { explainPromotion } from "@/lib/offer-copy";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/promotions/$slug")({
-  loader: ({ params }) => getPromo({ data: params.slug }),
+  loader: async ({ params }) => {
+    const promo = await getPromo({ data: params.slug });
+    if (!promo) throw notFound();
+    return promo;
+  },
   head: ({ loaderData }) =>
     pageHead({
       title: loaderData ? `${loaderData.title} — Sea Fun & Sun` : "Promotion",
@@ -13,6 +17,7 @@ export const Route = createFileRoute("/promotions/$slug")({
         ? `${loaderData.line ? `${loaderData.line}. ` : ""}${loaderData.starting ? `${loaderData.title} starts at ${loaderData.starting}. ` : explainPromotion(loaderData.title)} Booked with Sea Fun & Sun in Farmington, Connecticut.`
         : "A Sea Fun & Sun promotion.",
       path: loaderData ? `/promotions/${loaderData.slug}` : "/sailings",
+      noindex: !loaderData,
     }),
   component: PromoPageView,
 });

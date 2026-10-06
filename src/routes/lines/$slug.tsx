@@ -1,10 +1,14 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { PageIntro, Shell } from "@/components/site-chrome";
 import { linePageBySlug, linePages } from "@/data/lines";
 import { breadcrumbLd, clip, JsonLd, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/lines/$slug")({
-  loader: ({ params }) => linePageBySlug(params.slug),
+  loader: ({ params }) => {
+    const page = linePageBySlug(params.slug);
+    if (!page) throw notFound();
+    return page;
+  },
   head: ({ loaderData }) =>
     pageHead({
       title: loaderData?.title ?? "Cruise lines",
@@ -13,6 +17,7 @@ export const Route = createFileRoute("/lines/$slug")({
         : "Cruise line comparison by ship size and region, with passenger counts and general price ranges. Not a quote.",
       path: loaderData ? `/lines/${loaderData.slug}` : "/lines",
       image: loaderData?.image,
+      noindex: !loaderData,
     }),
   component: LineRegionPage,
 });

@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { PageIntro, Shell } from "@/components/site-chrome";
 import { cruisePlaces } from "@/data/place-names";
 import { airlineNote, portPageBySlug, portPages, type Port, type PortCall } from "@/data/ports";
@@ -7,7 +7,11 @@ import { LocalClock } from "@/components/local-clock";
 import { clip, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/ports/$region")({
-  loader: ({ params }) => portPageBySlug(params.region),
+  loader: ({ params }) => {
+    const page = portPageBySlug(params.region);
+    if (!page) throw notFound();
+    return page;
+  },
   head: ({ loaderData }) =>
     pageHead({
       title: loaderData ? `${loaderData.title} cruise ports` : "Cruise ports",
@@ -15,6 +19,7 @@ export const Route = createFileRoute("/ports/$region")({
         ? clip(`${loaderData.title} cruise ports. ${loaderData.lede} Airlines, local time, and currency for each city.`)
         : "Departure ports, the airlines that serve them, and where those ships tend to go.",
       path: loaderData ? `/ports/${loaderData.slug}` : "/ports",
+      noindex: !loaderData,
     }),
   component: PortRegionPage,
 });
