@@ -146,9 +146,12 @@ function PortRegionPage() {
           </div>
         </section>
       ) : null}
-      <p className="mx-auto max-w-6xl px-4 pb-8 text-base leading-relaxed text-ink">
-        {airlineNote} Most ships sold in the United States bill in US dollars. Ashore, use the local currency named on the card, or a card. US cash is reliable in the United States and Puerto Rico, and a poor default everywhere else.
-      </p>
+      <div className="mx-auto max-w-6xl space-y-3 px-4 pb-8 text-base leading-relaxed text-ink">
+        <p>{airlineNote}</p>
+        <p>
+          The cruise fare is usually billed in US dollars. On shore, prices are in the currency named on that city’s card. A card is the simplest way to pay. US cash works in the United States and Puerto Rico. In other countries, including Canada, a shop that takes US bills usually sets its own exchange rate, and that rate is worse than the rate on a card.
+        </p>
+      </div>
       <CabinGuide />
       <section className="mx-auto max-w-6xl px-4 pb-20">
         <div className="rounded-xl bg-sea px-6 py-8 text-foam">
