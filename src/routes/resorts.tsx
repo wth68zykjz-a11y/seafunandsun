@@ -9,7 +9,7 @@ export const Route = createFileRoute("/resorts")({
     pageHead({
       title: "All-inclusive resorts",
       description:
-        "All-inclusive beach resorts and Disney park stays from Sea Fun & Sun. The quote says which room you are booking, such as a garden view or a suite, and it can include flights, transfers, and excursions.",
+        "All-inclusive beach resorts and Disney park stays from Sea Fun & Sun. The quote says which room you are booking, such as a garden view or a suite, and it can include flights, the airport transfer, and a day trip off the property.",
       path: "/resorts",
       image: "/media/resort-villas.jpg",
     }),
@@ -83,7 +83,7 @@ function ResortsPage() {
           <p className="text-sm font-medium text-tide">All-inclusive resorts</p>
           <h1 className="mt-2 font-display text-3xl sm:text-5xl">The rate includes the meals.</h1>
           <p className="mt-4 text-lg text-mute">
-            The quote says which room you are booking, such as a garden view or an ocean-view suite, and it can also include the flights, the transfer, and the excursions. We look at what the rate covers, which airport you fly from, and whether the property fits the people traveling.
+            The quote says which room you are booking, such as a garden view or an ocean-view suite, and it can also include the flights, the airport transfer, and a day trip off the property. We look at what the rate covers, which airport you fly from, and whether the property fits the people traveling.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Link
@@ -106,7 +106,7 @@ function ResortsPage() {
       <section className="mx-auto max-w-6xl px-4 py-12">
         <div className="max-w-3xl space-y-4 text-lg">
           <p>
-            An all-inclusive rate is a room plus a meal plan. It does not cover everything. At most of the resorts we book, the meals and a set of drinks are included. The spa, the motorized water sports, the excursion off the property, and sometimes the airport transfer are not. We read that list before we recommend the hotel.
+            An all-inclusive rate is a room plus a meal plan. It does not cover everything. At most of the resorts we book, the meals and a set of drinks are included. The spa, the motorized water sports, a day trip off the property, and sometimes the airport transfer are not. We read that list before we recommend the hotel.
           </p>
           <p>
             Resorts also differ by who they accept. Sandals, Secrets, Breathless, and Hyatt Zilara are adults only. Beaches, Hyatt Ziva, Dreams, and Club Med’s beach villages take children, and the kids’ clubs do not all start at the same age. A couples resort with a quiet pool is the wrong booking for a reunion.{" "}
