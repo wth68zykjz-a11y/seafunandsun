@@ -60,7 +60,7 @@ function LineRegionPage() {
           </div>
         ) : null}
         <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink">
-          Ranges are per person, two to a cabin. They move with the month and the cabin, and they are not a quote. On the large ships, taxes, port charges, and gratuities are usually extra. On river, expedition, luxury, and yacht ships, more of that is already in the fare.
+          Ranges are per person, two to a cabin. They move with the month and the cabin, and they are not a quote. On the large ships, taxes, port charges, and gratuities are usually extra. On river ships, expedition ships, luxury ships, and yachts, more of that is already in the fare.
         </p>
         {page.benefits ? (
           <div className="mt-8 grid gap-4 md:grid-cols-2">

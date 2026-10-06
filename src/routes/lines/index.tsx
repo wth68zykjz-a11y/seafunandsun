@@ -8,7 +8,7 @@ export const Route = createFileRoute("/lines/")({
     pageHead({
       title: "Cruise line comparison",
       description:
-        "Compare cruise lines by ship size. Passenger counts and typical fares for yacht ships, river and expedition ships, luxury ocean ships, mid-size ocean ships, and the largest ocean ships.",
+        "Compare cruise lines by ship size. Passenger counts and typical fares for yachts, river and expedition ships, luxury ocean ships, mid-size ocean ships, and the largest ocean ships.",
       path: "/lines",
     }),
   component: LinesPage,

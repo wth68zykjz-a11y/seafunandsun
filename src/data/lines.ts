@@ -315,7 +315,7 @@ export const linePages: LinePage[] = [
   {
     slug: "yachts",
     title: "About 100 to 450 passengers",
-    card: "Yacht ships",
+    card: "Yachts",
     image: "/media/ship-ilma.jpg",
     alt: "The stern of Ilma, a Ritz-Carlton yacht, with the marina open",
     photos: [
