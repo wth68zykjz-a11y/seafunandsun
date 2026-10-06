@@ -45,7 +45,7 @@ function DeskPage() {
       <PageIntro
         kicker="Private log"
         title="Quote requests, not a public list."
-        lede="Names, emails, and travel plans stay off the public pages. This log opens only with the access code. On the published site they live in the app database. A Hostinger MySQL kit is available if you want the same fields in hPanel."
+        lede="Names, emails, and travel plans stay off the public pages. This log opens only with the access code. On Hostinger, the rows are saved in that site’s MySQL database."
       />
       <div className="mx-auto max-w-6xl px-4">
         <img
@@ -76,12 +76,7 @@ function DeskPage() {
         </form>
         {error ? <p className="mt-4 text-sm text-tide-deep">{error}</p> : null}
         <p className="mt-6 max-w-xl text-sm text-mute">
-          This site stores quotes in its own database. If you want the same fields in Hostinger’s MySQL
-          (hPanel), use the{" "}
-          <a className="font-medium text-tide underline-offset-2 hover:underline" href="/sea-fun-and-sun-hostinger-leads.zip">
-            Hostinger lead kit
-          </a>
-          . It has the table, the form handler, and a private log. Change the access code before you upload it.
+          Quote requests are saved in the Hostinger MySQL database, in a table named inquiries. You can also read that table in phpMyAdmin. The access code is only for this page.
         </p>
         {rows ? (
           <div className="mt-8 overflow-x-auto rounded-xl border border-line">

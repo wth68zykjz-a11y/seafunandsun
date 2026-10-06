@@ -13,6 +13,7 @@ create table if not exists inquiries (
   cabin varchar(80) not null default '',
   plans text not null,
   marketing_opt_in tinyint(1) not null default 0,
+  email_status varchar(40) not null default '',
   created_at timestamp not null default current_timestamp,
   primary key (id),
   unique key inquiries_reference (reference)

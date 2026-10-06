@@ -1,5 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { getSql } from "@/lib/db";
+import { mysqlEnabled, mysqlQuery, type MysqlInquiry } from "@/lib/mysql.server";
 
 const DESK_KEY = "seafun-farmington";
 
@@ -65,15 +66,25 @@ export const submitInquiry = createServerFn({ method: "POST" })
     }
 
     const reference = `SFS-${Math.random().toString(36).slice(2, 8).toUpperCase()}`;
-    const sql = await getSql();
-    await sql`
-      insert into inquiries (
-        reference, name, email, phone, destination, travel_window, party_size, cabin, plans, marketing_opt_in
-      ) values (
-        ${reference}, ${name}, ${email}, ${phone}, ${destination}, ${travelWindow},
-        ${partySize}, ${cabin}, ${plans}, ${Boolean(data.marketingOptIn)}
-      )
-    `;
+    const optedIn = Boolean(data.marketingOptIn);
+    if (mysqlEnabled()) {
+      await mysqlQuery(
+        `insert into inquiries (
+          reference, name, email, phone, destination, travel_window, party_size, cabin, plans, marketing_opt_in
+        ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        [reference, name, email, phone, destination, travelWindow, partySize, cabin, plans, optedIn ? 1 : 0],
+      );
+    } else {
+      const sql = await getSql();
+      await sql`
+        insert into inquiries (
+          reference, name, email, phone, destination, travel_window, party_size, cabin, plans, marketing_opt_in
+        ) values (
+          ${reference}, ${name}, ${email}, ${phone}, ${destination}, ${travelWindow},
+          ${partySize}, ${cabin}, ${plans}, ${optedIn}
+        )
+      `;
+    }
 
     let emailStatus = "not-configured";
     try {
@@ -88,13 +99,18 @@ export const submitInquiry = createServerFn({ method: "POST" })
         partySize,
         cabin,
         plans,
-        marketingOptIn: Boolean(data.marketingOptIn),
+        marketingOptIn: optedIn,
       });
     } catch {
       emailStatus = "failed";
     }
     try {
-      await sql`update inquiries set email_status = ${emailStatus} where reference = ${reference}`;
+      if (mysqlEnabled()) {
+        await mysqlQuery("update inquiries set email_status = ? where reference = ?", [emailStatus, reference]);
+      } else {
+        const sql = await getSql();
+        await sql`update inquiries set email_status = ${emailStatus} where reference = ${reference}`;
+      }
     } catch (err) {
       console.error("[inquiry] email status not stored", err instanceof Error ? err.message : "update failed");
     }
@@ -107,6 +123,24 @@ export const listInquiries = createServerFn({ method: "POST" })
   .handler(async ({ data }) => {
     if ((data.key ?? "").trim() !== DESK_KEY) {
       return { ok: false as const, error: "That access code doesn’t match." };
+    }
+    if (mysqlEnabled()) {
+      const stored = await mysqlQuery<MysqlInquiry>(
+        `select
+          id, reference, name, email, phone, destination, travel_window, party_size, cabin, plans,
+          marketing_opt_in, email_status, created_at
+        from inquiries
+        order by id desc
+        limit 200`,
+      );
+      const rows: InquiryRow[] = stored.map((row) => ({
+        ...row,
+        id: Number(row.id),
+        marketing_opt_in: Boolean(row.marketing_opt_in),
+        email_status: row.email_status ?? "",
+        created_at: String(row.created_at),
+      }));
+      return { ok: true as const, rows };
     }
     const sql = await getSql();
     const rows = await sql<InquiryRow>`

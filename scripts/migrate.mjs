@@ -18,10 +18,16 @@ import { dirname, join } from "node:path";
 import pg from "pg";
 import { pendingMigrations } from "./migration-plan.mjs";
 
-const databaseUrl = process.env.DATABASE_URL;
+const databaseUrl = process.env.DATABASE_URL?.trim();
 if (!databaseUrl) {
   console.log(
     "[migrate] DATABASE_URL not set — skipping (the PGLite fallback migrates itself).",
+  );
+  process.exit(0);
+}
+if (/^mysql:\/\//i.test(databaseUrl)) {
+  console.log(
+    "[migrate] DATABASE_URL is MySQL — skipping Postgres migrations. The quote table is created when the site starts.",
   );
   process.exit(0);
 }

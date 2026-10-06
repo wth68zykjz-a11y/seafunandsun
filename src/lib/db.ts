@@ -7,8 +7,12 @@ export type DbSource = "neon" | "pglite";
 // "unset" — otherwise production would silently run on the PGLite fallback.
 const rawDatabaseUrl =
   typeof process !== "undefined" ? process.env.DATABASE_URL : undefined;
+const trimmedDatabaseUrl = rawDatabaseUrl?.trim() ?? "";
+// Hostinger's database is MySQL. That address must not be handed to Postgres.
 const databaseUrl =
-  rawDatabaseUrl && rawDatabaseUrl.trim() ? rawDatabaseUrl : undefined;
+  trimmedDatabaseUrl && !/^mysql:\/\//i.test(trimmedDatabaseUrl)
+    ? trimmedDatabaseUrl
+    : undefined;
 
 /**
  * Active backend: real **Neon** when `DATABASE_URL` is set (deployed / configured

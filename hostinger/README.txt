@@ -1,9 +1,12 @@
 Sea Fun & Sun — Hostinger lead form
 ====================================
 
-The redesigned site in this preview saves quotes in its own database
-(you can read them on the Request log page). seafunandsun.com itself
-is hosted on Hostinger, which uses MySQL, not that database.
+The quote form on the website writes straight into this MySQL
+database when the Node app is given the database host, name, user,
+and password (DB_HOST, DB_NAME, DB_USER, DB_PASSWORD). You do not
+need a second database. The site creates the inquiries table the
+first time someone sends a quote. You can also import schema.sql
+yourself in phpMyAdmin.
 
 To store the same fields in Hostinger:
 
