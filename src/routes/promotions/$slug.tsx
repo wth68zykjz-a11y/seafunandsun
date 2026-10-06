@@ -12,7 +12,6 @@ export const Route = createFileRoute("/promotions/$slug")({
         ? `${loaderData.title}. A current promotion booked with Sea Fun & Sun in Farmington, Connecticut. We confirm the fare before you pay.`
         : "A Sea Fun & Sun promotion.",
       path: loaderData ? `/promotions/${loaderData.slug}` : "/sailings",
-      noindex: true,
     }),
   component: PromoPageView,
 });

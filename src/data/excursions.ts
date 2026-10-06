@@ -411,7 +411,7 @@ export const shores: Record<string, DestinationShore> = {
   },
   world: {
     photo: "/media/ex-world.jpg",
-    photoAlt: "An empty teak deck and lounge chairs facing an open-ocean dusk",
+    photoAlt: "A large cruise ship crossing open ocean",
     intro:
       "A world cruise is mostly sea days, with a few ports long enough to use. The useful stop is often an overnight in a city, not a three-hour coach. The overnights are the ones to plan. A short call can be skipped.",
     excursions: [
@@ -671,7 +671,7 @@ export const portGuides: Record<string, PortGuide> = {
   },
   asia: {
     detail: "/media/day-asia.jpg",
-    detailAlt: "Empty stone temple steps in warm morning light, with incense smoke",
+    detailAlt: "The Singapore skyline across Marina Bay at night",
     facts: [
       { label: "Time in port", text: "The ship often docks outside the city. The drive can take as long as the visit." },
       { label: "Worth the time", text: "Do the Grand Palace early, then eat noodles close by. That is a Bangkok day. Tokyo has more Michelin restaurants than any other city, and a sushi counter has to be reserved before you sail. To see more than one district, stay at The Peninsula Tokyo before the cruise or after you return. In Singapore, pick a starred dining room or a hawker centre. Raffles is the hotel if you want nights in the city, not only lunch. In Hong Kong, choose the Peak or a Star Ferry across the harbor. The Peninsula is the stay." },

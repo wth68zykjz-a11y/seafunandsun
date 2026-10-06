@@ -129,7 +129,7 @@ function SailingsPage() {
       </div>
       <div className="mx-auto mt-8 grid max-w-6xl gap-3 px-4 sm:grid-cols-3">
         <img src="/media/page-sailings.jpg" alt="The bow of a white ship in calm water at golden hour" loading="lazy" decoding="async" className="aspect-photo w-full rounded-xl object-cover sm:col-span-2" />
-        <img src="/media/ex-world.jpg" alt="Empty deck chairs facing open ocean at dusk" loading="lazy" decoding="async" className="aspect-photo hidden w-full rounded-xl object-cover sm:block" />
+        <img src="/media/ex-world.jpg" alt="A large cruise ship crossing open ocean" loading="lazy" decoding="async" className="aspect-photo hidden w-full rounded-xl object-cover sm:block" />
       </div>
       <section id="promotions" className="mx-auto max-w-6xl scroll-mt-24 px-4 pb-20">
         <h2 className="font-display text-3xl">Offers available right now</h2>

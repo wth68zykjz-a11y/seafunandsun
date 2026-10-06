@@ -681,7 +681,7 @@ export const destinations: Destination[] = [
     title: "Asian Cruises",
     card: "Temples & cities",
     image: "/media/asia.jpg",
-    alt: "A lit waterfront skyline at dusk, the kind of harbor an Asian cruise uses",
+    alt: "Hong Kong and Victoria Harbour at dusk",
     lede: "Singapore and Tokyo are the usual starts, with long days at sea on the South China Sea. Plan the flights with the cruise, not after it.",
     paragraphs: [
       "Princess, Holland America, Celebrity, Royal Caribbean, and Norwegian sail Asia from Singapore, Tokyo, and Hong Kong. Cunard comes through on longer voyages. It is not a weekly Asia ship. We compare the ones that are actually scheduled, and we match the routing to the time you have.",
@@ -810,7 +810,7 @@ export const destinations: Destination[] = [
     title: "World Cruises",
     card: "Grand voyages",
     image: "/media/world.jpg",
-    alt: "Open ocean at dusk from an empty deck railing",
+    alt: "A large cruise ship crossing open ocean",
     lede: "These voyages run about 70 to 120 days and call at ports a shorter cruise cannot combine. We go through the calendar and the fare before you give a season to one ship.",
     paragraphs: [
       "Cunard, Regent, Silversea, and Holland America run full and partial world cruises. Other large lines run the transatlantic crossings and the season-long loops. We compare the routes, the port lists, and the inclusions. On a ninety-day voyage, what the fare includes is a larger question than it is on a week.",
