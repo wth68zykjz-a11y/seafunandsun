@@ -45,7 +45,7 @@ const ashoreNotes: Record<string, string> = {
   expedition:
     "An expedition day may never reach a town. You put on the boots and the parka the ship issues, ride a Zodiac to a beach or the ice, and walk the path the guides mark. You may stand near penguins or seals and take pictures from the distance they set. If the water is calm, some ships add a kayak or a canoe for people who asked. Weather can cancel the landing and leave you on deck. Ushuaia or Longyearbyen, before or after the voyage, is the town. The landing day is not.",
   asia:
-    "Singapore and Tokyo often keep the ship in port into the evening, and some sail as late as 10 p.m. A beach stop is still only a few hours. Nights before or after in Singapore, Tokyo, or Hong Kong are for one district or a museum, not three cities in a day. A hawker stall, a sushi counter, or a reserved table can be part of that stay if you want it booked before you sail.",
+    "Singapore and Tokyo often keep the ship in port into the evening, and some sail as late as 10 p.m. A beach stop is still only a few hours. A night before or after is a chance to explore one district, or a museum, instead of racing through three cities.",
   "south-america":
     "Guanabara Bay, Sugarloaf, and Corcovado are in Rio. Buenos Aires is a walking city, and the evening starts late, which lines up when the ship stays overnight or sails late. A daytime stop can include the waterfront and a neighborhood such as San Telmo. Extra nights are when you can stay out. A grill can be part of those nights if you want a table held.",
   world:

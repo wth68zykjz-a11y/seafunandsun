@@ -691,7 +691,7 @@ export const destinations: Destination[] = [
       {
         heading: "Where they go",
         items: [
-          "Singapore — the marina at night and Gardens by the Bay",
+          "Singapore — Marina Bay at night",
           "Tokyo, Yokohama & Tokyo Bay",
           "Shanghai & Hong Kong",
           "Phuket — beaches are about 40 minutes from the deep-water port. Old Town is closer to 30. A boat toward Phi Phi is about an hour to an hour and a half after that. The ship does not dock on the sand",
@@ -703,10 +703,10 @@ export const destinations: Destination[] = [
       {
         heading: "Worth going ashore for",
         items: [
-          "Chicken rice and laksa at a hawker centre in Singapore",
-          "The Grand Palace in Bangkok, another temple, and lunch nearby",
-          "Sushi in Tokyo after a walk through the outer market. The dawn tuna auction is not a cruise-day plan.",
-          "A morning in Ho Chi Minh City’s District 1, with banh mi for lunch",
+          "In Singapore, visit Gardens by the Bay, then Hainanese chicken rice or laksa at a hawker centre",
+          "Visit the Grand Palace in Bangkok, then boat noodles nearby. The bowls are small and the broth is dark",
+          "Walk Tokyo’s outer market, then nigiri at a sushi counter. The dawn tuna auction is not a cruise-day plan",
+          "Visit Ho Chi Minh City’s District 1, and have a banh mi while you are there",
           "The Peak, the Star Ferry, and theme parks are in Hong Kong. The Peninsula is a stay in the city before or after the cruise.",
           "The French Concession and the Bund are in Shanghai. The Fairmont Peace Hotel is a stay in the city.",
           "A boat in Ha Long Bay, only when the ship is already in the bay",

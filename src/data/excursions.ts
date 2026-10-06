@@ -133,7 +133,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Uneven stone, real walking",
         detail:
-          "See the Acropolis in the morning. If you want one more stop, use the Acropolis Museum next door, or walk down to the Ancient Agora. The National Archaeological Museum is across the city, so leave it for a longer stay. Lunch in Plaka is the right ending.",
+          "See the Acropolis in the morning. Visit the museum next door, or walk down to the Ancient Agora. The National Archaeological Museum is across the city, so it fits a longer stay. Plaka is the neighborhood for lunch after the hill.",
       },
       {
         title: "St. Peter's, or the Colosseum",
@@ -333,7 +333,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Moderate, mostly flat",
         detail:
-          "E-bikes change who can do this. The point is the villages between the famous cities, not the mileage. The shorter loop is the right one if anyone in the cabin is unsure.",
+          "E-bikes change who can do this. The villages between the famous cities are the ride, not the mileage. Take the shorter loop if anyone in the cabin is unsure.",
       },
       {
         title: "A tasting that is not a detour",
@@ -381,7 +381,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-asia.jpg",
     photoAlt: "Lantern light on a calm harbor with limestone karsts beyond",
     intro:
-      "The pier is often an hour from the place you came to see. The heat shortens the day. See one site, eat nearby, and go back.",
+      "The pier is often an hour or more from the place you came to see, and the heat is real. Visit the palace or one district, and leave time to get back to the ship.",
     excursions: [
       {
         title: "The Grand Palace, then lunch",
@@ -389,7 +389,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day, including the drive",
         pace: "Walking in the heat. Shoes come off in the palace grounds.",
         detail:
-          "Arrive at opening. See the palace and leave. A noodle lunch nearby is the right second stop.",
+          "Arrive when the gates open and walk the palace grounds. The drive back to Laem Chabang takes about two hours, so leave time for it.",
       },
       {
         title: "Karsts from the water",
@@ -721,14 +721,14 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "The Singapore skyline across Marina Bay at night",
     facts: [
       { label: "Time in port", text: "The ship often docks outside the city. The drive can take as long as the visit." },
-      { label: "Worth the time", text: "The Grand Palace is in Bangkok, and noodle shops are nearby. Tokyo has more Michelin restaurants than any other city, and a sushi counter has to be reserved before you sail. The Peninsula Tokyo is a stay in the city before or after the cruise. Starred dining rooms and hawker centres are in Singapore. Raffles is a stay in the city. The Peak and the Star Ferry are in Hong Kong. The Peninsula is a stay there." },
-      { label: "Best for", text: "Ideas include the Grand Palace and a district in Kyoto, such as Fushimi Inari or Arashiyama." },
+      { label: "Worth the time", text: "The Grand Palace is in Bangkok, about two hours from Laem Chabang. The Peninsula Tokyo is a stay in the city before or after the cruise. Gardens by the Bay is in Singapore. Raffles is a stay in the city. The Peak and the Star Ferry are in Hong Kong. The Peninsula is a stay there." },
+      { label: "Best for", text: "A visit to the Grand Palace, or a district in Kyoto such as Fushimi Inari or Arashiyama." },
       { label: "Often a poor fit", text: "A bus that promises three temples and a market. Ha Long Bay only counts when the ship is already in that bay." },
     ],
     outings: [
-      { fits: "Ideas include the Grand Palace, another temple, a floating market, and a noodle lunch nearby.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
+      { fits: "Visit the Grand Palace, another temple, or a floating market. The drive back to Laem Chabang is part of the day.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
       { fits: "Only when the itinerary is already in that scenery. Easy if you can sit on a boat.", bring: "Sun cover and a tolerance for some chop. A distant port is not the bay." },
-      { fits: "One district — Fushimi Inari or Arashiyama — unless the ship overnights.", bring: "A transit card plan and walking shoes. Two famous sights in one day is how you see neither." },
+      { fits: "Fushimi Inari and Arashiyama are both in Kyoto. The train from Osaka or Kobe is part of the day.", bring: "A transit card and walking shoes." },
     ],
   },
   "south-america": {
