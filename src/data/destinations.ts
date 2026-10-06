@@ -36,7 +36,7 @@ export const destinations: Destination[] = [
     alt: "A tidewater glacier meeting dark water in a steep fjord",
     lede: "May and August on the same ship are different trips. In May the glaciers are larger, because less of the winter ice has melted. In August the salmon are running, and the bears are on the rivers to feed.",
     paragraphs: [
-      "Most Alaska sailings run seven to fourteen nights round trip from Seattle, or one way between Seattle or Vancouver and Seward or Whittier. Royal Caribbean, Carnival, Norwegian, Holland America, Princess, and Celebrity sail the Inside Passage. Holland America and Princess use Vancouver often, including one-way Gulf sailings. Cunard does in some seasons, not every year. We compare them side by side, with no obligation to any one line.",
+      "Most Alaska sailings run seven to fourteen nights round trip from Seattle, or one way between Seattle or Vancouver and Seward or Whittier. Royal Caribbean, Carnival, Norwegian, Holland America, Princess, and Celebrity sail the Inside Passage. Holland America and Princess sail from Vancouver often, including one-way Gulf sailings. Cunard does in some seasons, not every year. We compare them side by side, with no obligation to any one line.",
       "Juneau, Ketchikan, Skagway, Seward, and the fjords between them are the coast. You can hear a glacier calve. Whales, bears, and eagles are on the water, not on a highway.",
     ],
     lists: [

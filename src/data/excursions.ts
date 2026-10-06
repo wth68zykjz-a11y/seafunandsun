@@ -269,7 +269,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "3 hours",
         pace: "Easy walking on cobblestone streets",
         detail:
-          "The old wharf, then up the funicular only if the cloud is above the hill. A harbor walk in the rain is still the right use of Bergen.",
+          "The old wharf, then up the funicular only if the cloud is above the hill. A harbor walk in the rain is still a good way to see Bergen.",
       },
       {
         title: "One Baltic old town",
@@ -445,7 +445,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-world.jpg",
     photoAlt: "A large cruise ship crossing open ocean",
     intro:
-      "A world cruise is mostly sea days, with a few ports long enough to use. The useful stop is often an overnight in a city, not a three-hour coach. The overnights are the ones to plan. A short stop can be skipped.",
+      "A world cruise is mostly sea days, with a few ports long enough to explore. The stop worth planning is often an overnight in a city, not a three-hour coach. The overnights are the ones to plan. A short stop can be skipped.",
     excursions: [
       {
         title: "Use the overnight, ignore the glance",
@@ -667,7 +667,7 @@ export const portGuides: Record<string, PortGuide> = {
     ],
     outings: [
       { fits: "The view from the village. Add a walk only if the path is dry and the group wants it.", bring: "A real rain jacket. The ship’s fjord sail already did half the day’s work." },
-      { fits: "Spend an easy hour on Bryggen’s cobblestone streets, rain or not. Take the funicular only if the cloud is above the hill.", bring: "Wear shoes that can take wet stone. A harbor walk in the rain is still the right use of a day in Bergen." },
+      { fits: "Spend an easy hour on Bryggen’s cobblestone streets, rain or not. Take the funicular only if the cloud is above the hill.", bring: "Wear shoes that can take wet stone. A harbor walk in the rain is still a good way to see Bergen." },
       { fits: "Walk the old walls, sit in one square, and have coffee. A palace and a museum will not fit in the same morning.", bring: "A layer. Baltic mornings stay cool even when the brochure looks like July." },
     ],
   },

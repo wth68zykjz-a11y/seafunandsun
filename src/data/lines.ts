@@ -174,7 +174,7 @@ export const linePages: LinePage[] = [
       {
         src: "/media/ship-symphony.jpg",
         alt: "A large cruise ship of the size used on some western Mediterranean weeks",
-        caption: "Barcelona and Rome sometimes use a ship of about 4,000 to 6,000 passengers.",
+        caption: "Barcelona and Rome sometimes have a ship of about 4,000 to 6,000 passengers.",
       },
       {
         src: "/media/ship-seabourn.jpg",
