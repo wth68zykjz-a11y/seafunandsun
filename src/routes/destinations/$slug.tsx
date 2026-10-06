@@ -155,8 +155,8 @@ export function DestinationArticle({ place, rail = false }: { place: NonNullable
               <h2 className="mt-2 font-display text-4xl">{rail ? "What to expect on the route" : "What to expect in port"}</h2>
               <p className="mt-3 text-sm text-mute">
                 {rail
-                  ? "Most of the day is on the train. The notes below say how long the stops last and how much of the day you spend in your seat."
-                  : "A port day is only the time the ship stays. The notes below say how long that usually is and how much of it you will spend walking."}
+                  ? "Most of the day is on the train. A stop is short. The notes below say what you can see from the window, and what will not fit at the station."
+                  : "A port day is only the time the ship stays. The notes below name a local dish, a church or temple, a famous building, or a stadium when the hours allow."}
               </p>
               <dl className="mt-5 grid gap-4 sm:grid-cols-2">
                 {portGuides[place.slug].facts.map((fact) => (
