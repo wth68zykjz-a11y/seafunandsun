@@ -36,7 +36,7 @@ const excluded = [
 const regions = [
   {
     title: "Adults only, Caribbean",
-    body: "Jamaica, St. Lucia, Antigua, Barbados, and Grenada. Sandals is the name most people start with. Secrets, Excellence, and the smaller couples resorts are alternatives, not copies of Sandals. A quiet pool and a nightlife resort are different trips.",
+    body: "Jamaica, St. Lucia, Antigua, Barbados, and Grenada. Sandals is a couples resort. Secrets, Excellence, and the smaller couples resorts are alternatives, not copies of Sandals. A quiet pool and a nightlife resort are different trips.",
   },
   {
     title: "Families",

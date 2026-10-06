@@ -93,7 +93,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "2 to 3 hours",
         pace: "You need to be comfortable in the water",
         detail:
-          "House reefs and short boat snorkels are the days people remember. The plan should fit the least confident swimmer in the cabin, not the keenest.",
+          "House reefs and short boat snorkels are the water days. The plan should fit the least confident swimmer in the cabin, not the keenest.",
       },
       {
         title: "A beach with an actual chair",
@@ -205,7 +205,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Easy, some standing",
         detail:
-          "Go early, then leave the afternoon for a beach. A full-day circle of Oahu plus the memorial is how people miss the ship or miss the point.",
+          "Go early, then leave the afternoon for a beach. A full-day circle of Oahu plus the memorial does not fit a short stop.",
       },
       {
         title: "Hana only on an overnight",

@@ -34,7 +34,7 @@ export const destinations: Destination[] = [
     card: "Glaciers & wildlife",
     image: "/media/alaskan.jpg",
     alt: "A tidewater glacier meeting dark water in a steep fjord",
-    lede: "Most people take Alaska once. May and August on the same ship are different trips. In May the glaciers are larger. In August the salmon are running and the bears are on the rivers. The ship does not change that.",
+    lede: "May and August on the same ship are different trips. In May the glaciers are larger, because less of the winter ice has melted. In August the salmon are running, and the bears are on the rivers to feed.",
     paragraphs: [
       "Most Alaska sailings run seven to fourteen nights round trip from Seattle, or one way between Seattle or Vancouver and Seward or Whittier. Royal Caribbean, Carnival, Norwegian, Holland America, Princess, and Celebrity sail the Inside Passage. Holland America and Princess use Vancouver often, including one-way Gulf sailings. Cunard does in some seasons, not every year. We compare them side by side, with no obligation to any one line.",
       "The reason to go is the coast: Juneau, Ketchikan, Skagway, Seward, and the fjords between them. You can hear a glacier calve. A lot of the wildlife is not something you will see from a road.",
@@ -479,7 +479,7 @@ export const destinations: Destination[] = [
     card: "Fall foliage",
     image: "/media/new-england.jpg",
     alt: "A white lighthouse and autumn trees on a rocky New England point",
-    lede: "Boston and New York are easy starts if you live in the Northeast. In October, the color along this coast is the reason to go.",
+    lede: "Boston and New York are easy starts if you live in the Northeast. In October the maples are in color along this coast.",
     paragraphs: [
       "Most sailings run three to eleven nights from Boston, with longer departures from New York. Royal Caribbean, Carnival, Norwegian, Celebrity, and Princess all sail the region. We compare them directly, without a preference for any one line.",
       "The ports are the trip: Cape Cod, Halifax, Quebec, and Bermuda on some loops. You can see a lot from the deck. The better days are still the ones ashore.",
@@ -506,7 +506,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The season runs from May through October. October is the month people return for: the maples in color, and fewer people on deck. Summer is for the beach towns. Fall is for the coast itself.",
+    when: "The season runs from May through October. In October the maples are in color, and there are fewer people on deck. Summer is for the beach towns. Fall is for the coast.",
     planning: "Fall color and a summer weekend use different ships. Say whether you can leave from Boston or New York.",
     itineraries: [
       {
