@@ -36,7 +36,7 @@ export const linePages: LinePage[] = [
     lede: "Only a handful of lines sail ships this large. They turn in Florida for a Caribbean cruise, and some of them spend a season on a Mediterranean cruise. They do not sail river cruises, and the newest 6,000-passenger ships do not sail an Alaska cruise.",
     size: "Passenger counts are the line’s double-occupancy figure. Icon-class ships are about 5,600 to 7,600. Oasis-class ships are about 5,600 to 6,700.",
     rows: [
-      { line: "Royal Caribbean", ships: "Icon class about 5,600–7,600. Oasis class about 5,600–6,700. Quantum class about 4,100–4,900. Freedom and Voyager classes about 3,100–4,300.", where: "Short Caribbean cruises from Florida. Some Oasis-class ships do a Mediterranean season. Quantum-class ships sail an Alaska cruise from Seattle. Icon and Oasis class do not sail an Alaska cruise.", fare: "Interior often $500–$1,400. Balcony often $900–$2,400. A holiday week can be well above that." },
+      { line: "Royal Caribbean", ships: "Icon class about 5,600–7,600. Oasis class about 5,600–6,700. Quantum class about 4,100–4,900. Freedom and Voyager classes about 3,100–4,300.", where: "Short Caribbean cruises from Florida. Some Oasis-class ships do a Mediterranean season. Quantum-class ships sail an Alaska cruise from Seattle. Icon and Oasis class do not sail an Alaska cruise.", fare: "Interior often $500–$1,400. Balcony often $900–$2,400. The fare for a holiday week can be well above that." },
       { line: "Carnival", ships: "Excel class, including Mardi Gras and the newer sisters, about 5,200–6,500. Vista class about 4,000.", where: "Florida and other East Coast ports for the Caribbean and the Bahamas. A smaller European season.", fare: "Interior often $400–$1,100. Balcony often $800–$1,800." },
       { line: "MSC", ships: "World class about 6,700. Meraviglia class about 4,500–6,300. Seaside class about 4,100–5,400.", where: "Miami and Port Canaveral for the Caribbean. Barcelona, Rome, and other Mediterranean turns in summer.", fare: "Interior often $400–$1,100. Balcony often $800–$1,900. Drinks and gratuities are sometimes bundled." },
       { line: "Norwegian", ships: "Encore and Breakaway classes about 4,000. Prima class about 3,100–3,600.", where: "Florida and the Northeast for a Caribbean cruise. Encore-class ships also sail an Alaska cruise from Seattle. Prima-class ships sail a European cruise.", fare: "Interior often $500–$1,300. Balcony often $900–$2,200." },
@@ -83,11 +83,11 @@ export const linePages: LinePage[] = [
     lede: "The biggest ships sail Caribbean cruises that depart from Florida. Bermuda cruises that depart from the Northeast are usually on a smaller ship, and the ship stays longer because Bermuda is the destination.",
     size: "The ships that turn in Miami, Fort Lauderdale, and Port Canaveral are often 4,000 to about 7,000 passengers. Bermuda and many of the smaller-island weeks use ships of about 2,000 to 4,000.",
     rows: [
-      { line: "Royal Caribbean", ships: "Oasis and Icon classes about 5,600–7,600. Freedom and Voyager classes about 3,100–4,300.", where: "Short Caribbean cruises that depart from Florida, and some longer cruises that depart from the Northeast.", fare: "Interior often $500–$1,400. Balcony often $900–$2,400. A holiday week can be well above that." },
+      { line: "Royal Caribbean", ships: "Oasis and Icon classes about 5,600–7,600. Freedom and Voyager classes about 3,100–4,300.", where: "Short Caribbean cruises that depart from Florida, and some longer cruises that depart from the Northeast.", fare: "Interior often $500–$1,400. Balcony often $900–$2,400. The fare for a holiday week can be well above that." },
       { line: "Carnival", ships: "Excel class (Mardi Gras and newer) about 5,200–6,500. Older Fantasy and Spirit ships about 2,100–2,600.", where: "Florida, and some Bahamas and Caribbean cruises that depart from other East Coast ports.", fare: "Interior often $400–$1,100. Balcony often $800–$1,800." },
       { line: "Norwegian", ships: "Encore and Breakaway classes about 4,000. Prima class about 3,100. Older Jewel-class ships about 2,400.", where: "Florida and the Northeast. Private-island days are common on the short weeks.", fare: "Interior often $500–$1,300. Balcony often $900–$2,200." },
       { line: "MSC", ships: "World class about 6,700. Seaside class about 4,100. Smaller ships about 2,500–3,200.", where: "Miami and Port Canaveral for the Caribbean. Also the Mediterranean, on the Europe page.", fare: "Interior often $400–$1,100. Balcony often $800–$1,900. Drinks and gratuities are sometimes bundled, sometimes not." },
-      { line: "Disney", ships: "Wish class about 4,000. Dream and Fantasy about 4,000. Magic and Wonder about 2,700.", where: "Port Canaveral for most Caribbean weeks. Wonder also does Alaska, on that page.", fare: "A week is often $2,000–$4,500 a person. Peak school holidays sit higher. The fare is not comparable to Carnival’s." },
+      { line: "Disney", ships: "Wish class about 4,000. Dream and Fantasy about 4,000. Magic and Wonder about 2,700.", where: "Port Canaveral for most Caribbean weeks. Wonder also does Alaska, on that page.", fare: "A week is often $2,000–$4,500 a person. The fare is higher during school holidays. The fare is not comparable to Carnival’s." },
       { line: "Celebrity", ships: "Edge class about 3,200. Solstice class about 2,850. Older Millennium ships about 2,000.", where: "Fort Lauderdale and shorter island weeks. Also Europe and Alaska.", fare: "Balcony often $1,300–$2,800." },
       { line: "Princess", ships: "Sun and Sphere classes about 3,500–4,300. Older Grand-class ships about 2,600.", where: "Fort Lauderdale and some longer Caribbean cruises. The larger new ships sail the Caribbean, not an Alaska cruise.", fare: "Balcony often $1,200–$2,600." },
       { line: "Holland America", ships: "Pinnacle class about 2,650. Older ships about 1,400–1,900.", where: "Fewer Caribbean weeks than the lines above. More of the fleet is in Alaska and longer voyages.", fare: "Balcony often $1,300–$2,600." },
@@ -185,7 +185,7 @@ export const linePages: LinePage[] = [
     lede: "Western Mediterranean cruises that depart from Barcelona, Rome, and Athens can be on very large ships. Cruises to the Greek islands, the Baltic, and Norway are more often on a mid-size ship. Large ships do not depart from the Venice lagoon.",
     size: "Barcelona and Civitavecchia (Rome) regularly see ships of 4,000 to 6,000 passengers. Norway, the Baltic, and many Greek-island weeks are about 1,500 to 3,500.",
     rows: [
-      { line: "MSC", ships: "Often 4,000–6,700 in the western Mediterranean. Smaller ships on some eastern routes.", where: "Barcelona, Rome, and Athens.", fare: "Balcony, 7 nights, often $900–$2,200. August is the high end." },
+      { line: "MSC", ships: "Often 4,000–6,700 in the western Mediterranean. Smaller ships on some eastern routes.", where: "Barcelona, Rome, and Athens.", fare: "Balcony, 7 nights, often $900–$2,200. The fare in August is at the high end of that range." },
       { line: "Royal Caribbean", ships: "Oasis-class ships of about 5,600 do some western Mediterranean seasons. Other weeks are 3,000–4,500.", where: "Barcelona and Rome more than the small Greek ports.", fare: "Balcony, 7 nights, often $1,100–$2,600." },
       { line: "Norwegian and Carnival", ships: "About 2,400–4,000.", where: "Western Mediterranean from Barcelona or Rome. Carnival’s European season is smaller than its Caribbean season.", fare: "Balcony, 7 nights, often $900–$2,200." },
       { line: "Celebrity", ships: "Edge class about 3,200. Solstice class about 2,850.", where: "Mediterranean and Greek islands. Also northern Europe in some summers.", fare: "Balcony, 7 nights, often $1,500–$3,200." },
@@ -195,7 +195,7 @@ export const linePages: LinePage[] = [
     notes: [
       "Luxury ships in these same ports are a different size and a different fare. They are on the luxury ocean and yacht pages.",
       "River ships carry about 150 to 190 passengers and start in cities such as Budapest, Amsterdam, and Basel. See the river and expedition page.",
-      "July and August cost more than May or October on a Mediterranean cruise.",
+      "The cruise fare in July and August is higher than the cruise fare in May or October.",
     ],
     benefits: [
       {
@@ -282,7 +282,7 @@ export const linePages: LinePage[] = [
     lede: "These lines sail the Caribbean, Alaska, the Mediterranean, and longer routes on ships that stay under about 1,250 passengers. Most do not publish a fare you can book yourself.",
     size: "These ships run from about 450 passengers to about 1,200. Explora is about 922. Oceania’s larger ships are about 1,200. None of them is a 5,000-passenger ship.",
     rows: [
-      { line: "Regent Seven Seas", ships: "About 500–750. Seven Seas Prestige, about 800, enters service in late 2026.", where: "Caribbean, Alaska, the Mediterranean, and longer voyages. Many shore trips and gratuities are in the fare, and economy air is often included.", fare: "A week is often $6,000–$14,000 a person. Suites and holiday weeks sit higher. Quoted." },
+      { line: "Regent Seven Seas", ships: "About 500–750. Seven Seas Prestige, about 800, enters service in late 2026.", where: "Caribbean, Alaska, the Mediterranean, and longer voyages. Many shore trips and gratuities are in the fare, and economy air is often included.", fare: "A week is often $6,000–$14,000 a person. The fare for a suite, or for a holiday week, is higher. Quoted." },
       { line: "Silversea", ships: "Ocean ships about 300–730. Silver Nova and Silver Ray are about 728. Expedition ships are smaller and are on the river and expedition page.", where: "The same oceans as Regent, plus expedition routes. Drinks, a butler, and gratuities are in the fare.", fare: "A week is often $6,000–$15,000 a person. Quoted." },
       { line: "Seabourn", ships: "Ocean ships about 450–650. Venture and Pursuit, the expedition ships, are about 260.", where: "Mediterranean, Caribbean, Alaska one-ways from Vancouver, and longer routes. Drinks and gratuities are included. Air is not.", fare: "A week is often $5,000–$12,000 a person. Quoted." },
       { line: "Explora Journeys", ships: "About 922, in about 460 suites. Explora III joined the fleet in 2026.", where: "Mediterranean, Caribbean, and longer ocean routes. Drinks and gratuities are included. Most excursions are not.", fare: "A week is often $4,000–$10,000 a person. Quoted." },
@@ -334,7 +334,7 @@ export const linePages: LinePage[] = [
       { line: "SeaDream", ships: "About 112.", where: "Mediterranean and Caribbean, on two yachts. The week is informal, and the marina is part of the day.", fare: "A week is often $5,000–$12,000 a person. Quoted." },
     ],
     notes: [
-      "These fares are for the ship. A holiday week, or a suite, can be far above the range.",
+      "These fares are for the ship. The fare for a holiday week, or for a suite, can be far above that range.",
       "If the public search does not list the yacht, that is normal. Send the plans and we will price them.",
     ],
     benefits: [
