@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { PageIntro, Shell } from "@/components/site-chrome";
-import { linePageBySlug, linePages } from "@/data/lines";
+import { linePageBySlug, linePagesInSizeOrder } from "@/data/lines";
 import { breadcrumbLd, clip, JsonLd, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/lines/$slug")({
@@ -112,7 +112,7 @@ function LineRegionPage() {
           </Link>
         </div>
         <ul className="mt-10 flex flex-wrap gap-3 text-sm">
-          {linePages
+          {linePagesInSizeOrder
             .filter((item) => item.slug !== page.slug)
             .map((item) => (
               <li key={item.slug}>

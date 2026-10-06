@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageIntro, Shell } from "@/components/site-chrome";
-import { linePages } from "@/data/lines";
+import { linePagesInSizeOrder } from "@/data/lines";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/lines/")({
@@ -19,8 +19,8 @@ function LinesPage() {
     <Shell>
       <PageIntro
         kicker="Cruise lines"
-        title="Size and price, by region."
-        lede="Select a card. Each one opens the ships in that group, the passenger counts, and a general price range."
+        title="Ship size, from the smallest to the largest."
+        lede="Select a card. The heading is the passenger count. Each card opens those ships, where they sail, and a general price range."
       />
       <p className="mx-auto max-w-6xl px-4 pb-6 text-mute">
         Fort Lauderdale gets you on the ship. Miami, Vancouver, and Barcelona are good cities to explore before or after.{" "}
@@ -30,7 +30,7 @@ function LinesPage() {
         .
       </p>
       <div className="mx-auto grid max-w-6xl gap-4 px-4 pb-20 sm:grid-cols-2">
-        {linePages.map((page) => (
+        {linePagesInSizeOrder.map((page) => (
           <Link key={page.slug} to="/lines/$slug" params={{ slug: page.slug }} className="group overflow-hidden rounded-xl border border-line bg-foam hover:border-tide">
             <img src={page.image} alt={page.alt} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
             <div className="p-5">
