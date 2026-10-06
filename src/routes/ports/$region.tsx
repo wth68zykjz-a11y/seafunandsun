@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageIntro, Shell } from "@/components/site-chrome";
+import { cruisePlaces } from "@/data/place-names";
 import { airlineNote, portPageBySlug, portPages, type Port, type PortCall } from "@/data/ports";
 import { CabinGuide } from "@/components/cabin-guide";
 import { LocalClock } from "@/components/local-clock";
@@ -24,7 +25,10 @@ const portMap: Record<string, string> = {
   other: "/media/maps/world.png",
 };
 
+const placeTitle = Object.fromEntries(cruisePlaces.map((item) => [item.slug, item.title]));
+
 function PortCard({ port }: { port: Port }) {
+  const destination = port.slug ? placeTitle[port.slug] : undefined;
   return (
     <article className="overflow-hidden rounded-xl border border-line bg-foam">
       <img src={port.image} alt={port.alt} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
@@ -44,9 +48,14 @@ function PortCard({ port }: { port: Port }) {
         <span className="font-medium text-ink">Currency: </span>
         {port.money}
       </p>
-      {port.slug ? (
-        <Link to="/destinations/$slug" params={{ slug: port.slug }} className="mt-4 inline-flex text-sm font-medium text-tide">
-          See that region
+      {destination ? (
+        <Link
+          to="/destinations/$slug"
+          params={{ slug: port.slug! }}
+          className="mt-5 inline-flex min-h-11 items-center rounded-md bg-coral px-4 text-base font-medium text-foam hover:bg-coral-deep"
+          style={{ backgroundColor: "#8e3426", color: "#f7fbf9" }}
+        >
+          See {destination}
         </Link>
       ) : null}
       </div>
