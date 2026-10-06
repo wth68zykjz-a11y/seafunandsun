@@ -89,7 +89,7 @@ export const linePages: LinePage[] = [
       { line: "MSC", ships: "World class about 6,700. Seaside class about 4,100. Smaller ships about 2,500–3,200.", where: "Miami and Port Canaveral for the Caribbean. Also the Mediterranean, on the Europe page.", fare: "Interior often $400–$1,100. Balcony often $800–$1,900. Drinks and gratuities are sometimes bundled, sometimes not." },
       { line: "Disney", ships: "Wish class about 4,000. Dream and Fantasy about 4,000. Magic and Wonder about 2,700.", where: "Port Canaveral for most Caribbean weeks. Wonder also does Alaska, on that page.", fare: "A week is often $2,000–$4,500 a person. Peak school holidays sit higher. The fare is not comparable to Carnival’s." },
       { line: "Celebrity", ships: "Edge class about 3,200. Solstice class about 2,850. Older Millennium ships about 2,000.", where: "Fort Lauderdale and shorter island weeks. Also Europe and Alaska.", fare: "Balcony often $1,300–$2,800." },
-      { line: "Princess", ships: "Sun and Sphere classes about 3,500–4,300. Older Grand-class ships about 2,600.", where: "Fort Lauderdale and some longer Caribbean routes. The larger new ships are not the Alaska fleet.", fare: "Balcony often $1,200–$2,600." },
+      { line: "Princess", ships: "Sun and Sphere classes about 3,500–4,300. Older Grand-class ships about 2,600.", where: "Fort Lauderdale and some longer Caribbean cruises. The larger new ships sail the Caribbean, not an Alaska cruise.", fare: "Balcony often $1,200–$2,600." },
       { line: "Holland America", ships: "Pinnacle class about 2,650. Older ships about 1,400–1,900.", where: "Fewer Caribbean weeks than the lines above. More of the fleet is in Alaska and longer voyages.", fare: "Balcony often $1,300–$2,600." },
     ],
     notes: [
@@ -139,7 +139,7 @@ export const linePages: LinePage[] = [
       { line: "Carnival", ships: "About 2,100–4,000, from Seattle rather than Vancouver.", where: "Inside Passage round trips.", fare: "Balcony, 7 nights, often $900–$2,200." },
       { line: "Disney", ships: "Disney Wonder, about 2,700.", where: "Alaska round trips, including some from Vancouver.", fare: "Often $3,000–$6,000 a person for a week." },
       { line: "Silversea and Seabourn", ships: "About 450–600 on the Alaska ships.", where: "One-way between Vancouver and Seward, and a smaller set of coastal weeks.", fare: "Often $6,000–$14,000 a person for 7 nights. More is included than on the lines above. Many of these are quoted." },
-      { line: "Norwegian, Pride of America", ships: "About 2,200.", where: "Honolulu, inter-island, year-round. This is not an Alaska ship.", fare: "A week is often $1,200–$2,800. A Hawaii sailing from California on Holland America, Princess, or Celebrity is a different trip and usually longer." },
+      { line: "Norwegian, Pride of America", ships: "About 2,200.", where: "This ship sails among the Hawaiian islands from Honolulu. It does not sail Alaska. A cruise from California on Holland America, Princess, or Celebrity spends days at sea before the islands and is usually longer.", fare: "A week is often $1,200–$2,800." },
     ],
     notes: [
       "A Vancouver embarkation needs a passport. Prices in the city are in Canadian dollars. If you stay a few days before or after the cruise, the ship is not counting you back. You can walk the harbor in the daytime or after dark, talk with people, and eat where you want, such as a seafood counter on the water at lunch or a quieter dining room in the evening.",
@@ -160,7 +160,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "What these ships leave out",
-        text: "You do not get the newest 6,000-passenger ships, or their water parks. A one-way to Seward or Whittier shows more of the Gulf and needs a flight at one end. A Seattle round trip is one airport. Hawaii’s Pride of America is a different week: the islands, overnight, and no glaciers.",
+        text: "You do not get the newest 6,000-passenger ships, or their water parks. A one-way cruise to Seward or Whittier shows more of the Gulf and needs a flight at one end. A round-trip cruise from Seattle uses one airport. Hawaii’s Pride of America sails among the islands, often overnight, and it has no glaciers.",
       },
     ],
   },
@@ -195,7 +195,7 @@ export const linePages: LinePage[] = [
     notes: [
       "Luxury ships in these same ports are a different size and a different fare. They are on the luxury ocean and yacht pages.",
       "River ships carry about 150 to 190 passengers and start in cities such as Budapest, Amsterdam, and Basel. See the river and expedition page.",
-      "July and August fares in the Mediterranean are not the May or October fares.",
+      "July and August cost more than May or October on a Mediterranean cruise.",
     ],
     benefits: [
       {
@@ -237,7 +237,7 @@ export const linePages: LinePage[] = [
     lede: "These ships are chosen for the river or the landing, not for the number of restaurants. The luxury ocean ships and the yachts are on their own pages.",
     size: "A European river ship is about 150 to 190 passengers. An expedition ship is often 100 to 400.",
     rows: [
-      { line: "Viking river", ships: "Longships about 190.", where: "Danube, Rhine, Seine, Douro, and other European rivers. Viking also has a Mississippi ship. That is not a European product.", fare: "A week is often $2,500–$5,500 a person, with meals and a daily excursion on most European rivers." },
+      { line: "Viking river", ships: "Longships about 190.", where: "Danube, Rhine, Seine, Douro, and other European rivers. Viking also has a Mississippi ship. That ship sails the Mississippi, not the Danube or the Rhine.", fare: "A week is often $2,500–$5,500 a person, with meals and a daily excursion on most European rivers." },
       { line: "AmaWaterways, Avalon, Uniworld, Scenic", ships: "About 120–190.", where: "The same European rivers. American Cruise Lines does not sail them.", fare: "Often $3,000–$6,500 a person for a week. Uniworld and Scenic include more drinks. The fare is often quoted." },
       { line: "American Cruise Lines riverboats", ships: "About 180. Song, Harmony, Jazz, Melody, Symphony, and Serenade.", where: "U.S. rivers only: Mississippi, Ohio, Columbia and Snake, and the Great Lakes. These are the modern boats, not the paddlewheelers.", fare: "Often $4,000–$8,000 a person for a week. Quoted." },
       { line: "American Cruise Lines paddlewheelers", ships: "American Heritage, Splendor, Pride, and West, about 110–180. Heritage is about 150.", where: "The same U.S. rivers. The red wheel turns, with modern engines behind it. Not Europe. The American Queen boats were a different line, and they are no longer sailing.", fare: "Often $4,500–$8,000 a person for a week. Quoted." },
@@ -286,7 +286,7 @@ export const linePages: LinePage[] = [
       { line: "Silversea", ships: "Ocean ships about 300–730. Silver Nova and Silver Ray are about 728. Expedition ships are smaller and are on the river and expedition page.", where: "The same oceans as Regent, plus expedition routes. Drinks, a butler, and gratuities are in the fare.", fare: "A week is often $6,000–$15,000 a person. Quoted." },
       { line: "Seabourn", ships: "Ocean ships about 450–650. Venture and Pursuit, the expedition ships, are about 260.", where: "Mediterranean, Caribbean, Alaska one-ways from Vancouver, and longer routes. Drinks and gratuities are included. Air is not.", fare: "A week is often $5,000–$12,000 a person. Quoted." },
       { line: "Explora Journeys", ships: "About 922, in about 460 suites. Explora III joined the fleet in 2026.", where: "Mediterranean, Caribbean, and longer ocean routes. Drinks and gratuities are included. Most excursions are not.", fare: "A week is often $4,000–$10,000 a person. Quoted." },
-      { line: "Viking ocean", ships: "About 930. These are not the Viking river ships.", where: "Mediterranean, the Baltic, Norway, and longer voyages. Drinks and a daily excursion are included on many sailings. Shore trips are not included the way Regent includes them.", fare: "Often $3,000–$7,000 a person for 7 to 14 nights. Many sailings are quoted." },
+      { line: "Viking ocean", ships: "About 930 passengers. The river longships carry about 190.", where: "Mediterranean, the Baltic, Norway, and longer voyages. Drinks and a daily excursion are included on many sailings. Shore trips are not included the way Regent includes them.", fare: "Often $3,000–$7,000 a person for 7 to 14 nights. Many sailings are quoted." },
       { line: "Oceania", ships: "About 680 on the smaller ships. Marina, Riviera, Vista, and Allura are about 1,200.", where: "Longer, port-heavy routes in Europe, the Caribbean, and elsewhere. This is a smaller premium ship, not an all-suite yacht.", fare: "A week is often $3,000–$7,000 a person. Drinks and excursions are often extra. Quoted on many sailings." },
     ],
     notes: [

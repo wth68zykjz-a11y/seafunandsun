@@ -17,7 +17,7 @@ export const Route = createFileRoute("/resorts")({
 });
 
 const included = [
-  "The room category, named before you pay. A “deluxe” and an ocean view are not the same room.",
+  "The quote names the room before you pay. A category called deluxe is not an ocean view unless the description says ocean view.",
   "Breakfast, lunch, and dinner at the restaurants on the inclusion list. A few of those restaurants take reservations, and those tables fill.",
   "House wine, beer, and a defined liquor list. The top shelf is often a separate charge.",
   "Non-motorized water sports and the fitness room, at most of the properties we book.",
@@ -30,13 +30,13 @@ const excluded = [
   "Scuba certification, jet skis, and golf.",
   "Tours that leave the property.",
   "Airport transfers, unless the rate says the transfer is included.",
-  "A holiday week or a minimum-night rule. The summer rate is not the Christmas rate.",
+  "A holiday week often has a minimum number of nights. The Christmas rate is higher than the summer rate.",
 ];
 
 const regions = [
   {
     title: "Adults only, Caribbean",
-    body: "Jamaica, St. Lucia, Antigua, Barbados, and Grenada. Sandals is a couples resort. Secrets, Excellence, and the smaller couples resorts are alternatives, not copies of Sandals. A quiet pool and a nightlife resort are different trips.",
+    body: "Jamaica, St. Lucia, Antigua, Barbados, and Grenada. Sandals is a couples resort. Secrets, Excellence, and the smaller couples resorts are alternatives, not copies of Sandals. Say whether you want a quiet pool or a resort built around bars and shows.",
   },
   {
     title: "Families",
@@ -52,7 +52,7 @@ const regions = [
   },
   {
     title: "Overwater villas",
-    body: "The Maldives, and a few similar stays, are a different trip. The flight is much longer, the nightly rate is much higher, and most of them are quoted rather than posted. If that is the trip you want, say so. A Caribbean week is not a substitute for it.",
+    body: "The Maldives take a much longer flight and a much higher nightly rate than a Caribbean resort. Most of those stays are quoted rather than posted. If that is the stay you want, say so. Booking a Caribbean week does not get you there.",
   },
 ];
 

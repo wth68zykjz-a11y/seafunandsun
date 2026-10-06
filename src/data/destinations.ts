@@ -130,7 +130,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "The region sails year-round. December through April is peak season: the steadiest weather, and the highest fares. August through October is hurricane season. Named storms rarely reach a ship at sea, and the fares are lower.",
-    planning: "Send the month and the homeport. A Miami week and a New York week are different trips, and the sea days should be visible before you choose.",
+    planning: "Send the month and the homeport. A week from Miami spends more nights in the islands. A week from New York, Baltimore, or Boston adds sea days each way. Those sea days should be on the itinerary before you choose.",
     itineraries: [
       {
         title: "Western Caribbean",
@@ -165,7 +165,7 @@ export const destinations: Destination[] = [
     card: "Ports & culture",
     image: "/media/mediterranean.jpg",
     alt: "A whitewashed harbor town above a small Mediterranean port",
-    lede: "The coast is different most mornings. Pick the ship for the ports you want, not for the photograph on the cover.",
+    lede: "Most mornings you wake up in a different port. One day can be Barcelona and the next a smaller harbor. Pick the ship for those ports, not for the photograph on the cover.",
     paragraphs: [
       "Sailings run seven to fourteen nights from Barcelona, Civitavecchia for Rome, and Piraeus for Athens. Royal Caribbean, MSC, Norwegian, Celebrity, and Cunard all sail the region, and the luxury lines sail it too. A Venice stop is usually Ravenna or Trieste, not a dock in the lagoon. We compare the routes, the ports, and what the fare includes, then match the ship to how you like to travel.",
       "Greece and the Adriatic pull north. Spain and the Riviera pull west. Tell us which coast you want, and we will start from there.",
@@ -304,7 +304,7 @@ export const destinations: Destination[] = [
     alt: "Black volcanic rock and turquoise water on a Hawaiian coast",
     lede: "The ship moves from island to island, so you do not need a car between them. Longer sailings from the West Coast continue to Tahiti.",
     paragraphs: [
-      "Norwegian's Pride of America sails the islands year-round from Honolulu. Holland America, Princess, and Celebrity sail longer Hawaiian routes from San Diego, Los Angeles, or Vancouver, and some continue to Tahiti. Ships stop at Maui. They rarely start there. A Polynesia itinerary and an inter-island week are not the same vacation.",
+      "Norwegian's Pride of America stays among the Hawaiian islands and returns to Honolulu. Holland America, Princess, and Celebrity sail from San Diego, Los Angeles, or Vancouver. Those cruises spend several days at sea before the islands, and some continue to Tahiti. Ships stop at Maui. They rarely depart from there.",
       "Tell us which islands you want time on, and we will find the sailings that actually stop there.",
     ],
     lists: [
@@ -415,9 +415,9 @@ export const destinations: Destination[] = [
     card: "Fjords & Iceland",
     image: "/media/northern-europe.jpg",
     alt: "A steep fjord with a thin waterfall and low clouds",
-    lede: "Fjords, ice, and the midnight sun. A ship of 200 guests and a ship of 2,500 do not have the same day in a narrow fjord.",
+    lede: "Summer brings the midnight sun. Farther north there is ice. In a narrow fjord, a ship of about 200 guests can go farther in. A ship of about 2,500 stays in the wider water.",
     paragraphs: [
-      "Holland America, Princess, Norwegian, Celebrity, MSC, Viking, and Cunard sail the fjords, Iceland, and the Baltic from Amsterdam, Copenhagen, Southampton, and the Norwegian ports. Hapag-Lloyd and the expedition lines go farther north, toward Svalbard and Greenland. A fjord looks different from a ship of 2,500 guests than from a ship of 200.",
+      "Holland America, Princess, Norwegian, Celebrity, MSC, Viking, and Cunard sail the fjords, Iceland, and the Baltic from Amsterdam, Copenhagen, Southampton, and the Norwegian ports. Hapag-Lloyd and the expedition lines go farther north, toward Svalbard and Greenland.",
       "Tell us whether you want the well-known fjords or ice farther north, and we will choose the sailing that matches that.",
     ],
     lists: [
@@ -684,7 +684,7 @@ export const destinations: Destination[] = [
     alt: "Hong Kong and Victoria Harbour at dusk",
     lede: "Singapore and Tokyo are the usual starts. The South China Sea adds long days at sea, so the flights belong in the same booking as the cruise.",
     paragraphs: [
-      "Princess, Holland America, Celebrity, Royal Caribbean, and Norwegian sail Asia from Singapore, Tokyo, and Hong Kong. Cunard comes through on longer voyages. It is not a weekly Asia ship. We compare the ones that are actually scheduled, and we match the routing to the time you have.",
+      "Princess, Holland America, Celebrity, Royal Caribbean, and Norwegian sail from Singapore, Tokyo, and Hong Kong. Cunard does not sail a weekly cruise from those cities. It comes through on a longer voyage. We compare the ones that are actually scheduled, and we match the routing to the time you have.",
       "The ports are unlike a standard Caribbean or Mediterranean list. Tell us the dates, and we will shape the trip around the ones you care about.",
     ],
     lists: [
@@ -714,7 +714,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "December through March is the calmer window. Typhoon season peaks in summer, and that is when the shore days become uncertain.",
-    planning: "Singapore and Tokyo are different trips. Name the city, and how many days you can be away.",
+    planning: "A cruise from Singapore goes to Thailand, Vietnam, and the ports around the South China Sea. A cruise from Tokyo stays in Japan and Korea. Name the city, and how many days you can be away.",
     itineraries: [
       {
         title: "Southeast Asia",
@@ -749,7 +749,7 @@ export const destinations: Destination[] = [
     card: "Rio & Cape Horn",
     image: "/media/south-america.jpg",
     alt: "A Patagonian fjord with a distant glacier",
-    lede: "Rio and the Brazilian coast are one trip. The southern fjords and Cape Horn are another. The ship and the port list should match the one you want.",
+    lede: "A cruise along the Brazilian coast, starting in Rio, is one sailing. A cruise through the southern fjords and around Cape Horn is another sailing. They do not share a port list. The ship should match the one you want.",
     paragraphs: [
       "Many current sailings begin in Rio de Janeiro and run the Brazilian coast. The older pattern was an Atlantic crossing from New York. Carnival, Norwegian, Holland America, and Cunard still touch the region, and the routes into the Patagonian fjords belong mainly to the expedition lines. We compare the lines that are actually scheduled, not the ones that sailed it years ago.",
       "Tell us whether you want the coast and the cities or the glaciers, and we will build the trip around the ports that match.",
@@ -948,7 +948,7 @@ export const destinations: Destination[] = [
         season: "Mostly spring through fall",
         ship: "Belmond. Historic cabins, suites, and grand suites",
         path: "Often Paris toward Venice. Some dates run through to Istanbul.",
-        ports: ["Meals on the train", "The cabin chosen before you pay", "Quoted, not a fare you click"],
+        ports: ["Meals on the train", "The cabin chosen before you pay", "A quote, not a fare posted online"],
       },
     ],
   },
@@ -987,7 +987,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "The season runs from October through April, which is summer down there. November through March is the core. The Great Barrier Reef is warm water. Milford Sound and the other fiords are cold. A sailing that does both is a compromise between those two.",
-    planning: "Flights to Sydney or Auckland belong in the quote. A fare that ignores them is not a fare.",
+    planning: "Flights to Sydney or Auckland belong in the quote. A quote that leaves them out is not the full price.",
     itineraries: [
       {
         title: "The Australian coast",
@@ -1025,7 +1025,7 @@ export const destinations: Destination[] = [
     lede: "A Panama Canal cruise is a transit, not a loop of beaches. A full transit changes oceans. A partial transit goes into Gatun Lake and turns around.",
     paragraphs: [
       "Most full transits run fourteen to seventeen nights, one way. The usual departure port on the Caribbean side is Fort Lauderdale, Miami, or New Orleans. Los Angeles or San Diego is the usual Pacific end, and some sailings continue to Seattle or Vancouver. Princess, Holland America, Celebrity, Norwegian, Carnival, Royal Caribbean, and Cunard schedule them, mainly in spring and fall, when ships move between a Caribbean cruise and the West Coast or an Alaska cruise. Regent, Silversea, Oceania, and Viking ocean do as well. Many of those sailings are quoted.",
-      "The same brochure word covers two different trips. The comparison below is the one to use before you look at a fare.",
+      "A full transit and a partial transit are both called a Panama Canal cruise. A full transit goes from the Caribbean to the Pacific, or the other way, in about 14 to 17 nights. A partial transit is a round trip from Florida into Gatun Lake, often 10 or 11 nights. Compare those two before you look at a fare.",
     ],
     lists: [
       {
@@ -1034,7 +1034,7 @@ export const destinations: Destination[] = [
           "Full transit, Caribbean to Pacific — Fort Lauderdale or Miami to San Diego or Los Angeles, about 14 to 17 nights",
           "Full transit the other way — a West Coast, Seattle, or Vancouver start, ending in Florida",
           "Partial transit — a Florida round trip into Gatun Lake, often 10 or 11 nights",
-          "A longer repositioning — the canal is one day of a voyage that also includes Mexico or Alaska. That is a different trip.",
+          "A longer repositioning spends one day in the canal. The other days are in Mexico or on the way to Alaska",
         ],
       },
       {

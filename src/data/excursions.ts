@@ -453,7 +453,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "A full day and an evening",
         pace: "Your choice",
         detail:
-          "A guide is worth booking on an overnight: one neighborhood, a table, a late return. Two hours in a tender port is not the same kind of day.",
+          "A guide is worth booking on an overnight: one neighborhood, a table, and a late return. A two-hour tender stop is a walk near the landing.",
       },
       {
         title: "Crossing days, on purpose",
@@ -493,7 +493,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "A few hours, sometimes overnight",
         pace: "Easy walking",
         detail:
-          "Some routes only pause. A real hike needs a night off the train. A ten-minute stop is not a national park.",
+          "Some routes only pause. A hike needs a night off the train. A ten-minute station stop is not long enough for a national park.",
       },
       {
         title: "The city on either end",
@@ -557,7 +557,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "The canal day has no gangway. A stop in Cartagena is usually a morning or an afternoon. Panama City is a port only when the itinerary says the ship docks." },
       { label: "Worth the time", text: "Watch the locks from the deck. In Cartagena, the walled city is the walk, and you can eat there. A long coach to a beach is a different plan." },
       { label: "Best for", text: "Travelers who want the transit itself, and who can fly home from a different coast on a full transit." },
-      { label: "Often a poor fit", text: "A seven-night Caribbean loop. This is a longer voyage, and a partial transit is not the same as a full one." },
+      { label: "Often a poor fit", text: "A seven-night Caribbean loop. A partial transit goes into Gatun Lake and comes back out the same side. A full transit goes from one ocean to the other, and it takes longer." },
     ],
     outings: [
       { fits: "Everyone on the ship. There is nothing to book.", bring: "A hat and sun cover. The day is hot, and rain is ordinary." },
