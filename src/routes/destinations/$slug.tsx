@@ -35,7 +35,7 @@ const ashoreNotes: Record<string, string> = {
   hawaii:
     "Inter-island days run longer than a Caribbean call, and Pride of America often stays into the evening. The day might be a beach, a drive, or the north shore. Pearl Harbor belongs to a night on Oahu before or after a California crossing, when you are not watching the gangway. A luau needs the ship still in port after dark.",
   bermuda:
-    "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is a bus or taxi ride to the south shore, so a short stop does not reach it. Hamilton is a ferry or a bus, not a walk from the ship. Sailings from Boston, New York, or Baltimore include sea days each way. Extra nights on the island are for the beaches and the town after the ship has gone.",
+    "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is a bus or taxi ride to the south shore. Hamilton is a ferry or a bus. An overnight is enough time for both. A short stop is the Dockyard. Sailings from Boston, New York, or Baltimore include sea days each way.",
   "northern-europe":
     "Baltic and Norway calls often end in the afternoon. Bergen is the wharf. Copenhagen is the harbor and Nyhavn. Ocean ships for Amsterdam dock at IJmuiden, so the Rijksmuseum takes more of the day than a pier in the center would. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for one museum and one neighborhood.",
   "canada-new-england":
@@ -62,7 +62,7 @@ const ashoreLeads: Record<string, string> = {
   mediterranean: "Barcelona is a walk into the old city. Rome’s ship docks at Civitavecchia, about an hour out. Athens is the Acropolis when the call is long enough.",
   european: "Lisbon, the London ports, and the Mediterranean cities on these routes are short if the ship leaves in the afternoon. Extra nights are how you see one of them properly.",
   hawaii: "These island calls run longer than a Caribbean stop. Pride of America often stays into the evening. A luau still needs the ship in port after dark.",
-  bermuda: "The ship is at the Dockyard. Horseshoe Bay is a ride to the south shore. An overnight is extra time in port. It is not the same thing as a day at the beach.",
+  bermuda: "The ship is at the Dockyard. Horseshoe Bay is a ride to the south shore, and Hamilton is a ferry or a bus. If the ship stays overnight, there is time for both.",
   "northern-europe": "Bergen is the wharf. Copenhagen is Nyhavn if the call is long enough. Ocean ships for Amsterdam dock at IJmuiden, so the museum day is longer than it looks.",
   "canada-new-england": "Boston is the harbor and the old streets. Quebec is the upper town above the river. A fall sailing is more likely to leave late than a short summer stop.",
   river: "The ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village.",
