@@ -142,7 +142,7 @@ export const linePages: LinePage[] = [
       { line: "Norwegian, Pride of America", ships: "About 2,200.", where: "Honolulu, inter-island, year-round. This is not an Alaska ship.", fare: "A week is often $1,200–$2,800. A Hawaii sailing from California on Holland America, Princess, or Celebrity is a different trip and usually longer." },
     ],
     notes: [
-      "A Vancouver embarkation needs a passport. Prices in the city are in Canadian dollars. A few days before or after, the ship is not counting you back. Walk the harbor after dark, talk to people, and eat where the room is already full.",
+      "A Vancouver embarkation needs a passport. Prices in the city are in Canadian dollars. If you stay a few days before or after the cruise, the ship is not counting you back. You can walk the harbor after dark, talk with people, and eat where the room is already full, such as a seafood counter on the water or a quieter dining room away from the cruise terminal.",
       "May still has the larger glaciers. August is the salmon and the bears. The same ship is not the same trip in those two months.",
     ],
     benefits: [
