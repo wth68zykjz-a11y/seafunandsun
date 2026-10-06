@@ -143,7 +143,7 @@ export const submitInquiry = createServerFn({ method: "POST" })
       console.error("[inquiry] email status not stored", err instanceof Error ? err.message : "update failed");
     }
 
-    return { ok: true as const, reference, emailed: emailStatus === "sent" };
+    return { ok: true as const, reference, emailed: emailStatus === "sent", emailStatus };
   });
 
 export const listInquiries = createServerFn({ method: "POST" })

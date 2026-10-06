@@ -97,7 +97,7 @@ export function QuoteForm({
   const [trip, setTrip] = useState<Trip>(kind === "ski" ? "ski" : kind === "land" ? "land" : tripFromPreset(knownPreset));
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
   const [reference, setReference] = useState("");
-  const [emailed, setEmailed] = useState(false);
+  const [emailNote, setEmailNote] = useState("");
   const [error, setError] = useState("");
   const active: Trip = chooseTrip ? trip : kind === "ski" ? "ski" : kind === "land" ? "land" : "cruise";
   const style = styleCopy[active];
@@ -138,7 +138,7 @@ export function QuoteForm({
         return;
       }
       setReference(result.reference);
-      setEmailed(result.emailed);
+      setEmailNote(result.emailed ? "" : result.emailStatus || "not sent");
       setStatus("done");
       form.reset();
     } catch {
@@ -154,8 +154,9 @@ export function QuoteForm({
         <h3 className="mt-2 font-display text-3xl text-ink">We have the request.</h3>
         <p className="mt-3 text-mute">
           Your name, email, and travel plans are saved in our database
-          {emailed ? " and emailed to us" : ""}. The reference is{" "}
+          {emailNote ? "" : " and emailed to us"}. The reference is{" "}
           <span className="font-medium text-ink tabular-nums">{reference}</span>. We reply the same day in most cases.
+          {emailNote ? ` The email did not go out (${emailNote}).` : ""}
         </p>
       </div>
     );

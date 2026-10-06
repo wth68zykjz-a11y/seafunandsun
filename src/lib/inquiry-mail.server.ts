@@ -124,22 +124,25 @@ function mailboxPassword(value: string) {
 }
 
 async function deliver(outbound: Outbound[], user: string, pass: string) {
-  const host = env("SMTP_HOST") ?? "smtp.hostinger.com";
-  const requested = Number(env("SMTP_PORT") ?? 465);
-  const attempts = requested === 587 ? [587] : [requested, 587];
-  let last: unknown;
-  for (const port of attempts) {
-    const transport = nodemailer.createTransport({
-      host,
-      port,
-      secure: port === 465,
-      auth: { user, pass },
-      connectionTimeout: 15000,
-      greetingTimeout: 15000,
-      socketTimeout: 20000,
-    });
-    try {
-      for (const message of outbound) {
+  const configuredHost = env("SMTP_HOST") ?? "";
+  const proton = configuredHost.includes("proton");
+  // Proton does not accept port 465. A connection there times out.
+  const host = proton ? "smtp.protonmail.ch" : configuredHost || "smtp.hostinger.com";
+  const port = proton ? 587 : Number(env("SMTP_PORT") ?? 465);
+  const transport = nodemailer.createTransport({
+    host,
+    port,
+    secure: port === 465,
+    requireTLS: port === 587,
+    auth: { user, pass },
+    connectionTimeout: 12000,
+    greetingTimeout: 12000,
+    socketTimeout: 20000,
+  });
+  try {
+    let alertSent = false;
+    for (const message of outbound) {
+      try {
         await transport.sendMail({
           from: `Sea Fun & Sun <${user}>`,
           to: message.to,
@@ -147,18 +150,15 @@ async function deliver(outbound: Outbound[], user: string, pass: string) {
           subject: message.subject,
           text: message.text,
         });
+        alertSent = true;
+      } catch (err) {
+        if (!alertSent) throw err;
+        console.error("[inquiry-mail] copy not sent", err instanceof Error ? err.message : "send failed");
       }
-      return;
-    } catch (err) {
-      last = err;
-      const message = err instanceof Error ? err.message.toLowerCase() : "";
-      const blocked = message.includes("econnrefused") || message.includes("timed out") || message.includes("timeout") || message.includes("enotfound");
-      if (!blocked || port === attempts[attempts.length - 1]) throw err;
-    } finally {
-      transport.close();
     }
+  } finally {
+    transport.close();
   }
-  throw last instanceof Error ? last : new Error("SMTP failed");
 }
 
 /** Desk copy plus a short note to the traveler. Never throws. */
