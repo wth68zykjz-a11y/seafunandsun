@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "Why is there no fare for some trips?",
-    a: "Some cruise lines, most yacht sailings, many luxury hotels, and the European sleeper trains are quoted by an agent. There is no separate agent fee.",
+    a: "Some cruise lines, most yacht sailings, many luxury hotels, and the European sleeper trains have no public fare. An agent requests that price. There is no separate agent fee.",
   },
 ];
 
@@ -436,7 +436,7 @@ function Home() {
               <p className="text-sm font-medium text-gold">An agent prices it</p>
               <h3 className="mt-2 font-display text-3xl">Request a quote</h3>
               <p className="mt-3 text-base leading-relaxed text-foam/90">
-                Request a quote to add flights, a hotel stay, or a shore excursion. On a regular cruise, we can also see whether the posted fare can be matched, beaten, or improved with an added benefit. Some small ships and yachts have no public fare. An agent requests that price and presents it to you. Resorts, ski weeks, and train trips are quoted the same way.
+                Request a quote to add flights, a hotel stay, or a shore excursion. On a regular cruise, we can also see whether the posted fare can be matched, beaten, or improved with an added benefit. Some small ships and yachts have no public fare. An agent requests that price and presents it to you. Resorts, ski weeks, and train trips work the same way.
               </p>
               <a href="#quote" className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
                 Go to the quote form

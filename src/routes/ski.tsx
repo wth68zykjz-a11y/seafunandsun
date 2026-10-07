@@ -35,7 +35,7 @@ function SkiPage() {
         />
         <div className="flex flex-col justify-center">
           <p className="text-sm font-medium text-tide">Ski</p>
-          <h1 className="mt-2 font-display text-3xl sm:text-5xl">Club Med usually includes the lift pass. A hotel usually does not.</h1>
+          <h1 className="mt-2 font-display text-3xl sm:text-5xl">Club Med usually includes the lift pass. A hotel usually does not include it.</h1>
           <p className="mt-4 text-lg text-mute">
             A Club Med ski week usually includes the room, the meals, the lift pass, and group lessons. In Québec, that is Le Massif de Charlevoix. In France, it is Val d’Isère, Tignes, Val Thorens, La Plagne, Les Arcs, Alpe d’Huez, and Grand Massif Samoëns. In Switzerland, it is Saint-Moritz. We check what that village includes, and the youngest age the kids’ club accepts. Time away from the slopes is extra unless the rate says it is included.
           </p>
@@ -44,7 +44,7 @@ function SkiPage() {
             search={{ place: "Club Med ski" }}
             className="mt-6 inline-flex min-h-11 w-fit items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
           >
-            Quote Club Med
+            Request a Club Med week
           </Link>
         </div>
       </section>
@@ -63,7 +63,7 @@ function SkiPage() {
           search={{ place: "Luxury ski" }}
           className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-gold px-4 text-sm font-medium text-ink hover:bg-gold-deep"
         >
-          Quote a luxury hotel
+          Request a luxury hotel
         </Link>
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           <article className="rounded-xl border border-line bg-foam p-5">

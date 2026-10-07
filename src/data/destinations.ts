@@ -22,7 +22,7 @@ export type Destination = {
   itineraries: SampleItinerary[];
 };
 
-const sampleNote = "These are typical routings and ports of call. Ships, dates, and fares change. This is not a quote.";
+const sampleNote = "These are typical routings and ports of call. Ships, dates, and fares change.";
 
 export { sampleNote };
 
@@ -188,7 +188,7 @@ export const destinations: Destination[] = [
         items: [
           "Santorini, before the afternoon boats arrive",
           "A long-table lunch in Amalfi",
-          "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site, including the Parthenon marbles that remain in Athens. The Ancient Agora is the walk down the hill. Hotel Grande Bretagne is a stay in the city before or after the cruise.",
+          "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site, including the Parthenon marbles that remain in Athens. You can walk down the hill to the Ancient Agora. Hotel Grande Bretagne is a stay in the city before or after the cruise.",
           "St. Mark’s and the Doge’s Palace are in Venice. Ships dock in Ravenna or Trieste, not in the lagoon. Venice is about 2 to 2.5 hours from Ravenna and about 2 hours from Trieste. The Gritti Palace, on the Grand Canal, is a stay in the city before or after the cruise.",
           "St. Peter’s is in Rome. The Vatican Museums hold Michelangelo’s ceiling in the Sistine Chapel and the classical sculpture galleries. The Colosseum and the Forum are in the city too. The ship docks at Civitavecchia. Rome is about an hour to an hour and a half from the pier. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise.",
           "The Duomo and the Baptistery are in Florence. The Uffizi holds Italian Renaissance painting, including Botticelli’s Birth of Venus. The ship docks at Livorno. Florence is about an hour and a half from the pier. Pisa is a separate city, about 30 minutes from the ship. Belmond Villa San Michele, in Fiesole, is a stay before or after the cruise.",
@@ -450,7 +450,7 @@ export const destinations: Destination[] = [
         title: "Fjord classic",
         nights: "7 nights",
         season: "June–August",
-        ship: "Smaller ship if you want the narrow water; a big ship if you want the resort",
+        ship: "A smaller ship if you want to sail the narrow water, or a big ship if you want the resort on board",
         path: "Bergen, or another Norwegian port. Copenhagen is a Baltic start",
         ports: ["Geiranger or another fjord", "Flåm", "A coastal town"],
       },
@@ -574,7 +574,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "The season runs from April through October, and the dates depend on the river. Spring is the Rhine in blossom. Fall is vineyard color and better light. The ships run on a season, so the dates matter as much as the fare.",
-    planning: "Name the river. A Danube ship and a Mississippi ship are not interchangeable, and many of these fares are quoted rather than posted.",
+    planning: "Name the river. A Danube ship and a Mississippi ship are not interchangeable. An agent requests many of these fares, because they are not posted.",
     itineraries: [
       {
         title: "Danube capitals",
@@ -705,7 +705,7 @@ export const destinations: Destination[] = [
         items: [
           "In Singapore, visit Gardens by the Bay, then Hainanese chicken rice, poached chicken with rice cooked in the chicken fat and stock, or laksa, rice noodles in a spicy coconut broth with prawns",
           "Visit the Grand Palace in Bangkok, then boat noodles nearby: rice noodles in a pork or beef broth, darkened with spices and a little blood, with sliced meat and morning glory. The bowls are small",
-          "Walk Tokyo’s outer market, then nigiri: a slice of raw fish on a small pad of vinegared rice. The dawn tuna auction is not a cruise-day plan",
+          "Walk Tokyo’s outer market, then order nigiri, a slice of raw fish on a small pad of vinegared rice. The dawn tuna auction does not fit a day in port.",
           "Visit Ho Chi Minh City’s District 1, and have a banh mi: a baguette with pâté, pork, pickled carrot and daikon, cilantro, and chili",
           "The Peak, the Star Ferry, and theme parks are in Hong Kong. The Peninsula is a stay in the city before or after the cruise.",
           "The French Concession and the Bund are in Shanghai. The Fairmont Peace Hotel is a stay in the city.",
@@ -776,7 +776,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "Brazil’s east coast is warm from November through April. Patagonia runs from October through March.",
-    planning: "Rio and the Brazilian ports, or Ushuaia and Cape Horn. We only quote ships that are actually scheduled.",
+    planning: "Rio and the Brazilian ports, or Ushuaia and Cape Horn. We only price ships that are actually scheduled.",
     itineraries: [
       {
         title: "Brazilian coast",
@@ -878,7 +878,7 @@ export const destinations: Destination[] = [
     lede: "We book scenic trains in North America, sleeper trains in Europe, and the hotel nights that connect them.",
     paragraphs: [
       "Amtrak, VIA Rail, and the scenic railways of North America run through some of the finest country on the continent. We build the trip around the routing you want, including the nights on either end.",
-      "Europe has two kinds of train. The Venice Simplon-Orient-Express, La Dolce Vita Orient Express, the Golden Eagle Danube Express, and the Royal Scotsman are overnight trips: you sleep on the train, meals are usually included, and the cabin you choose is what changes the price. Many of those dates are quoted rather than posted. A scenic day train, such as the Glacier Express or the Bernina Express, is only the ride. You get off in the evening and sleep in a hotel.",
+      "Europe has two kinds of train. The Venice Simplon-Orient-Express, La Dolce Vita Orient Express, the Golden Eagle Danube Express, and the Royal Scotsman are overnight trips: you sleep on the train, meals are usually included, and the cabin you choose is what changes the price. An agent requests many of those dates, because they are not posted. A scenic day train, such as the Glacier Express or the Bernina Express, covers the daytime trip only. You get off in the evening and sleep in a hotel.",
       "Land travel sits beside the trains: hotel nights in a city, or a few days between segments. Not every trip is escorted. A guided tour or an excursion may be available, depending on the stop. The quote says whether that stop has a tour, a walk, or only a short pause.",
     ],
     lists: [
@@ -948,7 +948,7 @@ export const destinations: Destination[] = [
         season: "Mostly spring through fall",
         ship: "Belmond. Historic cabins, suites, and grand suites",
         path: "Often Paris toward Venice. Some dates run through to Istanbul.",
-        ports: ["Meals on the train", "The cabin chosen before you pay", "The price comes back as a quote"],
+        ports: ["Meals on the train", "The cabin chosen before you pay", "We send the price after we request it"],
       },
     ],
   },
@@ -1024,7 +1024,7 @@ export const destinations: Destination[] = [
     alt: "A ship in the Miraflores Locks on the Panama Canal",
     lede: "A Panama Canal cruise is a transit, not a loop of beaches. A full transit changes oceans. A partial transit goes into Gatun Lake and turns around.",
     paragraphs: [
-      "Most full transits run fourteen to seventeen nights, one way. The usual departure port on the Caribbean side is Fort Lauderdale, Miami, or New Orleans. Los Angeles or San Diego is the usual Pacific end, and some sailings continue to Seattle or Vancouver. Princess, Holland America, Celebrity, Norwegian, Carnival, Royal Caribbean, and Cunard schedule them, mainly in spring and fall, when ships move between a Caribbean cruise and Los Angeles, San Diego, or an Alaska cruise. Regent, Silversea, Oceania, and Viking ocean do as well. Many of those sailings are quoted.",
+      "Most full transits run fourteen to seventeen nights, one way. The usual departure port on the Caribbean side is Fort Lauderdale, Miami, or New Orleans. Los Angeles or San Diego is the usual Pacific end, and some sailings continue to Seattle or Vancouver. Princess, Holland America, Celebrity, Norwegian, Carnival, Royal Caribbean, and Cunard schedule them, mainly in spring and fall, when ships move between a Caribbean cruise and Los Angeles, San Diego, or an Alaska cruise. Regent, Silversea, Oceania, and Viking ocean do as well. An agent requests many of those fares.",
       "A full transit and a partial transit are both called a Panama Canal cruise. A full transit goes from the Caribbean to the Pacific, or the other way, in about 14 to 17 nights. A partial transit is a round trip from Florida into Gatun Lake, often 10 or 11 nights. Compare those two before you look at a fare.",
     ],
     lists: [
@@ -1055,7 +1055,7 @@ export const destinations: Destination[] = [
         title: "Full transit to the Pacific",
         nights: "14–17 nights",
         season: "Spring and fall",
-        ship: "Princess, Holland America, Celebrity, or a quoted luxury ship",
+        ship: "Princess, Holland America, Celebrity, or a luxury ship whose fare an agent requests",
         path: "Fort Lauderdale or Miami to San Diego or Los Angeles",
         ports: ["Cartagena", "The canal day", "A Central American or Mexican stop", "The Pacific port where you fly home"],
       },

@@ -221,7 +221,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-bermuda.jpg",
     photoAlt: "A curve of pink sand and clear water toward pastel houses",
     intro:
-      "Bermuda sailings usually stay more than a day, so the island does not have to be done at a sprint. On a short stop, book the excursion through the ship if you want to leave the Dockyard. If that tour runs late, the ship waits. A tour you arranged yourself does not.",
+      "Bermuda sailings usually stay more than a day, so you do not have to rush the island. On a short stop, book the excursion through the ship if you want to leave the Dockyard. If that tour runs late, the ship waits. A tour you arranged yourself does not make the ship wait.",
     excursions: [
       {
         title: "Pink sand, earlier than the ship",
@@ -555,7 +555,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "The Miraflores Locks building beside a ship in the Panama Canal",
     facts: [
       { label: "Time in port", text: "The canal day has no gangway. A stop in Cartagena is usually a morning or an afternoon. Panama City is a port only when the itinerary says the ship docks." },
-      { label: "Worth the time", text: "Watch the locks from the deck. In Cartagena, the walled city is the walk, and you can eat there. A long coach to a beach is a different plan." },
+      { label: "Worth the time", text: "Watch the locks from the deck. In Cartagena, you can walk the walled city, and you can eat there. A long coach to a beach is a different plan." },
       { label: "Best for", text: "Travelers who want the transit itself, and who can fly home from a different coast on a full transit." },
       { label: "Also", text: "A partial transit goes into Gatun Lake and comes back out the same side. A full transit goes from one ocean to the other, and it takes longer." },
     ],
@@ -661,7 +661,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A row of painted wooden wharf houses reflected in calm water",
     facts: [
       { label: "Time in port", text: "Fjord villages can be a tender of a few hours. Baltic capitals are longer city days." },
-      { label: "Worth the time", text: "The Bryggen wharf is in Bergen, and the fish market serves a shrimp sandwich: cold peeled shrimp on buttered bread, with mayonnaise and lemon. In Copenhagen, a New Nordic menu is local seafood, vegetables, and foraged herbs, and those tables are booked before you sail. The Rijksmuseum is in Amsterdam. It holds Rembrandt’s The Night Watch. The Anne Frank House is the rooms where she hid. Ocean ships dock at IJmuiden, not in the canals. The museum is about 30 to 45 minutes from the pier. Lunch can fit if the ship leaves later. The Waldorf Astoria Amsterdam is a stay in the city before or after the cruise. Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a stay in the city if you want the night. Gamla Stan is in Stockholm. The Vasa Museum holds the warship Vasa, raised from the harbor. Grand Hôtel looks across the water at the palace." },
+      { label: "Worth the time", text: "The Bryggen wharf is in Bergen, and the fish market serves a shrimp sandwich: cold peeled shrimp on buttered bread, with mayonnaise and lemon. In Copenhagen, a New Nordic menu is local seafood, vegetables, and foraged herbs, and those tables are booked before you sail. The Rijksmuseum is in Amsterdam. It holds Rembrandt’s The Night Watch. The Anne Frank House is the rooms where she hid. Ocean ships dock at IJmuiden, not in the canals. The museum is about 30 to 45 minutes from the pier. Lunch can fit if the ship leaves later. The Waldorf Astoria Amsterdam is a stay in the city before or after the cruise. Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a stay in the city if you want to stay the night. Gamla Stan is in Stockholm. The Vasa Museum holds the warship Vasa, raised from the harbor. Grand Hôtel looks across the water at the palace." },
       { label: "Best for", text: "Long summer light, small ports, and people who like weather to be part of the trip." },
       { label: "Also", text: "If the tender does not run, the town walk is the day." },
     ],

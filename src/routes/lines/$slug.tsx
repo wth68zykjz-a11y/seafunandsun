@@ -13,8 +13,8 @@ export const Route = createFileRoute("/lines/$slug")({
     pageHead({
       title: loaderData?.title ?? "Cruise lines",
       description: loaderData
-        ? clip(`${loaderData.title}. ${loaderData.lede} Typical passenger counts and a general price range. Not a quote.`)
-        : "Cruise line comparison by ship size and region, with passenger counts and general price ranges. Not a quote.",
+        ? clip(`${loaderData.title}. ${loaderData.lede} Typical passenger counts and a general price range.`)
+        : "Cruise line comparison by ship size and region, with passenger counts and general price ranges.",
       path: loaderData ? `/lines/${loaderData.slug}` : "/lines",
       image: loaderData?.image,
       noindex: !loaderData,
@@ -61,8 +61,8 @@ function LineRegionPage() {
         ) : null}
         <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink">
           {page.slug === "small"
-            ? "The ranges are per person, for two people in a cabin. Most of these sailings are quoted. Meals are in the fare, and on most European river ships a daily excursion is included."
-            : "Ranges are per person, two to a cabin. They move with the month and the cabin, and they are not a quote. On the large ships, taxes, port charges, and gratuities are usually extra. On river ships, expedition ships, luxury ships, and yachts, more of that is already in the fare."}
+            ? "The ranges are per person, for two people in a cabin. An agent requests most of these fares. Meals are in the fare, and on most European river ships a daily excursion is included."
+            : "Ranges are per person, two to a cabin. They move with the month and the cabin. On the large ships, taxes, port charges, and gratuities are usually extra. On river ships, expedition ships, luxury ships, and yachts, more of that is already in the fare."}
         </p>
         {page.benefits ? (
           <div className="mt-8 grid gap-4 md:grid-cols-2">

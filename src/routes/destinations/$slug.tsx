@@ -257,7 +257,7 @@ export function DestinationArticle({
               </article>
             </div>
             <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink">
-              These are recent published ranges, not a quote. Taxes and port fees can add a few hundred dollars. Drinks, gratuities, and Wi-Fi are extra on most of these ships unless the fare says they are included. Regent, Silversea, and Viking ocean are a different price, often several thousand dollars higher, and those sailings are quoted. A full transit also needs a flight into one coast and a flight home from the other.
+              These are recent published ranges. Taxes and port fees can add a few hundred dollars. Drinks, gratuities, and Wi-Fi are extra on most of these ships unless the fare says they are included. Regent, Silversea, and Viking ocean cost more, often several thousand dollars higher, and an agent requests those fares. A full transit also needs a flight into one coast and a flight home from the other.
             </p>
           </div>
         ) : null}
@@ -380,7 +380,7 @@ export function DestinationArticle({
         <h2 className="font-display text-4xl">Sample itineraries</h2>
         <p className="mt-2 max-w-2xl text-sm text-mute">
           {rail
-            ? "These are typical routes. Trains, hotels, dates, and fares change. This is not a quote."
+            ? "These are typical routes. Trains, hotels, dates, and fares change."
             : sampleNote}
         </p>
         <div className="mt-6 grid gap-4 lg:grid-cols-3">

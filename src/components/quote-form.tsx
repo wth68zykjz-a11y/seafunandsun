@@ -247,7 +247,7 @@ export function QuoteForm({
         disabled={status === "sending"}
         className="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep disabled:bg-line disabled:text-ink"
       >
-        {status === "sending" ? "Sending…" : "Send the request"}
+        {status === "sending" ? "Sending…" : "Request a quote"}
       </button>
       <p className="mt-2 text-center text-sm text-mute">We reply the same day in most cases.</p>
     </form>

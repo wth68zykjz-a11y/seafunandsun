@@ -177,7 +177,7 @@ export const deskDoors = [
   },
   {
     title: "Luxury & ultra-luxury",
-    detail: "Viking, Cunard, Regent, Silversea, Seabourn, Explora Journeys, Windstar, and yacht sailings. Several of these are quoted by an agent, not listed as a public fare. Explora has published sailings in the offers on this page.",
+    detail: "Viking, Cunard, Regent, Silversea, Seabourn, Explora Journeys, Windstar, and yacht sailings. An agent requests several of these fares, because they are not listed as a public price. Explora has published sailings in the offers on this page.",
     href: desk.luxury,
     tag: "Luxury",
   },

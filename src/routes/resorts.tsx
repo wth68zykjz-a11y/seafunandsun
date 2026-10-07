@@ -52,7 +52,7 @@ const regions = [
   },
   {
     title: "Overwater villas",
-    body: "The Maldives take a much longer flight and a much higher nightly rate than a Caribbean resort. Most of those stays are quoted rather than posted. If that is the stay you want, say so. Booking a Caribbean week does not get you there.",
+    body: "The Maldives take a much longer flight and a much higher nightly rate than a Caribbean resort. An agent requests most of those stays, because they are not posted. If you want to book that stay, say so. Booking a Caribbean week does not take you to the Maldives.",
   },
 ];
 
@@ -115,7 +115,7 @@ function ResortsPage() {
             </Link>
           </p>
           <p>
-            For a traveler leaving Connecticut, the airfare is often the larger cost. Hartford, Boston, and the New York airports do not all serve the same islands. A “free flight” offer is often a higher room rate that assumes you take the resort’s air. We quote the room and the flights as two prices, so you can see the hotel cost and the airfare on their own.
+            For a traveler leaving Connecticut, the airfare is often the larger cost. Hartford, Boston, and the New York airports do not all serve the same islands. A “free flight” offer is often a higher room rate that assumes you take the resort’s air. We price the room and the flights separately, so you can see the hotel cost and the airfare on their own.
           </p>
         </div>
 
@@ -173,7 +173,7 @@ function ResortsPage() {
               search={{ place: "Disney resort" }}
               className="mt-5 inline-flex min-h-11 w-fit items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
             >
-              Quote a Disney stay
+              Request a Disney stay
             </Link>
           </div>
         </article>
@@ -188,12 +188,12 @@ function ResortsPage() {
         <article className="mt-4 rounded-xl bg-sea p-5 text-foam">
           <h2 className="font-display text-2xl">When to go</h2>
           <p className="mt-3 max-w-3xl text-foam/85">
-            Caribbean hurricane season runs June through November. The resort rate for a late-summer week can be lower, and that week can also carry a real storm risk. The quote will say which of those applies to your dates. The Mexican Caribbean is hot and wet in summer and more reliable from December through April. School breaks and the weeks around Christmas sell out, and the rate for those weeks is higher than the rate for a week in September. Overwater villas follow a different calendar, and they are almost always a quote.
+            Caribbean hurricane season runs June through November. The resort rate for a late-summer week can be lower, and that week can also carry a real storm risk. We will say which of those applies to your dates. The Mexican Caribbean is hot and wet in summer and more reliable from December through April. School breaks and the weeks around Christmas sell out, and the rate for those weeks is higher than the rate for a week in September. Overwater villas follow a different calendar, and an agent almost always requests those rates.
           </p>
         </article>
 
         <p className="mt-6 max-w-3xl text-sm text-mute">
-          A posted nightly rate is not always the rate we can book. Preferred rates, wedding blocks, and most villa stays are quoted by an advisor. Send the dates and who is traveling. You pay the resort through our booking system. We do not hold the payment.
+          A posted nightly rate is not always the rate we can book. An agent requests preferred rates, wedding blocks, and most villa stays. Send the dates and who is traveling. You pay the resort through our booking system. We do not hold the payment.
         </p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
