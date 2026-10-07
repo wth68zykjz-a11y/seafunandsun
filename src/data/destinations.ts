@@ -168,7 +168,7 @@ export const destinations: Destination[] = [
     lede: "Most mornings you wake up in a different port. One day can be Barcelona and the next a smaller harbor. Pick the ship for those ports, not for the photograph on the cover.",
     paragraphs: [
       "Cruises run seven to fourteen nights and depart from Barcelona, Civitavecchia for Rome, and Piraeus for Athens. Royal Caribbean, MSC, Norwegian, Celebrity, and Cunard all sail the region, and the luxury lines sail it too. A Venice stop is usually Ravenna or Trieste, not a dock in the lagoon. We compare the routes, the ports, and what the fare includes, then match the ship to how you like to travel.",
-      "Greece and the Adriatic pull north. Spain and the Riviera pull west. Tell us which coast you want, and we will start from there.",
+      "A week in Greece or the Adriatic stays in the eastern Mediterranean. A week from Barcelona stays in the west, on the Spanish coast and the French Riviera. Tell us which coast you want, and we will start there.",
     ],
     lists: [
       {
