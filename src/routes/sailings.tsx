@@ -8,6 +8,7 @@ import { JsonLd, pageHead } from "@/lib/seo";
 type SailingsSearch = { destinations?: string; destinationtype?: string };
 
 const offerGroups = ["Luxury", "Ocean"] as const;
+const resortOffer = /resort|all-inclusive|all inclusive|palladium|waldorf|conrad|sandals|hyatt|club med|secrets|excellence|palace|ziva|zilara|beaches|dreams/i;
 
 const weeklyDeals = [
   {
@@ -140,10 +141,6 @@ function labelExplora(offer: SupplierOffer): SupplierOffer {
   return { ...offer, title: `Explora Journeys — ${offer.title}`, tag: "Explora Journeys", group: "Luxury" };
 }
 
-function cruiseOffers(offers: SupplierOffer[]) {
-  return offers.filter((offer) => offer.group !== "Land and Resorts").map(labelExplora);
-}
-
 function brandText(offer: SupplierOffer) {
   return `${offer.title} ${offer.href}`;
 }
@@ -227,15 +224,17 @@ export const Route = createFileRoute("/sailings")({
 });
 
 function DealsOfTheWeek({ offers, checked, live }: { offers: SupplierOffer[]; checked: string; live: boolean }) {
-  const deals = dealsFromFeed(offers);
+  const cruise = offers.filter((offer) => offer.group !== "Land and Resorts");
+  const deals = dealsFromFeed(cruise);
   const shown = new Set(deals.map((deal) => deal.offer.href));
-  const rest = offers.filter((offer) => !shown.has(offer.href));
+  const rest = cruise.filter((offer) => !shown.has(offer.href));
   const { featured, used } = featuredBrands(rest);
+  const resorts = offers.filter((offer) => offer.group === "Land and Resorts" && resortOffer.test(`${offer.title} ${offer.href}`) && !shown.has(offer.href));
   return (
     <div>
       <h2 className="font-display text-3xl text-ink">Promotions</h2>
       <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">
-        The first seven were checked today. Further offers from the booking system follow. Last check: {checked} Eastern.
+        The first seven are cruise offers checked today. Further cruise offers follow, then the current resort and all-inclusive offers. Last check: {checked} Eastern.
       </p>
       {!live ? (
         <p className="mt-2 max-w-2xl text-base text-ink">The booking system did not respond just now, so these are the promotions saved on this site.</p>
@@ -327,6 +326,21 @@ function DealsOfTheWeek({ offers, checked, live }: { offers: SupplierOffer[]; ch
           </div>
         );
       })}
+      {resorts.length > 0 ? (
+        <div className="mt-8">
+          <h4 className="border-b border-line pb-2 font-display text-xl text-ink">Resorts and all-inclusives</h4>
+          <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {resorts.map((offer) => (
+              <OfferCard key={offer.href} offer={offer} />
+            ))}
+          </div>
+          <p className="mt-4 text-sm">
+            <Link to="/resorts" className="font-medium text-tide">
+              All-inclusive resorts
+            </Link>
+          </p>
+        </div>
+      ) : null}
     </div>
   );
 }
@@ -374,7 +388,7 @@ function SailingsPage() {
         <img src="/media/page-sailings.jpg" alt="The bow of a white ship in calm water at golden hour" loading="lazy" decoding="async" className="aspect-photo max-h-72 w-full rounded-xl object-cover" />
       </div>
       <section id="promotions" className="mx-auto mt-10 max-w-6xl scroll-mt-24 px-4 pb-20">
-        <DealsOfTheWeek offers={cruiseOffers(feed.offers)} checked={updated} live={feed.live} />
+        <DealsOfTheWeek offers={feed.offers.map(labelExplora)} checked={updated} live={feed.live} />
         <p className="mt-8 max-w-3xl text-sm leading-6 text-mute">{licenseLine}</p>
       </section>
     </Shell>
