@@ -209,11 +209,11 @@ export const shores: Record<string, DestinationShore> = {
       },
       {
         title: "A day in Hana",
-        where: "Hana, Maui. The ship is in Kahului.",
-        length: "The drive uses most of a normal port stop",
-        pace: "A long drive, then time in town",
+        where: "Hana, Maui. The ship docks in Kahului.",
+        length: "About five hours of driving, plus time in town",
+        pace: "A winding drive, then a swim and a walk",
         detail:
-          "In Hana, people swim at Hana Bay, walk the black-sand beach at Waiʻānapanapa, and stop for banana bread or a plate lunch. The drive from Kahului takes about two and a half hours each way, so it uses most of the time the ship is in port. It fits when the ship stays overnight in Maui.",
+          "Hana is about two and a half hours from Kahului on a winding road, so a stop that runs from morning to evening is mostly the drive. When the ship stays overnight, there is time to swim at Hana Bay, walk the black-sand beach at Waiʻānapanapa, and get banana bread or a plate lunch.",
       },
     ],
   },
@@ -633,12 +633,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Inter-island ships often overnight. A sailing from San Diego, Los Angeles, or Vancouver spends more days just getting there." },
       { label: "Worth the time", text: "Stop on Oahu to visit the USS Arizona Memorial. After that, a plate lunch is an idea." },
       { label: "Best for", text: "People who want the islands, not a new port every morning. Match the excursion to the kind of Hawaii trip you booked." },
-      { label: "Also", text: "The drive from Kahului to Hana uses most of the hours in a normal port stop. An overnight in Maui leaves time in town." },
+      { label: "Also", text: "On a morning-to-evening stop in Kahului, the drive to Hana and back leaves little time in town." },
     ],
     outings: [
       { fits: "People who will swim with the turtles on the calmer side of the island.", bring: "Reef-safe sunscreen. Whales in winter are a bonus, not a promise." },
       { fits: "People who will do the Arizona memorial in the morning and the beach after.", bring: "Allow time for security screening." },
-      { fits: "People who want time in Hana: a swim at the bay, the black-sand beach, and something to eat.", bring: "Swim things, and a little cash for the food stands. Bring water for the drive." },
+      { fits: "People whose ship stays overnight in Maui, and who want a swim, the black-sand beach, and lunch in Hana.", bring: "A swimsuit, cash for the food stands, and water for the drive." },
     ],
   },
   bermuda: {
