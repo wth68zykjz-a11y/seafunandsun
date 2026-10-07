@@ -21,7 +21,7 @@ function DestinationsPage() {
       <PageIntro
         kicker="Destinations"
         title="Fifteen cruise regions."
-        lede="Choose a region below. Most regions are the area the ship sails, such as Alaska or the Caribbean. Europe is split into the Mediterranean, the Atlantic coast, and the north, from the fjords to the Baltic. River cruises, expedition cruises, and world cruises are separate, because they are a different kind of trip. Each page lists typical routings and the ports most ships include. An excursion in a port or a city can be arranged as an add-on, to enrich the trip."
+        lede="Choose a region below. Most regions are the area the ship sails, such as Alaska or the Caribbean. Europe is split into the Mediterranean, the Atlantic coast, and the north, from the fjords to the Baltic. River cruises, expedition cruises, and world cruises are separate, because they are a different kind of trip. Each page lists typical routings and ports of call. An excursion in a port or a city can be arranged as an add-on, to enrich the trip."
       />
       <div className="mx-auto max-w-6xl px-4 pb-2">
         <p className="max-w-2xl text-mute">

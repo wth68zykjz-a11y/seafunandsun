@@ -12,7 +12,7 @@ export const Route = createFileRoute("/itineraries")({
     pageHead({
       title: "Sample cruise itineraries",
       description:
-        "Typical cruise routings, from Alaska to the Mediterranean, and the ports most ships include. Ships, dates, and fares change. These are not quotes.",
+        "Typical cruise routings, from Alaska to the Mediterranean, and the ports of call. Ships, dates, and fares change. These are not quotes.",
       path: "/itineraries",
       image: "/media/page-itineraries.jpg",
     }),

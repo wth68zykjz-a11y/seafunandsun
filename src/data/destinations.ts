@@ -22,7 +22,7 @@ export type Destination = {
   itineraries: SampleItinerary[];
 };
 
-const sampleNote = "These are typical routings and the ports most ships include. Ships, dates, and fares change. This is not a quote.";
+const sampleNote = "These are typical routings and ports of call. Ships, dates, and fares change. This is not a quote.";
 
 export { sampleNote };
 
