@@ -279,7 +279,7 @@ export const linePages: LinePage[] = [
         caption: "Seabourn Ovation carries about 600 passengers. Regent’s ships are about 500 to 800. Explora is about 922.",
       },
     ],
-    lede: "These lines sail the Caribbean, Alaska, the Mediterranean, and longer routes on ships that stay under about 1,250 passengers. Most do not publish a fare you can book yourself.",
+    lede: "These lines sail the Caribbean, Alaska, the Mediterranean, and longer routes on ships that stay under about 1,250 passengers. Most of these sailings are quoted.",
     size: "These ships run from about 450 passengers to about 1,200. Explora is about 922. Oceania’s larger ships are about 1,200.",
     rows: [
       { line: "Silversea", ships: "Ocean ships about 300–730. Silver Nova and Silver Ray are about 728.", where: "Caribbean, Alaska, the Mediterranean, longer voyages, and expedition routes. Drinks, a butler, and gratuities are in the fare.", fare: "A week is often $6,000–$15,000 a person. Quoted." },
@@ -308,7 +308,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "What these ships leave out",
-        text: "There is no water park, no large kids’ club on most of these ships, and no fare you can grab from a public search on many sailings. A family that wants slides and a character breakfast wants a different ship.",
+        text: "There is no water park and no large kids’ club on most of these ships. Many sailings are quoted. A family that wants slides and a character breakfast wants a different ship.",
       },
     ],
   },

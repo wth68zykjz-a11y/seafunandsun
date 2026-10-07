@@ -189,7 +189,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-hawaii.jpg",
     photoAlt: "Black lava rock, turquoise water, and an empty canoe on a Hawaiian beach",
     intro:
-      "Inter-island ships often stay overnight, so a Road to Hana day can work. A cruise that departs from the West Coast spends more of the week at sea. The excursion has to match which of those two cruises you booked.",
+      "Inter-island ships often stay overnight, so a Road to Hana day can work. A cruise that departs from San Diego, Los Angeles, or Vancouver spends more of the week at sea. The excursion has to match which of those two cruises you booked.",
     excursions: [
       {
         title: "Turtles in the water",
@@ -630,7 +630,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-hawaii.jpg",
     detailAlt: "A sea turtle in clear shallows beside black volcanic sand",
     facts: [
-      { label: "Time in port", text: "Inter-island ships often overnight. A West Coast sailing spends more days just getting there." },
+      { label: "Time in port", text: "Inter-island ships often overnight. A sailing from San Diego, Los Angeles, or Vancouver spends more days just getting there." },
       { label: "Worth the time", text: "Stop on Oahu to visit the USS Arizona Memorial. After that, a plate lunch is an idea." },
       { label: "Best for", text: "People who want the islands, not a new port every morning. Match the excursion to the kind of Hawaii trip you booked." },
       { label: "Often a poor fit", text: "Hana on a dawn-to-dusk stop, and stacking a snorkel on a kayak in the same bay." },

@@ -176,7 +176,7 @@ export const portRegions: PortRegion[] = [
     ports: [
       { name: "Dubai", place: "United Arab Emirates", goes: "The Arabian Gulf, with longer sailings toward the Red Sea and India.", air: "Emirates has the hub. flydubai covers the shorter routes. Most long-haul airlines serve Dubai.", zone: "Asia/Dubai", money: "UAE dirham. Cards are accepted. Some hotels take US dollars. Shops price in dirhams.", image: "/media/ports/dubai.jpg", alt: "The Dubai waterfront", slug: "asia" },
       { name: "Abu Dhabi", place: "United Arab Emirates", goes: "The Arabian Gulf.", air: "Etihad has the hub. A transfer from Dubai is about 1.5 hours.", zone: "Asia/Dubai", money: "UAE dirham. Cards are accepted.", image: "/media/ports/abu-dhabi.jpg", alt: "The Abu Dhabi skyline", slug: "asia" },
-      { name: "Cape Town", place: "South Africa", goes: "The African coast, and segments of world cruises.", air: "British Airways, Virgin Atlantic, Emirates, Qatar, KLM, and Air France. South African Airways flies the region. A US nonstop should be checked, not assumed.", zone: "Africa/Johannesburg", money: "South African rand. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/cape-town.jpg", alt: "Cape Town and the coast", slug: "world" },
+      { name: "Cape Town", place: "South Africa", goes: "Southern Africa, and segments of world cruises.", air: "British Airways, Virgin Atlantic, Emirates, Qatar, KLM, and Air France. South African Airways flies the region. A US nonstop should be checked, not assumed.", zone: "Africa/Johannesburg", money: "South African rand. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/cape-town.jpg", alt: "Cape Town and the coast", slug: "world" },
       { name: "Rio de Janeiro", place: "Brazil", goes: "The Brazilian coast, in the southern summer. Ships dock on Guanabara Bay. Sugarloaf and Corcovado are in the city.", air: "LATAM, Gol, and Azul, plus American and United.", zone: "America/Sao_Paulo", money: "Brazilian real. Cards are accepted. US dollars are not reliable as cash.", image: "/media/ports/rio.jpg", alt: "Rio de Janeiro and the harbor", slug: "south-america" },
       { name: "Buenos Aires", place: "Argentina", goes: "The South American coast, and longer runs toward the Chilean fjords.", air: "Aerolíneas Argentinas and LATAM, plus American and United.", zone: "America/Argentina/Buenos_Aires", money: "Argentine peso. Cards are accepted. US dollar cash is widely used by visitors, and the rate moves.", image: "/media/ports/buenos-aires.jpg", alt: "Buenos Aires along the water", slug: "south-america" },
       { name: "Ushuaia", place: "Argentina", goes: "Antarctica. This is the expedition embarkation, not a city cruise.", air: "No long-haul flights. Aerolíneas Argentinas and JetSMART connect from Buenos Aires.", zone: "America/Argentina/Ushuaia", money: "Argentine peso. Cards are accepted in town. The ship to Antarctica usually bills in US dollars.", image: "/media/ports/ushuaia.jpg", alt: "Ushuaia at the end of the continent", slug: "expedition" },
@@ -188,7 +188,7 @@ export const portPages: PortPage[] = [
   {
     slug: "americas",
     title: "United States and Canada",
-    lede: "Florida for a short Caribbean week. The Northeast when you would rather not fly, with more sea days. The West Coast and Vancouver for Alaska, Mexico, and Hawaii.",
+    lede: "Florida for a short Caribbean week. The Northeast when you would rather not fly, with more sea days. California and Vancouver for Alaska, Mexico, and Hawaii.",
     regionIds: ["florida-gulf", "northeast", "pacific", "canada"],
   },
   {
@@ -214,7 +214,7 @@ export const portPages: PortPage[] = [
   {
     slug: "australia-new-zealand",
     title: "Australia and New Zealand",
-    lede: "Sydney and Auckland carry the season. Brisbane and Melbourne turn fewer ships. The rest of the coast is where those ships stop.",
+    lede: "Sydney and Auckland carry the season. Brisbane and Melbourne turn fewer ships. Hobart and Fremantle are stops on many of those sailings, not the ports they start from.",
     regionIds: ["australia", "new-zealand"],
     calls: [
       { name: "Hobart", place: "Tasmania", note: "On the way around from Sydney. The ship docks at Sullivans Cove. kunanyi, also called Mount Wellington, is about 30 minutes from the docks, and Salamanca Place is beside the water.", air: "Qantas, Virgin Australia, and Jetstar from Melbourne or Sydney.", zone: "Australia/Hobart", money: "Australian dollar. Cards are accepted.", image: "/media/ports/hobart.jpg", alt: "Hobart harbor" },

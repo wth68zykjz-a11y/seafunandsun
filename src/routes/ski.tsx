@@ -53,7 +53,7 @@ function SkiPage() {
         <p className="text-sm font-medium text-tide">Luxury hotels</p>
         <h2 className="mt-2 max-w-3xl font-display text-4xl">The hotel rate is for the room. The skiing is booked separately.</h2>
         <p className="mt-3 max-w-3xl text-mute">
-          These are traditional ski hotels: the rate is the room, and sometimes breakfast. The lift pass, lessons, rentals, most dinners, and the transfer are separate. Many do not show a fare you can book yourself. Christmas and February school holidays are often gone a year out.
+          These are traditional ski hotels: the rate is the room, and sometimes breakfast. The lift pass, lessons, rentals, most dinners, and the transfer are separate. Christmas and February school holidays are often gone a year out.
         </p>
         <p className="mt-3 max-w-3xl text-mute">
           If you already hold a pass, some of these mountains will take it, usually for a set number of days rather than the whole season. Aspen, Jackson Hole, Deer Valley, Banff, Mammoth, Zermatt, St. Moritz, Chamonix, Megève, and Niseko United are on Ikon. Vail, Whistler Blackcomb, and Les 3 Vallées, including Courchevel and Val Thorens, are on Epic, along with Verbier and several resorts in Austria. A Club Med rate often includes the local lifts already, so an Ikon or Epic pass may not lower that price. We check that season’s rules, and how many days the pass covers, before counting the lifts as paid.

@@ -61,7 +61,7 @@ function LineRegionPage() {
         ) : null}
         <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink">
           {page.slug === "small"
-            ? "The ranges are per person, for two people in a cabin. They are recent figures, not a fare you can book from the search. Most of these sailings are quoted. Meals are in the fare, and on most European river ships a daily excursion is included."
+            ? "The ranges are per person, for two people in a cabin. Most of these sailings are quoted. Meals are in the fare, and on most European river ships a daily excursion is included."
             : "Ranges are per person, two to a cabin. They move with the month and the cabin, and they are not a quote. On the large ships, taxes, port charges, and gratuities are usually extra. On river ships, expedition ships, luxury ships, and yachts, more of that is already in the fare."}
         </p>
         {page.benefits ? (

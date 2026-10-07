@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "Why is there no fare for some trips?",
-    a: "Some cruise lines, most yacht sailings, many luxury hotels, and the European sleeper trains do not publish a fare you can book yourself. Those trips require a quote. There is no separate agent fee.",
+    a: "Some cruise lines, most yacht sailings, many luxury hotels, and the European sleeper trains are quoted by an agent. There is no separate agent fee.",
   },
 ];
 
