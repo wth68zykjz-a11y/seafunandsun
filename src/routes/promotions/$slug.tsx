@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import { Shell } from "@/components/site-chrome";
 import { getPromo } from "@/lib/promo";
 import { explainPromotion } from "@/lib/offer-copy";
@@ -45,6 +46,17 @@ function usefulNote(text: string) {
 
 function PromoPageView() {
   const promo = Route.useLoaderData();
+  const [openImage, setOpenImage] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!openImage) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpenImage(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [openImage]);
+
   if (!promo) {
     return (
       <Shell>
@@ -81,12 +93,20 @@ function PromoPageView() {
         ) : null}
 
         {promo.images.length > 0 ? (
-          <div className={`mt-8 grid gap-4 ${promo.images.length > 1 ? "md:grid-cols-2" : "max-w-3xl"}`}>
-            {promo.images.map((src) => (
-              <figure key={src} className="flex items-center justify-center overflow-hidden rounded-xl border border-line bg-foam p-3 shadow-card">
-                <img src={src} alt="" className="h-auto max-h-[32rem] w-auto max-w-full object-contain" />
-              </figure>
-            ))}
+          <div className="mt-8">
+            <p className="mb-3 text-sm text-mute">Select a flyer to enlarge it.</p>
+            <div className={`grid gap-4 ${promo.images.length > 1 ? "md:grid-cols-2" : "max-w-3xl"}`}>
+              {promo.images.map((src) => (
+                <button
+                  key={src}
+                  type="button"
+                  onClick={() => setOpenImage(src)}
+                  className="flex cursor-zoom-in items-center justify-center overflow-hidden rounded-xl border border-line bg-foam p-3 text-left shadow-card"
+                >
+                  <img src={src} alt="" className="h-auto max-h-[32rem] w-auto max-w-full object-contain" />
+                </button>
+              ))}
+            </div>
           </div>
         ) : null}
 
@@ -155,6 +175,24 @@ function PromoPageView() {
           </Link>
         </div>
       </article>
+      {openImage ? (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="Enlarged flyer"
+          onClick={() => setOpenImage(null)}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/80 p-4"
+        >
+          <button
+            type="button"
+            onClick={() => setOpenImage(null)}
+            className="absolute top-4 right-4 inline-flex min-h-11 items-center rounded-md bg-foam px-4 text-sm font-medium text-ink"
+          >
+            Close
+          </button>
+          <img src={openImage} alt="" onClick={(event) => event.stopPropagation()} className="max-h-[92vh] max-w-[92vw] object-contain" />
+        </div>
+      ) : null}
     </Shell>
   );
 }
