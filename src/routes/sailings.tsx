@@ -183,11 +183,11 @@ function OfferCard({ offer }: { offer: SupplierOffer }) {
   const body = (
     <>
       <p className="text-sm font-medium text-tide">{offer.line || offer.tag}</p>
-      <h3 className="mt-2 font-display text-2xl">{offerHeading(offer)}</h3>
-      <p className="mt-2 text-sm text-mute">{offer.detail}</p>
+      <h3 className="mt-2 font-display text-2xl leading-snug text-ink">{offerHeading(offer)}</h3>
+      <p className="mt-3 flex-1 text-base leading-relaxed text-ink">{offer.detail}</p>
     </>
   );
-  const className = "rounded-xl border border-line bg-foam p-5 hover:border-tide";
+  const className = "flex h-full flex-col rounded-xl border border-line border-t-4 border-t-gold bg-foam p-5 shadow-card hover:border-tide";
   if (!slug) {
     return (
       <Link to="/quote" search={{ place: offer.line ?? offer.title, note: offer.detail }} className={className}>
@@ -230,8 +230,8 @@ function DealsOfTheWeek({ offers, checked }: { offers: SupplierOffer[]; checked:
   const deals = dealsFromFeed(offers);
   return (
     <div>
-      <h2 className="font-display text-3xl">Daily promotions</h2>
-      <p className="mt-2 text-sm text-mute">Last check: {checked} Eastern.</p>
+      <h2 className="font-display text-3xl text-ink">Daily promotions</h2>
+      <p className="mt-2 max-w-2xl text-base text-ink">Seven current offers. Last check: {checked} Eastern.</p>
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -250,10 +250,10 @@ function DealsOfTheWeek({ offers, checked }: { offers: SupplierOffer[]; checked:
           const slug = deal.offer.href.match(/\/offer\/([a-z0-9-]+)/i)?.[1]?.toLowerCase();
           const heading = offerHeading(deal.offer, deal.guide);
           return (
-            <article key={deal.offer.href} className="flex flex-col rounded-xl border border-line bg-foam p-5">
+            <article key={deal.offer.href} className="flex h-full flex-col rounded-xl border border-line border-t-4 border-t-gold bg-foam p-5 shadow-card">
               <p className="text-sm font-medium text-tide">{deal.offer.line || (deal.guide ? deal.guide.port : deal.offer.tag)}</p>
-              <h3 className="mt-2 font-display text-2xl">{heading}</h3>
-              <p className="mt-2 text-sm leading-6 text-ink">{deal.offer.detail}</p>
+              <h3 className="mt-2 font-display text-2xl leading-snug text-ink">{heading}</h3>
+              <p className="mt-3 flex-1 text-base leading-relaxed text-ink">{deal.offer.detail}</p>
               {deal.guide ? (
                 <p className="mt-3 text-sm">
                   <Link to="/destinations/$slug" params={{ slug: deal.guide.destination }} className="font-medium text-tide">
@@ -335,8 +335,8 @@ function SailingsPage() {
       </div>
       <section id="promotions" className="mx-auto max-w-6xl scroll-mt-24 px-4 pb-20">
         <DealsOfTheWeek offers={cruiseOffers(feed.offers)} checked={updated} />
-        <h2 className="mt-14 font-display text-3xl">Offers available right now</h2>
-        <p className="mt-2 max-w-2xl text-sm text-mute">
+        <h2 className="mt-14 font-display text-3xl text-ink">Offers available right now</h2>
+        <p className="mt-2 max-w-2xl text-base text-ink">
           {feed.live
             ? `Updated from the booking system on ${updated} Eastern.`
             : "The booking system did not respond just now, so these are the promotions saved on this site."}
@@ -355,7 +355,7 @@ function SailingsPage() {
           const moreExplora = group === "Luxury" ? explora.slice(2) : [];
           return (
             <div key={group} className="mt-10">
-              <h3 className="font-display text-2xl">{group}</h3>
+              <h3 className="border-b border-line pb-2 font-display text-2xl text-ink">{group}</h3>
               <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 {visible.map((offer) => (
                   <OfferCard key={offer.title + offer.href} offer={offer} />
