@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { QuoteForm } from "@/components/quote-form";
 import { PageIntro, Shell } from "@/components/site-chrome";
 import { agentQuoteNote, phone, phoneHref } from "@/data/links";
@@ -27,11 +27,18 @@ function QuotePage() {
       <PageIntro
         kicker="A quote"
         title="Tell us where you want to go."
-        lede="Cruises, expeditions, resorts, ski vacations, and rail trips. We reply the same day in most cases. The request is kept for us and is not posted on the site. There is no separate agent fee."
+        lede="Use this form for a resort, a ski vacation, a rail trip, a yacht, or a cruise you want compared. We reply the same day in most cases. There is no separate agent fee."
       />
+      <p className="mx-auto max-w-6xl px-4 pb-8 text-base leading-relaxed text-ink">
+        If you already know the cruise and the fare is published,{" "}
+        <Link to="/sailings" className="font-medium text-tide">
+          search sailings
+        </Link>{" "}
+        and book the cabin in the booking system. This form is the other path.
+      </p>
       <ol className="mx-auto grid max-w-6xl gap-4 px-4 pb-10 sm:grid-cols-2">
         {[
-          ["1. Tell us the trip", "Use the form, call, or text. For a cruise with a public fare, you can also search sailings and pick the ship yourself."],
+          ["1. Tell us the trip", "Use the form, call, or text. Name the place, the dates, and who is traveling."],
           ["2. We price the pieces separately", "The cruise or hotel, the flight, and any nights before or after are quoted on their own, so you can see which one moved. A past-passenger number may improve the cruise price. A frequent-flyer number may improve the airfare. Military discounts are often available on both. Tell us if one of these applies."],
           ["3. You choose", "On a published sailing, you pick the date and the cabin in the booking system. Yacht sailings, many luxury hotels, and European sleeper trains have no public fare. Those come back as a quote."],
           ["4. You pay the supplier", "The card payment goes to the cruise line, resort, hotel, or operator. We do not hold the card. There is no separate agent fee. The supplier pays our commission."],

@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CruiseSearch } from "@/components/cruise-search";
 import { PageIntro, Shell } from "@/components/site-chrome";
-import { agentQuoteNote, licenseLine } from "@/data/links";
+import { licenseLine } from "@/data/links";
 import { getLiveOffers, isExploraOffer, type SupplierOffer } from "@/lib/offers";
 import { JsonLd, pageHead } from "@/lib/seo";
 
@@ -310,20 +310,24 @@ function SailingsPage() {
       />
       <div className="mx-auto max-w-6xl px-4">
         <CruiseSearch destinationId={destinationId} destinationType={destinationtype} />
-        <p className="mt-4 max-w-3xl text-sm text-mute">
-          {agentQuoteNote}{" "}
-          <Link to="/quote" className="font-medium text-tide">
+        <div className="mt-4 rounded-xl border border-line bg-foam p-5">
+          <h2 className="font-display text-2xl text-ink">This search is only for a published fare</h2>
+          <p className="mt-2 max-w-3xl text-base leading-relaxed text-ink">
+            A resort, a ski vacation, a rail trip, a yacht, or a cruise line that does not post a fare is a quote. Send the plans and we will price them.
+          </p>
+          <Link to="/quote" className="mt-4 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
             Request a quote
           </Link>
-          {" · "}
-          <Link to="/lines" className="font-medium text-tide">
-            Compare cruise lines
-          </Link>
-          {" · "}
-          <Link to="/ports" className="font-medium text-tide">
-            Departure ports
-          </Link>
-        </p>
+          <p className="mt-4 text-sm text-mute">
+            <Link to="/lines" className="font-medium text-tide">
+              Compare cruise lines
+            </Link>
+            {" · "}
+            <Link to="/ports" className="font-medium text-tide">
+              Departure ports
+            </Link>
+          </p>
+        </div>
       </div>
       <div className="mx-auto mt-8 grid max-w-6xl gap-3 px-4 sm:grid-cols-3">
         <img src="/media/page-sailings.jpg" alt="The bow of a white ship in calm water at golden hour" loading="lazy" decoding="async" className="aspect-photo w-full rounded-xl object-cover sm:col-span-2" />

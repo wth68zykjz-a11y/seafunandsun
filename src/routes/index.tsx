@@ -417,6 +417,35 @@ function Home() {
         </section>
 
         <section className="mx-auto max-w-6xl px-4 pb-16">
+          <h2 className="font-display text-3xl text-ink sm:text-4xl">Two ways to start</h2>
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">
+            Use the booking system when you already know the sailing. Use the quote when you want the trip arranged, or when there is no public fare.
+          </p>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            <article className="flex flex-col rounded-xl border border-line bg-foam p-6">
+              <p className="text-sm font-medium text-tide">A published cruise fare</p>
+              <h3 className="mt-2 font-display text-3xl text-ink">Book a sailing</h3>
+              <p className="mt-3 text-base leading-relaxed text-ink">
+                Search by region, month, and length. You pick the ship and the cabin in the booking system, and you pay the cruise line.
+              </p>
+              <Link to="/sailings" className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-tide px-5 text-sm font-medium text-foam hover:bg-tide-deep">
+                Search sailings
+              </Link>
+            </article>
+            <article className="flex flex-col rounded-xl bg-sea p-6 text-foam">
+              <p className="text-sm font-medium text-gold">A trip we price for you</p>
+              <h3 className="mt-2 font-display text-3xl">Request a quote</h3>
+              <p className="mt-3 text-base leading-relaxed text-foam/90">
+                A resort, a ski vacation, a rail trip, a yacht, or a cruise you want compared. One agent arranges the travel from your home to the destination and back.
+              </p>
+              <a href="#quote" className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
+                Go to the quote form
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-4 pb-16">
           <h2 className="font-display text-3xl sm:text-4xl">Frequently asked questions</h2>
           <div className="mt-6 divide-y divide-line border-y border-line">
             {faqs.map((item) => (
@@ -440,7 +469,7 @@ function Home() {
           </div>
         </section>
 
-        <section className="relative mx-auto grid max-w-6xl gap-8 px-4 pb-20 lg:grid-cols-2">
+        <section id="quote" className="relative mx-auto grid max-w-6xl scroll-mt-24 gap-8 px-4 pb-20 lg:grid-cols-2">
           <div>
             <p className="text-sm font-medium text-tide">A quote</p>
             <h2 className="mt-2 font-display text-3xl sm:text-4xl">Tell us the trip, or let us propose it.</h2>

@@ -166,6 +166,11 @@ export function DestinationArticle({
             </a>
           </div>
           {rail ? null : (
+            <p className="mt-4 max-w-xl text-sm leading-relaxed text-foam/85">
+              Search sailings when the fare is published. Request a quote when you want the trip compared, or when the line does not post a fare.
+            </p>
+          )}
+          {rail ? null : (
             <p className="mt-4 text-sm text-foam/80">
               <Link to="/lines" className="font-medium text-foam underline-offset-2 hover:underline">
                 Compare cruise lines
