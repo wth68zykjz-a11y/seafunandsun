@@ -757,7 +757,7 @@ export const portGuides: Record<string, PortGuide> = {
     ],
     outings: [
       { fits: "Night owls, on a port where the ship stays for dinner.", bring: "A plan for the city the ship is in." },
-      { fits: "Readers. Some days are just the ship.", bring: "A book for the day." },
+      { fits: "Readers, and anyone happy to spend the day on board. There is no port.", bring: "A book for the day." },
       { fits: "Anyone who wants a piece of the long voyage, not the whole loop.", bring: "Segments are booked on their own, separate from the full circle." },
     ],
   },
