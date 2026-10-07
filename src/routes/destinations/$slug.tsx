@@ -360,7 +360,7 @@ export function DestinationArticle({
                   {note ? (
                     <div className="mt-3 grid gap-2 border-t border-line pt-3 text-sm">
                       <p>
-                        <span className="font-medium">Who it fits. </span>
+                        <span className="font-medium">Good to know. </span>
                         <span className="text-mute">{note.fits}</span>
                       </p>
                       <p>

@@ -40,12 +40,12 @@ export const shores: Record<string, DestinationShore> = {
           "The walls, the squares, and one lunch are a full day ashore. A bus that also promises a beach leaves less time in the old city.",
       },
       {
-        title: "Panama City, only if you dock",
+        title: "Panama City, when the ship docks",
         where: "A listed stop, not the transit day",
         length: "The hours the ship is alongside",
         pace: "A drive, then a walk",
         detail:
-          "The old quarter and the canal visitor areas are different stops. If the itinerary does not list a dock, you will not get off.",
+          "The old quarter and the canal visitor areas are different stops. The day is there when the itinerary lists a dock.",
       },
     ],
   },
@@ -69,7 +69,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "3 to 4 hours",
         pace: "Moderate if the chop is up",
         detail:
-          "Humpbacks are the usual show from late spring. Seasickness rules out a small boat more often than fitness does. Skip it if anyone in the cabin gets motion-sick.",
+          "Humpbacks are the usual show from late spring. A small boat gets closer than the ship does, and the water moves.",
       },
       {
         title: "White Pass from Skagway",
@@ -91,9 +91,9 @@ export const shores: Record<string, DestinationShore> = {
         title: "The reef, not the pool deck",
         where: "Cozumel, Grand Cayman, or a western Caribbean stop",
         length: "2 to 3 hours",
-        pace: "You need to be comfortable in the water",
+        pace: "Time in the water",
         detail:
-          "House reefs and short boat snorkels are the water days. The plan should fit the least confident swimmer in the cabin, not the keenest.",
+          "House reefs and short boat snorkels are the water days.",
       },
       {
         title: "A beach with an actual chair",
@@ -101,7 +101,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Most of the port day",
         pace: "Easy",
         detail:
-          "Loungers, a swim, lunch, back to the ship. Skip this if the ship already has a beach club that is better.",
+          "Loungers, a swim, and lunch.",
       },
       {
         title: "A bakery, then the market",
@@ -125,7 +125,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Morning",
         pace: "Steep walking and steps",
         detail:
-          "The cable car and the donkeys both have lines by late morning. The useful plan is the first tender and a short stay up top, not a six-hour photo chase. It is a poor fit if knees are a problem.",
+          "The cable car and the donkeys both have lines by late morning. The first tender leaves time at the top.",
       },
       {
         title: "The Acropolis, and one stop nearby",
@@ -261,7 +261,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "2 to 4 hours ashore",
         pace: "Easy unless you add a hike",
         detail:
-          "The view from the village is the excursion. Add a waterfall walk only if the path is dry and the group wants it. The ship’s scenic cruise in the fjord already did half the work.",
+          "The view from the village is the day. A waterfall walk can be added. The ship’s sail in the fjord is already part of the day.",
       },
       {
         title: "Bergen’s wharf, on foot",
@@ -269,7 +269,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "3 hours",
         pace: "Easy walking on cobblestone streets",
         detail:
-          "The old wharf, then up the funicular only if the cloud is above the hill. A harbor walk in the rain is still a good way to see Bergen.",
+          "The old wharf, then the funicular when the hill is clear. A harbor walk in the rain is still a good way to see Bergen.",
       },
       {
         title: "One Baltic old town",
@@ -277,7 +277,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Walking",
         detail:
-          "Walk the old walls, stop in one square, and sit for coffee. A palace and a museum will not fit in the same morning.",
+          "The old walls, a square, and coffee.",
       },
     ],
   },
@@ -368,7 +368,7 @@ export const shores: Record<string, DestinationShore> = {
           "You land dry, or you come in by panga. The naturalist sets the trail over lava or a boardwalk, and you stop where the animals are. A swim or a short ride may be part of the same morning. The park rules set the pace.",
       },
       {
-        title: "Kayak or a polar plunge, only if you mean it",
+        title: "Kayak or a polar plunge",
         where: "Offered on some Arctic and Antarctic ships",
         length: "An hour",
         pace: "Active, cold",
@@ -461,7 +461,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Several days at sea",
         pace: "Rest",
         detail:
-          "Lectures, the deck, nothing scheduled. A world cruise is the wrong product if the trip needs a port every morning.",
+          "Lectures, the deck, and an unscheduled day at sea.",
       },
       {
         title: "A segment, not the whole circle",
@@ -469,7 +469,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "The sector you choose",
         pace: "Varies",
         detail:
-          "A full world cruise is not required. A shorter sector can hold the cities that matter and leave out the ones that do not.",
+          "A shorter sector can hold the cities you want. It is booked on its own.",
       },
     ],
   },
@@ -520,12 +520,12 @@ export const shores: Record<string, DestinationShore> = {
           "The ship is often already in the city. Walk the quay and see the house.",
       },
       {
-        title: "The reef, only if the hours are real",
-        where: "Cairns or Airlie Beach, when the day is long enough",
+        title: "The reef",
+        where: "Cairns or Airlie Beach",
         length: "Most of the port day",
-        pace: "A boat ride; swimming is optional",
+        pace: "A boat ride, with time in the water if you want it",
         detail:
-          "The reef is not at the pier. A mid-afternoon all-aboard does not leave time to get there and back. On a long day, a boat to the outer reef is the day. Snorkel only if everyone in the cabin wants the water.",
+          "The reef is a boat ride from the pier. On a long day, that ride is the day.",
       },
       {
         title: "Milford, from the deck",
@@ -557,12 +557,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "The canal day has no gangway. A stop in Cartagena is usually a morning or an afternoon. Panama City is a port only when the itinerary says the ship docks." },
       { label: "Worth the time", text: "Watch the locks from the deck. In Cartagena, the walled city is the walk, and you can eat there. A long coach to a beach is a different plan." },
       { label: "Best for", text: "Travelers who want the transit itself, and who can fly home from a different coast on a full transit." },
-      { label: "Often a poor fit", text: "A seven-night Caribbean loop. A partial transit goes into Gatun Lake and comes back out the same side. A full transit goes from one ocean to the other, and it takes longer." },
+      { label: "Also", text: "A partial transit goes into Gatun Lake and comes back out the same side. A full transit goes from one ocean to the other, and it takes longer." },
     ],
     outings: [
-      { fits: "Everyone on the ship. There is nothing to book.", bring: "A hat and sun cover. The day is hot, and rain is ordinary." },
-      { fits: "A walking day in a walled city. Skip it if you wanted a beach stop.", bring: "Comfortable shoes. The streets are stone." },
-      { fits: "Only a sailing that lists a Panama City dock.", bring: "Nothing extra. Confirm the dock before you plan a tour." },
+      { fits: "A day on deck, watching the locks. There is nothing to book.", bring: "A hat and sun cover. The day is hot, and rain is ordinary." },
+      { fits: "A walking day in the walled city.", bring: "Comfortable shoes. The streets are stone." },
+      { fits: "A day in Panama City when the ship docks there.", bring: "Confirm the dock before you plan the day." },
     ],
   },
   alaskan: {
@@ -572,12 +572,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Most stops are four to eight hours. Glacier days can be the ship’s scenic sail, with no gangway at all." },
       { label: "Worth the time", text: "Stop in Juneau to visit the Mendenhall Glacier. You can eat grilled salmon, or a chowder made from it, or go out for a few hours and try to catch one. Stop in Skagway for the train up the White Pass." },
       { label: "Best for", text: "People who want wildlife and ice more than nightlife. A balcony is the better cabin here than a seat in a big theater." },
-      { label: "Often a poor fit", text: "Gift-shop bus loops, and any “flightseeing plus six other stops” that spends the day in a van." },
+      { label: "Also", text: "The glacier and the White Pass train are the stops people come for." },
     ],
     outings: [
-      { fits: "Anyone who wants to hear the ice, including people who will not hike.", bring: "A wind layer, a hat, and shoes that can take spray. July is not warm on the water." },
-      { fits: "People who are comfortable in a small boat. That has to be everyone in the group. Motion sickness rules this out more often than fitness does.", bring: "Layers you can peel, and a dry bag if you are bringing a phone on deck." },
-      { fits: "The easy port day — families, knees that dislike trails, first-timers.", bring: "Almost nothing. A light jacket for the summit, which is colder than the pier." },
+      { fits: "A close look at the ice, from the boat or from a short walk.", bring: "A wind layer, a hat, and shoes that can take spray. July is not warm on the water." },
+      { fits: "A small-boat trip for whales. The water moves more than a trail does.", bring: "Layers you can peel, and a dry bag if you are bringing a phone on deck." },
+      { fits: "An easy day ashore, with the train and a short walk.", bring: "A light jacket for the summit, which is colder than the pier." },
     ],
   },
   caribbean: {
@@ -587,12 +587,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Usually morning to late afternoon. Private-island days are the ship’s own beach, not a town." },
       { label: "Worth the time", text: "Stop in Old San Juan and walk up to El Morro and the cathedral. In Martinique, stop at a bakery instead of a jewelry shop." },
       { label: "Best for", text: "A first cruise, a family, or anyone who wants short flights from the East Coast and a port every morning." },
-      { label: "Often a poor fit", text: "Stacking a zip line on a catamaran in one day, and any beach club that is worse than the one the ship already owns." },
+      { label: "Also", text: "A beach day and a town day are separate plans." },
     ],
     outings: [
-      { fits: "Swimmers, planned for the least confident person in the cabin, not the keenest.", bring: "Reef-safe sunscreen already on, and a rash guard if you burn. The boat may not have shade." },
-      { fits: "People who want one thing: water, a chair, lunch, back to the ship.", bring: "Cash for a chair upgrade if the included setup is a patch of sand." },
-      { fits: "Travelers who have done the beach and want a town that is not a jewelry stop.", bring: "Bring comfortable shoes for cobblestone streets. In Martinique, the bakery is on the stop." },
+      { fits: "Time in the water on the reef.", bring: "Reef-safe sunscreen already on, and a rash guard if you burn. The boat may not have shade." },
+      { fits: "A beach day, with a chair and lunch.", bring: "Cash for a chair upgrade if the included setup is a patch of sand." },
+      { fits: "A town stop, with a bakery and a market.", bring: "Comfortable shoes for cobblestone streets. In Martinique, the bakery is on the stop." },
     ],
   },
   mediterranean: {
@@ -602,13 +602,13 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Often a long day, sometimes a tender. The useful hours are early, before the alleys fill." },
       { label: "Worth the time", text: "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site. The Ancient Agora is nearby. The National Archaeological Museum holds the Mycenaean gold and the classical bronzes. Rome is a long ride from Civitavecchia. St. Peter’s is in Rome, and the Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city too. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. Long lunches are on the Amalfi coast." },
       { label: "Best for", text: "Travelers who want a different country at breakfast and will walk for it. Shoulder months beat August." },
-      { label: "Often a poor fit", text: "Three-ruin coach loops, and any Santorini plan that starts after the other ships have tendered." },
+      { label: "Also", text: "The Acropolis, or one town, is a full morning." },
     ],
     outings: [
-      { fits: "This suits people who can manage the steps and are happy with a short stay at the top. Tell us if anyone has trouble with knees.", bring: "Sun protection, water, and shoes with a grip. The marble is polished by crowds." },
+      { fits: "The path to the caldera and time at the top.", bring: "Sun protection, water, and shoes with a grip. The marble is polished by crowds." },
       { fits: "Ideas include the Acropolis, the museum beside it, the Ancient Agora, and lunch in Plaka.", bring: "A hat and a bottle. The site is exposed, and the good cafes are after, not on the hill." },
       { fits: "St. Peter’s is in Rome. The Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city. The Borghese Gallery holds Bernini’s sculptures and Caravaggio’s paintings, and it needs a timed ticket booked ahead.", bring: "Comfortable shoes. The drive from Civitavecchia is part of the day." },
-      { fits: "A walking day in Kotor, or a seated lunch in Amalfi if the ship’s hours are honest.", bring: "All-aboard decides whether the day is a walk or a long lunch. Cash still helps in the old towns." },
+      { fits: "A walk on Kotor’s walls, or lunch in Amalfi.", bring: "Cash still helps in the old towns." },
     ],
   },
   european: {
@@ -618,12 +618,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "A city day uses most of the hours, but the pier is often an hour from the place you actually want." },
       { label: "Worth the time", text: "The belfry is in Bruges, and the menus have mussels steamed in white wine, onion, and celery, usually with fries. Paris is a long ride from Le Havre. The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. Lunch can fit if the ship leaves later. Shangri-La Paris, looking toward the Eiffel Tower, is a stay in the city before or after the cruise. Westminster Abbey and the Tower of London are in London. The Savoy is a stay in the city. The Sagrada Família and the Gothic Quarter are in Barcelona. Cocina Hermanos Torres is a Michelin table in the city if you reserved it ahead, and Camp Nou is there when there is a match. Belém and Alfama are in Lisbon. Hotel Arts is a stay in Barcelona. The Four Seasons Hotel Ritz is a stay in Lisbon." },
       { label: "Best for", text: "Travelers who have a city they still want, or who would rather have one garden than three capitals." },
-      { label: "Often a poor fit", text: "Paris from a short stop in Le Havre, and any “two cities in one day” that is mostly highway." },
+      { label: "Also", text: "Le Havre to Paris is a long ride for a short stop." },
     ],
     outings: [
-      { fits: "A full, easy city day. The transfer eats the extra stop you were hoping to add.", bring: "Layers. Canal weather changes, and the square is windier than the pier." },
-      { fits: "People who want France that is not a Paris bus. The cliff path is optional.", bring: "A wind jacket. The town lunch works even if you skip the cliff." },
-      { fits: "A focused morning at the Alcázar, one Lisbon hill, or a Riviera town. This is not a coach tour of every sight.", bring: "Good walking shoes. The Cádiz-to-Seville drive is longer than it looks on a map." },
+      { fits: "A day in Bruges, including the ride from the pier.", bring: "Layers. Canal weather changes, and the square is windier than the pier." },
+      { fits: "The cliffs at Étretat and lunch in town.", bring: "A wind jacket." },
+      { fits: "The Alcázar, a Lisbon hill, or a town on the Riviera.", bring: "Good walking shoes. The Cádiz-to-Seville drive is longer than it looks on a map." },
     ],
   },
   hawaii: {
@@ -633,12 +633,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Inter-island ships often overnight. A sailing from San Diego, Los Angeles, or Vancouver spends more days just getting there." },
       { label: "Worth the time", text: "Stop on Oahu to visit the USS Arizona Memorial. After that, a plate lunch is an idea." },
       { label: "Best for", text: "People who want the islands, not a new port every morning. Match the excursion to the kind of Hawaii trip you booked." },
-      { label: "Often a poor fit", text: "Hana on a dawn-to-dusk stop, and stacking a snorkel on a kayak in the same bay." },
+      { label: "Also", text: "The road to Hana takes a full day." },
     ],
     outings: [
-      { fits: "Comfortable swimmers. The calm side of the island depends on that day’s wind.", bring: "Reef-safe sunscreen. Whales in winter are a bonus, not a promise." },
-      { fits: "Ideas include the memorial and the beach. The memorial has security screening, so go early if you want both.", bring: "Allow time for security screening. You will be standing." },
-      { fits: "Only a sailing that stays the night in Maui. A dawn-to-dusk stop is too short.", bring: "Patience in a car. The road is the excursion, not a checklist of waterfalls." },
+      { fits: "Time in the water with the turtles. The boat uses the calmer side of the island.", bring: "Reef-safe sunscreen. Whales in winter are a bonus, not a promise." },
+      { fits: "The memorial and the beach. The memorial has security screening.", bring: "Allow time for security screening." },
+      { fits: "The road to Hana, which takes the day.", bring: "The road is the day, not a list of waterfalls." },
     ],
   },
   bermuda: {
@@ -648,12 +648,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Ships usually stay more than a day, so you do not have to see the island between breakfast and all-aboard." },
       { label: "Worth the time", text: "Stop in St. George’s to see St. Peter’s Church. The town is quiet enough that you do not need a timed tour. In Hamilton, the fish sandwich on raisin bread is an idea." },
       { label: "Best for", text: "A short East Coast sailing that still feels like a real island, not a dash through three countries." },
-      { label: "Often a poor fit", text: "Six-stop island tours, and Horseshoe Bay at the hour every ship arrives." },
+      { label: "Also", text: "Horseshoe Bay and the town are the usual days." },
     ],
     outings: [
-      { fits: "The morning beach, before it becomes a ship party.", bring: "Reef shoes if you are tender-footed. The sand is soft; the walk in can be rocky." },
-      { fits: "People who are done with another beach and want pastel streets and lunch.", bring: "A ferry schedule. St. George’s is the quieter town." },
-      { fits: "Ideas include the flat green trail and the cool caves.", bring: "A light layer for the caves. They are short and colder than the beach." },
+      { fits: "Pink sand in the morning.", bring: "Reef shoes if the walk in is rocky. The sand itself is soft." },
+      { fits: "A ferry into town, for the streets and lunch.", bring: "A ferry schedule. St. George’s is the quieter town." },
+      { fits: "The flat green trail and the cool caves.", bring: "A light layer for the caves. They are short and colder than the beach." },
     ],
   },
   "northern-europe": {
@@ -663,12 +663,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Fjord villages can be a tender of a few hours. Baltic capitals are longer city days." },
       { label: "Worth the time", text: "The Bryggen wharf is in Bergen, and the fish market serves a shrimp sandwich: cold peeled shrimp on buttered bread, with mayonnaise and lemon. In Copenhagen, a New Nordic menu is local seafood, vegetables, and foraged herbs, and those tables are booked before you sail. Amsterdam’s ocean ships dock at IJmuiden, not in the canals. The Rijksmuseum is in Amsterdam. It holds Rembrandt’s The Night Watch. The Anne Frank House is the rooms where she hid. Lunch can fit if the ship leaves later. The Waldorf Astoria Amsterdam is a stay in the city before or after the cruise. Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a stay in the city if you want the night. Gamla Stan is in Stockholm. The Vasa Museum holds the warship Vasa, raised from the harbor. Grand Hôtel looks across the water at the palace." },
       { label: "Best for", text: "Long summer light, small ports, and people who like weather to be part of the trip." },
-      { label: "Often a poor fit", text: "A scenic boat with no backup plan. If the tender cancels, you want a town walk already in mind." },
+      { label: "Also", text: "If the tender does not run, the town walk is the day." },
     ],
     outings: [
-      { fits: "The view from the village. Add a walk only if the path is dry and the group wants it.", bring: "A real rain jacket. The ship’s fjord sail already did half the day’s work." },
-      { fits: "Spend an easy hour on Bryggen’s cobblestone streets, rain or not. Take the funicular only if the cloud is above the hill.", bring: "Wear shoes that can take wet stone. A harbor walk in the rain is still a good way to see Bergen." },
-      { fits: "Walk the old walls, sit in one square, and have coffee. A palace and a museum will not fit in the same morning.", bring: "A layer. Baltic mornings stay cool even when the brochure looks like July." },
+      { fits: "The village at the end of the fjord, and a walk if you want one.", bring: "A real rain jacket." },
+      { fits: "Bryggen on foot, and the funicular when the hill is clear.", bring: "Shoes that can take wet stone." },
+      { fits: "The old walls, a square, and coffee.", bring: "A layer. Baltic mornings stay cool even when the brochure looks like July." },
     ],
   },
   "canada-new-england": {
@@ -678,12 +678,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Small Maine ports are half days. Halifax and Québec, when the ship goes upriver, are city days." },
       { label: "Worth the time", text: "Stop in Halifax to see the Citadel. You can do it on foot. If the ship goes up to Québec, stop there for the view from the Château Frontenac. You can also stay in that hotel before or after the cruise. In Maine, stop for a lighthouse and a lobster roll: lobster meat in a split bun, with mayonnaise or melted butter. That is a full day." },
       { label: "Best for", text: "Fall color and small harbors, often without a flight. Peak leaves are a narrow window." },
-      { label: "Often a poor fit", text: "A bus to a prettier brochure photo, and any “best of Acadia” that is mostly van time." },
+      { label: "Also", text: "The harbor and the ramparts are the walk." },
     ],
     outings: [
       { fits: "An easy path near the pier in late September or early October.", bring: "A fleece. The maples are in color. The wind off the water is colder than it looks." },
-      { fits: "A half day on your own feet — citadel view or the walls above the river.", bring: "Comfortable shoes. Québec is steeper than the waterfront in Halifax." },
-      { fits: "Carriage roads if you want gravel and trees, or the town shore path if you want it shorter.", bring: "Nothing fancy. Skip the outlet mall. It is not why the ship stopped." },
+      { fits: "A half day on foot, at the citadel or on the walls above the river.", bring: "Comfortable shoes. Québec is steeper than the waterfront in Halifax." },
+      { fits: "The carriage roads, or the shorter path along the shore.", bring: "The carriage roads and the shore path are the stop." },
     ],
   },
   river: {
@@ -693,12 +693,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "You dock in town, often overnight. Mornings are the walking tour. Afternoons can be a bike or a tasting." },
       { label: "Worth the time", text: "Stop in Budapest to see the Parliament and have a bowl of goulash. In Vienna, Steirereck is the Michelin restaurant for Austrian cooking, so book it before the cruise. If the afternoon is short, have Sachertorte in a café instead. To see either city properly, stay before or after the cruise: Four Seasons Hotel Gresham Palace in Budapest, on the Danube, or Hotel Sacher in Vienna." },
       { label: "Best for", text: "Travelers who want the city at the gangway and are happy with one river, not a new ocean every week." },
-      { label: "Often a poor fit", text: "A paid tour that repeats the walk already in the fare, and a 90-minute coach for one glass of wine." },
+      { label: "Also", text: "The included walk is already the morning." },
     ],
     outings: [
-      { fits: "This is the morning walk the fare already includes. Sometimes that walk is enough.", bring: "Bring the ship’s listening set if the guide uses one, and wear shoes for uneven stone." },
-      { fits: "The villages between the capitals. The shorter loop is the one if anyone is unsure.", bring: "A light layer. The point is the stops, not the mileage." },
-      { fits: "A tasting on the route the ship is already sailing. Say whether you want the wine or the view. They are different stops.", bring: "Nothing formal. Skip it if the coach ride is longer than the tasting." },
+      { fits: "The morning walk that comes with the fare.", bring: "The ship’s listening set if the guide uses one, and shoes for uneven stone." },
+      { fits: "The villages between the capitals, by bike.", bring: "A light layer." },
+      { fits: "A tasting along the route the ship is already sailing. Wine and a view are different stops.", bring: "Nothing formal." },
     ],
   },
   expedition: {
@@ -706,14 +706,14 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Expedition boots and a red parka on a zodiac, with sea ice beyond",
     facts: [
       { label: "Time in port", text: "There often is no port. You may spend an hour or two ashore after a Zodiac ride, or the landing may be called off." },
-      { label: "Worth the time", text: "The day may be gear, a Zodiac, a short walk, and pictures. A kayak or a canoe is separate, and only if the water allows." },
-      { label: "Best for", text: "People who will accept a change of plan. The guides run the day." },
-      { label: "Often a poor fit", text: "A fixed schedule, or a ship that sells a bigger theater instead of time off the ship." },
+      { label: "Worth the time", text: "The day may be gear, a Zodiac, a short walk, and pictures. A kayak or a canoe can be added when the water is calm." },
+      { label: "Best for", text: "A landing, pictures, and a plan that can change with the weather." },
+      { label: "Also", text: "The guides change the plan with the weather." },
     ],
     outings: [
-      { fits: "You put on the ship’s boots and parka, ride a Zodiac, and walk a short path. The landing can be canceled.", bring: "The boots and parka the ship issues. Keep the camera inside the jacket until you are ashore." },
-      { fits: "A panga or a dry landing with a naturalist. You follow the trail and take pictures from the marked line.", bring: "Shoes for lava, and patience with the park rules." },
-      { fits: "A kayak, a canoe, or a plunge, only if you ask and the water is calm.", bring: "The suit the ship provides. Skip it if you came for the landing." },
+      { fits: "The ship’s boots and parka, a Zodiac ride, and a short walk ashore.", bring: "The boots and parka the ship issues. Keep the camera inside the jacket until you are ashore." },
+      { fits: "A panga or a dry landing with a naturalist, and pictures from the marked line.", bring: "Shoes for lava." },
+      { fits: "A kayak, a canoe, or a plunge when the water is calm.", bring: "The suit the ship provides." },
     ],
   },
   asia: {
@@ -723,11 +723,11 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "The ship often docks outside the city. The drive can take as long as the visit." },
       { label: "Worth the time", text: "The Grand Palace is in Bangkok, about two hours from Laem Chabang. The Peninsula Tokyo is a stay in the city before or after the cruise. Gardens by the Bay is in Singapore. Raffles is a stay in the city. The Peak and the Star Ferry are in Hong Kong. The Peninsula is a stay there." },
       { label: "Best for", text: "A visit to the Grand Palace, or a district in Kyoto such as Fushimi Inari or Arashiyama." },
-      { label: "Often a poor fit", text: "A bus that promises three temples and a market. Ha Long Bay only counts when the ship is already in that bay." },
+      { label: "Also", text: "One temple, or one district, is a full day once the drive is included." },
     ],
     outings: [
-      { fits: "Visit the Grand Palace, another temple, or a floating market. The drive back to Laem Chabang is part of the day.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
-      { fits: "Only when the itinerary is already in that scenery. Easy if you can sit on a boat.", bring: "Sun cover and a tolerance for some chop. A distant port is not the bay." },
+      { fits: "The Grand Palace, another temple, or a floating market. The drive back to Laem Chabang is part of the day.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
+      { fits: "The karsts from the water, on a sailing already in the bay.", bring: "Sun cover." },
       { fits: "Fushimi Inari and Arashiyama are both in Kyoto. The train from Osaka or Kobe is part of the day.", bring: "A transit card and walking shoes." },
     ],
   },
@@ -738,12 +738,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "City days can be long. Cape Horn is often a scenic hour from the deck, with no landing." },
       { label: "Worth the time", text: "Christ the Redeemer and Sugarloaf are in Rio. A Michelin dinner is another idea when the ship stays late and you reserved it ahead. In Buenos Aires, the lunch in San Telmo is grilled beef, often a sirloin, cooked over coals." },
       { label: "Best for", text: "A longer voyage where the city days are the memory and the scenic days are the ship’s job." },
-      { label: "Often a poor fit", text: "Both Rio statues in one day, and a tango show that ends after the gangway closes." },
+      { label: "Also", text: "One view is a full day in Rio. A show in Buenos Aires works when the ship stays late." },
     ],
     outings: [
-      { fits: "Pick one view. Leave the other, and the beach neighborhood, for time you actually have.", bring: "Comfortable shoes for the viewpoint." },
-      { fits: "A market afternoon is the simple plan. A show only if all-aboard is honestly late.", bring: "Comfortable shoes for San Telmo, and a backup that does not depend on the evening." },
-      { fits: "Everyone. You stay aboard. Hiking boots will not get you onto the cape.", bring: "A jacket for the rail, and a camera. Weather decides if you see it." },
+      { fits: "Sugarloaf or Christ the Redeemer.", bring: "Comfortable shoes for the viewpoint." },
+      { fits: "A market in the afternoon, or a show when the ship stays late.", bring: "Comfortable shoes for San Telmo." },
+      { fits: "Cape Horn from the deck.", bring: "A jacket for the rail, and a camera. Weather decides if you see it." },
     ],
   },
   world: {
@@ -753,12 +753,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "A few overnights matter. Many stops give you only a short look from the pier. Sea days make up most of the voyage." },
       { label: "Worth the time", text: "If the ship stays the night, pick one building and one good meal. A two-hour stop by tender is not the day for a stadium or a big museum." },
       { label: "Best for", text: "Travelers who like the ship, and who do not need a new city every morning." },
-      { label: "Often a poor fit", text: "Treating a two-hour tender as a tour of a country. The overnights are the days that matter. The short stops are optional." },
+      { label: "Also", text: "An overnight is the day to use the city. A short tender is a look at the port." },
     ],
     outings: [
-      { fits: "The port where the ship stays past dinner: one neighborhood, a table, a late return.", bring: "A plan for that one city, not a list of five. A guide is worth booking here." },
-      { fits: "People who can enjoy a lecture, a deck, and nothing scheduled.", bring: "Books, and an honest answer. If you need a port every morning, this is the wrong product." },
-      { fits: "A 20- to 40-night slice that holds the cities you want and leaves out the ones you do not.", bring: "Flexibility on the cabin. Segments sell differently than the full circle." },
+      { fits: "An overnight in port: a neighborhood, a table, and a late return.", bring: "A plan for the city the ship is in." },
+      { fits: "A day at sea, with a lecture and time on deck.", bring: "A book for the day." },
+      { fits: "A 20- to 40-night segment of the longer voyage.", bring: "Segments are booked on their own, separate from the full circle." },
     ],
   },
   rail: {
@@ -766,14 +766,14 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A river canyon seen from a train roomette window",
     facts: [
       { label: "Time at a stop", text: "The train is the day. Fresh-air stops are minutes. A hike means a night off the train, in a town or a park." },
-      { label: "Worth the time", text: "The canyon, or the coast, is why you took the train, and you see it from the window. The stops are too short for a cathedral or a real lunch." },
+      { label: "Worth the time", text: "The canyon, or the coast, is why you took the train, and you see it from the window. A longer stop is a night off the train." },
       { label: "Best for", text: "The Northwest, the Rockies, or a Canadian route, in a roomette if the trip is overnight." },
-      { label: "Often a poor fit", text: "A coach seat as a bed, and a same-day flight the afternoon you step off a two-night train." },
+      { label: "Also", text: "An overnight train is more comfortable in a roomette." },
     ],
     outings: [
-      { fits: "Daylight on the Empire Builder or the Zephyr, with a roomette so the lounge is a choice.", bring: "Layers. The glass car is colder than the room, and the scenery is the whole point." },
-      { fits: "A route that actually pauses, or a night off the train if the point is a hike.", bring: "Do not pack for a national park on a ten-minute stop. The timetable shows which kind of stop it is." },
-      { fits: "One hotel night in Chicago, Seattle, San Francisco, Vancouver, or Toronto before you fly.", bring: "Nothing heroic. A walk, a table, then home. That night belongs in the same plan as the rail." },
+      { fits: "Daylight on the Empire Builder or the Zephyr. A roomette leaves the lounge as a choice.", bring: "Layers. The glass car is colder than the room." },
+      { fits: "A route with a real stop, or a night off the train for a hike.", bring: "The timetable shows how long each stop is." },
+      { fits: "A hotel night in Chicago, Seattle, San Francisco, Vancouver, or Toronto before the flight home.", bring: "A walk and a table, then the flight home." },
     ],
   },
   "australia-new-zealand": {
@@ -783,12 +783,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Sydney and Auckland can be long city days. Reef ports need a full day. Milford is often a scenic sail, with no gangway." },
       { label: "Worth the time", text: "Stop in Sydney to see the Opera House. It sits next to where most ships dock. If the ship leaves later, have lunch, or a meat pie on the quay: minced beef in gravy, baked in a pastry case. To see more than the harbor, stay at the Park Hyatt Sydney, across from the Opera House, before the cruise or after you return. In Auckland, walk the harbor and have a grilled lamb chop, the usual lunch." },
       { label: "Best for", text: "Travelers who can spend October through April, Australia’s summer, in one place, and who will fly to Sydney or Auckland to start." },
-      { label: "Often a poor fit", text: "A reef and a capital in one day, and any Blue Mountains loop that spends the Sydney day on a highway." },
+      { label: "Also", text: "The reef and the city are different days." },
     ],
     outings: [
-      { fits: "A half day on the quay. The ship is often already in the city.", bring: "Comfortable shoes and a plan that stops at the harbor. The suburbs can wait." },
-      { fits: "Only a day long enough to reach the outer reef and get back. Swimming is optional.", bring: "Sun cover, and a clear answer about who wants to be in the water. The boat ride is the day either way." },
-      { fits: "Everyone. You stay aboard. Hiking boots will not get you onto the sound if the ship does not land.", bring: "A jacket for the rail. Weather decides whether the ship goes in." },
+      { fits: "A half day on the quay. The ship is often already in the city.", bring: "Comfortable shoes and a plan near the harbor." },
+      { fits: "A boat out to the reef and back.", bring: "Sun cover. The boat ride is the day." },
+      { fits: "Milford Sound from the deck.", bring: "A jacket for the rail. Weather decides whether the ship goes in." },
     ],
   },
 };
