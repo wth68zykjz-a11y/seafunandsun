@@ -173,7 +173,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half to full day",
         pace: "A short cliff path, or the view from the town",
         detail:
-          "Étretat has the chalk cliffs and a Norman lunch. Paris is a different city. The Louvre, Notre-Dame, and the Eiffel Tower are there. The ship docks at Le Havre. Paris is about two hours from the pier, so a short stop leaves time for one sight. To see Paris properly, stay at Shangri-La Paris before the cruise or after you return.",
+          "Étretat has the chalk cliffs and a Norman lunch. Paris has the Louvre, Notre-Dame, and the Eiffel Tower. The ship docks at Le Havre. Paris is about two hours from the pier, so a short stop leaves time for one sight. To see Paris properly, stay at Shangri-La Paris before the cruise or after you return.",
       },
       {
         title: "One garden, not the whole city",
@@ -555,8 +555,8 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "The Miraflores Locks building beside a ship in the Panama Canal",
     facts: [
       { label: "Time in port", text: "The canal day has no gangway. A stop in Cartagena is usually a morning or an afternoon. Panama City is a port only when the itinerary says the ship docks." },
-      { label: "Worth the time", text: "Watch the locks from the deck. In Cartagena, you can walk the walled city, and you can eat there. A long coach to a beach is a different plan." },
-      { label: "Best for", text: "Travelers who want the transit itself, and who can fly home from a different coast on a full transit." },
+      { label: "Worth the time", text: "Watch the locks from the deck. In Cartagena, you can walk the walled city, and you can eat there. A long coach to a beach uses the hours you would have spent in the city." },
+      { label: "Best for", text: "Travelers who want the transit itself, and who can fly home from the other ocean on a full transit." },
       { label: "Also", text: "A partial transit goes into Gatun Lake and comes back out the same side. A full transit goes from one ocean to the other, and it takes longer." },
     ],
     outings: [
@@ -601,7 +601,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "Often a long day, sometimes a tender. The useful hours are early, before the alleys fill." },
       { label: "Worth the time", text: "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site. The Ancient Agora is nearby. The National Archaeological Museum holds the Mycenaean gold and the classical bronzes. St. Peter’s is in Rome, and the Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city too. The ship docks at Civitavecchia. Rome is about an hour and a half from the pier. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. Long lunches are on the Amalfi coast." },
-      { label: "Best for", text: "Travelers who want a different country at breakfast and will walk for it. Shoulder months beat August." },
+      { label: "Best for", text: "Travelers who want a new country each morning and will walk for it. Shoulder months beat August." },
       { label: "Also", text: "The Acropolis, or one town, is a full morning." },
     ],
     outings: [
@@ -698,7 +698,7 @@ export const portGuides: Record<string, PortGuide> = {
     outings: [
       { fits: "People who will take the morning walk that is already in the fare.", bring: "The ship’s listening set if the guide uses one, and shoes for uneven stone." },
       { fits: "People who will bike the Wachau or the Rhine instead of sitting on a coach.", bring: "A light layer." },
-      { fits: "People who will stop for a glass. A wine tasting and a view are different stops.", bring: "Nothing formal." },
+      { fits: "People who will stop for a glass. A tasting is a vineyard. A view stop is a lookout. You do not get both from the same stop.", bring: "Nothing formal." },
     ],
   },
   expedition: {
@@ -783,7 +783,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Sydney and Auckland can be long city days. Reef ports need a full day. Milford is often a scenic sail, with no gangway." },
       { label: "Worth the time", text: "Stop in Sydney to see the Opera House. It sits next to where most ships dock. If the ship leaves later, have lunch, or a meat pie on the quay: minced beef in gravy, baked in a pastry case. To see more than the harbor, stay at the Park Hyatt Sydney, across from the Opera House, before the cruise or after you return. In Auckland, walk the harbor and have a grilled lamb chop, the usual lunch." },
       { label: "Best for", text: "Travelers who can spend October through April, Australia’s summer, in one place, and who will fly to Sydney or Auckland to start." },
-      { label: "Also", text: "The reef and the city are different days." },
+      { label: "Also", text: "The reef is a boat over the coral. Sydney is the Opera House and the quay. They do not fit in the same day." },
     ],
     outings: [
       { fits: "People who will walk the quay to the Opera House.", bring: "Comfortable shoes and a plan near the harbor." },

@@ -207,7 +207,7 @@ export const deskDoors = [
   },
   {
     title: "Ski — Epic & Ikon",
-    detail: "We also book ski vacations, including Epic and Ikon pass travel. Same agency, different season.",
+    detail: "We also book ski vacations, including Epic and Ikon pass travel. Same agency. Ski is the winter trip, not a cruise.",
     href: desk.ski,
     tag: "Ski",
   },

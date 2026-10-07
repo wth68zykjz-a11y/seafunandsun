@@ -131,7 +131,7 @@ export const portRegions: PortRegion[] = [
   {
     id: "rivers",
     title: "River embarkations",
-    lede: "A river ship is not an ocean ship with a different brochure. These are the towns where European river cruises embark.",
+    lede: "A river ship ties up in the town, and you walk off. An ocean ship crosses open water and docks at a cruise terminal. These are the towns where European river cruises embark.",
     ports: [
       { name: "Budapest, Vienna, and Passau", place: "The Danube", goes: "Danube river cruises between Hungary, Austria, and Germany.", air: "Fly Budapest, Vienna, or Munich for Passau. Austrian and Lufthansa cover Vienna and Munich. Budapest is usually a connection.", zone: "Europe/Vienna", money: "Euro in Vienna and Passau. Hungarian forint in Budapest. Cards are accepted. Euro cash is not the local currency in Hungary.", image: "/media/ports/budapest.jpg", alt: "Budapest along the Danube", slug: "river" },
       { name: "Amsterdam and Basel", place: "The Rhine", goes: "Rhine river cruises. The ocean ships in Amsterdam leave from IJmuiden, not these berths.", air: "Fly Amsterdam (KLM, Delta, United) or Zurich and Basel (SWISS).", zone: "Europe/Amsterdam", money: "Euro in Amsterdam. Swiss franc in Basel. Cards are accepted in both.", image: "/media/ports/basel.jpg", alt: "Basel on the Rhine", slug: "river" },
@@ -179,7 +179,7 @@ export const portRegions: PortRegion[] = [
       { name: "Cape Town", place: "South Africa", goes: "Southern Africa, and segments of world cruises.", air: "British Airways, Virgin Atlantic, Emirates, Qatar, KLM, and Air France. South African Airways flies the region. A US nonstop should be checked, not assumed.", zone: "Africa/Johannesburg", money: "South African rand. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/cape-town.jpg", alt: "Cape Town and the coast", slug: "world" },
       { name: "Rio de Janeiro", place: "Brazil", goes: "The Brazilian coast, in the southern summer. Ships dock on Guanabara Bay. Sugarloaf and Corcovado are in the city.", air: "LATAM, Gol, and Azul, plus American and United.", zone: "America/Sao_Paulo", money: "Brazilian real. Cards are accepted. US dollars are not reliable as cash.", image: "/media/ports/rio.jpg", alt: "Rio de Janeiro and the harbor", slug: "south-america" },
       { name: "Buenos Aires", place: "Argentina", goes: "The South American coast, and longer runs toward the Chilean fjords.", air: "Aerolíneas Argentinas and LATAM, plus American and United.", zone: "America/Argentina/Buenos_Aires", money: "Argentine peso. Cards are accepted. US dollar cash is widely used by visitors, and the rate moves.", image: "/media/ports/buenos-aires.jpg", alt: "Buenos Aires along the water", slug: "south-america" },
-      { name: "Ushuaia", place: "Argentina", goes: "Antarctica. This is the expedition embarkation, not a city cruise.", air: "No long-haul flights. Aerolíneas Argentinas and JetSMART connect from Buenos Aires.", zone: "America/Argentina/Ushuaia", money: "Argentine peso. Cards are accepted in town. The ship to Antarctica usually bills in US dollars.", image: "/media/ports/ushuaia.jpg", alt: "Ushuaia at the end of the continent", slug: "expedition" },
+      { name: "Ushuaia", place: "Argentina", goes: "Antarctica. You embark here for an expedition. The ship lands by Zodiac. This is not a pier in a city you walk.", air: "No long-haul flights. Aerolíneas Argentinas and JetSMART connect from Buenos Aires.", zone: "America/Argentina/Ushuaia", money: "Argentine peso. Cards are accepted in town. The ship to Antarctica usually bills in US dollars.", image: "/media/ports/ushuaia.jpg", alt: "Ushuaia at the end of the continent", slug: "expedition" },
     ],
   },
 ];
@@ -194,7 +194,7 @@ export const portPages: PortPage[] = [
   {
     slug: "europe",
     title: "Europe",
-    lede: "Barcelona, Rome, and Athens cover the Mediterranean. Southampton, Amsterdam, and Copenhagen cover the north. River ships embark in a different set of cities.",
+    lede: "Barcelona, Rome, and Athens cover the Mediterranean. Southampton, Amsterdam, and Copenhagen cover the north. River ships embark in Budapest, Vienna, Amsterdam, Basel, Paris, and Porto.",
     regionIds: ["mediterranean", "northern-europe", "rivers"],
   },
   {

@@ -40,7 +40,7 @@ const regions = [
   },
   {
     title: "Families",
-    body: "Beaches in Turks & Caicos and Jamaica, Hyatt Ziva, Dreams, and Club Med’s beach villages. Ask the age the kids’ club accepts, and whether the rooms connect. A reunion with teenagers is a different property from a trip with toddlers. Ski, including Club Med on snow, is its own page.",
+    body: "Beaches in Turks & Caicos and Jamaica, Hyatt Ziva, Dreams, and Club Med’s beach villages. Ask the age the kids’ club accepts, and whether the rooms connect. A reunion with teenagers needs a larger club and rooms that connect. A trip with toddlers needs a club that takes young children. Ski, including Club Med on snow, is its own page.",
   },
   {
     title: "Mexico",
@@ -188,7 +188,7 @@ function ResortsPage() {
         <article className="mt-4 rounded-xl bg-sea p-5 text-foam">
           <h2 className="font-display text-2xl">When to go</h2>
           <p className="mt-3 max-w-3xl text-foam/85">
-            Caribbean hurricane season runs June through November. The resort rate for a late-summer week can be lower, and that week can also carry a real storm risk. We will say which of those applies to your dates. The Mexican Caribbean is hot and wet in summer and more reliable from December through April. School breaks and the weeks around Christmas sell out, and the rate for those weeks is higher than the rate for a week in September. Overwater villas follow a different calendar, and an agent almost always requests those rates.
+            Caribbean hurricane season runs June through November. The resort rate for a late-summer week can be lower, and that week can also carry a real storm risk. We will say which of those applies to your dates. The Mexican Caribbean is hot and wet in summer and more reliable from December through April. School breaks and the weeks around Christmas sell out, and the rate for those weeks is higher than the rate for a week in September. Overwater villas are booked on their own dates, and an agent almost always requests those rates.
           </p>
         </article>
 

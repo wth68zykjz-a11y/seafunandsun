@@ -100,7 +100,7 @@ export const destinations: Destination[] = [
     paragraphs: [
       "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
       "Northeast departures mean more sea days. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port. We will say how many sea days are on the one you are looking at before you book it.",
-      "A beach day and a town with its own history are different days. Cozumel is not Antigua, and a private island is not San Juan. That mix is what makes one week feel different from another.",
+      "A beach day is a chair and a swim. A town day is streets, a fort, and a meal. Cozumel is the beach and the pier. Antigua has colonial streets. A private island is the line’s beach, with no town to walk. San Juan has the old city, and you can spend the afternoon there. One week can include both kinds of day.",
     ],
     lists: [
       {
@@ -507,7 +507,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "The season runs from May through October. In October the maples are in color, and there are fewer people on deck. Summer is for Cape Cod and the beach towns. Fall is for Bar Harbor, Halifax, and Quebec.",
-    planning: "Fall color and a summer weekend use different ships. Say whether you can leave from Boston or New York.",
+    planning: "A fall sailing is for the maples in Bar Harbor, Halifax, and Quebec. A summer sailing is for Cape Cod and the beach towns. Say whether you can leave from Boston or New York.",
     itineraries: [
       {
         title: "Fall foliage",
@@ -545,7 +545,7 @@ export const destinations: Destination[] = [
     lede: "You follow one river and walk off into the towns. The ship, the cabin, and what the fare includes are the comparison.",
     paragraphs: [
       "On the Danube, the Rhine, the Seine, and the Douro, the usual lines are Viking, AmaWaterways, Avalon, Uniworld, and Scenic. American Cruise Lines does not sail those rivers. It is a U.S. line: the Mississippi, the Ohio, the Columbia and Snake, and the Great Lakes. Viking also sails the Mississippi. Windstar is an ocean line and does not sail any of these.",
-      "A Danube ship and a Mississippi ship are not substitutes for each other. Name the river and the season, and the quote puts the ships that actually sail it next to one another.",
+      "A Danube ship ties up in Budapest, Vienna, and the Wachau. A Mississippi ship ties up in New Orleans and the river towns north of it. Name the river and the season. We put the ships that sail that river next to one another.",
     ],
     lists: [
       {
@@ -557,7 +557,7 @@ export const destinations: Destination[] = [
           "The Douro — Porto and the wine country",
           "The Mississippi — New Orleans north, Viking and American Cruise Lines",
           "The Ohio & the Great Lakes — American Cruise Lines",
-          "The Moselle and the Mekong — the same river lines, a different map",
+          "The Moselle is castle towns in Germany. The Mekong is river towns in Southeast Asia. Viking and the other river lines sail both",
           "The Nile — Viking, AmaWaterways, and Uniworld",
           "The Amazon — a few small ships out of Manaus, not the European river lines",
         ],
@@ -752,7 +752,7 @@ export const destinations: Destination[] = [
     lede: "A cruise along the Brazilian coast, starting in Rio, is one sailing. A cruise through the southern fjords and around Cape Horn is another sailing. They do not share a port list. The ship should match the one you want.",
     paragraphs: [
       "Many current sailings begin in Rio de Janeiro and run the Brazilian coast. The older pattern was an Atlantic crossing from New York. Carnival, Norwegian, Holland America, and Cunard still touch the region, and the routes into the Patagonian fjords belong mainly to the expedition lines. We compare the lines that are actually scheduled, not the ones that sailed it years ago.",
-      "A week from Rio tends to include Rio and Búzios. A longer Brazilian cruise can add Salvador or Recife. A Patagonia cruise tends to include Ushuaia, the fjords, and Cape Horn when the weather allows. Those are different sailings.",
+      "A week from Rio includes Rio and Búzios. A longer Brazilian cruise can add Salvador or Recife. A Patagonia cruise includes Ushuaia, the fjords, and Cape Horn when the weather allows. You book one sailing or the other. They do not share a port list.",
     ],
     lists: [
       {

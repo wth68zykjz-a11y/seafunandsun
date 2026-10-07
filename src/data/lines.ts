@@ -193,7 +193,7 @@ export const linePages: LinePage[] = [
       { line: "MSC", ships: "Smaller ships on some eastern routes. Often 4,000–6,700 in the western Mediterranean.", where: "Cruises from Barcelona, Rome, and Athens.", fare: "Balcony, 7 nights, often $900–$2,200. The fare in August is at the high end of that range." },
     ],
     notes: [
-      "Luxury ships in these same ports are a different size and a different fare. They are on the luxury ocean and yacht pages.",
+      "Luxury ships in these same ports carry fewer passengers. The fare is higher because drinks and gratuities are usually included. They are on the luxury ocean and yacht pages.",
       "River ships carry about 150 to 190 passengers and start in cities such as Budapest, Amsterdam, and Basel. See the river and expedition page.",
       "The cruise fare in July and August is higher than the cruise fare in May or October.",
     ],
@@ -308,7 +308,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "What these ships leave out",
-        text: "There is no water park and no large kids’ club on most of these ships. An agent requests many of these fares. A family that wants slides and a character breakfast needs a different ship.",
+        text: "There is no water park and no large kids’ club on most of these ships. An agent requests many of these fares. A family that wants slides and a character breakfast needs a ship that has them.",
       },
     ],
   },
@@ -352,7 +352,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "What these ships leave out",
-        text: "No theater lineup, no kids’ water park, and almost no published fare. A week that needs a show every night, or a cabin under $2,000, is a different ship.",
+        text: "No theater lineup, no kids’ water park, and almost no published fare. A week with a show every night, or a cabin under $2,000, belongs on a ship that has those.",
       },
     ],
   },
