@@ -313,7 +313,7 @@ function SailingsPage() {
         <div className="mt-4 rounded-xl border border-line bg-foam p-5">
           <h2 className="font-display text-2xl text-ink">Need more than the cruise?</h2>
           <p className="mt-2 max-w-3xl text-base leading-relaxed text-ink">
-            This search covers the sailing only. Request a quote to add flights, a hotel, or a shore excursion, or to price a resort, a ski week, a train trip, a small ship, or a yacht.
+            This search shows posted fares. Request a quote if you want that fare checked for a match, a lower price, or an added benefit, or if you want flights, a hotel, or a shore excursion. Some small ships and yachts have no public fare. An agent requests that price and presents it. Resorts, ski weeks, and train trips are quoted the same way.
           </p>
           <Link to="/quote" className="mt-4 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
             Request a quote

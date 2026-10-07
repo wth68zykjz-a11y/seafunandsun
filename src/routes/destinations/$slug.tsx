@@ -167,7 +167,7 @@ export function DestinationArticle({
           </div>
           {rail ? null : (
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-foam/85">
-              Search sailings if the fare is already posted. Request a quote to add flights, a hotel, or a shore excursion, or if the line does not post a fare.
+              Search sailings to book a posted fare. Request a quote to have that fare checked, to add flights, a hotel, or a shore excursion, or if an agent has to obtain the price.
             </p>
           )}
           {rail ? null : (

@@ -27,14 +27,14 @@ function QuotePage() {
       <PageIntro
         kicker="A quote"
         title="Tell us where you want to go."
-        lede="Share the destination, and whether you would like flights, a hotel, or a shore excursion included. We also quote resorts, ski weeks, train trips, small ships, and yachts. We reply the same day in most cases. There is no separate agent fee."
+        lede="Request a quote for flights, a hotel, or a shore excursion, or to have a posted cruise fare checked. Some small ships and yachts have no public fare. An agent requests that price and presents it to you. Resorts, ski weeks, and train trips are quoted the same way. We reply the same day in most cases. There is no separate agent fee."
       />
       <p className="mx-auto max-w-6xl px-4 pb-8 text-base leading-relaxed text-ink">
-        If you only need a published cruise fare,{" "}
+        A posted cruise fare can still be quoted, so we can see whether it can be matched, beaten, or improved. If you prefer to book it yourself,{" "}
         <Link to="/sailings" className="font-medium text-tide">
           search sailings
         </Link>{" "}
-        and book the cabin there.
+        and choose the cabin there.
       </p>
       <ol className="mx-auto grid max-w-6xl gap-4 px-4 pb-10 sm:grid-cols-2">
         {[

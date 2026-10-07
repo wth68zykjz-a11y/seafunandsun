@@ -419,7 +419,7 @@ function Home() {
         <section className="mx-auto max-w-6xl px-4 pb-16">
           <h2 className="font-display text-3xl text-ink sm:text-4xl">Two ways to start</h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">
-            Search sailings if you already know the cruise. Request a quote if you would like the rest of the trip arranged.
+            Search sailings if you are ready to book a posted fare. Request a quote if you want that fare checked, or if an agent has to obtain the price.
           </p>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             <article className="flex flex-col rounded-xl border border-line bg-foam p-6">
@@ -433,10 +433,10 @@ function Home() {
               </Link>
             </article>
             <article className="flex flex-col rounded-xl bg-sea p-6 text-foam">
-              <p className="text-sm font-medium text-gold">Flights, hotels, and excursions</p>
+              <p className="text-sm font-medium text-gold">An agent prices it</p>
               <h3 className="mt-2 font-display text-3xl">Request a quote</h3>
               <p className="mt-3 text-base leading-relaxed text-foam/90">
-                Request a quote to add flights, a hotel stay, or a shore excursion. We also quote resorts, ski weeks, train trips, small ships, and yachts.
+                Request a quote to add flights, a hotel stay, or a shore excursion. On a regular cruise, we can also see whether the posted fare can be matched, beaten, or improved with an added benefit. Some small ships and yachts have no public fare. An agent requests that price and presents it to you. Resorts, ski weeks, and train trips are quoted the same way.
               </p>
               <a href="#quote" className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
                 Go to the quote form
