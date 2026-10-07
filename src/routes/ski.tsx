@@ -70,7 +70,7 @@ function SkiPage() {
             <img src="/media/ski-north.jpg" alt="Snow-covered pines on a ridge at sunrise" loading="lazy" decoding="async" className="aspect-photo w-full rounded-xl object-cover" />
             <h3 className="mt-4 font-display text-2xl">North America</h3>
             <p className="mt-2 text-base leading-relaxed text-ink">
-              Aspen, Jackson Hole, Deer Valley, Vail, Banff, Mammoth, and Whistler. The Little Nell is ski-in at Aspen Mountain. Four Seasons is in Teton Village at Jackson Hole, and at Whistler. In Banff, the Fairmont hotels are in town and at Lake Louise, and the lifts are at Sunshine, Lake Louise, and Norquay. At Mammoth, the stay is a village hotel at the base, not a grand Alpine hotel. A room in town means a drive or a shuttle to the lifts. A room at the base means you can ski from the door.
+              Aspen, Jackson Hole, Deer Valley, Vail, Banff, Mammoth, and Whistler. The Little Nell is ski-in at Aspen Mountain. Four Seasons is in Teton Village at Jackson Hole, and at Whistler. In Banff, the Fairmont hotels are in town and at Lake Louise, and the lifts are at Sunshine, Lake Louise, and Norquay. At Mammoth, the stay is a village hotel at the base, not a grand Alpine hotel. A room in town means a car or a shuttle to the lifts. A room at the base means you can ski from the door.
             </p>
           </article>
           <article className="rounded-xl border border-line bg-foam p-5">

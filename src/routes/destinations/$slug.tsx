@@ -38,7 +38,7 @@ const ashoreNotes: Record<string, string> = {
   european:
     "A daytime stop leaves the afternoon short. Lisbon, the London ports, and the Mediterranean cities on these routes are easier with a night or two before or after, when all-aboard is not the deadline. An overnight, or a departure as late as 10 p.m., leaves the evening free. Tell us which cities you already know. We will put the extra nights on the ones you do not.",
   hawaii:
-    "Inter-island days run longer than a Caribbean day, and Pride of America often stays into the evening. The day might be a beach, a drive, or the north shore. Pearl Harbor belongs to a night on Oahu before or after a California crossing, when you are not watching the gangway. A luau needs the ship still in port after dark.",
+    "Inter-island days run longer than a Caribbean day, and Pride of America often stays into the evening. The day might be a beach, time in the car, or the north shore. Pearl Harbor belongs to a night on Oahu before or after a California crossing, when you are not watching the gangway. A luau needs the ship still in port after dark.",
   bermuda:
     "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi. Hamilton is about 20 minutes by ferry. St. George's is about an hour by bus. An overnight is enough time for the beach, Hamilton, and St. George's. On a short stop, use the excursion sold by the ship if you want to leave the Dockyard. If that tour is late, the ship waits. Sailings from Boston, New York, or Baltimore include sea days each way.",
   "northern-europe":

@@ -43,7 +43,7 @@ export const shores: Record<string, DestinationShore> = {
         title: "Panama City, when the ship docks",
         where: "A listed stop, not the transit day",
         length: "The hours the ship is alongside",
-        pace: "A drive, then a walk",
+        pace: "A car into the city, then a walk",
         detail:
           "The old quarter and the canal visitor areas are in Panama City. The ship has to dock there.",
       },
@@ -173,7 +173,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half to full day",
         pace: "A short cliff path, or the view from the town",
         detail:
-          "Étretat has the chalk cliffs and a Norman lunch. Paris is a different city. The Louvre, Notre-Dame, and the Eiffel Tower are there. The ship docks at Le Havre, and on a short stop the drive leaves time for one sight. To see Paris properly, stay at Shangri-La Paris before the cruise or after you return.",
+          "Étretat has the chalk cliffs and a Norman lunch. Paris is a different city. The Louvre, Notre-Dame, and the Eiffel Tower are there. The ship docks at Le Havre. On a short stop there is time for one sight. To see Paris properly, stay at Shangri-La Paris before the cruise or after you return.",
       },
       {
         title: "One garden, not the whole city",
@@ -181,7 +181,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "4 hours",
         pace: "Walking, some hills",
         detail:
-          "The Alcázar is in Seville. Belém and Alfama are in Lisbon. A Riviera town is its own stop. Ships for Seville often dock at Cádiz, and that drive is longer than the map suggests. If the ship leaves later, lunch can fit at Time Out Market in Lisbon. To see Lisbon properly, stay at the Four Seasons Hotel Ritz before the cruise or after you return.",
+          "The Alcázar is in Seville. Belém and Alfama are in Lisbon. A Riviera town is its own stop. Ships for Seville often dock at Cádiz, farther than the map suggests. If the ship leaves later, lunch can fit at Time Out Market in Lisbon. To see Lisbon properly, stay at the Four Seasons Hotel Ritz before the cruise or after you return.",
       },
     ],
   },
@@ -213,7 +213,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Time in town",
         pace: "A swim, a walk, and lunch",
         detail:
-          "In Hana you can swim at Hana Bay, walk the black-sand beach at Waiʻānapanapa, and get banana bread or a plate lunch. The ship docks in Kahului, about two and a half hours away. After that drive, a morning-to-evening stop leaves little time in town. An overnight in Maui leaves the afternoon and the evening.",
+          "In Hana you can swim at Hana Bay, walk the black-sand beach at Waiʻānapanapa, and get banana bread or a plate lunch. The ship docks in Kahului, about two and a half hours away. A morning-to-evening stop leaves little time in town after that. An overnight in Maui leaves the afternoon and the evening.",
       },
     ],
   },
@@ -616,14 +616,14 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Bicycles beside a misty canal and a stone bridge in an old European town",
     facts: [
       { label: "Time in port", text: "A city day uses most of the hours, but the pier is often an hour from the place you actually want." },
-      { label: "Worth the time", text: "The belfry is in Bruges, and the menus have mussels steamed in white wine, onion, and celery, usually with fries. The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. The ship docks at Le Havre, and on a short stop the drive leaves time for one sight. Lunch can fit if the ship leaves later. Shangri-La Paris, looking toward the Eiffel Tower, is a stay in the city before or after the cruise. Westminster Abbey and the Tower of London are in London. The Savoy is a stay in the city. The Sagrada Família and the Gothic Quarter are in Barcelona. Cocina Hermanos Torres is a Michelin table in the city if you reserved it ahead, and Camp Nou is there when there is a match. Belém and Alfama are in Lisbon. Hotel Arts is a stay in Barcelona. The Four Seasons Hotel Ritz is a stay in Lisbon." },
+      { label: "Worth the time", text: "The belfry is in Bruges, and the menus have mussels steamed in white wine, onion, and celery, usually with fries. The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. The ship docks at Le Havre. A short stop leaves time for one sight. Lunch can fit if the ship leaves later. Shangri-La Paris, looking toward the Eiffel Tower, is a stay in the city before or after the cruise. Westminster Abbey and the Tower of London are in London. The Savoy is a stay in the city. The Sagrada Família and the Gothic Quarter are in Barcelona. Cocina Hermanos Torres is a Michelin table in the city if you reserved it ahead, and Camp Nou is there when there is a match. Belém and Alfama are in Lisbon. Hotel Arts is a stay in Barcelona. The Four Seasons Hotel Ritz is a stay in Lisbon." },
       { label: "Best for", text: "Travelers who have a city they still want, or who would rather have one garden than three capitals." },
-      { label: "Also", text: "Paris is the city. On a short stop the ship is in Le Havre, and the drive leaves time for one sight." },
+      { label: "Also", text: "Paris is the city. On a short stop you are in Le Havre, with time for one sight." },
     ],
     outings: [
       { fits: "People who will spend the day in Bruges, on the canals, at the belfry, and at a table for mussels.", bring: "Layers. Canal weather changes, and the square is windier than the pier." },
       { fits: "People who will stay in Étretat for the cliffs and lunch, rather than go on to Paris.", bring: "A wind jacket." },
-      { fits: "People who will pick the Alcázar, one Lisbon hill, or a town on the Riviera.", bring: "Good walking shoes. The Cádiz-to-Seville drive is longer than it looks on a map." },
+      { fits: "People who will pick the Alcázar, one Lisbon hill, or a town on the Riviera.", bring: "Good walking shoes. Cádiz to Seville takes longer than the map suggests." },
     ],
   },
   hawaii: {
@@ -720,13 +720,13 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-asia.jpg",
     detailAlt: "The Singapore skyline across Marina Bay at night",
     facts: [
-      { label: "Time in port", text: "Bangkok, Kyoto, and the other cities are inland from the pier. The visit and the drive are separate." },
+      { label: "Time in port", text: "Bangkok, Kyoto, and the other cities are inland from the pier. The visit and the trip back to the ship are separate." },
       { label: "Worth the time", text: "The Grand Palace is in Bangkok, about two hours from Laem Chabang. The Peninsula Tokyo is a stay in the city before or after the cruise. Gardens by the Bay is in Singapore. Raffles is a stay in the city. The Peak and the Star Ferry are in Hong Kong. The Peninsula is a stay there." },
       { label: "Best for", text: "A visit to the Grand Palace, or a district in Kyoto such as Fushimi Inari or Arashiyama." },
-      { label: "Also", text: "One temple, or one district in the city, is the visit. The drive back to the ship is separate." },
+      { label: "Also", text: "One temple, or one district in the city, is the visit. Getting back to the ship takes its own time." },
     ],
     outings: [
-      { fits: "People who will spend the day in Bangkok, at the Grand Palace, another temple, or a market on the water.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
+      { fits: "People who will spend the day in Bangkok, at the Grand Palace, another temple, or a market on the water.", bring: "Water, socks for the palace floors, and time to get back to Laem Chabang." },
       { fits: "People who will see the karsts from the boat.", bring: "Sun cover." },
       { fits: "People who will spend the day in Kyoto, at Fushimi Inari or Arashiyama.", bring: "A transit card and walking shoes." },
     ],
