@@ -42,7 +42,7 @@ const ashoreNotes: Record<string, string> = {
   bermuda:
     "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi. Hamilton is about 20 minutes by ferry. St. George's is about an hour by bus. An overnight is enough time for the beach, Hamilton, and St. George's. On a short stop, use the excursion sold by the ship if you want to leave the Dockyard. If that tour is late, the ship waits. Sailings from Boston, New York, or Baltimore include sea days each way.",
   "northern-europe":
-    "Baltic and Norway days in port often end in the afternoon. Bryggen is the old wharf in Bergen. Nyhavn is the canal in Copenhagen. Ocean ships for Amsterdam dock at IJmuiden, about 30 to 45 minutes from the city. The Rijksmuseum is in Amsterdam, and it holds Rembrandt’s The Night Watch. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for a museum and a neighborhood.",
+    "Baltic and Norway days in port often end in the afternoon. Bryggen is the old wharf in Bergen. Nyhavn is the canal in Copenhagen. The Rijksmuseum is in Amsterdam, and it holds Rembrandt’s The Night Watch. Ocean ships dock at IJmuiden, about 30 to 45 minutes from the city. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for a museum and a neighborhood.",
   "canada-new-england":
     "These are town days, and many end in the afternoon. Boston Harbor and the Freedom Trail are in Boston. In Quebec, Upper Town and the Château Frontenac sit above the St. Lawrence. A late departure shows up more often on a fall foliage sailing than on a quick stop. Extra nights in Boston or Quebec let you stay out after dark.",
   river:
@@ -68,7 +68,7 @@ const ashoreLeads: Record<string, string> = {
   european: "Lisbon, the London ports, and the Mediterranean cities on these routes are short if the ship leaves in the afternoon. Extra nights are how you see one of them properly.",
   hawaii: "These island days run longer than a Caribbean day. Pride of America often stays into the evening. A luau still needs the ship in port after dark.",
   bermuda: "The ship is at the Dockyard. Horseshoe Bay is about 30 minutes by taxi, Hamilton is about 20 minutes by ferry, and St. George's is about an hour by bus. If the ship stays overnight, there is time for all three.",
-  "northern-europe": "Bryggen is the old wharf in Bergen. Nyhavn is the canal in Copenhagen. Ocean ships for Amsterdam dock at IJmuiden, about 30 to 45 minutes from the city. The Rijksmuseum is in Amsterdam, and it holds Rembrandt’s The Night Watch.",
+  "northern-europe": "Bryggen is the old wharf in Bergen. Nyhavn is the canal in Copenhagen. The Rijksmuseum is in Amsterdam, and it holds Rembrandt’s The Night Watch. Ocean ships dock at IJmuiden, about 30 to 45 minutes from the city.",
   "canada-new-england": "Boston Harbor and the Freedom Trail are in Boston. In Quebec, Upper Town and the Château Frontenac sit above the St. Lawrence. A fall sailing is more likely to leave late than a short summer stop.",
   river: "The ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village.",
   expedition: "A landing day is not a city day. You may put on the gear, ride a Zodiac, walk a beach, and take pictures. Weather can cancel it.",

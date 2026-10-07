@@ -358,7 +358,7 @@ export const destinations: Destination[] = [
     card: "Pink sand beaches",
     image: "/media/bermuda.jpg",
     alt: "Pink sand and clear shallow water on an empty Bermuda beach",
-    lede: "Ships dock at the Royal Naval Dockyard, on the west end. Horseshoe Bay, the pink-sand beach, is about 30 minutes by taxi and closer to 45 by bus. It is not next to the pier.",
+    lede: "Horseshoe Bay is the pink-sand beach. Ships dock at the Royal Naval Dockyard, on the west end, about 30 minutes by taxi and closer to 45 by bus. The beach is not beside the pier.",
     paragraphs: [
       "Most Bermuda cruises run about seven nights and depart from Boston, New York, or Baltimore. Many stay overnight, which means the ship is still there the next morning. That is enough time for Horseshoe Bay, Hamilton, and St. George's, at the east end. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly sail there. A five-hour stop is the Dockyard, unless you take an excursion sold by the ship. If that tour runs late, the ship waits. A taxi or a tour you booked on your own does not come with that.",
       "A cruise that departs from Boston still has a sea day each way. That is shorter than a Caribbean cruise that departs from New York. The ocean is part of either cruise.",
