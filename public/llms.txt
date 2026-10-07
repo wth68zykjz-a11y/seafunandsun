@@ -35,7 +35,7 @@ Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It is 
 - [All destinations, A to Z](https://seafunandsun.com/destinations). Each region lists typical routings and the trend of the lines that sail there. An excursion in a port or a city can be arranged as an add-on to enrich the trip. It is not in the cruise fare unless the line includes it.
 - [Departure ports](https://seafunandsun.com/ports): turnaround ports, where those ships tend to go, and airlines that serve the city. Routes change. [United States and Canada](https://seafunandsun.com/ports/americas). [Europe](https://seafunandsun.com/ports/europe). [Asia](https://seafunandsun.com/ports/asia), including calls such as Bangkok, Phuket, Ho Chi Minh City, Bali, Osaka, and Busan. [Australia and New Zealand](https://seafunandsun.com/ports/australia-new-zealand): Sydney, Brisbane, Melbourne, and Auckland are starts. Hobart, Adelaide, Fremantle, Cairns, Darwin, Wellington, Tauranga, Christchurch, and Dunedin are calls. [Middle East, Africa, and South America](https://seafunandsun.com/ports/other).
 - [Alaska](https://seafunandsun.com/destinations/alaskan)
-- [Asian](https://seafunandsun.com/destinations/asia)
+- [Asia](https://seafunandsun.com/destinations/asia)
 - [Australia and New Zealand](https://seafunandsun.com/destinations/australia-new-zealand)
 - [Bermuda](https://seafunandsun.com/destinations/bermuda)
 - [Canada and New England](https://seafunandsun.com/destinations/canada-new-england)

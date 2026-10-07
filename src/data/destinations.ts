@@ -677,8 +677,8 @@ export const destinations: Destination[] = [
   },
   {
     slug: "asia",
-    nav: "Asian",
-    title: "Asian Cruises",
+    nav: "Asia",
+    title: "Asia Cruises",
     card: "Temples & cities",
     image: "/media/asia.jpg",
     alt: "Hong Kong and Victoria Harbour at dusk",
