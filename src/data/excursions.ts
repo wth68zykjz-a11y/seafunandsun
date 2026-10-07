@@ -189,7 +189,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-hawaii.jpg",
     photoAlt: "Black lava rock, turquoise water, and an empty canoe on a Hawaiian beach",
     intro:
-      "Inter-island ships often stay overnight, so a Road to Hana day can work. A cruise that departs from San Diego, Los Angeles, or Vancouver spends more of the week at sea. The excursion has to match which of those two cruises you booked.",
+      "Inter-island ships often stay overnight, so a day in Hana can work. A cruise that departs from San Diego, Los Angeles, or Vancouver spends more of the week at sea. The excursion has to match which of those two cruises you booked.",
     excursions: [
       {
         title: "Turtles in the water",
@@ -208,12 +208,12 @@ export const shores: Record<string, DestinationShore> = {
           "Go early, then leave the afternoon for a beach. A full-day circle of Oahu plus the memorial does not fit a short stop.",
       },
       {
-        title: "Hana only on an overnight",
-        where: "Maui’s north shore road",
-        length: "Full day",
-        pace: "Mostly riding, some short walks",
+        title: "A day in Hana",
+        where: "Hana, Maui. The ship is in Kahului.",
+        length: "The drive uses most of a normal port stop",
+        pace: "A long drive, then time in town",
         detail:
-          "The road is the excursion. It belongs on a sailing that overnights in Maui, not on a dawn-to-dusk stop.",
+          "In Hana, people swim at Hana Bay, walk the black-sand beach at Waiʻānapanapa, and stop for banana bread or a plate lunch. The drive from Kahului takes about two and a half hours each way, so it uses most of the time the ship is in port. It fits when the ship stays overnight in Maui.",
       },
     ],
   },
@@ -633,12 +633,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Inter-island ships often overnight. A sailing from San Diego, Los Angeles, or Vancouver spends more days just getting there." },
       { label: "Worth the time", text: "Stop on Oahu to visit the USS Arizona Memorial. After that, a plate lunch is an idea." },
       { label: "Best for", text: "People who want the islands, not a new port every morning. Match the excursion to the kind of Hawaii trip you booked." },
-      { label: "Also", text: "Hana is the town at the end of the road. The drive takes the day." },
+      { label: "Also", text: "The drive from Kahului to Hana uses most of the hours in a normal port stop. An overnight in Maui leaves time in town." },
     ],
     outings: [
       { fits: "People who will swim with the turtles on the calmer side of the island.", bring: "Reef-safe sunscreen. Whales in winter are a bonus, not a promise." },
       { fits: "People who will do the Arizona memorial in the morning and the beach after.", bring: "Allow time for security screening." },
-      { fits: "People who will spend the day going to Hana, with stops along the road.", bring: "Hana is the town. The stops are on the way there." },
+      { fits: "People who want time in Hana: a swim at the bay, the black-sand beach, and something to eat.", bring: "Swim things, and a little cash for the food stands. Bring water for the drive." },
     ],
   },
   bermuda: {
