@@ -183,7 +183,7 @@ function OfferCard({ offer }: { offer: SupplierOffer }) {
   const body = (
     <>
       <p className="text-sm font-medium text-tide">{offer.line || offer.tag}</p>
-      <h3 className="mt-2 font-display text-2xl leading-snug text-ink">{offerHeading(offer)}</h3>
+      <p className="mt-2 font-display text-2xl leading-snug text-ink">{offerHeading(offer)}</p>
       <p className="mt-3 flex-1 text-base leading-relaxed text-ink">{offer.detail}</p>
     </>
   );
@@ -226,12 +226,20 @@ export const Route = createFileRoute("/sailings")({
   component: SailingsPage,
 });
 
-function DealsOfTheWeek({ offers, checked }: { offers: SupplierOffer[]; checked: string }) {
+function DealsOfTheWeek({ offers, checked, live }: { offers: SupplierOffer[]; checked: string; live: boolean }) {
   const deals = dealsFromFeed(offers);
+  const shown = new Set(deals.map((deal) => deal.offer.href));
+  const rest = offers.filter((offer) => !shown.has(offer.href));
+  const { featured, used } = featuredBrands(rest);
   return (
     <div>
-      <h2 className="font-display text-3xl text-ink">Daily promotions</h2>
-      <p className="mt-2 max-w-2xl text-base text-ink">Seven current offers. Last check: {checked} Eastern.</p>
+      <h2 className="font-display text-3xl text-ink">Promotions</h2>
+      <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">
+        The first seven were checked today. Further offers from the booking system follow. Last check: {checked} Eastern.
+      </p>
+      {!live ? (
+        <p className="mt-2 max-w-2xl text-base text-ink">The booking system did not respond just now, so these are the promotions saved on this site.</p>
+      ) : null}
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -245,14 +253,15 @@ function DealsOfTheWeek({ offers, checked }: { offers: SupplierOffer[]; checked:
           })),
         }}
       />
-      <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <h3 className="mt-8 border-b border-line pb-2 font-display text-2xl text-ink">Checked today</h3>
+      <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {deals.map((deal) => {
           const slug = deal.offer.href.match(/\/offer\/([a-z0-9-]+)/i)?.[1]?.toLowerCase();
           const heading = offerHeading(deal.offer, deal.guide);
           return (
             <article key={deal.offer.href} className="flex h-full flex-col rounded-xl border border-line border-t-4 border-t-gold bg-foam p-5 shadow-card">
               <p className="text-sm font-medium text-tide">{deal.offer.line || (deal.guide ? deal.guide.port : deal.offer.tag)}</p>
-              <h3 className="mt-2 font-display text-2xl leading-snug text-ink">{heading}</h3>
+              <p className="mt-2 font-display text-2xl leading-snug text-ink">{heading}</p>
               <p className="mt-3 flex-1 text-base leading-relaxed text-ink">{deal.offer.detail}</p>
               {deal.guide ? (
                 <p className="mt-3 text-sm">
@@ -286,6 +295,38 @@ function DealsOfTheWeek({ offers, checked }: { offers: SupplierOffer[]; checked:
           );
         })}
       </div>
+      <h3 className="mt-12 font-display text-2xl text-ink">More current offers</h3>
+      {offerGroups.map((group) => {
+        const items =
+          group === "Luxury"
+            ? [...featured, ...rest.filter((offer) => offer.group === "Luxury" && !used.has(offer.href))]
+            : rest.filter((offer) => offer.group === group && !used.has(offer.href));
+        if (items.length === 0) return null;
+        const explora = items.filter((offer) => isExploraOffer(offer));
+        const others = items.filter((offer) => !isExploraOffer(offer));
+        const visible = group === "Luxury" ? [...explora.slice(0, 2), ...others] : items;
+        const moreExplora = group === "Luxury" ? explora.slice(2) : [];
+        return (
+          <div key={group} className="mt-8">
+            <h4 className="border-b border-line pb-2 font-display text-xl text-ink">{group}</h4>
+            <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {visible.map((offer) => (
+                <OfferCard key={offer.title + offer.href} offer={offer} />
+              ))}
+            </div>
+            {moreExplora.length > 0 ? (
+              <details className="mt-4 rounded-xl border border-line bg-foam p-5">
+                <summary className="cursor-pointer font-medium text-ink">More Explora Journeys</summary>
+                <div className="mt-4 grid gap-4 md:grid-cols-2">
+                  {moreExplora.map((offer) => (
+                    <OfferCard key={offer.href} offer={offer} />
+                  ))}
+                </div>
+              </details>
+            ) : null}
+          </div>
+        );
+      })}
     </div>
   );
 }
@@ -329,51 +370,11 @@ function SailingsPage() {
           </p>
         </div>
       </div>
-      <div className="mx-auto mt-8 grid max-w-6xl gap-3 px-4 sm:grid-cols-3">
-        <img src="/media/page-sailings.jpg" alt="The bow of a white ship in calm water at golden hour" loading="lazy" decoding="async" className="aspect-photo w-full rounded-xl object-cover sm:col-span-2" />
-        <img src="/media/ex-world.jpg" alt="A large cruise ship crossing open ocean" loading="lazy" decoding="async" className="aspect-photo hidden w-full rounded-xl object-cover sm:block" />
+      <div className="mx-auto mt-8 max-w-6xl px-4">
+        <img src="/media/page-sailings.jpg" alt="The bow of a white ship in calm water at golden hour" loading="lazy" decoding="async" className="aspect-photo max-h-72 w-full rounded-xl object-cover" />
       </div>
-      <section id="promotions" className="mx-auto max-w-6xl scroll-mt-24 px-4 pb-20">
-        <DealsOfTheWeek offers={cruiseOffers(feed.offers)} checked={updated} />
-        <h2 className="mt-14 font-display text-3xl text-ink">Offers available right now</h2>
-        <p className="mt-2 max-w-2xl text-base text-ink">
-          {feed.live
-            ? `Updated from the booking system on ${updated} Eastern.`
-            : "The booking system did not respond just now, so these are the promotions saved on this site."}
-        </p>
-        {offerGroups.map((group) => {
-          const cruise = cruiseOffers(feed.offers);
-          const { featured, used } = featuredBrands(cruise);
-          const items =
-            group === "Luxury"
-              ? [...featured, ...cruise.filter((offer) => offer.group === "Luxury" && !used.has(offer.href))]
-              : cruise.filter((offer) => offer.group === group && !used.has(offer.href));
-          if (items.length === 0) return null;
-          const explora = items.filter((offer) => isExploraOffer(offer));
-          const rest = items.filter((offer) => !isExploraOffer(offer));
-          const visible = group === "Luxury" ? [...explora.slice(0, 2), ...rest] : items;
-          const moreExplora = group === "Luxury" ? explora.slice(2) : [];
-          return (
-            <div key={group} className="mt-10">
-              <h3 className="border-b border-line pb-2 font-display text-2xl text-ink">{group}</h3>
-              <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {visible.map((offer) => (
-                  <OfferCard key={offer.title + offer.href} offer={offer} />
-                ))}
-              </div>
-              {moreExplora.length > 0 ? (
-                <details className="mt-4 rounded-xl border border-line bg-foam p-5">
-                  <summary className="cursor-pointer font-medium">More Explora Journeys</summary>
-                  <div className="mt-4 grid gap-4 md:grid-cols-2">
-                    {moreExplora.map((offer) => (
-                      <OfferCard key={offer.href} offer={offer} />
-                    ))}
-                  </div>
-                </details>
-              ) : null}
-            </div>
-          );
-        })}
+      <section id="promotions" className="mx-auto mt-10 max-w-6xl scroll-mt-24 px-4 pb-20">
+        <DealsOfTheWeek offers={cruiseOffers(feed.offers)} checked={updated} live={feed.live} />
         <p className="mt-8 max-w-3xl text-sm leading-6 text-mute">{licenseLine}</p>
       </section>
     </Shell>
