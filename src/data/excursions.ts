@@ -560,9 +560,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "A partial transit goes into Gatun Lake and comes back out the same side. A full transit goes from one ocean to the other, and it takes longer." },
     ],
     outings: [
-      { fits: "A day on deck, watching the locks. There is nothing to book.", bring: "A hat and sun cover. The day is hot, and rain is ordinary." },
-      { fits: "A walking day in the walled city.", bring: "Comfortable shoes. The streets are stone." },
-      { fits: "A day in Panama City when the ship docks there.", bring: "Confirm the dock before you plan the day." },
+      { fits: "People who want to watch the locks from the deck.", bring: "A hat and sun cover. The day is hot, and rain is ordinary." },
+      { fits: "People who want a walk in a walled city.", bring: "Comfortable shoes. The streets are stone." },
+      { fits: "People who want time in the city when the ship is docked.", bring: "Confirm the dock before you plan the day." },
     ],
   },
   alaskan: {
@@ -575,9 +575,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "The glacier and the White Pass train are the stops people come for." },
     ],
     outings: [
-      { fits: "A close look at the ice, from the boat or from a short walk.", bring: "A wind layer, a hat, and shoes that can take spray. July is not warm on the water." },
-      { fits: "A small-boat trip for whales. The water moves more than a trail does.", bring: "Layers you can peel, and a dry bag if you are bringing a phone on deck." },
-      { fits: "An easy day ashore, with the train and a short walk.", bring: "A light jacket for the summit, which is colder than the pier." },
+      { fits: "People who want to get close to the ice, by boat or on a short walk.", bring: "A wind layer, a hat, and shoes that can take spray. July is not warm on the water." },
+      { fits: "People who want to look for whales from a small boat.", bring: "Layers you can peel, and a dry bag if you are bringing a phone on deck." },
+      { fits: "People who want an easy day, on the train and on a short walk.", bring: "A light jacket for the summit, which is colder than the pier." },
     ],
   },
   caribbean: {
@@ -590,9 +590,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "A beach day and a town day are separate plans." },
     ],
     outings: [
-      { fits: "Time in the water on the reef.", bring: "Reef-safe sunscreen already on, and a rash guard if you burn. The boat may not have shade." },
-      { fits: "A beach day, with a chair and lunch.", bring: "Cash for a chair upgrade if the included setup is a patch of sand." },
-      { fits: "A town stop, with a bakery and a market.", bring: "Comfortable shoes for cobblestone streets. In Martinique, the bakery is on the stop." },
+      { fits: "People who want time in the water.", bring: "Reef-safe sunscreen already on, and a rash guard if you burn. The boat may not have shade." },
+      { fits: "People who want a beach, a chair, and lunch.", bring: "Cash for a chair upgrade if the included setup is a patch of sand." },
+      { fits: "People who want a town, a bakery, and a market.", bring: "Comfortable shoes for cobblestone streets. In Martinique, the bakery is on the stop." },
     ],
   },
   mediterranean: {
@@ -605,10 +605,10 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "The Acropolis, or one town, is a full morning." },
     ],
     outings: [
-      { fits: "The path to the caldera and time at the top.", bring: "Sun protection, water, and shoes with a grip. The marble is polished by crowds." },
-      { fits: "Ideas include the Acropolis, the museum beside it, the Ancient Agora, and lunch in Plaka.", bring: "A hat and a bottle. The site is exposed, and the good cafes are after, not on the hill." },
-      { fits: "St. Peter’s is in Rome. The Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city. The Borghese Gallery holds Bernini’s sculptures and Caravaggio’s paintings, and it needs a timed ticket booked ahead.", bring: "Comfortable shoes. The drive from Civitavecchia is part of the day." },
-      { fits: "A walk on Kotor’s walls, or lunch in Amalfi.", bring: "Cash still helps in the old towns." },
+      { fits: "People who want the view and time at the top.", bring: "Sun protection, water, and shoes with a grip. The marble is polished by crowds." },
+      { fits: "People who want the ruins, the museum beside them, or lunch in a nearby neighborhood.", bring: "A hat and a bottle. The site is exposed, and the good cafes are after, not on the hill." },
+      { fits: "People who want the churches, the museums, or the ruins.", bring: "Comfortable shoes. The drive from Civitavecchia is part of the day." },
+      { fits: "People who want a walk on the walls, or a long lunch.", bring: "Cash still helps in the old towns." },
     ],
   },
   european: {
@@ -621,9 +621,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "Le Havre to Paris is a long ride for a short stop." },
     ],
     outings: [
-      { fits: "A day in Bruges, including the ride from the pier.", bring: "Layers. Canal weather changes, and the square is windier than the pier." },
-      { fits: "The cliffs at Étretat and lunch in town.", bring: "A wind jacket." },
-      { fits: "The Alcázar, a Lisbon hill, or a town on the Riviera.", bring: "Good walking shoes. The Cádiz-to-Seville drive is longer than it looks on a map." },
+      { fits: "People who want a full day in a canal city.", bring: "Layers. Canal weather changes, and the square is windier than the pier." },
+      { fits: "People who want the cliffs and lunch in town.", bring: "A wind jacket." },
+      { fits: "People who want a palace, a hill, or a coastal town.", bring: "Good walking shoes. The Cádiz-to-Seville drive is longer than it looks on a map." },
     ],
   },
   hawaii: {
@@ -636,9 +636,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "The road to Hana takes a full day." },
     ],
     outings: [
-      { fits: "Time in the water with the turtles. The boat uses the calmer side of the island.", bring: "Reef-safe sunscreen. Whales in winter are a bonus, not a promise." },
-      { fits: "The memorial and the beach. The memorial has security screening.", bring: "Allow time for security screening." },
-      { fits: "The road to Hana, which takes the day.", bring: "The road is the day, not a list of waterfalls." },
+      { fits: "People who want time in the water.", bring: "Reef-safe sunscreen. Whales in winter are a bonus, not a promise." },
+      { fits: "People who want the memorial and time on the beach.", bring: "Allow time for security screening." },
+      { fits: "People who want the drive, and the day for it.", bring: "The road is the day, not a list of waterfalls." },
     ],
   },
   bermuda: {
@@ -651,9 +651,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "Horseshoe Bay and the town are the usual days." },
     ],
     outings: [
-      { fits: "Pink sand in the morning.", bring: "Reef shoes if the walk in is rocky. The sand itself is soft." },
-      { fits: "A ferry into town, for the streets and lunch.", bring: "A ferry schedule. St. George’s is the quieter town." },
-      { fits: "The flat green trail and the cool caves.", bring: "A light layer for the caves. They are short and colder than the beach." },
+      { fits: "People who want a morning on the sand.", bring: "Reef shoes if the walk in is rocky. The sand itself is soft." },
+      { fits: "People who want the town, by ferry.", bring: "A ferry schedule. St. George’s is the quieter town." },
+      { fits: "People who want an easy trail or a cave.", bring: "A light layer for the caves. They are short and colder than the beach." },
     ],
   },
   "northern-europe": {
@@ -666,9 +666,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "If the tender does not run, the town walk is the day." },
     ],
     outings: [
-      { fits: "The village at the end of the fjord, and a walk if you want one.", bring: "A real rain jacket." },
-      { fits: "Bryggen on foot, and the funicular when the hill is clear.", bring: "Shoes that can take wet stone." },
-      { fits: "The old walls, a square, and coffee.", bring: "A layer. Baltic mornings stay cool even when the brochure looks like July." },
+      { fits: "People who want the village, and a walk if they feel like one.", bring: "A real rain jacket." },
+      { fits: "People who want the wharf on foot, and the ride up when the hill is clear.", bring: "Shoes that can take wet stone." },
+      { fits: "People who want the walls, a square, and coffee.", bring: "A layer. Baltic mornings stay cool even when the brochure looks like July." },
     ],
   },
   "canada-new-england": {
@@ -681,9 +681,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "The harbor and the ramparts are the walk." },
     ],
     outings: [
-      { fits: "An easy path near the pier in late September or early October.", bring: "A fleece. The maples are in color. The wind off the water is colder than it looks." },
-      { fits: "A half day on foot, at the citadel or on the walls above the river.", bring: "Comfortable shoes. Québec is steeper than the waterfront in Halifax." },
-      { fits: "The carriage roads, or the shorter path along the shore.", bring: "The carriage roads and the shore path are the stop." },
+      { fits: "People who want an easy walk when the leaves are turning.", bring: "A fleece. The maples are in color. The wind off the water is colder than it looks." },
+      { fits: "People who want a half day on foot.", bring: "Comfortable shoes. Québec is steeper than the waterfront in Halifax." },
+      { fits: "People who want a longer walk in the woods, or a shorter walk on the shore.", bring: "The carriage roads and the shore path are the stop." },
     ],
   },
   river: {
@@ -696,9 +696,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "The included walk is already the morning." },
     ],
     outings: [
-      { fits: "The morning walk that comes with the fare.", bring: "The ship’s listening set if the guide uses one, and shoes for uneven stone." },
-      { fits: "The villages between the capitals, by bike.", bring: "A light layer." },
-      { fits: "A tasting along the route the ship is already sailing. Wine and a view are different stops.", bring: "Nothing formal." },
+      { fits: "People who want the walk that comes with the fare.", bring: "The ship’s listening set if the guide uses one, and shoes for uneven stone." },
+      { fits: "People who want to bike between the villages.", bring: "A light layer." },
+      { fits: "People who want a tasting along the way. Some stops are for the wine, and some are for the view.", bring: "Nothing formal." },
     ],
   },
   expedition: {
@@ -711,9 +711,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "The guides change the plan with the weather." },
     ],
     outings: [
-      { fits: "The ship’s boots and parka, a Zodiac ride, and a short walk ashore.", bring: "The boots and parka the ship issues. Keep the camera inside the jacket until you are ashore." },
-      { fits: "A panga or a dry landing with a naturalist, and pictures from the marked line.", bring: "Shoes for lava." },
-      { fits: "A kayak, a canoe, or a plunge when the water is calm.", bring: "The suit the ship provides." },
+      { fits: "People who want to put on the ship’s gear, ride a Zodiac, and take a short walk.", bring: "The boots and parka the ship issues. Keep the camera inside the jacket until you are ashore." },
+      { fits: "People who want a landing with a naturalist and time for pictures.", bring: "Shoes for lava." },
+      { fits: "People who want a kayak, a canoe, or a plunge.", bring: "The suit the ship provides." },
     ],
   },
   asia: {
@@ -726,9 +726,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "One temple, or one district, is a full day once the drive is included." },
     ],
     outings: [
-      { fits: "The Grand Palace, another temple, or a floating market. The drive back to Laem Chabang is part of the day.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
-      { fits: "The karsts from the water, on a sailing already in the bay.", bring: "Sun cover." },
-      { fits: "Fushimi Inari and Arashiyama are both in Kyoto. The train from Osaka or Kobe is part of the day.", bring: "A transit card and walking shoes." },
+      { fits: "People who want a palace, another temple, or a floating market.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
+      { fits: "People who want to see the karsts from the water.", bring: "Sun cover." },
+      { fits: "People who want a day in the old districts, by train from the ship.", bring: "A transit card and walking shoes." },
     ],
   },
   "south-america": {
@@ -741,9 +741,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "One view is a full day in Rio. A show in Buenos Aires works when the ship stays late." },
     ],
     outings: [
-      { fits: "Sugarloaf or Christ the Redeemer.", bring: "Comfortable shoes for the viewpoint." },
-      { fits: "A market in the afternoon, or a show when the ship stays late.", bring: "Comfortable shoes for San Telmo." },
-      { fits: "Cape Horn from the deck.", bring: "A jacket for the rail, and a camera. Weather decides if you see it." },
+      { fits: "People who want one view over the city.", bring: "Comfortable shoes for the viewpoint." },
+      { fits: "People who want a market, or a show on a late night in port.", bring: "Comfortable shoes for San Telmo." },
+      { fits: "People who want to see the cape from the ship.", bring: "A jacket for the rail, and a camera. Weather decides if you see it." },
     ],
   },
   world: {
@@ -756,9 +756,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "An overnight is the day to use the city. A short tender is a look at the port." },
     ],
     outings: [
-      { fits: "An overnight in port: a neighborhood, a table, and a late return.", bring: "A plan for the city the ship is in." },
-      { fits: "A day at sea, with a lecture and time on deck.", bring: "A book for the day." },
-      { fits: "A 20- to 40-night segment of the longer voyage.", bring: "Segments are booked on their own, separate from the full circle." },
+      { fits: "People who want the evening in port, with dinner and a late return.", bring: "A plan for the city the ship is in." },
+      { fits: "People who want a quiet day on the ship.", bring: "A book for the day." },
+      { fits: "People who want part of a longer voyage, rather than the full circle.", bring: "Segments are booked on their own, separate from the full circle." },
     ],
   },
   rail: {
@@ -771,9 +771,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "An overnight train is more comfortable in a roomette." },
     ],
     outings: [
-      { fits: "Daylight on the Empire Builder or the Zephyr. A roomette leaves the lounge as a choice.", bring: "Layers. The glass car is colder than the room." },
-      { fits: "A route with a real stop, or a night off the train for a hike.", bring: "The timetable shows how long each stop is." },
-      { fits: "A hotel night in Chicago, Seattle, San Francisco, Vancouver, or Toronto before the flight home.", bring: "A walk and a table, then the flight home." },
+      { fits: "People who want the scenery in daylight, and a roomette on an overnight.", bring: "Layers. The glass car is colder than the room." },
+      { fits: "People who want a stop long enough to get off, or a night off the train for a hike.", bring: "The timetable shows how long each stop is." },
+      { fits: "People who want a night in the city before they fly home.", bring: "A walk and a table, then the flight home." },
     ],
   },
   "australia-new-zealand": {
@@ -786,9 +786,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "The reef and the city are different days." },
     ],
     outings: [
-      { fits: "A half day on the quay. The ship is often already in the city.", bring: "Comfortable shoes and a plan near the harbor." },
-      { fits: "A boat out to the reef and back.", bring: "Sun cover. The boat ride is the day." },
-      { fits: "Milford Sound from the deck.", bring: "A jacket for the rail. Weather decides whether the ship goes in." },
+      { fits: "People who want a walk on the harbor.", bring: "Comfortable shoes and a plan near the harbor." },
+      { fits: "People who want the boat out to the reef.", bring: "Sun cover. The boat ride is the day." },
+      { fits: "People who want the fiord from the deck.", bring: "A jacket for the rail. Weather decides whether the ship goes in." },
     ],
   },
 };
