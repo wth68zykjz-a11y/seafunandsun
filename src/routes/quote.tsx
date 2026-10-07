@@ -27,7 +27,7 @@ function QuotePage() {
       <PageIntro
         kicker="A quote"
         title="Tell us where you want to go."
-        lede="Tell us what you have in mind. Flights, a hotel, and a shore excursion can be part of it, and so can a resort, a ski week, a train trip, a small ship, or a yacht. We usually write back the same day. There is no separate agent fee."
+        lede="Share the destination, and whether you would like flights, a hotel, or a shore excursion included. We also quote resorts, ski weeks, train trips, small ships, and yachts. We reply the same day in most cases. There is no separate agent fee."
       />
       <p className="mx-auto max-w-6xl px-4 pb-8 text-base leading-relaxed text-ink">
         If you only need a published cruise fare,{" "}

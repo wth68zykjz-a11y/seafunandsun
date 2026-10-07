@@ -419,7 +419,7 @@ function Home() {
         <section className="mx-auto max-w-6xl px-4 pb-16">
           <h2 className="font-display text-3xl text-ink sm:text-4xl">Two ways to start</h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">
-            If you already know the cruise, search the sailings. If you want help with the rest of the trip, request a quote.
+            Search sailings if you already know the cruise. Request a quote if you would like the rest of the trip arranged.
           </p>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             <article className="flex flex-col rounded-xl border border-line bg-foam p-6">
@@ -436,7 +436,7 @@ function Home() {
               <p className="text-sm font-medium text-gold">Flights, hotels, and excursions</p>
               <h3 className="mt-2 font-display text-3xl">Request a quote</h3>
               <p className="mt-3 text-base leading-relaxed text-foam/90">
-                If the cruise needs flights, a hotel, or a shore excursion, request a quote. You can also start here for a resort, a ski week, a train trip, a small ship, or a yacht.
+                Request a quote to add flights, a hotel stay, or a shore excursion. We also quote resorts, ski weeks, train trips, small ships, and yachts.
               </p>
               <a href="#quote" className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
                 Go to the quote form
@@ -472,8 +472,8 @@ function Home() {
         <section id="quote" className="relative mx-auto grid max-w-6xl scroll-mt-24 gap-8 px-4 pb-20 lg:grid-cols-2">
           <div>
             <p className="text-sm font-medium text-tide">A quote</p>
-            <h2 className="mt-2 font-display text-3xl sm:text-4xl">A few details are enough.</h2>
-            <p className="mt-4 text-mute">A destination, a rough date, and who is going. Add flights, a hotel, or a shore excursion if you want them. We usually write back the same day.</p>
+            <h2 className="mt-2 font-display text-3xl sm:text-4xl">A few details are enough to begin.</h2>
+            <p className="mt-4 text-mute">The destination, approximate dates, and who is traveling. Include flights, a hotel, or a shore excursion if you would like them arranged. We reply the same day in most cases.</p>
             <ul className="mt-6 grid gap-2 text-sm">
               <li>
                 Call or text{" "}
