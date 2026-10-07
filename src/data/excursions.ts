@@ -576,7 +576,7 @@ export const portGuides: Record<string, PortGuide> = {
     ],
     outings: [
       { fits: "Anyone who wants to hear the ice, including people who will not hike.", bring: "A wind layer, a hat, and shoes that can take spray. July is not warm on the water." },
-      { fits: "Cabins where everyone can handle a small boat. Motion sickness rules this out more often than fitness does.", bring: "Layers you can peel, and a dry bag if you are bringing a phone on deck." },
+      { fits: "People who are comfortable in a small boat. That has to be everyone in the group. Motion sickness rules this out more often than fitness does.", bring: "Layers you can peel, and a dry bag if you are bringing a phone on deck." },
       { fits: "The easy port day — families, knees that dislike trails, first-timers.", bring: "Almost nothing. A light jacket for the summit, which is colder than the pier." },
     ],
   },
