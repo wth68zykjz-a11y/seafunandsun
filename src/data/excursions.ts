@@ -141,7 +141,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Most of the port day",
         pace: "A lot of walking in the city",
         detail:
-          "St. Peter's is in Rome. The Vatican Museums hold Michelangelo’s ceiling in the Sistine Chapel and the classical sculpture galleries. The Colosseum, the Forum, and the Palatine are in the city too. The Borghese Gallery holds Bernini’s sculptures and Caravaggio’s paintings, and it needs a timed ticket. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. The ship docks at Civitavecchia, about an hour and a half from the city.",
+          "St. Peter's is in Rome. The Vatican Museums hold Michelangelo’s ceiling in the Sistine Chapel and the classical sculpture galleries. The Colosseum, the Forum, and the Palatine are in the city too. The Borghese Gallery holds Bernini’s sculptures and Caravaggio’s paintings, and it needs a timed ticket. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. The ship docks at Civitavecchia. Rome is about an hour and a half from the pier. Lunch can fit if the ship leaves later.",
       },
       {
         title: "Kotor’s walls, or an Amalfi table",
@@ -165,7 +165,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Most of the day",
         pace: "Easy walking on cobblestone streets",
         detail:
-          "Bruges has a canal boat, a walk, and a cheese or chocolate stop away from the first shop off the square. The ship docks at Zeebrugge. Bruges is the city for the day.",
+          "Bruges has the canals, the belfry, and a table for mussels. The ship docks at Zeebrugge. Bruges is about 20 minutes from the pier.",
       },
       {
         title: "Étretat from Le Havre",
@@ -173,7 +173,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half to full day",
         pace: "A short cliff path, or the view from the town",
         detail:
-          "Étretat has the chalk cliffs and a Norman lunch. Paris is a different city. The Louvre, Notre-Dame, and the Eiffel Tower are there. The ship docks at Le Havre. On a short stop there is time for one sight. To see Paris properly, stay at Shangri-La Paris before the cruise or after you return.",
+          "Étretat has the chalk cliffs and a Norman lunch. Paris is a different city. The Louvre, Notre-Dame, and the Eiffel Tower are there. The ship docks at Le Havre. Paris is about two hours from the pier, so a short stop leaves time for one sight. To see Paris properly, stay at Shangri-La Paris before the cruise or after you return.",
       },
       {
         title: "One garden, not the whole city",
@@ -181,7 +181,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "4 hours",
         pace: "Walking, some hills",
         detail:
-          "The Alcázar is in Seville. Belém and Alfama are in Lisbon. A Riviera town is its own stop. Ships for Seville often dock at Cádiz, farther than the map suggests. If the ship leaves later, lunch can fit at Time Out Market in Lisbon. To see Lisbon properly, stay at the Four Seasons Hotel Ritz before the cruise or after you return.",
+          "The Alcázar is in Seville. Belém and Alfama are in Lisbon. A Riviera town is its own stop. Ships for Seville often dock at Cádiz. Seville is about two hours from that pier. If the ship leaves later, lunch can fit at Time Out Market in Lisbon. To see Lisbon properly, stay at the Four Seasons Hotel Ritz before the cruise or after you return.",
       },
     ],
   },
@@ -229,7 +229,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Easy",
         detail:
-          "Horseshoe Bay has the pink sand. Go in the morning. A taxi or a bus from the Dockyard is how you get there.",
+          "Horseshoe Bay has the pink sand. Go in the morning. Ships dock at the Royal Naval Dockyard. The beach is about 30 minutes by taxi and closer to 45 by bus.",
       },
       {
         title: "Town by ferry",
@@ -385,11 +385,11 @@ export const shores: Record<string, DestinationShore> = {
     excursions: [
       {
         title: "The Grand Palace, then lunch",
-        where: "Bangkok. The ship docks at Laem Chabang, about two hours from the city.",
+        where: "Bangkok",
         length: "Half day",
         pace: "Walking in the heat. Shoes come off in the palace grounds.",
         detail:
-          "The Grand Palace is in Bangkok. Arrive when the gates open and walk the grounds. The ship docks at Laem Chabang, about two hours away, so leave time to get back.",
+          "The Grand Palace is in Bangkok. Arrive when the gates open and walk the grounds. The ship docks at Laem Chabang. The palace is about two hours from the pier.",
       },
       {
         title: "Karsts from the water",
@@ -401,11 +401,11 @@ export const shores: Record<string, DestinationShore> = {
       },
       {
         title: "A Japanese port, on foot",
-        where: "Kyoto. The ship docks in Osaka or Kobe.",
+        where: "Kyoto",
         length: "Half to full day",
         pace: "Walking in the city",
         detail:
-          "Fushimi Inari and Arashiyama are in Kyoto. The ship docks in Osaka or Kobe. The train is how you get to the city.",
+          "Fushimi Inari and Arashiyama are in Kyoto. The ship docks in Osaka or Kobe. Kyoto is about 45 minutes by train from Osaka and closer to an hour and a quarter from Kobe.",
       },
     ],
   },
@@ -600,7 +600,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Empty blue chairs on a terrace above a caldera harbor at dawn",
     facts: [
       { label: "Time in port", text: "Often a long day, sometimes a tender. The useful hours are early, before the alleys fill." },
-      { label: "Worth the time", text: "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site. The Ancient Agora is nearby. The National Archaeological Museum holds the Mycenaean gold and the classical bronzes. St. Peter’s is in Rome, and the Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city too. The ship docks at Civitavecchia, about an hour and a half from Rome. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. Long lunches are on the Amalfi coast." },
+      { label: "Worth the time", text: "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site. The Ancient Agora is nearby. The National Archaeological Museum holds the Mycenaean gold and the classical bronzes. St. Peter’s is in Rome, and the Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city too. The ship docks at Civitavecchia. Rome is about an hour and a half from the pier. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. Long lunches are on the Amalfi coast." },
       { label: "Best for", text: "Travelers who want a different country at breakfast and will walk for it. Shoulder months beat August." },
       { label: "Also", text: "The Acropolis, or one town, is a full morning." },
     ],
@@ -616,14 +616,14 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Bicycles beside a misty canal and a stone bridge in an old European town",
     facts: [
       { label: "Time in port", text: "A city day uses most of the hours, but the pier is often an hour from the place you actually want." },
-      { label: "Worth the time", text: "The belfry is in Bruges, and the menus have mussels steamed in white wine, onion, and celery, usually with fries. The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. The ship docks at Le Havre. A short stop leaves time for one sight. Lunch can fit if the ship leaves later. Shangri-La Paris, looking toward the Eiffel Tower, is a stay in the city before or after the cruise. Westminster Abbey and the Tower of London are in London. The Savoy is a stay in the city. The Sagrada Família and the Gothic Quarter are in Barcelona. Cocina Hermanos Torres is a Michelin table in the city if you reserved it ahead, and Camp Nou is there when there is a match. Belém and Alfama are in Lisbon. Hotel Arts is a stay in Barcelona. The Four Seasons Hotel Ritz is a stay in Lisbon." },
+      { label: "Worth the time", text: "The belfry is in Bruges, and the menus have mussels steamed in white wine, onion, and celery, usually with fries. The ship docks at Zeebrugge. Bruges is about 20 minutes from the pier. The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. The ship docks at Le Havre. Paris is about two hours from the pier, so a short stop leaves time for one sight. Lunch can fit if the ship leaves later. Shangri-La Paris, looking toward the Eiffel Tower, is a stay in the city before or after the cruise. Westminster Abbey and the Tower of London are in London. The ship docks at Southampton. London is about an hour and a half to two hours from the pier. The Savoy is a stay in the city. The Sagrada Família and the Gothic Quarter are in Barcelona. Cocina Hermanos Torres is a Michelin table in the city if you reserved it ahead, and Camp Nou is there when there is a match. Belém and Alfama are in Lisbon. Hotel Arts is a stay in Barcelona. The Four Seasons Hotel Ritz is a stay in Lisbon." },
       { label: "Best for", text: "Travelers who have a city they still want, or who would rather have one garden than three capitals." },
-      { label: "Also", text: "Paris is the city. On a short stop you are in Le Havre, with time for one sight." },
+      { label: "Also", text: "Paris is the city. The ship docks at Le Havre. Paris is about two hours from the pier, so a short stop leaves time for one sight." },
     ],
     outings: [
       { fits: "People who will spend the day in Bruges, on the canals, at the belfry, and at a table for mussels.", bring: "Layers. Canal weather changes, and the square is windier than the pier." },
       { fits: "People who will stay in Étretat for the cliffs and lunch, rather than go on to Paris.", bring: "A wind jacket." },
-      { fits: "People who will pick the Alcázar, one Lisbon hill, or a town on the Riviera.", bring: "Good walking shoes. Cádiz to Seville takes longer than the map suggests." },
+      { fits: "People who will pick the Alcázar, one Lisbon hill, or a town on the Riviera.", bring: "Good walking shoes. Seville is about two hours from the pier at Cádiz." },
     ],
   },
   hawaii: {
@@ -633,7 +633,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Inter-island ships often overnight. A sailing from San Diego, Los Angeles, or Vancouver spends more days just getting there." },
       { label: "Worth the time", text: "Stop on Oahu to visit the USS Arizona Memorial. After that, a plate lunch is an idea." },
       { label: "Best for", text: "People who want the islands, not a new port every morning. Match the excursion to the kind of Hawaii trip you booked." },
-      { label: "Also", text: "Kahului is where the ship docks. Hana is a separate town, about two and a half hours from that pier." },
+      { label: "Also", text: "Hana Bay, the black-sand beach, and the food stands are in Hana. The ship docks in Kahului. Hana is about two and a half hours from the pier." },
     ],
     outings: [
       { fits: "People who will swim with the turtles on the calmer side of the island.", bring: "Reef-safe sunscreen. Whales in winter are a bonus, not a promise." },
@@ -661,7 +661,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A row of painted wooden wharf houses reflected in calm water",
     facts: [
       { label: "Time in port", text: "Fjord villages can be a tender of a few hours. Baltic capitals are longer city days." },
-      { label: "Worth the time", text: "The Bryggen wharf is in Bergen, and the fish market serves a shrimp sandwich: cold peeled shrimp on buttered bread, with mayonnaise and lemon. In Copenhagen, a New Nordic menu is local seafood, vegetables, and foraged herbs, and those tables are booked before you sail. The Rijksmuseum is in Amsterdam. It holds Rembrandt’s The Night Watch. The Anne Frank House is the rooms where she hid. Ocean ships dock at IJmuiden, about 30 to 45 minutes from the city, not in the canals. Lunch can fit if the ship leaves later. The Waldorf Astoria Amsterdam is a stay in the city before or after the cruise. Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a stay in the city if you want the night. Gamla Stan is in Stockholm. The Vasa Museum holds the warship Vasa, raised from the harbor. Grand Hôtel looks across the water at the palace." },
+      { label: "Worth the time", text: "The Bryggen wharf is in Bergen, and the fish market serves a shrimp sandwich: cold peeled shrimp on buttered bread, with mayonnaise and lemon. In Copenhagen, a New Nordic menu is local seafood, vegetables, and foraged herbs, and those tables are booked before you sail. The Rijksmuseum is in Amsterdam. It holds Rembrandt’s The Night Watch. The Anne Frank House is the rooms where she hid. Ocean ships dock at IJmuiden, not in the canals. The museum is about 30 to 45 minutes from the pier. Lunch can fit if the ship leaves later. The Waldorf Astoria Amsterdam is a stay in the city before or after the cruise. Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a stay in the city if you want the night. Gamla Stan is in Stockholm. The Vasa Museum holds the warship Vasa, raised from the harbor. Grand Hôtel looks across the water at the palace." },
       { label: "Best for", text: "Long summer light, small ports, and people who like weather to be part of the trip." },
       { label: "Also", text: "If the tender does not run, the town walk is the day." },
     ],
@@ -721,12 +721,12 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "The Singapore skyline across Marina Bay at night",
     facts: [
       { label: "Time in port", text: "Bangkok, Kyoto, and the other cities are inland from the pier. The visit and the trip back to the ship are separate." },
-      { label: "Worth the time", text: "The Grand Palace is in Bangkok, about two hours from Laem Chabang. The Peninsula Tokyo is a stay in the city before or after the cruise. Gardens by the Bay is in Singapore. Raffles is a stay in the city. The Peak and the Star Ferry are in Hong Kong. The Peninsula is a stay there." },
+      { label: "Worth the time", text: "The Grand Palace is in Bangkok. The ship docks at Laem Chabang. The palace is about two hours from the pier. The Peninsula Tokyo is a stay in the city before or after the cruise. Gardens by the Bay is in Singapore. Raffles is a stay in the city. The Peak and the Star Ferry are in Hong Kong. The Peninsula is a stay there." },
       { label: "Best for", text: "A visit to the Grand Palace, or a district in Kyoto such as Fushimi Inari or Arashiyama." },
       { label: "Also", text: "One temple, or one district in the city, is the visit. Getting back to the ship takes its own time." },
     ],
     outings: [
-      { fits: "People who will spend the day in Bangkok, at the Grand Palace, another temple, or a market on the water.", bring: "Water, socks for the palace floors, and time to get back to Laem Chabang." },
+      { fits: "People who will spend the day in Bangkok, at the Grand Palace, another temple, or a market on the water.", bring: "Water and socks for the palace floors. The palace is about two hours from the pier at Laem Chabang." },
       { fits: "People who will see the karsts from the boat.", bring: "Sun cover." },
       { fits: "People who will spend the day in Kyoto, at Fushimi Inari or Arashiyama.", bring: "A transit card and walking shoes." },
     ],

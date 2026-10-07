@@ -208,7 +208,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "The port is a city",
-        text: "These are walking days in the city. The useful day starts early, before the heat and the crowds. Venice is reached from Ravenna or Trieste, about two hours away.",
+        text: "These are walking days in the city. The useful day starts early, before the heat and the crowds. St. Mark’s is in Venice. Large ships dock at Ravenna or Trieste. Venice is about two hours from those piers.",
       },
       {
         title: "What these ships leave out",
