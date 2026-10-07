@@ -106,7 +106,7 @@ export const destinations: Destination[] = [
       {
         heading: "Popular sailings",
         items: [
-          "Cozumel — the pier for this coast. Cancún is a resort stay, not where the ship docks",
+          "Cozumel — the pier for the Yucatán. Cancún is a resort stay, not where the ship docks",
           "Grand Cayman — Stingray City and the reef",
           "Nassau and Freeport",
           "St. Thomas and St. Maarten",
@@ -236,7 +236,7 @@ export const destinations: Destination[] = [
     alt: "A historic canal and stone bridge in soft morning light",
     lede: "One sailing can cover several cities. If you have already been somewhere, leave it off and spend the days somewhere new.",
     paragraphs: [
-      "Cruises run seven to fourteen nights and depart from Barcelona, Rome, Lisbon, and London. Longer itineraries work up the Adriatic and back toward the Mediterranean. Cunard, MSC, Celebrity, Royal Caribbean, and the all-inclusive lines all sail Europe. We compare them, and we build the trip around the cities you want.",
+      "Cruises usually run seven to fourteen nights and depart from Lisbon, Amsterdam, Le Havre, or Southampton. The usual ports are Lisbon, Porto, Amsterdam, Bruges, and London. A winter cruise from Lisbon or Southampton tends to include Tenerife, Gran Canaria, or Funchal. Barcelona, Rome, Greece, and the Adriatic are on the Mediterranean page. Cunard, MSC, Celebrity, and Royal Caribbean sail these routes. We compare them, and we build the trip around the cities you want.",
       "The usual mistake in Europe is trying to see too much. Tell us which cities you have already visited, and we will build the sailing around the ones you have not.",
     ],
     lists: [
@@ -267,7 +267,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "May through September is the classic season. The shoulder months keep the same ports with fewer crowds, and the light is often better. In winter, the transatlantic crossings make the ocean the trip.",
-    planning: "Tell us which cities you have already seen. Mediterranean cruises are on their own page. This page stays on the Atlantic and the north.",
+    planning: "Tell us which cities you have already seen. Barcelona, Rome, Greece, and the Adriatic are on the Mediterranean page. This page is Lisbon, Amsterdam, London, and the Canary Islands.",
     itineraries: [
       {
         title: "Atlantic capitals",
@@ -302,7 +302,7 @@ export const destinations: Destination[] = [
     card: "Islands & volcanoes",
     image: "/media/hawaii.jpg",
     alt: "Black volcanic rock and turquoise water on a Hawaiian coast",
-    lede: "The ship moves from island to island, so you do not need a car between them. Longer sailings from the West Coast continue to Tahiti.",
+    lede: "The ship moves from island to island, so you do not need a car between them. Longer sailings from San Diego, Los Angeles, or Vancouver continue to Tahiti.",
     paragraphs: [
       "Norwegian's Pride of America stays among the Hawaiian islands and returns to Honolulu. Holland America, Princess, and Celebrity sail from San Diego, Los Angeles, or Vancouver. Those cruises spend several days at sea before the islands, and some continue to Tahiti. Ships stop at Maui. They rarely depart from there.",
       "Tell us which islands you want time on, and we will find the sailings that actually stop there.",
@@ -418,7 +418,7 @@ export const destinations: Destination[] = [
     lede: "Summer brings the midnight sun. Farther north there is ice. In a narrow fjord, a ship of about 200 guests can go farther in. A ship of about 2,500 stays in the wider water.",
     paragraphs: [
       "Holland America, Princess, Norwegian, Celebrity, MSC, Viking, and Cunard sail the fjords, Iceland, and the Baltic from Amsterdam, Copenhagen, Southampton, and the Norwegian ports. Hapag-Lloyd and the expedition lines go farther north, toward Svalbard and Greenland.",
-      "Tell us whether you want the well-known fjords or ice farther north, and we will choose the sailing that matches that.",
+      "A fjord week tends to include Bergen, Geiranger, and Flåm. An Iceland cruise tends to include Reykjavik. A Baltic cruise tends to include Copenhagen, Stockholm, Tallinn, and Helsinki. A longer sailing can add the Lofotens, Svalbard, or Greenland.",
     ],
     lists: [
       {
@@ -506,7 +506,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The season runs from May through October. In October the maples are in color, and there are fewer people on deck. Summer is for the beach towns. Fall is for the coast.",
+    when: "The season runs from May through October. In October the maples are in color, and there are fewer people on deck. Summer is for Cape Cod and the beach towns. Fall is for Bar Harbor, Halifax, and Quebec.",
     planning: "Fall color and a summer weekend use different ships. Say whether you can leave from Boston or New York.",
     itineraries: [
       {
@@ -714,7 +714,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "December through March is the calmer window. Typhoon season peaks in summer, and that is when the shore days become uncertain.",
-    planning: "A cruise from Singapore goes to Thailand, Vietnam, and the ports around the South China Sea. A cruise from Tokyo stays in Japan and Korea. Name the city, and how many days you can be away.",
+    planning: "A cruise from Singapore tends to include Phuket, Vietnam, and Hong Kong. A cruise from Tokyo tends to include Yokohama, Osaka or Kagoshima, and Busan. A longer trans-Pacific sailing can add Honolulu, Los Angeles, or Vancouver. Name the city, and how many days you can be away.",
     itineraries: [
       {
         title: "Southeast Asia",
@@ -752,7 +752,7 @@ export const destinations: Destination[] = [
     lede: "A cruise along the Brazilian coast, starting in Rio, is one sailing. A cruise through the southern fjords and around Cape Horn is another sailing. They do not share a port list. The ship should match the one you want.",
     paragraphs: [
       "Many current sailings begin in Rio de Janeiro and run the Brazilian coast. The older pattern was an Atlantic crossing from New York. Carnival, Norwegian, Holland America, and Cunard still touch the region, and the routes into the Patagonian fjords belong mainly to the expedition lines. We compare the lines that are actually scheduled, not the ones that sailed it years ago.",
-      "Tell us whether you want the coast and the cities or the glaciers, and we will build the trip around the ports that match.",
+      "A week from Rio tends to include Rio and Búzios. A longer Brazilian cruise can add Salvador or Recife. A Patagonia cruise tends to include Ushuaia, the fjords, and Cape Horn when the weather allows. Those are different sailings.",
     ],
     lists: [
       {
@@ -776,7 +776,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "Brazil’s east coast is warm from November through April. Patagonia runs from October through March.",
-    planning: "Coast and cities, or glaciers. We only quote ships that are actually scheduled.",
+    planning: "Rio and the Brazilian ports, or Ushuaia and Cape Horn. We only quote ships that are actually scheduled.",
     itineraries: [
       {
         title: "Brazilian coast",
@@ -1049,7 +1049,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "Most canal sailings run in spring and fall, when the fleets reposition. Winter has fewer full transits. The canal day is hot, and rain is normal. It does not stop the transit. A passport is required. Panama uses the US dollar.",
-    planning: "Tell us which coast you want to fly home from. A full transit ends in a different city than it starts. A partial transit brings you back to Florida. A night in Panama City only works when the itinerary docks there. Many ships only pass through.",
+    planning: "Tell us whether you fly home from Fort Lauderdale or Miami, or from Los Angeles or San Diego. A full transit ends in a different city than it starts. A partial transit returns to Florida. A night in Panama City only works when the itinerary docks there. Many ships only pass through.",
     itineraries: [
       {
         title: "Full transit to the Pacific",
