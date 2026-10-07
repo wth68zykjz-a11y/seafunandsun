@@ -60,16 +60,12 @@ function RootShell({ children }: { children: ReactNode }) {
         <style
           dangerouslySetInnerHTML={{
             __html:
-              "html{background:#e6f0ec}html,body{margin:0;background:#e6f0ec;color:#122033}body{font-family:Outfit,'Avenir Next',system-ui,sans-serif}header{background:#0c2340}svg.logo-mark{width:2.25rem;height:2.25rem;display:block}svg.hero-logo{display:none;width:11rem;height:auto}@media(min-width:640px){svg.logo-mark{width:2.75rem;height:2.75rem}}@media(min-width:1024px){svg.hero-logo{display:block;width:14rem}}",
+              "html{background:#e6f0ec}html,body{margin:0;background:#e6f0ec;color:#122033}body{font-family:Outfit,'Avenir Next',system-ui,sans-serif}header{background:#0c2340}h1.hero-title{font-size:2.25rem;line-height:1;font-optical-sizing:none}svg.logo-mark{width:2.25rem;height:2.25rem;display:block}svg.hero-logo{display:none;width:11rem;height:auto}@media(min-width:640px){h1.hero-title{font-size:3.75rem}svg.logo-mark{width:2.75rem;height:2.75rem}}@media(min-width:1024px){svg.hero-logo{display:block;width:14rem}}",
           }}
         />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Marcellus&family=Outfit:wght@400;500;600&display=optional"
-          media="print"
-          onLoad={(event) => {
-            event.currentTarget.media = "all";
-          }}
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,72,500;0,72,600;1,72,500&family=Marcellus&family=Outfit:wght@400;500;600&display=optional"
         />
         <style dangerouslySetInnerHTML={{ __html: appCss }} />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-R12KCXY9XE" />

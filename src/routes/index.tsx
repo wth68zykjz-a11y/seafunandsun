@@ -312,7 +312,7 @@ function Home() {
             <div className="relative grid items-center gap-8 lg:grid-cols-[1fr_15rem]">
               <div>
                 <p className="text-sm font-medium text-foam/75">Independent travel company · Farmington, CT</p>
-                <h1 className="mt-3 font-display text-4xl leading-none text-foam sm:mt-4 sm:text-6xl">
+                <h1 className="hero-title mt-3 font-display text-4xl leading-none text-foam sm:mt-4 sm:text-6xl">
                   The right trip,
                   <span className="mt-2 block font-medium italic text-gold">booked with care.</span>
                 </h1>
