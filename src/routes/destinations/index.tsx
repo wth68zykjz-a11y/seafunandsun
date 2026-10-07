@@ -21,7 +21,7 @@ function DestinationsPage() {
       <PageIntro
         kicker="Destinations"
         title="Fifteen cruise regions."
-        lede="Select a card to open that region. Each region lists typical routings and the ports most ships include. An excursion in a port or a city can be arranged as an add-on, to enrich the trip. Rail and land travel is on its own page."
+        lede="Choose a region below. Each region lists typical routings and the ports most ships include. An excursion in a port or a city can be arranged as an add-on, to enrich the trip."
       />
       <div className="mx-auto max-w-6xl px-4 pb-2">
         <p className="max-w-2xl text-mute">
