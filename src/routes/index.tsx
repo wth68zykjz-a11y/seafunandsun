@@ -419,7 +419,7 @@ function Home() {
         <section className="mx-auto max-w-6xl px-4 pb-16">
           <h2 className="font-display text-3xl text-ink sm:text-4xl">Two ways to start</h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">
-            Use the booking system when you already know the sailing. Request a quote when you want a tailored plan, including excursions, hotels, and flights.
+            Search sailings when you already know the cruise. Request a quote when you want the flights, the hotels, and the excursions planned with it.
           </p>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             <article className="flex flex-col rounded-xl border border-line bg-foam p-6">
@@ -433,10 +433,10 @@ function Home() {
               </Link>
             </article>
             <article className="flex flex-col rounded-xl bg-sea p-6 text-foam">
-              <p className="text-sm font-medium text-gold">A trip we price for you</p>
+              <p className="text-sm font-medium text-gold">Flights, hotels, and excursions</p>
               <h3 className="mt-2 font-display text-3xl">Request a quote</h3>
               <p className="mt-3 text-base leading-relaxed text-foam/90">
-                A resort, a ski vacation, a rail trip, a yacht, or a cruise you want compared. The quote can include the excursions, the hotels, and the flights. One agent arranges the travel from your home to the destination and back.
+                A resort, a ski vacation, a rail trip, a yacht, or a cruise you want built around those pieces. One agent arranges it from your home to the destination and back.
               </p>
               <a href="#quote" className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
                 Go to the quote form
@@ -473,7 +473,7 @@ function Home() {
           <div>
             <p className="text-sm font-medium text-tide">A quote</p>
             <h2 className="mt-2 font-display text-3xl sm:text-4xl">Tell us the trip, or let us propose it.</h2>
-            <p className="mt-4 text-mute">The category, the month, and who is traveling. Say which excursions, hotels, and flights you want included. We reply the same day in most cases.</p>
+            <p className="mt-4 text-mute">The place, the dates, and who is traveling. Name the flights, hotels, or excursions you want in the plan. We reply the same day in most cases.</p>
             <ul className="mt-6 grid gap-2 text-sm">
               <li>
                 Call or text{" "}

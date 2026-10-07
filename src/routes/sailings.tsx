@@ -311,9 +311,9 @@ function SailingsPage() {
       <div className="mx-auto max-w-6xl px-4">
         <CruiseSearch destinationId={destinationId} destinationType={destinationtype} />
         <div className="mt-4 rounded-xl border border-line bg-foam p-5">
-          <h2 className="font-display text-2xl text-ink">This search is only for a published fare</h2>
+          <h2 className="font-display text-2xl text-ink">Want the days around the cruise planned?</h2>
           <p className="mt-2 max-w-3xl text-base leading-relaxed text-ink">
-            Request a quote when you want a tailored plan: excursions, hotels, and flights. A resort, a ski vacation, a rail trip, a yacht, or a cruise line that does not post a fare is priced the same way.
+            This search books the sailing. A quote covers the flights, the hotels, and the excursions, and it is also how we price a resort, a ski vacation, a rail trip, or a yacht.
           </p>
           <Link to="/quote" className="mt-4 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
             Request a quote
