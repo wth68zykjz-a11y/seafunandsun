@@ -1,4 +1,4 @@
-import { promotionDetail } from "@/lib/offer-copy";
+import { celebrityFallSale, promotionDetail } from "@/lib/offer-copy";
 import { offerFacts } from "@/lib/promo.server";
 
 export type OfferGroup = "Luxury" | "Ocean" | "Land and Resorts";
@@ -200,6 +200,9 @@ function windstarFromLine() {
 }
 
 async function enrichOffer(offer: SupplierOffer): Promise<SupplierOffer> {
+  if (/savings-you-deserve-with-celebrity/i.test(offer.href) || /savings you deserve/i.test(offer.title)) {
+    return { ...offer, line: "Celebrity Cruises", detail: celebrityFallSale };
+  }
   const named = /princess|celebrity|norwegian|virgin|regent|windstar|riviera|amawater|cunard|viking|carnival|royal caribbean|msc|disney|holland america|star clipper|palladium|waldorf|conrad|cie tours|globus|united vacation/i;
   const deal = /%|\$|free |upgrade|credit|saving/i;
   if (named.test(offer.title) && deal.test(offer.title)) return offer;

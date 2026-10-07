@@ -10,73 +10,6 @@ type SailingsSearch = { destinations?: string; destinationtype?: string };
 const offerGroups = ["Luxury", "Ocean"] as const;
 const resortOffer = /resort|all-inclusive|all inclusive|palladium|waldorf|conrad|sandals|hyatt|club med|secrets|excellence|palace|ziva|zilara|beaches|dreams/i;
 
-const resortChoices: SupplierOffer[] = [
-  {
-    title: "Sandals",
-    detail: "Adults-only all-inclusive resorts in Jamaica, St. Lucia, Antigua, Barbados, and Grenada. The quote names the room and what the rate leaves out.",
-    href: "/quote#sandals",
-    tag: "Resorts",
-    group: "Land and Resorts",
-    line: "Sandals",
-  },
-  {
-    title: "Beaches",
-    detail: "Family all-inclusive resorts in Turks and Caicos and Jamaica. Ask the age the kids’ club accepts, and whether the rooms connect.",
-    href: "/quote#beaches",
-    tag: "Resorts",
-    group: "Land and Resorts",
-    line: "Beaches",
-  },
-  {
-    title: "Hyatt Ziva and Zilara",
-    detail: "Ziva takes children. Zilara is adults only. Both are in Mexico and the Caribbean, and the meals and a set of drinks are in the rate.",
-    href: "/quote#hyatt-inclusive",
-    tag: "Resorts",
-    group: "Land and Resorts",
-    line: "Hyatt Inclusive Collection",
-  },
-  {
-    title: "Secrets and Excellence",
-    detail: "Adults-only resorts in Cancún, the Riviera Maya, Los Cabos, and the Caribbean. A quiet pool and a resort built around shows are different properties.",
-    href: "/quote#secrets",
-    tag: "Resorts",
-    group: "Land and Resorts",
-    line: "Secrets and Excellence",
-  },
-  {
-    title: "Dreams and Palace",
-    detail: "Family resorts in Cancún, the Riviera Maya, Los Cabos, and Puerto Vallarta. The quote names the room and which stretch of beach it faces.",
-    href: "/quote#dreams",
-    tag: "Resorts",
-    group: "Land and Resorts",
-    line: "Dreams and Palace",
-  },
-  {
-    title: "Club Med beach villages",
-    detail: "Beach villages with meals included. The kids’ club age and what is included change by village. Club Med on snow is a ski trip, not this list.",
-    href: "/quote#club-med",
-    tag: "Resorts",
-    group: "Land and Resorts",
-    line: "Club Med",
-  },
-  {
-    title: "Disney resorts",
-    detail: "Walt Disney World, Disneyland, and Aulani. The room, the park tickets, and a dining plan are usually separate unless the package says otherwise.",
-    href: "/quote#disney-resort",
-    tag: "Resorts",
-    group: "Land and Resorts",
-    line: "Disney",
-  },
-  {
-    title: "Overwater villas",
-    detail: "A Maldives stay is quoted. The flight is much longer, and the nightly rate is much higher, than a Caribbean resort week.",
-    href: "/quote#maldives",
-    tag: "Resorts",
-    group: "Land and Resorts",
-    line: "Maldives",
-  },
-];
-
 const weeklyDeals = [
   {
     line: "Celebrity Cruises",
@@ -296,9 +229,7 @@ function DealsOfTheWeek({ offers, checked, live }: { offers: SupplierOffer[]; ch
   const shown = new Set(deals.map((deal) => deal.offer.href));
   const rest = cruise.filter((offer) => !shown.has(offer.href));
   const { featured, used } = featuredBrands(rest);
-  const postedResorts = offers.filter((offer) => offer.group === "Land and Resorts" && resortOffer.test(`${offer.title} ${offer.href}`) && !shown.has(offer.href));
-  const postedNames = postedResorts.map((offer) => `${offer.title} ${offer.line ?? ""}`).join(" ");
-  const resorts = [...postedResorts, ...resortChoices.filter((choice) => !postedNames.toLowerCase().includes(choice.line?.split(" ")[0]?.toLowerCase() ?? "___"))];
+  const resorts = offers.filter((offer) => offer.group === "Land and Resorts" && resortOffer.test(`${offer.title} ${offer.href}`) && !shown.has(offer.href));
   return (
     <div>
       <h2 className="font-display text-3xl text-ink">Promotions</h2>
@@ -398,7 +329,6 @@ function DealsOfTheWeek({ offers, checked, live }: { offers: SupplierOffer[]; ch
       {resorts.length > 0 ? (
         <div className="mt-8">
           <h4 className="border-b border-line pb-2 font-display text-xl text-ink">Resorts and all-inclusives</h4>
-          <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">A published offer is listed first. The other resorts are quoted. There is no separate agent fee.</p>
           <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {resorts.map((offer) => (
               <OfferCard key={offer.href} offer={offer} />

@@ -41,8 +41,8 @@ export const liveOffers = [
     tag: "Resort ship",
   },
   {
-    title: "Celebrity — the savings on the table",
-    detail: "Celebrity is discounting the cruise fare. The amount depends on the ship, the date, and the cabin.",
+    title: "Celebrity — Fall Sale, 75% off the second guest",
+    detail: "Celebrity’s Fall Sale takes 75% off the second guest’s fare. On select dates there is also up to $800 off per stateroom, or up to $700 in onboard credit. On select sailings, the 3rd, 4th, and 5th guests sail free. Book from September 22, 2026, through November 5, 2026.",
     href: "https://tap13.myagentgenie.com/seafunandsun/offer/the-vacation-you-want-the-savings-you-deserve-with-celebrity-cruises/",
     tag: "Premium",
   },

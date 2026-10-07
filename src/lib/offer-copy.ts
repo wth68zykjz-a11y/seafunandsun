@@ -1,3 +1,6 @@
+export const celebrityFallSale =
+  "Celebrity’s Fall Sale takes 75% off the second guest’s fare. On select dates there is also up to $800 off per stateroom, or up to $700 in onboard credit. On select sailings, the 3rd, 4th, and 5th guests sail free. Book from September 22, 2026, through November 5, 2026.";
+
 export function explainPromotion(title: string): string {
   const t = title.replace(/\s+/g, " ").trim();
   if (/free at sea/i.test(t)) {
@@ -15,6 +18,7 @@ export function explainPromotion(title: string): string {
   if (/windstar/i.test(t)) {
     return "Windstar is discounting small-ship sailings under this offer.";
   }
+  if (/savings you deserve/i.test(t)) return celebrityFallSale;
   if (/celebrity/i.test(t)) {
     return "Celebrity is discounting the cruise fare. The amount depends on the ship, the date, and the cabin.";
   }
@@ -70,6 +74,7 @@ const disclaimer = /fare and the rules belong|rules belong to the supplier|terms
 
 export function promotionDetail(title: string, summary: string): string {
   const text = summary.replace(/\s+/g, " ").trim();
+  if (/savings you deserve/i.test(`${title} ${text}`)) return explainPromotion(title + " savings you deserve");
   if (!text || disclaimer.test(text)) return explainPromotion(title);
   return text;
 }
