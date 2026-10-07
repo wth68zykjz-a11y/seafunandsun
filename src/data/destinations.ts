@@ -167,8 +167,8 @@ export const destinations: Destination[] = [
     alt: "A whitewashed harbor town above a small Mediterranean port",
     lede: "Most mornings you wake up in a different port. One day can be Barcelona and the next a smaller harbor. Pick the ship for those ports, not for the photograph on the cover.",
     paragraphs: [
-      "Cruises run seven to fourteen nights and depart from Barcelona, Civitavecchia for Rome, and Piraeus for Athens. Royal Caribbean, MSC, Norwegian, Celebrity, and Cunard all sail the region, and the luxury lines sail it too. A Venice stop is usually Ravenna or Trieste, not a dock in the lagoon. We compare the routes, the ports, and what the fare includes, then match the ship to how you like to travel.",
-      "A week in Greece or the Adriatic stays in the eastern Mediterranean. A week from Barcelona stays in the west, on the Spanish coast and the French Riviera. Tell us which coast you want, and we will start there.",
+      "Cruises usually run seven to fourteen nights and depart from Barcelona, Civitavecchia for Rome, and Piraeus for Athens. Royal Caribbean, MSC, Norwegian, Celebrity, and Cunard all sail the region, and the luxury lines sail it too. A Venice stop is usually Ravenna or Trieste, not a dock in the lagoon. We compare the routes, the ports, and what the fare includes, then match the ship to how you like to travel.",
+      "A week in Greece or the Adriatic tends to stay in the eastern Mediterranean. A week from Barcelona tends to stay in the west, on the Spanish coast and the French Riviera. A cruise of 14 to 18 days from the United Kingdom can cover more than one of those coasts. Tell us which coast you want, and we will start there.",
     ],
     lists: [
       {
