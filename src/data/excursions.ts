@@ -93,7 +93,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "2 to 3 hours",
         pace: "Time in the water",
         detail:
-          "House reefs and short boat snorkels are the water days.",
+          "In Cozumel the west-side water is calm and about 80°F. The boat drifts you over Palancar’s coral wall. You can see parrotfish, and sometimes a turtle. The east side of the island is rocky and rough, and the snorkel boats do not go there. At Grand Cayman, Stingray City is a shallow sandbar where southern stingrays swim up to the boat.",
       },
       {
         title: "A beach with an actual chair",
@@ -101,7 +101,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Most of the port day",
         pace: "Easy",
         detail:
-          "Loungers, a swim, and lunch.",
+          "Cozumel’s west beaches are pale sand and calm water. Nassau’s Cable Beach is a city beach, and the snack is a conch fritter: chopped conch fried in a seasoned batter. A private-island cove, such as CocoCay or Castaway Cay, is sheltered, warm, and calm. The grill there is the ship’s burgers, not a local kitchen.",
       },
       {
         title: "A bakery, then the market",
@@ -109,7 +109,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "About 3 hours on foot",
         pace: "Easy walking",
         detail:
-          "Start at a bakery for a croissant. Then walk the covered market on Rue Isambert. One street is enough. If you came by tender, leave time for the last boat.",
+          "Start at a bakery for a croissant, layered dough of flour and butter. Then walk the covered market on Rue Isambert. The fritter there is an accra: salted cod mashed with herbs and fried. One street is enough. If you came by tender, leave time for the last boat.",
       },
     ],
   },
@@ -783,11 +783,11 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Sydney and Auckland can be long city days. Reef ports need a full day. Milford is often a scenic sail, with no gangway." },
       { label: "Worth the time", text: "Stop in Sydney to see the Opera House. It sits next to where most ships dock. If the ship leaves later, have lunch, or a meat pie on the quay: minced beef in gravy, baked in a pastry case. To see more than the harbor, stay at the Park Hyatt Sydney, across from the Opera House, before the cruise or after you return. In Auckland, walk the harbor and have a grilled lamb chop, the usual lunch." },
       { label: "Best for", text: "Travelers who can spend October through April, Australia’s summer, in one place, and who will fly to Sydney or Auckland to start." },
-      { label: "Also", text: "The reef is a boat over the coral. Sydney is the Opera House and the quay. They do not fit in the same day." },
+      { label: "Also", text: "The Great Barrier Reef is warm water, often around 80°F in the Australian summer, over hard coral. You can see clownfish, parrotfish, and giant clams. Sydney’s harbor is not that reef. The Opera House and the quay are a walk, and the snack is a meat pie: minced beef in gravy, baked in a pastry case." },
     ],
     outings: [
       { fits: "People who will walk the quay to the Opera House.", bring: "Comfortable shoes and a plan near the harbor." },
-      { fits: "People who want time on the reef, over the coral.", bring: "Sun cover." },
+      { fits: "People who want time on the reef, over the coral, looking for clownfish and parrotfish.", bring: "Sun cover." },
       { fits: "People who will watch Milford from the deck, or from the balcony with room service.", bring: "A jacket for the rail. Weather decides whether the ship goes in." },
     ],
   },

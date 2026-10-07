@@ -100,7 +100,7 @@ export const destinations: Destination[] = [
     paragraphs: [
       "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
       "Northeast departures mean more sea days. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port. We will say how many sea days are on the one you are looking at before you book it.",
-      "A beach day is a chair and a swim. A town day is streets, a fort, and a meal. Cozumel is the beach and the pier. Antigua has colonial streets. A private island is the line’s beach, with no town to walk. San Juan has the old city, and you can spend the afternoon there. One week can include both kinds of day.",
+      "Cozumel’s west shore is calm and clear, about 80°F, over a coral wall. A short boat ride reaches Palancar Reef, where you can see parrotfish and, sometimes, a turtle. The east shore is windward, rocky, and rough, and ships do not use it. Lunch on the island is grilled snapper or ceviche, raw fish cured in lime. Antigua’s Nelson’s Dockyard, at English Harbour, is a Georgian naval yard you can walk. Dickenson Bay, on the west, is pale sand and calm water. Half Moon Bay, on the east, has reef and more surge. The plate is fungi and saltfish: cornmeal cooked with salted cod. A private island, such as Perfect Day at CocoCay or Castaway Cay, is a sheltered cove the line built. The water is calm and warm. There is no town and no local kitchen. The grill is burgers, not island food. San Juan is a city stop. Old San Juan has blue cobblestones and the forts at El Morro. Condado is an Atlantic city beach, and it can have surf. It is not a reef lagoon. Lunch is mofongo, mashed fried plantain with garlic, often topped with shrimp or pork.",
     ],
     lists: [
       {
@@ -545,7 +545,7 @@ export const destinations: Destination[] = [
     lede: "You follow one river and walk off into the towns. The ship, the cabin, and what the fare includes are the comparison.",
     paragraphs: [
       "On the Danube, the Rhine, the Seine, and the Douro, the usual lines are Viking, AmaWaterways, Avalon, Uniworld, and Scenic. American Cruise Lines does not sail those rivers. It is a U.S. line: the Mississippi, the Ohio, the Columbia and Snake, and the Great Lakes. Viking also sails the Mississippi. Windstar is an ocean line and does not sail any of these.",
-      "A Danube ship ties up in Budapest, Vienna, and the Wachau. A Mississippi ship ties up in New Orleans and the river towns north of it. Name the river and the season. We put the ships that sail that river next to one another.",
+      "In Budapest you walk the Danube promenade and can eat goulash, beef and paprika in a thick sauce. In Vienna the plate is schnitzel, a pounded veal cutlet fried in breadcrumbs. In the Wachau the river narrows between apricot orchards and Riesling vineyards. On the Mississippi, New Orleans is beignets, fried dough with powdered sugar, and gumbo, a dark roux stew of shrimp or chicken. The landings north of New Orleans are small river towns, not a European capital. Name the river and the season. We put the ships that sail that river next to one another.",
     ],
     lists: [
       {
@@ -557,7 +557,7 @@ export const destinations: Destination[] = [
           "The Douro — Porto and the wine country",
           "The Mississippi — New Orleans north, Viking and American Cruise Lines",
           "The Ohio & the Great Lakes — American Cruise Lines",
-          "The Moselle is castle towns in Germany. The Mekong is river towns in Southeast Asia. Viking and the other river lines sail both",
+          "The Moselle is steep Riesling vineyards and towns such as Cochem and Bernkastel. The Mekong is a wide brown river, with floating markets. In Vietnam the bowl is pho, rice noodles in beef broth. In Cambodia it is fish amok, fish steamed in coconut and lemongrass. Viking and the other river lines sail both rivers",
           "The Nile — Viking, AmaWaterways, and Uniworld",
           "The Amazon — a few small ships out of Manaus, not the European river lines",
         ],
