@@ -27,7 +27,7 @@ function QuotePage() {
       <PageIntro
         kicker="A quote"
         title="Tell us where you want to go."
-        lede="Use this form for a resort, a ski vacation, a rail trip, a yacht, or a cruise you want compared. We reply the same day in most cases. There is no separate agent fee."
+        lede="Request a quote when you want a tailored plan, including excursions, hotels, and flights. This form also covers a resort, a ski vacation, a rail trip, a yacht, or a cruise you want compared. We reply the same day in most cases. There is no separate agent fee."
       />
       <p className="mx-auto max-w-6xl px-4 pb-8 text-base leading-relaxed text-ink">
         If you already know the cruise and the fare is published,{" "}
