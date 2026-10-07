@@ -1,3 +1,4 @@
+import type { PromoPage } from "@/lib/promo.server";
 import { celebrityFallSale, promotionDetail } from "@/lib/offer-copy";
 import { offerFacts } from "@/lib/promo.server";
 
@@ -157,15 +158,34 @@ function mscFromLine() {
   return mscJob;
 }
 
-async function lineOffer(name: string, detail: string): Promise<SupplierOffer | null> {
+async function lineOffer(name: string, detail: string, slug: string): Promise<SupplierOffer | null> {
   if (!detail) return null;
   return {
     title: name,
     detail,
-    href: "/quote",
+    href: `local:${slug}`,
     tag: "Ocean",
     group: "Ocean",
     line: name,
+  };
+}
+
+export async function linePromo(slug: string): Promise<PromoPage | null> {
+  const detail = slug === "royal-caribbean-current" ? await royalFromLine() : slug === "msc-cruises-current" ? await mscFromLine() : "";
+  if (!detail) return null;
+  const line = slug === "msc-cruises-current" ? "MSC Cruises" : "Royal Caribbean";
+  return {
+    slug,
+    title: line,
+    images: [],
+    bookingDates: "",
+    travelDates: "",
+    days: [],
+    prices: [],
+    line,
+    starting: "",
+    journey: detail,
+    disclaimer: "",
   };
 }
 
@@ -222,7 +242,7 @@ async function enrichOffer(offer: SupplierOffer): Promise<SupplierOffer> {
     if (line && facts.starting) {
       detail =
         /explora/i.test(line) && facts.journey
-          ? `Explora Journeys is a luxury cruise line. The staterooms are suites, and the fare usually includes drinks, Wi-Fi, and gratuities. ${facts.journey} Fares start at ${facts.starting}.`
+          ? `Fares are discounted from the regular fare. ${facts.journey} Fares start at ${facts.starting}.`
           : `${line}. ${offer.title} starts at ${facts.starting}.`;
     } else if (facts.starting) detail = `${offer.title} starts at ${facts.starting}.`;
     else if (line && !named.test(offer.detail)) detail = `${line}. ${offer.detail}`;
@@ -258,11 +278,11 @@ export async function loadSupplierOffers(): Promise<OfferFeed> {
     const have = enriched.map((offer) => `${offer.title} ${offer.line ?? ""}`).join(" ");
     const added: SupplierOffer[] = [];
     if (!/royal caribbean/i.test(have)) {
-      const royal = await lineOffer("Royal Caribbean", await royalFromLine());
+      const royal = await lineOffer("Royal Caribbean", await royalFromLine(), "royal-caribbean-current");
       if (royal) added.push(royal);
     }
     if (!/\bmsc\b/i.test(have)) {
-      const msc = await lineOffer("MSC Cruises", await mscFromLine());
+      const msc = await lineOffer("MSC Cruises", await mscFromLine(), "msc-cruises-current");
       if (msc) added.push(msc);
     }
     const feed: OfferFeed = { offers: [...added, ...enriched], updatedAt: new Date().toISOString(), live: true };

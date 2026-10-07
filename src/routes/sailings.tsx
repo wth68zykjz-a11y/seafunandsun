@@ -167,6 +167,10 @@ function featuredBrands(offers: SupplierOffer[]) {
   return { featured, used };
 }
 
+function offerSlug(href: string) {
+  return href.match(/\/offer\/([a-z0-9-]+)/i)?.[1]?.toLowerCase() ?? href.match(/^local:([a-z0-9-]+)$/)?.[1];
+}
+
 function offerHeading(offer: SupplierOffer, guide?: { line: string; port: string } | null) {
   const line = offer.line?.replace(/®/g, "").trim();
   const first = line?.split(" ")[0]?.toLowerCase();
@@ -176,7 +180,7 @@ function offerHeading(offer: SupplierOffer, guide?: { line: string; port: string
 }
 
 function OfferCard({ offer }: { offer: SupplierOffer }) {
-  const slug = offer.href.match(/\/offer\/([a-z0-9-]+)/i)?.[1]?.toLowerCase();
+  const slug = offerSlug(offer.href);
   const body = (
     <>
       <p className="text-sm font-medium text-tide">{offer.line || offer.tag}</p>
@@ -255,7 +259,7 @@ function DealsOfTheWeek({ offers, checked, live }: { offers: SupplierOffer[]; ch
       <h3 className="mt-8 border-b border-line pb-2 font-display text-2xl text-ink">Checked today</h3>
       <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {deals.map((deal) => {
-          const slug = deal.offer.href.match(/\/offer\/([a-z0-9-]+)/i)?.[1]?.toLowerCase();
+          const slug = offerSlug(deal.offer.href);
           const heading = offerHeading(deal.offer, deal.guide);
           return (
             <article key={deal.offer.href} className="flex h-full flex-col rounded-xl border border-line border-t-4 border-t-gold bg-foam p-5 shadow-card">

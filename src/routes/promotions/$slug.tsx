@@ -70,13 +70,15 @@ function PromoPageView() {
     );
   }
 
-  const lede = /explora/i.test(promo.line)
-    ? `Explora Journeys is a luxury cruise line. The staterooms are suites, and the fare usually includes drinks, Wi-Fi, and gratuities.${promo.journey ? ` ${promo.journey}` : ""}${promo.starting ? ` Fares start at ${promo.starting}.` : ""}`
-    : promo.line && promo.starting
-      ? `${promo.line}. ${promo.title} starts at ${promo.starting}.`
-      : promo.line
-        ? `${promo.line}. ${explainPromotion(promo.title)}`
-        : explainPromotion(promo.title);
+  const lede = /explora/i.test(`${promo.line} ${promo.title}`)
+    ? `Fares are discounted from the regular fare.${promo.journey ? ` ${promo.journey}` : ""}${promo.starting ? ` Fares on this offer start at ${promo.starting}.` : ""}`
+    : promo.journey
+      ? promo.journey
+      : promo.line && promo.starting
+        ? `${promo.line}. ${promo.title} starts at ${promo.starting}.`
+        : promo.line
+          ? `${promo.line}. ${explainPromotion(promo.title)}`
+          : explainPromotion(promo.title);
   const days = usefulDays(promo.days);
   const prices = promo.prices.filter((row) => realPrice(row.price));
   const note = usefulNote(promo.disclaimer);

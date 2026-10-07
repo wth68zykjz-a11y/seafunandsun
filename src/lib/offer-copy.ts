@@ -55,8 +55,8 @@ export function explainPromotion(title: string): string {
   if (/early booking/i.test(t)) {
     return "Booking a 2028 cruise early adds a bonus from the line, usually money off the fare or onboard credit.";
   }
-  if (/explora|historic gateway|middle eastern|red sea|arabian/i.test(t)) {
-    return "Explora Journeys is a luxury cruise line. The staterooms are suites, and the fare usually includes drinks, Wi-Fi, and gratuities.";
+  if (/explora|historic gateway|middle eastern|red sea glory|arabian delight|arabian marvel/i.test(t)) {
+    return "Fares are discounted from the regular fare.";
   }
   if (/alexandria|port said/i.test(t)) {
     return "A private day in Alexandria for ships that stop at Port Said.";
@@ -75,6 +75,9 @@ const disclaimer = /fare and the rules belong|rules belong to the supplier|terms
 export function promotionDetail(title: string, summary: string): string {
   const text = summary.replace(/\s+/g, " ").trim();
   if (/savings you deserve/i.test(`${title} ${text}`)) return explainPromotion(title + " savings you deserve");
+  if (/grand journey|middle eastern charms|red sea glory|arabian delights|arabian marvels|explora/i.test(title)) {
+    return text ? `Fares are discounted from the regular fare. ${text}` : "Fares are discounted from the regular fare.";
+  }
   if (!text || disclaimer.test(text)) return explainPromotion(title);
   return text;
 }
