@@ -311,9 +311,9 @@ function SailingsPage() {
       <div className="mx-auto max-w-6xl px-4">
         <CruiseSearch destinationId={destinationId} destinationType={destinationtype} />
         <div className="mt-4 rounded-xl border border-line bg-foam p-5">
-          <h2 className="font-display text-2xl text-ink">Want more than the cruise?</h2>
+          <h2 className="font-display text-2xl text-ink">Need more than the cruise?</h2>
           <p className="mt-2 max-w-3xl text-base leading-relaxed text-ink">
-            This search books the sailing. Ask for a quote if you also want flights, a hotel, or an excursion, or if the trip is a resort, a ski week, a train, or a yacht.
+            This search is just the sailing. Ask for a quote if you want flights, a hotel, or a shore excursion added, or if the trip is a resort, a ski week, a train, or a yacht.
           </p>
           <Link to="/quote" className="mt-4 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
             Request a quote

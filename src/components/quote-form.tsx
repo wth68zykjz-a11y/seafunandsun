@@ -164,7 +164,7 @@ export function QuoteForm({
   return (
     <form onSubmit={onSubmit} className="mx-auto w-full max-w-lg rounded-xl border border-line bg-foam p-3 shadow-card sm:p-4 lg:mx-0">
       <h3 className="font-display text-xl text-ink">Request a quote</h3>
-      <p className="mt-1 text-sm text-mute">Where you want to go, and how to reach you. There is no separate agent fee.</p>
+      <p className="mt-1 text-sm text-mute">Your name, an email, and where you want to go. There is no separate agent fee.</p>
       {chooseTrip ? (
         <label className="mt-4 grid gap-1 text-sm font-medium">
           What kind of trip
@@ -228,7 +228,7 @@ export function QuoteForm({
       </label>
       <label className="mt-3 grid gap-1 text-sm font-medium">
         Travel plans
-        <textarea className={`${field} min-h-20 py-2`} name="plans" defaultValue={note} placeholder="Optional. Flights, a hotel, or an excursion." />
+        <textarea className={`${field} min-h-20 py-2`} name="plans" defaultValue={note} placeholder="Optional. Flights, a hotel, a shore excursion, or anything else." />
       </label>
       <label className="mt-3 flex items-start gap-3 text-sm text-mute">
         <input name="marketingOptIn" type="checkbox" className="mt-1 size-4 accent-tide" />
