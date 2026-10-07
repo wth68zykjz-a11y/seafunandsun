@@ -149,7 +149,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "2 to 4 hours",
         pace: "Stairs in Kotor; a car and a table in Amalfi",
         detail:
-          "Kotor is a town you walk through, not a museum you tour. Amalfi is a long lunch only when the ship’s time in port is long enough. All-aboard decides which of those days is real.",
+          "Kotor is a town you walk through, not a museum you tour. In Amalfi, lunch can take the afternoon when the ship stays long enough. All-aboard decides which of those days is real.",
       },
     ],
   },
@@ -173,7 +173,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half to full day",
         pace: "A short cliff path, or the view from the town",
         detail:
-          "This is the France day that is not Paris. Paris from Le Havre is a long ride. If that is the city you want, pick one sight and, if the ship leaves later, squeeze lunch in. To see Paris properly, stay at Shangri-La Paris before the cruise or after you return.",
+          "This is the France day in Étretat, not in Paris. The drive from Le Havre to Paris is long. If Paris is the city you want, pick one sight and, if the ship leaves later, squeeze lunch in. To see Paris properly, stay at Shangri-La Paris before the cruise or after you return.",
       },
       {
         title: "One garden, not the whole city",
@@ -333,7 +333,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Moderate, mostly flat",
         detail:
-          "E-bikes change who can do this. The villages between the famous cities are the ride, not the mileage. Take the shorter loop if anyone in the cabin is unsure.",
+          "E-bikes change who can do this. The villages between the famous cities are the point, not the mileage. Take the shorter loop if anyone in the cabin is unsure.",
       },
       {
         title: "A tasting that is not a detour",
@@ -600,14 +600,14 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Empty blue chairs on a terrace above a caldera harbor at dawn",
     facts: [
       { label: "Time in port", text: "Often a long day, sometimes a tender. The useful hours are early, before the alleys fill." },
-      { label: "Worth the time", text: "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site. The Ancient Agora is nearby. The National Archaeological Museum holds the Mycenaean gold and the classical bronzes. Rome is a long ride from Civitavecchia. St. Peter’s is in Rome, and the Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city too. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. Long lunches are on the Amalfi coast." },
+      { label: "Worth the time", text: "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site. The Ancient Agora is nearby. The National Archaeological Museum holds the Mycenaean gold and the classical bronzes. The drive from Civitavecchia to Rome is long. St. Peter’s is in Rome, and the Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city too. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. Long lunches are on the Amalfi coast." },
       { label: "Best for", text: "Travelers who want a different country at breakfast and will walk for it. Shoulder months beat August." },
       { label: "Also", text: "The Acropolis, or one town, is a full morning." },
     ],
     outings: [
       { fits: "People who will take the first tender up for the caldera, then come back down.", bring: "Sun protection, water, and shoes with a grip. The marble is polished by crowds." },
       { fits: "People who will give the morning to the Acropolis, then lunch in Plaka.", bring: "A hat and a bottle. The site is exposed, and the good cafes are after, not on the hill." },
-      { fits: "People who will ride into Rome for St. Peter’s, the museums, or the Colosseum.", bring: "Comfortable shoes. The drive from Civitavecchia is part of the day." },
+      { fits: "People who will spend the day in Rome, at St. Peter’s, the museums, or the Colosseum.", bring: "Comfortable shoes. The drive from Civitavecchia gets you there." },
       { fits: "People who will walk Kotor’s walls, or sit down to lunch on the Amalfi coast.", bring: "Cash still helps in the old towns." },
     ],
   },
@@ -616,13 +616,13 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Bicycles beside a misty canal and a stone bridge in an old European town",
     facts: [
       { label: "Time in port", text: "A city day uses most of the hours, but the pier is often an hour from the place you actually want." },
-      { label: "Worth the time", text: "The belfry is in Bruges, and the menus have mussels steamed in white wine, onion, and celery, usually with fries. Paris is a long ride from Le Havre. The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. Lunch can fit if the ship leaves later. Shangri-La Paris, looking toward the Eiffel Tower, is a stay in the city before or after the cruise. Westminster Abbey and the Tower of London are in London. The Savoy is a stay in the city. The Sagrada Família and the Gothic Quarter are in Barcelona. Cocina Hermanos Torres is a Michelin table in the city if you reserved it ahead, and Camp Nou is there when there is a match. Belém and Alfama are in Lisbon. Hotel Arts is a stay in Barcelona. The Four Seasons Hotel Ritz is a stay in Lisbon." },
+      { label: "Worth the time", text: "The belfry is in Bruges, and the menus have mussels steamed in white wine, onion, and celery, usually with fries. The drive from Le Havre to Paris is long. The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. Lunch can fit if the ship leaves later. Shangri-La Paris, looking toward the Eiffel Tower, is a stay in the city before or after the cruise. Westminster Abbey and the Tower of London are in London. The Savoy is a stay in the city. The Sagrada Família and the Gothic Quarter are in Barcelona. Cocina Hermanos Torres is a Michelin table in the city if you reserved it ahead, and Camp Nou is there when there is a match. Belém and Alfama are in Lisbon. Hotel Arts is a stay in Barcelona. The Four Seasons Hotel Ritz is a stay in Lisbon." },
       { label: "Best for", text: "Travelers who have a city they still want, or who would rather have one garden than three capitals." },
-      { label: "Also", text: "Le Havre to Paris is a long ride for a short stop." },
+      { label: "Also", text: "The drive from Le Havre to Paris is long for the time you would have in the city." },
     ],
     outings: [
-      { fits: "People who will use the ride from the pier for canals, the belfry, and mussels.", bring: "Layers. Canal weather changes, and the square is windier than the pier." },
-      { fits: "People who will take the cliffs at Étretat and a long lunch, not the bus to Paris.", bring: "A wind jacket." },
+      { fits: "People who will spend the day in Bruges, on the canals, at the belfry, and at a table for mussels.", bring: "Layers. Canal weather changes, and the square is windier than the pier." },
+      { fits: "People who will stay in Étretat for the cliffs and lunch, rather than go on to Paris.", bring: "A wind jacket." },
       { fits: "People who will pick the Alcázar, one Lisbon hill, or a town on the Riviera.", bring: "Good walking shoes. The Cádiz-to-Seville drive is longer than it looks on a map." },
     ],
   },
@@ -633,12 +633,12 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Inter-island ships often overnight. A sailing from San Diego, Los Angeles, or Vancouver spends more days just getting there." },
       { label: "Worth the time", text: "Stop on Oahu to visit the USS Arizona Memorial. After that, a plate lunch is an idea." },
       { label: "Best for", text: "People who want the islands, not a new port every morning. Match the excursion to the kind of Hawaii trip you booked." },
-      { label: "Also", text: "The road to Hana takes a full day." },
+      { label: "Also", text: "Hana is the town at the end of the road. The drive takes the day." },
     ],
     outings: [
       { fits: "People who will swim with the turtles on the calmer side of the island.", bring: "Reef-safe sunscreen. Whales in winter are a bonus, not a promise." },
       { fits: "People who will do the Arizona memorial in the morning and the beach after.", bring: "Allow time for security screening." },
-      { fits: "People who will give the whole day to the road to Hana.", bring: "The road is the outing, not a list of waterfalls." },
+      { fits: "People who will spend the day going to Hana, with stops along the road.", bring: "Hana is the town. The stops are on the way there." },
     ],
   },
   bermuda: {
@@ -726,9 +726,9 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "One temple, or one district, is a full day once the drive is included." },
     ],
     outings: [
-      { fits: "People who will use the drive for the Grand Palace, another temple, or a market on the water.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
+      { fits: "People who will spend the day in Bangkok, at the Grand Palace, another temple, or a market on the water.", bring: "Water, socks for the palace floors, and time for the drive back to Laem Chabang." },
       { fits: "People who will see the karsts from the boat.", bring: "Sun cover." },
-      { fits: "People who will take the train into Kyoto for Fushimi Inari or Arashiyama.", bring: "A transit card and walking shoes." },
+      { fits: "People who will spend the day in Kyoto, at Fushimi Inari or Arashiyama.", bring: "A transit card and walking shoes. The train from Osaka or Kobe is how you get there." },
     ],
   },
   "south-america": {
