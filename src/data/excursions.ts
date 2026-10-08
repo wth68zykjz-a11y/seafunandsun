@@ -485,7 +485,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "The daylight hours of the route",
         pace: "Sitting, with a walk at fresh-air stops",
         detail:
-          "You take the train instead of a flight so you can watch the canyon or the pass from the glass car. On an overnight trip you sleep in a roomette. The lounge is then a place to sit, not the bed.",
+          "You take the train instead of a flight so you can watch the canyon or the pass from the glass car. On an overnight trip you sleep in a roomette. The lounge upstairs is a place to sit, not the bed. The cafe is on the lower level, and you pay there. Meals in the dining car come with the roomette.",
       },
       {
         title: "A stop that is long enough",

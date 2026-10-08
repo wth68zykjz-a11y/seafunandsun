@@ -877,7 +877,7 @@ export const destinations: Destination[] = [
     alt: "A passenger train beside a western river with mountains behind",
     lede: "We book scenic trains in North America, sleeper trains in Europe, and the hotel nights that connect them.",
     paragraphs: [
-      "Amtrak, VIA Rail, and the scenic railways of North America run through some of the finest country on the continent. We build the trip around the routing you want, including the nights on either end.",
+      "Amtrak, VIA Rail, and the scenic railways of North America are the trains we book, including the nights on either end. On the California Zephyr, meals in the dining car come with a roomette: breakfast, lunch, and a three-course dinner, plus room service. At breakfast you can order railroad French toast or a three-egg omelet. At dinner you can order a flatiron steak, pan-roasted chicken, or Atlantic salmon, and a dessert such as white-chocolate blueberry cobbler. The first alcoholic drink at dinner is included. Amtrak changes the menu, so we check the one for your date. The westbound train leaves Chicago in the afternoon, so the first meal is dinner. The last day, into Emeryville, is breakfast and lunch. Coach passengers buy sandwiches, snacks, and drinks at the cafe on the lower level of the sightseer lounge. A dining-car table for a coach passenger opens only if the sleeper guests have not filled it, and that meal is a separate charge.",
       "Europe has two kinds of train. The Venice Simplon-Orient-Express, La Dolce Vita Orient Express, the Golden Eagle Danube Express, and the Royal Scotsman are overnight trips: you sleep on the train, meals are usually included, and the cabin you choose is what changes the price. An agent requests many of those dates, because they are not posted. The Glacier Express and the Bernina Express run in daylight through the Alps. The Bernina climbs past lakes and stone viaducts. You get off in the evening and sleep in a hotel.",
       "Land travel sits beside the trains: hotel nights in a city, or a few days between segments. Not every trip is escorted. A guided tour or an excursion may be available, depending on the stop. The quote says whether that stop has a tour, a walk, or only a short pause.",
     ],
@@ -898,7 +898,7 @@ export const destinations: Destination[] = [
         heading: "On board",
         items: [
           "A window seat on the mountain side, every time we can arrange it",
-          "Dining cars and lounge cars — the last true slow travel",
+          "On the Zephyr, a roomette includes meals in the dining car: breakfast, lunch, and a three-course dinner. The cafe under the sightseer lounge sells food to every passenger.",
           "Rail-and-stay packages: nights before and after, door to door",
           "A park pass, or a guided walk, when that stop offers one",
           "Group and family rates, handled for the whole crew",
@@ -930,9 +930,9 @@ export const destinations: Destination[] = [
         title: "California Zephyr",
         nights: "About 2 nights on board",
         season: "Late spring through fall",
-        ship: "Amtrak, sleeper if you want the diner included",
+        ship: "Amtrak roomette, with dining-car meals included. Coach pays at the cafe.",
         path: "Chicago to Emeryville, or a segment",
-        ports: ["Gore Canyon, Glenwood Canyon, and Ruby Canyon, seen from the glass car. The train does not stop in them", "Fraser-Winter Park is about five minutes. A hike means a night off the train", "Glenwood Springs is about seven minutes. The hot-springs pool means a night off the train", "Truckee is a short stop below Donner Pass. Donner Lake means a night off the train", "Denver, Salt Lake City, or Reno if you split the ticket and stay the night"],
+        ports: ["Gore Canyon, Glenwood Canyon, and Ruby Canyon, seen from the glass car. The train does not stop in them", "Fraser-Winter Park is about five minutes. A hike means a night off the train", "Glenwood Springs is about seven minutes. The hot-springs pool means a night off the train", "Truckee is a short stop below Donner Pass. Donner Lake means a night off the train", "Denver, Salt Lake City, or Reno if you split the ticket and stay the night", "At dinner in the dining car you can order steak, chicken, or salmon. Coach buys from the cafe"],
       },
       {
         title: "The Canadian",
