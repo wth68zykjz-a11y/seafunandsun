@@ -61,7 +61,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day on the water",
         pace: "Easy if you stay seated",
         detail:
-          "A smaller boat gets nearer the ice than the ship can. You hear the calving. If you stay aboard, the deck or a balcony is the other way to watch the fjord. Dress for wind even in July.",
+          "A smaller boat gets nearer the ice than the ship can. You hear the calving. If you stay aboard, you can watch the fjord from the deck or a balcony. Dress for wind even in July.",
       },
       {
         title: "Whales from Juneau or Seward",
@@ -69,7 +69,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "3 to 4 hours",
         pace: "Moderate if the chop is up",
         detail:
-          "Humpbacks are the usual show from late spring. A small boat gets closer than the ship does, and the water moves.",
+          "Humpbacks are the whales you usually see from late spring. A small boat gets closer than the ship does, and the water moves.",
       },
       {
         title: "White Pass from Skagway",
@@ -197,7 +197,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "2 to 3 hours",
         pace: "Comfortable swimmer",
         detail:
-          "Ideas include a snorkel and a sit-on kayak. Winter whale season is a bonus from the boat, not a guarantee. The calm side of the island depends on that day’s wind.",
+          "Ideas include a snorkel and a sit-on kayak. Seeing whales in winter is a bonus from the boat, not a guarantee. The calm side of the island depends on that day’s wind.",
       },
       {
         title: "Pearl Harbor in the morning",
@@ -285,7 +285,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-new-england.jpg",
     photoAlt: "A lighthouse and autumn trees on a rocky New England point",
     intro:
-      "Fall sailings here are about color and small ports. A lighthouse and a walk through a town can fill the hours the ship is in port. Quebec and Halifax are the cities. Bar Harbor and the Maine ports are the slower ones.",
+      "Sailings in the fall are the ones with color in the trees and stops in small ports. A lighthouse and a walk through a town can fill the hours the ship is in port. Quebec and Halifax are cities. Bar Harbor and the Maine ports are smaller towns.",
     excursions: [
       {
         title: "Lighthouse and a leaf walk",
@@ -293,7 +293,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Easy paths",
         detail:
-          "Peak color is a narrow window, usually late September into early October. The useful walk is the one near the pier, not an hour on a bus to a prettier brochure photo.",
+          "The weeks of peak color are few, usually late September into early October. The useful walk is the one near the pier, not an hour on a bus to a prettier brochure photo.",
       },
       {
         title: "Halifax or the Québec ramparts",
@@ -333,7 +333,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Moderate, mostly flat",
         detail:
-          "E-bikes change who can do this. The villages between the famous cities are the point, not the mileage. Take the shorter loop if anyone in the cabin is unsure.",
+          "E-bikes change who can do this. The villages between the famous cities are worth the ride, not the mileage. Take the shorter loop if anyone in the cabin is unsure.",
       },
       {
         title: "A tasting that is not a detour",
@@ -445,7 +445,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-world.jpg",
     photoAlt: "A large cruise ship crossing open ocean",
     intro:
-      "A world cruise is mostly sea days, with a few ports long enough to explore. The stop worth planning is often an overnight in a city, not a three-hour coach. The overnights are the ones to plan. A short stop can be skipped.",
+      "Most of a world cruise is spent at sea, with a few ports long enough to explore. The stop worth planning is often an overnight in a city, not a three-hour bus ride. Plan those overnights. A short stop can be skipped.",
     excursions: [
       {
         title: "Use the overnight, ignore the glance",
@@ -501,7 +501,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "One night",
         pace: "Easy",
         detail:
-          "A same-afternoon flight after a two-night train is a poor connection. One hotel night, a walk, then home, belongs in the same plan as the rail.",
+          "A same-afternoon flight after a two-night train is a poor connection. One hotel night, then a walk, then the trip home, belongs in the same plan as the train.",
       },
     ],
   },
@@ -636,7 +636,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "Hana Bay, the black-sand beach, and the food stands are in Hana. The ship docks in Kahului. Hana is about two and a half hours from the pier." },
     ],
     outings: [
-      { fits: "People who will swim with the turtles on the calmer side of the island.", bring: "Reef-safe sunscreen. Whales in winter are a bonus, not a promise." },
+      { fits: "People who will swim with the turtles on the calmer side of the island.", bring: "Reef-safe sunscreen. Seeing whales in winter is a bonus, not a promise." },
       { fits: "People who will do the Arizona memorial in the morning and the beach after.", bring: "Allow time for security screening." },
       { fits: "People who want a swim, the black-sand beach, and lunch in Hana.", bring: "A swimsuit, cash for the food stands, and water." },
     ],
@@ -660,7 +660,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-northern-europe.jpg",
     detailAlt: "A row of painted wooden wharf houses reflected in calm water",
     facts: [
-      { label: "Time in port", text: "A stop in a fjord village can be a tender of a few hours. A stop in a Baltic capital runs longer." },
+      { label: "Time in port", text: "A stop in a fjord village can mean a few hours ashore by small boat. A stop in a Baltic capital runs longer." },
       { label: "Worth the time", text: "The Bryggen wharf is in Bergen, and the fish market serves a shrimp sandwich: cold peeled shrimp on buttered bread, with mayonnaise and lemon. In Copenhagen, a New Nordic menu is local seafood, vegetables, and foraged herbs, and those tables are booked before you sail. The Rijksmuseum is in Amsterdam. It holds Rembrandt’s The Night Watch. The Anne Frank House is the rooms where she hid. Ocean ships dock at IJmuiden, not in the canals. The museum is about 30 to 45 minutes from the pier. Lunch can fit if the ship leaves later. The Waldorf Astoria Amsterdam is a stay in the city before or after the cruise. Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a stay in the city if you want to stay the night. Gamla Stan is in Stockholm. The Vasa Museum holds the warship Vasa, raised from the harbor. Grand Hôtel looks across the water at the palace." },
       { label: "Travelers", text: "This suits people who want long summer light and small harbors, and who do not mind the weather being part of the trip." },
       { label: "Also", text: "If the ship is alongside, you can walk to the old square. If the tender is canceled, you stay on board." },

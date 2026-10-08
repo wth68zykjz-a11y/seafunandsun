@@ -373,7 +373,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "What these ships leave out",
-        text: "No theater lineup, no kids’ water park, and almost no published fare. A week with a show every night, or a cabin under $2,000, belongs on a ship that has those.",
+        text: "No theater lineup, no kids’ water park, and almost no published fare. If you want a show every night, or a cabin under $2,000, look at a larger ship.",
       },
     ],
   },

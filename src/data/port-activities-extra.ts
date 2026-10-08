@@ -34,7 +34,7 @@ export const extraPortPages = [
       {
         name: "Cádiz and Seville",
         dock: "Ships for Seville usually dock at Cádiz.",
-        text: "The old city of Cádiz is beside the pier. The ride from Cádiz to Seville takes about two hours. The Alcázar is in Seville. If the ship leaves later, a flamenco show can fit. It does not fit on a morning call.",
+        text: "The old city of Cádiz is beside the pier. The ride from Cádiz to Seville takes about two hours. The Alcázar is in Seville. If the ship leaves later, a flamenco show can fit. It does not fit when the ship is only there for the morning.",
       },
       {
         name: "Tenerife",
@@ -55,7 +55,7 @@ export const extraPortPages = [
       {
         name: "Honolulu",
         dock: "Ships use the piers near Aloha Tower.",
-        text: "Waikiki is east of the pier. The ride takes about 15 to 20 minutes. Pearl Harbor is west. The ride takes about 20 to 30 minutes. The Arizona Memorial is the ship that sank there. A short call does not leave time for both Waikiki and Pearl Harbor.",
+        text: "Waikiki is east of the pier. The ride takes about 15 to 20 minutes. Pearl Harbor is west. The ride takes about 20 to 30 minutes. The Arizona Memorial stands over the battleship that sank there. A short stop does not leave time for both Waikiki and Pearl Harbor.",
       },
       {
         name: "Maui",
@@ -105,7 +105,7 @@ export const extraPortPages = [
       },
       {
         name: "St. George's",
-        dock: "The ship does not dock in St. George's on a Dockyard call.",
+        dock: "When the ship is at the Dockyard, it does not also dock in St. George's.",
         text: "St. George's is the older town, at the east end. A bus from the Dockyard takes about an hour. Tobacco Bay has a sheltered beach and rock formations. The town has its own streets and a fort.",
       },
     ],
@@ -283,7 +283,7 @@ export const extraPortPages = [
     slug: "asia",
     region: "Asia Cruises",
     title: "What you can do in port in Asia",
-    lede: "Patong is a beach on Phuket. The Grand Palace is in Bangkok. Singapore, Tokyo, and Hong Kong are other calls on these cruises.",
+    lede: "Patong is a beach on Phuket. The Grand Palace is in Bangkok. Singapore, Tokyo, and Hong Kong are other stops on these cruises.",
     note: "Singapore and Tokyo often keep the ship in port into the evening. The ride from Laem Chabang into Bangkok takes long enough that a visit to the palace is the plan for those hours.",
     image: "/media/asia.jpg",
     imageAlt: "A harbor and towers in Asia",
@@ -354,7 +354,7 @@ export const extraPortPages = [
   {
     slug: "world",
     region: "World Cruises",
-    title: "What a call is like on a world cruise",
+    title: "What a stop is like on a world cruise",
     lede: "A world cruise spends many days at sea. The ports below are ones these voyages often use. The ship does not stop in all of them on one sailing.",
     note: "On a short stop you can walk the streets nearest the landing. On an overnight you have the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights.",
     image: "/media/world.jpg",
@@ -441,7 +441,7 @@ export const extraPortPages = [
       {
         name: "The canal",
         dock: "You stay on the ship during the transit.",
-        text: "You watch the locks from the deck. A full transit passes every lock and the Culebra Cut. A partial transit uses the Caribbean locks and Gatun Lake, then turns around.",
+        text: "You watch the locks from the deck. A full transit passes every lock and the Culebra Cut. A partial transit uses the Caribbean locks and Gatun Lake, then comes back out the same side.",
       },
       {
         name: "Cartagena",

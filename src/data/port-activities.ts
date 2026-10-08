@@ -53,7 +53,7 @@ export const portActivities: PortActivityPage[] = [
       },
       {
         name: "Seward",
-        dock: "Seward is usually the end of a one-way Gulf cruise, not a four-hour call.",
+        dock: "Seward is usually the end of a one-way Gulf cruise, not a four-hour stop.",
         text: "The small-boat harbor is in town. A Kenai Fjords boat goes out through Resurrection Bay and, when the weather allows, toward the glaciers and the whales. If you are staying on, the Alaska Railroad runs between Seward and Anchorage.",
       },
       {
@@ -136,7 +136,7 @@ export const portActivities: PortActivityPage[] = [
       },
       {
         name: "Aruba, Bonaire, and Curaçao",
-        dock: "These are a southern routing, usually from San Juan, or a longer loop from Florida.",
+        dock: "These islands are on a southern routing, usually from San Juan, or on a longer loop from Florida.",
         text: "They are not on a seven-night western Caribbean cruise with Cozumel. In Aruba the ship docks at Oranjestad. A taxi from there goes up the west coast to Eagle Beach. The sand is pale, and the water is calm. In Bonaire the reef starts close to shore, which is why people snorkel from the coast. In Curaçao the ship docks at Willemstad. You can walk to the Handelskade, the colored waterfront, and the Queen Emma Bridge swings open for ships.",
       },
       {
@@ -175,13 +175,13 @@ export const portActivities: PortActivityPage[] = [
       },
       {
         name: "Crete",
-        dock: "Most Greek weeks use Heraklion.",
+        dock: "Most Greek-island cruises of about a week stop in Heraklion.",
         text: "The harbor fort is near the piers. Knossos, the Minoan palace, is about 15 to 20 minutes from the port. You walk the ruins of the palace. The Archaeological Museum in Heraklion holds the frescoes and finds from that site, and it is in town.",
       },
       {
         name: "Rome",
         dock: "The ship docks at Civitavecchia, not in Rome. The train or a coach takes about an hour to an hour and a half.",
-        text: "St. Peter’s is in the city. The Vatican Museums hold Michelangelo’s ceiling in the Sistine Chapel and the classical sculpture galleries. The Colosseum, the Forum, and the Palatine are a separate part of the city, about a half hour on foot or a short taxi from the Vatican. A short call usually leaves time for one of those, not all of them. Cacio e pepe is pasta with pecorino and black pepper. Rome Cavalieri, a Waldorf Astoria hotel, looks over the city and is a stay before or after the cruise.",
+        text: "St. Peter’s is in the city. The Vatican Museums hold Michelangelo’s ceiling in the Sistine Chapel and the classical sculpture galleries. The Colosseum, the Forum, and the Palatine are a separate part of the city, about a half hour on foot or a short taxi from the Vatican. A short stop usually leaves time for one of those, not all of them. Cacio e pepe is pasta with pecorino and black pepper. Rome Cavalieri, a Waldorf Astoria hotel, looks over the city and is a stay before or after the cruise.",
       },
       {
         name: "Florence",

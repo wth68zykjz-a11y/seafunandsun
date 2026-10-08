@@ -255,7 +255,7 @@ export function DestinationArticle({
                 <dl className="mt-4 grid gap-3 text-base leading-relaxed text-ink">
                   <div>
                     <dt className="font-medium text-tide">Direction</dt>
-                    <dd>A round trip. The ship uses the Caribbean locks, spends time on Gatun Lake, turns around, and exits the same side.</dd>
+                    <dd>A round trip. The ship uses the Caribbean locks, spends time on Gatun Lake, comes back out, and exits the same side.</dd>
                   </div>
                   <div>
                     <dt className="font-medium text-tide">Start and finish</dt>
