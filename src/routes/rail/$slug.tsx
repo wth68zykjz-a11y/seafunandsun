@@ -15,7 +15,7 @@ export const Route = createFileRoute("/rail/$slug")({
       title: loaderData?.title ?? "Rail",
       description: loaderData ? clip(`${loaderData.title}. ${loaderData.lede}`) : "Rail trips booked by Sea Fun & Sun.",
       path: loaderData ? `/rail/${loaderData.slug}` : "/rail",
-      image: "/media/rail.jpg",
+      image: loaderData?.photos[0]?.src ?? "/media/rail.jpg",
       noindex: !loaderData,
     }),
   component: RailTopicPage,
@@ -49,6 +49,16 @@ function RailTopicPage() {
         <p className="text-sm font-medium text-tide">Rail and land</p>
         <h1 className="mt-2 font-display text-4xl text-ink">{page.title}</h1>
         <p className="mt-4 text-lg leading-relaxed text-ink">{page.lede}</p>
+        {page.photos.length ? (
+          <div className="mt-6 grid gap-4">
+            {page.photos.map((photo) => (
+              <figure key={photo.src} className="overflow-hidden rounded-xl border border-line bg-foam">
+                <img src={photo.src} alt={photo.alt} width={1600} height={1000} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
+                <figcaption className="px-4 py-3 text-sm leading-relaxed text-mute">{photo.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        ) : null}
         {page.sections.map((section) => (
           <section key={section.heading} className="mt-8">
             <h2 className="font-display text-2xl">{section.heading}</h2>
