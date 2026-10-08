@@ -119,7 +119,7 @@ export function agencyGraph() {
         publisher: { "@id": id },
         inLanguage: "en-US",
         description:
-          "Cruises, expedition ships, resorts, ski vacations, and rail trips from an independent travel company in Farmington, Connecticut. Live sailing search. No separate agent fee.",
+          "Cruises, expedition ships, resorts, ski vacations, and rail trips from an independent travel company in Farmington, Connecticut. A trip starts with a quote. There is no public fare search, and no separate agent fee.",
       },
     ],
   };

@@ -269,7 +269,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/downeaster.jpg",
         alt: "The Downeaster locomotive leading passenger cars through trees",
-        caption: "The Downeaster between Boston and Brunswick. Portland is the city on the way. The station is across the river from the Old Port.",
+        caption: "The Downeaster between Boston and Brunswick. It stops in Portland on the way. The station is across the river from the Old Port.",
       },
     ],
     sections: [

@@ -100,7 +100,7 @@ export const extraPortPages = [
       },
       {
         name: "Hamilton",
-        dock: "The ship stays at the Dockyard. Hamilton is the capital.",
+        dock: "The ship stays at the Dockyard. Hamilton, the capital, is a ferry ride from there.",
         text: "A ferry from the Dockyard takes about 20 minutes. Front Street is the waterfront, and the shops are there. You can walk Front Street once you land.",
       },
       {
@@ -205,7 +205,7 @@ export const extraPortPages = [
     slug: "river",
     region: "River Cruises",
     title: "Where a river ship ties up",
-    lede: "A river ship ties up in town, often into the evening. You walk off.",
+    lede: "A river ship ties up in town, often into the evening. You walk off the ship into town.",
     note: "Budapest and Vienna are on the Danube. Cologne is on the Rhine. Paris is on the Seine. Porto is on the Douro. New Orleans is on the Mississippi.",
     image: "/media/river.jpg",
     imageAlt: "A river ship on a wide European river",
@@ -270,7 +270,7 @@ export const extraPortPages = [
       {
         name: "Puerto Ayora",
         dock: "Small ships use a panga, a local open boat, between the ship and the landing.",
-        text: "Puerto Ayora is the town on Santa Cruz. The Charles Darwin Research Station is there, and you can see giant tortoises. Baltra is the airport island, a separate ride. The two are not the same stop.",
+        text: "Puerto Ayora is the town on Santa Cruz. The Charles Darwin Research Station is there, and you can see giant tortoises. Baltra is the airport island, and the ride there is separate. Puerto Ayora and Baltra are not the same stop.",
       },
       {
         name: "Longyearbyen",
@@ -433,7 +433,7 @@ export const extraPortPages = [
     slug: "panama-canal",
     region: "Panama Canal Cruises",
     title: "What you can do on a Panama Canal cruise",
-    lede: "While the ship is in the canal, you are on deck. Cartagena is the city most of these routes actually stop in.",
+    lede: "While the ship is in the canal, you are on deck. Cartagena is the city these cruises usually stop in.",
     note: "A full transit goes from one ocean to the other. A partial transit enters Gatun Lake and comes back out the same locks. The comparison is on the Panama Canal region page.",
     image: "/media/panama-canal.jpg",
     imageAlt: "A ship in the Panama Canal",

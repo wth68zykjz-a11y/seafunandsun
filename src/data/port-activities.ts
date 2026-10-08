@@ -158,7 +158,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Athens",
         dock: "Ships dock at Piraeus. The metro or a taxi takes about 30 to 40 minutes to the Acropolis.",
-        text: "The Acropolis Museum, beside the hill, holds the sculptures from the site, including the Parthenon marbles that remain in Athens. You can walk down the hill to the Ancient Agora. The National Archaeological Museum, across the city, holds the Mycenaean gold and the classical bronzes, so it fits a longer stay better than a single morning. In Plaka you can sit down after the hill. A souvlaki is pork or chicken on a skewer, often in pita with tomato, onion, and tzatziki, which is yogurt with cucumber and garlic. Hotel Grande Bretagne is a stay in the city before or after the cruise.",
+        text: "The Acropolis Museum, beside the hill, holds the sculptures from the site, including the Parthenon marbles that remain in Athens. You can walk down the hill to the Ancient Agora. The National Archaeological Museum, across the city, holds the Mycenaean gold and the classical bronzes, so plan the museum for a longer stay, not a single morning. In Plaka you can sit down after you come down from the hill. A souvlaki is pork or chicken on a skewer, often in pita with tomato, onion, and tzatziki, which is yogurt with cucumber and garlic. Hotel Grande Bretagne is a stay in the city before or after the cruise.",
       },
       {
         name: "Santorini",

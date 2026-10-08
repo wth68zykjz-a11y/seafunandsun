@@ -61,7 +61,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The season runs from May through September. May is the colder start, and the glaciers are at their largest then. June and July are the busiest weeks and the longest days. August and early September bring the salmon run, the bears at the rivers, and long evenings.",
+    when: "The season runs from May through September. May is the colder start, and the glaciers are at their largest then. June and July are the busiest months, and the days are longest then. August and early September bring the salmon run, the bears at the rivers, and long evenings.",
     planning: "Tell us whether you want May, for the larger glaciers, or August, for the salmon and the bears. The ship can be the same in either month. A round-trip Alaska cruise from Seattle uses one airport. A one-way cruise to Seward or Whittier needs a flight at that end. If the cruise departs from Vancouver, stay a few days before or after. The Fairmont Pacific Rim looks over the harbor and the mountains.",
     itineraries: [
       {
@@ -102,7 +102,7 @@ export const destinations: Destination[] = [
       "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. Cruises also start in San Juan, and in some seasons in Fort-de-France, Martinique. A San Juan start puts a seven-night cruise in the islands without the sea days a Florida start needs to reach the same ports. Fort-de-France is a start when MSC Opera or a smaller French ship is based there for the season. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
       "Northeast departures mean more sea days. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port. We will say how many sea days are on the one you are looking at before you book it.",
       "A western Caribbean cruise often includes Cozumel and Grand Cayman. An eastern one often includes St. Thomas, St. Maarten, and, on a longer sailing, Antigua or Martinique. Aruba, Bonaire, and Curaçao are a southern routing. The port page says where the ship docks, and how far the sights are from the pier.",
-      "A seven-night cruise that starts in Miami is usually a Bahamas cruise, a western Caribbean cruise to Cozumel and Grand Cayman, or an eastern one to St. Thomas and St. Maarten. The ship uses two or three of those nights at sea. A seven-night cruise that starts in San Juan usually includes four or five ports, such as St. Thomas, St. Maarten, Antigua, St. Lucia, Barbados, St. Kitts, or Aruba, Bonaire, and Curaçao, and one or two nights at sea. Miami has more ships and more sailing dates, including the largest. The ships that start and end in San Juan are mid-size. Royal Caribbean does that year-round, on ships such as Rhapsody of the Seas and Vision of the Seas. Celebrity and Norwegian do it on some weeks. The Icon-class ships stop in San Juan. A cruise on those ships usually starts in Florida. Old San Juan is beside the dock. South Beach is a ride from the Miami terminal, so a night there is its own booking. A passport is the document to carry from either port, because several of the islands are foreign.",
+      "A seven-night cruise that starts in Miami is usually a Bahamas cruise, a western Caribbean cruise to Cozumel and Grand Cayman, or an eastern one to St. Thomas and St. Maarten. The ship uses two or three of those nights at sea. A seven-night cruise that starts in San Juan usually includes four or five ports, such as St. Thomas, St. Maarten, Antigua, St. Lucia, Barbados, St. Kitts, or Aruba, Bonaire, and Curaçao, and one or two nights at sea. Miami has more ships and more sailing dates, including the largest. The ships that start and end in San Juan are mid-size. Royal Caribbean does that year-round, on ships such as Rhapsody of the Seas and Vision of the Seas. Celebrity and Norwegian do it on some weeks. The Icon-class ships stop in San Juan. A cruise on those ships usually starts in Florida. Old San Juan is beside the dock. South Beach is a taxi ride from the Miami terminal, so a night there is a separate booking. A passport is the document to carry from either port, because several of the islands are foreign.",
       "MSC’s large ships, including World America, start in Miami. MSC Opera, about 2,600 guests, is the smaller ship in this region. From late 2026 it starts in La Romana, and later in Fort-de-France. Explora Journeys, about 900 guests, usually sails one way between San Juan and Miami. It does not start and end in the same city every week. Viking’s ocean ships, about 930 guests, sail a 10-night round trip from San Juan, and the line does not book anyone under 18. Silversea’s Silver Shadow, about 390 guests, starts and ends some cruises in San Juan and also sails one way from Miami. Drinks are in those fares. Star Clippers does not start a cruise in San Juan or Miami. The sailing ships, about 170 guests on Star Clipper and Star Flyer and about 227 on Royal Clipper, start in St. Maarten, Barbados, Antigua, Aruba, or Grenada, and they anchor off small bays. An agent requests the Explora, Silversea, Viking, and Star Clippers fares. A past-guest number, or a military discount, belongs on that request.",
     ],
     lists: [
@@ -175,7 +175,7 @@ export const destinations: Destination[] = [
     card: "Ports & culture",
     image: "/media/mediterranean.jpg",
     alt: "A whitewashed harbor town above a small Mediterranean port",
-    lede: "Most mornings you wake up in a different port. One day can be Barcelona and the next a smaller harbor. Pick the ship for those ports, not for the photograph on the cover.",
+    lede: "Most mornings the ship is in a different port. One morning that port may be Barcelona, and the next morning a smaller harbor. Pick the ship for those ports, not for the photograph on the cover.",
     paragraphs: [
       "Cruises usually run seven to fourteen nights and depart from Barcelona, Civitavecchia for Rome, and Piraeus for Athens. Royal Caribbean, MSC, Norwegian, Celebrity, and Cunard all sail the region, and the luxury lines sail it too. A Venice stop is usually Ravenna or Trieste, not a dock in the lagoon. We compare the routes, the ports, and what the fare includes, then match the ship to how you like to travel.",
       "A Greek week tends to include Athens, Santorini, Mykonos, and Crete. An Adriatic week tends to include Dubrovnik, Kotor, and Split, with the ship in Ravenna or Trieste rather than Venice. A week from Barcelona tends to include Palma, Marseille, Nice, or Monaco. A 14- to 18-day cruise from the United Kingdom can include ports from more than one of those.",
@@ -244,7 +244,7 @@ export const destinations: Destination[] = [
     card: "Cities by sea",
     image: "/media/european.jpg",
     alt: "A historic canal and stone bridge in soft morning light",
-    lede: "One sailing can cover several cities. If you have already been somewhere, leave it off and spend the days somewhere new.",
+    lede: "These cruises visit several cities on one sailing, usually from Lisbon, Amsterdam, Le Havre, or Southampton.",
     paragraphs: [
       "Cruises usually run seven to fourteen nights and depart from Lisbon, Amsterdam, Le Havre, or Southampton. The usual ports are Lisbon, Porto, Amsterdam, Bruges, and London. A winter cruise from Lisbon or Southampton tends to include Tenerife, Gran Canaria, or Funchal. Barcelona, Rome, Greece, and the Adriatic are on the Mediterranean page. Cunard, MSC, Celebrity, and Royal Caribbean sail these routes. We compare them, and we build the trip around the cities you want.",
       "The usual mistake in Europe is trying to see too much. Tell us which cities you have already visited, and we will build the sailing around the ones you have not.",
@@ -474,7 +474,7 @@ export const destinations: Destination[] = [
       },
       {
         title: "Baltic cities",
-        nights: "9–10 nights for Tallinn, Helsinki, and Stockholm. A 7-night does fewer cities",
+        nights: "9–10 nights for Tallinn, Helsinki, and Stockholm. A 7-night cruise stops in fewer cities",
         season: "May–August",
         ship: "A city-port ship, not an ice ship",
         path: "Copenhagen or Stockholm round trip",
@@ -583,7 +583,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The season runs from April through October, and the dates depend on the river. Spring is the Rhine in blossom. Fall is vineyard color and better light. The ships run on a season, so the dates matter as much as the fare.",
+    when: "The season runs from April through October, and the dates depend on the river. In spring the fruit trees along the Rhine are in blossom. In fall the vineyards change color and the light is better. The ships sail on a season, so the dates matter as much as the fare.",
     planning: "Name the river. A Danube ship and a Mississippi ship are not interchangeable. An agent requests many of these fares, because they are not posted.",
     itineraries: [
       {
@@ -821,7 +821,7 @@ export const destinations: Destination[] = [
     card: "Grand voyages",
     image: "/media/world.jpg",
     alt: "A large cruise ship crossing open ocean",
-    lede: "These voyages run about 70 to 120 days and stop at ports a shorter cruise cannot combine. The calendar and the fare both need a look before you give a season to one ship.",
+    lede: "These voyages run about 70 to 120 days and stop at ports a shorter cruise cannot combine. Look at the calendar and the fare before you book a season on one ship.",
     paragraphs: [
       "Cunard, Regent, Silversea, and Holland America run full and partial world cruises. Other large lines run the transatlantic crossings and the season-long loops. We compare the routes, the port lists, and the inclusions. On a ninety-day voyage, what the fare includes is a larger question than it is on a week.",
       "Tell us the months you can be away and the places you do not want to miss. We will show you the sailings that satisfy both.",

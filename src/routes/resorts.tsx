@@ -9,7 +9,7 @@ export const Route = createFileRoute("/resorts")({
     pageHead({
       title: "All-inclusive resorts",
       description:
-        "All-inclusive beach resorts and Disney park stays from Sea Fun & Sun. The quote says which room you are booking, such as a garden view or a suite, and it can include flights, the airport transfer, and a day trip off the property.",
+        "All-inclusive beach resorts and Disney park stays, booked by Sea Fun & Sun in Farmington, Connecticut. The quote names the room and can include flights.",
       path: "/resorts",
       image: "/media/resort-villas.jpg",
     }),

@@ -20,7 +20,7 @@ export const Route = createFileRoute("/destinations/$slug")({
     pageHead({
       title: loaderData?.title ?? "Destination",
       description: loaderData
-        ? clip(`${loaderData.title} booked by Sea Fun & Sun in Farmington, Connecticut. ${loaderData.lede}`)
+        ? clip(`${loaderData.lede} Booked by Sea Fun & Sun in Farmington, Connecticut.`)
         : "Cruise destinations booked by Sea Fun & Sun in Farmington, Connecticut.",
       path: loaderData ? `/destinations/${loaderData.slug}` : "/destinations",
       image: loaderData?.image,
@@ -59,7 +59,7 @@ const ashoreNotes: Record<string, string> = {
   "australia-new-zealand":
     "Sydney Harbour and the Opera House are in Sydney. In Auckland, the waterfront is at the pier, and Mount Eden, a volcanic cone, is about 15 minutes away. The evening in town depends on a late sailaway or an overnight, which some itineraries have. Brisbane and Melbourne turn fewer ships. Extra nights in Sydney or Auckland are for the city after the ship has sailed.",
   "panama-canal":
-    "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. Cartagena is the city on a lot of these routes. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego, when there is no all-aboard.",
+    "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. Cartagena is the city these cruises usually stop in. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego, when there is no all-aboard.",
 };
 
 const ashoreLeads: Record<string, string> = {
@@ -77,7 +77,7 @@ const ashoreLeads: Record<string, string> = {
   "south-america": "Guanabara Bay, Sugarloaf, and Corcovado are in Rio. In Buenos Aires you can walk San Telmo and Puerto Madero, and the evening starts late, which only helps if the ship stays.",
   world: "A world cruise has more sea days than port days. On a short stop you can walk the streets nearest the landing. On an overnight you have the evening in that city.",
   "australia-new-zealand": "Sydney Harbour and the Opera House are in Sydney. In Auckland, Mount Eden is a volcanic cone about 15 minutes from the pier.",
-  "panama-canal": "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock. Cartagena is the city on a lot of these routes.",
+  "panama-canal": "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock. Cartagena is the city these cruises usually stop in.",
 };
 
 function DestinationPage() {

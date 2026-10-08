@@ -207,7 +207,7 @@ export const deskDoors = [
   },
   {
     title: "Ski — Epic & Ikon",
-    detail: "We also book ski vacations, including Epic and Ikon pass travel. Same agency. Ski is the winter trip, not a cruise.",
+    detail: "Ski vacations, including trips that use an Epic or Ikon pass.",
     href: desk.ski,
     tag: "Ski",
   },
@@ -252,7 +252,7 @@ export function sailingSearchHref(slug: string) {
   return query ? `/sailings?${query}` : "/sailings";
 }
 
-/** Live sailing list. Dates are MM/DD/YYYY. */
+/** Quoted sailings. Dates are MM/DD/YYYY. */
 export function cruiseResultsHref(input: {
   destinationId?: string;
   destinationType?: string;

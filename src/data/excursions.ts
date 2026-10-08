@@ -21,7 +21,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/panama-canal.jpg",
     photoAlt: "A ship in the Miraflores Locks on the Panama Canal",
     intro:
-      "The transit is the reason for the cruise, and it happens from the deck. Time ashore is separate. Cartagena is the usual city. Panama City only counts when the ship docks.",
+      "The transit is the reason for the cruise, and it happens from the deck. Time ashore is separate. Cartagena is the city these cruises usually stop in. Panama City is on the itinerary only when the ship docks there.",
     excursions: [
       {
         title: "The locks, from the ship",
@@ -133,7 +133,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Uneven stone, real walking",
         detail:
-          "See the Acropolis in the morning. The Acropolis Museum next door holds the sculptures from the site, including the Parthenon marbles that remain in Athens. You can walk down the hill to the Ancient Agora. The National Archaeological Museum, across the city, holds the Mycenaean gold and the classical bronzes, so it fits a longer stay. In Plaka you can have lunch after the hill.",
+          "See the Acropolis in the morning. The Acropolis Museum next door holds the sculptures from the site, including the Parthenon marbles that remain in Athens. You can walk down the hill to the Ancient Agora. The National Archaeological Museum, across the city, holds the Mycenaean gold and the classical bronzes, so plan the museum for a longer stay. In Plaka you can have lunch after you come down from the hill.",
       },
       {
         title: "St. Peter's, or the Colosseum",

@@ -10,8 +10,8 @@ export const Route = createFileRoute("/rail/")({
     pageHead({
       title: place?.title ?? "Rail and land",
       description: place
-        ? clip(place.lede)
-        : "Rail vacations and land trips booked by Sea Fun & Sun, including luxury European trains.",
+        ? clip(`${place.lede} Booked by Sea Fun & Sun in Farmington, Connecticut.`)
+        : "Rail vacations and land trips booked by Sea Fun & Sun in Farmington, Connecticut, including luxury European trains.",
       path: "/rail",
     }),
   component: RailPage,
