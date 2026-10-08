@@ -932,7 +932,7 @@ export const destinations: Destination[] = [
         season: "Late spring through fall",
         ship: "Amtrak, sleeper if you want the diner included",
         path: "Chicago to Emeryville, or a segment",
-        ports: ["Rockies", "Sierra", "A city night in Denver or Reno if you break the trip"],
+        ports: ["Gore Canyon, Glenwood Canyon, and Ruby Canyon, seen from the glass car. The train does not stop in them", "Fraser-Winter Park is about five minutes. A hike means a night off the train", "Glenwood Springs is about seven minutes. The hot-springs pool means a night off the train", "Truckee is a short stop below Donner Pass. Donner Lake means a night off the train", "Denver, Salt Lake City, or Reno if you split the ticket and stay the night"],
       },
       {
         title: "The Canadian",

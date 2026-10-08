@@ -489,11 +489,11 @@ export const shores: Record<string, DestinationShore> = {
       },
       {
         title: "A stop that is long enough",
-        where: "Glacier, a Rockies town, or a stop in a Canadian park",
-        length: "A few hours, sometimes overnight",
-        pace: "Easy walking",
+        where: "Fraser-Winter Park, Glenwood Springs, or Truckee",
+        length: "Minutes at the platform, or a night in town",
+        pace: "Easy walking, if you stay the night",
         detail:
-          "Glacier and the Canadian parks stay outside the window for hours, and the station stop can be ten minutes. A hike means you leave the train and sleep in a town or in the park.",
+          "The canyons are between the stations. The Zephyr runs through Gore Canyon, Glenwood Canyon, and Ruby Canyon, and you see them from the glass car. The train does not stop in them. Fraser-Winter Park is about five minutes. Glenwood Springs is about seven. Truckee, below Donner Pass, is a short stop. The hot-springs pool in Glenwood Springs, a hike near Winter Park, or a walk to Donner Lake means you get off and sleep in town.",
       },
       {
         title: "The city on either end",
@@ -765,8 +765,8 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-rail.jpg",
     detailAlt: "A river canyon seen from a train roomette window",
     facts: [
-      { label: "Time at a stop", text: "On the Zephyr you can watch the Colorado River from the glass car for hours. A fresh-air stop lasts a few minutes on the platform. A hike in Glacier or the Rockies means a night off the train, in a town or a park." },
-      { label: "Worth the time", text: "The Zephyr follows the canyon. The Bernina Express climbs past alpine lakes and stone viaducts. You see both from the window. If you want time in a town, you spend a night off the train." },
+      { label: "Time at a stop", text: "On the Zephyr you watch Gore Canyon, Glenwood Canyon, and Ruby Canyon from the glass car. The train does not stop in those canyons. Fraser-Winter Park is about five minutes, and Glenwood Springs is about seven. Truckee, below Donner Pass, is a short stop too." },
+      { label: "Worth the time", text: "The Zephyr follows the Colorado through those canyons. The Bernina Express climbs past alpine lakes and stone viaducts. You see both from the window. The hot-springs pool in Glenwood Springs, a hike near Winter Park, or Donner Lake means a night off the train." },
       { label: "Best for", text: "The Northwest, the Rockies, or a Canadian route, in a roomette if the trip is overnight." },
       { label: "Also", text: "On an overnight train a roomette has a bed and a door. A coach seat does not." },
     ],
