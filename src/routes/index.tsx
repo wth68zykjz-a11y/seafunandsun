@@ -70,7 +70,7 @@ const doors: Door[] = [
   {
     kicker: "Ships",
     title: "Cruises",
-    body: "Ocean and river cruises, with a page for each region, the usual routing, and the common stops along the way.",
+    body: "Ocean and river cruises. Each region lists the usual routing. Alaska, the Caribbean, and the Mediterranean also have a page for what you can do in port.",
     image: "/media/card-cruises.webp",
     mobileImage: "/media/card-cruises-sm.webp",
     alt: "Cruise ships docked along a pier in turquoise water",
@@ -82,7 +82,7 @@ const doors: Door[] = [
   {
     kicker: "Beach",
     title: "Resorts",
-    body: "Sandals, Beaches, Hyatt, Secrets, and Club Med on the beach. The quote names what the rate does not cover.",
+    body: "Beach resorts, including Sandals, Beaches, Hyatt, Secrets, and Club Med. The quote names what the rate does not cover.",
     image: "/media/card-resorts.webp",
     alt: "A palm-lined pool above the open ocean",
     cta: "See resorts",
@@ -93,7 +93,7 @@ const doors: Door[] = [
   {
     kicker: "Snow",
     title: "Ski",
-    body: "Club Med, with meals and often the pass and lessons in one rate. Luxury hotels in Aspen, Banff, Mammoth, Whistler, the Alps, and Niseko, where the pass is usually separate. Some of those mountains take Ikon or Epic.",
+    body: "Club Med, with meals and often the pass and lessons in one rate. Luxury hotels in Aspen, Banff, the Alps, and Niseko, where the pass is usually separate.",
     image: "/media/card-ski.webp",
     alt: "A person in a red jacket facing the Matterhorn across a snowfield",
     cta: "See ski vacations",
@@ -116,7 +116,7 @@ const doors: Door[] = [
   {
     kicker: "On the ground",
     title: "Rail and land",
-    body: "Scenic trains in North America, luxury sleepers in Europe, and the hotel nights between them. A guided tour may be available, depending on the city.",
+    body: "Scenic trains in North America, luxury sleepers in Europe, and the hotel nights between them.",
     image: "/media/card-rail.webp",
     alt: "A passenger train beside a western river with mountains behind",
     cta: "See rail and land",
@@ -129,7 +129,7 @@ const doors: Door[] = [
 function DoorFace({ door, eager }: { door: Door; eager?: boolean }) {
   return (
     <div className={`grid lg:grid-cols-2 ${door.tone === "sea" ? "bg-sea text-foam" : "bg-foam text-ink"}`}>
-      <div className="relative h-52 overflow-hidden sm:h-64 lg:h-auto lg:min-h-[32rem]">
+      <div className="relative h-44 overflow-hidden sm:h-56 lg:h-auto lg:min-h-[22rem]">
         {door.mobileImage ? (
           <picture>
             <source media="(max-width: 1023px)" srcSet={door.mobileImage} />
@@ -162,7 +162,7 @@ function DoorFace({ door, eager }: { door: Door; eager?: boolean }) {
       <div className="flex flex-col justify-center px-5 py-5 lg:px-12 lg:py-10">
         <p className={`text-sm font-semibold uppercase tracking-[0.12em] ${door.tone === "sea" ? "text-gold" : "text-tide"}`}>{door.kicker}</p>
         <h2 className="mt-2 font-display text-3xl lg:text-5xl">{door.title}</h2>
-        <p className={`mt-3 line-clamp-3 max-w-md text-base leading-relaxed lg:line-clamp-none lg:text-lg ${door.tone === "sea" ? "text-foam/85" : "text-mute"}`}>{door.body}</p>
+        <p className={`mt-3 max-w-md text-base leading-relaxed lg:text-lg ${door.tone === "sea" ? "text-foam/85" : "text-mute"}`}>{door.body}</p>
         <span
           className={`mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md px-5 text-sm font-medium lg:w-fit lg:justify-start ${
             door.tone === "sea" ? "bg-gold text-ink" : "bg-coral text-foam"
@@ -361,69 +361,94 @@ function Home() {
           </div>
         </section>
 
-        <section id="trips" className="mx-auto max-w-6xl scroll-mt-24 px-4 pt-8 pb-10 lg:pt-14 lg:pb-16">
-          <p className="text-sm font-medium text-tide">Select one</p>
-          <h2 className="mt-2 max-w-2xl font-display text-3xl text-ink sm:text-4xl">Select a category.</h2>
-          <div className="mt-8">
+        <section id="trips" className="mx-auto max-w-6xl scroll-mt-24 px-4 pt-8 pb-6 lg:pt-14">
+          <h2 className="max-w-2xl font-display text-3xl text-ink sm:text-4xl">Select a category.</h2>
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">Use the arrows to move through the categories.</p>
+          <div className="mt-6">
             <TripCarousel items={doors} />
           </div>
-          <Link
-            to="/ports"
-            className="mt-8 grid overflow-hidden rounded-xl border border-line bg-foam md:grid-cols-[18rem_1fr]"
-          >
-            <img
-              src="/media/ports/miami.webp"
-              alt="Miami’s waterfront, a common departure port for Caribbean cruises"
-              width={1400}
-              height={933}
-              loading="lazy"
-              decoding="async"
-              className="aspect-photo h-48 w-full object-cover md:h-full"
-            />
-            <div className="flex flex-col p-6 sm:p-8">
-              <p className="text-sm font-medium text-tide">Departure ports</p>
-              <h3 className="mt-2 font-display text-3xl text-ink">Learn about common departure ports</h3>
-              <p className="mt-3 text-ink md:hidden">
-                Some ports just get you on the ship. Fort Lauderdale is efficient, and it looks like a working port. Miami is a good city to explore if you arrive early. A Caribbean cruise that departs from either city spends more nights in the islands than a cruise of the same length that departs from New York, New Jersey, Baltimore, or Boston. An Alaska cruise usually departs from Seattle or Vancouver. If you stay a few days before or after, there is no all-aboard. You can eat where you want, whether that is a famous restaurant or a small local place.
-              </p>
-              <p className="mt-3 hidden text-ink md:block">
-                Fort Lauderdale is built to move people onto the ship. Miami, Barcelona, Vancouver, and Sydney are good cities to explore on a longer stay before or after the cruise. A Caribbean cruise that departs from Miami or Fort Lauderdale still spends more nights in the islands than a cruise of the same length that departs from New York, New Jersey, Baltimore, or Boston, which adds sea days. An Alaska cruise usually departs from Seattle or Vancouver. Seattle is the departure port for a round-trip cruise through the Inside Passage. Vancouver is the Canadian departure port, often for a one-way cruise to Seward or Whittier, and a passport is required.
-              </p>
-              <p className="mt-3 hidden text-ink md:block">
-                It is worth spending a few days in the city before you sail, or after you return, because there is no all-aboard. Lunch might be a small local place, such as a wine bar or a café with a short menu. Dinner might be a famous restaurant, such as a Michelin table or a harbor restaurant. A museum fits if you want to be indoors. Vancouver is a good example: the mountains and the harbor are right there, and you are already in town for the ship. The pages list where those ships usually go, which airlines serve the city, the local time, and the currency you will use. In Vancouver that currency is the Canadian dollar.
-              </p>
-              <span className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam sm:w-fit">
-                See the departure and embarkation ports
-              </span>
-            </div>
-          </Link>
         </section>
 
-        <section className="mx-auto grid max-w-6xl items-center gap-8 px-4 pb-16 lg:grid-cols-2">
-          <div>
-            <p className="text-sm font-medium text-tide">Farmington, Connecticut</p>
-            <h2 className="mt-2 font-display text-3xl text-ink sm:text-4xl">The booking process</h2>
-            <p className="mt-4 text-lg text-ink">
-              Sea Fun & Sun is a Farmington company. A quote starts by phone, text, or email. One agent handles the booking and arranges the trip from your home to the destination, and the return home. That is the same if you live in Connecticut, elsewhere in New England, or farther away.
-            </p>
-          </div>
-          <iframe
-            title="Map of Farmington, Connecticut"
-            src="https://maps.google.com/maps?q=Farmington,%20Connecticut&hl=en&z=11&output=embed"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="h-72 w-full rounded-xl border border-line"
-          />
+        <section className="mx-auto grid max-w-6xl gap-4 px-4 pb-16 md:grid-cols-3">
+          <article className="flex flex-col overflow-hidden rounded-xl border border-line bg-foam">
+            <img src="/media/ports/miami.webp" alt="Miami’s waterfront, a common departure port for Caribbean cruises" width={800} height={533} loading="lazy" decoding="async" className="h-40 w-full object-cover" />
+            <div className="flex flex-1 flex-col p-5">
+              <h3 className="font-display text-2xl text-ink">Departure ports</h3>
+              <p className="mt-3 flex-1 text-base leading-relaxed text-ink">
+                Fort Lauderdale is built to get you on the ship. Miami, Barcelona, Vancouver, and Sydney are worth a few days before you sail or after you return. A Caribbean cruise from Miami spends more nights in the islands than a cruise of the same length from New York or Boston. An Alaska cruise usually leaves from Seattle or Vancouver.
+              </p>
+              <Link to="/ports" className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep">
+                See the ports
+              </Link>
+            </div>
+          </article>
+          <article className="flex flex-col overflow-hidden rounded-xl border border-line bg-foam">
+            <img src="/media/page-sailings.jpg" alt="The bow of a white ship in calm water" width={800} height={533} loading="lazy" decoding="async" className="h-40 w-full object-cover" />
+            <div className="flex flex-1 flex-col p-5">
+              <h3 className="font-display text-2xl text-ink">Current promotions</h3>
+              <p className="mt-3 flex-1 text-base leading-relaxed text-ink">
+                These are offers we can book for you. Tell us which one you want. We confirm the fare before anything is booked.
+              </p>
+              <Link to="/sailings" hash="promotions" className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-tide px-4 text-sm font-medium text-foam hover:bg-tide-deep">
+                See promotions
+              </Link>
+            </div>
+          </article>
+          <article className="flex flex-col overflow-hidden rounded-xl border border-line bg-foam">
+            <img src="/media/day-mediterranean.jpg" alt="A terrace above a Mediterranean harbor" width={800} height={533} loading="lazy" decoding="async" className="h-40 w-full object-cover" />
+            <div className="flex flex-1 flex-col p-5">
+              <h3 className="font-display text-2xl text-ink">What you can do in port</h3>
+              <p className="mt-3 text-base leading-relaxed text-ink">Where the ship docks, how long the ride is, and what is there.</p>
+              <ul className="mt-3 flex flex-1 flex-col gap-2 text-base">
+                <li>
+                  <Link to="/in-port/$region" params={{ region: "alaskan" }} className="font-medium text-tide">
+                    Alaska
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/in-port/$region" params={{ region: "caribbean" }} className="font-medium text-tide">
+                    Caribbean
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/in-port/$region" params={{ region: "mediterranean" }} className="font-medium text-tide">
+                    Mediterranean
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </article>
         </section>
 
         <section className="mx-auto max-w-6xl px-4 pb-16">
           <h2 className="font-display text-3xl text-ink sm:text-4xl">How a trip starts</h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">
-            A cruise, a resort, a ski week, and a train trip all start with a quote. Tell us the place, the dates, and who is traveling. We send the sailing or the hotel, the cabin or the room, and the price. You approve it before anything is booked. You pay the cruise line, the resort, or the operator. There is no separate agent fee.
+            One agent handles the booking from your home to the destination, and the return home. That is the same if you live in Connecticut or farther away.
           </p>
-          <a href="#quote" className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
-            Request a quote
-          </a>
+          <ol className="mt-6 grid gap-4 md:grid-cols-3">
+            {[
+              ["1. Tell us the trip", "Use the form, call, or text. Name the place, the dates, and who is traveling."],
+              ["2. We send the price", "You see the sailing or the hotel, the cabin or the room, and the flights if you want them. You approve it before anything is booked."],
+              ["3. You pay the supplier", "The card payment goes to the cruise line, the resort, or the operator. We do not hold the card. There is no separate agent fee."],
+            ].map(([title, text]) => (
+              <li key={title} className="rounded-xl border border-line bg-foam p-5">
+                <h3 className="font-display text-2xl text-ink">{title}</h3>
+                <p className="mt-3 text-base leading-relaxed text-ink">{text}</p>
+              </li>
+            ))}
+          </ol>
+          <div className="mt-6 grid items-center gap-6 lg:grid-cols-2">
+            <p className="text-base leading-relaxed text-ink">
+              Sea Fun & Sun is in Farmington, Connecticut. A quote starts by phone, text, or email.
+            </p>
+            <iframe
+              title="Map of Farmington, Connecticut"
+              src="https://maps.google.com/maps?q=Farmington,%20Connecticut&hl=en&z=11&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="h-64 w-full rounded-xl border border-line"
+            />
+          </div>
         </section>
 
         <section className="mx-auto max-w-6xl px-4 pb-16">
