@@ -1,4 +1,5 @@
 /** Old static pages Google already knows, pointed at the current routes. */
+/** @type {Record<string, string>} */
 const legacy = {
   "/alaska-cruises.html": "/destinations/alaskan",
   "/alaskan-cruises.html": "/destinations/alaskan",
@@ -35,6 +36,7 @@ const legacy = {
   "/index.html": "/",
 };
 
+/** @param {string} pathname */
 export function legacyTarget(pathname) {
   let path = pathname.toLowerCase();
   if (path.length > 1 && path.endsWith("/")) path = path.slice(0, -1);

@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
-import type { PromoPage } from "@/lib/promo.server";
+import type { PromoDay, PromoPage } from "@/lib/promo.server";
 
-export type { PromoPage };
+export type { PromoDay, PromoPage };
 
 export const getPromo = createServerFn({ method: "GET" })
   .validator((slug: string) => slug)
