@@ -95,7 +95,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Costa Maya",
         dock: "The pier is a built port at Mahahual.",
-        text: "You can walk from the terminal to the town and the beach, or take a short shuttle. The water on this coast is warm. A boat takes you to the reef. You do not swim there from the gangway.",
+        text: "You can walk from the terminal to the town and the beach, or take a short shuttle. The water on this coast is warm. A boat takes you to the reef. You do not swim there from the ship.",
       },
       {
         name: "Nassau",

@@ -429,7 +429,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "3 to 4 hours",
         pace: "Easy walking",
         detail:
-          "The simpler choice is the San Telmo market. A tango show only works if the ship leaves late enough that you are back before the gangway closes.",
+          "The simpler choice is the San Telmo market. A tango show only works if the ship leaves late enough that you are back on board before it sails.",
       },
       {
         title: "Cape Horn from the deck",
@@ -554,7 +554,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/panama-canal.jpg",
     detailAlt: "The Miraflores Locks building beside a ship in the Panama Canal",
     facts: [
-      { label: "Time in port", text: "While the ship is in the canal there is no gangway. A stop in Cartagena is usually a morning or an afternoon. Panama City is a port only when the itinerary says the ship docks." },
+      { label: "Time in port", text: "While the ship is in the canal you stay on board. A stop in Cartagena is usually a morning or an afternoon. Panama City is a port only when the itinerary says the ship docks." },
       { label: "Worth the time", text: "Watch the locks from the deck. In Cartagena, you can walk the walled city, and you can eat there. A long coach to a beach uses the hours you would have spent in the city." },
       { label: "Travelers", text: "This suits people who want to watch the canal transit, and who can fly home from the other coast on a full transit." },
       { label: "Also", text: "A partial transit goes into Gatun Lake and comes back out the same side. A full transit goes from one ocean to the other, and it takes longer." },
@@ -569,7 +569,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-alaskan.jpg",
     detailAlt: "A train crossing a wooden trestle above a misty spruce valley",
     facts: [
-      { label: "Time in port", text: "Most stops are four to eight hours. On a glacier sailing there is often no gangway. You watch from the ship." },
+      { label: "Time in port", text: "Most stops are four to eight hours. On a glacier sailing you often stay on the ship. You watch from the deck." },
       { label: "Worth the time", text: "Stop in Juneau to visit the Mendenhall Glacier. You can eat grilled salmon, or a chowder made from it, or go out for a few hours and try to catch one. Stop in Skagway for the train up the White Pass." },
       { label: "Travelers", text: "This suits people who want glaciers and wildlife, and who would rather have a balcony than a big theater." },
       { label: "Also", text: "People come for the glacier and the White Pass train." },
@@ -780,7 +780,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-australia-new-zealand.jpg",
     detailAlt: "A glacial lake and snow-dusted mountains on New Zealand’s South Island",
     facts: [
-      { label: "Time in port", text: "The stops in Sydney and Auckland can run long. A stop at the reef needs the hours the ship is there. Milford is often a scenic sail, with no gangway." },
+      { label: "Time in port", text: "The stops in Sydney and Auckland can run long. A stop at the reef needs the hours the ship is there. Milford is often a scenic sail, and you stay on the ship." },
       { label: "Worth the time", text: "Stop in Sydney to see the Opera House. It sits next to where most ships dock. If the ship leaves later, have lunch, or a meat pie on the quay: minced beef in gravy, baked in a pastry case. To see more than the harbor, stay at the Park Hyatt Sydney, across from the Opera House, before the cruise or after you return. In Auckland, walk the Viaduct Harbour and have a grilled lamb chop, the usual lunch." },
       { label: "Travelers", text: "This suits people who can travel from October through April, Australia’s summer, and who will fly to Sydney or Auckland to start." },
       { label: "Also", text: "The Great Barrier Reef has warm water, often around 80°F in the Australian summer, and hard coral. You can see clownfish, parrotfish, and giant clams. In Sydney the Opera House stands on the harbor, and you can walk the quay. You can also get a meat pie there: minced beef in gravy, baked in a pastry case." },

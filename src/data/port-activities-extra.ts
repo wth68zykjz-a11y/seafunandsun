@@ -395,7 +395,7 @@ export const extraPortPages = [
     region: "Australia & New Zealand Cruises",
     title: "What you can do in port in Australia and New Zealand",
     lede: "A coastal sailing, a New Zealand loop, and a Tasman crossing do not share the same ports.",
-    note: "Sydney and Auckland can run long. Milford Sound is often a scenic sail, with no gangway. A boat to the Great Barrier Reef takes most of the time the ship is in Cairns.",
+    note: "Sydney and Auckland can run long. Milford Sound is often a scenic sail, and you stay on the ship. A boat to the Great Barrier Reef takes most of the time the ship is in Cairns.",
     image: "/media/australia-new-zealand.jpg",
     imageAlt: "A harbor city in Australia or New Zealand",
     stops: [
@@ -440,7 +440,7 @@ export const extraPortPages = [
     stops: [
       {
         name: "The canal",
-        dock: "There is no gangway during the transit.",
+        dock: "You stay on the ship during the transit.",
         text: "You watch the locks from the deck. A full transit passes every lock and the Culebra Cut. A partial transit uses the Caribbean locks and Gatun Lake, then turns around.",
       },
       {
