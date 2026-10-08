@@ -204,6 +204,16 @@ export function DestinationArticle({
             <p key={paragraph}>{paragraph}</p>
           ))}
         </div>
+        {place.photos?.length ? (
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {place.photos.map((photo) => (
+              <figure key={photo.src} className="overflow-hidden rounded-xl border border-line bg-foam">
+                <img src={photo.src} alt={photo.alt} width={1400} height={933} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
+                <figcaption className="px-4 py-3 text-base leading-relaxed text-ink">{photo.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        ) : null}
         {place.slug === "panama-canal" ? (
           <div className="mt-10">
             <h2 className="font-display text-4xl">Full transit or partial transit</h2>

@@ -38,7 +38,7 @@ export const linePages: LinePage[] = [
     rows: [
       { line: "Celebrity", ships: "Edge class about 3,200.", where: "Caribbean cruises, Mediterranean cruises, and some Alaska cruises.", fare: "Balcony often $1,300–$2,800." },
       { line: "Princess", ships: "Royal class about 3,560. Sphere class, including Sun Princess, about 4,300.", where: "Caribbean and Mediterranean cruises.", fare: "Balcony often $1,200–$2,600." },
-      { line: "Norwegian", ships: "Prima class about 3,100–3,600. Encore and Breakaway classes about 4,000.", where: "Caribbean cruises from Florida and the Northeast. Prima-class ships also sail some weeks from San Juan, and in winter 2027–28 Prima and Viva are scheduled to turn there. Encore-class ships also sail an Alaska cruise from Seattle.", fare: "Interior often $500–$1,300. Balcony often $900–$2,200." },
+      { line: "Norwegian", ships: "Prima class about 3,100–3,600. Encore and Breakaway classes about 4,000.", where: "Caribbean cruises from Florida and the Northeast. Prima-class ships also sail some weeks from San Juan, and in winter 2027–28 Prima and Viva are scheduled to start there. Encore-class ships also sail an Alaska cruise from Seattle.", fare: "Interior often $500–$1,300. Balcony often $900–$2,200." },
       { line: "Disney", ships: "Wish class and Dream class, about 4,000.", where: "Caribbean cruises from Port Canaveral. Wish-class ships also sail Europe in some seasons.", fare: "A week is often $2,000–$4,500 a person. The fare is not comparable to Carnival’s." },
       { line: "Carnival", ships: "Vista class about 4,000. Excel class, including Mardi Gras and the newer sisters, about 5,200–6,500.", where: "Caribbean and Bahamas cruises from Florida and other East Coast ports. A smaller European season.", fare: "Interior often $400–$1,100. Balcony often $800–$1,800." },
       { line: "MSC", ships: "Seaside class about 4,100–5,400. Meraviglia class about 4,500–6,300. World class about 6,700.", where: "Caribbean cruises from Miami and Port Canaveral. Mediterranean cruises from Barcelona, Rome, and other summer ports.", fare: "Interior often $400–$1,100. Balcony often $800–$1,900. Drinks and gratuities are sometimes bundled." },
@@ -89,8 +89,8 @@ export const linePages: LinePage[] = [
       { line: "Norwegian", ships: "Older Jewel-class ships about 2,400. Prima class about 3,100. Encore and Breakaway classes about 4,000.", where: "Caribbean cruises from Florida and the Northeast. A stop at the line’s private island is common on the short cruises.", fare: "Interior often $500–$1,300. Balcony often $900–$2,200." },
       { line: "Princess", ships: "Older Grand-class ships about 2,600. Sun and Sphere classes about 3,500–4,300.", where: "Caribbean cruises from Fort Lauderdale, including some longer ones.", fare: "Balcony often $1,200–$2,600." },
       { line: "Disney", ships: "Magic and Wonder about 2,700. Wish, Dream, and Fantasy about 4,000.", where: "Caribbean cruises from Port Canaveral. Wonder also sails Alaska.", fare: "A week is often $2,000–$4,500 a person. The fare is higher during school holidays. The fare is not comparable to Carnival’s." },
-      { line: "MSC", ships: "Smaller ships about 2,500–3,200. Seaside class about 4,100. World class about 6,700.", where: "The large ships turn in Miami and Port Canaveral. MSC Opera, about 2,600 guests, starts southern Caribbean cruises in La Romana from late 2026, and later in Fort-de-France. Mediterranean cruises use the other ships.", fare: "Interior often $400–$1,100. Balcony often $800–$1,900. Drinks and gratuities are sometimes bundled, sometimes not." },
-      { line: "Royal Caribbean", ships: "Freedom and Voyager classes about 3,100–4,300. Oasis and Icon classes about 5,600–7,600. The San Juan ships, such as Rhapsody of the Seas, are smaller, about 2,000–2,400.", where: "The largest ships depart from Florida. Mid-size ships turn year-round in San Juan. An Oasis or Icon cruise usually starts in Florida and only calls in San Juan.", fare: "Interior often $500–$1,400. Balcony often $900–$2,400. The fare for a holiday week can be well above that." },
+      { line: "MSC", ships: "Smaller ships about 2,500–3,200. Seaside class about 4,100. World class about 6,700.", where: "The large ships start in Miami and Port Canaveral. MSC Opera, about 2,600 guests, starts southern Caribbean cruises in La Romana from late 2026, and later in Fort-de-France. Mediterranean cruises use the other ships.", fare: "Interior often $400–$1,100. Balcony often $800–$1,900. Drinks and gratuities are sometimes bundled, sometimes not." },
+      { line: "Royal Caribbean", ships: "Freedom and Voyager classes about 3,100–4,300. Oasis and Icon classes about 5,600–7,600. The San Juan ships, such as Rhapsody of the Seas, are smaller, about 2,000–2,400.", where: "The largest ships depart from Florida. Mid-size ships start and end in San Juan through the year. An Oasis or Icon cruise usually starts in Florida and only stops in San Juan.", fare: "Interior often $500–$1,400. Balcony often $900–$2,400. The fare for a holiday week can be well above that." },
     ],
     notes: [
       "Bermuda cruises that depart from New York, Boston, or Baltimore are usually 5 to 7 nights on ships of about 2,000 to 4,000 passengers. The useful ones stay in port long enough to see the island.",
@@ -276,17 +276,32 @@ export const linePages: LinePage[] = [
       {
         src: "/media/ship-seabourn.jpg",
         alt: "Seabourn Ovation, a luxury ship of about 600 passengers, at sea",
-        caption: "Seabourn Ovation carries about 600 passengers. Regent’s ships are about 500 to 800. Explora is about 922.",
+        caption: "Seabourn Ovation carries about 600 passengers. Regent’s ships are about 500 to 800.",
+      },
+      {
+        src: "/media/ships/explora.jpg",
+        alt: "Explora III, a dark-hulled ship of about 900 guests, seen from above the stern",
+        caption: "Explora carries about 900 guests, all in suites. A Caribbean cruise usually starts in one of San Juan or Miami and ends in the other.",
+      },
+      {
+        src: "/media/ships/viking-ocean.jpg",
+        alt: "A Viking ocean ship in a Norwegian fjord",
+        caption: "A Viking ocean ship carries about 930 guests. The Caribbean cruise starts and ends in San Juan. This photo is the same kind of ship in Norway.",
+      },
+      {
+        src: "/media/ships/silver-shadow.jpg",
+        alt: "Silver Shadow, a small white Silversea ship, with a glacier behind it",
+        caption: "Silver Shadow carries about 390 guests. Some Caribbean cruises start and end in San Juan. This photo is the same ship in Alaska.",
       },
     ],
     lede: "These lines sail the Caribbean, Alaska, the Mediterranean, and longer routes on ships that stay under about 1,250 passengers. An agent requests most of these fares.",
     size: "These ships run from about 450 passengers to about 1,200. Explora is about 922. Oceania’s larger ships are about 1,200.",
     rows: [
-      { line: "Silversea", ships: "Ocean ships about 300–730. Silver Shadow is about 390. Silver Nova and Silver Ray are about 728.", where: "Some Caribbean weeks turn in San Juan, including Silver Shadow. Others sail one way between Miami and San Juan. Also Alaska, the Mediterranean, longer voyages, and expedition routes. Drinks, a butler, and gratuities are in the fare.", fare: "A week is often $6,000–$15,000 a person." },
+      { line: "Silversea", ships: "Ocean ships about 300–730. Silver Shadow is about 390. Silver Nova and Silver Ray are about 728.", where: "Some Caribbean cruises start and end in San Juan, including Silver Shadow. Others sail one way between Miami and San Juan. Also Alaska, the Mediterranean, longer voyages, and expedition routes. Drinks, a butler, and gratuities are in the fare.", fare: "A week is often $6,000–$15,000 a person." },
       { line: "Seabourn", ships: "Ocean ships about 450–650. Venture and Pursuit, the expedition ships, are about 260.", where: "Mediterranean cruises, Caribbean cruises, one-way Alaska cruises from Vancouver, and longer routes. Drinks and gratuities are included.", fare: "A week is often $5,000–$12,000 a person." },
       { line: "Regent Seven Seas", ships: "About 500–750. Seven Seas Prestige, about 800, enters service in late 2026.", where: "Caribbean, Alaska, the Mediterranean, and longer voyages. Many shore trips and gratuities are in the fare, and economy air is often included.", fare: "A week is often $6,000–$14,000 a person. The fare for a suite, or for a holiday week, is higher." },
       { line: "Oceania", ships: "About 680 on the smaller ships. Marina, Riviera, Vista, and Allura are about 1,200.", where: "Longer cruises with more port days, in Europe, the Caribbean, and elsewhere.", fare: "A week is often $3,000–$7,000 a person. Drinks and excursions are often extra. An agent requests the fare on many sailings." },
-      { line: "Explora Journeys", ships: "About 922, in about 460 suites. Explora III joined the fleet in 2026.", where: "Caribbean cruises are often one way between San Juan and Miami, not a weekly turnaround in either port. Also the Mediterranean and longer routes. Drinks and gratuities are included.", fare: "A week is often $4,000–$10,000 a person." },
+      { line: "Explora Journeys", ships: "About 922, in about 460 suites. Explora III joined the fleet in 2026.", where: "Caribbean cruises are often one way between San Juan and Miami. They do not start and end in the same city every week. Also the Mediterranean and longer routes. Drinks and gratuities are included.", fare: "A week is often $4,000–$10,000 a person." },
       { line: "Viking ocean", ships: "About 930 passengers. No one under 18.", where: "A 10-night Caribbean cruise round trip from San Juan, plus the Mediterranean, the Baltic, Norway, and longer voyages. Wine and beer with lunch and dinner, and one excursion in each port, are included on many sailings.", fare: "Often $3,000–$7,000 a person for 7 to 14 nights. An agent requests many of these fares." },
     ],
     notes: [
@@ -324,6 +339,11 @@ export const linePages: LinePage[] = [
         alt: "Ilma, a Ritz-Carlton yacht, seen from the stern with the marina open",
         caption: "Ilma carries about 450 passengers. The marina is at the stern. Four Seasons I is smaller, about 220. SeaDream is about 112.",
       },
+      {
+        src: "/media/ships/royal-clipper.jpg",
+        alt: "Royal Clipper under full sail, with green islands behind the masts",
+        caption: "Royal Clipper carries about 227 guests. Star Clipper and Star Flyer carry about 170. These cruises start in an island port, not in Miami or San Juan.",
+      },
     ],
     lede: "These are the smallest ocean ships we book. They stop in smaller harbors, and an agent requests almost all of these fares.",
     size: "A yacht in this group carries about 100 to 450 passengers. Windstar’s largest ships are about 340. Four Seasons I carries about 220.",
@@ -332,7 +352,7 @@ export const linePages: LinePage[] = [
       { line: "Windstar", ships: "About 150 on the smallest ships, and about 310–340 on the larger ones.", where: "Mediterranean, Caribbean, Tahiti, and other small-harbor routes.", fare: "A week is often $3,000–$7,000 a person. Less is included than on Regent. An agent requests many of these fares." },
       { line: "Four Seasons I", ships: "About 220 guests, in 95 suites. One ship, in service from 2026.", where: "Mediterranean and Caribbean cruises, in short segments as well as longer ones. Drinks are included.", fare: "A short sailing can start near $20,000 a person." },
       { line: "Ritz-Carlton Yacht Collection", ships: "Evrima about 300. Ilma and Luminara about 450.", where: "Mediterranean and Caribbean cruises, and a smaller set of other coasts. Drinks and gratuities are included.", fare: "A week is often $8,000–$20,000 a person." },
-      { line: "Star Clippers", ships: "Star Clipper and Star Flyer about 170. Royal Clipper about 227. These are sailing ships.", where: "Winter Caribbean cruises turn in St. Maarten, Barbados, Antigua, Aruba, or Grenada. They do not embark in San Juan or Miami. The ships anchor off small bays. Summer is the Mediterranean.", fare: "A week is often $2,500–$6,000 a person. An agent requests the fare." },
+      { line: "Star Clippers", ships: "Star Clipper and Star Flyer about 170. Royal Clipper about 227. These are sailing ships.", where: "In winter, Caribbean cruises start in St. Maarten, Barbados, Antigua, Aruba, or Grenada. They do not start in San Juan or Miami. The ships anchor off small bays. Summer is the Mediterranean.", fare: "A week is often $2,500–$6,000 a person. An agent requests the fare." },
     ],
     notes: [
       "These fares are for the ship. The fare for a holiday week, or for a suite, can be far above that range.",

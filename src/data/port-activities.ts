@@ -118,7 +118,7 @@ export const portActivities: PortActivityPage[] = [
       },
       {
         name: "Martinique",
-        dock: "Some cruises start at Fort-de-France, when MSC or a smaller French ship is turning around there. Other ships only stop. They dock at Fort-de-France, not at the small coves down the coast.",
+        dock: "Some cruises start at Fort-de-France, when MSC Opera or a smaller French ship is based there. Other ships only stop. They dock at Fort-de-France, not at the small coves down the coast.",
         text: "A bakery in town sells a croissant, layered dough of flour and butter, or a pain au chocolat, that dough around a bar of chocolate. The covered market on Rue Isambert sells an accra, salted cod mashed with herbs and fried. You drive from this pier to the coves. They are not beside the dock.",
       },
       {
