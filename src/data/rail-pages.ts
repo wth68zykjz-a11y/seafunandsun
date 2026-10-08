@@ -344,6 +344,11 @@ export const railPages: RailPage[] = [
     lede: "You sleep on the train. Meals are included. The cabin you choose is what changes the price.",
     photos: [
       {
+        src: "/media/rail/vsoe.jpg",
+        alt: "A navy Venice Simplon-Orient-Express carriage with gold lettering and the train’s nameplate",
+        caption: "The Venice Simplon-Orient-Express at the platform. The name is on the carriage. You sleep in a cabin on this train. Dinner is in the dining car.",
+      },
+      {
         src: "/media/rail/orient-dining.jpg",
         alt: "A dining car with white tablecloths, green chairs, and lamps",
         caption: "Dinner on the Venice Simplon-Orient-Express is in the dining car. You dress for it. The meal is included. The cabin is where you sleep.",
