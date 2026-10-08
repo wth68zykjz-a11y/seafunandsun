@@ -1,5 +1,4 @@
-import { createFileRoute, Link, useRouter } from "@tanstack/react-router";
-import { useEffect } from "react";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { QuoteForm } from "@/components/quote-form";
 import { LogoMark, Shell } from "@/components/site-chrome";
 import { guides } from "@/data/guides";
@@ -21,8 +20,8 @@ export const Route = createFileRoute("/")({
         {
           rel: "preload",
           as: "image",
-          href: "/media/card-cruises.webp",
-          media: "(max-width: 1023px)",
+          href: "/media/card-cruises-sm.webp",
+          media: "(max-width: 640px)",
           fetchPriority: "high",
         },
         ...(head.links ?? []),
@@ -85,6 +84,7 @@ const doors: Door[] = [
     title: "Resorts",
     body: "The room opens onto the water. Sandals, Beaches, Hyatt, Secrets, and Club Med.",
     image: "/media/card-resorts.webp",
+    mobileImage: "/media/card-resorts-sm.webp",
     alt: "An overwater villa with its own pool on a turquoise lagoon",
     cta: "See resorts",
     tone: "foam",
@@ -96,6 +96,7 @@ const doors: Door[] = [
     title: "Ski",
     body: "Cold air, an unmarked ridge, and the valley still dark below. You point the skis downhill and the speed arrives all at once. Aspen, Banff, the Alps, and Niseko.",
     image: "/media/card-ski.webp",
+    mobileImage: "/media/card-ski-sm.webp",
     alt: "A person in a red jacket facing the Matterhorn across a snowfield",
     cta: "See ski vacations",
     tone: "sea",
@@ -107,6 +108,7 @@ const doors: Door[] = [
     title: "Expedition",
     body: "You ride a small boat to a beach of ice, and there is no town there. Antarctica, the Arctic, and the Galápagos.",
     image: "/media/card-expedition.webp",
+    mobileImage: "/media/card-expedition-sm.webp",
     alt: "An expedition ship among Antarctic ice, with a turquoise iceberg in front",
     cta: "See expedition cruises",
     tone: "foam",
@@ -119,6 +121,7 @@ const doors: Door[] = [
     title: "Rail and land",
     body: "You see a canyon from the glass car, or you sit down to dinner as the station lights fall behind. Scenic trains here, sleeper trains in Europe, and a hotel night between them.",
     image: "/media/card-rail.webp",
+    mobileImage: "/media/card-rail-sm.webp",
     alt: "The Glacier Express crossing a stone viaduct in the Alps",
     cta: "See rail and land",
     tone: "sea",
@@ -127,11 +130,23 @@ const doors: Door[] = [
   },
 ];
 
-function DoorCard({ door }: { door: Door }) {
+function DoorCard({ door, first = false }: { door: Door; first?: boolean }) {
   const className = "flex h-full flex-col overflow-hidden rounded-xl border border-line bg-foam";
+  const small = door.mobileImage ?? door.image;
   const face = (
     <>
-      <img src={door.image} alt={door.alt} width={1400} height={933} loading="lazy" decoding="async" className="h-56 w-full object-cover sm:h-64" />
+      <img
+        src={small}
+        srcSet={`${small} 640w, ${door.image} 1200w`}
+        sizes="(max-width: 640px) 92vw, (max-width: 1280px) 46vw, 30vw"
+        alt={door.alt}
+        width={640}
+        height={427}
+        loading={first ? "eager" : "lazy"}
+        decoding="async"
+        fetchPriority={first ? "high" : "low"}
+        className="h-56 w-full object-cover sm:h-64"
+      />
       <div className="flex flex-1 flex-col p-5">
         <p className="text-sm font-semibold uppercase tracking-[0.12em] text-tide">{door.kicker}</p>
         <h2 className="mt-2 font-display text-3xl text-ink">{door.title}</h2>
@@ -155,16 +170,12 @@ function DoorCard({ door }: { door: Door }) {
 }
 
 function Home() {
-  const router = useRouter();
-  useEffect(() => {
-    void router.preloadRoute({ to: "/sailings" });
-  }, [router]);
   return (
     <Shell>
       <div className="relative">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 bg-[url('/media/page-map.png')] bg-cover bg-center opacity-[0.045]"
+          className="pointer-events-none absolute inset-0 hidden bg-[url('/media/page-map.png')] bg-cover bg-center opacity-[0.045] lg:block"
         />
         <JsonLd data={faqLd(faqs)} />
         <section className="mx-auto max-w-6xl px-4 pt-6 lg:pt-10">
@@ -224,15 +235,24 @@ function Home() {
         <section id="trips" className="mx-auto max-w-6xl scroll-mt-24 px-4 pt-8 pb-6 lg:pt-14">
           <h2 className="font-display text-3xl text-ink sm:text-4xl">Select a category.</h2>
           <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-            {doors.map((door) => (
-              <DoorCard key={door.title} door={door} />
+            {doors.map((door, index) => (
+              <DoorCard key={door.title} door={door} first={index === 0} />
             ))}
           </div>
         </section>
 
         <section className="mx-auto max-w-6xl px-4 pb-16">
           <Link to="/sailings" hash="promotions" className="grid overflow-hidden rounded-xl border border-line bg-foam md:grid-cols-[18rem_1fr]">
-            <img src="/media/page-sailings.jpg" alt="The bow of a white ship in calm water" width={800} height={533} loading="lazy" decoding="async" className="h-48 w-full object-cover md:h-full" />
+            <img
+              src="/media/page-sailings-sm.webp"
+              alt="The bow of a white ship in calm water"
+              width={640}
+              height={427}
+              loading="lazy"
+              decoding="async"
+              fetchPriority="low"
+              className="h-48 w-full object-cover md:h-full"
+            />
             <div className="flex flex-col p-6">
               <h2 className="font-display text-3xl text-ink">Current promotions</h2>
               <p className="mt-3 text-base leading-relaxed text-ink">These are offers we can book for you, on ships and at resorts. Tell us which one you want. We confirm the price before anything is booked.</p>

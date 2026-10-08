@@ -23,8 +23,6 @@ export const Route = createRootRoute({
       { rel: "apple-touch-icon", href: "/__grok/icon-180.png" },
       { rel: "sitemap", type: "application/xml", href: "/sitemap.xml" },
       { rel: "alternate", type: "text/plain", href: "/llms.txt", title: "Facts for search and AI assistants" },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
     ],
   }),
   shellComponent: RootShell,
@@ -64,15 +62,16 @@ function RootShell({ children }: { children: ReactNode }) {
           }}
         />
         <style dangerouslySetInnerHTML={{ __html: appCss }} />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,72,500;0,72,600;1,72,500&family=Marcellus&family=Outfit:wght@400;500;600&display=optional"
-        />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-R12KCXY9XE" />
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-R12KCXY9XE');",
+              "(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,72,500;0,72,600;1,72,500&family=Marcellus&family=Outfit:wght@400;500;600&display=optional';l.media='print';l.onload=function(){this.media='all'};document.head.appendChild(l)})();",
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "window.addEventListener('load',function(){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-R12KCXY9XE';s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-R12KCXY9XE');});",
           }}
         />
         <HeadContent />
