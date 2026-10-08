@@ -37,7 +37,7 @@ export const destinations: Destination[] = [
     alt: "A tidewater glacier meeting dark water in a steep fjord",
     lede: "The same ship can sail in May or in August, and the coast will not look the same. In May the ice is still thick at the water and the air is cold. In August the salmon are in the rivers, the bears have come down to feed, and the evenings stay light.",
     paragraphs: [
-      "Most Alaska sailings run seven to fourteen nights round trip from Seattle, or one way between Seattle or Vancouver and Seward or Whittier. Royal Caribbean, Carnival, Norwegian, Holland America, Princess, and Celebrity sail the Inside Passage. Holland America and Princess sail from Vancouver often, including one-way Gulf sailings. Cunard does in some seasons, not every year. We compare them side by side, with no obligation to any one line.",
+      "Most Alaska sailings run seven to fourteen nights round trip from Seattle, or one way between Seattle or Vancouver and Seward or Whittier. Royal Caribbean, Carnival, Norwegian, Holland America, Princess, and Celebrity sail the Inside Passage. Holland America and Princess sail from Vancouver often, including one-way Gulf sailings. Cunard sails there in some seasons, not every year. We compare them side by side, with no obligation to any one line.",
       "Juneau, Ketchikan, Skagway, and Seward are the usual stops, with the fjords between them. You can hear a glacier calve. Whales and eagles are on the water. Bears are at the rivers, not on a highway.",
     ],
     lists: [
@@ -84,7 +84,7 @@ export const destinations: Destination[] = [
         title: "Salmon and bears in August",
         nights: "7 nights",
         season: "August–early September",
-        ship: "Compared across the lines that sail it",
+        ship: "The lines that sail it in August, set side by side",
         path: "Seattle round trip",
         ports: ["Juneau", "Ketchikan", "Icy Strait Point", "A float on a river, or a whale watch, with time set aside"],
       },
@@ -102,7 +102,7 @@ export const destinations: Destination[] = [
       "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. Cruises also start in San Juan, and in some seasons in Fort-de-France, Martinique. A cruise that starts in San Juan reaches those islands in seven nights without the sea days a cruise from Florida needs. A cruise starts in Fort-de-France when MSC Opera or a smaller French ship is based there for the season. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
       "Cruises that depart from the Northeast have more days at sea. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port. We will say how many days at sea are on the one you are looking at before you book it.",
       "A western Caribbean cruise often includes Cozumel and Grand Cayman. An eastern one often includes St. Thomas, St. Maarten, and, on a longer sailing, Antigua or Martinique. A southern routing includes Aruba, Bonaire, and Curaçao. The port page says where the ship docks, and how far the sights are from the pier.",
-      "A seven-night cruise that starts in Miami is usually a Bahamas cruise, a western Caribbean cruise to Cozumel and Grand Cayman, or an eastern one to St. Thomas and St. Maarten. Two or three of those nights are at sea. A seven-night cruise that starts in San Juan usually includes four or five ports, such as St. Thomas, St. Maarten, Antigua, St. Lucia, Barbados, St. Kitts, or Aruba, Bonaire, and Curaçao, and one or two nights at sea. Miami has more ships and more sailing dates, including the largest. The ships that start and end in San Juan are mid-size. Royal Caribbean does that year-round, on ships such as Rhapsody of the Seas and Vision of the Seas. Celebrity and Norwegian do it on some sailings. The Icon-class ships stop in San Juan. A cruise on those ships usually starts in Florida. Old San Juan is beside the dock. A taxi from the Miami terminal reaches South Beach, so a night there is a separate booking. A passport is the document to carry from either port, because several of the islands are foreign.",
+      "A seven-night cruise that starts in Miami is usually a Bahamas cruise, a western Caribbean cruise to Cozumel and Grand Cayman, or an eastern one to St. Thomas and St. Maarten. Two or three of those nights are at sea. A seven-night cruise that starts in San Juan usually includes four or five ports, such as St. Thomas, St. Maarten, Antigua, St. Lucia, Barbados, St. Kitts, or Aruba, Bonaire, and Curaçao, and one or two nights at sea. Miami has more ships and more sailing dates, including the largest ships. The ships that start and end in San Juan are mid-size. Royal Caribbean does that year-round, on ships such as Rhapsody of the Seas and Vision of the Seas. Celebrity and Norwegian do it on some sailings. The Icon-class ships stop in San Juan. A cruise on those ships usually starts in Florida. Old San Juan is beside the dock. A taxi from the Miami terminal reaches South Beach, so a night there is a separate booking. A passport is the document to carry from either port, because several of the islands are foreign.",
       "MSC’s large ships, including World America, start in Miami. MSC Opera, about 2,600 guests, is the smaller ship in this region. From late 2026 it starts in La Romana, and later in Fort-de-France. Explora Journeys, about 900 guests, usually sails one way between San Juan and Miami. It does not start and end in the same city every week. Viking’s ocean ships, about 930 guests, sail a 10-night round trip from San Juan, and the line does not book anyone under 18. Silversea’s Silver Shadow, about 390 guests, starts and ends some cruises in San Juan and also sails one way from Miami. Drinks are in those fares. Star Clippers does not start a cruise in San Juan or Miami. The sailing ships, about 170 guests on Star Clipper and Star Flyer and about 227 on Royal Clipper, start in St. Maarten, Barbados, Antigua, Aruba, or Grenada, and they anchor off small bays. An agent requests the Explora, Silversea, Viking, and Star Clippers fares. A past-guest number, or a military discount, belongs on that request.",
     ],
     lists: [
@@ -138,7 +138,7 @@ export const destinations: Destination[] = [
       {
         title: "Western Caribbean",
         nights: "7 nights",
-        season: "Year-round; best value in late summer",
+        season: "Year-round. The cruise fares are lower in late summer",
         ship: "A cruise that departs from Florida often stops at Cozumel, Grand Cayman, and Jamaica. A cruise that departs from Galveston often stops at Cozumel and Costa Maya",
         path: "Round trip, departing from South Florida or the Gulf",
         ports: ["From Florida: Cozumel, Grand Cayman, Jamaica", "From Galveston: Cozumel and Costa Maya", "A day at sea each way"],
@@ -199,7 +199,7 @@ export const destinations: Destination[] = [
           "Santorini. You come ashore by small boat from the caldera",
           "Athens, from Piraeus",
           "Rome, from Civitavecchia",
-          "Florence, from Livorno, and Pisa as its own city",
+          "Florence is reached from Livorno. Pisa is its own city, not a neighborhood of Florence",
           "Venice, from Ravenna or Trieste",
           "Dubrovnik, Kotor, and Split",
           "Amalfi, when you come ashore by small boat",
@@ -277,7 +277,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "May through September is the classic season. In the shoulder months the ports are the same, with fewer crowds, and the light is often better. In winter, a crossing between Southampton and New York spends those days on the ocean.",
-    planning: "Tell us which cities you have already seen. Barcelona, Rome, Greece, and the Adriatic are on the Mediterranean page. This page is Lisbon, Amsterdam, London, and the Canary Islands.",
+    planning: "Tell us which cities you have already seen. Barcelona, Rome, Greece, and the Adriatic are on the Mediterranean page. This page covers Lisbon, Amsterdam, London, and the Canary Islands.",
     itineraries: [
       {
         title: "Atlantic capitals",
@@ -322,7 +322,7 @@ export const destinations: Destination[] = [
         heading: "The usual stops",
         items: [
           "Oahu & Pearl Harbor",
-          "Maui — as the routing allows",
+          "Maui, on the sailings that stop there",
           "Hanalei Bay on Kauai's north shore",
           "Honolulu, on every round trip",
           "Tahiti and Moorea, on longer sailings from San Diego, Los Angeles, or Vancouver",
@@ -340,7 +340,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "Ships sail among the islands year-round. In winter the seas are gentlest, and humpbacks are in the islands. The ports are busier in summer. If you are not already in Hawaii, a cruise from San Diego is how a longer sailing adds Tahiti.",
+    when: "Ships sail among the islands year-round. In winter the seas are gentlest, and humpbacks are in the islands. The ports are busier in summer. If you are not already in Hawaii, a longer cruise from San Diego can continue to Tahiti.",
     planning: "Say whether you are already in the islands or leaving from California. The flight, or the extra sea days, belongs in the quote.",
     itineraries: [
       {
@@ -354,7 +354,7 @@ export const destinations: Destination[] = [
       {
         title: "California or Vancouver to the islands",
         nights: "10–18 nights to Hawaii. Add about a week if the ship continues to Tahiti",
-        season: "Winter, whale season",
+        season: "Winter, when the humpbacks are near the islands",
         ship: "Holland America, Princess, or Celebrity from California",
         path: "San Diego, Los Angeles, or Vancouver, either one way or round trip",
         ports: ["Honolulu", "A neighbor island", "Tahiti and Moorea on the longer runs"],
@@ -370,7 +370,7 @@ export const destinations: Destination[] = [
     alt: "Pink sand and clear shallow water on an empty Bermuda beach",
     lede: "The sand at Horseshoe Bay is pink. Hamilton and St. George's are the towns farther along the island. Ships dock at the Royal Naval Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi and closer to 45 by bus. Hamilton is about 20 minutes by ferry.",
     paragraphs: [
-      "Most Bermuda cruises run about seven nights and depart from Boston, New York, or Baltimore. Many stay overnight, which means the ship is still there the next morning. That is enough time for Horseshoe Bay, Hamilton, and St. George's, at the east end. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly sail there. On a five-hour stop you stay near the Dockyard, unless you take an excursion sold by the ship. If that tour runs late, the ship waits. A taxi or a tour you booked on your own does not come with that.",
+      "Most Bermuda cruises run about seven nights and depart from Boston, New York, or Baltimore. Many stay overnight, which means the ship is still there the next morning. That is enough time for Horseshoe Bay, Hamilton, and St. George's, at the east end. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly sail there. On a five-hour stop you stay near the Dockyard, unless you take an excursion sold by the ship. If that tour runs late, the ship waits. A taxi or a tour you booked on your own does not make the ship wait.",
       "A cruise that departs from Boston still has a day at sea each way. That cruise is shorter than a Caribbean cruise that departs from New York. The ocean is part of either cruise.",
       "Bermuda also works as a destination of its own: an island stay, or a sailing that departs from the island. The two combine easily, and we will arrange both.",
     ],
@@ -384,7 +384,7 @@ export const destinations: Destination[] = [
           "St. George's, at the east end, about an hour by bus",
           "Gibbs Hill lighthouse, above the south shore",
           "The ferry across Hamilton Harbour",
-          "A rum and pineapple stop",
+          "A drink of rum and pineapple",
         ],
       },
       {
@@ -425,7 +425,7 @@ export const destinations: Destination[] = [
     card: "Fjords & Iceland",
     image: "/media/northern-europe.jpg",
     alt: "A steep fjord with a thin waterfall and low clouds",
-    lede: "In summer the sun barely leaves the sky. At Svalbard and Greenland, the ice is the view. A ship of about 200 guests can enter a narrow fjord. A ship of about 2,500 stays in the wider water.",
+    lede: "In summer the sun barely leaves the sky. At Svalbard and Greenland, you are looking at ice. A ship of about 200 guests can enter a narrow fjord. A ship of about 2,500 stays in the wider water.",
     paragraphs: [
       "Holland America, Princess, Norwegian, Celebrity, MSC, Viking, and Cunard sail the fjords, Iceland, and the Baltic from Amsterdam, Copenhagen, Southampton, and the Norwegian ports. Hapag-Lloyd and the expedition lines go farther north, toward Svalbard and Greenland.",
       "A fjord cruise of about a week tends to include Bergen, Geiranger, and Flåm. An Iceland cruise tends to include Reykjavik. A Baltic cruise tends to include Copenhagen, Stockholm, Tallinn, and Helsinki. A longer sailing can add the Lofotens, Svalbard, or Greenland.",
@@ -449,7 +449,7 @@ export const destinations: Destination[] = [
           "The red fishing cabins of the Lofotens",
           "Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a stay in the city before or after the cruise.",
           "Gamla Stan is in Stockholm. The Vasa Museum holds the warship Vasa, raised from the harbor and kept almost whole. Grand Hôtel looks across the water at the palace.",
-          "The northern lights, when the season and the sky cooperate",
+          "The northern lights, on a clear night late enough in the year",
         ],
       },
     ],
@@ -470,7 +470,7 @@ export const destinations: Destination[] = [
         season: "Summer",
         ship: "Expedition or a traditional line that reaches Reykjavik",
         path: "Rotterdam, London, or a Norwegian port",
-        ports: ["Reykjavik", "south-coast stop", "Lofotens if the routing goes that far"],
+        ports: ["Reykjavik", "A stop on the south coast", "The Lofotens, if the sailing goes that far"],
       },
       {
         title: "Baltic cities",
@@ -478,7 +478,7 @@ export const destinations: Destination[] = [
         season: "May–August",
         ship: "A city-port ship, not an ice ship",
         path: "Copenhagen or Stockholm round trip",
-        ports: ["Tallinn", "Helsinki", "Stockholm or Visby", "A Hanseatic stop"],
+        ports: ["Tallinn", "Helsinki", "Stockholm or Visby", "A stop in a Hanseatic town"],
       },
     ],
   },
@@ -499,7 +499,7 @@ export const destinations: Destination[] = [
         heading: "Coastal classics",
         items: [
           "Boston round trips — Cape Cod, and sometimes Bermuda",
-          "New York departures with a Canada & New England feel — 7 to 11 nights",
+          "Departures from New York along this coast — 7 to 11 nights",
           "Canada & New England — Halifax, Quebec & the islands",
           "Bermuda sailings from the Northeast. The water is shallow, and you can snorkel",
           "Fall sailings, when you can see the maples from the ship",
@@ -517,7 +517,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "The season runs from May through October. Cruises visit Cape Cod, the beach towns, Bar Harbor, Halifax, and Quebec. October is the month when the maples are in color, and there are fewer people on deck.",
-    planning: "Cruises visit Cape Cod, the beach towns, Bar Harbor, Halifax, and Quebec. October is the month when the maples are in color. Say whether you can leave from Boston or New York.",
+    planning: "October is the month when the maples are in color. Say whether you can leave from Boston or New York.",
     itineraries: [
       {
         title: "Fall foliage",
@@ -562,7 +562,7 @@ export const destinations: Destination[] = [
         heading: "The classic rivers",
         items: [
           "The Danube — Budapest to the Wachau, or Vienna toward the Black Forest",
-          "The Rhine — Cologne to Amsterdam, the castle run",
+          "The Rhine — Cologne to Amsterdam, past the castles",
           "The Seine and Normandy — Paris, Rouen, and Honfleur",
           "The Douro — Porto and the wine country",
           "The Mississippi — New Orleans north, Viking and American Cruise Lines",
@@ -616,7 +616,7 @@ export const destinations: Destination[] = [
         season: "Spring through fall, river by river",
         ship: "American Cruise Lines or Viking Mississippi",
         path: "New Orleans north, the Ohio, or a Great Lakes loop",
-        ports: ["River towns rather than a single headline city", "Included excursions most days"],
+        ports: ["Small river towns, not one famous city", "An excursion is included on most days"],
       },
     ],
   },
@@ -629,7 +629,7 @@ export const destinations: Destination[] = [
     alt: "Sea ice under pale polar light",
     lede: "The ships are small enough that the beach can be a landing, not a port. You go ashore by Zodiac with a guide. Weather can take that landing away.",
     paragraphs: [
-      "Lindblad, Ponant, and Hapag-Lloyd sail Antarctica, the Arctic, and the Galápagos, along with the expedition ships of Viking and Silversea. Patagonia uses those same small ships. UnCruise sails Alaska and the Pacific Northwest. It does not sail Antarctica or the Galápagos.",
+      "Lindblad, Ponant, and Hapag-Lloyd sail Antarctica, the Arctic, and the Galápagos, along with the expedition ships of Viking and Silversea. Those same small ships also sail Patagonia. UnCruise sails Alaska and the Pacific Northwest. It does not sail Antarctica or the Galápagos.",
       "Tell us the region and the months. On a smaller ship you spend more time off the ship. We will set out the options that match those months.",
     ],
     lists: [
@@ -638,7 +638,7 @@ export const destinations: Destination[] = [
         items: [
           "Antarctica — the peninsula and the sub-Antarctic islands",
           "The Arctic — Svalbard, Iceland, the Lofotens",
-          "The Galápagos — seven to fourteen days among the islands",
+          "The Galápagos — cruises of seven to fourteen days among the islands",
           "Patagonia — fjords and calving glaciers",
           "Sail as far north as the ice allows.",
           "New Zealand & the South Pacific, on select sailings",
@@ -656,7 +656,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "Antarctica runs from November through March. The Arctic runs from June through September. Cabins are booked by the route, and the better ships fill early.",
+    when: "Antarctic cruises run from November through March. Arctic cruises run from June through September. Cabins are booked by the route, and the better ships fill early.",
     planning: "Antarctica, the Arctic, or the Galápagos, and the month. We match the ship to how much time you want off it.",
     itineraries: [
       {
@@ -665,12 +665,12 @@ export const destinations: Destination[] = [
         season: "November–March",
         ship: "Expedition ship, typically under 200 guests",
         path: "Ushuaia round trip",
-        ports: ["Drake crossing or a fly-the-Drake option", "Peninsula landings", "A backup plan if the landing is canceled"],
+        ports: ["A crossing of the Drake Passage, or a flight that skips that crossing", "Peninsula landings", "Another plan if the landing is canceled"],
       },
       {
         title: "Galápagos",
         nights: "7–14 nights",
-        season: "Year-round, with wildlife peaks by island",
+        season: "Year-round. The animals you see depend on the island",
         ship: "A small expedition ship, not a big liner",
         path: "An island loop, departing from Baltra or San Cristóbal",
         ports: ["A naturalist sets the landing", "Snorkel stops", "No two weeks show the same animals"],
@@ -681,7 +681,7 @@ export const destinations: Destination[] = [
         season: "June–September",
         ship: "Hapag-Lloyd, Lindblad, or another line with real ice capability",
         path: "Svalbard or a longer Iceland-to-ice routing",
-        ports: ["Zodiac landings", "Wildlife on the ice edge", "Midnight sun instead of port shopping"],
+        ports: ["Landings by Zodiac", "Wildlife along the ice", "You see the midnight sun from the ship. These landings are not a shopping port"],
       },
     ],
   },
@@ -705,7 +705,7 @@ export const destinations: Destination[] = [
           "Tokyo, Yokohama & Tokyo Bay",
           "Shanghai & Hong Kong",
           "Phuket — Patong has the beach. Phuket Old Town has the older streets. The ship docks at the deep-water port, not on the sand. Patong is about 40 minutes away. Old Town is closer to 30. A boat toward Phi Phi is about an hour to an hour and a half after that.",
-          "Saigon, the Mekong & Halong Bay",
+          "Ho Chi Minh City, the Mekong, and Ha Long Bay",
           "Busan, Jeju & the Korean coast",
           "Trans-Pacific crossings with a stop at Honolulu or Fiji",
         ],
@@ -730,7 +730,7 @@ export const destinations: Destination[] = [
         title: "Southeast Asia",
         nights: "7–14 nights",
         season: "December–March",
-        ship: "Princess, Holland America, Celebrity, or a luxury peer",
+        ship: "Princess, Holland America, Celebrity, or a luxury line",
         path: "Singapore round trip, or one way",
         ports: ["Phuket", "Vietnam", "A day at sea across the South China Sea"],
       },
@@ -740,15 +740,15 @@ export const destinations: Destination[] = [
         season: "Spring or fall",
         ship: "A line that overnights a Japanese port when possible",
         path: "Tokyo / Yokohama",
-        ports: ["Yokohama", "A regional port such as Osaka, Kagoshima, or Busan", "Time ashore that isn't only a pier"],
+        ports: ["Yokohama", "A regional port such as Osaka, Kagoshima, or Busan", "Time in the city, not only at the pier"],
       },
       {
         title: "Trans-Pacific",
         nights: "16+ nights",
-        season: "Repositioning windows",
+        season: "When ships move between regions",
         ship: "A ship you would be comfortable living on for two weeks at sea",
         path: "Asia toward Honolulu, Los Angeles, or Vancouver",
-        ports: ["A Pacific island stop", "Mostly ocean", "We say so before you book it"],
+        ports: ["A stop at a Pacific island", "Most of the sailing is on the ocean", "We tell you that before you book"],
       },
     ],
   },
@@ -780,13 +780,13 @@ export const destinations: Destination[] = [
         items: [
           "Sugarloaf and a morning at the botanical gardens in Rio",
           "A samba show with lunch, and time at a beach if the ship stays",
-          "Glacier views from the water, Patagonia",
+          "In Patagonia you see the glaciers from the water",
           "The markets and the pastel hills of Valparaíso",
         ],
       },
     ],
-    when: "Brazil’s east coast is warm from November through April. Patagonia runs from October through March.",
-    planning: "Rio and the Brazilian ports, or Ushuaia and Cape Horn. We only price ships that are actually scheduled.",
+    when: "Brazil’s east coast is warm from November through April. Cruises in Patagonia run from October through March.",
+    planning: "Tell us whether you want Rio and the Brazilian ports, or Ushuaia and Cape Horn. We only price ships that are actually scheduled.",
     itineraries: [
       {
         title: "Brazilian coast",
@@ -806,8 +806,8 @@ export const destinations: Destination[] = [
       },
       {
         title: "Andean coast",
-        nights: "Varies with the world-segment",
-        season: "When the repositioning runs",
+        nights: "Depends on which part of the longer voyage you book",
+        season: "When those ships are moving between regions",
         ship: "Often a segment of a longer voyage",
         path: "Callao toward Valparaíso, or the reverse",
         ports: ["Lima / Callao", "Valparaíso", "A day at sea on the Pacific"],
@@ -823,7 +823,7 @@ export const destinations: Destination[] = [
     alt: "A large cruise ship crossing open ocean",
     lede: "These voyages run about 70 to 120 days, and they stop at ports a shorter cruise never puts on the same list. Look at the calendar, and the fare, before you give one ship that many months.",
     paragraphs: [
-      "Cunard, Regent, Silversea, and Holland America run full and partial world cruises. Other large lines run the transatlantic crossings and the season-long loops. We compare the routes, the port lists, and the inclusions. On a ninety-day voyage, what the fare includes is a larger question than it is on a one-week cruise.",
+      "Cunard, Regent, Silversea, and Holland America run full and partial world cruises. Other large lines run the transatlantic crossings and the season-long loops. We compare the routes, the port lists, and the inclusions. On a voyage of about ninety days, what the fare includes matters more than it does on a cruise of about a week.",
       "Tell us the months you can be away and the places you do not want to miss. We will show you the sailings that satisfy both.",
     ],
     lists: [
@@ -831,7 +831,7 @@ export const destinations: Destination[] = [
         heading: "The routes",
         items: [
           "Full round-the-world — 90 to 120 days, the great circle of ports",
-          "Half-world — 45 to 70 days, an arc of the map",
+          "Half the voyage — 45 to 70 days, covering part of the route",
           "The transatlantic crossings, both ways",
           "The Indian Ocean loop",
           "The Pacific loop, island by island",
@@ -841,9 +841,9 @@ export const destinations: Destination[] = [
       {
         heading: "How it works",
         items: [
-          "Ports most days, with the crossings built in",
+          "The ship is in a port on most days, and the ocean crossings are part of the route",
           "One ship, one crew, for the whole run",
-          "Mid-voyage joins on most of the big routes",
+          "You can join in the middle of the voyage on most of the long routes",
           "On the inclusive lines, the dining, the drinks, and the shore excursions come with the fare",
           "An agent reachable at 3 a.m. in whatever time zone you are in",
         ],
@@ -863,7 +863,7 @@ export const destinations: Destination[] = [
       {
         title: "Half the map",
         nights: "45–70 days",
-        season: "Same planning window",
+        season: "Book 12 to 18 months ahead",
         ship: "Often a segment of the full world cruise",
         path: "An arc — Med to Asia, or Pacific to the Atlantic",
         ports: ["You join and leave mid-voyage", "Flights on both ends, which we can arrange"],
@@ -871,7 +871,7 @@ export const destinations: Destination[] = [
       {
         title: "Transatlantic crossing",
         nights: "7–14 nights",
-        season: "Fall eastbound, spring westbound",
+        season: "Eastbound in fall, westbound in spring",
         ship: "Cunard crosses the Atlantic, and other lines do too",
         path: "New York or Southampton, ocean in between",
         ports: ["Most of the crossing has no ports", "You spend the crossing on the ocean", "A sensible first long voyage"],
@@ -885,7 +885,7 @@ export const destinations: Destination[] = [
     card: "Scenic train trips",
     image: "/media/rail.jpg",
     alt: "A passenger train beside a western river with mountains behind",
-    lede: "A canyon from a glass car in the West, dinner as the station lights fall behind in Europe, and a hotel night where the trains do not connect.",
+    lede: "You see a canyon from a glass car in the West, you sit down to dinner as the station lights fall behind in Europe, and a hotel night covers the gap where the trains do not connect.",
     paragraphs: [
       "Amtrak, VIA Rail, and the scenic railways of North America are the trains we book, along with the hotel nights that connect them. The California Zephyr page names the canyons you see from the glass car. If you want a swim in the Glenwood pool, a hike above Winter Park, or a walk at Donner Lake, the station stop is too short. You get off and stay the night. The dining page says what a roomette includes, and what coach passengers buy in the cafe.",
       "Europe has two kinds of train. The Venice Simplon-Orient-Express, La Dolce Vita Orient Express, the Golden Eagle Danube Express, and the Royal Scotsman are the overnight trains. You dress for dinner as the station lights fall behind, sleep while the country goes dark, and wake beside a canal in Venice, on the road into Rome, under the hills above Sarajevo, or in a glen in the Highlands. An agent requests many of those dates, because they are not posted. The Glacier Express and the Bernina Express run in daylight through the Alps. The Bernina climbs past lakes and stone viaducts. You get off in the evening and sleep in a hotel.",
@@ -896,7 +896,7 @@ export const destinations: Destination[] = [
         heading: "The great routes",
         items: [
           "Glacier National Park — the Empire Builder and the excursion trains through the High Line",
-          "Yellowstone — park time with the train as the way in",
+          "Yellowstone — you reach the park by train",
           "The Grand Canyon — the Grand Canyon Railway from Williams",
           "The Canadian — Toronto toward the Rockies and Vancouver",
           "Cross-America — the California Zephyr, the Southwest Chief, the Coast Starlight, and the Empire Builder",
@@ -933,8 +933,8 @@ export const destinations: Destination[] = [
         nights: "2 nights on the train, plus hotels",
         season: "Summer, or fall for emptier stations",
         ship: "Amtrak long-distance, roomette or bedroom",
-        path: "Chicago to Seattle or Portland, Glacier in the middle",
-        ports: ["A night in Glacier country if you step off", "Mountain-side window", "Hotel at each end"],
+        path: "Chicago to Seattle or Portland, through Glacier National Park",
+        ports: ["A night near Glacier National Park if you step off", "A window on the mountain side", "A hotel at each end"],
       },
       {
         title: "California Zephyr",
@@ -958,7 +958,7 @@ export const destinations: Destination[] = [
         season: "Mostly spring through fall",
         ship: "Belmond. Historic cabins, suites, and grand suites",
         path: "Often Paris toward Venice. Some dates run through to Istanbul.",
-        ports: ["Meals on the train", "The cabin chosen before you pay", "We send the price after we request it"],
+        ports: ["Meals are served on the train", "You choose the cabin before you pay", "We send the price after we request it"],
       },
     ],
   },
@@ -996,7 +996,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The season runs from October through April, which is summer down there. November through March is the core. The Great Barrier Reef has warm water. The water in Milford Sound and the other fiords is cold. A sailing that includes both spends time in each.",
+    when: "The season runs from October through April, which is summer in Australia and New Zealand. November through March is the busiest part of that season. The Great Barrier Reef has warm water. The water in Milford Sound and the other fiords is cold. A sailing that includes both spends time in each.",
     planning: "Flights to Sydney or Auckland belong in the quote. A quote that leaves them out is not the full price.",
     itineraries: [
       {
@@ -1058,7 +1058,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "Most canal sailings run in spring and fall, when the fleets reposition. Winter has fewer full transits. The canal is hot while the ship is in it, and rain is normal. It does not stop the transit. A passport is required. Panama uses the US dollar.",
+    when: "Most canal sailings run in spring and fall, when the fleets move between regions. In winter there are fewer full transits. The canal is hot while the ship is in it, and rain is normal. The rain does not stop the transit. A passport is required. Panama uses the US dollar.",
     planning: "Tell us whether you fly home from Fort Lauderdale or Miami, or from Los Angeles or San Diego. A full transit ends in a different city than it starts. A partial transit returns to Florida. A night in Panama City only works when the itinerary docks there. Many ships only pass through.",
     itineraries: [
       {
