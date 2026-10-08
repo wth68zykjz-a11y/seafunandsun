@@ -131,7 +131,7 @@ export const portActivities: PortActivityPage[] = [
         photos: [
           { src: "/media/walks/morro.jpg", alt: "The walls of El Morro, the fortress at the end of the walk through Old San Juan" },
         ],
-        dock: "Cruises start and end here, beside Old San Juan. Ships that only stop use the same dock.",
+        dock: "Cruises start and end here, beside Old San Juan. Royal Caribbean’s mid-size ships do that year-round. Viking and Silversea start some cruises here too. The largest ships usually only stop, at the same dock.",
         text: "You walk the blue cobblestones up to El Morro and the cathedral. A short taxi east of the old city reaches Condado. That beach faces the Atlantic, and the surf can be up. It is not a reef lagoon. In town you can order mofongo, mashed fried plantain with garlic, often topped with shrimp or pork.",
       },
       {
