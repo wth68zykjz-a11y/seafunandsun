@@ -339,7 +339,7 @@ export const railPages: RailPage[] = [
     slug: "european-sleepers",
     nav: "European sleepers",
     title: "European sleeper trains",
-    lede: "You dress for dinner as the train leaves the station. The dining car is set, the cabin is yours for the night, and the country goes past the window after dark. In the morning you wake in Venice, in Rome, in Sarajevo, or in the Scottish Highlands. These are the Venice Simplon-Orient-Express, La Dolce Vita Orient Express, the Golden Eagle Danube Express, and the Royal Scotsman.",
+    lede: "You dress for dinner as the station lights fall behind the train. The dining car is lamplit, the cabin is quiet, and the country outside is dark. You wake to a canal in Venice, the road into Rome, the hills above Sarajevo, or a glen in the Scottish Highlands. These are the Venice Simplon-Orient-Express, La Dolce Vita Orient Express, the Golden Eagle Danube Express, and the Royal Scotsman.",
     photos: [
       {
         src: "/media/rail/vsoe.jpg",
