@@ -44,12 +44,14 @@ Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It is 
 - [Cruise line comparison](https://seafunandsun.com/lines): passenger counts from the smallest ships to the largest, and general price ranges. Not a quote. Cards are headed by size. [About 3,000 to 7,600 passengers](https://seafunandsun.com/lines/large): Royal Caribbean, Carnival, MSC, Norwegian, Disney, Princess, and Celebrity Edge class. Icon and Oasis class sail Caribbean cruises, and some Oasis-class ships sail a Mediterranean season. Quantum-class ships sail an Alaska cruise from Seattle. [Large ocean ships, about 2,000 to 7,000](https://seafunandsun.com/lines/caribbean). [Mid-size ocean ships, about 1,800 to 4,200](https://seafunandsun.com/lines/alaska). [Mid-size and large ocean ships, about 1,500 to 6,000](https://seafunandsun.com/lines/europe). [River and expedition, about 100 to 400](https://seafunandsun.com/lines/small). American Cruise Lines paddlewheelers (Heritage, Splendor, Pride, West, about 110–180 passengers) sail the Mississippi, the Ohio, the Columbia and Snake, and the Great Lakes. [Luxury ocean ships, about 450 to 1,250](https://seafunandsun.com/lines/luxury): Regent, Silversea, Seabourn, Explora, Viking ocean, Oceania. [Yachts, about 100 to 450](https://seafunandsun.com/lines/yachts): SeaDream, Windstar, Four Seasons I, the Ritz-Carlton Yacht Collection, and Star Clippers. Luxury and yacht fares are usually quoted.
 - [All destinations, A to Z](https://seafunandsun.com/destinations). Each region lists typical routings and the trend of the lines that sail there. An excursion in a port or a city can be arranged as an add-on to enrich the trip. It is not in the cruise fare unless the line includes it.
 - [Departure ports](https://seafunandsun.com/ports): the cities where cruises start, where those ships tend to go, and airlines that serve the city. Routes change. [United States and Canada](https://seafunandsun.com/ports/americas). [Europe](https://seafunandsun.com/ports/europe). [Asia](https://seafunandsun.com/ports/asia), including calls such as Bangkok, Phuket, Ho Chi Minh City, Bali, Osaka, and Busan. [Australia and New Zealand](https://seafunandsun.com/ports/australia-new-zealand): Sydney, Brisbane, Melbourne, and Auckland are starts. Hobart, Adelaide, Fremantle, Cairns, Darwin, Wellington, Tauranga, Christchurch, and Dunedin are calls. [Middle East, Africa, and South America](https://seafunandsun.com/ports/other).
+- [Alaska from Seattle or Vancouver](https://seafunandsun.com/guides/alaska-seattle-vancouver): Seattle is the departure port for a round-trip Inside Passage cruise. Vancouver is the departure port for a one-way cruise to Seward or Whittier.
 - [Alaska](https://seafunandsun.com/destinations/alaskan)
 - [In port in Alaska](https://seafunandsun.com/in-port/alaskan): where the ship docks in Juneau, Skagway, Ketchikan, Icy Strait Point, Seward, and Whittier, and which glacier sails have no pier
 - [Asia](https://seafunandsun.com/destinations/asia)
 - [In port in Asia](https://seafunandsun.com/in-port/asia): Singapore, Yokohama, Hong Kong, Bangkok from Laem Chabang, and Phuket
 - [Australia and New Zealand](https://seafunandsun.com/destinations/australia-new-zealand)
 - [In port in Australia and New Zealand](https://seafunandsun.com/in-port/australia-new-zealand): Sydney, Auckland, Melbourne, Milford Sound, and Cairns
+- [Bermuda from Boston, New York, or Baltimore](https://seafunandsun.com/guides/bermuda-northeast): each of these departure ports still has a sea day each way.
 - [Bermuda](https://seafunandsun.com/destinations/bermuda)
 - [In port in Bermuda](https://seafunandsun.com/in-port/bermuda): the Dockyard, Horseshoe Bay, Hamilton, and St. George's
 - [Canada and New England](https://seafunandsun.com/destinations/canada-new-england)
@@ -66,9 +68,10 @@ Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It is 
 - [In port in the Mediterranean](https://seafunandsun.com/in-port/mediterranean): the dock, the ride into the city, and what is there, including Athens, Rome, Florence, Venice, and Barcelona
 - [Northern Europe](https://seafunandsun.com/destinations/northern-europe)
 - [In port in Northern Europe](https://seafunandsun.com/in-port/northern-europe): Bergen, Geiranger, Flåm, Copenhagen, Stockholm, Amsterdam, and Reykjavik
-- [Panama Canal](https://seafunandsun.com/destinations/panama-canal): full transits change oceans. Partial transits enter Gatun Lake and turn around. Most sail in spring and fall.
+- [Full transit or partial transit](https://seafunandsun.com/guides/panama-transit): a full transit changes oceans. A partial transit enters Gatun Lake and comes back out the same locks.
+- [Panama Canal](https://seafunandsun.com/destinations/panama-canal): full transits change oceans. Partial transits enter Gatun Lake and come back out the same locks. Most sail in spring and fall.
 - [On a Panama Canal cruise](https://seafunandsun.com/in-port/panama-canal): the locks, Cartagena, Colón, and the cities at each end
-- [Rail](https://seafunandsun.com/rail)
+- [Rail](https://seafunandsun.com/rail): the routes are the page. Each train has its own notes.
 - [California Zephyr](https://seafunandsun.com/rail/california-zephyr)
 - [Zephyr dining](https://seafunandsun.com/rail/zephyr-dining)
 - [Empire Builder](https://seafunandsun.com/rail/empire-builder)

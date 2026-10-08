@@ -186,18 +186,26 @@ export function DestinationArticle({
 
       {rail ? (
         <section className="mx-auto max-w-6xl px-4 pb-4">
-          <h2 className="font-display text-3xl">Routes</h2>
-          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <h2 className="font-display text-3xl">Choose a route</h2>
+          <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink">Each train has its own page. The canyons, the dining car, and the nights off the train are there.</p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {railPages.map((item) => (
-              <Link key={item.slug} to="/rail/$slug" params={{ slug: item.slug }} className="rounded-xl border border-line bg-foam p-4 hover:border-tide">
-                <h3 className="font-display text-2xl">{item.nav}</h3>
-                <p className="mt-2 text-base leading-relaxed text-ink">{item.lede}</p>
+              <Link key={item.slug} to="/rail/$slug" params={{ slug: item.slug }} className="overflow-hidden rounded-xl border border-line bg-foam hover:border-tide">
+                {item.photos[0] ? (
+                  <img src={item.photos[0].src} alt={item.photos[0].alt} width={1400} height={933} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
+                ) : null}
+                <div className="p-4">
+                  <h3 className="font-display text-2xl">{item.nav}</h3>
+                  <p className="mt-2 text-base leading-relaxed text-ink">{item.lede}</p>
+                </div>
               </Link>
             ))}
           </div>
         </section>
       ) : null}
 
+      {rail ? null : (
+      <>
       <section className="mx-auto max-w-6xl px-4 py-12">
         <div className="max-w-3xl space-y-4 text-lg">
           {place.paragraphs.map((paragraph) => (
@@ -214,76 +222,20 @@ export function DestinationArticle({
             ))}
           </div>
         ) : null}
-        {place.slug === "panama-canal" ? (
-          <div className="mt-10">
-            <h2 className="font-display text-4xl">Full transit or partial transit</h2>
-            <p className="mt-3 max-w-3xl text-lg leading-relaxed text-ink">
-              Both sailings use the canal. Only a full transit goes from one ocean to the other. A partial transit enters from the Caribbean, crosses Gatun Lake, and comes back out the same locks.
-            </p>
-            <div className="mt-6 grid gap-4 lg:grid-cols-2">
-              <article className="rounded-xl border border-line bg-foam p-5">
-                <h3 className="font-display text-2xl">Full transit</h3>
-                <dl className="mt-4 grid gap-3 text-base leading-relaxed text-ink">
-                  <div>
-                    <dt className="font-medium text-tide">Direction</dt>
-                    <dd>One way, Atlantic to Pacific, or the reverse. The ship passes every lock and the Culebra Cut.</dd>
-                  </div>
-                  <div>
-                    <dt className="font-medium text-tide">Start and finish</dt>
-                    <dd>You board in one city and leave the ship in another. Florida to California is the common pair. Some sailings start in Seattle or Vancouver and end in Florida.</dd>
-                  </div>
-                  <div>
-                    <dt className="font-medium text-tide">Length</dt>
-                    <dd>Usually 14 to 17 nights. A voyage that also includes Mexico or an Alaska repositioning runs longer.</dd>
-                  </div>
-                  <div>
-                    <dt className="font-medium text-tide">Flights</dt>
-                    <dd>Two airports. The flight home does not leave from the city where you boarded.</dd>
-                  </div>
-                  <div>
-                    <dt className="font-medium text-tide">What you see</dt>
-                    <dd>Both sets of locks, the lake, and the cut. Cartagena is a common stop, and the Pacific side often adds a Mexican or Central American port.</dd>
-                  </div>
-                  <div>
-                    <dt className="font-medium text-tide">Cruise fare</dt>
-                    <dd>On Princess, Holland America, or Celebrity, an interior cabin is often about $1,200–$2,200 per person for 14 to 17 nights. A balcony is often about $2,200–$4,000. A sale can put an interior near $1,000. That is the cruise only, for two people in the cabin.</dd>
-                  </div>
-                </dl>
-              </article>
-              <article className="rounded-xl border border-line bg-foam p-5">
-                <h3 className="font-display text-2xl">Partial transit</h3>
-                <dl className="mt-4 grid gap-3 text-base leading-relaxed text-ink">
-                  <div>
-                    <dt className="font-medium text-tide">Direction</dt>
-                    <dd>A round trip. The ship uses the Caribbean locks, spends time on Gatun Lake, comes back out, and exits the same side.</dd>
-                  </div>
-                  <div>
-                    <dt className="font-medium text-tide">Start and finish</dt>
-                    <dd>You return to the port where you boarded, usually Fort Lauderdale or Miami.</dd>
-                  </div>
-                  <div>
-                    <dt className="font-medium text-tide">Length</dt>
-                    <dd>Often 10 or 11 nights. It is still longer than a standard Caribbean week.</dd>
-                  </div>
-                  <div>
-                    <dt className="font-medium text-tide">Flights</dt>
-                    <dd>One airport. The flight out and the flight home use the same city.</dd>
-                  </div>
-                  <div>
-                    <dt className="font-medium text-tide">What you see</dt>
-                    <dd>The Caribbean locks and the lake. You do not pass the Culebra Cut or the Pacific locks. The other days are often Cartagena or a Caribbean stop.</dd>
-                  </div>
-                  <div>
-                    <dt className="font-medium text-tide">Cruise fare</dt>
-                    <dd>On those same lines, an interior cabin is often about $800–$1,800 per person for 10 to 12 nights. A balcony is often about $1,500–$3,000. A round trip to Florida is the usual flight, and it is booked separately.</dd>
-                  </div>
-                </dl>
-              </article>
-            </div>
-            <p className="mt-4 max-w-3xl text-base leading-relaxed text-ink">
-              These are recent published ranges. Taxes and port fees can add a few hundred dollars. Drinks, gratuities, and Wi-Fi are extra on most of these ships unless the fare says they are included. Regent, Silversea, and Viking ocean cost more, often several thousand dollars higher, and an agent requests those fares. A full transit also needs a flight into one coast and a flight home from the other.
-            </p>
-          </div>
+        {place.slug === "alaskan" || place.slug === "bermuda" || place.slug === "panama-canal" ? (
+          <p className="mt-6">
+            <Link
+              to="/guides/$slug"
+              params={{ slug: place.slug === "alaskan" ? "alaska-seattle-vancouver" : place.slug === "bermuda" ? "bermuda-northeast" : "panama-transit" }}
+              className="inline-flex min-h-11 items-center text-base font-medium text-tide"
+            >
+              {place.slug === "alaskan"
+                ? "Seattle or Vancouver as the departure port"
+                : place.slug === "bermuda"
+                  ? "Boston, New York, or Baltimore as the departure port"
+                  : "Full transit or partial transit"}
+            </Link>
+          </p>
         ) : null}
         <div className="mt-10 grid gap-4 lg:grid-cols-2">
           {place.lists.map((list) => (
@@ -437,10 +389,12 @@ export function DestinationArticle({
           ))}
         </div>
       </section>
+      </>
+      )}
 
       <section className="mx-auto grid max-w-6xl gap-8 px-4 pb-20 lg:grid-cols-2">
         <div>
-          <h2 className="font-display text-4xl">Planning {place.nav.toLowerCase()}?</h2>
+          <h2 className="font-display text-4xl">{rail ? "Planning a rail trip?" : `Planning ${place.nav.toLowerCase()}?`}</h2>
           <p className="mt-3 text-mute">{place.planning}</p>
         </div>
         <QuoteForm preset={place.title} kind={rail ? "land" : "cruise"} />

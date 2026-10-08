@@ -302,6 +302,9 @@ export function Footer() {
             <li><Link to="/ports" className="hover:text-foam">Departure ports</Link></li>
             <li><Link to="/lines" className="hover:text-foam">Cruise lines</Link></li>
             <li><Link to="/itineraries" className="hover:text-foam">Itineraries</Link></li>
+            <li><Link to="/guides/$slug" params={{ slug: "alaska-seattle-vancouver" }} className="hover:text-foam">Seattle or Vancouver</Link></li>
+            <li><Link to="/guides/$slug" params={{ slug: "bermuda-northeast" }} className="hover:text-foam">Bermuda departures</Link></li>
+            <li><Link to="/guides/$slug" params={{ slug: "panama-transit" }} className="hover:text-foam">Canal transits</Link></li>
             <li><Link to="/quote" className="hover:text-foam">Request a quote</Link></li>
           </ul>
         </div>

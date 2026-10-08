@@ -68,6 +68,11 @@ export function agencyGraph() {
         logo: absoluteUrl("/favicon.svg"),
         telephone: "+1-959-666-2062",
         email: bookingEmail,
+        founder: {
+          "@type": "Person",
+          name: "Noah Starkey",
+          jobTitle: "Travel agent",
+        },
         description:
           "Independent travel company in Farmington, Connecticut. Books cruises, expedition ships, all-inclusive resorts, ski vacations, and rail trips, including luxury European trains. No separate agent fee. Payment goes to the supplier.",
         address: {
