@@ -36,7 +36,7 @@ function LinesPage() {
             <div className="p-5">
               <p className="text-sm font-medium text-tide">{page.card}</p>
               <h2 className="mt-1 font-display text-3xl">{page.title}</h2>
-              <p className="mt-2 text-sm text-mute">{page.size}</p>
+              <p className="mt-2 text-base leading-relaxed text-ink">{page.size}</p>
               <span className="mt-4 inline-flex text-sm font-medium text-tide group-hover:underline">Learn more</span>
             </div>
           </Link>

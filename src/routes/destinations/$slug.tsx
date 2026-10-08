@@ -191,7 +191,7 @@ export function DestinationArticle({
             {railPages.map((item) => (
               <Link key={item.slug} to="/rail/$slug" params={{ slug: item.slug }} className="rounded-xl border border-line bg-foam p-4 hover:border-tide">
                 <h3 className="font-display text-2xl">{item.nav}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-mute">{item.lede}</p>
+                <p className="mt-2 text-base leading-relaxed text-ink">{item.lede}</p>
               </Link>
             ))}
           </div>
@@ -381,30 +381,27 @@ export function DestinationArticle({
             {shores[place.slug].excursions.map((trip, index) => {
               const note = portGuides[place.slug]?.outings[index];
               return (
-                <article key={trip.title} className="rounded-xl border border-line bg-foam p-4">
+                <article key={trip.title} className="rounded-xl border border-line bg-foam p-5">
                   <h3 className="font-display text-2xl">{trip.title}</h3>
-                  <p className="mt-3 text-sm">
-                    <span className="font-medium">Where. </span>
-                    <span className="text-mute">{trip.where}</span>
+                  <p className="mt-3 text-base leading-relaxed text-ink">{trip.detail}</p>
+                  <p className="mt-3 text-base leading-relaxed text-ink">
+                    <span className="font-medium">Place. </span>
+                    {trip.where}
                   </p>
-                  <p className="mt-2 text-sm">
-                    <span className="font-medium">Time. </span>
-                    <span className="text-mute">{trip.length}</span>
+                  <p className="mt-2 text-base leading-relaxed text-ink">
+                    <span className="font-medium">Hours. </span>
+                    {trip.length}
                   </p>
-                  <p className="mt-2 text-sm">
-                    <span className="font-medium">Pace. </span>
-                    <span className="text-mute">{trip.pace}</span>
+                  <p className="mt-2 text-base leading-relaxed text-ink">
+                    <span className="font-medium">Walking. </span>
+                    {trip.pace}
                   </p>
-                  <p className="mt-2 text-sm text-mute">{trip.detail}</p>
                   {note ? (
-                    <div className="mt-3 grid gap-2 border-t border-line pt-3 text-sm">
-                      <p>
-                        <span className="font-medium">Who it fits. </span>
-                        <span className="text-mute">{note.fits}</span>
-                      </p>
-                      <p>
-                        <span className="font-medium">What to bring. </span>
-                        <span className="text-mute">{note.bring}</span>
+                    <div className="mt-3 grid gap-2 border-t border-line pt-3">
+                      <p className="text-base leading-relaxed text-ink">{note.fits}</p>
+                      <p className="text-base leading-relaxed text-ink">
+                        <span className="font-medium">Bring. </span>
+                        {note.bring}
                       </p>
                     </div>
                   ) : null}
@@ -417,7 +414,7 @@ export function DestinationArticle({
 
       <section className="mx-auto max-w-6xl px-4 pb-12">
         <h2 className="font-display text-4xl">Sample itineraries</h2>
-        <p className="mt-2 max-w-2xl text-sm text-mute">
+        <p className="mt-2 max-w-2xl text-base leading-relaxed text-ink">
           {rail
             ? "These are typical routes. Trains, hotels, dates, and fares change."
             : sampleNote}
@@ -426,12 +423,12 @@ export function DestinationArticle({
           {place.itineraries.map((trip) => (
             <article key={trip.title} className="rounded-xl border border-line p-4">
               <h3 className="font-display text-2xl">{trip.title}</h3>
-              <p className="mt-2 text-sm text-tide">
+              <p className="mt-2 text-base text-tide">
                 {trip.nights} · {trip.season}
               </p>
-              <p className="mt-3 text-sm">{trip.path}</p>
-              <p className="mt-1 text-sm text-mute">{trip.ship}</p>
-              <ul className="mt-3 grid gap-1 text-sm text-mute">
+              <p className="mt-3 text-base leading-relaxed text-ink">{trip.path}</p>
+              <p className="mt-1 text-base leading-relaxed text-ink">{trip.ship}</p>
+              <ul className="mt-3 grid gap-1 text-base leading-relaxed text-ink">
                 {trip.ports.map((port) => (
                   <li key={port}>{port}</li>
                 ))}

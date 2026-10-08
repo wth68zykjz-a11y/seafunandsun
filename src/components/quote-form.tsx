@@ -164,7 +164,7 @@ export function QuoteForm({
   return (
     <form onSubmit={onSubmit} className="mx-auto w-full max-w-lg rounded-xl border border-line bg-foam p-3 shadow-card sm:p-4 lg:mx-0">
       <h3 className="font-display text-xl text-ink">Request a quote</h3>
-      <p className="mt-1 text-sm text-mute">Your name, your email, and the destination. There is no separate agent fee.</p>
+      <p className="mt-1 text-base leading-relaxed text-ink">Your name, your email, and the destination. There is no separate agent fee.</p>
       {chooseTrip ? (
         <label className="mt-4 grid gap-1 text-sm font-medium">
           What kind of trip
@@ -230,7 +230,7 @@ export function QuoteForm({
         Travel plans
         <textarea className={`${field} min-h-20 py-2`} name="plans" defaultValue={note} placeholder="Optional. Flights, a hotel, a shore excursion, or other notes." />
       </label>
-      <label className="mt-3 flex items-start gap-3 text-sm text-mute">
+      <label className="mt-3 flex items-start gap-3 text-base leading-relaxed text-ink">
         <input name="marketingOptIn" type="checkbox" className="mt-1 size-4 accent-tide" />
         <span>
           You may call or text me about this trip. This is optional, and it is not required in order to request a quote. Reply STOP to opt out later. See the{" "}
@@ -249,7 +249,7 @@ export function QuoteForm({
       >
         {status === "sending" ? "Sending…" : "Request a quote"}
       </button>
-      <p className="mt-2 text-center text-sm text-mute">We reply the same day in most cases.</p>
+      <p className="mt-2 text-center text-base leading-relaxed text-ink">We reply the same day in most cases.</p>
     </form>
   );
 }

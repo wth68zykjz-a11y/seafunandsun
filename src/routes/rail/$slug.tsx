@@ -54,7 +54,7 @@ function RailTopicPage() {
             {page.photos.map((photo) => (
               <figure key={photo.src} className="overflow-hidden rounded-xl border border-line bg-foam">
                 <img src={photo.src} alt={photo.alt} width={1600} height={1000} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
-                <figcaption className="px-4 py-3 text-sm leading-relaxed text-mute">{photo.caption}</figcaption>
+                <figcaption className="px-4 py-3 text-base leading-relaxed text-ink">{photo.caption}</figcaption>
               </figure>
             ))}
           </div>
@@ -84,7 +84,7 @@ function RailTopicPage() {
           .map((item) => (
             <Link key={item.slug} to="/rail/$slug" params={{ slug: item.slug }} className="rounded-xl border border-line bg-foam p-4 hover:border-tide">
               <h2 className="font-display text-2xl">{item.nav}</h2>
-              <p className="mt-2 text-sm text-mute">{item.lede}</p>
+              <p className="mt-2 text-base leading-relaxed text-ink">{item.lede}</p>
             </Link>
           ))}
       </nav>

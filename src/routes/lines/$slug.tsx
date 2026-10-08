@@ -54,7 +54,7 @@ function LineRegionPage() {
             {page.photos.map((photo) => (
               <figure key={photo.src + photo.caption} className="overflow-hidden rounded-xl border border-line bg-foam">
                 <img src={photo.src} alt={photo.alt} width={1400} height={933} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
-                <figcaption className="px-4 py-3 text-sm text-mute">{photo.caption}</figcaption>
+                <figcaption className="px-4 py-3 text-base leading-relaxed text-ink">{photo.caption}</figcaption>
               </figure>
             ))}
           </div>
@@ -74,7 +74,7 @@ function LineRegionPage() {
             ))}
           </div>
         ) : null}
-        <p className="mt-8 text-sm text-mute md:hidden">Swipe sideways to see the passengers, the route, and the fare.</p>
+        <p className="mt-8 text-base leading-relaxed text-ink md:hidden">Swipe sideways to see the passengers, the route, and the fare.</p>
         <div className="mt-3 overflow-x-auto rounded-xl border border-line bg-foam md:mt-8">
           <table className="w-full min-w-[44rem] text-left text-base">
             <thead className="border-b border-line text-mute">
@@ -89,9 +89,9 @@ function LineRegionPage() {
               {page.rows.map((row) => (
                 <tr key={row.line} className="border-b border-line align-top last:border-0">
                   <th className="px-4 py-4 font-medium text-ink">{row.line}</th>
-                  <td className="px-4 py-4 text-mute">{row.ships}</td>
-                  <td className="px-4 py-4 text-mute">{row.where}</td>
-                  <td className="px-4 py-4 text-mute">{row.fare}</td>
+                  <td className="px-4 py-4 text-base leading-relaxed text-ink">{row.ships}</td>
+                  <td className="px-4 py-4 text-base leading-relaxed text-ink">{row.where}</td>
+                  <td className="px-4 py-4 text-base leading-relaxed text-ink">{row.fare}</td>
                 </tr>
               ))}
             </tbody>

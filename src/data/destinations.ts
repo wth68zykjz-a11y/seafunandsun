@@ -379,7 +379,7 @@ export const destinations: Destination[] = [
         heading: "In port",
         items: [
           "Horseshoe Bay, about 30 minutes by taxi from the Dockyard",
-          "A swim at the Dockyard if the stop is short",
+          "You can swim at the beach beside the Dockyard when the ship is only there for a few hours",
           "Hamilton, about 20 minutes by ferry",
           "St. George's, at the east end, about an hour by bus",
           "Gibbs Hill lighthouse, above the south shore",

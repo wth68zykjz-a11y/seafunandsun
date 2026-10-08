@@ -25,7 +25,7 @@ export function LocalClock({ zone }: { zone: string }) {
     return () => clearInterval(id);
   }, [zone]);
   return (
-    <p className="mt-2 text-sm text-mute">
+    <p className="mt-2 text-base leading-relaxed text-ink">
       <span className="font-medium text-ink">Time: </span>
       {text}
     </p>

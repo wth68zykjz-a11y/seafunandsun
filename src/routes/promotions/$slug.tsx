@@ -96,7 +96,7 @@ function PromoPageView() {
 
         {promo.images.length > 0 ? (
           <div className="mt-8">
-            <p className="mb-3 text-sm text-mute">Select a flyer to enlarge it.</p>
+            <p className="mb-3 text-base leading-relaxed text-ink">Select a flyer to enlarge it.</p>
             <div className={`grid gap-4 ${promo.images.length > 1 ? "md:grid-cols-2" : "max-w-3xl"}`}>
               {promo.images.map((src) => (
                 <button
@@ -151,7 +151,7 @@ function PromoPageView() {
                 <li key={day.label + day.text} className="rounded-xl border border-line bg-foam p-5">
                   <p className="text-sm font-medium text-tide">{day.label}</p>
                   {day.text ? <p className="mt-2 text-base leading-relaxed text-ink">{day.text}</p> : null}
-                  {day.times ? <p className="mt-2 text-sm text-mute">{day.times}</p> : null}
+                  {day.times ? <p className="mt-2 text-base leading-relaxed text-ink">{day.times}</p> : null}
                 </li>
               ))}
             </ol>

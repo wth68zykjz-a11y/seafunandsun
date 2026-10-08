@@ -39,7 +39,7 @@ function QuotePage() {
         ].map(([title, text]) => (
           <li key={title} className="rounded-xl border border-line bg-foam p-5">
             <h2 className="font-display text-2xl text-ink">{title}</h2>
-            <p className="mt-2 text-sm text-mute">{text}</p>
+            <p className="mt-2 text-base leading-relaxed text-ink">{text}</p>
           </li>
         ))}
       </ol>
@@ -55,15 +55,15 @@ function QuotePage() {
         <aside className="lg:col-span-2">
           <div className="rounded-xl bg-sea p-5 text-foam">
             <h2 className="font-display text-2xl">Prefer to speak with someone now?</h2>
-            <p className="mt-3 text-sm text-foam/80">
+            <p className="mt-3 text-base leading-relaxed text-foam/90">
               Call or text{" "}
               <a href={phoneHref} className="font-medium text-gold">
                 {phone}
               </a>
               , or write to Booking@Seafunandsun.com. We are in Farmington, Connecticut, weekdays from about 9 to 6 Eastern.
             </p>
-            <p className="mt-4 text-sm text-foam/80">{agentQuoteNote}</p>
-            <p className="mt-4 text-sm text-foam/80">
+            <p className="mt-4 text-base leading-relaxed text-foam/90">{agentQuoteNote}</p>
+            <p className="mt-4 text-base leading-relaxed text-foam/90">
               Payment, when you book, goes to the cruise line, resort, or operator. We never hold your card.
             </p>
           </div>

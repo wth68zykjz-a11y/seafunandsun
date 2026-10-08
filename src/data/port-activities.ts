@@ -90,7 +90,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Jamaica",
         dock: "Falmouth, Ocho Rios, and Montego Bay are different piers. The sailing names which one.",
-        text: "Dunn’s River Falls is at Ocho Rios. The ride from that pier is short. Falmouth’s pier is beside the town, and you can walk the Georgian streets. Do not plan Dunn’s River on a Falmouth call.",
+        text: "Dunn’s River Falls is at Ocho Rios. The ride from that pier is short. Falmouth’s pier is beside the town, and you can walk the Georgian streets. Dunn’s River is not in Falmouth.",
       },
       {
         name: "Costa Maya",
@@ -163,7 +163,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Santorini",
         dock: "The ship anchors in the caldera. You come ashore by tender at the old port.",
-        text: "A cable car and a steep path both go up to Fira. The line for both is shorter on the first tenders. The bus to Oia follows the rim and takes about 25 to 40 minutes from Fira. The white houses and the cliff path are in those two towns. To reach Kamari you ride down off the rim. The sand there is black volcanic sand.",
+        text: "A cable car and a steep path both go up to Fira. The wait for both is shorter on the first tenders. The bus to Oia follows the rim and takes about 25 to 40 minutes from Fira. The white houses and the cliff path are in those two towns. To reach Kamari you ride down off the rim. The sand there is black volcanic sand.",
       },
       {
         name: "Mykonos",

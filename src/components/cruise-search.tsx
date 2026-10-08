@@ -81,7 +81,7 @@ export function CruiseSearch({
     <div id="search" className="rounded-xl border border-line bg-foam p-4 shadow-card sm:p-6">
       <p className="text-sm font-medium text-tide">Live sailings</p>
       <h2 className="mt-1 font-display text-3xl">Set the destination, the month, and the length.</h2>
-      <p className="mt-2 max-w-2xl text-sm text-mute">
+      <p className="mt-2 max-w-2xl text-base leading-relaxed text-ink">
         Search opens the booking system in this window. Choose the sailing and the cabin there. Payment goes to the cruise line. We do not hold the card.
       </p>
       <form onSubmit={onSubmit} className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -123,7 +123,7 @@ export function CruiseSearch({
           </button>
         </div>
       </form>
-      <p className="mt-3 text-sm text-mute">Cruise line and ship can be filtered on that list.</p>
+      <p className="mt-3 text-base leading-relaxed text-ink">Cruise line and ship can be filtered on that list.</p>
     </div>
   );
 }

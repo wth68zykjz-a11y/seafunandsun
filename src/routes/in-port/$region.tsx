@@ -42,7 +42,7 @@ function InPortPage() {
           ])}
         />
         <article className="mx-auto max-w-6xl px-4 pt-8 pb-20 sm:pt-12">
-          <p className="text-sm text-mute">
+          <p className="text-base leading-relaxed text-ink">
             <Link to="/destinations/$slug" params={{ slug: page.slug }} className="font-medium text-tide">
               {page.region}
             </Link>

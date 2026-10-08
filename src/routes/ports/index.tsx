@@ -42,13 +42,13 @@ function PortsIndex() {
         {portPages.map((page) => (
           <Link key={page.slug} to="/ports/$region" params={{ region: page.slug }} className="rounded-xl border border-line bg-foam p-5 hover:border-tide">
             <h2 className="font-display text-3xl text-ink">{page.title}</h2>
-            <p className="mt-2 text-sm text-mute">{page.lede}</p>
+            <p className="mt-2 text-base leading-relaxed text-ink">{page.lede}</p>
             <span className="mt-4 inline-flex text-sm font-medium text-tide">Open the ports</span>
           </Link>
         ))}
       </div>
       <CabinGuide />
-      <p className="mx-auto max-w-6xl px-4 pb-20 text-sm text-mute">{airlineNote}</p>
+      <p className="mx-auto max-w-6xl px-4 pb-20 text-base leading-relaxed text-ink">{airlineNote}</p>
         </div>
       </div>
     </Shell>

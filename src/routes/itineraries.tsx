@@ -88,14 +88,14 @@ function ItinerariesPage() {
                   />
                   <div className="p-4">
                     <p className="text-sm font-medium text-tide">Optional excursions</p>
-                    <p className="mt-2 text-sm text-mute">
+                    <p className="mt-2 text-base leading-relaxed text-ink">
                       These can be arranged in the port or the city, as an add-on to enrich the trip. They are not in the cruise fare unless the line includes them.
                     </p>
                     <ul className="mt-3 grid gap-3">
                       {shores[item.slug].excursions.map((trip) => (
                         <li key={trip.title}>
                           <p className="text-sm font-medium">{trip.title}</p>
-                          <p className="text-sm text-mute">
+                          <p className="text-base leading-relaxed text-ink">
                             {trip.where}. {trip.length}.
                           </p>
                         </li>
@@ -112,8 +112,8 @@ function ItinerariesPage() {
                       {trip.nights} · {trip.season}
                     </p>
                     <p className="mt-3 text-sm font-medium">{trip.path}</p>
-                    <p className="mt-1 text-sm text-mute">{trip.ship}</p>
-                    <ul className="mt-3 grid gap-1 text-sm text-mute">
+                    <p className="mt-1 text-base leading-relaxed text-ink">{trip.ship}</p>
+                    <ul className="mt-3 grid gap-1 text-base leading-relaxed text-ink">
                       {trip.ports.map((port) => (
                         <li key={port}>{port}</li>
                       ))}

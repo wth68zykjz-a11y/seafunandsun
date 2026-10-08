@@ -198,8 +198,8 @@ export function Footer() {
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.6fr)_minmax(0,0.7fr)] lg:gap-8">
           <div>
             <Wordmark tone="foam" />
-            <p className="mt-3 max-w-sm text-sm leading-6 text-foam/80">An independent travel company in Farmington, Connecticut. We book cruises, resorts, ski vacations, and rail trips for travelers nationwide.</p>
-            <p className="mt-3 text-sm leading-6">
+            <p className="mt-3 max-w-sm text-base leading-relaxed text-foam/90">An independent travel company in Farmington, Connecticut. We book cruises, resorts, ski vacations, and rail trips for travelers nationwide.</p>
+            <p className="mt-3 text-base leading-relaxed">
               <a href={phoneHref} className="underline-offset-2 hover:underline">
                 {phone}
               </a>
@@ -232,7 +232,7 @@ export function Footer() {
           <div className="grid grid-cols-2 gap-4 lg:contents">
             <div>
               <p className="text-sm font-medium">Explore</p>
-              <ul className="mt-2 grid gap-2 text-sm leading-5 text-foam/80">
+              <ul className="mt-2 grid gap-2 text-base leading-6 text-foam/90">
                 <li><Link to="/resorts" className="hover:text-foam">All-inclusive Resorts</Link></li>
                 <li><Link to="/ski" className="hover:text-foam">Ski</Link></li>
                 <li><Link to="/rail" className="hover:text-foam">Rail and land</Link></li>
@@ -252,7 +252,7 @@ export function Footer() {
             </div>
             <div>
               <p className="text-sm font-medium">Policies</p>
-              <ul className="mt-2 grid gap-2 text-sm leading-5 text-foam/80">
+              <ul className="mt-2 grid gap-2 text-base leading-6 text-foam/90">
                 <li><Link to="/policies/$doc" params={{ doc: "terms" }} className="hover:text-foam">Terms & Conditions</Link></li>
                 <li><Link to="/policies/$doc" params={{ doc: "refund" }} className="hover:text-foam">Refund Policy</Link></li>
                 <li><Link to="/policies/$doc" params={{ doc: "privacy" }} className="hover:text-foam">Privacy Policy</Link></li>
@@ -262,7 +262,7 @@ export function Footer() {
         </div>
         <div className="mt-6 border-t border-foam/15 pt-5">
           <p className="text-sm font-medium">Destinations</p>
-          <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-sm leading-5 text-foam/80 sm:grid-cols-3 lg:grid-cols-4">
+          <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-base leading-6 text-foam/90 sm:grid-cols-3 lg:grid-cols-4">
             {destinations
               .filter((item) => item.slug !== "rail")
               .map((item) => (
@@ -276,7 +276,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-foam/15">
-        <div className="mx-auto max-w-6xl px-4 py-4 text-sm leading-6 text-foam/90">
+        <div className="mx-auto max-w-6xl px-4 py-4 text-base leading-relaxed text-foam/90">
           <p>© {new Date().getFullYear()} Sea Fun & Sun · Farmington, CT</p>
           <p className="mt-1">Booking engine powered by Outside Agents</p>
           <p className="mt-1">{licenseLine}</p>

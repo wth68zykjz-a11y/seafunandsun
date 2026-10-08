@@ -122,7 +122,7 @@ function ResortsPage() {
         <div className="mt-10 grid gap-4 lg:grid-cols-2">
           <article className="rounded-xl border border-line bg-foam p-5">
             <h2 className="font-display text-2xl">What the rate usually includes</h2>
-            <ul className="mt-3 grid gap-2 text-sm text-mute">
+            <ul className="mt-3 grid gap-2 text-base leading-relaxed text-ink">
               {included.map((item) => (
                 <li key={item} className="border-t border-line pt-2 first:border-0 first:pt-0">
                   {item}
@@ -132,7 +132,7 @@ function ResortsPage() {
           </article>
           <article className="rounded-xl border border-line bg-foam p-5">
             <h2 className="font-display text-2xl">What it often leaves out</h2>
-            <ul className="mt-3 grid gap-2 text-sm text-mute">
+            <ul className="mt-3 grid gap-2 text-base leading-relaxed text-ink">
               {excluded.map((item) => (
                 <li key={item} className="border-t border-line pt-2 first:border-0 first:pt-0">
                   {item}
@@ -162,10 +162,10 @@ function ResortsPage() {
           <div className="flex flex-col p-5 sm:p-6">
             <p className="text-sm font-medium text-tide">Parks</p>
             <h2 className="mt-2 font-display text-3xl">Disney</h2>
-            <p className="mt-3 text-sm text-mute">
+            <p className="mt-3 text-base leading-relaxed text-ink">
               Walt Disney World and Disneyland are park stays, not all-inclusive beach weeks. The room, the park tickets, and a dining plan are usually separate unless the package says otherwise. A value resort is farther from the parks. A monorail or Skyliner resort is on the park transport.
             </p>
-            <p className="mt-3 text-sm text-mute">
+            <p className="mt-3 text-base leading-relaxed text-ink">
               Aulani, on Oahu, is a Disney resort without a theme park next door. Disney Cruise Line is a ship, and it is booked with the other cruises. A few days at the resort before or after the ship is a separate stay.
             </p>
             <Link
@@ -178,7 +178,7 @@ function ResortsPage() {
           </div>
         </article>
 
-        <p className="mt-6 max-w-3xl text-sm text-mute">
+        <p className="mt-6 max-w-3xl text-base leading-relaxed text-ink">
           <Link to="/ski" className="font-medium text-tide">
             Ski vacations
           </Link>
@@ -192,7 +192,7 @@ function ResortsPage() {
           </p>
         </article>
 
-        <p className="mt-6 max-w-3xl text-sm text-mute">
+        <p className="mt-6 max-w-3xl text-base leading-relaxed text-ink">
           A posted nightly rate is not always the rate we can book. An agent requests preferred rates, wedding blocks, and most villa stays. Send the dates and who is traveling. You pay the resort. We do not hold the payment.
         </p>
 

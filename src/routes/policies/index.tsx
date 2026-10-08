@@ -39,7 +39,7 @@ function PoliciesIndex() {
             className="rounded-xl border border-line bg-foam p-5"
           >
             <h2 className="font-display text-3xl">{doc.title}</h2>
-            <p className="mt-3 text-sm text-mute">{doc.dek}</p>
+            <p className="mt-3 text-base leading-relaxed text-ink">{doc.dek}</p>
           </Link>
         ))}
       </div>
