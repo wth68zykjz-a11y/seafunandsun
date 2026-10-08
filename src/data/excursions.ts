@@ -572,7 +572,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Most stops are four to eight hours. On a glacier sailing there is often no gangway. You watch from the ship." },
       { label: "Worth the time", text: "Stop in Juneau to visit the Mendenhall Glacier. You can eat grilled salmon, or a chowder made from it, or go out for a few hours and try to catch one. Stop in Skagway for the train up the White Pass." },
       { label: "Who it's for", text: "People who want glaciers and wildlife, and who would rather have a balcony than a big theater." },
-      { label: "Also", text: "The glacier and the White Pass train are the stops people come for." },
+      { label: "Also", text: "People come for the glacier and the White Pass train." },
     ],
     outings: [
       { fits: "People who will take a small boat toward the ice, or watch from the deck or a balcony.", bring: "A wind layer, a hat, and shoes that can take spray. July is not warm on the water." },
