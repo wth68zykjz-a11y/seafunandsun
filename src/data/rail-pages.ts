@@ -115,7 +115,7 @@ export const railPages: RailPage[] = [
         heading: "Where the train actually stops",
         paragraphs: [
           "East Glacier Park and West Glacier have summer service, and each station pause is brief. The Essex stop is a flag stop beside the Izaak Walton Inn. The stop at Whitefish is about fifteen minutes on the current timetable. Those minutes are enough to step onto the platform.",
-          "Going-to-the-Sun Road crosses Glacier National Park, and Lake McDonald sits near the west entrance. A boat on the lake, or a walk beside it, takes hours inside the park. Whitefish is about a half-hour drive from that entrance, and the train only stops there for about fifteen minutes. Get off in Whitefish and stay the night if you want to be in the park the next day. Havre, out on the plains, is a longer stop, about twenty minutes, and it is there so the crew can change. You will not see the park from Havre.",
+          "Going-to-the-Sun Road crosses Glacier National Park, and Lake McDonald sits near the west entrance. A boat on the lake, or a walk beside it, takes hours inside the park. The drive from Whitefish to that entrance is about half an hour, and the train only stops in Whitefish for about fifteen minutes. Get off in Whitefish and stay the night if you want to be in the park the next day. The stop in Havre, out on the plains, is longer, about twenty minutes, and it is there so the crew can change. You will not see the park from Havre.",
           "On the Portland section the train follows the Columbia River through the gorge. The train stops briefly at Bingen–White Salmon, on the Washington side. Multnomah Falls is on the Oregon side, a two-tier waterfall about 620 feet high, with a trail to the bridge in front of it. The train does not stop at the falls. If you want that walk, get off in Portland and stay the night.",
         ],
       },
@@ -198,8 +198,8 @@ export const railPages: RailPage[] = [
       {
         heading: "Where the train actually stops",
         paragraphs: [
-          "Portland, Sacramento, Emeryville, San Luis Obispo, and Santa Barbara are cities where the train stops. The pause is not time to use the city. You can spend a night in Seattle, Portland, or Santa Barbara if you split the ticket.",
-          "Crater Lake is not beside a platform. Chemult is the closest stop, and the lake is a long drive from there. A visit means you leave the train and stay the night.",
+          "Portland, Sacramento, Emeryville, San Luis Obispo, and Santa Barbara are cities where the train stops. The pause is too short to see the city. You can spend a night in Seattle, Portland, or Santa Barbara if you split the ticket.",
+          "Crater Lake is not beside a platform. Chemult is the closest stop, and the drive from there to the lake is long. If you want to see the lake, leave the train and stay the night.",
         ],
       },
       {
@@ -266,7 +266,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/adirondack-champlain.jpg",
         alt: "Lake Champlain seen from the Adirondack, with a low ridge on the far shore",
-        caption: "Lake Champlain from the Adirondack. The water is beside the train. Fort Ticonderoga is a drive from the Ticonderoga station, not this stretch of shore.",
+        caption: "Lake Champlain from the Adirondack. The water is beside the train. You drive from the Ticonderoga station to Fort Ticonderoga. The train does not pass the fort on this stretch of shore.",
       },
       {
         src: "/media/rail/downeaster.jpg",
@@ -279,13 +279,13 @@ export const railPages: RailPage[] = [
         heading: "Adirondack",
         paragraphs: [
           "The Adirondack runs from Moynihan Train Hall in New York to Montreal in about eleven hours. It follows the Hudson past Rhinecliff and Hudson, then the west shore of Lake Champlain, with the Adirondacks on the other side. You see the lake from the coach window.",
-          "Ticonderoga is a station. Fort Ticonderoga is a drive from that station, on the lake. Port Kent, in season, is where you catch the ferry toward Burlington. None of those pauses is enough time to use the town. If you get off, the rest of the trip is a new ticket, and you need a hotel for the night.",
+          "Ticonderoga is a station. From that station you drive to Fort Ticonderoga, on the lake. Port Kent, in season, is where you catch the ferry toward Burlington. None of those pauses is long enough to see the town. If you get off, the rest of the trip is a new ticket, and you need a hotel for the night.",
         ],
       },
       {
         heading: "Vermonter and Downeaster",
         paragraphs: [
-          "The Vermonter runs from Washington to St. Albans. South of Springfield it is a city railroad. North of there it follows the Connecticut River through Brattleboro and White River Junction. You see the valley from the window. Essex Junction is the stop for Burlington, and Burlington itself is a bus ride. A night in Montpelier or Burlington is a hotel.",
+          "The Vermonter runs from Washington to St. Albans. South of Springfield it is a city railroad. North of there it follows the Connecticut River through Brattleboro and White River Junction. You see the valley from the window. Essex Junction is the stop for Burlington. A bus from there goes into Burlington. The train does not stop in the city. If you stay in Montpelier or Burlington, you sleep in a hotel, not on the train.",
           "The Downeaster runs from Boston’s North Station to Brunswick several times a day, in about three and a half hours. It stops at Old Orchard Beach in season, at Portland, and at Freeport. The Portland station is across the Fore River from the Old Port, about a fifteen-minute ride. Dinner in the Old Port, or time on the sand at Old Orchard, takes longer than the station pause, so you get off and stay the night.",
         ],
       },
@@ -325,7 +325,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Where you can get off",
         paragraphs: [
-          "Jasper is the town where people get off for a night. The station stop is longer than a platform stretch, and it is still not time at Maligne Lake or the Icefields. The stop in Winnipeg is longer, long enough to leave the station and come back. It is not time to use the city.",
+          "Jasper is the town where people get off for a night. The station stop is longer than a platform stretch, and it is still too short for a visit to Maligne Lake or the Icefields. The stop in Winnipeg is longer, long enough to leave the station and come back. It is not long enough to see the city.",
         ],
       },
       {
@@ -356,7 +356,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/royal-scotsman.jpg",
         alt: "A wood-paneled cabin on the Royal Scotsman, with a bed and a view of hills",
-        caption: "A cabin on the Royal Scotsman. You sleep here. The hills are outside the window. A distillery or a castle is a stop on the day’s program, and you get back on the train.",
+        caption: "A cabin on the Royal Scotsman. You sleep here. The hills are outside the window. The day’s program stops at a distillery or a castle, and you get back on the train.",
       },
       {
         src: "/media/rail/scotsman-lounge.jpg",
@@ -392,7 +392,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Golden Eagle Danube Express",
         paragraphs: [
-          "The Golden Eagle Danube Express runs through Central Europe and the Balkans. One route leaves Venice for Istanbul, and you get off in Trieste, Sarajevo, Mostar, Belgrade, Sofia, and Plovdiv. You do not sleep on the train every night. On some nights the room is a hotel in one of those cities.",
+          "The Golden Eagle Danube Express runs through Central Europe and the Balkans. One route leaves Venice for Istanbul, and you get off in Trieste, Sarajevo, Mostar, Belgrade, Sofia, and Plovdiv. You do not sleep on the train every night. On some nights you sleep in a hotel in one of those cities.",
           "A Superior Deluxe cabin is about nine square meters, with a shower. Breakfast is at the table. Lunch and dinner come with wine. Dress on this train is informal, which is not the case on the Venice Simplon-Orient-Express. An agent requests the fare.",
         ],
       },
@@ -440,7 +440,7 @@ export const railPages: RailPage[] = [
         heading: "Bernina Express",
         paragraphs: [
           "The Bernina Express runs from Chur or St. Moritz to Tirano, in Italy. The high point is Ospizio Bernina, at 2,253 meters, beside Lago Bianco. The water there is glacial and pale.",
-          "The stop at Alp Grüm is short, and the terrace faces the Palü Glacier. You can step off for the view and take a later train. The Brusio spiral is a full loop the train makes to lose height. Poschiavo is the town in the valley below. A night in Poschiavo or Tirano is how you use the town. The Bernina car has snacks. It does not have the Glacier Express kitchen.",
+          "The stop at Alp Grüm is short, and the terrace faces the Palü Glacier. You can step off for the view and take a later train. The Brusio spiral is a full loop the train makes to lose height. Poschiavo is the town in the valley below. If you want time in Poschiavo or Tirano, get off and stay the night. The Bernina car has snacks. It does not have the Glacier Express kitchen.",
         ],
       },
     ],

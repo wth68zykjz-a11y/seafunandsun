@@ -375,7 +375,7 @@ function Home() {
             <div className="flex flex-1 flex-col p-5">
               <h3 className="font-display text-2xl text-ink">Departure ports</h3>
               <p className="mt-3 flex-1 text-base leading-relaxed text-ink">
-                Fort Lauderdale is built to get you on the ship. Miami, Barcelona, Vancouver, and Sydney are worth a few days before you sail or after you return. A Caribbean cruise from Miami spends more nights in the islands than a cruise of the same length from New York or Boston. An Alaska cruise usually leaves from Seattle or Vancouver.
+                Fort Lauderdale is built to get you on the ship. It is worth spending a few days in Miami, Barcelona, Vancouver, or Sydney before you sail or after you return. A Caribbean cruise from Miami spends more nights in the islands than a cruise of the same length from New York or Boston. An Alaska cruise usually leaves from Seattle or Vancouver.
               </p>
               <Link to="/ports" className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep">
                 See the ports

@@ -525,7 +525,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Most of the time the ship is in port",
         pace: "A boat ride, with time in the water if you want it",
         detail:
-          "The reef has the coral and the fish. A boat from Cairns or Airlie Beach is how you get there, and the trip uses most of the port stop.",
+          "The reef has the coral and the fish. A boat from Cairns or Airlie Beach is how you get there, and that boat trip takes most of the time the ship is in port.",
       },
       {
         title: "Milford, from the deck",
@@ -569,7 +569,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-alaskan.jpg",
     detailAlt: "A train crossing a wooden trestle above a misty spruce valley",
     facts: [
-      { label: "Time in port", text: "Most stops are four to eight hours. Glacier days can be the ship’s scenic sail, with no gangway at all." },
+      { label: "Time in port", text: "Most stops are four to eight hours. On a glacier sailing there is often no gangway. You watch from the ship." },
       { label: "Worth the time", text: "Stop in Juneau to visit the Mendenhall Glacier. You can eat grilled salmon, or a chowder made from it, or go out for a few hours and try to catch one. Stop in Skagway for the train up the White Pass." },
       { label: "Best for", text: "People who want wildlife and ice more than nightlife. A balcony is the better cabin here than a seat in a big theater." },
       { label: "Also", text: "The glacier and the White Pass train are the stops people come for." },
@@ -753,7 +753,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "A few overnights matter. Many stops give you only a short look from the pier. Sea days make up most of the voyage." },
       { label: "Worth the time", text: "If the ship stays the night, pick one building and one good meal. A two-hour stop by tender is not enough time for a stadium or a big museum." },
       { label: "Best for", text: "Travelers who like the ship, and who do not need a new city every morning." },
-      { label: "Also", text: "On an overnight you can use the city into the evening. On a short tender you see the area around the landing." },
+      { label: "Also", text: "If the ship stays overnight, you can stay in the city into the evening. On a short tender you see the area around the landing." },
     ],
     outings: [
       { fits: "People who will use an overnight for one neighborhood and dinner, then walk back.", bring: "A plan for the city the ship is in." },

@@ -38,12 +38,12 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Ketchikan",
         dock: "Ships dock on the waterfront.",
-        text: "Creek Street is a boardwalk over the creek, a short walk from the piers. The totem poles at Saxman are a few miles south of town. Totem Bight is about 10 miles north, in a spruce forest above the water. A short stop leaves time for the boardwalk or one of the pole parks. It does not leave time for both parks and a boat.",
+        text: "Creek Street is a boardwalk over the creek. You can walk there from the piers. The totem poles at Saxman are a few miles south of town. Totem Bight is about 10 miles north, in a spruce forest above the water. A short stop leaves time for the boardwalk or one of the pole parks. It does not leave time for both parks and a boat.",
       },
       {
         name: "Icy Strait Point",
         dock: "This is a private dock at Hoonah, not a city pier.",
-        text: "The old cannery building, the zip line, and the beach are on the property. A whale-watching boat leaves from the dock. Hoonah itself is a short walk if you want the town.",
+        text: "The old cannery building, the zip line, and the beach are on the property. A whale-watching boat leaves from the dock. You can walk to Hoonah from the dock if you want the town.",
       },
       {
         name: "Seward",
@@ -66,7 +66,7 @@ export const portActivities: PortActivityPage[] = [
     slug: "caribbean",
     region: "Caribbean Cruises",
     title: "What you can do in port in the Caribbean",
-    lede: "A western week, an eastern week, and a southern week do not share the same islands. This page says where the ship docks and what is a short ride from that pier.",
+    lede: "A western week, an eastern week, and a southern week do not share the same islands. This page says where the ship docks, and how far the sights are from that pier.",
     note: "A morning-to-afternoon stop usually leaves time for one plan: the reef, a beach, or the town. If the ship stays overnight, you can add another. An excursion sold by the ship comes with a wait if the tour runs late. A taxi or a tour you booked on your own does not.",
     image: "/media/day-caribbean.jpg",
     imageAlt: "A snorkel mask and fins on limestone beside clear reef water",
@@ -79,27 +79,27 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Grand Cayman",
         dock: "Most ships tender into George Town, or use a pier when one is assigned.",
-        text: "Stingray City is a shallow sandbar. The boat ride from the harbor is about 45 minutes, and southern stingrays swim up to the boat. Seven Mile Beach is about a 15- to 20-minute taxi from George Town. The sand is pale, and the water on the west side is calm.",
+        text: "Stingray City is a shallow sandbar. The boat ride from the harbor takes about 45 minutes, and southern stingrays swim up to the boat. A taxi from George Town to Seven Mile Beach takes about 15 to 20 minutes. The sand is pale, and the water on the west side is calm.",
       },
       {
         name: "Jamaica",
         dock: "Falmouth, Ocho Rios, and Montego Bay are different piers. The sailing names which one.",
-        text: "Dunn’s River Falls is at Ocho Rios, a short ride from that pier. Falmouth’s pier is beside the town, and the Georgian streets are a walk. Do not plan Dunn’s River on a Falmouth call.",
+        text: "Dunn’s River Falls is at Ocho Rios. The ride from that pier is short. Falmouth’s pier is beside the town, and you can walk the Georgian streets. Do not plan Dunn’s River on a Falmouth call.",
       },
       {
         name: "Costa Maya",
         dock: "The pier is a built port at Mahahual.",
-        text: "The town and the beach are a short shuttle or a walk from the terminal. The water on this coast is warm. The reef is a boat trip, not a swim from the gangway.",
+        text: "You can walk from the terminal to the town and the beach, or take a short shuttle. The water on this coast is warm. A boat takes you to the reef. You do not swim there from the gangway.",
       },
       {
         name: "Nassau",
         dock: "Ships dock at Prince George Wharf, downtown.",
-        text: "The straw market and the old streets are a walk from the ship. Cable Beach is about 15 to 20 minutes by taxi, a long pale beach on the north shore. Paradise Island is a short taxi across the bridge. A conch fritter is chopped conch fried in a seasoned batter.",
+        text: "You can walk from the ship to the straw market and the old streets. Cable Beach is on the north shore. A taxi from the pier takes about 15 to 20 minutes, and the sand is pale. A short taxi across the bridge reaches Paradise Island. A conch fritter is chopped conch fried in a seasoned batter.",
       },
       {
         name: "St. Thomas",
         dock: "Ships use Havensight or Crown Bay.",
-        text: "Charlotte Amalie, with its old warehouses and the 99 Steps, is a short ride from either pier and a walk from Havensight. Magens Bay is over the hill, about 20 to 30 minutes. The beach is a long curve of pale sand, and the water on that north shore is usually calm.",
+        text: "Charlotte Amalie has old warehouses and the 99 Steps. You can walk there from Havensight. From Crown Bay the ride is short. The ride over the hill to Magens Bay takes about 20 to 30 minutes. The beach is a long curve of pale sand, and the water on that north shore is usually calm.",
       },
       {
         name: "St. Maarten",
@@ -109,7 +109,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Martinique",
         dock: "Ships dock at Fort-de-France, not at the small coves down the coast.",
-        text: "A bakery in town sells a croissant, layered dough of flour and butter, or a pain au chocolat, that dough around a bar of chocolate. The covered market on Rue Isambert sells an accra, salted cod mashed with herbs and fried. The coves are a drive from this pier.",
+        text: "A bakery in town sells a croissant, layered dough of flour and butter, or a pain au chocolat, that dough around a bar of chocolate. The covered market on Rue Isambert sells an accra, salted cod mashed with herbs and fried. You drive from this pier to the coves. They are not beside the dock.",
       },
       {
         name: "Antigua",
@@ -119,12 +119,12 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "San Juan",
         dock: "Many eastern cruises begin and end here. The ships dock beside Old San Juan.",
-        text: "El Morro and the cathedral are a walk on the blue cobblestones. Condado is a short taxi east. That beach faces the Atlantic, and the surf can be up. It is not a reef lagoon. In town you can order mofongo, mashed fried plantain with garlic, often topped with shrimp or pork.",
+        text: "You walk the blue cobblestones up to El Morro and the cathedral. A short taxi east of the old city reaches Condado. That beach faces the Atlantic, and the surf can be up. It is not a reef lagoon. In town you can order mofongo, mashed fried plantain with garlic, often topped with shrimp or pork.",
       },
       {
         name: "Aruba, Bonaire, and Curaçao",
         dock: "These are a southern routing, usually from San Juan, or a longer loop from Florida.",
-        text: "They are not stops on a seven-night western week with Cozumel. In Aruba the ship docks at Oranjestad. Eagle Beach is a taxi ride up the west coast from there. The sand is pale, and the water is calm. In Bonaire the reef starts close to shore, which is why people snorkel from the coast. In Curaçao the ship docks at Willemstad. You can walk to the Handelskade, the colored waterfront, and the Queen Emma Bridge swings open for ships.",
+        text: "They are not stops on a seven-night western week with Cozumel. In Aruba the ship docks at Oranjestad. A taxi from there goes up the west coast to Eagle Beach. The sand is pale, and the water is calm. In Bonaire the reef starts close to shore, which is why people snorkel from the coast. In Curaçao the ship docks at Willemstad. You can walk to the Handelskade, the colored waterfront, and the Queen Emma Bridge swings open for ships.",
       },
       {
         name: "Private islands",
@@ -155,7 +155,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Mykonos",
         dock: "Most ships tender to the old port.",
-        text: "The windmills and the lanes are a walk from the landing. Little Venice is the row of houses on the water, in town. Ornos is about a 10- to 20-minute taxi from the landing, and the water there is calmer than on the north shore.",
+        text: "You can walk from the landing to the windmills and the lanes. Little Venice is the row of houses on the water, in town. A taxi from the landing to Ornos takes about 10 to 20 minutes, and the water there is calmer than on the north shore.",
       },
       {
         name: "Crete",
@@ -195,7 +195,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Amalfi",
         dock: "When the ship stops, it is usually a tender into Amalfi.",
-        text: "The cathedral steps and the paper shops are in the town. Positano is a boat along the coast, not the same landing. Lunch can run long if all-aboard is late enough. A common plate is scialatielli ai frutti di mare, a short local pasta with mussels, clams, and shrimp.",
+        text: "The cathedral steps and the paper shops are in the town. A boat along the coast reaches Positano. That is not the Amalfi landing. Lunch can run long if all-aboard is late enough. A common plate is scialatielli ai frutti di mare, a short local pasta with mussels, clams, and shrimp.",
       },
       {
         name: "Barcelona",
@@ -205,7 +205,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Palma",
         dock: "Ships dock near the cathedral.",
-        text: "You can walk into the old town from the port. The cathedral and the Arab baths are on that walk. A beach on the bay is a taxi ride from the pier, not a walk off the ship.",
+        text: "You can walk into the old town from the port. The cathedral and the Arab baths are on that walk. A taxi from the pier reaches a beach on the bay. You do not walk off the ship onto that sand.",
       },
       {
         name: "Marseille",
