@@ -51,8 +51,16 @@ export const portRegions: PortRegion[] = [
       { name: "Tampa", place: "Florida", goes: "Western Caribbean: Cozumel, Grand Cayman, and Jamaica more often than the eastern islands.", air: "Southwest, Delta, American, United, JetBlue, Spirit, and Frontier.", zone: "America/New_York", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/tampa.jpg", alt: "Tampa skyline on the bay", slug: "caribbean" },
       { name: "Galveston", place: "Texas", goes: "Western Caribbean and the Mexican coast.", air: "Fly Houston. Hobby is about an hour away. Bush Intercontinental is closer to an hour and a half.", zone: "America/Chicago", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/galveston.jpg", alt: "Galveston waterfront", slug: "caribbean" },
       { name: "New Orleans", place: "Louisiana", goes: "Ocean ships leave for a Western Caribbean cruise. River ships leave the same city and go up the Mississippi.", air: "Southwest, Delta, American, United, Spirit, and JetBlue.", zone: "America/Chicago", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/new-orleans.jpg", alt: "New Orleans along the river", slug: "caribbean" },
-      { name: "San Juan", place: "Puerto Rico", goes: "Southern Caribbean. Fewer sea days than a Florida loop to the same islands.", air: "American, JetBlue, Delta, United, and Southwest.", zone: "America/Puerto_Rico", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/san-juan.jpg", alt: "Old San Juan above the harbor", slug: "caribbean" },
       { name: "Jacksonville, Charleston, and Norfolk", place: "Southeast coast", goes: "Bahamas and shorter Eastern Caribbean sailings. Norfolk and Charleston also send some ships to Bermuda.", air: "All three are served by American, Delta, Southwest, and United. Charleston also has Breeze.", zone: "America/New_York", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/charleston.jpg", alt: "Charleston harbor, one of the Southeast departure ports", slug: "caribbean" },
+    ],
+  },
+  {
+    id: "island-starts",
+    title: "Cruises that start in the islands",
+    lede: "San Juan is a regular start for a southern or eastern Caribbean cruise. Fort-de-France, in Martinique, is a seasonal start. A cruise that begins on the island spends the week in port instead of using days to get there from Florida.",
+    ports: [
+      { name: "San Juan", place: "Puerto Rico", goes: "Southern and eastern Caribbean. Royal Caribbean, Celebrity, Carnival, and others turn ships here. A seven-night cruise from San Juan reaches the eastern islands, or Aruba, Bonaire, and Curaçao, with fewer sea days than the same islands from Florida.", air: "American, JetBlue, Delta, United, and Southwest.", zone: "America/Puerto_Rico", money: "US dollar. Cards are accepted. Cash is dollars.", image: "/media/ports/san-juan.jpg", alt: "Old San Juan above the harbor", slug: "caribbean" },
+      { name: "Fort-de-France", place: "Martinique", goes: "Eastern and southern Caribbean, in the seasons a ship turns around here. MSC and French lines such as Ponant use Fort-de-France as a start. It is not a weekly departure the way Miami or San Juan is. Other ships only stop.", air: "Air France, Air Caraïbes, and American. Many trips connect in Miami or San Juan.", zone: "America/Martinique", money: "Euro. Cards are accepted in town. US dollars are not the local currency.", image: "/media/ports/fort-de-france.jpg", alt: "The bay of Fort-de-France, with the city across the water", slug: "caribbean" },
     ],
   },
   {
@@ -188,8 +196,8 @@ export const portPages: PortPage[] = [
   {
     slug: "americas",
     title: "United States and Canada",
-    lede: "Florida for a short Caribbean week. The Northeast when you would rather not fly, with more sea days. California and Vancouver for Alaska, Mexico, and Hawaii.",
-    regionIds: ["florida-gulf", "northeast", "pacific", "canada"],
+    lede: "Florida for a short Caribbean week. San Juan, and in some seasons Fort-de-France in Martinique, for a cruise that starts in the islands. The Northeast when you would rather not fly, with more sea days. California and Vancouver for Alaska, Mexico, and Hawaii.",
+    regionIds: ["florida-gulf", "island-starts", "northeast", "pacific", "canada"],
   },
   {
     slug: "europe",

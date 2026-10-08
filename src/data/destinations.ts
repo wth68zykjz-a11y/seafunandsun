@@ -98,7 +98,7 @@ export const destinations: Destination[] = [
     alt: "A quiet Caribbean cove with pale sand and clear water",
     lede: "More ships sail here than in any other region. In Nassau, the walk from Prince George Wharf through Festival Place reaches the straw market on Bay Street in about five minutes. In San Juan you can walk up to El Morro. Many travelers start in the Caribbean, then come back for a particular ship and a shorter list of ports.",
     paragraphs: [
-      "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
+      "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. Cruises also start in San Juan, and in some seasons in Fort-de-France, Martinique. A San Juan start puts a seven-night cruise in the islands without the sea days a Florida start needs to reach the same ports. Fort-de-France is a start when MSC or a smaller French ship is turning around there. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
       "Northeast departures mean more sea days. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port. We will say how many sea days are on the one you are looking at before you book it.",
       "A western Caribbean cruise often includes Cozumel and Grand Cayman. An eastern one often includes St. Thomas, St. Maarten, and, on a longer sailing, Antigua or Martinique. Aruba, Bonaire, and Curaçao are a southern routing. The port page says where the ship docks, and how far the sights are from the pier.",
     ],
@@ -130,7 +130,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "Ships sail the Caribbean year-round. December through April is the peak season: the steadiest weather, and the highest cruise fares. August through October is hurricane season. Named storms rarely reach a ship at sea, and the cruise fares are lower.",
-    planning: "Send the month and the departure port. A seven-night Caribbean cruise that departs from Miami spends more nights in the islands. A cruise of the same length that departs from New York, Baltimore, or Boston adds sea days each way. Those sea days should be on the itinerary before you choose.",
+    planning: "Send the month and the departure port. A seven-night Caribbean cruise that departs from Miami spends more nights in the islands. The same length from San Juan spends more of the week in port, because the ship is already there. A cruise of the same length that departs from New York, Baltimore, or Boston adds sea days each way. Those sea days should be on the itinerary before you choose.",
     itineraries: [
       {
         title: "Western Caribbean",

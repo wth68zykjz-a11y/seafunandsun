@@ -118,7 +118,7 @@ export const portActivities: PortActivityPage[] = [
       },
       {
         name: "Martinique",
-        dock: "Ships dock at Fort-de-France, not at the small coves down the coast.",
+        dock: "Some cruises start at Fort-de-France, when MSC or a smaller French ship is turning around there. Other ships only stop. They dock at Fort-de-France, not at the small coves down the coast.",
         text: "A bakery in town sells a croissant, layered dough of flour and butter, or a pain au chocolat, that dough around a bar of chocolate. The covered market on Rue Isambert sells an accra, salted cod mashed with herbs and fried. You drive from this pier to the coves. They are not beside the dock.",
       },
       {
@@ -131,7 +131,7 @@ export const portActivities: PortActivityPage[] = [
         photos: [
           { src: "/media/walks/morro.jpg", alt: "The walls of El Morro, the fortress at the end of the walk through Old San Juan" },
         ],
-        dock: "Many eastern cruises begin and end here. The ships dock beside Old San Juan.",
+        dock: "Cruises start and end here, beside Old San Juan. Ships that only stop use the same dock.",
         text: "You walk the blue cobblestones up to El Morro and the cathedral. A short taxi east of the old city reaches Condado. That beach faces the Atlantic, and the surf can be up. It is not a reef lagoon. In town you can order mofongo, mashed fried plantain with garlic, often topped with shrimp or pork.",
       },
       {

@@ -27,7 +27,7 @@ function DestinationsPage() {
         <article className="rounded-xl border border-line bg-foam p-5">
           <h2 className="font-display text-2xl text-ink">Departure ports</h2>
           <p className="mt-3 text-base leading-relaxed text-ink">
-            Fort Lauderdale is built to get you on the ship. It is worth spending a few days in Miami, Barcelona, Vancouver, or Sydney before you sail or after you return. A Caribbean cruise from Miami spends more nights in the islands than a cruise of the same length from New York or Boston. An Alaska cruise usually leaves from Seattle or Vancouver.
+            Fort Lauderdale is built to get you on the ship. It is worth spending a few days in Miami, Barcelona, Vancouver, or Sydney before you sail or after you return. A Caribbean cruise from Miami spends more nights in the islands than a cruise of the same length from New York or Boston. A southern or eastern Caribbean cruise can also start in San Juan, and in some seasons in Fort-de-France, Martinique. An Alaska cruise usually leaves from Seattle or Vancouver.
           </p>
           <Link to="/ports" className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep">
             See the ports
