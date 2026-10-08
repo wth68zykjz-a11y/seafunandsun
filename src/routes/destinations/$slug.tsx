@@ -31,7 +31,7 @@ export const Route = createFileRoute("/destinations/$slug")({
 
 const ashoreNotes: Record<string, string> = {
   alaskan:
-    "Most Alaska days in port end in the afternoon. Mendenhall Glacier is in Juneau, about 20 minutes from the cruise docks on Gastineau Channel. Creek Street is in downtown Ketchikan, and the totem poles at Saxman and Totem Bight are a short ride from there. Skagway sits at the foot of White Pass, and the White Pass and Yukon Route railroad climbs from town to the pass. A day in Glacier Bay or Tracy Arm has no pier at all. Some Juneau days stay late enough for the evening in town. Nights in Seattle or Vancouver are not cut off by all-aboard. Steamed Dungeness crab can be lunch if you want it.",
+    "Most Alaska stops end in the afternoon. Mendenhall Glacier is in Juneau, about 20 minutes from the cruise docks on Gastineau Channel. Creek Street is in downtown Ketchikan, and the totem poles at Saxman and Totem Bight are a short ride from there. Skagway sits at the foot of White Pass, and the White Pass and Yukon Route railroad climbs from town to the pass. In Glacier Bay or Tracy Arm there is no pier. The ship spends those hours on the water. Some Juneau calls stay late enough that you can eat in town. Nights in Seattle or Vancouver are not cut off by all-aboard. Steamed Dungeness crab can be lunch if you want it.",
   caribbean:
     "A typical island stop ends in the afternoon. Cozumel and the private islands have a beach and a swim. Nassau and the older towns have a walk from the pier. You can use a longer afternoon in San Juan, and an overnight is when the evening in town is open. Nights in Miami or Fort Lauderdale are for the city, not the gangway.",
   mediterranean:
@@ -39,17 +39,17 @@ const ashoreNotes: Record<string, string> = {
   european:
     "A daytime stop leaves the afternoon short. Lisbon, the London ports, and the Mediterranean cities on these routes are easier with a night or two before or after, when all-aboard is not the deadline. An overnight, or a departure as late as 10 p.m., leaves the evening free. Tell us which cities you already know. We will put the extra nights on the ones you do not.",
   hawaii:
-    "Time between the islands runs longer than a Caribbean stop, and Pride of America often stays into the evening. You might spend that time at a beach, in the car, or on the north shore. Pearl Harbor belongs to a night on Oahu before or after a California crossing, when you are not watching the gangway. A luau needs the ship still in port after dark.",
+    "Time between the islands runs longer than a Caribbean stop, and Pride of America often stays into the evening. You might spend that time at a beach, in the car, or on the north shore. You see Pearl Harbor before or after a California crossing, while you are staying on Oahu and the ship is not counting you back to the gangway. A luau needs the ship still in port after dark.",
   bermuda:
     "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi. Hamilton is about 20 minutes by ferry. St. George's is about an hour by bus. An overnight is enough time for the beach, Hamilton, and St. George's. On a short stop, use the excursion sold by the ship if you want to leave the Dockyard. If that tour is late, the ship waits. Sailings from Boston, New York, or Baltimore include sea days each way.",
   "northern-europe":
-    "Baltic and Norway days in port often end in the afternoon. Bryggen is the old wharf in Bergen. Nyhavn is the canal in Copenhagen. The Rijksmuseum is in Amsterdam, and it holds Rembrandt’s The Night Watch. Ocean ships dock at IJmuiden, not in the canals. The museum is about 30 to 45 minutes from the pier. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for a museum and a neighborhood.",
+    "Most Baltic and Norway stops end in the afternoon. Bryggen is the old wharf in Bergen. Nyhavn is the canal in Copenhagen. The Rijksmuseum is in Amsterdam, and it holds Rembrandt’s The Night Watch. Ocean ships dock at IJmuiden, not in the canals. The museum is about 30 to 45 minutes from the pier. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for a museum and a neighborhood.",
   "canada-new-england":
     "These stops are in towns, and many end in the afternoon. Boston Harbor and the Freedom Trail are in Boston. In Quebec, Upper Town and the Château Frontenac sit above the St. Lawrence. A late departure shows up more often on a fall foliage sailing than on a quick stop. Extra nights in Boston or Quebec let you stay out after dark.",
   river:
-    "A river ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village, and a bike ride is a common afternoon. A Mississippi sailing follows the Mississippi, with New Orleans and the river towns. A Danube sailing follows the Danube, with Budapest and Vienna. Extra nights in Budapest, Paris, Amsterdam, or New Orleans are for the parts of the city the ship only passes.",
+    "A river ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village, and people often ride a bike along the river while the ship is there. A Mississippi sailing follows the Mississippi, with New Orleans and the river towns. A Danube sailing follows the Danube, with Budapest and Vienna. Extra nights in Budapest, Paris, Amsterdam, or New Orleans are for the parts of the city the ship only passes.",
   expedition:
-    "An expedition day may never reach a town. You put on the boots and the parka the ship issues, ride a Zodiac to a beach or the ice, and walk the path the guides mark. You may stand near penguins or seals and take pictures from the distance they set. If the water is calm, some ships add a kayak or a canoe for people who asked. Weather can cancel the landing and leave you on deck. Ushuaia and Longyearbyen are towns you can use before or after the voyage. The landing is not in a town.",
+    "An expedition landing may never reach a town. You put on the boots and the parka the ship issues, ride a Zodiac to a beach or the ice, and walk the path the guides mark. You may stand near penguins or seals and take pictures from the distance they set. If the water is calm, some ships add a kayak or a canoe for people who asked. Weather can cancel the landing and leave you on deck. Ushuaia and Longyearbyen are towns you can use before or after the voyage. The landing is not in a town.",
   asia:
     "Singapore and Tokyo often keep the ship in port into the evening, and some sail as late as 10 p.m. A beach stop is still only a few hours. A night before or after is a chance to explore one district, or a museum, instead of racing through three cities.",
   "south-america":
@@ -292,7 +292,7 @@ export function DestinationArticle({
         </div>
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-ink">
           {rail
-            ? "Time off the train belongs to the town, whether that is a morning, an afternoon, or an evening. You can walk until you want to sit down, and you can talk with people. You might eat where the room is already full, at a famous restaurant if that is why you stopped, or at a small local place such as a wine bar or a café with a short menu. You can visit a museum if you want to be indoors."
+            ? "When you are off the train, you are in the town. You can walk until you want to sit down, and you can talk with people. You might eat where the room is already full, at a famous restaurant if that is why you stopped, or at a small local place such as a wine bar or a café with a short menu. You can visit a museum if you want to be indoors."
             : ashoreNotes[place.slug]}
         </p>
         <article className="mt-4 rounded-xl p-5 text-foam" style={{ backgroundColor: tone }}>
@@ -316,7 +316,7 @@ export function DestinationArticle({
               <h2 className="mt-2 font-display text-4xl">{rail ? "What to expect on the route" : "What to expect in port"}</h2>
               <p className="mt-3 text-lg leading-relaxed text-ink">
                 {rail
-                  ? "Most of the day is on the train. A stop is short. The notes below say what you can see from the window, and what will not fit at the station."
+                  ? "You are on the train for most of the trip. A station stop is short. The notes below say what you can see from the window, and what will not fit at the station."
                   : ashoreLeads[place.slug]}
               </p>
               <dl className="mt-5 grid gap-4 sm:grid-cols-2">

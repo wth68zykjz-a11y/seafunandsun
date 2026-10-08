@@ -156,7 +156,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "Time in port, and time on deck",
-        text: "Most stops last about six to eight hours. In Juneau, Skagway, and Ketchikan you can walk from the pier. A glacier day may not include a landing at all. Bring a warm layer. The pools are open, and the weather does not always agree.",
+        text: "Most stops last about six to eight hours. In Juneau, Skagway, and Ketchikan you can walk from the pier. At a glacier such as Glacier Bay or Tracy Arm, the ship may not land at all. Bring a warm layer. The pools are open, and the weather does not always agree.",
       },
       {
         title: "What these ships leave out",
@@ -208,7 +208,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "The port is a city",
-        text: "These are walking days in the city. The useful day starts early, before the heat and the crowds. St. Mark’s is in Venice. Large ships dock at Ravenna or Trieste. Venice is about two hours from those piers.",
+        text: "In these cities you walk. Start early, before the heat and the crowds. St. Mark’s is in Venice. Large ships dock at Ravenna or Trieste. Venice is about two hours from those piers.",
       },
       {
         title: "What these ships leave out",
@@ -258,7 +258,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "Landings, not a port schedule",
-        text: "On an expedition ship the day’s plan is a landing or a Zodiac ride, run by the ship’s staff. Weather and wildlife can change it. Antarctica and the Galápagos are sold as that uncertainty. A printed list of ports is not a promise.",
+        text: "On an expedition ship the plan is a landing or a Zodiac ride, run by the ship’s staff. Weather and wildlife can change it. Antarctica and the Galápagos are sold as that uncertainty. A printed list of ports is not a promise.",
       },
       {
         title: "What these ships leave out",
@@ -328,7 +328,7 @@ export const linePages: LinePage[] = [
     lede: "These are the smallest ocean ships we book. They stop in smaller harbors, and an agent requests almost all of these fares.",
     size: "A yacht in this group carries about 100 to 450 passengers. Windstar’s largest ships are about 340. Four Seasons I carries about 220.",
     rows: [
-      { line: "SeaDream", ships: "About 112.", where: "Mediterranean and Caribbean cruises, on two yachts. The week is informal, and the marina is part of the day.", fare: "A week is often $5,000–$12,000 a person." },
+      { line: "SeaDream", ships: "About 112.", where: "Mediterranean and Caribbean cruises, on two yachts. The week is informal. The yacht ties up at a marina, and you can swim from the stern.", fare: "A week is often $5,000–$12,000 a person." },
       { line: "Windstar", ships: "About 150 on the smallest ships, and about 310–340 on the larger ones.", where: "Mediterranean, Caribbean, Tahiti, and other small-harbor routes.", fare: "A week is often $3,000–$7,000 a person. Less is included than on Regent. An agent requests many of these fares." },
       { line: "Four Seasons I", ships: "About 220 guests, in 95 suites. One ship, in service from 2026.", where: "Mediterranean and Caribbean cruises, in short segments as well as longer ones. Drinks are included.", fare: "A short sailing can start near $20,000 a person." },
       { line: "Ritz-Carlton Yacht Collection", ships: "Evrima about 300. Ilma and Luminara about 450.", where: "Mediterranean and Caribbean cruises, and a smaller set of other coasts. Drinks and gratuities are included.", fare: "A week is often $8,000–$20,000 a person." },

@@ -195,7 +195,7 @@ export const deskDoors = [
   },
   {
     title: "Adventure & active",
-    detail: "Trips built around time off the ship: hikes, rides, and long days in port.",
+    detail: "Trips built around time off the ship: hikes, rides, and longer stops in port.",
     href: desk.adventure,
     tag: "Active",
   },

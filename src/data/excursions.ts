@@ -37,7 +37,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "A morning or an afternoon",
         pace: "Easy walking on stone streets",
         detail:
-          "The walls, the squares, and one lunch are a full day ashore. A bus that also promises a beach leaves less time in the old city.",
+          "The walls, the squares, and one lunch can use the hours the ship is ashore. A bus that also promises a beach leaves less time in the old city.",
       },
       {
         title: "Panama City, when the ship docks",
@@ -53,11 +53,11 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-alaskan.jpg",
     photoAlt: "A small boat near a whale in a cold Alaskan fjord",
     intro:
-      "A May day and an August day can use the same ports. May still has the larger glaciers, and it is colder. August is when the salmon run and the bears come to the rivers. Most stops last four to eight hours. The ship sails the glacier. The hours ashore can go to the wildlife or the railroad. A bus to a gift shop is neither.",
+      "A May sailing and an August sailing can use the same ports. May still has the larger glaciers, and it is colder. August is when the salmon run and the bears come to the rivers. Most stops last four to eight hours. The ship sails the glacier. The hours ashore can go to the wildlife or the railroad. A bus to a gift shop is neither.",
     excursions: [
       {
         title: "Glacier water, up close",
-        where: "Tracy Arm, Endicott Arm, or a similar fjord day",
+        where: "Tracy Arm, Endicott Arm, or a similar fjord. You watch from the ship",
         length: "Half day on the water",
         pace: "Easy if you stay seated",
         detail:
@@ -77,7 +77,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Easy",
         detail:
-          "The railroad climbs out of town into the Klondike route. It is the port day that works for people who do not want a hike. Pair it with a short walk in town, not a second full tour.",
+          "The railroad climbs out of town into the Klondike route. It suits people who do not want a hike. Pair it with a short walk in town, not a second full tour.",
       },
     ],
   },
@@ -98,7 +98,7 @@ export const shores: Record<string, DestinationShore> = {
       {
         title: "A beach with an actual chair",
         where: "Cozumel, Nassau, or a private-island style stop",
-        length: "Most of the port day",
+        length: "Most of the time the ship is in port",
         pace: "Easy",
         detail:
           "Cozumel’s west beaches have pale sand, and the water there is calm. At Nassau’s Cable Beach you can order a conch fritter, chopped conch fried in a seasoned batter. CocoCay and Castaway Cay have a sheltered cove. The water is warm and calm. The grill serves the ship’s burgers, not food from a local kitchen.",
@@ -117,7 +117,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-mediterranean.jpg",
     photoAlt: "An empty morning path above a white Mediterranean harbor",
     intro:
-      "Mediterranean days are walking days, and the good light is early. Santorini, Athens, and the Amalfi coast are hard later in the day. Take the morning version. The afternoon is better on the ship, once the alleys fill.",
+      "In the Mediterranean you walk, and the good light is early. Santorini, Athens, and the Amalfi coast are harder later. Go in the morning. Once the alleys fill, the ship is the better place to be.",
     excursions: [
       {
         title: "Santorini before the boats stack",
@@ -138,7 +138,7 @@ export const shores: Record<string, DestinationShore> = {
       {
         title: "St. Peter's, or the Colosseum",
         where: "Rome, from Civitavecchia",
-        length: "Most of the port day",
+        length: "Most of the time the ship is in port",
         pace: "A lot of walking in the city",
         detail:
           "St. Peter's is in Rome. The Vatican Museums hold Michelangelo’s ceiling in the Sistine Chapel and the classical sculpture galleries. The Colosseum, the Forum, and the Palatine are in the city too. The Borghese Gallery holds Bernini’s sculptures and Caravaggio’s paintings, and it needs a timed ticket. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. The ship docks at Civitavecchia. Rome is about an hour and a half from the pier. Lunch can fit if the ship leaves later.",
@@ -149,7 +149,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "2 to 4 hours",
         pace: "Stairs in Kotor; a car and a table in Amalfi",
         detail:
-          "In Kotor you walk the streets. It is not a museum tour. In Amalfi, lunch can take the afternoon when the ship stays long enough. All-aboard decides which of those days is real.",
+          "In Kotor you walk the streets. It is not a museum tour. In Amalfi, lunch can run long when the ship stays long enough. All-aboard decides which of those plans you can finish.",
       },
     ],
   },
@@ -237,7 +237,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "3 hours",
         pace: "Easy walking",
         detail:
-          "Walk the pastel streets, see one fort, and stop for lunch. St. George’s is the quieter of the two towns. Choose this day if you do not want another beach.",
+          "Walk the pastel streets, see one fort, and stop for lunch. St. George’s is the quieter of the two towns. Choose St. George’s if you do not want another beach.",
       },
       {
         title: "Railway Trail or a cave",
@@ -253,7 +253,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-northern-europe.jpg",
     photoAlt: "A steep fjord village and a waterfall above dark water",
     intro:
-      "A northern Europe day can be a tender into a fjord village, or a walk in a Baltic city. Weather decides which tender runs. If the scenic boat is canceled, you can walk in town.",
+      "In northern Europe the ship may tender you into a fjord village, or you may walk in a Baltic city. Weather decides which tender runs. If the scenic boat is canceled, you can walk in town.",
     excursions: [
       {
         title: "A village at the end of the fjord",
@@ -309,7 +309,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "3 to 4 hours",
         pace: "Easy to moderate",
         detail:
-          "Carriage roads are gravel and gentle. The town path is shorter. A “best of Acadia” loop spends the port day in the van.",
+          "Carriage roads are gravel and gentle. The town path is shorter. A “best of Acadia” loop keeps you in the van.",
       },
     ],
   },
@@ -317,7 +317,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-river.jpg",
     photoAlt: "A river ship passing a castle and vineyards at dusk",
     intro:
-      "On most river ships the walking tour is already in the fare. The paid tour is the bike, the tasting, or the longer transfer. That list gets read before a paid day is added.",
+      "On most river ships the walking tour is already in the fare. The paid tour is the bike, the tasting, or the longer transfer. That list gets read before another tour is added.",
     excursions: [
       {
         title: "The included walk, done properly",
@@ -329,7 +329,7 @@ export const shores: Record<string, DestinationShore> = {
       },
       {
         title: "Bikes in the Wachau or along the Rhine",
-        where: "A vineyard day between the capitals",
+        where: "A vineyard between the capitals",
         length: "Half day",
         pace: "Moderate, mostly flat",
         detail:
@@ -349,7 +349,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-expedition.jpg",
     photoAlt: "A distant zodiac among sea ice in pale polar light",
     intro:
-      "An expedition day starts with the gear the ship issues: boots, a parka, and a life jacket. You ride a Zodiac to a beach or the ice, walk where the guides mark the path, and take pictures from the distance they set. A kayak or a canoe may be offered if the water is calm. Weather can cancel the landing.",
+      "On an expedition landing you start with the gear the ship issues: boots, a parka, and a life jacket. You ride a Zodiac to a beach or the ice, walk where the guides mark the path, and take pictures from the distance they set. A kayak or a canoe may be offered if the water is calm. Weather can cancel the landing.",
     excursions: [
       {
         title: "A landing, if the ice allows",
@@ -373,7 +373,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "An hour",
         pace: "Active, cold",
         detail:
-          "Some ships offer a kayak, a canoe, or a polar plunge when the water allows. You put on the suit they provide and go out for about an hour. It is optional. A landing day does not require it.",
+          "Some ships offer a kayak, a canoe, or a polar plunge when the water allows. You put on the suit they provide and go out for about an hour. It is optional. The landing does not require it.",
       },
     ],
   },
@@ -413,7 +413,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-south-america.jpg",
     photoAlt: "A quiet South American waterfront and green hills at sunrise",
     intro:
-      "A South American day can be time in a large city, or time on deck for a scenic sail such as Cape Horn. In a city, pick one neighborhood. On a scenic sail you want a window, not a bus.",
+      "In South America you may have time in a large city, or time on deck for a scenic sail such as Cape Horn. In a city, pick one neighborhood. On a scenic sail you want a window, not a bus.",
     excursions: [
       {
         title: "Rio with one view",
@@ -425,15 +425,15 @@ export const shores: Record<string, DestinationShore> = {
       },
       {
         title: "Buenos Aires after dark, or a market by day",
-        where: "San Telmo or a tango evening",
+        where: "San Telmo, or a tango show if the ship stays late",
         length: "3 to 4 hours",
         pace: "Easy walking",
         detail:
-          "A market afternoon is the simpler plan. A tango show is the evening plan, and only when all-aboard is late enough that the show ends before the gangway closes.",
+          "The simpler plan is the San Telmo market. A tango show works only when all-aboard is late enough that the show ends before the gangway closes.",
       },
       {
         title: "Cape Horn from the deck",
-        where: "The scenic day at the tip, weather permitting",
+        where: "Cape Horn, weather permitting. You watch from the ship",
         length: "The ship’s routing",
         pace: "None — you stay aboard",
         detail:
@@ -509,7 +509,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-australia-new-zealand.jpg",
     photoAlt: "Sunlight on a coral reef and a school of reef fish",
     intro:
-      "An Australia or New Zealand day can be time in a city, hours on the reef, or a fiord the ship sails through. A reef and a capital do not fit in the same day. You pick one.",
+      "In Australia or New Zealand you may have time in a city, hours on the reef, or a fiord the ship sails through. A reef and a capital do not fit in the same stop. You pick one.",
     excursions: [
       {
         title: "Sydney, from the harbor",
@@ -522,14 +522,14 @@ export const shores: Record<string, DestinationShore> = {
       {
         title: "The reef",
         where: "Cairns or Airlie Beach",
-        length: "Most of the port day",
+        length: "Most of the time the ship is in port",
         pace: "A boat ride, with time in the water if you want it",
         detail:
           "The reef has the coral and the fish. A boat from Cairns or Airlie Beach is how you get there, and the trip uses most of the port stop.",
       },
       {
         title: "Milford, from the deck",
-        where: "The scenic day in the fiords, weather permitting",
+        where: "Milford or Doubtful Sound, weather permitting. The ship sails through",
         length: "The ship’s routing",
         pace: "None — you stay aboard",
         detail:
@@ -562,7 +562,7 @@ export const portGuides: Record<string, PortGuide> = {
     outings: [
       { fits: "People who will sit on deck while the ship climbs the locks.", bring: "A hat and sun cover. The day is hot, and rain is ordinary." },
       { fits: "People who will walk the walls and stay for lunch in the old city.", bring: "Comfortable shoes. The streets are stone." },
-      { fits: "People who will use a docked day for the old quarter or the canal visitor center.", bring: "Confirm the dock before you plan the day." },
+      { fits: "People who will use the hours ashore for the old quarter or the canal visitor center.", bring: "Confirm the dock before you plan the stop." },
     ],
   },
   alaskan: {
@@ -599,10 +599,10 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-mediterranean.jpg",
     detailAlt: "Empty blue chairs on a terrace above a caldera harbor at dawn",
     facts: [
-      { label: "Time in port", text: "Often a long day, sometimes a tender. The useful hours are early, before the alleys fill." },
+      { label: "Time in port", text: "The ship is often in port for a long stretch, sometimes by tender. The useful hours are early, before the alleys fill." },
       { label: "Worth the time", text: "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site. The Ancient Agora is nearby. The National Archaeological Museum holds the Mycenaean gold and the classical bronzes. St. Peter’s is in Rome, and the Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city too. The ship docks at Civitavecchia. Rome is about an hour and a half from the pier. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. Long lunches are on the Amalfi coast." },
       { label: "Best for", text: "Travelers who want a new country each morning and will walk for it. Shoulder months beat August." },
-      { label: "Also", text: "The Acropolis, or one town, is a full morning." },
+      { label: "Also", text: "You can give the morning to the Acropolis, or to one town. You will not do both." },
     ],
     outings: [
       { fits: "People who will take the first tender up for the caldera, then come back down.", bring: "Sun protection, water, and shoes with a grip. The marble is polished by crowds." },
@@ -751,7 +751,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A round porthole framing open ocean from a wood-paneled cabin",
     facts: [
       { label: "Time in port", text: "A few overnights matter. Many stops give you only a short look from the pier. Sea days make up most of the voyage." },
-      { label: "Worth the time", text: "If the ship stays the night, pick one building and one good meal. A two-hour stop by tender is not the day for a stadium or a big museum." },
+      { label: "Worth the time", text: "If the ship stays the night, pick one building and one good meal. A two-hour stop by tender is not enough time for a stadium or a big museum." },
       { label: "Best for", text: "Travelers who like the ship, and who do not need a new city every morning." },
       { label: "Also", text: "On an overnight you can use the city into the evening. On a short tender you see the area around the landing." },
     ],

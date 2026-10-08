@@ -69,7 +69,7 @@ export const destinations: Destination[] = [
         season: "May–September",
         ship: "Resort or premium ship",
         path: "Seattle round trip",
-        ports: ["Juneau", "Skagway", "Ketchikan", "A glacier day such as Tracy Arm"],
+        ports: ["Juneau", "Skagway", "Ketchikan", "Tracy Arm, seen from the ship. There is no pier"],
       },
       {
         title: "One-way across the Gulf of Alaska",
@@ -77,7 +77,7 @@ export const destinations: Destination[] = [
         season: "June–August",
         ship: "Premium ship, often Holland America or Princess",
         path: "Vancouver or Seattle to Seward, or the reverse",
-        ports: ["Inside Passage ports", "Hubbard or Glacier Bay style day", "Seward for wildlife time ashore"],
+        ports: ["Inside Passage ports", "Hubbard Glacier or Glacier Bay, from the ship", "Seward, with time ashore for wildlife"],
       },
       {
         title: "Salmon and bears in August",
@@ -257,7 +257,7 @@ export const destinations: Destination[] = [
         items: [
           "A canal boat and a cheese hall in Bruges",
           "The cliffs of Étretat with a Normandy lunch",
-          "The Alcázar gardens and a flamenco evening in Seville",
+          "The Alcázar gardens in Seville, and flamenco when the ship stays late enough",
           "Pompeii — the city that froze in place",
           "Tuscany — hills, vineyards, and a village lunch",
           "The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. The ship docks at Le Havre. Paris is about two hours from the pier. Shangri-La Paris, looking toward the tower, is a stay in the city before or after the cruise.",
@@ -323,10 +323,10 @@ export const destinations: Destination[] = [
         heading: "In port",
         items: [
           "Snorkel with sea turtles, from the ship or by kayak",
-          "A day trip up the Road to Hana",
+          "The Road to Hana, from Kahului",
           "A plantation lunch on the island",
           "A luau, on the evenings the ship stays in port long enough: kalua pig, pork cooked in an underground oven, and poi, pounded taro",
-          "Pearl Harbor by morning, a beach by afternoon",
+          "Pearl Harbor in the morning, and a beach after that",
         ],
       },
     ],
@@ -563,13 +563,13 @@ export const destinations: Destination[] = [
         ],
       },
       {
-        heading: "What a day looks like",
+        heading: "While the ship is in port",
         items: [
-          "A full port day with a guided walk included",
+          "A guided walk is included while the ship is tied up",
           "Cycling or a bike tour on quiet roads",
           "A wine or olive-oil stop the ship arranges",
-          "Evenings on deck, with the river as the view",
-          "Excursions that fit in one day, not a whole weekend",
+          "Time on deck in the evening, with the river as the view",
+          "Excursions that fit the hours the ship is there, not a whole weekend",
         ],
       },
     ],
@@ -598,7 +598,7 @@ export const destinations: Destination[] = [
         season: "Summer, or harvest on the Douro",
         ship: "River line that owns that water, not an ocean ship renamed",
         path: "Paris to Normandy, or Porto round trip",
-        ports: ["Paris or Porto", "A vineyard or cider day", "A small-town walk included"],
+        ports: ["Paris or Porto", "A vineyard or a cider house the ship includes", "A walk in a smaller town, included"],
       },
       {
         title: "American rivers",
@@ -617,10 +617,10 @@ export const destinations: Destination[] = [
     card: "Remote coasts",
     image: "/media/expedition.jpg",
     alt: "Sea ice under pale polar light",
-    lede: "The ships are small. You go ashore by Zodiac with a guide. The ship decides which landings are possible, and weather can change the day.",
+    lede: "The ships are small. You go ashore by Zodiac with a guide. The ship decides which landings are possible, and weather can cancel a landing.",
     paragraphs: [
       "Lindblad, Ponant, and Hapag-Lloyd sail Antarctica, the Arctic, and the Galápagos, along with the expedition ships of Viking and Silversea. Patagonia uses those same small ships. UnCruise sails Alaska and the Pacific Northwest. It does not sail Antarctica or the Galápagos.",
-      "Tell us the region and the months. A smaller ship spends more of the day off the ship. We will set out the options that match.",
+      "Tell us the region and the months. A smaller ship spends more of the hours ashore. We will set out the options that match.",
     ],
     lists: [
       {
@@ -635,7 +635,7 @@ export const destinations: Destination[] = [
         ],
       },
       {
-        heading: "What a day is like",
+        heading: "What a landing is like",
         items: [
           "Zodiac landings where the guide picks the best beach",
           "Kayaking, snorkeling, and the occasional cold-water swim",
@@ -655,7 +655,7 @@ export const destinations: Destination[] = [
         season: "November–March",
         ship: "Expedition ship, typically under 200 guests",
         path: "Ushuaia round trip",
-        ports: ["Drake crossing or a fly-the-Drake option", "Peninsula landings", "A plan B written into the day"],
+        ports: ["Drake crossing or a fly-the-Drake option", "Peninsula landings", "A backup plan if the landing is canceled"],
       },
       {
         title: "Galápagos",
@@ -769,7 +769,7 @@ export const destinations: Destination[] = [
         heading: "In port",
         items: [
           "Sugarloaf and a morning at the botanical gardens in Rio",
-          "A samba lunch and a beach afternoon",
+          "A samba show with lunch, and time at a beach if the ship stays",
           "Glacier views from the water, Patagonia",
           "The markets and the pastel hills of Valparaíso",
         ],
@@ -792,7 +792,7 @@ export const destinations: Destination[] = [
         season: "October–March",
         ship: "Expedition line, or Holland America when the routing is theirs",
         path: "Ushuaia or a Chilean fjord embarkation",
-        ports: ["A glacier day", "Cape Horn, when the weather allows", "Punta Arenas or another far-south port"],
+        ports: ["A glacier the ship sails past", "Cape Horn, when the weather allows", "Punta Arenas or another far-south port"],
       },
       {
         title: "Andean coast",
@@ -848,7 +848,7 @@ export const destinations: Destination[] = [
         season: "Book 12–18 months ahead",
         ship: "Cunard, Regent, Silversea, or Holland America",
         path: "One ship, one crew, the long way around",
-        ports: ["A published world-cruise port list", "The stops that deserve a day ashore"],
+        ports: ["A published world-cruise port list", "The stops long enough to leave the ship"],
       },
       {
         title: "Half the map",
@@ -978,7 +978,7 @@ export const destinations: Destination[] = [
       {
         heading: "Worth going ashore for",
         items: [
-          "Sydney — you can walk the harbor. A bus loop of the suburbs spends the day on the bus",
+          "Sydney — you can walk the harbor. A bus loop of the suburbs keeps you on the bus",
           "The reef from Cairns or Airlie Beach, if the ship gives you the hours",
           "Milford Sound from the deck, when the weather allows the ship in",
           "Wellington, or a South Island wine town, walked rather than driven past",

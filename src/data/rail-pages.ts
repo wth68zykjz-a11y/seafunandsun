@@ -142,7 +142,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/southwest-chief-albuquerque.jpg",
         alt: "The Southwest Chief at the platform in Albuquerque",
-        caption: "The stop in Albuquerque is about forty minutes on a recent timetable. That is long enough to step onto the platform. Old Town, with the plaza and San Felipe de Neri, is about two miles from the station. Walking the plaza takes the afternoon, so you leave the train and stay the night.",
+        caption: "The stop in Albuquerque is about forty minutes on a recent timetable. That is long enough to step onto the platform. Old Town, with the plaza and San Felipe de Neri, is about two miles from the station. Walking the plaza takes longer than that pause, so you leave the train and stay the night.",
       },
     ],
     sections: [
@@ -239,7 +239,7 @@ export const railPages: RailPage[] = [
       {
         heading: "The rim",
         paragraphs: [
-          "The South Rim is the southern edge of the Grand Canyon, at Grand Canyon Village. The depot is a short walk from El Tovar and from the Rim Trail, a paved path along that edge. You walk the path and look down into the canyon. A round trip the same day leaves a few hours for that. Sunset from the edge, or a longer walk west toward Hermits Rest, takes the evening, so you stay the night in the village and take a later train back to Williams.",
+          "The South Rim is the southern edge of the Grand Canyon, at Grand Canyon Village. The depot is a short walk from El Tovar and from the Rim Trail, a paved path along that edge. You walk the path and look down into the canyon. A round trip the same day leaves a few hours for that. Sunset from the edge, or a longer walk west toward Hermits Rest, does not fit the afternoon return, so you stay the night in the village and take a later train back to Williams.",
           "This train does not replace the Southwest Chief. The Chief stops in Flagstaff. Williams is a separate ride. We check the connection on your date before we pair them.",
         ],
       },
@@ -286,7 +286,7 @@ export const railPages: RailPage[] = [
         heading: "Vermonter and Downeaster",
         paragraphs: [
           "The Vermonter runs from Washington to St. Albans. South of Springfield it is a city railroad. North of there it follows the Connecticut River through Brattleboro and White River Junction. You see the valley from the window. Essex Junction is the stop for Burlington, and Burlington itself is a bus ride. A night in Montpelier or Burlington is a hotel.",
-          "The Downeaster runs from Boston’s North Station to Brunswick several times a day, in about three and a half hours. It stops at Old Orchard Beach in season, at Portland, and at Freeport. The Portland station is across the Fore River from the Old Port, about a fifteen-minute ride. Dinner in the Old Port, or time on the sand at Old Orchard, takes longer than the station pause, so you get off and stay the night. The ride itself is not that evening.",
+          "The Downeaster runs from Boston’s North Station to Brunswick several times a day, in about three and a half hours. It stops at Old Orchard Beach in season, at Portland, and at Freeport. The Portland station is across the Fore River from the Old Port, about a fifteen-minute ride. Dinner in the Old Port, or time on the sand at Old Orchard, takes longer than the station pause, so you get off and stay the night.",
         ],
       },
       {
