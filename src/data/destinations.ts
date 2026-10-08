@@ -630,7 +630,7 @@ export const destinations: Destination[] = [
     lede: "The ships are small. You go ashore by Zodiac with a guide. The ship decides which landings are possible, and weather can cancel a landing.",
     paragraphs: [
       "Lindblad, Ponant, and Hapag-Lloyd sail Antarctica, the Arctic, and the Galápagos, along with the expedition ships of Viking and Silversea. Patagonia uses those same small ships. UnCruise sails Alaska and the Pacific Northwest. It does not sail Antarctica or the Galápagos.",
-      "Tell us the region and the months. A smaller ship spends more of the hours ashore. We will set out the options that match those months.",
+      "Tell us the region and the months. On a smaller ship you spend more time off the ship. We will set out the options that match those months.",
     ],
     lists: [
       {
