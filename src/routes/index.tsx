@@ -82,7 +82,7 @@ const doors: Door[] = [
   {
     kicker: "Beach",
     title: "Resorts",
-    body: "The room opens onto the water, and the meals are already in the rate. Sandals, Beaches, Hyatt, Secrets, and Club Med.",
+    body: "The room opens onto the water. Sandals, Beaches, Hyatt, Secrets, and Club Med.",
     image: "/media/card-resorts.webp",
     alt: "An overwater villa with its own pool on a turquoise lagoon",
     cta: "See resorts",
