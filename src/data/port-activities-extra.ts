@@ -363,7 +363,7 @@ export const extraPortPages = [
       {
         name: "Days at sea",
         dock: "There is no pier.",
-        text: "You are on the ship. The day is for the deck, a meal, or a lecture. There is nothing ashore to miss.",
+        text: "You are on the ship. Stay on deck, have a meal, or go to a lecture. There is nothing ashore to miss.",
       },
       {
         name: "Southampton",

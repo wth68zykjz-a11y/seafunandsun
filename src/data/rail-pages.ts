@@ -377,7 +377,7 @@ export const railPages: RailPage[] = [
         heading: "Venice Simplon-Orient-Express",
         paragraphs: [
           "This is Belmond. Many dates run from Paris toward Venice, and some continue toward Istanbul or Vienna. You sleep on the train. Dinner and breakfast are included. A longer route can include lunch.",
-          "You can book a historic twin, a suite, or a grand suite. The cabin is where you sleep. Dinner is in the dining car, and the evening is formal. An agent requests the fare, because these dates are not posted like an Amtrak roomette.",
+          "You can book a historic twin, a suite, or a grand suite. The cabin is where you sleep. Dinner is in the dining car, and the dress for dinner is formal. An agent requests the fare, because these dates are not posted like an Amtrak roomette.",
         ],
       },
       {

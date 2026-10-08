@@ -517,7 +517,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "The season runs from May through October. Cruises visit Cape Cod, the beach towns, Bar Harbor, Halifax, and Quebec. October is the month when the maples are in color, and there are fewer people on deck.",
-    planning: "A fall sailing is for the maples in Bar Harbor, Halifax, and Quebec. A summer sailing is for Cape Cod and the beach towns. Say whether you can leave from Boston or New York.",
+    planning: "Cruises visit Cape Cod, the beach towns, Bar Harbor, Halifax, and Quebec. October is the month when the maples are in color. Say whether you can leave from Boston or New York.",
     itineraries: [
       {
         title: "Fall foliage",
@@ -925,7 +925,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "Summer is the classic season in North America: open parks, green passes, and long light. Fall adds color in the Rockies and quieter stations. European sleeper trains run mostly from spring through fall, and the famous dates go early. We will match the season to the route.",
+    when: "Summer is the classic season in North America, with open parks, green passes, and long light. In fall the Rockies are in color, and the stations are quieter. European sleeper trains run mostly from spring through fall, and the famous dates go early. We will match the season to the route.",
     planning: "Name the route: the Empire Builder, the Canadian, or a European sleeper. The nights in between are part of the booking.",
     itineraries: [
       {
