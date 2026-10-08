@@ -260,7 +260,7 @@ function DealsOfTheWeek({ offers }: { offers: SupplierOffer[] }) {
                 <Link
                   to="/promotions/$slug"
                   params={{ slug }}
-                  className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
+                  className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-4 text-base font-medium text-foam hover:bg-coral-deep"
                 >
                   See the current offer
                 </Link>
@@ -268,7 +268,7 @@ function DealsOfTheWeek({ offers }: { offers: SupplierOffer[] }) {
                 <Link
                   to="/quote"
                   search={{ place: deal.offer.line ?? deal.guide?.line ?? "Cruise", note: deal.offer.detail }}
-                  className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
+                  className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-4 text-base font-medium text-foam hover:bg-coral-deep"
                 >
                   Request this offer
                 </Link>

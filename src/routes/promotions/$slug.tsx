@@ -37,6 +37,30 @@ function usefulDays(days: PromoDay[]) {
   });
 }
 
+function Flyer({ src, onOpen }: { src: string; onOpen: (src: string) => void }) {
+  const [wide, setWide] = useState(false);
+  return (
+    <button
+      type="button"
+      onClick={() => onOpen(src)}
+      className={`cursor-zoom-in rounded-xl border border-line bg-foam text-left shadow-card ${wide ? "overflow-x-auto" : "flex items-center justify-center p-3"}`}
+    >
+      <img
+        src={src}
+        alt=""
+        onLoad={(event) => {
+          const img = event.currentTarget;
+          if (img.naturalHeight > 0 && img.naturalWidth / img.naturalHeight > 2.2) setWide(true);
+        }}
+        ref={(img) => {
+          if (img?.complete && img.naturalHeight > 0 && img.naturalWidth / img.naturalHeight > 2.2) setWide(true);
+        }}
+        className={wide ? "h-44 w-auto max-w-none sm:h-56" : "h-auto max-h-[32rem] w-auto max-w-full object-contain"}
+      />
+    </button>
+  );
+}
+
 function usefulNote(text: string) {
   const note = text.replace(/\s+/g, " ").trim();
   if (!note || note.length > 240) return "";
@@ -99,14 +123,7 @@ function PromoPageView() {
             <p className="mb-3 text-base leading-relaxed text-ink">Select a flyer to enlarge it.</p>
             <div className={`grid gap-4 ${promo.images.length > 1 ? "md:grid-cols-2" : "max-w-3xl"}`}>
               {promo.images.map((src) => (
-                <button
-                  key={src}
-                  type="button"
-                  onClick={() => setOpenImage(src)}
-                  className="flex cursor-zoom-in items-center justify-center overflow-hidden rounded-xl border border-line bg-foam p-3 text-left shadow-card"
-                >
-                  <img src={src} alt="" className="h-auto max-h-[32rem] w-auto max-w-full object-contain" />
-                </button>
+                <Flyer key={src} src={src} onOpen={setOpenImage} />
               ))}
             </div>
           </div>
@@ -164,14 +181,14 @@ function PromoPageView() {
           <Link
             to="/quote"
             search={{ place: "Not sure yet", note: `Please book this promotion: ${promo.title}` }}
-            className="inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep"
+            className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-5 text-base font-medium text-foam hover:bg-coral-deep sm:w-auto"
           >
             Ask us to book this
           </Link>
           <Link
             to="/sailings"
             hash="promotions"
-            className="inline-flex min-h-11 items-center justify-center rounded-md bg-sea px-5 text-sm font-medium text-foam"
+            className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-sea px-5 text-base font-medium text-foam sm:w-auto"
           >
             All promotions
           </Link>
@@ -183,16 +200,16 @@ function PromoPageView() {
           aria-modal="true"
           aria-label="Enlarged flyer"
           onClick={() => setOpenImage(null)}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/80 p-4"
+          className="fixed inset-0 z-50 overflow-auto bg-ink/80 p-4"
         >
           <button
             type="button"
             onClick={() => setOpenImage(null)}
-            className="absolute top-4 right-4 inline-flex min-h-11 items-center rounded-md bg-foam px-4 text-sm font-medium text-ink"
+            className="sticky top-0 z-10 ml-auto inline-flex min-h-11 items-center rounded-md bg-foam px-4 text-base font-medium text-ink"
           >
             Close
           </button>
-          <img src={openImage} alt="" onClick={(event) => event.stopPropagation()} className="max-h-[92vh] max-w-[92vw] object-contain" />
+          <img src={openImage} alt="" onClick={(event) => event.stopPropagation()} className="mx-auto mt-3 block h-auto w-auto max-w-none" />
         </div>
       ) : null}
     </Shell>
