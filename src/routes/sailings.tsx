@@ -213,7 +213,7 @@ export const Route = createFileRoute("/sailings")({
   component: SailingsPage,
 });
 
-function DealsOfTheWeek({ offers, checked, live }: { offers: SupplierOffer[]; checked: string; live: boolean }) {
+function DealsOfTheWeek({ offers }: { offers: SupplierOffer[] }) {
   const cruise = offers.filter((offer) => offer.group !== "Land and Resorts");
   const deals = dealsFromFeed(cruise);
   const shown = new Set(deals.map((deal) => deal.offer.href));
@@ -223,12 +223,6 @@ function DealsOfTheWeek({ offers, checked, live }: { offers: SupplierOffer[]; ch
   return (
     <div>
       <h2 className="font-display text-3xl text-ink">Promotions</h2>
-      <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">
-        The first seven are cruise offers checked today. Further cruise offers follow, then the current resort and all-inclusive offers. Last check: {checked} Eastern.
-      </p>
-      {!live ? (
-        <p className="mt-2 max-w-2xl text-base text-ink">The offer list did not refresh just now, so these are the promotions saved on this site.</p>
-      ) : null}
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -242,8 +236,7 @@ function DealsOfTheWeek({ offers, checked, live }: { offers: SupplierOffer[]; ch
           })),
         }}
       />
-      <h3 className="mt-8 border-b border-line pb-2 font-display text-2xl text-ink">Checked today</h3>
-      <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {deals.map((deal) => {
           const slug = offerSlug(deal.offer.href);
           const heading = offerHeading(deal.offer, deal.guide);
@@ -337,14 +330,6 @@ function DealsOfTheWeek({ offers, checked, live }: { offers: SupplierOffer[]; ch
 
 function SailingsPage() {
   const feed = Route.useLoaderData();
-  const updated = new Date(feed.updatedAt).toLocaleString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-    hour: "numeric",
-    minute: "2-digit",
-    timeZone: "America/New_York",
-  });
   return (
     <Shell>
       <PageIntro
@@ -361,7 +346,7 @@ function SailingsPage() {
         <img src="/media/page-sailings.jpg" alt="The bow of a white ship in calm water at golden hour" loading="lazy" decoding="async" className="aspect-photo max-h-72 w-full rounded-xl object-cover" />
       </div>
       <section id="promotions" className="mx-auto mt-10 max-w-6xl scroll-mt-24 px-4 pb-20">
-        <DealsOfTheWeek offers={feed.offers.map(labelExplora)} checked={updated} live={feed.live} />
+        <DealsOfTheWeek offers={feed.offers.map(labelExplora)} />
         <p className="mt-8 max-w-3xl text-sm leading-6 text-mute">{licenseLine}</p>
       </section>
     </Shell>
