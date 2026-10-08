@@ -191,7 +191,7 @@ export const railPages: RailPage[] = [
         heading: "The train",
         paragraphs: [
           "The Coast Starlight runs between Seattle and Los Angeles in about thirty-five hours. A roomette has a bed and a door. A coach seat does not.",
-          "In Oregon and northern California you can see the Cascades, and Mount Shasta when the weather is clear. The mountain is not a station. Between San Luis Obispo and Santa Barbara the train runs along the Pacific. You see that shore from the sightseer lounge.",
+          "In Oregon and northern California you can see the Cascades, and Mount Shasta when the weather is clear. The train does not stop at the mountain. Between San Luis Obispo and Santa Barbara the train runs along the Pacific. You see that shore from the sightseer lounge.",
         ],
       },
       {

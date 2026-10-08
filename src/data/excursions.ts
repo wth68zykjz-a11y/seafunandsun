@@ -85,7 +85,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-caribbean.jpg",
     photoAlt: "Clear water over a pale reef beside a quiet Caribbean beach",
     intro:
-      "Caribbean stops are short, and the beach is close. One plan is enough: a reef, a shaded beach, or a town. A zip line and a catamaran on the same day only works if the ship stays overnight.",
+      "Caribbean stops are short. From many piers you can walk to a beach. One plan is enough: a reef, a shaded beach, or a town. A zip line and a catamaran on the same day only works if the ship stays overnight.",
     excursions: [
       {
         title: "The reef, not the pool deck",
@@ -149,7 +149,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "2 to 4 hours",
         pace: "Stairs in Kotor; a car and a table in Amalfi",
         detail:
-          "In Kotor you walk the streets. It is not a museum tour. In Amalfi, lunch can run long when the ship stays long enough. All-aboard decides which of those plans you can finish.",
+          "In Kotor you walk the old streets and the walls. In Amalfi, lunch can run long if the ship stays late enough. If the ship leaves in the afternoon, you finish one of those, not both.",
       },
     ],
   },
@@ -584,7 +584,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-caribbean.jpg",
     detailAlt: "A snorkel mask and fins on limestone beside clear reef water",
     facts: [
-      { label: "Time in port", text: "The ship is usually in port from morning to late afternoon. On a private-island stop, the beach belongs to the ship. It is not a town." },
+      { label: "Time in port", text: "The ship is usually in port from morning to late afternoon. On a private-island stop you use the beach at the pier." },
       { label: "Worth the time", text: "Stop in Old San Juan and walk up to El Morro and the cathedral. In Martinique, stop at a bakery instead of a jewelry shop." },
       { label: "Best for", text: "A first cruise, a family, or anyone who wants short flights from the East Coast and a port every morning." },
       { label: "Also", text: "A plan for the beach and a plan for the town are different. You pick one when the stop is short." },

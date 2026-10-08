@@ -172,7 +172,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Florence",
         dock: "The ship docks at Livorno. Florence is about an hour and a half from that pier.",
-        text: "The Duomo and the Baptistery are in Florence. The Uffizi holds Italian Renaissance painting, including Botticelli’s Birth of Venus. Pisa is a different city, about 30 minutes from the ship, and the Leaning Tower is there. Belmond Villa San Michele, in Fiesole above Florence, is a stay before or after the cruise.",
+        text: "The Duomo and the Baptistery are in Florence. The Uffizi holds Italian Renaissance painting, including Botticelli’s Birth of Venus. The Leaning Tower is in Pisa. The ride from the ship takes about 30 minutes. Belmond Villa San Michele, in Fiesole above Florence, is a stay before or after the cruise.",
       },
       {
         name: "Venice",

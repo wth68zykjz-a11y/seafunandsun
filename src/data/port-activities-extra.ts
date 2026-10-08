@@ -67,7 +67,7 @@ export const extraPortPages = [
       {
         name: "Hilo",
         dock: "The ship docks downtown.",
-        text: "Rainbow Falls is a short ride from the pier. Hawaii Volcanoes National Park is south. The ride takes about 45 minutes. You walk the rim overlooks. You do not walk into the crater.",
+        text: "A short ride from the pier reaches Rainbow Falls. Hawaii Volcanoes National Park is south. The ride there takes about 45 minutes. You walk the rim overlooks. You do not walk into the crater.",
       },
       {
         name: "Kona",
@@ -88,7 +88,7 @@ export const extraPortPages = [
       {
         name: "Royal Naval Dockyard",
         dock: "Ships dock at King's Wharf.",
-        text: "The fort, the shops, and a small beach are on the property. You can walk them from the ship. A taxi, a bus, or the ferry is how you reach the rest of the island.",
+        text: "The fort, the shops, and a small beach are on the property. You can walk to them from the ship. A taxi, a bus, or the ferry reaches the rest of the island.",
       },
       {
         name: "Horseshoe Bay",
@@ -119,7 +119,7 @@ export const extraPortPages = [
       {
         name: "Bergen",
         dock: "Ships dock by the harbor.",
-        text: "Bryggen, the old wooden wharf, is a walk from the ship. The fish market serves a shrimp sandwich: cold peeled shrimp on buttered bread, with mayonnaise and lemon.",
+        text: "You can walk from the ship to Bryggen, the old wooden wharf. The fish market serves a shrimp sandwich: cold peeled shrimp on buttered bread, with mayonnaise and lemon.",
       },
       {
         name: "Geiranger",
@@ -165,7 +165,7 @@ export const extraPortPages = [
       {
         name: "Boston",
         dock: "Most ships use the Black Falcon terminal, in the Seaport.",
-        text: "The Freedom Trail starts at Boston Common. A ride from Black Falcon takes about 15 minutes, and parts of the waterfront are a walk. A lobster roll is lobster meat in a split bun, with butter or mayonnaise.",
+        text: "The Freedom Trail starts at Boston Common. A ride from Black Falcon takes about 15 minutes, and you can walk parts of the waterfront. A lobster roll is lobster meat in a split bun, with butter or mayonnaise.",
       },
       {
         name: "Bar Harbor",
@@ -175,7 +175,7 @@ export const extraPortPages = [
       {
         name: "Halifax",
         dock: "The ship docks on the downtown waterfront.",
-        text: "The boardwalk and the Maritime Museum are a walk from the pier. Peggy's Cove is a fishing village on granite. The ride from the pier takes about 45 minutes.",
+        text: "You can walk from the pier to the boardwalk and the Maritime Museum. Peggy's Cove is a fishing village on granite. The ride from the pier takes about 45 minutes.",
       },
       {
         name: "Quebec City",
@@ -185,7 +185,7 @@ export const extraPortPages = [
       {
         name: "Charlottetown",
         dock: "The ship docks near the town.",
-        text: "Province House and Victoria Row are a walk from the pier. The town is small. The red cliffs of Prince Edward Island are outside it.",
+        text: "You can walk from the pier to Province House and Victoria Row. The town is small. The red cliffs of Prince Edward Island are outside the town.",
       },
     ],
   },
@@ -355,7 +355,7 @@ export const extraPortPages = [
       {
         name: "Sydney",
         dock: "Many ships use the Overseas Passenger Terminal at Circular Quay.",
-        text: "From that pier you can walk to the Opera House and The Rocks. Bondi is a beach east of the city. The ride takes about 30 minutes. A long call, or a night before the ship sails on, is how you see more than the quay.",
+        text: "From that pier you can walk to the Opera House and The Rocks. Bondi is a beach east of the city. The ride takes about 30 minutes. If the ship stays longer, or you add a night before it sails, you can see more than the quay.",
       },
       {
         name: "Singapore",

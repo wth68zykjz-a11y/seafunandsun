@@ -244,10 +244,10 @@ export const destinations: Destination[] = [
         heading: "Classic ports",
         items: [
           "Amsterdam, Bruges & the canals",
-          "Paris, from Le Havre or Rouen — an ocean ship does not sail up the Seine",
+          "Paris, from the docks at Le Havre or Rouen",
           "London & the Thames",
           "Dubrovnik, Split & the Dalmatian coast",
-          "Venice, from Ravenna or Trieste — an ocean ship does not enter the lagoon",
+          "Venice, from the docks at Ravenna or Trieste",
           "Barcelona, Marseille & the French Riviera",
           "Lisbon, Porto & the Atlantic coast",
         ],
