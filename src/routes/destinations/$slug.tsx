@@ -4,7 +4,6 @@ import { Shell } from "@/components/site-chrome";
 import { destinationBySlug, destinationTone, sampleNote } from "@/data/destinations";
 import { railPages } from "@/data/rail-pages";
 import { shoreNote, shores, portGuides } from "@/data/excursions";
-import { sailingSearchHref } from "@/data/links";
 import { breadcrumbLd, clip, JsonLd, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/destinations/$slug")({
@@ -159,18 +158,7 @@ export function DestinationArticle({
             >
               Request a quote
             </Link>
-            <a
-              href={sailingSearchHref(place.slug)}
-              className="inline-flex min-h-11 items-center justify-center rounded-md bg-gold px-4 text-sm font-medium text-ink hover:bg-gold-deep"
-            >
-              {rail ? "See land trips" : "Search sailings"}
-            </a>
           </div>
-          {rail ? null : (
-            <p className="mt-4 max-w-xl text-sm leading-relaxed text-foam/85">
-              Search sailings to book a posted fare. Request a quote to have that fare checked, to add flights, a hotel, or a shore excursion, or if an agent has to obtain the price.
-            </p>
-          )}
           {rail ? null : (
             <p className="mt-4 text-sm text-foam/80">
               <Link to="/lines" className="font-medium text-foam underline-offset-2 hover:underline">

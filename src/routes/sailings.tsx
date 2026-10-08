@@ -1,11 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { CruiseSearch } from "@/components/cruise-search";
 import { PageIntro, Shell } from "@/components/site-chrome";
 import { licenseLine } from "@/data/links";
 import { getLiveOffers, isExploraOffer, type SupplierOffer } from "@/lib/offers";
 import { JsonLd, pageHead } from "@/lib/seo";
-
-type SailingsSearch = { destinations?: string; destinationtype?: string };
 
 const offerGroups = ["Luxury", "Ocean"] as const;
 const resortOffer = /resort|all-inclusive|all inclusive|palladium|waldorf|conrad|sandals|hyatt|club med|secrets|excellence|palace|ziva|zilara|beaches|dreams/i;
@@ -205,22 +202,11 @@ function OfferCard({ offer }: { offer: SupplierOffer }) {
 
 export const Route = createFileRoute("/sailings")({
   loader: () => getLiveOffers(),
-  validateSearch: (search: Record<string, unknown>): SailingsSearch => {
-    const text = (value: unknown) => {
-      if (typeof value === "string" && value) return value;
-      if (typeof value === "number" && Number.isFinite(value)) return String(value);
-      return undefined;
-    };
-    return {
-      destinations: text(search.destinations),
-      destinationtype: text(search.destinationtype),
-    };
-  },
   head: () =>
     pageHead({
-      title: "Daily cruise promotions",
+      title: "Current promotions",
       description:
-        "Seven cruise promotions from the Sea Fun & Sun booking system, checked once a day. The card names the line and a port that line usually uses.",
+        "Current cruise and resort promotions from Sea Fun & Sun. Request a quote and we will confirm the fare before anything is booked.",
       path: "/sailings",
       image: "/media/page-sailings.jpg",
     }),
@@ -241,7 +227,7 @@ function DealsOfTheWeek({ offers, checked, live }: { offers: SupplierOffer[]; ch
         The first seven are cruise offers checked today. Further cruise offers follow, then the current resort and all-inclusive offers. Last check: {checked} Eastern.
       </p>
       {!live ? (
-        <p className="mt-2 max-w-2xl text-base text-ink">The booking system did not respond just now, so these are the promotions saved on this site.</p>
+        <p className="mt-2 max-w-2xl text-base text-ink">The offer list did not refresh just now, so these are the promotions saved on this site.</p>
       ) : null}
       <JsonLd
         data={{
@@ -350,7 +336,6 @@ function DealsOfTheWeek({ offers, checked, live }: { offers: SupplierOffer[]; ch
 }
 
 function SailingsPage() {
-  const { destinations: destinationId, destinationtype } = Route.useSearch();
   const feed = Route.useLoaderData();
   const updated = new Date(feed.updatedAt).toLocaleString("en-US", {
     month: "long",
@@ -363,30 +348,14 @@ function SailingsPage() {
   return (
     <Shell>
       <PageIntro
-        kicker="Sailings"
-        title="Search current sailings."
-        lede="Choose a destination, a month, and a length. Search opens the booking system, where you pick the sailing and the cabin. Payment goes to the cruise line."
+        kicker="Promotions"
+        title="Current offers, booked with a quote."
+        lede="Tell us which offer you want, or describe the trip. We confirm the fare and the rules, then you approve it before anything is booked."
       />
       <div className="mx-auto max-w-6xl px-4">
-        <CruiseSearch destinationId={destinationId} destinationType={destinationtype} />
-        <div className="mt-4 rounded-xl border border-line bg-foam p-5">
-          <h2 className="font-display text-2xl text-ink">Need more than the cruise?</h2>
-          <p className="mt-2 max-w-3xl text-base leading-relaxed text-ink">
-            This search shows posted fares. Request a quote if you want that fare checked for a match, a lower price, or an added benefit, or if you want to add flights, a hotel, or a shore excursion. Some small ships and yachts have no public fare. An agent requests that price and presents it. Resorts, ski weeks, and train trips work the same way.
-          </p>
-          <Link to="/quote" className="mt-4 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
-            Request a quote
-          </Link>
-          <p className="mt-4 text-sm text-mute">
-            <Link to="/lines" className="font-medium text-tide">
-              Compare cruise lines
-            </Link>
-            {" · "}
-            <Link to="/ports" className="font-medium text-tide">
-              Departure ports
-            </Link>
-          </p>
-        </div>
+        <Link to="/quote" className="inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
+          Request a quote
+        </Link>
       </div>
       <div className="mx-auto mt-8 max-w-6xl px-4">
         <img src="/media/page-sailings.jpg" alt="The bow of a white ship in calm water at golden hour" loading="lazy" decoding="async" className="aspect-photo max-h-72 w-full rounded-xl object-cover" />

@@ -25,7 +25,7 @@ export const desk = {
 } as const;
 
 export const agentQuoteNote =
-  "Some cruise lines, and most yacht sailings, are not on this search. If the line you want is missing, send the plans and we will price them.";
+  "Some cruise lines, and most yacht sailings, are not posted as a public fare. Send the plans and we will price them.";
 
 export const liveOffers = [
   {

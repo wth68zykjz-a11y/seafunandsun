@@ -243,7 +243,7 @@ export function Footer() {
                     </Link>
                   </li>
                 ))}
-                <li><Link to="/sailings" className="hover:text-foam">Sailings & offers</Link></li>
+                <li><Link to="/sailings" hash="promotions" className="hover:text-foam">Promotions</Link></li>
                 <li><Link to="/ports" className="hover:text-foam">Departure ports</Link></li>
                 <li><Link to="/lines" className="hover:text-foam">Compare cruise lines</Link></li>
                 <li><Link to="/itineraries" className="hover:text-foam">Sample itineraries</Link></li>

@@ -193,7 +193,7 @@ function ResortsPage() {
         </article>
 
         <p className="mt-6 max-w-3xl text-sm text-mute">
-          A posted nightly rate is not always the rate we can book. An agent requests preferred rates, wedding blocks, and most villa stays. Send the dates and who is traveling. You pay the resort through our booking system. We do not hold the payment.
+          A posted nightly rate is not always the rate we can book. An agent requests preferred rates, wedding blocks, and most villa stays. Send the dates and who is traveling. You pay the resort. We do not hold the payment.
         </p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-3">

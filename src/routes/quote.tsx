@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { QuoteForm } from "@/components/quote-form";
 import { PageIntro, Shell } from "@/components/site-chrome";
 import { agentQuoteNote, phone, phoneHref } from "@/data/links";
@@ -27,20 +27,13 @@ function QuotePage() {
       <PageIntro
         kicker="A quote"
         title="Tell us where you want to go."
-        lede="Request a quote for flights, a hotel, or a shore excursion, or to have a posted cruise fare checked. Some small ships and yachts have no public fare. An agent requests that price and presents it to you. Resorts, ski weeks, and train trips work the same way. We reply the same day in most cases. There is no separate agent fee."
+        lede="Tell us the place, the dates, and who is traveling. We send the sailing or the hotel, the cabin or the room, and the price. You approve it before anything is booked. Some small ships and yachts have no public fare. An agent requests that price and presents it to you. Resorts, ski weeks, and train trips work the same way. We reply the same day in most cases. There is no separate agent fee."
       />
-      <p className="mx-auto max-w-6xl px-4 pb-8 text-base leading-relaxed text-ink">
-        A posted cruise fare can still be checked, so we can see whether it can be matched, beaten, or improved. If you prefer to book it yourself,{" "}
-        <Link to="/sailings" className="font-medium text-tide">
-          search sailings
-        </Link>{" "}
-        and choose the cabin there.
-      </p>
       <ol className="mx-auto grid max-w-6xl gap-4 px-4 pb-10 sm:grid-cols-2">
         {[
           ["1. Tell us the trip", "Use the form, call, or text. Name the place, the dates, and who is traveling."],
           ["2. We price the pieces separately", "The cruise or hotel, the flight, and any nights before or after are priced on their own, so you can see which price changed. A past-passenger number may improve the cruise price. A frequent-flyer number may improve the airfare. Military discounts are often available on both. Tell us if one of these applies."],
-          ["3. You choose", "On a published sailing, you pick the date and the cabin in the booking system. Yacht sailings, many luxury hotels, and European sleeper trains have no public fare. An agent requests that price and sends it to you."],
+          ["3. You choose", "We send the sailing, the cabin, and the price. You approve it before anything is booked. Yacht sailings, many luxury hotels, and European sleeper trains have no public fare. An agent requests that price and sends it to you."],
           ["4. You pay the supplier", "The card payment goes to the cruise line, resort, hotel, or operator. We do not hold the card. There is no separate agent fee. The supplier pays our commission."],
           ["5. One agent handles the booking", "That person arranges the trip, takes the deposit, watches the final-payment date, makes a change if you need one, and matches the flight to the ship’s embarkation and return."],
         ].map(([title, text]) => (

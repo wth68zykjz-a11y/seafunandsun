@@ -106,8 +106,8 @@ function LineRegionPage() {
           <Link to="/quote" search={{ place: page.title }} className="inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
             Request a quote
           </Link>
-          <Link to="/sailings" className="inline-flex min-h-11 items-center justify-center rounded-md bg-gold px-5 text-sm font-medium text-ink hover:bg-gold-deep">
-            Search sailings
+          <Link to="/sailings" hash="promotions" className="inline-flex min-h-11 items-center justify-center rounded-md bg-gold px-5 text-sm font-medium text-ink hover:bg-gold-deep">
+            See promotions
           </Link>
           <Link to="/ports" className="inline-flex min-h-11 items-center justify-center rounded-md border border-line bg-foam px-5 text-sm font-medium text-ink">
             Departure ports
