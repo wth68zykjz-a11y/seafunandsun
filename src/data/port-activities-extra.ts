@@ -48,7 +48,7 @@ export const extraPortPages = [
     region: "Hawaii Cruises",
     title: "What you can do in port in Hawaii",
     lede: "Pride of America stays among the islands and often remains into the evening. A crossing from California has fewer hours in Honolulu.",
-    note: "The road to Hana and a beach on the west side of Maui are different outings. Pick one when the ship leaves the same day. A luau needs the ship in port after dark.",
+    note: "The road to Hana takes longer than a beach on the west side of Maui. When the ship leaves that afternoon, pick one. A luau needs the ship in port after dark.",
     image: "/media/hawaii.jpg",
     imageAlt: "A green Hawaiian valley meeting the Pacific",
     stops: [
