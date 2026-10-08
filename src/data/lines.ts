@@ -207,7 +207,7 @@ export const linePages: LinePage[] = [
         text: "The main dining room is in the fare. Specialty dining is usually extra on MSC, Royal Caribbean, Norwegian, and Carnival. Celebrity, Princess, and Holland America have fewer rooms and a quieter dining room. Cunard still has a more formal evening on the Queens.",
       },
       {
-        title: "The port is a city",
+        title: "The sights are in the city",
         text: "In these cities you walk. Start early, before the heat and the crowds. St. Mark’s is in Venice. Large ships dock at Ravenna or Trieste. Venice is about two hours from those piers.",
       },
       {

@@ -100,7 +100,7 @@ export const extraPortPages = [
       },
       {
         name: "Hamilton",
-        dock: "The ship stays at the Dockyard. Hamilton, the capital, is a ferry ride from there.",
+        dock: "The ship stays at the Dockyard. A ferry from there reaches Hamilton, the capital.",
         text: "A ferry from the Dockyard takes about 20 minutes. Front Street is the waterfront, and the shops are there. You can walk Front Street once you land.",
       },
       {
@@ -167,7 +167,7 @@ export const extraPortPages = [
     region: "Canada & New England Cruises",
     title: "What you can do in port in Canada and New England",
     lede: "These stops are towns and cities on the coast, from Boston up to the St. Lawrence.",
-    note: "Many stops end in the afternoon. A fall foliage sailing is more likely to stay late than a short summer call. Extra nights in Boston or Quebec are for the evening, when the ship is not waiting.",
+    note: "Many stops end in the afternoon. A foliage sailing in the fall is more likely to stay late than a short stop in summer. Extra nights in Boston or Quebec give you the evening, when the ship is not waiting.",
     image: "/media/new-england.jpg",
     imageAlt: "A New England harbor with autumn color on the hills",
     stops: [

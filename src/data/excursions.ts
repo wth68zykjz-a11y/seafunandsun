@@ -53,7 +53,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-alaskan.jpg",
     photoAlt: "A small boat near a whale in a cold Alaskan fjord",
     intro:
-      "A May sailing and an August sailing can use the same ports. May still has the larger glaciers, and it is colder. August is when the salmon run and the bears come to the rivers. Most stops last four to eight hours. The ship sails the glacier. The hours ashore can go to the wildlife or the railroad. A bus to a gift shop is neither.",
+      "A May sailing and an August sailing can use the same ports. May still has the larger glaciers, and it is colder. August is when the salmon run and the bears come to the rivers. Most stops last four to eight hours. The ship sails past the glacier. The hours ashore can be the wildlife or the railroad. A bus that only goes to a gift shop is a different outing.",
     excursions: [
       {
         title: "Glacier water, up close",
@@ -600,7 +600,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "Empty blue chairs on a terrace above a caldera harbor at dawn",
     facts: [
       { label: "Time in port", text: "The ship is often in port for a long stretch, sometimes by tender. The useful hours are early, before the alleys fill." },
-      { label: "Worth the time", text: "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site. The Ancient Agora is nearby. The National Archaeological Museum holds the Mycenaean gold and the classical bronzes. St. Peter’s is in Rome, and the Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city too. The ship docks at Civitavecchia. Rome is about an hour and a half from the pier. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. Long lunches are on the Amalfi coast." },
+      { label: "Worth the time", text: "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site. The Ancient Agora is nearby. The National Archaeological Museum holds the Mycenaean gold and the classical bronzes. St. Peter’s is in Rome, and the Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city too. The ship docks at Civitavecchia. Rome is about an hour and a half from the pier. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. On the Amalfi coast there is time for a long lunch." },
       { label: "Travelers", text: "This suits people who want to walk a different city on most mornings. May, June, September, and October are easier than August." },
       { label: "Also", text: "Give the morning to the Acropolis, or to one town. There is not time for both." },
     ],

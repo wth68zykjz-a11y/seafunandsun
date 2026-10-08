@@ -283,7 +283,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Vermonter and Downeaster",
         paragraphs: [
-          "The Vermonter runs from Washington to St. Albans. South of Springfield it is a city railroad. North of there it follows the Connecticut River through Brattleboro and White River Junction. You see the valley from the window. Essex Junction is the stop for Burlington. A bus from there goes into Burlington. The train does not stop in the city. If you stay in Montpelier or Burlington, you sleep in a hotel, not on the train.",
+          "The Vermonter runs from Washington to St. Albans. South of Springfield it runs through cities. North of there it follows the Connecticut River through Brattleboro and White River Junction. You see the valley from the window. Essex Junction is the stop for Burlington. A bus from there goes into Burlington. The train does not stop in the city. If you stay in Montpelier or Burlington, you sleep in a hotel, not on the train.",
           "The Downeaster runs from Boston’s North Station to Brunswick several times a day, in about three and a half hours. It stops at Old Orchard Beach in season, at Portland, and at Freeport. The Portland station is across the Fore River from the Old Port, about a fifteen-minute ride. Dinner in the Old Port, or time on the sand at Old Orchard, takes longer than the station pause, so you get off and stay the night.",
         ],
       },
