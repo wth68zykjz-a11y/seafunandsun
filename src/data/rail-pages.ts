@@ -24,7 +24,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/zephyr-glenwood.jpg",
         alt: "The California Zephyr along the Colorado River under a rock wall",
-        caption: "Glenwood Canyon is between the stations. The train follows the river under the wall. The station stop in Glenwood Springs is about seven minutes. The town, and the hot-springs pool, need a night off the train.",
+        caption: "Glenwood Canyon is between the stations. The train follows the river under the wall. The station stop in Glenwood Springs is about seven minutes, long enough to step onto the platform. The hot-springs pool is a large outdoor mineral pool a few blocks away. The big pool runs about 90°F. A swim takes longer than those seven minutes, so you leave the train, stay the night, and continue on a later train.",
       },
     ],
     sections: [
@@ -46,7 +46,7 @@ export const railPages: RailPage[] = [
         heading: "Where the train actually stops",
         paragraphs: [
           "The station stop at Fraser–Winter Park is about five minutes. The stop at Glenwood Springs is about seven. The stop at Truckee, below Donner Pass, is short. Those minutes are enough to step onto the platform.",
-          "The hot-springs pool in Glenwood Springs, a hike near Winter Park, or a walk to Donner Lake means you get off and sleep in town. Denver, Salt Lake City, or Reno can be a night in the city if you split the ticket.",
+          "Those minutes are enough to step onto the platform. They are not a swim, a hike, or a walk at the lake. The Glenwood pool is a large outdoor mineral pool a few blocks from the station, about 90°F in the big pool. A swim means you leave the train and stay the night. A hike in the forest above Winter Park takes hours, and the Fraser stop is about five minutes, so you get off and sleep in Fraser or Winter Park. Donner Lake is about two miles from the Truckee station. A walk along the shore does not fit the pause, so you leave the train and stay in Truckee. Denver, Salt Lake City, or Reno can be a night in the city if you split the ticket.",
         ],
       },
     ],
@@ -95,7 +95,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/empire-builder.jpg",
         alt: "The Empire Builder following a river through forested mountains",
-        caption: "The Empire Builder follows a river through the northern Rockies. You see this from the sightseer lounge. A hike is a night off the train, not the station pause.",
+        caption: "The Empire Builder follows a river through the northern Rockies. You see this from the sightseer lounge. A hike in Glacier National Park takes hours. The station pause is long enough to step onto the platform, not to start that hike.",
       },
       {
         src: "/media/rail/empire-trestle.jpg",
@@ -115,8 +115,8 @@ export const railPages: RailPage[] = [
         heading: "Where the train actually stops",
         paragraphs: [
           "East Glacier Park and West Glacier have summer service, and each station pause is brief. The Essex stop is a flag stop beside the Izaak Walton Inn. The stop at Whitefish is about fifteen minutes on the current timetable. Those minutes are enough to step onto the platform.",
-          "A hike on Going-to-the-Sun Road, or a boat on Lake McDonald, means you get off and sleep in Whitefish. The stop at Havre is longer, about twenty minutes, on the plains. That stop is for the crew. It is not time in the park.",
-          "On the Portland section the train follows the Columbia River through the gorge. The stop at Bingen–White Salmon is short. A walk at Multnomah Falls is not that stop. It means a night in Portland.",
+          "Going-to-the-Sun Road crosses Glacier National Park. Lake McDonald is the lake near the west entrance. A boat on the lake, or a walk beside it, takes hours inside the park. Whitefish is about a half-hour drive from that entrance, and the station stop there is about fifteen minutes. You get off in Whitefish and stay the night so you can go into the park the next day. The stop at Havre is longer, about twenty minutes, on the plains. That stop is for the crew. It is not time in the park.",
+          "On the Portland section the train follows the Columbia River through the gorge. The stop at Bingen–White Salmon is short, on the Washington side. Multnomah Falls is a two-tier waterfall on the Oregon side, about 620 feet. You walk a trail to the bridge in front of it. The train does not stop there. That walk starts from Portland, so you get off and stay the night.",
         ],
       },
       {
@@ -142,7 +142,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/southwest-chief-albuquerque.jpg",
         alt: "The Southwest Chief at the platform in Albuquerque",
-        caption: "The stop in Albuquerque is about forty minutes on a recent timetable. That is long enough to step onto the platform. Old Town needs a night off the train.",
+        caption: "The stop in Albuquerque is about forty minutes on a recent timetable. That is long enough to step onto the platform. Old Town, with the plaza and San Felipe de Neri, is about two miles from the station. Walking the plaza takes the afternoon, so you leave the train and stay the night.",
       },
     ],
     sections: [
@@ -157,8 +157,8 @@ export const railPages: RailPage[] = [
         heading: "Where the train actually stops",
         paragraphs: [
           "The stop in Raton is about four minutes. The stop in Lamy is about four minutes. A van from Lamy takes you to a hotel in Santa Fe. Santa Fe is not at the platform.",
-          "The stop in Albuquerque is about forty minutes. The stop in Winslow is a few minutes, and La Posada sits beside that station. A night in the hotel is how you use the town. The stop in Flagstaff is a few minutes as well, and on many dates that stop is at night. The South Rim of the Grand Canyon is about an hour and a half by road from Flagstaff. A walk on the rim means you get off and stay.",
-          "Amtrak has listed a bus connection at Williams Junction for the Grand Canyon Railway. We check whether that stop is on your date. The railway itself is a separate train, from Williams to the rim.",
+          "The stop in Albuquerque is about forty minutes. The stop in Winslow is a few minutes. La Posada, the old Harvey hotel, sits beside that station. A night there is dinner in the hotel and a walk on the Route 66 streets, which do not fit the platform pause. The stop in Flagstaff is a few minutes as well, and on many dates that stop is at night. The South Rim is the southern edge of the Grand Canyon, about an hour and a half by road from Flagstaff. The Rim Trail is a paved path along that edge. You walk it and look down into the canyon. The station pause is not that walk, so you leave the train and stay.",
+          "Amtrak has listed a bus connection at Williams Junction for the Grand Canyon Railway. We check whether that stop is on your date. The railway itself is a separate train, from Williams to the South Rim.",
         ],
       },
       {
@@ -184,7 +184,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/coast-cliffs.jpg",
         alt: "An Amtrak locomotive leading the Coast Starlight along a cliff above the surf",
-        caption: "The train follows the cliff. A walk on the sand in Santa Barbara, or a meal in San Luis Obispo, means you get off and stay the night.",
+        caption: "The train follows the cliff. The Santa Barbara station is about a mile from the beach and Stearns Wharf. A swim, or a meal in San Luis Obispo, takes longer than the station pause, so you get off and stay the night.",
       },
     ],
     sections: [
@@ -215,7 +215,7 @@ export const railPages: RailPage[] = [
     slug: "grand-canyon-railway",
     nav: "Grand Canyon Railway",
     title: "Grand Canyon Railway",
-    lede: "Williams to the South Rim, about two hours and fifteen minutes. You see the pines from the train. The walk along the rim starts after you get off.",
+    lede: "Williams to the South Rim, about two hours and fifteen minutes. You see the pines from the train. After you get off, you walk the Rim Trail, the paved path along the southern edge of the canyon, and look down into it.",
     photos: [
       {
         src: "/media/rail/canyon-railway-steam.jpg",
@@ -225,21 +225,21 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/canyon-railway-cars.jpg",
         alt: "Grand Canyon Railway passenger cars crossing pine country",
-        caption: "The train crosses the pines between Williams and the South Rim. You see that country from the window. The rim is a walk from the depot at the other end.",
+        caption: "The train crosses the pines between Williams and the South Rim. You see that country from the window. The South Rim is the edge of the canyon. The Rim Trail, a paved path along that edge, starts a short walk from the depot.",
       },
     ],
     sections: [
       {
         heading: "The train",
         paragraphs: [
-          "The Grand Canyon Railway leaves Williams in the morning, most of the year at 9:30, and reaches the South Rim depot about 11:45. The line is 65 miles. You ride back the same afternoon, or you stay at the rim and return on a later day.",
+          "The Grand Canyon Railway leaves Williams in the morning, most of the year at 9:30, and reaches the South Rim depot about 11:45. The line is 65 miles. You ride back the same afternoon, or you stay overnight in the village and return on a later train.",
           "There are six classes: Pullman, Coach, First, Observation Dome, Luxury Dome, and Luxury Parlor. The dome is where the windows sit higher. The train still does the traveling.",
         ],
       },
       {
         heading: "The rim",
         paragraphs: [
-          "The Grand Canyon Depot is in the village, a short walk from El Tovar and the rim. A same-day round trip leaves a few hours for that walk. Sunset, or a longer walk along the rim, means a night at the canyon.",
+          "The South Rim is the southern edge of the Grand Canyon, at Grand Canyon Village. The depot is a short walk from El Tovar and from the Rim Trail, a paved path along that edge. You walk the path and look down into the canyon. A round trip the same day leaves a few hours for that. Sunset from the edge, or a longer walk west toward Hermits Rest, takes the evening, so you stay the night in the village and take a later train back to Williams.",
           "This train does not replace the Southwest Chief. The Chief stops in Flagstaff. Williams is a separate ride. We check the connection on your date before we pair them.",
         ],
       },
@@ -247,7 +247,7 @@ export const railPages: RailPage[] = [
         heading: "Meals",
         paragraphs: [
           "The cafe car sells sandwiches, snacks, and drinks to every passenger. First Class and the dome and parlor cars add a snack: pastries and coffee on the way north, cheese and vegetables on the way back. That snack is not a dining-car dinner.",
-          "A plated breakfast is at the Fred Harvey restaurant in Williams. Dinner at the rim is at El Tovar, a short walk from the depot. We book the hotel and the table with the train when you want them.",
+          "A plated breakfast is at the Fred Harvey restaurant in Williams. Dinner is at El Tovar, beside the Rim Trail, a short walk from the depot. We book the hotel and the table with the train when you want them.",
         ],
       },
     ],
@@ -286,7 +286,7 @@ export const railPages: RailPage[] = [
         heading: "Vermonter and Downeaster",
         paragraphs: [
           "The Vermonter runs from Washington to St. Albans. South of Springfield it is a city railroad. North of there it follows the Connecticut River through Brattleboro and White River Junction. You see the valley from the window. Essex Junction is the stop for Burlington, and Burlington itself is a bus ride. A night in Montpelier or Burlington is a hotel.",
-          "The Downeaster runs from Boston’s North Station to Brunswick several times a day, in about three and a half hours. It stops at Old Orchard Beach in season, at Portland, and at Freeport. The Portland station is across the Fore River from the Old Port. A table there, or a walk on the sand at Old Orchard, means you get off and stay. The ride itself is not that evening.",
+          "The Downeaster runs from Boston’s North Station to Brunswick several times a day, in about three and a half hours. It stops at Old Orchard Beach in season, at Portland, and at Freeport. The Portland station is across the Fore River from the Old Port, about a fifteen-minute ride. Dinner in the Old Port, or time on the sand at Old Orchard, takes longer than the station pause, so you get off and stay the night. The ride itself is not that evening.",
         ],
       },
       {
@@ -371,7 +371,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/danube-express.jpg",
         alt: "The blue and cream Golden Eagle Danube Express crossing a stone viaduct",
-        caption: "The Golden Eagle Danube Express crosses a stone viaduct. You sleep in a cabin. A day in Sarajevo or Mostar is time off the train, and some nights on that route are in a hotel.",
+        caption: "The Golden Eagle Danube Express crosses a stone viaduct. You sleep in a cabin. In Sarajevo or Mostar you get off the train. On some nights you sleep in a hotel, not on the train.",
       },
     ],
     sections: [
@@ -392,7 +392,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Golden Eagle Danube Express",
         paragraphs: [
-          "The Golden Eagle Danube Express runs through Central Europe and the Balkans. One route leaves Venice for Istanbul, with time off the train in Trieste, Sarajevo, Mostar, Belgrade, Sofia, and Plovdiv. You do not stay on the train for every night. Some of those cities are a hotel.",
+          "The Golden Eagle Danube Express runs through Central Europe and the Balkans. One route leaves Venice for Istanbul, and you get off in Trieste, Sarajevo, Mostar, Belgrade, Sofia, and Plovdiv. You do not sleep on the train every night. On some nights the room is a hotel in one of those cities.",
           "A Superior Deluxe cabin is about nine square meters, with a shower. Breakfast is at the table. Lunch and dinner come with wine. Dress on this train is informal, which is not the case on the Venice Simplon-Orient-Express. An agent requests the fare.",
         ],
       },

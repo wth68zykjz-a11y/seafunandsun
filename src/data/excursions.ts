@@ -493,7 +493,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Minutes at the platform, or a night in town",
         pace: "Easy walking, if you stay the night",
         detail:
-          "The canyons are between the stations. The Zephyr runs through Gore Canyon, Glenwood Canyon, and Ruby Canyon, and you see them from the glass car. The train does not stop in them. The station stop at Fraser-Winter Park is about five minutes. The stop at Glenwood Springs is about seven. The stop at Truckee, below Donner Pass, is short. The hot-springs pool in Glenwood Springs, a hike near Winter Park, or a walk to Donner Lake means you get off and sleep in town.",
+          "The canyons are between the stations. The Zephyr runs through Gore Canyon, Glenwood Canyon, and Ruby Canyon, and you see them from the glass car. The train does not stop in them. The station stop at Fraser–Winter Park is about five minutes. The stop at Glenwood Springs is about seven. The stop at Truckee, below Donner Pass, is short. The Glenwood pool is a large outdoor mineral pool a few blocks from the station. A swim there, a hike above Winter Park, or a walk along Donner Lake, about two miles from Truckee, does not fit those minutes. You leave the train and stay the night.",
       },
       {
         title: "The city on either end",
@@ -766,13 +766,13 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A river canyon seen from a train roomette window",
     facts: [
       { label: "Time at a stop", text: "On the Zephyr you watch Gore Canyon, Glenwood Canyon, and Ruby Canyon from the glass car. The train does not stop in those canyons. The station stop at Fraser-Winter Park is about five minutes, and the stop at Glenwood Springs is about seven. The stop at Truckee, below Donner Pass, is short too." },
-      { label: "Worth the time", text: "The Zephyr follows the Colorado through those canyons. The Bernina Express climbs past alpine lakes and stone viaducts. You see both from the window. The hot-springs pool in Glenwood Springs, a hike near Winter Park, or Donner Lake means a night off the train." },
+      { label: "Worth the time", text: "The Zephyr follows the Colorado through those canyons. The Bernina Express climbs past alpine lakes and stone viaducts. You see both from the window. A swim in the Glenwood pool, a hike above Winter Park, or a walk at Donner Lake does not fit the station pause, so you leave the train and stay the night." },
       { label: "Best for", text: "The Northwest, the Rockies, or a Canadian route, in a roomette if the trip is overnight." },
       { label: "Also", text: "On an overnight train a roomette has a bed and a door. A coach seat does not." },
     ],
     outings: [
       { fits: "People who will sit in the sightseer car for the canyon, and sleep in a roomette.", bring: "Layers. The glass car is colder than the room." },
-      { fits: "People who will get off when the timetable allows, or spend a night off the train to hike.", bring: "The timetable shows how long each stop is." },
+      { fits: "People who will use the platform pause, or get off and stay the night for a hike above Winter Park or a swim in the Glenwood pool.", bring: "The timetable shows how long each stop is." },
       { fits: "People who will take one night in Chicago, Seattle, or Vancouver before they fly.", bring: "A walk and a table, then the flight home." },
     ],
   },
