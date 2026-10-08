@@ -93,7 +93,7 @@ const doors: Door[] = [
   {
     kicker: "Snow",
     title: "Ski",
-    body: "You wake with snow at the door. At Club Med the lifts are often already in the rate. At a hotel in Aspen, Banff, the Alps, or Niseko, the pass is usually separate.",
+    body: "Cold air, an unmarked ridge, and the valley still dark below. Aspen, Banff, the Alps, and Niseko.",
     image: "/media/card-ski.webp",
     alt: "A person in a red jacket facing the Matterhorn across a snowfield",
     cta: "See ski vacations",
