@@ -211,7 +211,7 @@ export const extraPortPages = [
       {
         name: "Cologne and the Rhine",
         dock: "In Cologne the ship ties up near the cathedral.",
-        text: "The cathedral is beside the river, and you can walk to it. Rüdesheim, on another day, is a wine town. A cable car goes up to the monument above the vineyards. The castles you pass between towns are seen from the deck.",
+        text: "The cathedral is beside the river, and you can walk to it. Rüdesheim is a later stop, a wine town on the Rhine. A cable car goes up to the monument above the vineyards. The castles you pass between towns are seen from the deck.",
       },
       {
         name: "Paris",
@@ -266,7 +266,7 @@ export const extraPortPages = [
     region: "Asia Cruises",
     title: "What you can do in port in Asia",
     lede: "Singapore, Tokyo, Hong Kong, Bangkok, and Phuket are different calls. Patong is a beach on Phuket. The Grand Palace is in Bangkok.",
-    note: "Singapore and Tokyo often keep the ship in port into the evening. The ride from Laem Chabang into Bangkok takes long enough that the palace is the plan for that day.",
+    note: "Singapore and Tokyo often keep the ship in port into the evening. The ride from Laem Chabang into Bangkok takes long enough that a visit to the palace is the plan for those hours.",
     image: "/media/asia.jpg",
     imageAlt: "A harbor and towers in Asia",
     stops: [

@@ -21,7 +21,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/panama-canal.jpg",
     photoAlt: "A ship in the Miraflores Locks on the Panama Canal",
     intro:
-      "The transit is the reason for the cruise, and it happens from the deck. A shore day is separate. Cartagena is the usual city. Panama City only counts when the ship docks.",
+      "The transit is the reason for the cruise, and it happens from the deck. Time ashore is separate. Cartagena is the usual city. Panama City only counts when the ship docks.",
     excursions: [
       {
         title: "The locks, from the ship",
@@ -41,7 +41,7 @@ export const shores: Record<string, DestinationShore> = {
       },
       {
         title: "Panama City, when the ship docks",
-        where: "A listed stop, not the transit day",
+        where: "When the itinerary lists a dock in Panama City",
         length: "The hours the ship is alongside",
         pace: "A car into the city, then a walk",
         detail:
@@ -556,7 +556,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "While the ship is in the canal there is no gangway. A stop in Cartagena is usually a morning or an afternoon. Panama City is a port only when the itinerary says the ship docks." },
       { label: "Worth the time", text: "Watch the locks from the deck. In Cartagena, you can walk the walled city, and you can eat there. A long coach to a beach uses the hours you would have spent in the city." },
-      { label: "Best for", text: "Travelers who want the transit itself, and who can fly home from the other ocean on a full transit." },
+      { label: "Who it's for", text: "People who want to watch the canal transit, and who can fly home from the other coast on a full transit." },
       { label: "Also", text: "A partial transit goes into Gatun Lake and comes back out the same side. A full transit goes from one ocean to the other, and it takes longer." },
     ],
     outings: [
@@ -571,7 +571,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "Most stops are four to eight hours. On a glacier sailing there is often no gangway. You watch from the ship." },
       { label: "Worth the time", text: "Stop in Juneau to visit the Mendenhall Glacier. You can eat grilled salmon, or a chowder made from it, or go out for a few hours and try to catch one. Stop in Skagway for the train up the White Pass." },
-      { label: "Best for", text: "People who want wildlife and ice more than nightlife. A balcony is the better cabin here than a seat in a big theater." },
+      { label: "Who it's for", text: "People who want glaciers and wildlife, and who would rather have a balcony than a big theater." },
       { label: "Also", text: "The glacier and the White Pass train are the stops people come for." },
     ],
     outings: [
@@ -586,7 +586,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "The ship is usually in port from morning to late afternoon. On a private-island stop you use the beach at the pier." },
       { label: "Worth the time", text: "Stop in Old San Juan and walk up to El Morro and the cathedral. In Martinique, stop at a bakery instead of a jewelry shop." },
-      { label: "Best for", text: "A first cruise, a family, or anyone who wants short flights from the East Coast and a port every morning." },
+      { label: "Who it's for", text: "A first cruise, a family, or anyone who wants a short flight from the East Coast and a port on most mornings." },
       { label: "Also", text: "A plan for the beach and a plan for the town are different. You pick one when the stop is short." },
     ],
     outings: [
@@ -601,13 +601,13 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "The ship is often in port for a long stretch, sometimes by tender. The useful hours are early, before the alleys fill." },
       { label: "Worth the time", text: "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site. The Ancient Agora is nearby. The National Archaeological Museum holds the Mycenaean gold and the classical bronzes. St. Peter’s is in Rome, and the Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city too. The ship docks at Civitavecchia. Rome is about an hour and a half from the pier. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. Long lunches are on the Amalfi coast." },
-      { label: "Best for", text: "Travelers who want a new country each morning and will walk for it. Shoulder months beat August." },
+      { label: "Who it's for", text: "People who want to walk a different city on most mornings. May, June, September, and October are easier than August." },
       { label: "Also", text: "Give the morning to the Acropolis, or to one town. There is not time for both." },
     ],
     outings: [
       { fits: "People who will take the first tender up for the caldera, then come back down.", bring: "Sun protection, water, and shoes with a grip. The marble is polished by crowds." },
       { fits: "People who will give the morning to the Acropolis, then lunch in Plaka.", bring: "A hat and a bottle. The site is exposed, and the good cafes are after, not on the hill." },
-      { fits: "People who will spend the day in Rome, at St. Peter’s, the museums, or the Colosseum.", bring: "Comfortable shoes." },
+      { fits: "People who want to visit St. Peter’s, the museums, or the Colosseum.", bring: "Comfortable shoes." },
       { fits: "People who will walk Kotor’s walls, or sit down to lunch on the Amalfi coast.", bring: "Cash still helps in the old towns." },
     ],
   },
@@ -617,11 +617,11 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "A stop in a city uses most of the hours, but the pier is often an hour from the place you actually want." },
       { label: "Worth the time", text: "The belfry is in Bruges, and the menus have mussels steamed in white wine, onion, and celery, usually with fries. The ship docks at Zeebrugge. Bruges is about 20 minutes from the pier. The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. The ship docks at Le Havre. Paris is about two hours from the pier, so a short stop leaves time for one sight. Lunch can fit if the ship leaves later. Shangri-La Paris, looking toward the Eiffel Tower, is a stay in the city before or after the cruise. Westminster Abbey and the Tower of London are in London. The ship docks at Southampton. London is about an hour and a half to two hours from the pier. The Savoy is a stay in the city. The Sagrada Família and the Gothic Quarter are in Barcelona. Cocina Hermanos Torres is a Michelin table in the city if you reserved it ahead, and Camp Nou is there when there is a match. Belém and Alfama are in Lisbon. Hotel Arts is a stay in Barcelona. The Four Seasons Hotel Ritz is a stay in Lisbon." },
-      { label: "Best for", text: "Travelers who have a city they still want, or who would rather have one garden than three capitals." },
+      { label: "Who it's for", text: "People who still have a city they want to see, and who would rather use the stop for one place than try to cover three capitals." },
       { label: "Also", text: "In Paris you can see the Louvre, Notre-Dame, or the Eiffel Tower. The ship docks at Le Havre. Paris is about two hours from the pier, so a short stop leaves time for one sight." },
     ],
     outings: [
-      { fits: "People who will spend the day in Bruges, on the canals, at the belfry, and at a table for mussels.", bring: "Layers. Canal weather changes, and the square is windier than the pier." },
+      { fits: "People who want the canals, the belfry, and a table for mussels in Bruges.", bring: "Layers. Canal weather changes, and the square is windier than the pier." },
       { fits: "People who will stay in Étretat for the cliffs and lunch, rather than go on to Paris.", bring: "A wind jacket." },
       { fits: "People who will pick the Alcázar, one Lisbon hill, or a town on the Riviera.", bring: "Good walking shoes. Seville is about two hours from the pier at Cádiz." },
     ],
@@ -632,7 +632,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "Inter-island ships often overnight. A sailing from San Diego, Los Angeles, or Vancouver spends more days just getting there." },
       { label: "Worth the time", text: "Stop on Oahu to visit the USS Arizona Memorial. After that, you can order a plate lunch: rice, macaroni salad, and a meat such as kalua pork or chicken katsu." },
-      { label: "Best for", text: "People who want the islands, not a new port every morning. Match the excursion to the kind of Hawaii trip you booked." },
+      { label: "Who it's for", text: "People who want time in the islands. An inter-island cruise and a cruise from California are different trips, so the stop has to match the one you booked." },
       { label: "Also", text: "Hana Bay, the black-sand beach, and the food stands are in Hana. The ship docks in Kahului. Hana is about two and a half hours from the pier." },
     ],
     outings: [
@@ -647,8 +647,8 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "Ships usually stay more than a day, so you do not have to see the island between breakfast and all-aboard." },
       { label: "Worth the time", text: "Stop in St. George’s to see St. Peter’s Church. The town is quiet enough that you do not need a timed tour. In Hamilton, the fish sandwich on raisin bread is an idea." },
-      { label: "Best for", text: "A short East Coast sailing that still feels like a real island, not a dash through three countries." },
-      { label: "Also", text: "Horseshoe Bay and the town are the usual days." },
+      { label: "Who it's for", text: "People who want a short sailing from the East Coast, with time on one island." },
+      { label: "Also", text: "You can go to Horseshoe Bay, and you can go into Hamilton or St. George’s." },
     ],
     outings: [
       { fits: "People who will take the pink sand in the morning, before the beach fills.", bring: "Reef shoes if the walk in is rocky. The sand itself is soft." },
@@ -662,7 +662,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "A stop in a fjord village can be a tender of a few hours. A stop in a Baltic capital runs longer." },
       { label: "Worth the time", text: "The Bryggen wharf is in Bergen, and the fish market serves a shrimp sandwich: cold peeled shrimp on buttered bread, with mayonnaise and lemon. In Copenhagen, a New Nordic menu is local seafood, vegetables, and foraged herbs, and those tables are booked before you sail. The Rijksmuseum is in Amsterdam. It holds Rembrandt’s The Night Watch. The Anne Frank House is the rooms where she hid. Ocean ships dock at IJmuiden, not in the canals. The museum is about 30 to 45 minutes from the pier. Lunch can fit if the ship leaves later. The Waldorf Astoria Amsterdam is a stay in the city before or after the cruise. Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a stay in the city if you want to stay the night. Gamla Stan is in Stockholm. The Vasa Museum holds the warship Vasa, raised from the harbor. Grand Hôtel looks across the water at the palace." },
-      { label: "Best for", text: "Long summer light, small ports, and people who like weather to be part of the trip." },
+      { label: "Who it's for", text: "People who want long summer light and small harbors, and who do not mind the weather being part of the trip." },
       { label: "Also", text: "If the tender does not run, you can walk in the town for the hours you have." },
     ],
     outings: [
@@ -676,14 +676,14 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A gravel carriage road through peak autumn color near a rocky coast",
     facts: [
       { label: "Time in port", text: "A stop in a small Maine port often lasts about half a day. The stops in Halifax and Québec last longer when the ship goes upriver." },
-      { label: "Worth the time", text: "Stop in Halifax to see the Citadel. You can do it on foot. If the ship goes up to Québec, stop there for the view from the Château Frontenac. You can also stay in that hotel before or after the cruise. In Maine, stop for a lighthouse and a lobster roll: lobster meat in a split bun, with mayonnaise or melted butter. Those hours are the stop." },
-      { label: "Best for", text: "Fall color and small harbors, often without a flight. Peak leaves are a narrow window." },
+      { label: "Worth the time", text: "Stop in Halifax to see the Citadel. You can do it on foot. If the ship goes up to Québec, stop there for the view from the Château Frontenac. You can also stay in that hotel before or after the cruise. In Maine, stop for a lighthouse and a lobster roll: lobster meat in a split bun, with mayonnaise or melted butter." },
+      { label: "Who it's for", text: "People who want fall color and small harbors, often without a flight. The peak color lasts a short time." },
       { label: "Also", text: "You can walk the harbor and the ramparts." },
     ],
     outings: [
       { fits: "People who will time the stop for the maples and a walk out to a lighthouse.", bring: "A fleece. The maples are in color. The wind off the water is colder than it looks." },
       { fits: "People who will climb to the Citadel, or up to the Château Frontenac.", bring: "Comfortable shoes. Québec is steeper than the waterfront in Halifax." },
-      { fits: "People who will take the carriage roads, or the shorter path along the shore.", bring: "The carriage roads and the shore path are the stop." },
+      { fits: "People who want the carriage roads, or the shorter path along the shore.", bring: "A fleece if the wind is off the water." },
     ],
   },
   river: {
@@ -692,13 +692,13 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "You dock in town, often overnight. The morning includes the walking tour. The afternoon can be a bike ride or a tasting." },
       { label: "Worth the time", text: "Stop in Budapest to see the Parliament and have a bowl of goulash. In Vienna, Steirereck is the Michelin restaurant for Austrian cooking, so book it before the cruise. If the afternoon is short, have Sachertorte in a café instead. To see either city properly, stay before or after the cruise: Four Seasons Hotel Gresham Palace in Budapest, on the Danube, or Hotel Sacher in Vienna." },
-      { label: "Best for", text: "Travelers who want the city at the gangway and are happy with one river, not a new ocean every week." },
-      { label: "Also", text: "The included walk is already the morning." },
+      { label: "Who it's for", text: "People who want to step off the ship into the city, and who are happy to stay on one river." },
+      { label: "Also", text: "The walking tour is usually in the morning, and it is included." },
     ],
     outings: [
       { fits: "People who will take the morning walk that is already in the fare.", bring: "The ship’s listening set if the guide uses one, and shoes for uneven stone." },
       { fits: "People who will bike the Wachau or the Rhine instead of sitting on a coach.", bring: "A light layer." },
-      { fits: "People who will stop for a glass. A tasting is a vineyard. A view stop is a lookout. You do not get both from the same stop.", bring: "Nothing formal." },
+      { fits: "People who want a glass of wine at a vineyard, or a stop at a lookout. One stop does not include both.", bring: "Nothing formal." },
     ],
   },
   expedition: {
@@ -707,7 +707,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "There often is no port. You may spend an hour or two ashore after a Zodiac ride, or the landing may be called off." },
       { label: "Worth the time", text: "The day may be gear, a Zodiac, a short walk, and pictures. A kayak or a canoe can be added when the water is calm." },
-      { label: "Best for", text: "A landing, pictures, and a plan that can change with the weather." },
+      { label: "Who it's for", text: "People who want a landing and pictures, and who can change the plan when the weather changes." },
       { label: "Also", text: "The guides change the plan with the weather." },
     ],
     outings: [
@@ -722,13 +722,13 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "Bangkok, Kyoto, and the other cities are inland from the pier. The visit and the trip back to the ship are separate." },
       { label: "Worth the time", text: "The Grand Palace is in Bangkok. The ship docks at Laem Chabang. The palace is about two hours from the pier. The Peninsula Tokyo is a stay in the city before or after the cruise. Gardens by the Bay is in Singapore. Raffles is a stay in the city. The Peak and the Star Ferry are in Hong Kong. The Peninsula is a stay there." },
-      { label: "Best for", text: "A visit to the Grand Palace, or a district in Kyoto such as Fushimi Inari or Arashiyama." },
+      { label: "Who it's for", text: "People who want to visit the Grand Palace in Bangkok, or a district in Kyoto such as Fushimi Inari or Arashiyama." },
       { label: "Also", text: "One temple, or one district in the city, is the visit. Getting back to the ship takes its own time." },
     ],
     outings: [
-      { fits: "People who will spend the day in Bangkok, at the Grand Palace, another temple, or a market on the water.", bring: "Water and socks for the palace floors. The palace is about two hours from the pier at Laem Chabang." },
+      { fits: "People who want the Grand Palace, another temple, or a market on the water in Bangkok.", bring: "Water and socks for the palace floors. The palace is about two hours from the pier at Laem Chabang." },
       { fits: "People who will see the karsts from the boat.", bring: "Sun cover." },
-      { fits: "People who will spend the day in Kyoto, at Fushimi Inari or Arashiyama.", bring: "A transit card and walking shoes." },
+      { fits: "People who want Fushimi Inari or Arashiyama in Kyoto.", bring: "A transit card and walking shoes." },
     ],
   },
   "south-america": {
@@ -737,7 +737,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "A stop in a city can run long. Cape Horn is often a scenic hour from the deck, with no landing." },
       { label: "Worth the time", text: "Christ the Redeemer and Sugarloaf are in Rio. You can reserve a Michelin dinner if the ship stays late. In Buenos Aires, San Telmo has parrillas where you can order grilled beef, often a sirloin, cooked over coals." },
-      { label: "Best for", text: "A longer voyage. The cities are what people remember. The scenic stretches are time on the ship." },
+      { label: "Who it's for", text: "People who want a longer voyage. The cities are what they remember. The scenic stretches are hours on the ship." },
       { label: "Also", text: "Seeing one viewpoint in Rio can use the hours the ship is there. A show in Buenos Aires works when the ship stays late." },
     ],
     outings: [
@@ -752,7 +752,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "A few overnights matter. Many stops give you only a short look from the pier. Sea days make up most of the voyage." },
       { label: "Worth the time", text: "If the ship stays the night, pick one building and one good meal. A two-hour stop by tender is not enough time for a stadium or a big museum." },
-      { label: "Best for", text: "Travelers who like the ship, and who do not need a new city every morning." },
+      { label: "Who it's for", text: "People who like the ship, and who do not need a new city every morning." },
       { label: "Also", text: "If the ship stays overnight, you can stay in the city into the evening. On a short tender you see the area around the landing." },
     ],
     outings: [
@@ -767,7 +767,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time at a stop", text: "On the Zephyr you watch Gore Canyon, Glenwood Canyon, and Ruby Canyon from the glass car. The train does not stop in those canyons. The station stop at Fraser-Winter Park is about five minutes, and the stop at Glenwood Springs is about seven. The stop at Truckee, below Donner Pass, is short too." },
       { label: "Worth the time", text: "The Zephyr follows the Colorado through Gore Canyon, Glenwood Canyon, and Ruby Canyon. You see them from the glass car. If you want a swim in the Glenwood pool, a hike above Winter Park, or a walk at Donner Lake, get off and stay the night. The station stop is too short for any of those." },
-      { label: "Best for", text: "The Northwest, the Rockies, or a Canadian route, in a roomette if the trip is overnight." },
+      { label: "Who it's for", text: "People who want the Northwest, the Rockies, or a Canadian route, in a roomette if the trip is overnight." },
       { label: "Also", text: "On an overnight train a roomette has a bed and a door. A coach seat does not." },
     ],
     outings: [
@@ -782,7 +782,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "The stops in Sydney and Auckland can run long. A stop at the reef needs the hours the ship is there. Milford is often a scenic sail, with no gangway." },
       { label: "Worth the time", text: "Stop in Sydney to see the Opera House. It sits next to where most ships dock. If the ship leaves later, have lunch, or a meat pie on the quay: minced beef in gravy, baked in a pastry case. To see more than the harbor, stay at the Park Hyatt Sydney, across from the Opera House, before the cruise or after you return. In Auckland, walk the harbor and have a grilled lamb chop, the usual lunch." },
-      { label: "Best for", text: "Travelers who can spend October through April, Australia’s summer, in one place, and who will fly to Sydney or Auckland to start." },
+      { label: "Who it's for", text: "People who can travel from October through April, Australia’s summer, and who will fly to Sydney or Auckland to start." },
       { label: "Also", text: "The Great Barrier Reef has warm water, often around 80°F in the Australian summer, and hard coral. You can see clownfish, parrotfish, and giant clams. In Sydney the Opera House stands on the harbor, and you can walk the quay. You can also get a meat pie there: minced beef in gravy, baked in a pastry case." },
     ],
     outings: [
