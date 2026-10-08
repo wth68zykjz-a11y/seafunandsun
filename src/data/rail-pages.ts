@@ -14,7 +14,7 @@ export const railPages: RailPage[] = [
     slug: "california-zephyr",
     nav: "California Zephyr",
     title: "California Zephyr scenic stops",
-    lede: "The train runs from Chicago to Emeryville. The canyons are between the stations. You see them from the glass car.",
+    lede: "Chicago to Emeryville, and the canyons are the miles between the stations. You see them from the glass car.",
     photos: [
       {
         src: "/media/rail/zephyr-canyon.jpg",
@@ -89,7 +89,7 @@ export const railPages: RailPage[] = [
     slug: "empire-builder",
     nav: "Empire Builder",
     title: "Empire Builder",
-    lede: "Chicago to Seattle, or the section that splits at Spokane for Portland. You see Glacier National Park from the sightseer lounge as the train crosses Marias Pass.",
+    lede: "Chicago toward Seattle, or the cars that split at Spokane for Portland. Glacier is outside the sightseer lounge as the train crosses Marias Pass.",
     photos: [
       {
         src: "/media/rail/empire-builder.jpg",
@@ -131,7 +131,7 @@ export const railPages: RailPage[] = [
     slug: "southwest-chief",
     nav: "Southwest Chief",
     title: "Southwest Chief",
-    lede: "Chicago to Los Angeles, about two nights. You see Raton Pass and Apache Canyon from the sightseer lounge. The train does not stop in the canyon.",
+    lede: "Two nights from Chicago to Los Angeles. Raton Pass and Apache Canyon pass the sightseer lounge. The train does not stop in the canyon.",
     photos: [
       {
         src: "/media/rail/southwest-chief-raton.jpg",
@@ -173,7 +173,7 @@ export const railPages: RailPage[] = [
     slug: "coast-starlight",
     nav: "Coast Starlight",
     title: "Coast Starlight",
-    lede: "Seattle to Los Angeles, about one night. You see Mount Shasta and the Pacific from the sightseer lounge. The train does not stop on the beach.",
+    lede: "One night from Seattle to Los Angeles. Mount Shasta and the Pacific are outside the sightseer lounge. The train does not stop on the beach.",
     photos: [
       {
         src: "/media/rail/coast-starlight.jpg",
@@ -214,7 +214,7 @@ export const railPages: RailPage[] = [
     slug: "grand-canyon-railway",
     nav: "Grand Canyon Railway",
     title: "Grand Canyon Railway",
-    lede: "Williams to the South Rim takes about two hours and fifteen minutes. You see the pines from the train. After you get off, walk the Rim Trail, the paved path along the southern edge of the canyon, and look down into it.",
+    lede: "Williams to the South Rim takes about two hours and fifteen minutes, through the pines. After you get off, the Rim Trail is the paved path along the edge, and the canyon is below it.",
     photos: [
       {
         src: "/media/rail/canyon-railway-steam.jpg",
@@ -254,7 +254,7 @@ export const railPages: RailPage[] = [
     slug: "northeast-trains",
     nav: "Northeast trains",
     title: "Adirondack, Vermonter, and Downeaster",
-    lede: "These are day trains. You see the Hudson, the Connecticut River, or the Maine coast from the coach window. There is no sleeper and no dining car.",
+    lede: "Daylight only. The Hudson, the Connecticut River, or the Maine coast is outside the coach window. There is no bed and no dining car.",
     photos: [
       {
         src: "/media/rail/adirondack-hudson.jpg",
@@ -299,7 +299,7 @@ export const railPages: RailPage[] = [
     slug: "the-canadian",
     nav: "The Canadian",
     title: "The Canadian",
-    lede: "VIA Rail from Toronto to Vancouver. You sleep in a cabin. You see the Shield and the Rockies from the dome.",
+    lede: "About four nights of country, from Toronto to Vancouver. You sleep in a cabin. The Shield and the Rockies are what you see from the dome.",
     photos: [
       {
         src: "/media/rail/canadian-rockies.jpg",
@@ -407,7 +407,7 @@ export const railPages: RailPage[] = [
     slug: "alpine-trains",
     nav: "Alpine day trains",
     title: "Glacier Express and Bernina Express",
-    lede: "These trains run in daylight. You see the passes from the panorama windows. You sleep in a hotel.",
+    lede: "These trains cross the passes in daylight, and the panorama windows stay full of rock and snow. You sleep in a hotel, not on the train.",
     photos: [
       {
         src: "/media/rail/glacier-express.jpg",

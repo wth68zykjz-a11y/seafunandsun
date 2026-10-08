@@ -21,7 +21,7 @@ function DestinationsPage() {
       <PageIntro
         kicker="Destinations"
         title="Cruise regions."
-        lede="This is the cruise side of the site. Choose a region below. Most regions are the area the ship sails, such as Alaska or the Caribbean. Europe is split into the Mediterranean, the Atlantic cities such as Lisbon and London, and the north: the Norwegian fjords, Iceland, and the Baltic. A river cruise ties up in town and you walk off. An expedition cruise lands by Zodiac. A world cruise runs for months and spends many days at sea. Each region has its own page, and a second page for what you can do once the ship is there."
+        lede="The ship wakes in a new harbor, follows one river into town, or lands on a beach with no port. Choose a region below. Most regions are the water the ship sails, such as Alaska or the Caribbean. Europe is split into the Mediterranean, the Atlantic cities such as Lisbon and London, and the north: the Norwegian fjords, Iceland, and the Baltic. A river cruise ties up in town and you walk off. An expedition cruise lands by Zodiac. A world cruise runs for months. Each region has its own page, and a second page for what you can do once the ship is there."
       />
       <div className="mx-auto grid max-w-6xl gap-4 px-4 pb-8 md:grid-cols-2">
         <article className="rounded-xl border border-line bg-foam p-5">

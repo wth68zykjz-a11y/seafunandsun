@@ -81,9 +81,9 @@ function ResortsPage() {
         />
         <div className="flex flex-col justify-center">
           <p className="text-sm font-medium text-tide">All-inclusive resorts</p>
-          <h1 className="mt-2 font-display text-3xl sm:text-5xl">The rate includes the meals.</h1>
+          <h1 className="mt-2 font-display text-3xl sm:text-5xl">Breakfast is already in the rate.</h1>
           <p className="mt-4 text-lg text-mute">
-            The quote says which room you are booking, such as a garden view or an ocean-view suite, and it can also include the flights, the airport transfer, and a day trip off the property. We look at what the rate covers, which airport you fly from, and whether the property fits the people traveling.
+            The room faces the water, or the garden, and the quote names which one before you pay. It can also include the flights, the airport transfer, and a day away from the property. We look at what the rate covers, which airport you fly from, and whether the property fits the people traveling.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Link
