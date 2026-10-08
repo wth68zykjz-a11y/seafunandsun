@@ -477,7 +477,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-rail.jpg",
     photoAlt: "A silver train crossing a high trestle above a mountain river",
     intro:
-      "On a rail trip you sit in a dome car or a roomette and watch the route go by. A fresh-air stop is a few minutes on the platform. A roomette is where you sleep if the train runs overnight. A city night is added only where the connection needs it.",
+      "On the California Zephyr the glass car follows the Colorado River through the canyon. On the Empire Builder that same kind of car crosses the Rockies. A fresh-air stop is a few minutes on the platform, long enough to stretch. If the train runs overnight, you sleep in a roomette and the lounge stays a place to sit. A hotel night in Chicago, Seattle, or Vancouver goes in only where the connection needs it.",
     excursions: [
       {
         title: "The sightseer lounge, not just a seat",
@@ -485,7 +485,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "The daylight hours of the route",
         pace: "Sitting, with a walk at fresh-air stops",
         detail:
-          "The glass car is why you take the train instead of a flight. On an overnight trip, a roomette means the lounge is a choice, not a bed.",
+          "You take the train instead of a flight so you can watch the canyon or the pass from the glass car. On an overnight trip you sleep in a roomette. The lounge is then a place to sit, not the bed.",
       },
       {
         title: "A stop that is long enough",
@@ -493,7 +493,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "A few hours, sometimes overnight",
         pace: "Easy walking",
         detail:
-          "Some routes only pause. A hike needs a night off the train. A ten-minute station stop is not long enough for a national park.",
+          "Glacier and the Canadian parks stay outside the window for hours, and the station stop can be ten minutes. A hike means you leave the train and sleep in a town or in the park.",
       },
       {
         title: "The city on either end",
@@ -765,10 +765,10 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-rail.jpg",
     detailAlt: "A river canyon seen from a train roomette window",
     facts: [
-      { label: "Time at a stop", text: "You spend the travel hours on the train, looking out the window. A fresh-air stop lasts a few minutes. A hike means a night off the train, in a town or a park." },
-      { label: "Worth the time", text: "You took the train to see the canyon or the coast from the window. If you want more time in a town, you spend a night off the train." },
+      { label: "Time at a stop", text: "On the Zephyr you can watch the Colorado River from the glass car for hours. A fresh-air stop lasts a few minutes on the platform. A hike in Glacier or the Rockies means a night off the train, in a town or a park." },
+      { label: "Worth the time", text: "The Zephyr follows the canyon. The Bernina Express climbs past alpine lakes and stone viaducts. You see both from the window. If you want time in a town, you spend a night off the train." },
       { label: "Best for", text: "The Northwest, the Rockies, or a Canadian route, in a roomette if the trip is overnight." },
-      { label: "Also", text: "An overnight train is more comfortable in a roomette." },
+      { label: "Also", text: "On an overnight train a roomette has a bed and a door. A coach seat does not." },
     ],
     outings: [
       { fits: "People who will sit in the sightseer car for the canyon, and sleep in a roomette.", bring: "Layers. The glass car is colder than the room." },
