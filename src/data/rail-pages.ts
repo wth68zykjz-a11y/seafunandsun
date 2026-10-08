@@ -21,6 +21,11 @@ export const railPages: RailPage[] = [
         alt: "The California Zephyr beside the Colorado River and red rock",
         caption: "The California Zephyr follows the Colorado beside red rock. You see this from the glass car. The train does not stop here.",
       },
+      {
+        src: "/media/rail/zephyr-glenwood.jpg",
+        alt: "The California Zephyr along the Colorado River under a rock wall",
+        caption: "Glenwood Canyon is between the stations. The train follows the river under the wall. Glenwood Springs, the town, is a stop of about seven minutes.",
+      },
     ],
     sections: [
       {
@@ -87,6 +92,11 @@ export const railPages: RailPage[] = [
         alt: "The Empire Builder following a river through forested mountains",
         caption: "The Empire Builder follows a river through the northern Rockies. You see this from the sightseer lounge. A hike is a night off the train, not the station pause.",
       },
+      {
+        src: "/media/rail/empire-trestle.jpg",
+        alt: "The Empire Builder crossing a trestle with bare mountains behind",
+        caption: "The train crosses the trestle. The mountains stay behind it. You see both from the sightseer lounge.",
+      },
     ],
     sections: [
       {
@@ -109,6 +119,160 @@ export const railPages: RailPage[] = [
         paragraphs: [
           "On the Seattle section, meals in the dining car come with a roomette: breakfast, lunch, and a three-course dinner. At breakfast you can order railroad French toast or a three-egg omelet. At dinner you can order steak, chicken, or salmon. Amtrak changes the menu.",
           "Between Spokane and Portland the dining car is not on that section. Amtrak serves a cold meal in the room. We check which section you booked before you choose the roomette.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "southwest-chief",
+    nav: "Southwest Chief",
+    title: "Southwest Chief",
+    lede: "Chicago to Los Angeles, about two nights. You see Raton Pass and Apache Canyon from the sightseer lounge. The train does not stop in the canyon.",
+    photos: [
+      {
+        src: "/media/rail/southwest-chief-albuquerque.jpg",
+        alt: "The Southwest Chief at the platform in Albuquerque",
+        caption: "Albuquerque is a stop of about forty minutes on a recent timetable. That is long enough to step onto the platform. Old Town is a night off the train.",
+      },
+    ],
+    sections: [
+      {
+        heading: "The train",
+        paragraphs: [
+          "The Southwest Chief runs between Chicago and Los Angeles. The trip is about forty-three hours. A roomette has a bed and a door. A coach seat does not.",
+          "You see the Sangre de Cristo Mountains, Raton Pass, and Apache Canyon from the sightseer lounge. Westbound daylight is the better look at that stretch. The lounge does not cross the pass. The train does.",
+        ],
+      },
+      {
+        heading: "Where the train actually stops",
+        paragraphs: [
+          "Raton is about four minutes. Lamy is about four minutes. A van from Lamy takes you to a hotel in Santa Fe. Santa Fe is not at the platform.",
+          "Albuquerque is about forty minutes. Winslow is a few minutes, and La Posada sits beside that station. A night in the hotel is how you use the town. Flagstaff is a few minutes as well, and on many dates that stop is at night. The South Rim of the Grand Canyon is about an hour and a half by road from Flagstaff. A walk on the rim means you get off and stay.",
+          "Amtrak has listed a bus connection at Williams Junction for the Grand Canyon Railway. We check whether that stop is on your date. The railway itself is a separate train, from Williams to the rim.",
+        ],
+      },
+      {
+        heading: "Meals",
+        paragraphs: [
+          "Meals in the dining car come with a roomette: breakfast, lunch, and a three-course dinner, plus room service. At breakfast you can order railroad French toast or a three-egg omelet. At dinner you can order steak, chicken, or salmon. Amtrak changes the menu.",
+          "The cafe is on the lower level of the sightseer lounge. Every passenger can buy sandwiches, snacks, and drinks there. A coach passenger gets a dining-car table only if the sleeper guests have not filled it, and that meal is a separate charge.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "coast-starlight",
+    nav: "Coast Starlight",
+    title: "Coast Starlight",
+    lede: "Seattle to Los Angeles, about one night. You see Mount Shasta and the Pacific from the sightseer lounge. The train does not stop on the beach.",
+    photos: [
+      {
+        src: "/media/rail/coast-starlight.jpg",
+        alt: "The Coast Starlight on a trestle above the Pacific, with green hills behind",
+        caption: "South of San Luis Obispo the train runs beside the Pacific. You see the water from the sightseer lounge. There is no station on this stretch of beach.",
+      },
+      {
+        src: "/media/rail/coast-cliffs.jpg",
+        alt: "An Amtrak locomotive leading the Coast Starlight along a cliff above the surf",
+        caption: "The train follows the cliff. A walk on the sand in Santa Barbara, or a meal in San Luis Obispo, means you get off and stay the night.",
+      },
+    ],
+    sections: [
+      {
+        heading: "The train",
+        paragraphs: [
+          "The Coast Starlight runs between Seattle and Los Angeles in about thirty-five hours. A roomette has a bed and a door. A coach seat does not.",
+          "In Oregon and northern California you can see the Cascades, and Mount Shasta when the weather is clear. The mountain is not a station. Between San Luis Obispo and Santa Barbara the train runs along the Pacific. You see that shore from the sightseer lounge.",
+        ],
+      },
+      {
+        heading: "Where the train actually stops",
+        paragraphs: [
+          "Portland, Sacramento, Emeryville, San Luis Obispo, and Santa Barbara are the city stops people use. A same-day pause is not a day in any of them. Seattle, Portland, or Santa Barbara can be a night if you split the ticket.",
+          "Crater Lake is not beside a platform. Chemult is the closest stop, and the lake is a long drive from there. A visit means you leave the train and stay the night.",
+        ],
+      },
+      {
+        heading: "Meals",
+        paragraphs: [
+          "Meals in the dining car come with a roomette. Amtrak’s usual pattern on this train is lunch and dinner on the first day, then breakfast, lunch, and dinner on the second. At breakfast you can order railroad French toast or a three-egg omelet. At dinner you can order steak, chicken, or salmon. The menu changes.",
+          "The cafe under the sightseer lounge sells food to every passenger. A dining-car table for a coach passenger opens only if the sleeper guests have not filled it.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "grand-canyon-railway",
+    nav: "Grand Canyon Railway",
+    title: "Grand Canyon Railway",
+    lede: "Williams to the South Rim, about two hours and fifteen minutes. You see the pines from the train. The canyon is the walk after you get off.",
+    photos: [
+      {
+        src: "/media/rail/canyon-railway-steam.jpg",
+        alt: "A Grand Canyon Railway steam locomotive at the depot",
+        caption: "Steam runs on selected dates. Most days the train is pulled by a diesel. The locomotive is not the canyon.",
+      },
+      {
+        src: "/media/rail/canyon-railway-cars.jpg",
+        alt: "Grand Canyon Railway passenger cars crossing pine country",
+        caption: "The train crosses the pines between Williams and the South Rim. You see that country from the window. The rim is a walk from the depot at the other end.",
+      },
+    ],
+    sections: [
+      {
+        heading: "The train",
+        paragraphs: [
+          "The Grand Canyon Railway leaves Williams in the morning, most of the year at 9:30, and reaches the South Rim depot about 11:45. The line is 65 miles. You ride back the same afternoon, or you stay at the rim and return on a later day.",
+          "There are six classes: Pullman, Coach, First, Observation Dome, Luxury Dome, and Luxury Parlor. The dome is where the windows sit higher. The train still does the traveling.",
+        ],
+      },
+      {
+        heading: "The rim",
+        paragraphs: [
+          "The Grand Canyon Depot is in the village, a short walk from El Tovar and the rim. A same-day round trip leaves a few hours for that walk. Sunset, or a longer walk along the rim, means a night at the canyon.",
+          "This train does not replace the Southwest Chief. The Chief stops in Flagstaff. Williams is a separate ride. We check the connection on your date before we pair them.",
+        ],
+      },
+      {
+        heading: "Meals",
+        paragraphs: [
+          "The cafe car sells sandwiches, snacks, and drinks to every passenger. First Class and the dome and parlor cars add a snack: pastries and coffee on the way north, cheese and vegetables on the way back. That snack is not a dining-car dinner.",
+          "A plated breakfast is at the Fred Harvey restaurant in Williams. Dinner at the rim is at El Tovar, a short walk from the depot. We book the hotel and the table with the train when you want them.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "northeast-trains",
+    nav: "Northeast trains",
+    title: "Adirondack, Vermonter, and Downeaster",
+    lede: "These are day trains. You see the Hudson, the Connecticut River, or the Maine coast from the coach window. There is no sleeper and no dining car.",
+    photos: [
+      {
+        src: "/media/rail/adirondack-hudson.jpg",
+        alt: "An Amtrak train along the Hudson, with Bannerman Castle in the foreground",
+        caption: "The Adirondack follows the Hudson north from New York. Bannerman Castle is on an island in the river. You see it from the train. The train does not stop there.",
+      },
+    ],
+    sections: [
+      {
+        heading: "Adirondack",
+        paragraphs: [
+          "The Adirondack runs from Moynihan Train Hall in New York to Montreal in about eleven hours. It follows the Hudson, then the west shore of Lake Champlain, with the Adirondacks on the other side. You see the lake from the coach window.",
+          "There is no sleeper. A town along the lake, or Fort Ticonderoga, is not a five-minute platform stop. If you get off, the rest of the trip is a new ticket, and the night is a hotel.",
+        ],
+      },
+      {
+        heading: "Vermonter and Downeaster",
+        paragraphs: [
+          "The Vermonter runs from Washington to St. Albans and follows the Connecticut River through Massachusetts and Vermont. You see the valley from the window. A night in a town along that river is a hotel, not the station pause.",
+          "The Downeaster runs from Boston to Brunswick several times a day, in about three and a half hours. Portland is the city on the way. The Old Port, and a table there, mean you get off and stay. The ride itself is not that evening.",
+        ],
+      },
+      {
+        heading: "Meals",
+        paragraphs: [
+          "Each of these trains has a cafe. You buy sandwiches, snacks, and drinks. There is no dining car and no roomette meal the way there is on the California Zephyr.",
         ],
       },
     ],
@@ -214,6 +378,11 @@ export const railPages: RailPage[] = [
         src: "/media/rail/landwasser.jpg",
         alt: "A red train on the Landwasser Viaduct, curving into a tunnel in the cliff",
         caption: "The Landwasser Viaduct is on the Glacier Express route. The train curves into the tunnel. You see that curve from the window.",
+      },
+      {
+        src: "/media/rail/bernina-express.jpg",
+        alt: "The red Bernina Express on a stone viaduct below a cliff",
+        caption: "The Bernina Express crosses a stone viaduct. The train does the climbing. You see the cliff and the valley from the window.",
       },
     ],
     sections: [

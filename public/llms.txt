@@ -30,6 +30,10 @@ Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It is 
 - [California Zephyr scenic stops](https://seafunandsun.com/rail/california-zephyr): Chicago to Emeryville. Gore Canyon, Glenwood Canyon, and Ruby Canyon are seen from the glass car. The train does not stop in them. Fraser–Winter Park, Glenwood Springs, and Truckee are short platform stops. A hike, the hot-springs pool, or Donner Lake means a night off the train.
 - [California Zephyr dining](https://seafunandsun.com/rail/zephyr-dining): A roomette includes breakfast, lunch, and a three-course dinner in the dining car, plus room service. Coach passengers buy food in the cafe under the sightseer lounge.
 - [Empire Builder](https://seafunandsun.com/rail/empire-builder): Chicago to Seattle, or the Spokane split to Portland. East Glacier and West Glacier are brief summer stops. Whitefish is about fifteen minutes. A hike in Glacier National Park means a night in Whitefish. On the Seattle section a roomette includes the dining car. Between Spokane and Portland the meal is a cold tray in the room.
+- [Southwest Chief](https://seafunandsun.com/rail/southwest-chief): Chicago to Los Angeles. Raton Pass and Apache Canyon are seen from the sightseer lounge. Lamy is a few minutes, with a van to Santa Fe. Albuquerque is about forty minutes. The South Rim is a drive from Flagstaff, not a platform.
+- [Coast Starlight](https://seafunandsun.com/rail/coast-starlight): Seattle to Los Angeles. Mount Shasta and the Pacific south of San Luis Obispo are seen from the sightseer lounge. A walk on the beach in Santa Barbara means a night off the train.
+- [Grand Canyon Railway](https://seafunandsun.com/rail/grand-canyon-railway): Williams to the South Rim, about two hours and fifteen minutes. The canyon is a walk from the depot. The cafe sells sandwiches. A plated meal is in Williams or at El Tovar.
+- [Northeast day trains](https://seafunandsun.com/rail/northeast-trains): the Adirondack follows the Hudson and Lake Champlain. The Vermonter follows the Connecticut River. The Downeaster runs Boston to Brunswick. Coach and a cafe. No sleeper.
 - [The Canadian](https://seafunandsun.com/rail/the-canadian): VIA Rail, Toronto to Vancouver, about four nights. Sleeper Plus includes meals in the dining car and time in the Skyline dome. Mount Robson is seen from the train west of Jasper. Jasper is the night off the train. Economy does not include the meals.
 - [European sleeper trains](https://seafunandsun.com/rail/european-sleepers): Venice Simplon-Orient-Express, La Dolce Vita Orient Express, Golden Eagle Danube Express, and the Royal Scotsman. You sleep on the train. Meals are included. An agent requests the fare.
 - [Alpine day trains](https://seafunandsun.com/rail/alpine-trains): Glacier Express, Zermatt to St. Moritz, about eight hours, with meals at your seat. Bernina Express, to Tirano, with a short stop at Alp Grüm and the Brusio spiral. You sleep in a hotel. The Matterhorn is in Zermatt, not a climb the train makes.
@@ -56,7 +60,11 @@ Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It is 
 - [California Zephyr](https://seafunandsun.com/rail/california-zephyr)
 - [Zephyr dining](https://seafunandsun.com/rail/zephyr-dining)
 - [Empire Builder](https://seafunandsun.com/rail/empire-builder)
+- [Southwest Chief](https://seafunandsun.com/rail/southwest-chief)
+- [Coast Starlight](https://seafunandsun.com/rail/coast-starlight)
+- [Grand Canyon Railway](https://seafunandsun.com/rail/grand-canyon-railway)
 - [The Canadian](https://seafunandsun.com/rail/the-canadian)
+- [Northeast trains](https://seafunandsun.com/rail/northeast-trains)
 - [European sleepers](https://seafunandsun.com/rail/european-sleepers)
 - [Alpine day trains](https://seafunandsun.com/rail/alpine-trains)
 - [River](https://seafunandsun.com/destinations/river)

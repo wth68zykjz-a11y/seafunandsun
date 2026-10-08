@@ -50,7 +50,7 @@ function RailTopicPage() {
         <h1 className="mt-2 font-display text-4xl text-ink">{page.title}</h1>
         <p className="mt-4 text-lg leading-relaxed text-ink">{page.lede}</p>
         {page.photos.length ? (
-          <div className="mt-6 grid gap-4">
+          <div className={`mt-6 grid gap-4 ${page.photos.length > 1 ? "md:grid-cols-2" : ""}`}>
             {page.photos.map((photo) => (
               <figure key={photo.src} className="overflow-hidden rounded-xl border border-line bg-foam">
                 <img src={photo.src} alt={photo.alt} width={1600} height={1000} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
