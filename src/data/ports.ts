@@ -139,7 +139,7 @@ export const portRegions: PortRegion[] = [
   {
     id: "rivers",
     title: "River embarkations",
-    lede: "A river ship ties up in the town, and you walk off. An ocean ship crosses open water and docks at a cruise terminal. These are the towns where European river cruises embark.",
+    lede: "A river ship ties up in the town, and you step off onto the street. An ocean ship crosses open water and docks at a cruise terminal. These are the towns where European river cruises start.",
     ports: [
       { name: "Budapest, Vienna, and Passau", place: "The Danube", goes: "Danube river cruises between Hungary, Austria, and Germany.", air: "Fly Budapest, Vienna, or Munich for Passau. Austrian and Lufthansa cover Vienna and Munich. Budapest is usually a connection.", zone: "Europe/Vienna", money: "Euro in Vienna and Passau. Hungarian forint in Budapest. Cards are accepted. Euro cash is not the local currency in Hungary.", image: "/media/ports/budapest.jpg", alt: "Budapest along the Danube", slug: "river" },
       { name: "Amsterdam and Basel", place: "The Rhine", goes: "Rhine river cruises. The ocean ships in Amsterdam leave from IJmuiden, not these berths.", air: "Fly Amsterdam (KLM, Delta, United) or Zurich and Basel (SWISS).", zone: "Europe/Amsterdam", money: "Euro in Amsterdam. Swiss franc in Basel. Cards are accepted in both.", image: "/media/ports/basel.jpg", alt: "Basel on the Rhine", slug: "river" },
@@ -180,7 +180,7 @@ export const portRegions: PortRegion[] = [
   {
     id: "elsewhere",
     title: "Middle East, Africa, and South America",
-    lede: "Some of these ports are used only in certain months. Others are where an expedition cruise departs. A world cruise may stop and keep going.",
+    lede: "Some of these ports are used only in certain months. Others are where an expedition cruise starts. A world cruise may stop in one of them and continue.",
     ports: [
       { name: "Dubai", place: "United Arab Emirates", goes: "The Arabian Gulf, with longer sailings toward the Red Sea and India.", air: "Emirates has the hub. flydubai covers the shorter routes. Most long-haul airlines serve Dubai.", zone: "Asia/Dubai", money: "UAE dirham. Cards are accepted. Some hotels take US dollars. Shops price in dirhams.", image: "/media/ports/dubai.jpg", alt: "The Dubai waterfront", slug: "asia" },
       { name: "Abu Dhabi", place: "United Arab Emirates", goes: "The Arabian Gulf.", air: "Etihad has the hub. A transfer from Dubai is about 1.5 hours.", zone: "Asia/Dubai", money: "UAE dirham. Cards are accepted.", image: "/media/ports/abu-dhabi.jpg", alt: "The Abu Dhabi skyline", slug: "asia" },
@@ -196,7 +196,7 @@ export const portPages: PortPage[] = [
   {
     slug: "americas",
     title: "United States and Canada",
-    lede: "Florida ports for a Caribbean cruise on a large ship, including the short Bahamas trips from Miami. San Juan for a cruise that starts in the islands, and Fort-de-France in some seasons. Northeast ports when you would rather not fly, with more nights at sea. California and Vancouver for Alaska, Mexico, and Hawaii.",
+    lede: "Large ships on a Caribbean cruise, including the short Bahamas trips, depart from Florida. Cruises that start in the islands depart from San Juan through the year, and from Fort-de-France in some seasons. Northeast ports are the choice when you would rather not fly, and those sailings have more nights at sea. California and Vancouver are the departure ports for Alaska, Mexico, and Hawaii.",
     regionIds: ["florida-gulf", "island-starts", "northeast", "pacific", "canada"],
   },
   {
@@ -208,7 +208,7 @@ export const portPages: PortPage[] = [
   {
     slug: "asia",
     title: "Asia",
-    lede: "Singapore and Tokyo are the embarkations you can plan around. The other Asian ports are real, and many of them are stops rather than the first day of the cruise.",
+    lede: "Singapore and Tokyo are the ports most of these cruises start from. Many of the other ports are stops in the middle of the sailing, not the city where you board.",
     regionIds: ["asia"],
     calls: [
       { name: "Bangkok", place: "Laem Chabang, Thailand", note: "The Grand Palace is in Bangkok. The ship docks at Laem Chabang. The palace is about an hour and a half to two hours from the pier. Some ships stay overnight.", air: "Fly Bangkok. Thai Airways and Bangkok Airways, plus the Middle East and Asian long-haul lines.", zone: "Asia/Bangkok", money: "Thai baht. Cards are accepted in the city. Markets often want cash.", image: "/media/ports/bangkok.jpg", alt: "Bangkok along the river" },
@@ -222,7 +222,7 @@ export const portPages: PortPage[] = [
   {
     slug: "australia-new-zealand",
     title: "Australia and New Zealand",
-    lede: "Sydney and Auckland carry the season. Brisbane and Melbourne turn fewer ships. Hobart and Fremantle are stops on many of those sailings, not the ports they start from.",
+    lede: "Most cruises in this season start in Sydney or Auckland. Brisbane and Melbourne have fewer departures. Hobart and Fremantle are stops on many of those sailings, not the ports they start from.",
     regionIds: ["australia", "new-zealand"],
     calls: [
       { name: "Hobart", place: "Tasmania", note: "On the way around from Sydney. Salamanca Place is beside the water. kunanyi, also called Mount Wellington, is the lookout. The ship docks at Sullivans Cove. The mountain is about 30 minutes from the pier.", air: "Qantas, Virgin Australia, and Jetstar from Melbourne or Sydney.", zone: "Australia/Hobart", money: "Australian dollar. Cards are accepted.", image: "/media/ports/hobart.jpg", alt: "Hobart harbor" },
