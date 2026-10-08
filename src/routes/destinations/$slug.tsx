@@ -33,7 +33,7 @@ const ashoreNotes: Record<string, string> = {
   alaskan:
     "Most Alaska days in port end in the afternoon. Mendenhall Glacier is in Juneau, about 20 minutes from the cruise docks on Gastineau Channel. Creek Street is in downtown Ketchikan, and the totem poles at Saxman and Totem Bight are a short ride from there. Skagway sits at the foot of White Pass, and the White Pass and Yukon Route railroad climbs from town to the pass. A day in Glacier Bay or Tracy Arm has no pier at all. Some Juneau days stay late enough for the evening in town. Nights in Seattle or Vancouver are not cut off by all-aboard. Steamed Dungeness crab can be lunch if you want it.",
   caribbean:
-    "A typical island stop ends in the afternoon. Cozumel and the private islands have a beach and a swim. Nassau and the older towns have a walk from the pier. San Juan can hold a longer afternoon, and an overnight is when the evening in town is open. Nights in Miami or Fort Lauderdale are for the city, not the gangway.",
+    "A typical island stop ends in the afternoon. Cozumel and the private islands have a beach and a swim. Nassau and the older towns have a walk from the pier. You can use a longer afternoon in San Juan, and an overnight is when the evening in town is open. Nights in Miami or Fort Lauderdale are for the city, not the gangway.",
   mediterranean:
     "Many stops end in the afternoon. The Gothic Quarter is in Barcelona, and you can walk there from some piers. The Colosseum and the museums are in Rome. Civitavecchia is about an hour to an hour and a half away. The Acropolis is in Athens, about 30 to 45 minutes from Piraeus. When the ship stays overnight, or sails as late as 10 p.m., the evening in the city is open. A reserved dinner can be part of those extra nights.",
   european:
@@ -64,7 +64,7 @@ const ashoreNotes: Record<string, string> = {
 
 const ashoreLeads: Record<string, string> = {
   alaskan: "Mendenhall Glacier is in Juneau, about 20 minutes from the docks. Creek Street is in downtown Ketchikan. Skagway sits at the foot of White Pass. In Glacier Bay or Tracy Arm there is no pier. The ship spends those hours on the water.",
-  caribbean: "Cozumel and the private islands have beaches. Nassau and the older towns have streets you can walk from the pier. San Juan can hold a longer afternoon.",
+  caribbean: "Cozumel and the private islands have beaches. Nassau and the older towns have streets you can walk from the pier. You can use a longer afternoon in San Juan.",
   mediterranean: "The Gothic Quarter is in Barcelona. The Colosseum is in Rome. Civitavecchia is about an hour to an hour and a half away. The Acropolis is in Athens, about 30 to 45 minutes from Piraeus.",
   european: "Lisbon, the London ports, and the Mediterranean cities on these routes are short if the ship leaves in the afternoon. Extra nights are how you see one of them properly.",
   hawaii: "Time between the islands runs longer than a Caribbean stop. Pride of America often stays into the evening. A luau still needs the ship in port after dark.",

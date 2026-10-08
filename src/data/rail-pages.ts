@@ -279,7 +279,7 @@ export const railPages: RailPage[] = [
         heading: "Adirondack",
         paragraphs: [
           "The Adirondack runs from Moynihan Train Hall in New York to Montreal in about eleven hours. It follows the Hudson past Rhinecliff and Hudson, then the west shore of Lake Champlain, with the Adirondacks on the other side. You see the lake from the coach window.",
-          "Ticonderoga is a station. Fort Ticonderoga is a drive from that station, on the lake. Port Kent, in season, is the stop for the ferry toward Burlington. None of those pauses is a day in town. If you get off, the rest of the trip is a new ticket, and the night is a hotel.",
+          "Ticonderoga is a station. Fort Ticonderoga is a drive from that station, on the lake. Port Kent, in season, is where you catch the ferry toward Burlington. None of those pauses is enough time to use the town. If you get off, the rest of the trip is a new ticket, and you need a hotel for the night.",
         ],
       },
       {
