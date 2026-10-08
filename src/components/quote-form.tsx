@@ -166,7 +166,7 @@ export function QuoteForm({
       <h3 className="font-display text-xl text-ink">Request a quote</h3>
       <p className="mt-1 text-base leading-relaxed text-ink">Your name, your email, and the destination. There is no separate agent fee.</p>
       {chooseTrip ? (
-        <label className="mt-4 grid gap-1 text-sm font-medium">
+        <label className="mt-4 grid gap-1 text-base font-medium">
           What kind of trip
           <select
             className={field}
@@ -182,7 +182,7 @@ export function QuoteForm({
           </select>
         </label>
       ) : null}
-      <label className="mt-3 grid gap-1 text-sm font-medium">
+      <label className="mt-3 grid gap-1 text-base font-medium">
         {active === "cruise" ? "Region" : "Place"}
         <select className={field} name="destination" key={active + placeDefault} defaultValue={placeDefault} required aria-label={active === "cruise" ? "Region" : "Place"}>
           <option value="">{active === "cruise" ? "Select a region" : "Select a place"}</option>
@@ -200,33 +200,33 @@ export function QuoteForm({
           {active === "cruise" ? <option value="Not sure yet">Not sure yet</option> : null}
         </select>
       </label>
-      <div className={`${chooseTrip ? "mt-2" : "mt-3"} grid grid-cols-2 gap-2`}>
-        <label className="grid gap-1 text-sm font-medium">
+      <div className={`${chooseTrip ? "mt-2" : "mt-3"} grid grid-cols-1 gap-2 sm:grid-cols-2`}>
+        <label className="grid gap-1 text-base font-medium">
           Name
           <input className={field} name="name" autoComplete="name" required placeholder="Full name" />
         </label>
-        <label className="grid gap-1 text-sm font-medium">
+        <label className="grid gap-1 text-base font-medium">
           Email
           <input className={field} name="email" type="email" autoComplete="email" required placeholder="Email" />
         </label>
-        <label className="grid gap-1 text-sm font-medium">
+        <label className="grid gap-1 text-base font-medium">
           Phone
           <input className={field} name="phone" type="tel" autoComplete="tel" placeholder="Optional" />
         </label>
-        <label className="grid gap-1 text-sm font-medium">
+        <label className="grid gap-1 text-base font-medium">
           When
           <input className={field} name="travelWindow" placeholder="Optional" />
         </label>
-        <label className="col-span-2 grid gap-1 text-sm font-medium">
+        <label className="grid gap-1 text-base font-medium sm:col-span-2">
           Who is traveling
           <input className={field} name="partySize" placeholder="Optional" />
         </label>
       </div>
-      <label className="mt-3 grid gap-1 text-sm font-medium">
+      <label className="mt-3 grid gap-1 text-base font-medium">
         {style.label}
         <input className={field} name="cabin" placeholder="Optional" />
       </label>
-      <label className="mt-3 grid gap-1 text-sm font-medium">
+      <label className="mt-3 grid gap-1 text-base font-medium">
         Travel plans
         <textarea className={`${field} min-h-20 py-2`} name="plans" defaultValue={note} placeholder="Optional. Flights, a hotel, a shore excursion, or other notes." />
       </label>

@@ -108,10 +108,10 @@ function ItinerariesPage() {
                 {item.itineraries.map((trip) => (
                   <article key={trip.title} className="rounded-xl border border-line bg-foam p-4">
                     <h3 className="font-display text-2xl">{trip.title}</h3>
-                    <p className="mt-2 text-sm text-tide">
+                    <p className="mt-2 text-base text-tide">
                       {trip.nights} · {trip.season}
                     </p>
-                    <p className="mt-3 text-sm font-medium">{trip.path}</p>
+                    <p className="mt-3 text-base font-medium">{trip.path}</p>
                     <p className="mt-1 text-base leading-relaxed text-ink">{trip.ship}</p>
                     <ul className="mt-3 grid gap-1 text-base leading-relaxed text-ink">
                       {trip.ports.map((port) => (

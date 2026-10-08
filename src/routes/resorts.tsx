@@ -187,7 +187,7 @@ function ResortsPage() {
 
         <article className="mt-4 rounded-xl bg-sea p-5 text-foam">
           <h2 className="font-display text-2xl">When to go</h2>
-          <p className="mt-3 max-w-3xl text-foam/85">
+          <p className="mt-3 max-w-3xl text-base leading-relaxed text-foam">
             Caribbean hurricane season runs June through November. The resort rate for a late-summer week can be lower, and that week can also carry a real storm risk. We will say which of those applies to your dates. The Mexican Caribbean is hot and wet in summer and more reliable from December through April. School breaks and the weeks around Christmas sell out, and the rate for those weeks is higher than the rate for a week in September. Overwater villas are booked on their own dates, and an agent almost always requests those rates.
           </p>
         </article>
@@ -206,11 +206,11 @@ function ResortsPage() {
       <section className="mx-auto grid max-w-6xl gap-8 px-4 pb-20 lg:grid-cols-2">
         <div>
           <p className="text-sm font-medium text-tide">The property, not a slogan</p>
-          <h2 className="mt-2 font-display text-4xl">Tell us the week and who is going.</h2>
+          <h2 className="mt-2 font-display text-4xl">Tell us the dates and who is going.</h2>
           <p className="mt-4 text-mute">
             Adults or a family, a beach week or an overwater villa, and a budget range. If you would rather we propose the island, say so. We reply the same day in most cases.
           </p>
-          <ul className="mt-6 grid gap-2 text-sm">
+          <ul className="mt-6 grid gap-2 text-base">
             <li>
               Call or text{" "}
               <a className="font-medium text-tide" href={phoneHref}>

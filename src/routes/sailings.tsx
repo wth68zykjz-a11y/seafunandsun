@@ -15,7 +15,7 @@ const weeklyDeals = [
     ports: "americas",
     destination: "caribbean",
     region: "Caribbean cruises",
-    text: "Celebrity’s Caribbean weeks usually turn in Miami or Fort Lauderdale. The short Bahamas sailings leave from Miami.",
+    text: "Celebrity’s Caribbean cruises usually start in Miami or Fort Lauderdale. The short Bahamas sailings leave from Miami.",
   },
   {
     line: "Royal Caribbean",
@@ -78,7 +78,7 @@ const weeklyDeals = [
     ports: "europe",
     destination: "mediterranean",
     region: "Mediterranean cruises",
-    text: "MSC uses Barcelona for Western Mediterranean weeks. Some Caribbean sailings turn at Port Canaveral instead.",
+    text: "MSC uses Barcelona for Western Mediterranean cruises. Some Caribbean cruises start at Port Canaveral instead.",
   },
   {
     line: "Viking",

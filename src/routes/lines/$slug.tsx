@@ -74,8 +74,18 @@ function LineRegionPage() {
             ))}
           </div>
         ) : null}
-        <p className="mt-8 text-base leading-relaxed text-ink md:hidden">Swipe sideways to see the passengers, the route, and the fare.</p>
-        <div className="mt-3 overflow-x-auto rounded-xl border border-line bg-foam md:mt-8">
+        <p className="mt-8 text-base leading-relaxed text-ink md:hidden">Each card is one line. The table is on a wider screen.</p>
+        <div className="mt-3 grid gap-3 md:hidden">
+          {page.rows.map((row) => (
+            <article key={row.line} className="rounded-xl border border-line bg-foam p-4">
+              <h2 className="font-display text-2xl text-ink">{row.line}</h2>
+              <p className="mt-2 text-base leading-relaxed text-ink"><span className="font-medium">Passengers. </span>{row.ships}</p>
+              <p className="mt-2 text-base leading-relaxed text-ink"><span className="font-medium">Where they go. </span>{row.where}</p>
+              <p className="mt-2 text-base leading-relaxed text-ink"><span className="font-medium">Price range. </span>{row.fare}</p>
+            </article>
+          ))}
+        </div>
+        <div className="mt-3 hidden overflow-x-auto rounded-xl border border-line bg-foam md:mt-8 md:block">
           <table className="w-full min-w-[44rem] text-left text-base">
             <thead className="border-b border-line text-mute">
               <tr>

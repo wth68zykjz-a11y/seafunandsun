@@ -165,12 +165,12 @@ function Home() {
           <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-[#0c2340] via-[#1a4d73] to-[#d4923c] px-5 py-8 text-foam lg:px-12 lg:py-16">
             <div className="relative grid items-center gap-8 lg:grid-cols-[1fr_15rem]">
               <div>
-                <p className="text-sm font-medium text-foam/75">Independent travel company · Farmington, CT</p>
+                <p className="text-base font-medium text-foam">Independent travel company · Farmington, CT</p>
                 <h1 className="hero-title mt-3 font-display text-4xl leading-none text-foam sm:mt-4 sm:text-6xl">
                   The right trip,
                   <span className="mt-2 block font-medium italic text-gold">booked with care.</span>
                 </h1>
-                <p className="mt-4 max-w-xl text-base text-foam/85 sm:mt-6 sm:text-lg">
+                <p className="mt-4 max-w-xl text-base text-foam sm:mt-6 sm:text-lg">
                   When we book a cruise, a resort, a ski vacation, or a rail trip, one agent handles it from the first quote until you are home.
                 </p>
                 <div className="mt-6 w-full sm:mt-8 sm:inline-flex sm:w-auto sm:flex-col sm:items-center">
@@ -290,7 +290,7 @@ function Home() {
             <p className="text-sm font-medium text-tide">A quote</p>
             <h2 className="mt-2 font-display text-3xl sm:text-4xl">A few details are enough to begin.</h2>
             <p className="mt-4 text-base leading-relaxed text-ink">The destination, the dates, and who is traveling. Add flights, a hotel, or an excursion if you want them arranged.</p>
-            <ul className="mt-6 grid gap-2 text-sm">
+            <ul className="mt-6 grid gap-2 text-base">
               <li>
                 Call or text{" "}
                 <a className="font-medium text-tide" href={phoneHref}>

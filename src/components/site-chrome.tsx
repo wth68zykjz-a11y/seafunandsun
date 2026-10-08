@@ -119,7 +119,7 @@ export function Header() {
       </div>
       {path.startsWith("/destinations") || path.startsWith("/lines") || path.startsWith("/in-port") ? (
         <nav aria-label="Cruises" className="border-t border-foam/15 bg-[#0a3a52]">
-          <div className="mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 py-2">
+          <div className="mx-auto flex max-w-6xl touch-pan-x gap-2 overflow-x-auto px-4 py-2">
             <Link
               to="/destinations"
               className="inline-flex min-h-11 shrink-0 items-center rounded-md px-3 text-sm font-medium"
@@ -156,7 +156,7 @@ export function Header() {
       ) : null}
       {path.startsWith("/rail") ? (
         <nav aria-label="Rail" className="border-t border-foam/15 bg-[#0a3a52]">
-          <div className="mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 py-2">
+          <div className="mx-auto flex max-w-6xl touch-pan-x gap-2 overflow-x-auto px-4 py-2">
             <Link
               to="/rail"
               className="inline-flex min-h-11 shrink-0 items-center rounded-md px-3 text-sm font-medium"
@@ -289,7 +289,7 @@ export function Footer() {
           </div>
         </div>
         <div>
-          <p className="text-sm font-medium">Explore</p>
+          <p className="text-base font-medium">Explore</p>
           <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-base leading-6 text-foam/90">
             <li><Link to="/resorts" className="hover:text-foam">Resorts</Link></li>
             <li><Link to="/ski" className="hover:text-foam">Ski</Link></li>
@@ -302,7 +302,7 @@ export function Footer() {
           </ul>
         </div>
         <div>
-          <p className="text-sm font-medium">Destinations</p>
+          <p className="text-base font-medium">Destinations</p>
           <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-base leading-6 text-foam/90">
             {destinations
               .filter((item) => item.slug !== "rail")

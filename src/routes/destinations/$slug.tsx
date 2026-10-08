@@ -136,7 +136,7 @@ export function DestinationArticle({
       <section className="mx-auto grid max-w-6xl gap-6 px-4 pt-8 lg:grid-cols-2">
         <img src={place.image} alt={place.alt} fetchPriority="high" decoding="async" className="aspect-photo w-full rounded-xl object-cover" />
         <div className="flex flex-col justify-center rounded-xl px-6 py-8 text-foam lg:px-8" style={{ backgroundColor: tone }}>
-          <p className="text-sm text-foam/75">
+          <p className="text-base text-foam">
             {rail ? (
               <Link to="/" className="font-medium text-foam">
                 Home
@@ -149,9 +149,9 @@ export function DestinationArticle({
             <span aria-hidden="true"> / </span>
             {place.nav}
           </p>
-          <p className="mt-3 text-sm font-medium text-foam/80">{place.card}</p>
+          <p className="mt-3 text-base font-medium text-foam">{place.card}</p>
           <h1 className="mt-2 font-display text-3xl sm:text-5xl">{place.title}</h1>
-          <p className="mt-4 text-lg text-foam/85">{place.lede}</p>
+          <p className="mt-4 text-lg text-foam">{place.lede}</p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Link
               to="/quote"
@@ -171,7 +171,7 @@ export function DestinationArticle({
             ) : null}
           </div>
           {rail ? null : (
-            <p className="mt-4 text-sm text-foam/80">
+            <p className="mt-4 text-base text-foam">
               <Link to="/lines" className="font-medium text-foam underline-offset-2 hover:underline">
                 Compare cruise lines
               </Link>
@@ -306,7 +306,7 @@ export function DestinationArticle({
         </p>
         <article className="mt-4 rounded-xl p-5 text-foam" style={{ backgroundColor: tone }}>
           <h2 className="font-display text-2xl">When to go</h2>
-          <p className="mt-3 max-w-3xl text-foam/85">{place.when}</p>
+          <p className="mt-3 max-w-3xl text-base leading-relaxed text-foam">{place.when}</p>
         </article>
       </section>
 
