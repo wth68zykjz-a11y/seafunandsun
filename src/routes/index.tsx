@@ -93,7 +93,7 @@ const doors: Door[] = [
   {
     kicker: "Snow",
     title: "Ski",
-    body: "Cold air, an unmarked ridge, and the valley still dark below. Aspen, Banff, the Alps, and Niseko.",
+    body: "Cold air, an unmarked ridge, and the valley still dark below. You point the skis downhill and the speed arrives all at once. Aspen, Banff, the Alps, and Niseko.",
     image: "/media/card-ski.webp",
     alt: "A person in a red jacket facing the Matterhorn across a snowfield",
     cta: "See ski vacations",
