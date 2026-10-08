@@ -51,7 +51,7 @@ function Wordmark({ tone = "ink" }: { tone?: "ink" | "foam" }) {
         </span>
         <span className="mt-1 flex items-center gap-1.5">
           <span className={`h-px w-2 sm:w-3 ${onDark ? "bg-gold" : "bg-gold-ink"}`} />
-          <span className={`text-[0.5rem] font-semibold tracking-[0.14em] sm:text-[0.58rem] sm:tracking-[0.22em] ${onDark ? "text-gold" : "text-gold-ink"}`}>
+          <span className={`text-[0.62rem] font-semibold tracking-[0.12em] sm:text-[0.58rem] sm:tracking-[0.22em] ${onDark ? "text-gold" : "text-gold-ink"}`}>
             TRAVEL COMPANY
           </span>
           <span className={`h-px w-2 sm:w-3 ${onDark ? "bg-gold" : "bg-gold-ink"}`} />
@@ -118,7 +118,7 @@ export function Header() {
         </div>
       </div>
       {path.startsWith("/destinations") || path.startsWith("/lines") || path.startsWith("/in-port") ? (
-        <nav aria-label="Cruises" className="border-t border-foam/15 bg-[#0a3a52]">
+        <nav aria-label="Cruises" className="hidden border-t border-foam/15 bg-[#0a3a52] lg:block">
           <div className="mx-auto flex max-w-6xl touch-pan-x gap-2 overflow-x-auto px-4 py-2">
             <Link
               to="/destinations"
@@ -155,7 +155,7 @@ export function Header() {
         </nav>
       ) : null}
       {path.startsWith("/rail") ? (
-        <nav aria-label="Rail" className="border-t border-foam/15 bg-[#0a3a52]">
+        <nav aria-label="Rail" className="hidden border-t border-foam/15 bg-[#0a3a52] lg:block">
           <div className="mx-auto flex max-w-6xl touch-pan-x gap-2 overflow-x-auto px-4 py-2">
             <Link
               to="/rail"
@@ -199,7 +199,7 @@ export function Header() {
                     <Link
                       to="/lines"
                       onClick={() => setOpen(false)}
-                      className="flex min-h-11 items-center border-b border-foam/15 pl-4 text-sm"
+                      className="flex min-h-11 items-center border-b border-foam/15 pl-4 text-base"
                     >
                       Compare
                     </Link>
@@ -211,7 +211,7 @@ export function Header() {
                           to="/destinations/$slug"
                           params={{ slug: page.slug }}
                           onClick={() => setOpen(false)}
-                          className="flex min-h-11 items-center border-b border-foam/15 pl-4 text-sm"
+                          className="flex min-h-11 items-center border-b border-foam/15 pl-4 text-base"
                         >
                           {page.nav}
                         </Link>
@@ -225,7 +225,7 @@ export function Header() {
                         to="/rail/$slug"
                         params={{ slug: page.slug }}
                         onClick={() => setOpen(false)}
-                        className="flex min-h-11 items-center border-b border-foam/15 pl-4 text-sm"
+                        className="flex min-h-11 items-center border-b border-foam/15 pl-4 text-base"
                       >
                         {page.nav}
                       </Link>
@@ -290,7 +290,7 @@ export function Footer() {
         </div>
         <div>
           <p className="text-base font-medium">Explore</p>
-          <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-base leading-6 text-foam/90">
+          <ul className="mt-2 grid grid-cols-1 gap-y-2 text-base leading-6 text-foam/90 sm:grid-cols-2 sm:gap-x-4">
             <li><Link to="/resorts" className="hover:text-foam">Resorts</Link></li>
             <li><Link to="/ski" className="hover:text-foam">Ski</Link></li>
             <li><Link to="/rail" className="hover:text-foam">Rail and land</Link></li>
@@ -303,7 +303,7 @@ export function Footer() {
         </div>
         <div>
           <p className="text-base font-medium">Destinations</p>
-          <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-base leading-6 text-foam/90">
+          <ul className="mt-2 grid grid-cols-1 gap-y-2 text-base leading-6 text-foam/90 sm:grid-cols-2 sm:gap-x-4">
             {destinations
               .filter((item) => item.slug !== "rail")
               .map((item) => (
