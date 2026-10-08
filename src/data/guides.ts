@@ -22,7 +22,7 @@ export const guides: Guide[] = [
     title: "Alaska cruise from Seattle or Vancouver",
     description:
       "Seattle is the usual departure port for a round-trip Alaska cruise. Vancouver is the usual departure port for a one-way cruise to Seward or Whittier. Sea Fun & Sun, Farmington, Connecticut.",
-    lede: "Seattle and Vancouver are departure ports. They are not the cruise. The city you leave from changes the airports, the passport, and whether you come back to the same place.",
+    lede: "Seattle and Vancouver are departure ports, not the cruise. Leaving from one or the other changes the airports, whether you need a passport to board, and whether the ship returns to the same city.",
     image: "/media/ports/seattle.jpg",
     alt: "The Seattle waterfront, a departure port for Alaska cruises",
     note: "Holland America and Princess sail from Vancouver often. Norwegian, Royal Caribbean, Carnival, Celebrity, Princess, and Holland America sail from Seattle. A past-guest number, or a military discount, belongs on the quote.",
@@ -34,11 +34,11 @@ export const guides: Guide[] = [
         points: [
           {
             label: "The cruise",
-            text: "A round trip through the Inside Passage, usually seven nights. You board in Seattle and leave the ship in Seattle.",
+            text: "A round trip through the Inside Passage, usually seven nights. You board in Seattle and you leave the ship in Seattle.",
           },
           {
             label: "Flights",
-            text: "One airport. You fly into Seattle and fly home from Seattle.",
+            text: "You use one airport. You fly into Seattle and you fly home from Seattle.",
           },
           {
             label: "Passport",
@@ -55,11 +55,11 @@ export const guides: Guide[] = [
         points: [
           {
             label: "The cruise",
-            text: "Often a one-way cruise to Seward or Whittier, across the Gulf of Alaska. Some Inside Passage cruises also start and end here.",
+            text: "This is often a one-way cruise to Seward or Whittier, across the Gulf of Alaska. Some Inside Passage cruises also start and end in Vancouver.",
           },
           {
             label: "Flights",
-            text: "A one-way cruise needs a second airport. You fly into Vancouver, and you fly home from Anchorage after Seward or Whittier.",
+            text: "A one-way cruise uses two airports. You fly into Vancouver, and you fly home from Anchorage after Seward or Whittier.",
           },
           {
             label: "Passport",
@@ -67,7 +67,7 @@ export const guides: Guide[] = [
           },
           {
             label: "In the city",
-            text: "A few days in Vancouver sit well before or after the cruise. The Fairmont Pacific Rim looks over the harbor and the mountains. The currency is the Canadian dollar. Order it from your bank, or use a card with no foreign transaction fee.",
+            text: "Stay a few days in Vancouver before or after the cruise. The Fairmont Pacific Rim looks over the harbor and the mountains. The currency is the Canadian dollar. Order it from your bank, or use a card with no foreign transaction fee.",
           },
         ],
       },
@@ -94,7 +94,7 @@ export const guides: Guide[] = [
           },
           {
             label: "The days at sea",
-            text: "There is still a sea day on the way to Bermuda and a sea day on the way back. Boston is closer than Baltimore. It does not remove those days.",
+            text: "There is still a sea day on the way to Bermuda and a sea day on the way back. Boston is closer to Bermuda than Baltimore is. The cruise still has those sea days.",
           },
           {
             label: "Flights",
@@ -111,7 +111,7 @@ export const guides: Guide[] = [
           },
           {
             label: "Baltimore",
-            text: "The same pattern: Bermuda, a sea day each way, and a return to Baltimore. Southwest has the most flights into BWI.",
+            text: "A Bermuda cruise from Baltimore also has a sea day each way, and the ship returns to Baltimore. Southwest has the most flights into BWI.",
           },
           {
             label: "Which one",
@@ -146,11 +146,11 @@ export const guides: Guide[] = [
           },
           {
             label: "Length",
-            text: "Usually 14 to 17 nights. A voyage that also includes Mexico, or the move toward an Alaska season, runs longer.",
+            text: "Usually 14 to 17 nights. A voyage that also stops in Mexico, or continues on toward an Alaska season, runs longer.",
           },
           {
             label: "Flights",
-            text: "Two airports. The flight home does not leave from the city where you boarded.",
+            text: "You use two airports. The flight home does not leave from the city where you boarded.",
           },
           {
             label: "What you see",
@@ -179,7 +179,7 @@ export const guides: Guide[] = [
           },
           {
             label: "Flights",
-            text: "One airport. The flight out and the flight home use the same city.",
+            text: "You use one airport. The flight out and the flight home use the same city.",
           },
           {
             label: "What you see",
