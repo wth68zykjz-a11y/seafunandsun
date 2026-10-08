@@ -59,7 +59,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "A sea day with somewhere to go",
-        text: "The theater, the kids’ club, a sports court, and a casino are on these ships. A day at sea is the resort, not a day spent waiting for port.",
+        text: "The theater, the kids’ club, a sports court, and a casino are on these ships. On a day at sea you use those, rather than waiting for a port.",
       },
       {
         title: "What these ships leave out",
@@ -99,7 +99,7 @@ export const linePages: LinePage[] = [
     benefits: [
       {
         title: "Pools, water parks, and a private island",
-        text: "The Florida ships are the ones with several pools and, on Royal Caribbean, Carnival’s Excel class, and MSC’s largest ships, a water park. Many of those weeks also stop at the line’s own beach: Perfect Day at CocoCay, Celebration Key, Ocean Cay, Great Stirrup Cay, or Castaway Cay. That day is a beach, not a port city. Holland America and Celebrity do not have that water park or that island.",
+        text: "The Florida ships are the ones with several pools and, on Royal Caribbean, Carnival’s Excel class, and MSC’s largest ships, a water park. Many of those weeks also stop at the line’s own beach: Perfect Day at CocoCay, Celebration Key, Ocean Cay, Great Stirrup Cay, or Castaway Cay. That stop has a beach and no city to walk. Holland America and Celebrity do not have that water park or that island.",
       },
       {
         title: "Restaurants",
@@ -156,7 +156,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "Time in port, and time on deck",
-        text: "Most stops last about six to eight hours. Juneau, Skagway, and Ketchikan are the walking ports. A glacier day may not include a landing at all. Bring a warm layer. The pools are open, and the weather does not always agree.",
+        text: "Most stops last about six to eight hours. In Juneau, Skagway, and Ketchikan you can walk from the pier. A glacier day may not include a landing at all. Bring a warm layer. The pools are open, and the weather does not always agree.",
       },
       {
         title: "What these ships leave out",
@@ -340,7 +340,7 @@ export const linePages: LinePage[] = [
     benefits: [
       {
         title: "The marina, not a pool deck",
-        text: "SeaDream, the Ritz-Carlton yachts, and Four Seasons I are built around a marina and the water at the back of the ship. Swimming, paddleboards, and a tender into a small harbor are the day. There is a pool. There is no water park.",
+        text: "SeaDream, the Ritz-Carlton yachts, and Four Seasons I are built around a marina and the water at the back of the ship. You can swim, use a paddleboard, or take a tender into a small harbor. There is a pool. There is no water park.",
       },
       {
         title: "One dining room, done properly",

@@ -106,7 +106,7 @@ export const destinations: Destination[] = [
       {
         heading: "Popular sailings",
         items: [
-          "Cozumel — the pier for the Yucatán. Cancún is a resort stay, not where the ship docks",
+          "Cozumel is the island off the Yucatán, and ships dock there. Cancún is a resort stay, not the dock",
           "Grand Cayman — Stingray City and the reef",
           "Nassau and Freeport",
           "St. Thomas and St. Maarten",
@@ -358,9 +358,9 @@ export const destinations: Destination[] = [
     card: "Pink sand beaches",
     image: "/media/bermuda.jpg",
     alt: "Pink sand and clear shallow water on an empty Bermuda beach",
-    lede: "Horseshoe Bay is the pink-sand beach. Hamilton and St. George’s are the towns. Ships dock at the Royal Naval Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi and closer to 45 by bus. Hamilton is about 20 minutes by ferry.",
+    lede: "Horseshoe Bay has pink sand. Hamilton and St. George’s are towns on the island. Ships dock at the Royal Naval Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi and closer to 45 by bus. Hamilton is about 20 minutes by ferry.",
     paragraphs: [
-      "Most Bermuda cruises run about seven nights and depart from Boston, New York, or Baltimore. Many stay overnight, which means the ship is still there the next morning. That is enough time for Horseshoe Bay, Hamilton, and St. George's, at the east end. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly sail there. A five-hour stop is the Dockyard, unless you take an excursion sold by the ship. If that tour runs late, the ship waits. A taxi or a tour you booked on your own does not come with that.",
+      "Most Bermuda cruises run about seven nights and depart from Boston, New York, or Baltimore. Many stay overnight, which means the ship is still there the next morning. That is enough time for Horseshoe Bay, Hamilton, and St. George's, at the east end. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly sail there. On a five-hour stop you stay near the Dockyard, unless you take an excursion sold by the ship. If that tour runs late, the ship waits. A taxi or a tour you booked on your own does not come with that.",
       "A cruise that departs from Boston still has a sea day each way. That is shorter than a Caribbean cruise that departs from New York. The ocean is part of either cruise.",
       "Bermuda also works as a destination of its own: an island stay, or a sailing that departs from the island. The two combine easily, and we will arrange both.",
     ],
@@ -694,7 +694,7 @@ export const destinations: Destination[] = [
           "Singapore — Marina Bay at night",
           "Tokyo, Yokohama & Tokyo Bay",
           "Shanghai & Hong Kong",
-          "Phuket — Patong is the beach and Old Town is the older streets. The ship docks at the deep-water port, not on the sand. Patong is about 40 minutes away. Old Town is closer to 30. A boat toward Phi Phi is about an hour to an hour and a half after that.",
+          "Phuket — Patong has the beach. Phuket Old Town has the older streets. The ship docks at the deep-water port, not on the sand. Patong is about 40 minutes away. Old Town is closer to 30. A boat toward Phi Phi is about an hour to an hour and a half after that.",
           "Saigon, the Mekong & Halong Bay",
           "Busan, Jeju & the Korean coast",
           "Trans-Pacific crossings with a stop at Honolulu or Fiji",
@@ -864,7 +864,7 @@ export const destinations: Destination[] = [
         season: "Fall eastbound, spring westbound",
         ship: "Cunard is the classic; others cross too",
         path: "New York or Southampton, ocean in between",
-        ports: ["Mostly no ports", "The ocean is the trip", "A good first long voyage"],
+        ports: ["Mostly no ports", "You spend the crossing on the ocean", "A good first long voyage"],
       },
     ],
   },
@@ -978,7 +978,7 @@ export const destinations: Destination[] = [
       {
         heading: "Worth going ashore for",
         items: [
-          "Sydney — the harbor on foot, not a bus loop of the suburbs",
+          "Sydney — you can walk the harbor. A bus loop of the suburbs spends the day on the bus",
           "The reef from Cairns or Airlie Beach, if the ship gives you the hours",
           "Milford Sound from the deck, when the weather allows the ship in",
           "Wellington, or a South Island wine town, walked rather than driven past",

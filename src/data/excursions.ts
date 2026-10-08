@@ -53,7 +53,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-alaskan.jpg",
     photoAlt: "A small boat near a whale in a cold Alaskan fjord",
     intro:
-      "A May day and an August day can use the same ports. May still has the larger glaciers, and it is colder. August is when the salmon run and the bears come to the rivers. Most stops last four to eight hours. The ship does the glacier day. The time ashore is the wildlife or the railroad. A bus to a gift shop is not one of those.",
+      "A May day and an August day can use the same ports. May still has the larger glaciers, and it is colder. August is when the salmon run and the bears come to the rivers. Most stops last four to eight hours. The ship sails the glacier. The hours ashore can go to the wildlife or the railroad. A bus to a gift shop is neither.",
     excursions: [
       {
         title: "Glacier water, up close",
@@ -133,7 +133,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Uneven stone, real walking",
         detail:
-          "See the Acropolis in the morning. The Acropolis Museum next door holds the sculptures from the site, including the Parthenon marbles that remain in Athens. The Ancient Agora is a walk down the hill. The National Archaeological Museum, across the city, holds the Mycenaean gold and the classical bronzes, so it fits a longer stay. Plaka is the neighborhood for lunch after the hill.",
+          "See the Acropolis in the morning. The Acropolis Museum next door holds the sculptures from the site, including the Parthenon marbles that remain in Athens. You can walk down the hill to the Ancient Agora. The National Archaeological Museum, across the city, holds the Mycenaean gold and the classical bronzes, so it fits a longer stay. In Plaka you can have lunch after the hill.",
       },
       {
         title: "St. Peter's, or the Colosseum",
@@ -149,7 +149,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "2 to 4 hours",
         pace: "Stairs in Kotor; a car and a table in Amalfi",
         detail:
-          "Kotor is a town you walk through, not a museum you tour. In Amalfi, lunch can take the afternoon when the ship stays long enough. All-aboard decides which of those days is real.",
+          "In Kotor you walk the streets. It is not a museum tour. In Amalfi, lunch can take the afternoon when the ship stays long enough. All-aboard decides which of those days is real.",
       },
     ],
   },
@@ -253,7 +253,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-northern-europe.jpg",
     photoAlt: "A steep fjord village and a waterfall above dark water",
     intro:
-      "A northern Europe day is either a tender into a fjord village or a walk in a Baltic city. Weather decides which tender runs. A town walk is the backup when the scenic boat is canceled.",
+      "A northern Europe day can be a tender into a fjord village, or a walk in a Baltic city. Weather decides which tender runs. If the scenic boat is canceled, you can walk in town.",
     excursions: [
       {
         title: "A village at the end of the fjord",
@@ -325,7 +325,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "2 to 3 hours",
         pace: "Easy walking on cobblestone streets",
         detail:
-          "The fare already includes this morning’s walk. On some stops that walk is the day. On others it is only a look at a square.",
+          "The fare already includes this morning’s walk. On some stops that walk uses the hours you have. On others you only see a square.",
       },
       {
         title: "Bikes in the Wachau or along the Rhine",
@@ -397,7 +397,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Easy, some boat motion",
         detail:
-          "Ha Long Bay is the water and the limestone karsts. The ship has to already be in that bay.",
+          "Ha Long Bay has limestone karsts rising from the water. The ship has to already be in that bay.",
       },
       {
         title: "A Japanese port, on foot",
@@ -413,7 +413,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-south-america.jpg",
     photoAlt: "A quiet South American waterfront and green hills at sunrise",
     intro:
-      "A South American day is either a large city or a scenic day the ship already provides, such as Cape Horn. A city day needs one focus. A scenic day needs a window, not a bus.",
+      "A South American day can be time in a large city, or time on deck for a scenic sail such as Cape Horn. In a city, pick one neighborhood. On a scenic sail you want a window, not a bus.",
     excursions: [
       {
         title: "Rio with one view",
@@ -453,7 +453,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "A full day and an evening",
         pace: "Your choice",
         detail:
-          "A guide is worth booking on an overnight: one neighborhood, a table, and a late return. A two-hour tender stop is a walk near the landing.",
+          "A guide is worth booking on an overnight: one neighborhood, a table, and a late return. On a two-hour tender stop you can walk near the landing.",
       },
       {
         title: "Crossing days, on purpose",
@@ -509,7 +509,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-australia-new-zealand.jpg",
     photoAlt: "Sunlight on a coral reef and a school of reef fish",
     intro:
-      "An Australia or New Zealand day is a city you can walk, a reef that needs real hours, or a fiord the ship already sails. A reef and a capital do not fit in the same day. One of them is the day.",
+      "An Australia or New Zealand day can be time in a city, hours on the reef, or a fiord the ship sails through. A reef and a capital do not fit in the same day. You pick one.",
     excursions: [
       {
         title: "Sydney, from the harbor",
@@ -618,7 +618,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "A city day uses most of the hours, but the pier is often an hour from the place you actually want." },
       { label: "Worth the time", text: "The belfry is in Bruges, and the menus have mussels steamed in white wine, onion, and celery, usually with fries. The ship docks at Zeebrugge. Bruges is about 20 minutes from the pier. The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. The ship docks at Le Havre. Paris is about two hours from the pier, so a short stop leaves time for one sight. Lunch can fit if the ship leaves later. Shangri-La Paris, looking toward the Eiffel Tower, is a stay in the city before or after the cruise. Westminster Abbey and the Tower of London are in London. The ship docks at Southampton. London is about an hour and a half to two hours from the pier. The Savoy is a stay in the city. The Sagrada Família and the Gothic Quarter are in Barcelona. Cocina Hermanos Torres is a Michelin table in the city if you reserved it ahead, and Camp Nou is there when there is a match. Belém and Alfama are in Lisbon. Hotel Arts is a stay in Barcelona. The Four Seasons Hotel Ritz is a stay in Lisbon." },
       { label: "Best for", text: "Travelers who have a city they still want, or who would rather have one garden than three capitals." },
-      { label: "Also", text: "Paris is the city. The ship docks at Le Havre. Paris is about two hours from the pier, so a short stop leaves time for one sight." },
+      { label: "Also", text: "In Paris you can see the Louvre, Notre-Dame, or the Eiffel Tower. The ship docks at Le Havre. Paris is about two hours from the pier, so a short stop leaves time for one sight." },
     ],
     outings: [
       { fits: "People who will spend the day in Bruges, on the canals, at the belfry, and at a table for mussels.", bring: "Layers. Canal weather changes, and the square is windier than the pier." },
@@ -663,7 +663,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Fjord villages can be a tender of a few hours. Baltic capitals are longer city days." },
       { label: "Worth the time", text: "The Bryggen wharf is in Bergen, and the fish market serves a shrimp sandwich: cold peeled shrimp on buttered bread, with mayonnaise and lemon. In Copenhagen, a New Nordic menu is local seafood, vegetables, and foraged herbs, and those tables are booked before you sail. The Rijksmuseum is in Amsterdam. It holds Rembrandt’s The Night Watch. The Anne Frank House is the rooms where she hid. Ocean ships dock at IJmuiden, not in the canals. The museum is about 30 to 45 minutes from the pier. Lunch can fit if the ship leaves later. The Waldorf Astoria Amsterdam is a stay in the city before or after the cruise. Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a stay in the city if you want to stay the night. Gamla Stan is in Stockholm. The Vasa Museum holds the warship Vasa, raised from the harbor. Grand Hôtel looks across the water at the palace." },
       { label: "Best for", text: "Long summer light, small ports, and people who like weather to be part of the trip." },
-      { label: "Also", text: "If the tender does not run, the town walk is the day." },
+      { label: "Also", text: "If the tender does not run, you can walk in the town for the hours you have." },
     ],
     outings: [
       { fits: "People who will tender ashore, or stay on deck. Room service on the balcony is the same sail without the tender.", bring: "A real rain jacket." },
@@ -678,7 +678,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Small Maine ports are half days. Halifax and Québec, when the ship goes upriver, are city days." },
       { label: "Worth the time", text: "Stop in Halifax to see the Citadel. You can do it on foot. If the ship goes up to Québec, stop there for the view from the Château Frontenac. You can also stay in that hotel before or after the cruise. In Maine, stop for a lighthouse and a lobster roll: lobster meat in a split bun, with mayonnaise or melted butter. That is a full day." },
       { label: "Best for", text: "Fall color and small harbors, often without a flight. Peak leaves are a narrow window." },
-      { label: "Also", text: "The harbor and the ramparts are the walk." },
+      { label: "Also", text: "You can walk the harbor and the ramparts." },
     ],
     outings: [
       { fits: "People who will time the stop for the maples and a walk out to a lighthouse.", bring: "A fleece. The maples are in color. The wind off the water is colder than it looks." },
@@ -690,7 +690,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-river.jpg",
     detailAlt: "Bicycles by a vineyard wall, with a river ship on the water below",
     facts: [
-      { label: "Time in port", text: "You dock in town, often overnight. Mornings are the walking tour. Afternoons can be a bike or a tasting." },
+      { label: "Time in port", text: "You dock in town, often overnight. The morning includes the walking tour. The afternoon can be a bike ride or a tasting." },
       { label: "Worth the time", text: "Stop in Budapest to see the Parliament and have a bowl of goulash. In Vienna, Steirereck is the Michelin restaurant for Austrian cooking, so book it before the cruise. If the afternoon is short, have Sachertorte in a café instead. To see either city properly, stay before or after the cruise: Four Seasons Hotel Gresham Palace in Budapest, on the Danube, or Hotel Sacher in Vienna." },
       { label: "Best for", text: "Travelers who want the city at the gangway and are happy with one river, not a new ocean every week." },
       { label: "Also", text: "The included walk is already the morning." },
@@ -753,7 +753,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "A few overnights matter. Many stops give you only a short look from the pier. Sea days make up most of the voyage." },
       { label: "Worth the time", text: "If the ship stays the night, pick one building and one good meal. A two-hour stop by tender is not the day for a stadium or a big museum." },
       { label: "Best for", text: "Travelers who like the ship, and who do not need a new city every morning." },
-      { label: "Also", text: "An overnight is the day to use the city. A short tender is a look at the port." },
+      { label: "Also", text: "On an overnight you can use the city into the evening. On a short tender you see the area around the landing." },
     ],
     outings: [
       { fits: "People who will use an overnight for one neighborhood and dinner, then walk back.", bring: "A plan for the city the ship is in." },

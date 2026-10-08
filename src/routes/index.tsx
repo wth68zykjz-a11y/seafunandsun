@@ -104,7 +104,7 @@ const doors: Door[] = [
   {
     kicker: "Small ships",
     title: "Expedition",
-    body: "Antarctica, the Arctic, and the Galápagos, on ships small enough that the landing is the day.",
+    body: "Antarctica, the Arctic, and the Galápagos, on ships small enough that you spend the day on a landing.",
     image: "/media/card-expedition.webp",
     alt: "Northern lights over a snowfield",
     cta: "See expedition cruises",

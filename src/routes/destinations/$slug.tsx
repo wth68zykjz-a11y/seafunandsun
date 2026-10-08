@@ -48,17 +48,17 @@ const ashoreNotes: Record<string, string> = {
   river:
     "A river ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village, and a bike ride is a common afternoon. A Mississippi sailing follows the Mississippi, with New Orleans and the river towns. A Danube sailing follows the Danube, with Budapest and Vienna. Extra nights in Budapest, Paris, Amsterdam, or New Orleans are for the parts of the city the ship only passes.",
   expedition:
-    "An expedition day may never reach a town. You put on the boots and the parka the ship issues, ride a Zodiac to a beach or the ice, and walk the path the guides mark. You may stand near penguins or seals and take pictures from the distance they set. If the water is calm, some ships add a kayak or a canoe for people who asked. Weather can cancel the landing and leave you on deck. Ushuaia or Longyearbyen, before or after the voyage, is the town. The landing day is not.",
+    "An expedition day may never reach a town. You put on the boots and the parka the ship issues, ride a Zodiac to a beach or the ice, and walk the path the guides mark. You may stand near penguins or seals and take pictures from the distance they set. If the water is calm, some ships add a kayak or a canoe for people who asked. Weather can cancel the landing and leave you on deck. Ushuaia and Longyearbyen are towns you can use before or after the voyage. The landing is not in a town.",
   asia:
     "Singapore and Tokyo often keep the ship in port into the evening, and some sail as late as 10 p.m. A beach stop is still only a few hours. A night before or after is a chance to explore one district, or a museum, instead of racing through three cities.",
   "south-america":
-    "Guanabara Bay, Sugarloaf, and Corcovado are in Rio. Buenos Aires is a walking city, and the evening starts late, which lines up when the ship stays overnight or sails late. A daytime stop can include the waterfront and a neighborhood such as San Telmo. Extra nights are when you can stay out. A grill can be part of those nights if you want a table held.",
+    "Guanabara Bay, Sugarloaf, and Corcovado are in Rio. In Buenos Aires you can walk the neighborhoods, and the evening starts late, which lines up when the ship stays overnight or sails late. A daytime stop can include the waterfront and a neighborhood such as San Telmo. Extra nights are when you can stay out. A grill can be part of those nights if you want a table held.",
   world:
-    "A world cruise spends many days at sea. A short stop is a walk around the harbor. An overnight is the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights. The ship is not waiting then.",
+    "A world cruise spends many days at sea. On a short stop you can walk around the harbor. On an overnight you have the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights. The ship is not waiting then.",
   "australia-new-zealand":
     "Sydney Harbour and the Opera House are in Sydney. In Auckland, the waterfront is at the pier, and Mount Eden, a volcanic cone, is about 15 minutes away. The evening in town depends on a late sailaway or an overnight, which some itineraries have. Brisbane and Melbourne turn fewer ships. Extra nights in Sydney or Auckland are for the city after the ship has sailed.",
   "panama-canal":
-    "The canal day is spent on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. Cartagena is the city stop on a lot of these routes. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego, when the ship is not counting you back.",
+    "The canal day is spent on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. Cartagena is the city on a lot of these routes. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego, when the ship is not counting you back.",
 };
 
 const ashoreLeads: Record<string, string> = {
@@ -73,10 +73,10 @@ const ashoreLeads: Record<string, string> = {
   river: "The ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village.",
   expedition: "A landing day is not a city day. You may put on the gear, ride a Zodiac, walk a beach, and take pictures. Weather can cancel it.",
   asia: "Singapore and Tokyo often keep the ship in port into the evening. A beach stop is still only a few hours.",
-  "south-america": "Guanabara Bay, Sugarloaf, and Corcovado are in Rio. Buenos Aires is a walking city, and the evening starts late, which only helps if the ship stays.",
-  world: "A world cruise has more sea days than port days. A short stop is a walk around the harbor. An overnight is the evening in that city.",
+  "south-america": "Guanabara Bay, Sugarloaf, and Corcovado are in Rio. In Buenos Aires you can walk the neighborhoods, and the evening starts late, which only helps if the ship stays.",
+  world: "A world cruise has more sea days than port days. On a short stop you can walk around the harbor. On an overnight you have the evening in that city.",
   "australia-new-zealand": "Sydney Harbour and the Opera House are in Sydney. In Auckland, Mount Eden is a volcanic cone about 15 minutes from the pier.",
-  "panama-canal": "The canal day is spent on deck. You are not ashore unless the itinerary lists a dock. Cartagena is the city stop on a lot of these routes.",
+  "panama-canal": "The canal day is spent on deck. You are not ashore unless the itinerary lists a dock. Cartagena is the city on a lot of these routes.",
 };
 
 function DestinationPage() {
