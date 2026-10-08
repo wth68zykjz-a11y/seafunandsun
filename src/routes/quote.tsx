@@ -27,7 +27,7 @@ function QuotePage() {
       <PageIntro
         kicker="A quote"
         title="Tell us where you want to go."
-        lede="Tell us the place, the dates, and who is traveling. We send the sailing or the hotel, the cabin or the room, and the price. You approve it before anything is booked. Some small ships and yachts have no public fare. An agent requests that price and presents it to you. Resorts, ski weeks, and train trips work the same way. We reply the same day in most cases. There is no separate agent fee."
+        lede="Tell us the place, the dates, and who is traveling. You approve the price before anything is booked."
       />
       <ol className="mx-auto grid max-w-6xl gap-4 px-4 pb-10 sm:grid-cols-2">
         {[

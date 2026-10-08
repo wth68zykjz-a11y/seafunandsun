@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
         {
           rel: "preload",
           as: "image",
-          href: "/media/card-cruises-sm.webp",
+          href: "/media/card-cruises.webp",
           media: "(max-width: 1023px)",
           fetchPriority: "high",
         },
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/")({
 const faqs = [
   {
     q: "Who is Sea Fun & Sun?",
-    a: "Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It books ocean and river cruises, expedition ships, all-inclusive resorts, ski vacations, and rail trips, including luxury European trains. There is no separate agent fee. Call or text (959) 666-2062, or write to Booking@Seafunandsun.com.",
+    a: "Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It books ocean and river cruises, expedition ships, all-inclusive resorts, ski vacations, and rail trips. Call or text (959) 666-2062, or write to Booking@Seafunandsun.com.",
   },
   {
     q: "What if my plans change after I book?",
@@ -45,11 +45,11 @@ const faqs = [
   },
   {
     q: "Where are you based?",
-    a: "We are based in Farmington, Connecticut. You call, text, or email, and one agent handles the booking and arranges the trip. That is the same if you live in Connecticut, elsewhere in New England, or farther away.",
+    a: "Farmington, Connecticut. You call, text, or email. The process is the same if you live nearby or farther away.",
   },
   {
     q: "Why is there no fare for some trips?",
-    a: "Some cruise lines, most yacht sailings, many luxury hotels, and the European sleeper trains have no public fare. An agent requests that price. There is no separate agent fee.",
+    a: "Some cruise lines, most yacht sailings, many luxury hotels, and the European sleeper trains have no public fare. An agent requests that price.",
   },
 ];
 
@@ -69,7 +69,7 @@ const doors: Door[] = [
   {
     kicker: "Ships",
     title: "Cruises",
-    body: "Ocean and river cruises. Each region lists the usual routing. Alaska, the Caribbean, and the Mediterranean also have a page for what you can do in port.",
+    body: "Ocean and river cruises, with a page for each region.",
     image: "/media/card-cruises.webp",
     mobileImage: "/media/card-cruises-sm.webp",
     alt: "Cruise ships docked along a pier in turquoise water",
@@ -81,9 +81,9 @@ const doors: Door[] = [
   {
     kicker: "Beach",
     title: "Resorts",
-    body: "Beach resorts, including Sandals, Beaches, Hyatt, Secrets, and Club Med. The quote names what the rate does not cover.",
+    body: "Sandals, Beaches, Hyatt, Secrets, and Club Med. The quote names what the rate leaves out.",
     image: "/media/card-resorts.webp",
-    alt: "A palm-lined pool above the open ocean",
+    alt: "An overwater villa with its own pool on a turquoise lagoon",
     cta: "See resorts",
     tone: "foam",
     keywords: "all inclusive beach sandals hyatt secrets club med",
@@ -103,9 +103,9 @@ const doors: Door[] = [
   {
     kicker: "Small ships",
     title: "Expedition",
-    body: "Antarctica, the Arctic, and the Galápagos, on ships small enough that the landing is why you go.",
+    body: "Antarctica, the Arctic, and the Galápagos, on ships small enough to land.",
     image: "/media/card-expedition.webp",
-    alt: "Northern lights over a snowfield",
+    alt: "An expedition ship among Antarctic ice, with a turquoise iceberg in front",
     cta: "See expedition cruises",
     tone: "foam",
     keywords: "antarctica arctic galapagos zodiac small ship",
@@ -115,9 +115,9 @@ const doors: Door[] = [
   {
     kicker: "On the ground",
     title: "Rail and land",
-    body: "Scenic trains in North America, luxury sleepers in Europe, and the hotel nights between them.",
+    body: "Scenic trains in North America, luxury sleepers in Europe, and hotel nights between them.",
     image: "/media/card-rail.webp",
-    alt: "A passenger train beside a western river with mountains behind",
+    alt: "The Glacier Express crossing a stone viaduct in the Alps",
     cta: "See rail and land",
     tone: "sea",
     keywords: "train europe hotel amtrak land",
@@ -129,7 +129,7 @@ function DoorCard({ door }: { door: Door }) {
   const className = "flex h-full flex-col overflow-hidden rounded-xl border border-line bg-foam";
   const face = (
     <>
-      <img src={door.mobileImage ?? door.image} alt={door.alt} width={800} height={533} loading="lazy" decoding="async" className="h-44 w-full object-cover" />
+      <img src={door.image} alt={door.alt} width={1400} height={933} loading="lazy" decoding="async" className="h-56 w-full object-cover sm:h-64" />
       <div className="flex flex-1 flex-col p-5">
         <p className="text-sm font-semibold uppercase tracking-[0.12em] text-tide">{door.kicker}</p>
         <h2 className="mt-2 font-display text-3xl text-ink">{door.title}</h2>
@@ -238,13 +238,13 @@ function Home() {
         <section className="mx-auto max-w-6xl px-4 pb-16">
           <h2 className="font-display text-3xl text-ink sm:text-4xl">Contact us to start planning your vacation.</h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">
-            Call, text, or use the form. One agent handles the booking from your home to the destination, and the return home. That is the same if you live in Connecticut or farther away.
+            Call, text, or use the form. We arrange the trip from your home to the destination, and the return.
           </p>
           <ol className="mt-6 grid gap-4 md:grid-cols-3">
             {[
               ["1. Tell us the trip", "Use the form, call, or text. Name the place, the dates, and who is traveling."],
               ["2. We send the price", "You see the sailing or the hotel, the cabin or the room, and the flights if you want them. You approve it before anything is booked."],
-              ["3. You pay the supplier", "The card payment goes to the cruise line, the resort, or the operator. We do not hold the card. There is no separate agent fee."],
+              ["3. You pay the supplier", "The card payment goes to the cruise line, the resort, or the operator. We do not hold the card."],
             ].map(([title, text]) => (
               <li key={title} className="rounded-xl border border-line bg-foam p-5">
                 <h3 className="font-display text-2xl text-ink">{title}</h3>
@@ -252,18 +252,13 @@ function Home() {
               </li>
             ))}
           </ol>
-          <div className="mt-6 grid items-center gap-6 lg:grid-cols-2">
-            <p className="text-base leading-relaxed text-ink">
-              Sea Fun & Sun is in Farmington, Connecticut. A quote starts by phone, text, or email.
-            </p>
-            <iframe
-              title="Map of Farmington, Connecticut"
-              src="https://maps.google.com/maps?q=Farmington,%20Connecticut&hl=en&z=11&output=embed"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="h-64 w-full rounded-xl border border-line"
-            />
-          </div>
+          <iframe
+            title="Map of Farmington, Connecticut"
+            src="https://maps.google.com/maps?q=Farmington,%20Connecticut&hl=en&z=11&output=embed"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="mt-6 h-52 w-full rounded-xl border border-line"
+          />
         </section>
 
         <section className="mx-auto max-w-6xl px-4 pb-16">
@@ -294,7 +289,7 @@ function Home() {
           <div>
             <p className="text-sm font-medium text-tide">A quote</p>
             <h2 className="mt-2 font-display text-3xl sm:text-4xl">A few details are enough to begin.</h2>
-            <p className="mt-4 text-mute">The destination, approximate dates, and who is traveling. Include flights, a hotel, or a shore excursion if you would like them arranged. We reply the same day in most cases.</p>
+            <p className="mt-4 text-base leading-relaxed text-ink">The destination, the dates, and who is traveling. Add flights, a hotel, or an excursion if you want them arranged.</p>
             <ul className="mt-6 grid gap-2 text-sm">
               <li>
                 Call or text{" "}

@@ -194,94 +194,81 @@ export function Header() {
 export function Footer() {
   return (
     <footer className="border-t border-line bg-sea text-foam">
-      <div className="mx-auto max-w-6xl px-4 py-6 sm:py-10">
-        <div className="grid gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.6fr)_minmax(0,0.7fr)] lg:gap-8">
-          <div>
-            <Wordmark tone="foam" />
-            <p className="mt-3 max-w-sm text-base leading-relaxed text-foam/90">An independent travel company in Farmington, Connecticut. We book cruises, resorts, ski vacations, and rail trips for travelers nationwide.</p>
-            <p className="mt-3 text-base leading-relaxed">
-              <a href={phoneHref} className="underline-offset-2 hover:underline">
-                {phone}
-              </a>
-              <br />
-              <a href={`mailto:${bookingEmail}`} className="break-all underline-offset-2 hover:underline">
-                {bookingEmail}
-              </a>
-            </p>
-            <div className="mt-4 grid max-w-sm grid-cols-2 gap-2">
-              <a
-                href={instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-gold px-3 text-sm font-medium text-ink hover:bg-gold-deep"
-              >
-                <Instagram className="size-4" aria-hidden="true" />
-                Instagram
-              </a>
-              <a
-                href={facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-foam px-3 text-sm font-medium text-ink"
-              >
-                <Facebook className="size-4" aria-hidden="true" />
-                Facebook
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4 lg:contents">
-            <div>
-              <p className="text-sm font-medium">Explore</p>
-              <ul className="mt-2 grid gap-2 text-base leading-6 text-foam/90">
-                <li><Link to="/resorts" className="hover:text-foam">All-inclusive Resorts</Link></li>
-                <li><Link to="/ski" className="hover:text-foam">Ski</Link></li>
-                <li><Link to="/rail" className="hover:text-foam">Rail and land</Link></li>
-                {railPages.map((item) => (
-                  <li key={item.slug}>
-                    <Link to="/rail/$slug" params={{ slug: item.slug }} className="hover:text-foam">
-                      {item.nav}
-                    </Link>
-                  </li>
-                ))}
-                <li><Link to="/sailings" hash="promotions" className="hover:text-foam">Promotions</Link></li>
-                <li><Link to="/ports" className="hover:text-foam">Departure ports</Link></li>
-                <li><Link to="/lines" className="hover:text-foam">Compare cruise lines</Link></li>
-                <li><Link to="/itineraries" className="hover:text-foam">Sample itineraries</Link></li>
-                <li><Link to="/quote" className="hover:text-foam">Request a quote</Link></li>
-              </ul>
-            </div>
-            <div>
-              <p className="text-sm font-medium">Policies</p>
-              <ul className="mt-2 grid gap-2 text-base leading-6 text-foam/90">
-                <li><Link to="/policies/$doc" params={{ doc: "terms" }} className="hover:text-foam">Terms & Conditions</Link></li>
-                <li><Link to="/policies/$doc" params={{ doc: "refund" }} className="hover:text-foam">Refund Policy</Link></li>
-                <li><Link to="/policies/$doc" params={{ doc: "privacy" }} className="hover:text-foam">Privacy Policy</Link></li>
-              </ul>
-            </div>
+      <div className="mx-auto grid max-w-6xl gap-8 px-4 py-8 lg:grid-cols-3 lg:items-start">
+        <div>
+          <Wordmark tone="foam" />
+          <p className="mt-3 max-w-sm text-base leading-relaxed text-foam/90">An independent travel company in Farmington, Connecticut. We book cruises, resorts, ski vacations, and rail trips.</p>
+          <p className="mt-3 text-base leading-relaxed">
+            <a href={phoneHref} className="underline-offset-2 hover:underline">
+              {phone}
+            </a>
+            <br />
+            <a href={`mailto:${bookingEmail}`} className="break-all underline-offset-2 hover:underline">
+              {bookingEmail}
+            </a>
+          </p>
+          <div className="mt-4 grid max-w-sm grid-cols-2 gap-2">
+            <a
+              href={instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-gold px-3 text-sm font-medium text-ink hover:bg-gold-deep"
+            >
+              <Instagram className="size-4" aria-hidden="true" />
+              Instagram
+            </a>
+            <a
+              href={facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-foam px-3 text-sm font-medium text-ink"
+            >
+              <Facebook className="size-4" aria-hidden="true" />
+              Facebook
+            </a>
           </div>
         </div>
-        <div className="mt-6 border-t border-foam/15 pt-5">
+        <div>
+          <p className="text-sm font-medium">Explore</p>
+          <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-base leading-6 text-foam/90">
+            <li><Link to="/resorts" className="hover:text-foam">Resorts</Link></li>
+            <li><Link to="/ski" className="hover:text-foam">Ski</Link></li>
+            <li><Link to="/rail" className="hover:text-foam">Rail and land</Link></li>
+            <li><Link to="/sailings" hash="promotions" className="hover:text-foam">Promotions</Link></li>
+            <li><Link to="/ports" className="hover:text-foam">Departure ports</Link></li>
+            <li><Link to="/lines" className="hover:text-foam">Cruise lines</Link></li>
+            <li><Link to="/itineraries" className="hover:text-foam">Itineraries</Link></li>
+            <li><Link to="/quote" className="hover:text-foam">Request a quote</Link></li>
+          </ul>
+        </div>
+        <div>
           <p className="text-sm font-medium">Destinations</p>
-          <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-base leading-6 text-foam/90 sm:grid-cols-3 lg:grid-cols-4">
+          <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-2 text-base leading-6 text-foam/90">
             {destinations
               .filter((item) => item.slug !== "rail")
               .map((item) => (
-              <li key={item.slug} className="min-w-0">
-                <Link to="/destinations/$slug" params={{ slug: item.slug }} className="hover:text-foam">
-                  {item.nav}
-                </Link>
-              </li>
-            ))}
+                <li key={item.slug}>
+                  <Link to="/destinations/$slug" params={{ slug: item.slug }} className="hover:text-foam">
+                    {item.nav}
+                  </Link>
+                </li>
+              ))}
           </ul>
         </div>
       </div>
       <div className="border-t border-foam/15">
-        <div className="mx-auto max-w-6xl px-4 py-4 text-base leading-relaxed text-foam/90">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 text-base leading-relaxed text-foam/90 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-4">
           <p>© {new Date().getFullYear()} Sea Fun & Sun · Farmington, CT</p>
-          <p className="mt-1">Booking engine powered by Outside Agents</p>
-          <p className="mt-1">{licenseLine}</p>
-          <p className="mt-2">
-            Open to search engines and AI assistants.{" "}
+          <p>Booking engine powered by Outside Agents</p>
+          <p>
+            <Link to="/policies/$doc" params={{ doc: "terms" }} className="underline-offset-2 hover:underline">Terms</Link>
+            {" · "}
+            <Link to="/policies/$doc" params={{ doc: "refund" }} className="underline-offset-2 hover:underline">Refunds</Link>
+            {" · "}
+            <Link to="/policies/$doc" params={{ doc: "privacy" }} className="underline-offset-2 hover:underline">Privacy</Link>
+          </p>
+          <p>{licenseLine}</p>
+          <p>
             <a href="/llms.txt" className="underline-offset-2 hover:underline">Facts for AI</a>
             {" · "}
             <a href="/sitemap.xml" className="underline-offset-2 hover:underline">Sitemap</a>
