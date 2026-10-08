@@ -339,7 +339,7 @@ export const railPages: RailPage[] = [
     slug: "european-sleepers",
     nav: "European sleepers",
     title: "European sleeper trains",
-    lede: "You dress for dinner as the station lights fall behind the train, and the dining car stays lamplit while the country outside goes dark. You sleep in the cabin. Morning finds you beside a canal in Venice on the Venice Simplon-Orient-Express, on the road into Rome on La Dolce Vita Orient Express, under the hills above Sarajevo on the Golden Eagle Danube Express, or in a glen in the Scottish Highlands on the Royal Scotsman.",
+    lede: "You dress for dinner as the station lights fall behind the train, and the dining car stays lamplit while the country outside goes dark. You sleep in the cabin. You wake beside a canal in Venice on the Venice Simplon-Orient-Express, on the road into Rome on La Dolce Vita Orient Express, under the hills above Sarajevo on the Golden Eagle Danube Express, or in a glen in the Scottish Highlands on the Royal Scotsman.",
     photos: [
       {
         src: "/media/rail/vsoe.jpg",

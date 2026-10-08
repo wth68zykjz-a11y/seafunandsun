@@ -212,7 +212,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "What these ships leave out",
-        text: "July and August are hot in the Mediterranean, and the ships are full. May, June, and September are quieter months, often on a smaller ship. The luxury and yacht pages are the ones that trade the water park for a harbor in the middle of town.",
+        text: "The weather in July and August is hot in the Mediterranean, and the ships are full. The ports are quieter in May, June, and September, often on a smaller ship. The luxury and yacht pages are the ones that trade the water park for a harbor in the middle of town.",
       },
     ],
   },

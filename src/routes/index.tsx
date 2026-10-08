@@ -69,7 +69,7 @@ const doors: Door[] = [
   {
     kicker: "Ships",
     title: "Cruises",
-    body: "A glacier in the morning, a reef by afternoon, or a new harbor when you wake. Each region has its own page.",
+    body: "You might see a glacier in the morning, swim a reef in the afternoon, or wake in a new harbor. Each region has its own page.",
     image: "/media/card-cruises.webp",
     mobileImage: "/media/card-cruises-sm.webp",
     alt: "Cruise ships docked along a pier in turquoise water",
@@ -92,7 +92,7 @@ const doors: Door[] = [
   {
     kicker: "Snow",
     title: "Ski",
-    body: "Snow at the door. At Club Med the lifts are often already in the rate. At a hotel in Aspen, Banff, the Alps, or Niseko, the pass is usually separate.",
+    body: "You wake with snow at the door. At Club Med the lifts are often already in the rate. At a hotel in Aspen, Banff, the Alps, or Niseko, the pass is usually separate.",
     image: "/media/card-ski.webp",
     alt: "A person in a red jacket facing the Matterhorn across a snowfield",
     cta: "See ski vacations",
@@ -103,7 +103,7 @@ const doors: Door[] = [
   {
     kicker: "Small ships",
     title: "Expedition",
-    body: "Ice, a small boat, and a beach with no town. Antarctica, the Arctic, and the Galápagos.",
+    body: "You ride a small boat to a beach of ice, and there is no town there. Antarctica, the Arctic, and the Galápagos.",
     image: "/media/card-expedition.webp",
     alt: "An expedition ship among Antarctic ice, with a turquoise iceberg in front",
     cta: "See expedition cruises",
@@ -115,7 +115,7 @@ const doors: Door[] = [
   {
     kicker: "On the ground",
     title: "Rail and land",
-    body: "A canyon from the glass car, or dinner as the station lights fall behind. Scenic trains here, sleeper trains in Europe, and a hotel night between them.",
+    body: "You see a canyon from the glass car, or you sit down to dinner as the station lights fall behind. Scenic trains here, sleeper trains in Europe, and a hotel night between them.",
     image: "/media/card-rail.webp",
     alt: "The Glacier Express crossing a stone viaduct in the Alps",
     cta: "See rail and land",

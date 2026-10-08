@@ -61,7 +61,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The season runs from May through September. May is colder, and the glaciers are at their largest then. June and July are the busiest months, and the days are longest then. August and early September bring the salmon run, the bears at the rivers, and long evenings.",
+    when: "The season runs from May through September. In May it is colder, and the glaciers are at their largest. June and July are the busiest months, and the days are longest then. In August and early September the salmon run, the bears are at the rivers, and the evenings are long.",
     planning: "Tell us whether you want May, for the larger glaciers, or August, for the salmon and the bears. The ship can be the same in either month. A round-trip Alaska cruise from Seattle uses one airport. A one-way cruise to Seward or Whittier needs a flight at that end. If the cruise departs from Vancouver, stay a few days before or after. The Fairmont Pacific Rim looks over the harbor and the mountains.",
     itineraries: [
       {
@@ -208,7 +208,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "May and June are the most comfortable months: warm water, long light, and cruise fares that have not yet reached the August fare. September keeps the warmth with fewer people in the ports. In winter, most of these cruises are repositioning crossings, with more days at sea and fewer days in port.",
+    when: "The weather in May and June is the most comfortable: warm water, long light, and cruise fares that have not yet reached the August fare. In September the water is still warm, and fewer people are in the ports. In winter, most of these cruises are repositioning crossings, with more days at sea and fewer days in port.",
     planning: "Tell us whether you want Greece, the Adriatic, or Spain and France. We price the ships that stop there.",
     itineraries: [
       {
@@ -244,7 +244,7 @@ export const destinations: Destination[] = [
     card: "Cities by sea",
     image: "/media/european.jpg",
     alt: "A historic canal and stone bridge in soft morning light",
-    lede: "Lisbon in the morning, and a northern city by the time the light goes. These cruises usually leave from Lisbon, Amsterdam, Le Havre, or Southampton.",
+    lede: "You can be in Lisbon in the morning and in a northern city by the time the light goes. These cruises usually leave from Lisbon, Amsterdam, Le Havre, or Southampton.",
     paragraphs: [
       "Cruises usually run seven to fourteen nights and depart from Lisbon, Amsterdam, Le Havre, or Southampton. The usual ports are Lisbon, Porto, Amsterdam, Bruges, and London. A winter cruise from Lisbon or Southampton tends to include Tenerife, Gran Canaria, or Funchal. Barcelona, Rome, Greece, and the Adriatic are on the Mediterranean page. Cunard, MSC, Celebrity, and Royal Caribbean sail these routes. We compare them, and we build the trip around the cities you want.",
       "The usual mistake in Europe is trying to see too much. Tell us which cities you have already visited, and we will build the sailing around the ones you have not.",
@@ -276,7 +276,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "May through September is the classic season. The shoulder months keep the same ports with fewer crowds, and the light is often better. In winter, a crossing between Southampton and New York spends those days on the ocean.",
+    when: "May through September is the classic season. In the shoulder months the ports are the same, with fewer crowds, and the light is often better. In winter, a crossing between Southampton and New York spends those days on the ocean.",
     planning: "Tell us which cities you have already seen. Barcelona, Rome, Greece, and the Adriatic are on the Mediterranean page. This page is Lisbon, Amsterdam, London, and the Canary Islands.",
     itineraries: [
       {
@@ -397,7 +397,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The cruise season runs from April through October. Late spring and early fall are the easier months. A five-hour stop is rarely enough for Horseshoe Bay, Hamilton, and St. George's.",
+    when: "The cruise season runs from April through October. The weather is easier in late spring and early fall. A five-hour stop is rarely enough for Horseshoe Bay, Hamilton, and St. George's.",
     planning: "Ask whether the ship stays overnight. That is enough time for Horseshoe Bay, Hamilton, and St. George's. On a short stop, the ship's own excursion is the way off the Dockyard, because the ship waits if that tour is late.",
     itineraries: [
       {
@@ -925,7 +925,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "Summer is the classic season in North America, with open parks, green passes, and long light. In fall the Rockies are in color, and the stations are quieter. European sleeper trains run mostly from spring through fall, and the famous dates go early. We will match the season to the route.",
+    when: "Summer is the classic season in North America. The parks are open, the passes are green, and the light lasts. In fall the Rockies are in color, and the stations are quieter. European sleeper trains run mostly from spring through fall, and the famous dates sell out early. We will match the season to the route.",
     planning: "Name the route: the Empire Builder, the Canadian, or a European sleeper. The nights in between are part of the booking.",
     itineraries: [
       {

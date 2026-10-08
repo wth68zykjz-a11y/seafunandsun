@@ -53,7 +53,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-alaskan.jpg",
     photoAlt: "A small boat near a whale in a cold Alaskan fjord",
     intro:
-      "A May sailing and an August sailing can use the same ports. May still has the larger glaciers, and it is colder. August is when the salmon run and the bears come to the rivers. Most stops last four to eight hours. The ship sails past the glacier. Off the ship, you can look for wildlife or ride the White Pass train from Skagway. A bus that only goes to a gift shop is more limited than either of those.",
+      "A May sailing and an August sailing can use the same ports. In May the glaciers are still larger, and it is colder. In August the salmon run and the bears come to the rivers. Most stops last four to eight hours. The ship sails past the glacier. Off the ship, you can look for wildlife or ride the White Pass train from Skagway. A bus that only goes to a gift shop is more limited than either of those.",
     excursions: [
       {
         title: "Glacier water, up close",
@@ -575,7 +575,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Also", text: "People come for the glacier and the White Pass train." },
     ],
     outings: [
-      { fits: "People who will take a small boat toward the ice, or watch from the deck or a balcony.", bring: "A wind layer, a hat, and shoes that can take spray. July is not warm on the water." },
+      { fits: "People who will take a small boat toward the ice, or watch from the deck or a balcony.", bring: "A wind layer, a hat, and shoes that can take spray. The water is not warm in July." },
       { fits: "People who will spend a few hours in a small boat looking for humpbacks.", bring: "Layers you can peel, and a dry bag if you are bringing a phone on deck." },
       { fits: "People who will take the train to the summit and ride it back down.", bring: "A light jacket for the summit, which is colder than the pier." },
     ],
