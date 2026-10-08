@@ -26,7 +26,13 @@ Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It is 
 - Expedition, rail, groups, flights and hotels around a sailing
 - Expedition: Antarctica, the Arctic, Galápagos, on small ships. [Expedition cruises](https://seafunandsun.com/destinations/expedition)
 - [Ski](https://seafunandsun.com/ski): Club Med all-inclusive ski is one product: Québec Charlevoix (Le Massif), French Alps villages such as Val d'Isère, Tignes, Val Thorens, La Plagne, Les Arcs, and Alpe d'Huez, and Saint-Moritz. That rate often includes meals, the lift pass, and group ski lessons. Luxury hotels are separate: The Little Nell in Aspen, Four Seasons at Jackson Hole and Whistler, Fairmont hotels in Banff and at Lake Louise, village hotels at Mammoth, Cheval Blanc, Les Airelles, and Aman Le Mélézin in Courchevel, Four Seasons Megève (winter season reopens December 16, 2026), St. Moritz, Zermatt, and Park Hyatt Niseko Hanazono. Those hotel rates usually leave out the lift pass, lessons, and most dinners. Aspen, Jackson Hole, Deer Valley, Banff, Mammoth, Zermatt, St. Moritz, Chamonix, Megève, and Niseko United are on Ikon. Vail, Whistler Blackcomb, and Les 3 Vallées (Courchevel, Méribel, Val Thorens) are on Epic, along with Verbier and several Austrian resorts. European and Japan access is usually a set number of days, not unlimited. A Club Med rate often already includes the local lifts. Pass rules are checked for that season.
-- [Rail and land](https://seafunandsun.com/rail): Amtrak and VIA scenic routes, plus luxury European sleepers that are quoted rather than posted: Venice Simplon-Orient-Express, La Dolce Vita Orient Express, Golden Eagle Danube Express, and the Royal Scotsman. Glacier Express and Bernina Express are scenic day trains, not sleepers. Hotel nights can sit between trains. A guided tour or an excursion may be available, depending on the city or the stop. Not every land trip is escorted.
+- [Rail and land](https://seafunandsun.com/rail): Amtrak and VIA scenic routes, plus luxury European sleepers. Hotel nights can sit between trains. A guided tour or an excursion may be available, depending on the city or the stop. Not every land trip is escorted.
+- [California Zephyr scenic stops](https://seafunandsun.com/rail/california-zephyr): Chicago to Emeryville. Gore Canyon, Glenwood Canyon, and Ruby Canyon are seen from the glass car. The train does not stop in them. Fraser–Winter Park, Glenwood Springs, and Truckee are short platform stops. A hike, the hot-springs pool, or Donner Lake means a night off the train.
+- [California Zephyr dining](https://seafunandsun.com/rail/zephyr-dining): A roomette includes breakfast, lunch, and a three-course dinner in the dining car, plus room service. Coach passengers buy food in the cafe under the sightseer lounge.
+- [Empire Builder](https://seafunandsun.com/rail/empire-builder): Chicago to Seattle, or the Spokane split to Portland. Glacier National Park is the stretch you see from the sightseer lounge. Between Spokane and Portland the meal is served in the room, not in the dining car.
+- [The Canadian](https://seafunandsun.com/rail/the-canadian): VIA Rail, Toronto to Vancouver. Sleeper Plus includes meals and the dome. Jasper is where people get off for a night.
+- [European sleeper trains](https://seafunandsun.com/rail/european-sleepers): Venice Simplon-Orient-Express, La Dolce Vita Orient Express, Golden Eagle Danube Express, and the Royal Scotsman. You sleep on the train. An agent requests many of the fares.
+- [Alpine day trains](https://seafunandsun.com/rail/alpine-trains): Glacier Express and Bernina Express. They run in daylight. You sleep in a hotel.
 - [All-inclusive resorts](https://seafunandsun.com/resorts): beach stays. Sandals, Beaches, Hyatt Inclusive Collection, Excellence, Secrets, and Club Med on the sand. The page says what the rate leaves out. Disney park weeks are booked from the quote form. Disney Cruise Line is booked with the other ships.
 
 ## Destinations
@@ -47,6 +53,12 @@ Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It is 
 - [Northern Europe](https://seafunandsun.com/destinations/northern-europe)
 - [Panama Canal](https://seafunandsun.com/destinations/panama-canal): full transits change oceans. Partial transits enter Gatun Lake and turn around. Most sail in spring and fall.
 - [Rail](https://seafunandsun.com/rail)
+- [California Zephyr](https://seafunandsun.com/rail/california-zephyr)
+- [Zephyr dining](https://seafunandsun.com/rail/zephyr-dining)
+- [Empire Builder](https://seafunandsun.com/rail/empire-builder)
+- [The Canadian](https://seafunandsun.com/rail/the-canadian)
+- [European sleepers](https://seafunandsun.com/rail/european-sleepers)
+- [Alpine day trains](https://seafunandsun.com/rail/alpine-trains)
 - [River](https://seafunandsun.com/destinations/river)
 - [South America](https://seafunandsun.com/destinations/south-america)
 - [World cruises](https://seafunandsun.com/destinations/world)

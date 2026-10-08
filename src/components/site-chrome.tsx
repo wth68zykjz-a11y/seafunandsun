@@ -2,6 +2,7 @@ import { useState, type ReactNode } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Facebook, Instagram, Menu, Phone, X } from "lucide-react";
 import { destinations } from "@/data/destinations";
+import { railPages } from "@/data/rail-pages";
 import { bookingEmail, facebook, instagram, licenseLine, phone, phoneHref } from "@/data/links";
 
 const nav = [
@@ -117,18 +118,60 @@ export function Header() {
           </button>
         </div>
       </div>
+      {path.startsWith("/rail") ? (
+        <nav aria-label="Rail" className="border-t border-foam/15 bg-[#0a3a52]">
+          <div className="mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 py-2">
+            <Link
+              to="/rail"
+              className="inline-flex min-h-11 shrink-0 items-center rounded-md px-3 text-sm font-medium"
+              style={path === "/rail" ? { backgroundColor: "#f7fbf9", color: "#0c2340" } : { color: "#f7fbf9" }}
+            >
+              Overview
+            </Link>
+            {railPages.map((item) => {
+              const href = `/rail/${item.slug}`;
+              const active = path === href;
+              return (
+                <Link
+                  key={item.slug}
+                  to="/rail/$slug"
+                  params={{ slug: item.slug }}
+                  className="inline-flex min-h-11 shrink-0 items-center rounded-md px-3 text-sm font-medium"
+                  style={active ? { backgroundColor: "#f7fbf9", color: "#0c2340" } : { color: "#f7fbf9" }}
+                >
+                  {item.nav}
+                </Link>
+              );
+            })}
+          </div>
+        </nav>
+      ) : null}
       {open ? (
         <div className="border-t border-foam/15 bg-sea px-4 py-3 text-foam lg:hidden">
           <nav className="grid" aria-label="Mobile">
             {nav.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
-                onClick={() => setOpen(false)}
-                className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium"
-              >
-                {item.label}
-              </Link>
+              <span key={item.to}>
+                <Link
+                  to={item.to}
+                  onClick={() => setOpen(false)}
+                  className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium"
+                >
+                  {item.label}
+                </Link>
+                {item.to === "/rail"
+                  ? railPages.map((page) => (
+                      <Link
+                        key={page.slug}
+                        to="/rail/$slug"
+                        params={{ slug: page.slug }}
+                        onClick={() => setOpen(false)}
+                        className="flex min-h-11 items-center border-b border-foam/15 pl-4 text-sm"
+                      >
+                        {page.nav}
+                      </Link>
+                    ))
+                  : null}
+              </span>
             ))}
             <Link
               to="/sailings"
@@ -193,6 +236,13 @@ export function Footer() {
                 <li><Link to="/resorts" className="hover:text-foam">All-inclusive Resorts</Link></li>
                 <li><Link to="/ski" className="hover:text-foam">Ski</Link></li>
                 <li><Link to="/rail" className="hover:text-foam">Rail and land</Link></li>
+                {railPages.map((item) => (
+                  <li key={item.slug}>
+                    <Link to="/rail/$slug" params={{ slug: item.slug }} className="hover:text-foam">
+                      {item.nav}
+                    </Link>
+                  </li>
+                ))}
                 <li><Link to="/sailings" className="hover:text-foam">Sailings & offers</Link></li>
                 <li><Link to="/ports" className="hover:text-foam">Departure ports</Link></li>
                 <li><Link to="/lines" className="hover:text-foam">Compare cruise lines</Link></li>

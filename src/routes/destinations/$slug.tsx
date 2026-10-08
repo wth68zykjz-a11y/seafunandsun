@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-route
 import { QuoteForm } from "@/components/quote-form";
 import { Shell } from "@/components/site-chrome";
 import { destinationBySlug, destinationTone, sampleNote } from "@/data/destinations";
+import { railPages } from "@/data/rail-pages";
 import { shoreNote, shores, portGuides } from "@/data/excursions";
 import { sailingSearchHref } from "@/data/links";
 import { breadcrumbLd, clip, JsonLd, pageHead } from "@/lib/seo";
@@ -183,6 +184,20 @@ export function DestinationArticle({
           )}
         </div>
       </section>
+
+      {rail ? (
+        <section className="mx-auto max-w-6xl px-4 pb-4">
+          <h2 className="font-display text-3xl">Routes</h2>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {railPages.map((item) => (
+              <Link key={item.slug} to="/rail/$slug" params={{ slug: item.slug }} className="rounded-xl border border-line bg-foam p-4 hover:border-tide">
+                <h3 className="font-display text-2xl">{item.nav}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-mute">{item.lede}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section className="mx-auto max-w-6xl px-4 py-12">
         <div className="max-w-3xl space-y-4 text-lg">

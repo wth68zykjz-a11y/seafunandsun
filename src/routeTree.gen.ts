@@ -28,6 +28,8 @@ import { Route as PoliciesDocRouteImport } from './routes/policies/$doc'
 import { Route as PortsIndexRouteImport } from './routes/ports/index'
 import { Route as PortsRegionRouteImport } from './routes/ports/$region'
 import { Route as PromotionsSlugRouteImport } from './routes/promotions/$slug'
+import { Route as RailIndexRouteImport } from './routes/rail/index'
+import { Route as RailSlugRouteImport } from './routes/rail/$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -124,6 +126,16 @@ const PromotionsSlugRoute = PromotionsSlugRouteImport.update({
   path: '/promotions/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RailIndexRoute = RailIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => RailRoute,
+} as any)
+const RailSlugRoute = RailSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => RailRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -131,7 +143,7 @@ export interface FileRoutesByFullPath {
   '/itineraries': typeof ItinerariesRoute
   '/ports': typeof PortsRouteWithChildren
   '/quote': typeof QuoteRoute
-  '/rail': typeof RailRoute
+  '/rail': typeof RailRouteWithChildren
   '/region': typeof RegionRoute
   '/resorts': typeof ResortsRoute
   '/sailings': typeof SailingsRoute
@@ -141,17 +153,18 @@ export interface FileRoutesByFullPath {
   '/policies/$doc': typeof PoliciesDocRoute
   '/ports/$region': typeof PortsRegionRoute
   '/promotions/$slug': typeof PromotionsSlugRoute
+  '/rail/$slug': typeof RailSlugRoute
   '/destinations/': typeof DestinationsIndexRoute
   '/lines/': typeof LinesIndexRoute
   '/policies/': typeof PoliciesIndexRoute
   '/ports/': typeof PortsIndexRoute
+  '/rail/': typeof RailIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/desk': typeof DeskRoute
   '/itineraries': typeof ItinerariesRoute
   '/quote': typeof QuoteRoute
-  '/rail': typeof RailRoute
   '/region': typeof RegionRoute
   '/resorts': typeof ResortsRoute
   '/sailings': typeof SailingsRoute
@@ -161,10 +174,12 @@ export interface FileRoutesByTo {
   '/policies/$doc': typeof PoliciesDocRoute
   '/ports/$region': typeof PortsRegionRoute
   '/promotions/$slug': typeof PromotionsSlugRoute
+  '/rail/$slug': typeof RailSlugRoute
   '/destinations': typeof DestinationsIndexRoute
   '/lines': typeof LinesIndexRoute
   '/policies': typeof PoliciesIndexRoute
   '/ports': typeof PortsIndexRoute
+  '/rail': typeof RailIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -173,7 +188,7 @@ export interface FileRoutesById {
   '/itineraries': typeof ItinerariesRoute
   '/ports': typeof PortsRouteWithChildren
   '/quote': typeof QuoteRoute
-  '/rail': typeof RailRoute
+  '/rail': typeof RailRouteWithChildren
   '/region': typeof RegionRoute
   '/resorts': typeof ResortsRoute
   '/sailings': typeof SailingsRoute
@@ -183,10 +198,12 @@ export interface FileRoutesById {
   '/policies/$doc': typeof PoliciesDocRoute
   '/ports/$region': typeof PortsRegionRoute
   '/promotions/$slug': typeof PromotionsSlugRoute
+  '/rail/$slug': typeof RailSlugRoute
   '/destinations/': typeof DestinationsIndexRoute
   '/lines/': typeof LinesIndexRoute
   '/policies/': typeof PoliciesIndexRoute
   '/ports/': typeof PortsIndexRoute
+  '/rail/': typeof RailIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -206,17 +223,18 @@ export interface FileRouteTypes {
     | '/policies/$doc'
     | '/ports/$region'
     | '/promotions/$slug'
+    | '/rail/$slug'
     | '/destinations/'
     | '/lines/'
     | '/policies/'
     | '/ports/'
+    | '/rail/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/desk'
     | '/itineraries'
     | '/quote'
-    | '/rail'
     | '/region'
     | '/resorts'
     | '/sailings'
@@ -226,10 +244,12 @@ export interface FileRouteTypes {
     | '/policies/$doc'
     | '/ports/$region'
     | '/promotions/$slug'
+    | '/rail/$slug'
     | '/destinations'
     | '/lines'
     | '/policies'
     | '/ports'
+    | '/rail'
   id:
     | '__root__'
     | '/'
@@ -247,10 +267,12 @@ export interface FileRouteTypes {
     | '/policies/$doc'
     | '/ports/$region'
     | '/promotions/$slug'
+    | '/rail/$slug'
     | '/destinations/'
     | '/lines/'
     | '/policies/'
     | '/ports/'
+    | '/rail/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -259,7 +281,7 @@ export interface RootRouteChildren {
   ItinerariesRoute: typeof ItinerariesRoute
   PortsRoute: typeof PortsRouteWithChildren
   QuoteRoute: typeof QuoteRoute
-  RailRoute: typeof RailRoute
+  RailRoute: typeof RailRouteWithChildren
   RegionRoute: typeof RegionRoute
   ResortsRoute: typeof ResortsRoute
   SailingsRoute: typeof SailingsRoute
@@ -408,6 +430,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PromotionsSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/rail/': {
+      id: '/rail/'
+      path: '/'
+      fullPath: '/rail/'
+      preLoaderRoute: typeof RailIndexRouteImport
+      parentRoute: typeof RailRoute
+    }
+    '/rail/$slug': {
+      id: '/rail/$slug'
+      path: '/$slug'
+      fullPath: '/rail/$slug'
+      preLoaderRoute: typeof RailSlugRouteImport
+      parentRoute: typeof RailRoute
+    }
   }
 }
 
@@ -423,13 +459,25 @@ const PortsRouteChildren: PortsRouteChildren = {
 
 const PortsRouteWithChildren = PortsRoute._addFileChildren(PortsRouteChildren)
 
+interface RailRouteChildren {
+  RailSlugRoute: typeof RailSlugRoute
+  RailIndexRoute: typeof RailIndexRoute
+}
+
+const RailRouteChildren: RailRouteChildren = {
+  RailSlugRoute: RailSlugRoute,
+  RailIndexRoute: RailIndexRoute,
+}
+
+const RailRouteWithChildren = RailRoute._addFileChildren(RailRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DeskRoute: DeskRoute,
   ItinerariesRoute: ItinerariesRoute,
   PortsRoute: PortsRouteWithChildren,
   QuoteRoute: QuoteRoute,
-  RailRoute: RailRoute,
+  RailRoute: RailRouteWithChildren,
   RegionRoute: RegionRoute,
   ResortsRoute: ResortsRoute,
   SailingsRoute: SailingsRoute,
