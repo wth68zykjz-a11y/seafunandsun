@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageIntro, Shell } from "@/components/site-chrome";
 import { orderedDestinations } from "@/data/destinations";
-import { shores } from "@/data/excursions";
+import { portActivityBySlug } from "@/data/port-activities";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/destinations/")({
@@ -20,21 +20,28 @@ function DestinationsPage() {
     <Shell>
       <PageIntro
         kicker="Destinations"
-        title="Fifteen cruise regions."
-        lede="Choose a region below. Most regions are the area the ship sails, such as Alaska or the Caribbean. Europe is split into the Mediterranean, the Atlantic cities such as Lisbon and London, and the north: the Norwegian fjords, Iceland, and the Baltic. A river cruise ties up in town and you walk off. An expedition cruise lands by Zodiac. A world cruise runs for months and spends many days at sea. Each of those has its own page. Each page lists typical routings and the trend of the lines that sail there. An excursion in a port or a city can be arranged as an add-on, to enrich the trip."
+        title="Cruise regions."
+        lede="This is the cruise side of the site. Choose a region below. Most regions are the area the ship sails, such as Alaska or the Caribbean. Europe is split into the Mediterranean, the Atlantic cities such as Lisbon and London, and the north: the Norwegian fjords, Iceland, and the Baltic. A river cruise ties up in town and you walk off. An expedition cruise lands by Zodiac. A world cruise runs for months and spends many days at sea. Each region has its own page, and a second page for what you can do once the ship is there."
       />
-      <div className="mx-auto max-w-6xl px-4 pb-2">
-        <p className="max-w-2xl text-mute">
-          Some ports just get you on the ship. Fort Lauderdale is one of them. Miami, Vancouver, and Barcelona are good cities for a longer visit before or after.{" "}
-          <Link to="/ports" className="font-medium text-tide">
-            See where the major ports tend to go.
-          </Link>{" "}
-          Ship size and a general price range are on the{" "}
-          <Link to="/lines" className="font-medium text-tide">
-            cruise line comparison
+      <div className="mx-auto grid max-w-6xl gap-4 px-4 pb-8 md:grid-cols-2">
+        <article className="rounded-xl border border-line bg-foam p-5">
+          <h2 className="font-display text-2xl text-ink">Departure ports</h2>
+          <p className="mt-3 text-base leading-relaxed text-ink">
+            Fort Lauderdale is built to get you on the ship. It is worth spending a few days in Miami, Barcelona, Vancouver, or Sydney before you sail or after you return. A Caribbean cruise from Miami spends more nights in the islands than a cruise of the same length from New York or Boston. An Alaska cruise usually leaves from Seattle or Vancouver.
+          </p>
+          <Link to="/ports" className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep">
+            See the ports
           </Link>
-          .
-        </p>
+        </article>
+        <article className="rounded-xl border border-line bg-foam p-5">
+          <h2 className="font-display text-2xl text-ink">Ships and prices</h2>
+          <p className="mt-3 text-base leading-relaxed text-ink">
+            The comparison pages list the usual passenger count and a general price range, from the smallest ships to the largest. An excursion in a port can be added to the quote. It is not in the cruise fare unless the line includes it.
+          </p>
+          <Link to="/lines" className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-tide px-4 text-sm font-medium text-foam hover:bg-tide-deep">
+            Compare cruise lines
+          </Link>
+        </article>
       </div>
       <div className="mx-auto grid max-w-6xl gap-4 px-4 pb-20 sm:grid-cols-2 lg:grid-cols-3">
         {orderedDestinations()
@@ -51,10 +58,8 @@ function DestinationsPage() {
               <p className="text-sm font-medium text-tide">{item.card}</p>
               <h2 className="mt-1 font-display text-3xl">{item.title}</h2>
               <p className="mt-2 text-base leading-relaxed text-ink">{item.lede}</p>
-              {shores[item.slug] ? (
-                <p className="mt-3 border-t border-line pt-3 text-sm text-mute">
-                  Excursions you can add: {shores[item.slug].excursions.map((trip) => trip.title).join(" · ")}
-                </p>
+              {portActivityBySlug(item.slug) ? (
+                <p className="mt-3 text-sm font-medium text-tide">What you can do in port is on the next page.</p>
               ) : null}
               <span className="mt-4 inline-flex text-sm font-medium text-tide group-hover:underline">Learn more</span>
             </div>

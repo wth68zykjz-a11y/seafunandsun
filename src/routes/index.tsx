@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { QuoteForm } from "@/components/quote-form";
 import { LogoMark, Shell } from "@/components/site-chrome";
@@ -126,175 +125,30 @@ const doors: Door[] = [
   },
 ];
 
-function DoorFace({ door, eager }: { door: Door; eager?: boolean }) {
-  return (
-    <div className={`grid lg:grid-cols-2 ${door.tone === "sea" ? "bg-sea text-foam" : "bg-foam text-ink"}`}>
-      <div className="relative h-44 overflow-hidden sm:h-56 lg:h-auto lg:min-h-[22rem]">
-        {door.mobileImage ? (
-          <picture>
-            <source media="(max-width: 1023px)" srcSet={door.mobileImage} />
-            <img
-              src={door.image}
-              alt={door.alt}
-              width={1100}
-              height={733}
-              draggable={false}
-              decoding="async"
-              loading={eager ? "eager" : "lazy"}
-              fetchPriority={eager ? "high" : "low"}
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </picture>
-        ) : (
-          <img
-            src={door.image}
-            alt={door.alt}
-            width={1100}
-            height={733}
-            draggable={false}
-            decoding="async"
-            loading={eager ? "eager" : "lazy"}
-            fetchPriority="low"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-        )}
+function DoorCard({ door }: { door: Door }) {
+  const className = "flex h-full flex-col overflow-hidden rounded-xl border border-line bg-foam";
+  const face = (
+    <>
+      <img src={door.mobileImage ?? door.image} alt={door.alt} width={800} height={533} loading="lazy" decoding="async" className="h-44 w-full object-cover" />
+      <div className="flex flex-1 flex-col p-5">
+        <p className="text-sm font-semibold uppercase tracking-[0.12em] text-tide">{door.kicker}</p>
+        <h2 className="mt-2 font-display text-3xl text-ink">{door.title}</h2>
+        <p className="mt-3 flex-1 text-base leading-relaxed text-ink">{door.body}</p>
+        <span className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam">{door.cta}</span>
       </div>
-      <div className="flex flex-col justify-center px-5 py-5 lg:px-12 lg:py-10">
-        <p className={`text-sm font-semibold uppercase tracking-[0.12em] ${door.tone === "sea" ? "text-gold" : "text-tide"}`}>{door.kicker}</p>
-        <h2 className="mt-2 font-display text-3xl lg:text-5xl">{door.title}</h2>
-        <p className={`mt-3 max-w-md text-base leading-relaxed lg:text-lg ${door.tone === "sea" ? "text-foam/85" : "text-mute"}`}>{door.body}</p>
-        <span
-          className={`mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md px-5 text-sm font-medium lg:w-fit lg:justify-start ${
-            door.tone === "sea" ? "bg-gold text-ink" : "bg-coral text-foam"
-          }`}
-        >
-          {door.cta}
-        </span>
-      </div>
-    </div>
+    </>
   );
-}
-
-function DoorSlide({ door, eager }: { door: Door; eager?: boolean }) {
-  const className = "block h-full";
   if (door.to === "/destinations/$slug") {
     return (
       <Link to="/destinations/$slug" params={{ slug: door.slug }} className={className}>
-        <DoorFace door={door} eager={eager} />
+        {face}
       </Link>
     );
   }
   return (
     <Link to={door.to} className={className}>
-      <DoorFace door={door} eager={eager} />
+      {face}
     </Link>
-  );
-}
-
-function TripCarousel({ items }: { items: Door[] }) {
-  const scroller = useRef<HTMLDivElement>(null);
-  const indexRef = useRef(0);
-  const startX = useRef(0);
-  const moved = useRef(0);
-  const [index, setIndex] = useState(0);
-  const count = items.length;
-  const key = items.map((door) => door.title).join("|");
-
-  const scrollToIndex = (next: number) => {
-    const el = scroller.current;
-    if (!el || count === 0) return;
-    const i = (next + count) % count;
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    el.scrollTo({ left: i * el.clientWidth, behavior: reduce ? "auto" : "smooth" });
-  };
-
-  useEffect(() => {
-    indexRef.current = 0;
-    setIndex(0);
-    scroller.current?.scrollTo({ left: 0 });
-  }, [key]);
-
-  useEffect(() => {
-    const el = scroller.current;
-    if (!el) return;
-    let frame = 0;
-    const onScroll = () => {
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        const width = el.clientWidth || 1;
-        const i = Math.max(0, Math.min(count - 1, Math.round(el.scrollLeft / width)));
-        if (i !== indexRef.current) {
-          indexRef.current = i;
-          setIndex(i);
-        }
-      });
-    };
-    el.addEventListener("scroll", onScroll, { passive: true });
-    return () => {
-      cancelAnimationFrame(frame);
-      el.removeEventListener("scroll", onScroll);
-    };
-  }, [count, key]);
-
-  return (
-    <div>
-      <div
-        ref={scroller}
-        className="flex snap-x snap-mandatory overflow-x-auto overscroll-x-contain rounded-xl shadow-card [-ms-overflow-style:none] [scrollbar-width:none] [touch-action:pan-x_pan-y] [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden"
-        aria-roledescription="carousel"
-        aria-label="Kinds of trips"
-        onPointerDown={(event) => {
-          startX.current = event.clientX;
-          moved.current = 0;
-        }}
-        onPointerMove={(event) => {
-          moved.current = Math.max(moved.current, Math.abs(event.clientX - startX.current));
-        }}
-        onClickCapture={(event) => {
-          if (moved.current > 12) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-        }}
-      >
-        {items.map((door, i) => (
-          <div key={door.title} className="min-w-full shrink-0 basis-full snap-start">
-            <DoorSlide door={door} eager={i === 0} />
-          </div>
-        ))}
-      </div>
-      <div className="mt-3 flex items-center justify-between gap-3">
-        <button
-          type="button"
-          onClick={() => scrollToIndex(index - 1)}
-          aria-label="Previous category"
-          className="inline-flex size-11 items-center justify-center rounded-md border border-line bg-foam text-lg text-ink sm:w-auto sm:px-4 sm:text-sm sm:font-medium"
-        >
-          <span className="sm:hidden" aria-hidden="true">‹</span>
-          <span className="hidden sm:inline">Previous</span>
-        </button>
-        <div className="flex items-center gap-1.5 sm:hidden" aria-hidden="true">
-          {items.map((door, dot) => (
-            <span key={door.title} className={`h-1.5 rounded-full ${dot === index ? "w-6 bg-tide" : "w-1.5 bg-line"}`} />
-          ))}
-        </div>
-        <p className="hidden text-sm font-medium text-ink sm:block" aria-live="polite">
-          {items[index]?.title} · {index + 1} of {count}
-        </p>
-        <p className="sr-only" aria-live="polite">
-          {items[index]?.title}, {index + 1} of {count}
-        </p>
-        <button
-          type="button"
-          onClick={() => scrollToIndex(index + 1)}
-          aria-label="Next category"
-          className="inline-flex size-11 items-center justify-center rounded-md bg-tide text-lg text-foam sm:w-auto sm:px-4 sm:text-sm sm:font-medium"
-        >
-          <span className="sm:hidden" aria-hidden="true">›</span>
-          <span className="hidden sm:inline">Next</span>
-        </button>
-      </div>
-    </div>
   );
 }
 
@@ -362,62 +216,23 @@ function Home() {
         </section>
 
         <section id="trips" className="mx-auto max-w-6xl scroll-mt-24 px-4 pt-8 pb-6 lg:pt-14">
-          <h2 className="max-w-2xl font-display text-3xl text-ink sm:text-4xl">Select a category.</h2>
-          <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">Use the arrows to move through the categories.</p>
-          <div className="mt-6">
-            <TripCarousel items={doors} />
+          <h2 className="font-display text-3xl text-ink sm:text-4xl">Select a category.</h2>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            {doors.map((door) => (
+              <DoorCard key={door.title} door={door} />
+            ))}
           </div>
         </section>
 
-        <section className="mx-auto grid max-w-6xl gap-4 px-4 pb-16 md:grid-cols-3">
-          <article className="flex flex-col overflow-hidden rounded-xl border border-line bg-foam">
-            <img src="/media/ports/miami.webp" alt="Miami’s waterfront, a common departure port for Caribbean cruises" width={800} height={533} loading="lazy" decoding="async" className="h-40 w-full object-cover" />
-            <div className="flex flex-1 flex-col p-5">
-              <h3 className="font-display text-2xl text-ink">Departure ports</h3>
-              <p className="mt-3 flex-1 text-base leading-relaxed text-ink">
-                Fort Lauderdale is built to get you on the ship. It is worth spending a few days in Miami, Barcelona, Vancouver, or Sydney before you sail or after you return. A Caribbean cruise from Miami spends more nights in the islands than a cruise of the same length from New York or Boston. An Alaska cruise usually leaves from Seattle or Vancouver.
-              </p>
-              <Link to="/ports" className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep">
-                See the ports
-              </Link>
+        <section className="mx-auto max-w-6xl px-4 pb-16">
+          <Link to="/sailings" hash="promotions" className="grid overflow-hidden rounded-xl border border-line bg-foam md:grid-cols-[18rem_1fr]">
+            <img src="/media/page-sailings.jpg" alt="The bow of a white ship in calm water" width={800} height={533} loading="lazy" decoding="async" className="h-48 w-full object-cover md:h-full" />
+            <div className="flex flex-col p-6">
+              <h2 className="font-display text-3xl text-ink">Current promotions</h2>
+              <p className="mt-3 text-base leading-relaxed text-ink">These are offers we can book for you, on ships and at resorts. Tell us which one you want. We confirm the price before anything is booked.</p>
+              <span className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-tide px-4 text-sm font-medium text-foam sm:w-fit">See promotions</span>
             </div>
-          </article>
-          <article className="flex flex-col overflow-hidden rounded-xl border border-line bg-foam">
-            <img src="/media/page-sailings.jpg" alt="The bow of a white ship in calm water" width={800} height={533} loading="lazy" decoding="async" className="h-40 w-full object-cover" />
-            <div className="flex flex-1 flex-col p-5">
-              <h3 className="font-display text-2xl text-ink">Current promotions</h3>
-              <p className="mt-3 flex-1 text-base leading-relaxed text-ink">
-                These are offers we can book for you. Tell us which one you want. We confirm the fare before anything is booked.
-              </p>
-              <Link to="/sailings" hash="promotions" className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-tide px-4 text-sm font-medium text-foam hover:bg-tide-deep">
-                See promotions
-              </Link>
-            </div>
-          </article>
-          <article className="flex flex-col overflow-hidden rounded-xl border border-line bg-foam">
-            <img src="/media/day-mediterranean.jpg" alt="A terrace above a Mediterranean harbor" width={800} height={533} loading="lazy" decoding="async" className="h-40 w-full object-cover" />
-            <div className="flex flex-1 flex-col p-5">
-              <h3 className="font-display text-2xl text-ink">What you can do in port</h3>
-              <p className="mt-3 text-base leading-relaxed text-ink">Where the ship docks, how long the ride is, and what is there.</p>
-              <ul className="mt-3 flex flex-1 flex-col gap-2 text-base">
-                <li>
-                  <Link to="/in-port/$region" params={{ region: "alaskan" }} className="font-medium text-tide">
-                    Alaska
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/in-port/$region" params={{ region: "caribbean" }} className="font-medium text-tide">
-                    Caribbean
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/in-port/$region" params={{ region: "mediterranean" }} className="font-medium text-tide">
-                    Mediterranean
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </article>
+          </Link>
         </section>
 
         <section className="mx-auto max-w-6xl px-4 pb-16">

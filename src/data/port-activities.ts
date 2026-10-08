@@ -1,3 +1,5 @@
+import { extraPortPages } from "@/data/port-activities-extra";
+
 export type PortStop = {
   name: string;
   dock: string;
@@ -5,7 +7,7 @@ export type PortStop = {
 };
 
 export type PortActivityPage = {
-  slug: "alaskan" | "caribbean" | "mediterranean";
+  slug: string;
   region: string;
   title: string;
   lede: string;
@@ -219,10 +221,11 @@ export const portActivities: PortActivityPage[] = [
       },
     ],
   },
+  ...extraPortPages,
 ];
 
 const bySlug = new Map(portActivities.map((page) => [page.slug, page]));
 
 export function portActivityBySlug(slug: string) {
-  return bySlug.get(slug as PortActivityPage["slug"]);
+  return bySlug.get(slug);
 }

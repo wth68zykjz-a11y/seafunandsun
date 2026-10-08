@@ -29,10 +29,10 @@ Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It is 
 - [Rail and land](https://seafunandsun.com/rail): Amtrak and VIA scenic routes, plus luxury European sleepers. Hotel nights can sit between trains. A guided tour or an excursion may be available, depending on the city or the stop. Not every land trip is escorted.
 - [California Zephyr scenic stops](https://seafunandsun.com/rail/california-zephyr): Chicago to Emeryville. Gore Canyon, Glenwood Canyon, and Ruby Canyon are seen from the glass car. The train does not stop in them. The station pauses at Fraser–Winter Park, Glenwood Springs, and Truckee are short. A swim in the Glenwood pool, a hike above Winter Park, or a walk at Donner Lake does not fit that pause, so you leave the train and stay the night.
 - [California Zephyr dining](https://seafunandsun.com/rail/zephyr-dining): A roomette includes breakfast, lunch, and a three-course dinner in the dining car, plus room service. Coach passengers buy food in the cafe under the sightseer lounge.
-- [Empire Builder](https://seafunandsun.com/rail/empire-builder): Chicago to Seattle, or the Spokane split to Portland. East Glacier and West Glacier are brief summer stops. Whitefish is about fifteen minutes. A hike in Glacier National Park means a night in Whitefish. On the Seattle section a roomette includes the dining car. Between Spokane and Portland the meal is a cold tray in the room.
+- [Empire Builder](https://seafunandsun.com/rail/empire-builder): Chicago to Seattle, or the Spokane split to Portland. East Glacier and West Glacier are brief summer stops. The stop in Whitefish is about fifteen minutes. A hike in Glacier National Park means a night in Whitefish. On the Seattle section a roomette includes the dining car. Between Spokane and Portland the meal is a cold tray in the room.
 - [Southwest Chief](https://seafunandsun.com/rail/southwest-chief): Chicago to Los Angeles. Raton Pass and Apache Canyon are seen from the sightseer lounge. The stop in Lamy is a few minutes, with a van to Santa Fe. The stop in Albuquerque is about forty minutes. The South Rim is a drive from Flagstaff, not a platform.
 - [Coast Starlight](https://seafunandsun.com/rail/coast-starlight): Seattle to Los Angeles. Mount Shasta and the Pacific south of San Luis Obispo are seen from the sightseer lounge. The Santa Barbara station is about a mile from the beach. A swim takes longer than the station pause, so you get off and stay the night.
-- [Grand Canyon Railway](https://seafunandsun.com/rail/grand-canyon-railway): Williams to the South Rim, about two hours and fifteen minutes. The canyon is a walk from the depot. The cafe sells sandwiches. A plated meal is in Williams or at El Tovar.
+- [Grand Canyon Railway](https://seafunandsun.com/rail/grand-canyon-railway): Williams to the South Rim, about two hours and fifteen minutes. You can walk from the depot to the rim. The cafe sells sandwiches. A plated meal is in Williams or at El Tovar.
 - [Northeast day trains](https://seafunandsun.com/rail/northeast-trains): the Adirondack follows the Hudson and Lake Champlain. The Vermonter follows the Connecticut River. The Downeaster runs Boston to Brunswick. Coach and a cafe. No sleeper.
 - [The Canadian](https://seafunandsun.com/rail/the-canadian): VIA Rail, Toronto to Vancouver, about four nights. Sleeper Plus includes meals in the dining car and time in the Skyline dome. Mount Robson is seen from the train west of Jasper. People get off in Jasper and stay the night when they want time at Maligne Lake or the Icefields. Economy does not include the meals.
 - [European sleeper trains](https://seafunandsun.com/rail/european-sleepers): Venice Simplon-Orient-Express, La Dolce Vita Orient Express, Golden Eagle Danube Express, and the Royal Scotsman. You sleep on the train. Meals are included. An agent requests the fare.
@@ -47,18 +47,27 @@ Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It is 
 - [Alaska](https://seafunandsun.com/destinations/alaskan)
 - [In port in Alaska](https://seafunandsun.com/in-port/alaskan): where the ship docks in Juneau, Skagway, Ketchikan, Icy Strait Point, Seward, and Whittier, and which glacier sails have no pier
 - [Asia](https://seafunandsun.com/destinations/asia)
+- [In port in Asia](https://seafunandsun.com/in-port/asia): Singapore, Yokohama, Hong Kong, Bangkok from Laem Chabang, and Phuket
 - [Australia and New Zealand](https://seafunandsun.com/destinations/australia-new-zealand)
+- [In port in Australia and New Zealand](https://seafunandsun.com/in-port/australia-new-zealand): Sydney, Auckland, Melbourne, Milford Sound, and Cairns
 - [Bermuda](https://seafunandsun.com/destinations/bermuda)
+- [In port in Bermuda](https://seafunandsun.com/in-port/bermuda): the Dockyard, Horseshoe Bay, Hamilton, and St. George's
 - [Canada and New England](https://seafunandsun.com/destinations/canada-new-england)
+- [In port in Canada and New England](https://seafunandsun.com/in-port/canada-new-england): Boston, Bar Harbor, Halifax, Quebec City, and Charlottetown
 - [Caribbean](https://seafunandsun.com/destinations/caribbean)
-- [In port in the Caribbean](https://seafunandsun.com/in-port/caribbean): where the ship docks, and what is a short ride from that pier, on western, eastern, and southern routings
+- [In port in the Caribbean](https://seafunandsun.com/in-port/caribbean): where the ship docks, and how far the sights are from that pier, on western, eastern, and southern routings
 - [Europe](https://seafunandsun.com/destinations/european)
+- [In port on a European cruise](https://seafunandsun.com/in-port/european): Lisbon, Porto, Le Havre, Southampton, Cádiz, and Tenerife
 - [Expedition](https://seafunandsun.com/destinations/expedition)
+- [Expedition landings](https://seafunandsun.com/in-port/expedition): Ushuaia, an Antarctic beach, Puerto Ayora, and Longyearbyen
 - [Hawaii](https://seafunandsun.com/destinations/hawaii)
+- [In port in Hawaii](https://seafunandsun.com/in-port/hawaii): Honolulu, Maui, Kauai, Hilo, and Kona
 - [Mediterranean](https://seafunandsun.com/destinations/mediterranean)
 - [In port in the Mediterranean](https://seafunandsun.com/in-port/mediterranean): the dock, the ride into the city, and what is there, including Athens, Rome, Florence, Venice, and Barcelona
 - [Northern Europe](https://seafunandsun.com/destinations/northern-europe)
+- [In port in Northern Europe](https://seafunandsun.com/in-port/northern-europe): Bergen, Geiranger, Flåm, Copenhagen, Stockholm, Amsterdam, and Reykjavik
 - [Panama Canal](https://seafunandsun.com/destinations/panama-canal): full transits change oceans. Partial transits enter Gatun Lake and turn around. Most sail in spring and fall.
+- [On a Panama Canal cruise](https://seafunandsun.com/in-port/panama-canal): the locks, Cartagena, Colón, and the cities at each end
 - [Rail](https://seafunandsun.com/rail)
 - [California Zephyr](https://seafunandsun.com/rail/california-zephyr)
 - [Zephyr dining](https://seafunandsun.com/rail/zephyr-dining)
@@ -71,8 +80,11 @@ Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It is 
 - [European sleepers](https://seafunandsun.com/rail/european-sleepers)
 - [Alpine day trains](https://seafunandsun.com/rail/alpine-trains)
 - [River](https://seafunandsun.com/destinations/river)
+- [Where a river ship ties up](https://seafunandsun.com/in-port/river): Budapest, Vienna, the Rhine, Paris, the Douro, and New Orleans
 - [South America](https://seafunandsun.com/destinations/south-america)
+- [In port in South America](https://seafunandsun.com/in-port/south-america): Rio, Buenos Aires, Ushuaia, Valparaíso, and Lima
 - [World cruises](https://seafunandsun.com/destinations/world)
+- [Calls on a world cruise](https://seafunandsun.com/in-port/world): sea days, Southampton, Sydney, Singapore, and Cape Town
 - [Sample itineraries](https://seafunandsun.com/itineraries): routings only, not live fares
 
 ## Policies
