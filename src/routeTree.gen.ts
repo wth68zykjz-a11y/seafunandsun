@@ -21,6 +21,7 @@ import { Route as SailingsRouteImport } from './routes/sailings'
 import { Route as SkiRouteImport } from './routes/ski'
 import { Route as DestinationsIndexRouteImport } from './routes/destinations/index'
 import { Route as DestinationsSlugRouteImport } from './routes/destinations/$slug'
+import { Route as InPortRegionRouteImport } from './routes/in-port/$region'
 import { Route as LinesIndexRouteImport } from './routes/lines/index'
 import { Route as LinesSlugRouteImport } from './routes/lines/$slug'
 import { Route as PoliciesIndexRouteImport } from './routes/policies/index'
@@ -91,6 +92,11 @@ const DestinationsSlugRoute = DestinationsSlugRouteImport.update({
   path: '/destinations/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const InPortRegionRoute = InPortRegionRouteImport.update({
+  id: '/in-port/$region',
+  path: '/in-port/$region',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LinesIndexRoute = LinesIndexRouteImport.update({
   id: '/lines/',
   path: '/lines/',
@@ -149,6 +155,7 @@ export interface FileRoutesByFullPath {
   '/sailings': typeof SailingsRoute
   '/ski': typeof SkiRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
+  '/in-port/$region': typeof InPortRegionRoute
   '/lines/$slug': typeof LinesSlugRoute
   '/policies/$doc': typeof PoliciesDocRoute
   '/ports/$region': typeof PortsRegionRoute
@@ -170,6 +177,7 @@ export interface FileRoutesByTo {
   '/sailings': typeof SailingsRoute
   '/ski': typeof SkiRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
+  '/in-port/$region': typeof InPortRegionRoute
   '/lines/$slug': typeof LinesSlugRoute
   '/policies/$doc': typeof PoliciesDocRoute
   '/ports/$region': typeof PortsRegionRoute
@@ -194,6 +202,7 @@ export interface FileRoutesById {
   '/sailings': typeof SailingsRoute
   '/ski': typeof SkiRoute
   '/destinations/$slug': typeof DestinationsSlugRoute
+  '/in-port/$region': typeof InPortRegionRoute
   '/lines/$slug': typeof LinesSlugRoute
   '/policies/$doc': typeof PoliciesDocRoute
   '/ports/$region': typeof PortsRegionRoute
@@ -219,6 +228,7 @@ export interface FileRouteTypes {
     | '/sailings'
     | '/ski'
     | '/destinations/$slug'
+    | '/in-port/$region'
     | '/lines/$slug'
     | '/policies/$doc'
     | '/ports/$region'
@@ -240,6 +250,7 @@ export interface FileRouteTypes {
     | '/sailings'
     | '/ski'
     | '/destinations/$slug'
+    | '/in-port/$region'
     | '/lines/$slug'
     | '/policies/$doc'
     | '/ports/$region'
@@ -263,6 +274,7 @@ export interface FileRouteTypes {
     | '/sailings'
     | '/ski'
     | '/destinations/$slug'
+    | '/in-port/$region'
     | '/lines/$slug'
     | '/policies/$doc'
     | '/ports/$region'
@@ -287,6 +299,7 @@ export interface RootRouteChildren {
   SailingsRoute: typeof SailingsRoute
   SkiRoute: typeof SkiRoute
   DestinationsSlugRoute: typeof DestinationsSlugRoute
+  InPortRegionRoute: typeof InPortRegionRoute
   LinesSlugRoute: typeof LinesSlugRoute
   PoliciesDocRoute: typeof PoliciesDocRoute
   PromotionsSlugRoute: typeof PromotionsSlugRoute
@@ -379,6 +392,13 @@ declare module '@tanstack/react-router' {
       path: '/destinations/$slug'
       fullPath: '/destinations/$slug'
       preLoaderRoute: typeof DestinationsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/in-port/$region': {
+      id: '/in-port/$region'
+      path: '/in-port/$region'
+      fullPath: '/in-port/$region'
+      preLoaderRoute: typeof InPortRegionRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/lines/': {
@@ -483,6 +503,7 @@ const rootRouteChildren: RootRouteChildren = {
   SailingsRoute: SailingsRoute,
   SkiRoute: SkiRoute,
   DestinationsSlugRoute: DestinationsSlugRoute,
+  InPortRegionRoute: InPortRegionRoute,
   LinesSlugRoute: LinesSlugRoute,
   PoliciesDocRoute: PoliciesDocRoute,
   PromotionsSlugRoute: PromotionsSlugRoute,

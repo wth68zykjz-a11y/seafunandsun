@@ -56,7 +56,7 @@ export const destinations: Destination[] = [
           "Whale watching out of Juneau or Seward",
           "Skagway — the White Pass railroad and the Klondike gold camps",
           "Ketchikan — Creek Street, and the totem poles at Saxman and Totem Bight",
-          "A glacier lagoon, if your ship takes you past one",
+          "The port page names the dock, the ride, and what you can do there",
         ],
       },
     ],
@@ -100,7 +100,7 @@ export const destinations: Destination[] = [
     paragraphs: [
       "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
       "Northeast departures mean more sea days. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port. We will say how many sea days are on the one you are looking at before you book it.",
-      "On Cozumel’s west shore the water is calm and clear, about 80°F, over a coral wall. A short boat ride reaches Palancar Reef, where you can see parrotfish and, sometimes, a turtle. On the east shore the coast is rocky and the water is rough, and ships do not use it. On the island you can order grilled snapper or ceviche, raw fish cured in lime. At English Harbour in Antigua, Nelson’s Dockyard is a Georgian naval yard you can walk. Dickenson Bay, on the west, has pale sand and calm water. Half Moon Bay, on the east, has reef and more surge. In Antigua you can order fungi and saltfish, cornmeal cooked with salted cod. Perfect Day at CocoCay and Castaway Cay have a sheltered cove the line built. The water there is calm and warm. There is no town and no local kitchen. The grill serves burgers, not island food. San Juan has blue cobblestones in the old city and the forts at El Morro. Condado has an Atlantic beach, and the surf can be up. It is not a reef lagoon. In San Juan you can order mofongo, mashed fried plantain with garlic, often topped with shrimp or pork.",
+      "A western week often includes Cozumel and Grand Cayman. An eastern week often includes St. Thomas, St. Maarten, and, on a longer sailing, Antigua or Martinique. Aruba, Bonaire, and Curaçao are a southern routing. The port page says where the ship docks and what is a short ride from the pier.",
     ],
     lists: [
       {
@@ -186,15 +186,15 @@ export const destinations: Destination[] = [
       {
         heading: "Worth going ashore for",
         items: [
-          "Santorini, before the afternoon boats arrive",
-          "A long-table lunch in Amalfi",
-          "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site, including the Parthenon marbles that remain in Athens. You can walk down the hill to the Ancient Agora. Hotel Grande Bretagne is a stay in the city before or after the cruise.",
-          "St. Mark’s and the Doge’s Palace are in Venice. Ships dock in Ravenna or Trieste, not in the lagoon. Venice is about 2 to 2.5 hours from Ravenna and about 2 hours from Trieste. The Gritti Palace, on the Grand Canal, is a stay in the city before or after the cruise.",
-          "St. Peter’s is in Rome. The Vatican Museums hold Michelangelo’s ceiling in the Sistine Chapel and the classical sculpture galleries. The Colosseum and the Forum are in the city too. The ship docks at Civitavecchia. Rome is about an hour to an hour and a half from the pier. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise.",
-          "The Duomo and the Baptistery are in Florence. The Uffizi holds Italian Renaissance painting, including Botticelli’s Birth of Venus. The ship docks at Livorno. Florence is about an hour and a half from the pier. Pisa is a separate city, about 30 minutes from the ship. Belmond Villa San Michele, in Fiesole, is a stay before or after the cruise.",
-          "The city walls are in Dubrovnik. Hotel Excelsior, looking at the old town, is a stay in the city before or after the cruise.",
-          "A lavender or olive-oil stop on the French coast",
-          "La Boqueria, the Gothic Quarter, and the waterfront are in Barcelona. Hotel Arts is a stay in the city before or after the cruise.",
+          "Santorini, from the caldera tender",
+          "Athens, from Piraeus",
+          "Rome, from Civitavecchia",
+          "Florence, from Livorno, and Pisa as its own city",
+          "Venice, from Ravenna or Trieste",
+          "Dubrovnik, Kotor, and Split",
+          "Amalfi, when the ship tenders there",
+          "Barcelona, Palma, Marseille, Nice, and Monaco",
+          "The port page names the dock, the ride, and what is in the city",
         ],
       },
     ],

@@ -4,6 +4,7 @@ import { Shell } from "@/components/site-chrome";
 import { destinationBySlug, destinationTone, sampleNote } from "@/data/destinations";
 import { railPages } from "@/data/rail-pages";
 import { shoreNote, shores, portGuides } from "@/data/excursions";
+import { portActivityBySlug } from "@/data/port-activities";
 import { breadcrumbLd, clip, JsonLd, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/destinations/$slug")({
@@ -108,6 +109,7 @@ export function DestinationArticle({
 }) {
   const tone = destinationTone[place.slug] ?? "#0c2340";
   const pagePath = path ?? `/destinations/${place.slug}`;
+  const inPort = portActivityBySlug(place.slug);
   return (
     <Shell>
       <div className="relative">
@@ -158,6 +160,15 @@ export function DestinationArticle({
             >
               Request a quote
             </Link>
+            {inPort ? (
+              <Link
+                to="/in-port/$region"
+                params={{ region: place.slug }}
+                className="inline-flex min-h-11 items-center justify-center rounded-md bg-gold px-4 text-sm font-medium text-ink hover:bg-gold-deep"
+              >
+                What you can do in port
+              </Link>
+            ) : null}
           </div>
           {rail ? null : (
             <p className="mt-4 text-sm text-foam/80">
@@ -320,7 +331,22 @@ export function DestinationArticle({
         </section>
       ) : null}
 
-      {shores[place.slug] ? (
+      {inPort ? (
+        <section className="mx-auto max-w-6xl px-4 pb-12">
+          <div className="rounded-xl border border-line bg-foam p-5">
+            <p className="text-sm font-medium text-tide">In port</p>
+            <h2 className="mt-2 font-display text-3xl">Where the ship docks, and what you can do there</h2>
+            <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink">{inPort.lede}</p>
+            <Link
+              to="/in-port/$region"
+              params={{ region: place.slug }}
+              className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-tide px-5 text-sm font-medium text-foam hover:bg-tide-deep"
+            >
+              See the ports
+            </Link>
+          </div>
+        </section>
+      ) : shores[place.slug] ? (
         <section className="mx-auto max-w-6xl px-4 pb-12">
           <div className="grid items-center gap-6 lg:grid-cols-5">
             <img
