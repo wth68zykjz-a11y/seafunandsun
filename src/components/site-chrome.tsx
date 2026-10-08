@@ -7,7 +7,6 @@ import { bookingEmail, facebook, instagram, licenseLine, phone, phoneHref } from
 
 const nav = [
   { to: "/destinations", label: "Cruises" },
-  { to: "/lines", label: "Compare" },
   { to: "/ports", label: "Ports" },
   { to: "/resorts", label: "Resorts" },
   { to: "/ski", label: "Ski" },
@@ -118,6 +117,43 @@ export function Header() {
           </button>
         </div>
       </div>
+      {path.startsWith("/destinations") || path.startsWith("/lines") || path.startsWith("/in-port") ? (
+        <nav aria-label="Cruises" className="border-t border-foam/15 bg-[#0a3a52]">
+          <div className="mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 py-2">
+            <Link
+              to="/destinations"
+              className="inline-flex min-h-11 shrink-0 items-center rounded-md px-3 text-sm font-medium"
+              style={path === "/destinations" ? { backgroundColor: "#f7fbf9", color: "#0c2340" } : { color: "#f7fbf9" }}
+            >
+              Regions
+            </Link>
+            <Link
+              to="/lines"
+              className="inline-flex min-h-11 shrink-0 items-center rounded-md px-3 text-sm font-medium"
+              style={path.startsWith("/lines") ? { backgroundColor: "#f7fbf9", color: "#0c2340" } : { color: "#f7fbf9" }}
+            >
+              Compare
+            </Link>
+            {destinations
+              .filter((item) => item.slug !== "rail")
+              .map((item) => {
+                const href = `/destinations/${item.slug}`;
+                const active = path === href || path === `/in-port/${item.slug}`;
+                return (
+                  <Link
+                    key={item.slug}
+                    to="/destinations/$slug"
+                    params={{ slug: item.slug }}
+                    className="inline-flex min-h-11 shrink-0 items-center rounded-md px-3 text-sm font-medium"
+                    style={active ? { backgroundColor: "#f7fbf9", color: "#0c2340" } : { color: "#f7fbf9" }}
+                  >
+                    {item.nav}
+                  </Link>
+                );
+              })}
+          </div>
+        </nav>
+      ) : null}
       {path.startsWith("/rail") ? (
         <nav aria-label="Rail" className="border-t border-foam/15 bg-[#0a3a52]">
           <div className="mx-auto flex max-w-6xl gap-2 overflow-x-auto px-4 py-2">
@@ -158,6 +194,30 @@ export function Header() {
                 >
                   {item.label}
                 </Link>
+                {item.to === "/destinations" ? (
+                  <>
+                    <Link
+                      to="/lines"
+                      onClick={() => setOpen(false)}
+                      className="flex min-h-11 items-center border-b border-foam/15 pl-4 text-sm"
+                    >
+                      Compare
+                    </Link>
+                    {destinations
+                      .filter((page) => page.slug !== "rail")
+                      .map((page) => (
+                        <Link
+                          key={page.slug}
+                          to="/destinations/$slug"
+                          params={{ slug: page.slug }}
+                          onClick={() => setOpen(false)}
+                          className="flex min-h-11 items-center border-b border-foam/15 pl-4 text-sm"
+                        >
+                          {page.nav}
+                        </Link>
+                      ))}
+                  </>
+                ) : null}
                 {item.to === "/rail"
                   ? railPages.map((page) => (
                       <Link
