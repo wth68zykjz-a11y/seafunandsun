@@ -891,7 +891,7 @@ export const destinations: Destination[] = [
           "The Canadian — Toronto toward the Rockies and Vancouver",
           "Cross-America — the California Zephyr, the Southwest Chief, the Coast Starlight, and the Empire Builder",
           "New England & the East Coast — the Vermonter, the Adirondack, the Downeaster",
-          "Quebec and the eastern corridor, booked as its own trip rather than mixed into the western trains",
+          "Quebec and the eastern corridor",
         ],
       },
       {

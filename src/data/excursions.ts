@@ -477,7 +477,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-rail.jpg",
     photoAlt: "A silver train crossing a high trestle above a mountain river",
     intro:
-      "The California Zephyr follows the Colorado River through the canyon. The Empire Builder crosses the Rockies. You see the river and the pass best from the glass car. A fresh-air stop is a few minutes on the platform, long enough to stretch. If the train runs overnight, you sleep in a roomette and the lounge stays a place to sit. A hotel night in Chicago, Seattle, or Vancouver goes in only where the connection needs it.",
+      "You take a scenic train for the view from the glass car or the dome. A fresh-air stop is a few minutes on the platform, long enough to stretch. If the train runs overnight, you sleep in a roomette. A hotel night goes in only where the connection needs it.",
     excursions: [
       {
         title: "The sightseer lounge, not just a seat",
@@ -766,7 +766,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A river canyon seen from a train roomette window",
     facts: [
       { label: "Time at a stop", text: "On the Zephyr you watch Gore Canyon, Glenwood Canyon, and Ruby Canyon from the glass car. The train does not stop in those canyons. The station stop at Fraser-Winter Park is about five minutes, and the stop at Glenwood Springs is about seven. The stop at Truckee, below Donner Pass, is short too." },
-      { label: "Worth the time", text: "The Zephyr follows the Colorado through those canyons. The Bernina Express climbs past alpine lakes and stone viaducts. You see both from the window. If you want a swim in the Glenwood pool, a hike above Winter Park, or a walk at Donner Lake, get off and stay the night. The station stop is too short for any of those." },
+      { label: "Worth the time", text: "The Zephyr follows the Colorado through Gore Canyon, Glenwood Canyon, and Ruby Canyon. You see them from the glass car. If you want a swim in the Glenwood pool, a hike above Winter Park, or a walk at Donner Lake, get off and stay the night. The station stop is too short for any of those." },
       { label: "Best for", text: "The Northwest, the Rockies, or a Canadian route, in a roomette if the trip is overnight." },
       { label: "Also", text: "On an overnight train a roomette has a bed and a door. A coach seat does not." },
     ],

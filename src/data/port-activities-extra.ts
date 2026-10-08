@@ -193,8 +193,8 @@ export const extraPortPages = [
     slug: "river",
     region: "River Cruises",
     title: "Where a river ship ties up",
-    lede: "A river ship ties up in town, often into the evening. You walk off. This is not an ocean pier an hour from the city.",
-    note: "The Danube, the Rhine, the Seine, the Douro, and the Mississippi are different rivers. The ship on one does not visit the cities on another.",
+    lede: "A river ship ties up in town, often into the evening. You walk off.",
+    note: "Budapest and Vienna are on the Danube. Cologne is on the Rhine. Paris is on the Seine. Porto is on the Douro. New Orleans is on the Mississippi.",
     image: "/media/river.jpg",
     imageAlt: "A river ship on a wide European river",
     stops: [
@@ -216,17 +216,17 @@ export const extraPortPages = [
       {
         name: "Paris",
         dock: "Seine ships dock on the river, often near the Eiffel Tower or the Arsenal.",
-        text: "You walk off into the city. The Louvre holds the Mona Lisa and the Winged Victory of Samothrace. An ocean ship does not do this. It docks at Le Havre.",
+        text: "You walk off into the city. The Louvre holds the Mona Lisa and the Winged Victory of Samothrace.",
       },
       {
         name: "Porto and the Douro",
         dock: "River ships dock in the Ribeira or across the river in Gaia.",
-        text: "The wine lodges are in Gaia. The Ribeira is the riverfront in Porto. You walk between them across the bridge. This is not the ocean port at Leixões.",
+        text: "The wine lodges are in Gaia. The Ribeira is the riverfront in Porto. You walk between them across the bridge.",
       },
       {
         name: "New Orleans",
         dock: "American river ships dock along the riverfront.",
-        text: "The French Quarter is a walk from those docks. A beignet at Café du Monde is fried dough with powdered sugar. A Mississippi sailing does not continue on to Budapest.",
+        text: "You can walk from those docks into the French Quarter. A beignet at Café du Monde is fried dough with powdered sugar.",
       },
     ],
   },

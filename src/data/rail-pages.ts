@@ -31,8 +31,7 @@ export const railPages: RailPage[] = [
       {
         heading: "The train",
         paragraphs: [
-          "The California Zephyr runs between Chicago and Emeryville, across the bay from San Francisco. A bus from Emeryville connects into the city. The trip is about two nights on the train. A roomette has a bed and a door. A coach seat does not.",
-          "The Empire Builder is a different train. It crosses the Rockies farther north, through Glacier National Park. You see the Colorado River and Donner Pass best from the Zephyr’s glass car.",
+          "The California Zephyr runs between Chicago and Emeryville, across the bay from San Francisco. A bus from Emeryville connects into the city. The trip is about two nights on the train. A roomette has a bed and a door. A coach seat does not. You see the Colorado River and Donner Pass from the glass car.",
         ],
       },
       {
@@ -60,7 +59,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/superliner-diner.jpg",
         alt: "A Superliner dining car with white tablecloths and booths",
-        caption: "A Superliner dining car, the same kind of car on the Zephyr, the Chief, the Empire Builder, and the Coast Starlight. A roomette includes the meal at one of these tables.",
+        caption: "A Superliner dining car on the Zephyr. A roomette includes the meal at one of these tables.",
       },
       {
         src: "/media/rail/zephyr-canyon.jpg",
@@ -74,7 +73,7 @@ export const railPages: RailPage[] = [
         paragraphs: [
           "Meals in the dining car come with a roomette: breakfast, lunch, and a three-course dinner, plus room service. The first alcoholic drink at dinner is included.",
           "At breakfast you can order railroad French toast or a three-egg omelet. At dinner you can order a flatiron steak, pan-roasted chicken, or Atlantic salmon, and a dessert such as white-chocolate blueberry cobbler. Amtrak changes the menu, so the dishes on your date can differ.",
-          "The westbound Zephyr leaves Chicago in the afternoon, so the first meal is dinner. The last day, into Emeryville, is breakfast and lunch. The same dining car runs on the Southwest Chief, on the Seattle section of the Empire Builder, and on the Coast Starlight. Between Spokane and Portland the Empire Builder does not carry it. Amtrak serves a cold meal in the room on that section.",
+          "The westbound Zephyr leaves Chicago in the afternoon, so the first meal is dinner. The last day, into Emeryville, is breakfast and lunch.",
         ],
       },
       {
@@ -90,7 +89,7 @@ export const railPages: RailPage[] = [
     slug: "empire-builder",
     nav: "Empire Builder",
     title: "Empire Builder",
-    lede: "Chicago to Seattle, or the section that splits at Spokane for Portland. You see Glacier from the sightseer lounge. The lounge does not cross the pass. The train does.",
+    lede: "Chicago to Seattle, or the section that splits at Spokane for Portland. You see Glacier National Park from the sightseer lounge as the train crosses Marias Pass.",
     photos: [
       {
         src: "/media/rail/empire-builder.jpg",
@@ -137,7 +136,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/southwest-chief-raton.jpg",
         alt: "The Southwest Chief leaving a tunnel on Raton Pass",
-        caption: "The Southwest Chief leaves a tunnel on Raton Pass. You see the pines from the sightseer lounge. The stop in the town of Raton is a few minutes. The town is not the pass.",
+        caption: "The Southwest Chief leaves a tunnel on Raton Pass. You see the pines from the sightseer lounge. The stop in the town of Raton is a few minutes. You see the pass from the lounge, not from the station.",
       },
       {
         src: "/media/rail/southwest-chief-albuquerque.jpg",
@@ -240,7 +239,6 @@ export const railPages: RailPage[] = [
         heading: "The rim",
         paragraphs: [
           "The South Rim is the southern edge of the Grand Canyon, at Grand Canyon Village. From the depot it is a short walk to El Tovar and to the Rim Trail, a paved path along the edge. You walk it and look down into the canyon. A round trip the same afternoon gives you a few hours on that path. If you want sunset from the edge, or a longer walk west toward Hermits Rest, stay the night in the village and ride back to Williams on a later train.",
-          "This train does not replace the Southwest Chief. The Chief stops in Flagstaff. Williams is a separate ride. We check the connection on your date before we pair them.",
         ],
       },
       {
@@ -292,7 +290,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Meals",
         paragraphs: [
-          "Each of these trains has a cafe. You buy sandwiches, snacks, and drinks. There is no dining car and no roomette meal the way there is on the California Zephyr.",
+          "Each of these trains has a cafe. You buy sandwiches, snacks, and drinks. There is no dining car and no sleeper.",
         ],
       },
     ],
@@ -393,7 +391,7 @@ export const railPages: RailPage[] = [
         heading: "Golden Eagle Danube Express",
         paragraphs: [
           "The Golden Eagle Danube Express runs through Central Europe and the Balkans. One route leaves Venice for Istanbul, and you get off in Trieste, Sarajevo, Mostar, Belgrade, Sofia, and Plovdiv. You do not sleep on the train every night. On some nights you sleep in a hotel in one of those cities.",
-          "A Superior Deluxe cabin is about nine square meters, with a shower. Breakfast is at the table. Lunch and dinner come with wine. Dress on this train is informal, which is not the case on the Venice Simplon-Orient-Express. An agent requests the fare.",
+          "A Superior Deluxe cabin is about nine square meters, with a shower. Breakfast is at the table. Lunch and dinner come with wine. Dress on this train is informal. An agent requests the fare.",
         ],
       },
       {
@@ -440,7 +438,7 @@ export const railPages: RailPage[] = [
         heading: "Bernina Express",
         paragraphs: [
           "The Bernina Express runs from Chur or St. Moritz to Tirano, in Italy. The high point is Ospizio Bernina, at 2,253 meters, beside Lago Bianco. The water there is glacial and pale.",
-          "The stop at Alp Grüm is short, and the terrace faces the Palü Glacier. You can step off for the view and take a later train. The Brusio spiral is a full loop the train makes to lose height. Poschiavo is the town in the valley below. If you want time in Poschiavo or Tirano, get off and stay the night. The Bernina car has snacks. It does not have the Glacier Express kitchen.",
+          "The stop at Alp Grüm is short, and the terrace faces the Palü Glacier. You can step off for the view and take a later train. The Brusio spiral is a full loop the train makes to lose height. Poschiavo is the town in the valley below. If you want time in Poschiavo or Tirano, get off and stay the night. The car has snacks.",
         ],
       },
     ],
