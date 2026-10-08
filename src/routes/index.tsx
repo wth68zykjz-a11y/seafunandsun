@@ -236,9 +236,9 @@ function Home() {
         </section>
 
         <section className="mx-auto max-w-6xl px-4 pb-16">
-          <h2 className="font-display text-3xl text-ink sm:text-4xl">How a trip starts</h2>
+          <h2 className="font-display text-3xl text-ink sm:text-4xl">Contact us to start planning your vacation.</h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">
-            One agent handles the booking from your home to the destination, and the return home. That is the same if you live in Connecticut or farther away.
+            Call, text, or use the form. One agent handles the booking from your home to the destination, and the return home. That is the same if you live in Connecticut or farther away.
           </p>
           <ol className="mt-6 grid gap-4 md:grid-cols-3">
             {[
