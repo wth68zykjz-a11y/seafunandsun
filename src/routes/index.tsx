@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, useRouter } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { QuoteForm } from "@/components/quote-form";
 import { LogoMark, Shell } from "@/components/site-chrome";
 import { guides } from "@/data/guides";
@@ -154,6 +155,10 @@ function DoorCard({ door }: { door: Door }) {
 }
 
 function Home() {
+  const router = useRouter();
+  useEffect(() => {
+    void router.preloadRoute({ to: "/sailings" });
+  }, [router]);
   return (
     <Shell>
       <div className="relative">

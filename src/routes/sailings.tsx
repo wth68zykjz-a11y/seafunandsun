@@ -202,6 +202,8 @@ function OfferCard({ offer }: { offer: SupplierOffer }) {
 
 export const Route = createFileRoute("/sailings")({
   loader: () => getLiveOffers(),
+  pendingMs: 0,
+  pendingComponent: PromotionsPending,
   head: () =>
     pageHead({
       title: "Current promotions",
@@ -325,6 +327,18 @@ function DealsOfTheWeek({ offers }: { offers: SupplierOffer[] }) {
         </div>
       ) : null}
     </div>
+  );
+}
+
+function PromotionsPending() {
+  return (
+    <Shell>
+      <PageIntro
+        kicker="Promotions"
+        title="Current offers, booked with a quote."
+        lede="The offers are loading. The page is here, and the list follows in a moment."
+      />
+    </Shell>
   );
 }
 
