@@ -195,11 +195,12 @@ export function Header() {
                   {item.label}
                 </Link>
                 {item.to === "/destinations" ? (
-                  <>
+                  <details className="border-b border-foam/15">
+                    <summary className="flex min-h-11 cursor-pointer list-none items-center pl-4 text-base">Regions</summary>
                     <Link
                       to="/lines"
                       onClick={() => setOpen(false)}
-                      className="flex min-h-11 items-center border-b border-foam/15 pl-4 text-base"
+                      className="flex min-h-11 items-center border-t border-foam/15 pl-8 text-base"
                     >
                       Compare
                     </Link>
@@ -211,26 +212,29 @@ export function Header() {
                           to="/destinations/$slug"
                           params={{ slug: page.slug }}
                           onClick={() => setOpen(false)}
-                          className="flex min-h-11 items-center border-b border-foam/15 pl-4 text-base"
+                          className="flex min-h-11 items-center border-t border-foam/15 pl-8 text-base"
                         >
                           {page.nav}
                         </Link>
                       ))}
-                  </>
+                  </details>
                 ) : null}
-                {item.to === "/rail"
-                  ? railPages.map((page) => (
+                {item.to === "/rail" ? (
+                  <details className="border-b border-foam/15">
+                    <summary className="flex min-h-11 cursor-pointer list-none items-center pl-4 text-base">Trains</summary>
+                    {railPages.map((page) => (
                       <Link
                         key={page.slug}
                         to="/rail/$slug"
                         params={{ slug: page.slug }}
                         onClick={() => setOpen(false)}
-                        className="flex min-h-11 items-center border-b border-foam/15 pl-4 text-base"
+                        className="flex min-h-11 items-center border-t border-foam/15 pl-8 text-base"
                       >
                         {page.nav}
                       </Link>
-                    ))
-                  : null}
+                    ))}
+                  </details>
+                ) : null}
               </span>
             ))}
             <Link
