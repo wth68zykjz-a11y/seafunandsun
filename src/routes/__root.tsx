@@ -60,14 +60,14 @@ function RootShell({ children }: { children: ReactNode }) {
         <style
           dangerouslySetInnerHTML={{
             __html:
-              "html{background:#e6f0ec}html,body{margin:0;background:#e6f0ec;color:#122033}body{font-family:Outfit,'Avenir Next',system-ui,sans-serif}header{background:#0c2340}h1.hero-title{font-size:2.25rem;line-height:1;font-optical-sizing:none}svg.logo-mark{width:2.25rem;height:2.25rem;display:block}svg.hero-logo{display:none;width:11rem;height:auto}@media(min-width:640px){h1.hero-title{font-size:3.75rem}svg.logo-mark{width:2.75rem;height:2.75rem}}@media(min-width:1024px){svg.hero-logo{display:block;width:14rem}}",
+              "html{background:#e6f0ec;font-size:17px}html,body{margin:0;background:#e6f0ec;color:#122033}body{font-family:'Avenir Next','Segoe UI',system-ui,sans-serif}header{background:#0c2340}h1.hero-title,.hero-stat{font-family:Georgia,'Iowan Old Style',Palatino,serif;font-optical-sizing:none}h1.hero-title{font-size:2.25rem;line-height:1.05}.hero-copy{font-family:'Avenir Next','Segoe UI',system-ui,sans-serif;font-size:1rem;line-height:1.65}.hero-stat{font-size:1.875rem;line-height:1}svg.logo-mark{width:2.25rem;height:2.25rem;display:block}svg.hero-logo{display:none;width:11rem;height:auto}@media(min-width:640px){h1.hero-title{font-size:3.75rem}.hero-copy{font-size:1.125rem}.hero-stat{font-size:2.25rem}svg.logo-mark{width:2.75rem;height:2.75rem}}@media(min-width:1024px){svg.hero-logo{display:block;width:14rem}}",
           }}
         />
+        <style dangerouslySetInnerHTML={{ __html: appCss }} />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,72,500;0,72,600;1,72,500&family=Marcellus&family=Outfit:wght@400;500;600&display=optional"
         />
-        <style dangerouslySetInnerHTML={{ __html: appCss }} />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-R12KCXY9XE" />
         <script
           dangerouslySetInnerHTML={{

@@ -166,12 +166,12 @@ function Home() {
           <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-[#0c2340] via-[#1a4d73] to-[#d4923c] px-5 py-8 text-foam lg:px-12 lg:py-16">
             <div className="relative grid items-center gap-8 lg:grid-cols-[1fr_15rem]">
               <div>
-                <p className="text-base font-medium text-foam">Independent travel company · Farmington, CT</p>
-                <h1 className="hero-title mt-3 font-display text-4xl leading-tight text-foam sm:mt-4 sm:text-6xl">
+                <p className="hero-copy text-base font-medium text-foam">Independent travel company · Farmington, CT</p>
+                <h1 className="hero-title mt-3 text-4xl text-foam sm:mt-4 sm:text-6xl">
                   The right trip,
                   <span className="mt-2 block font-medium italic text-gold">booked with care.</span>
                 </h1>
-                <p className="mt-4 max-w-xl text-base text-foam sm:mt-6 sm:text-lg">
+                <p className="hero-copy mt-4 max-w-xl text-base text-foam sm:mt-6 sm:text-lg">
                   When we book a cruise, a resort, a ski vacation, or a rail trip, one agent handles it from the first quote until you are home.
                 </p>
                 <div className="mt-6 w-full sm:mt-8 sm:inline-flex sm:w-auto sm:flex-col sm:items-center">
@@ -190,8 +190,8 @@ function Home() {
                         <path d="M8 26c1.4-4.2 4-6.2 8-6.2s6.6 2 8 6.2" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
                         <path d="M24 22.5l1.2 2.4 2.6.4-1.9 1.8.5 2.6L24 28.4l-2.4 1.3.5-2.6-1.9-1.8 2.6-.4L24 22.5z" fill="currentColor" />
                       </svg>
-                      <dd className="font-display text-3xl leading-none sm:text-4xl">1</dd>
-                      <dt className="mt-1 text-sm font-medium leading-tight sm:mt-0">
+                      <dd className="hero-stat text-3xl leading-none sm:text-4xl">1</dd>
+                      <dt className="hero-copy mt-1 text-sm font-medium leading-tight sm:mt-0">
                         One agent
                         <br />
                         on your booking
@@ -203,8 +203,8 @@ function Home() {
                         <circle cx="18" cy="18" r="11" stroke="currentColor" strokeWidth="1.6" />
                         <path d="M18 11v14M15 14.5c.8-1 1.8-1.5 3-1.5 1.8 0 3 1 3 2.4S19.8 18 18 18s-3 .8-3 2.3 1.3 2.4 3.1 2.4c1.2 0 2.2-.4 3-1.3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
                       </svg>
-                      <dd className="font-display text-3xl leading-none sm:text-4xl">$0</dd>
-                      <dt className="mt-1 text-sm font-medium leading-tight sm:mt-0">
+                      <dd className="hero-stat text-3xl leading-none sm:text-4xl">$0</dd>
+                      <dt className="hero-copy mt-1 text-sm font-medium leading-tight sm:mt-0">
                         No agent fee
                       </dt>
                     </div>

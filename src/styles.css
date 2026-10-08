@@ -45,6 +45,16 @@
     line-height: 1.65;
   }
 
+  h1.hero-title,
+  .hero-stat {
+    font-family: Georgia, "Iowan Old Style", Palatino, serif;
+    font-optical-sizing: none;
+  }
+
+  .hero-copy {
+    font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  }
+
   h1, h2, h3, h4 {
     font-family: var(--font-display);
     font-optical-sizing: none;
