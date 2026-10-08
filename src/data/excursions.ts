@@ -309,7 +309,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "3 to 4 hours",
         pace: "Easy to moderate",
         detail:
-          "Carriage roads are gravel and gentle. The town path is shorter. A “best of Acadia” loop keeps you in the van.",
+          "Carriage roads are gravel and gentle. The town path is shorter. A “best of Acadia” loop is mostly the van.",
       },
     ],
   },
@@ -429,7 +429,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "3 to 4 hours",
         pace: "Easy walking",
         detail:
-          "The simpler plan is the San Telmo market. A tango show works only when all-aboard is late enough that the show ends before the gangway closes.",
+          "The simpler choice is the San Telmo market. A tango show only works if the ship leaves late enough that you are back before the gangway closes.",
       },
       {
         title: "Cape Horn from the deck",
@@ -493,7 +493,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Minutes at the platform, or a night in town",
         pace: "Easy walking, if you stay the night",
         detail:
-          "The canyons are between the stations. The Zephyr runs through Gore Canyon, Glenwood Canyon, and Ruby Canyon, and you see them from the glass car. The train does not stop in them. The station stop at Fraser–Winter Park is about five minutes. The stop at Glenwood Springs is about seven. The stop at Truckee, below Donner Pass, is short. The Glenwood pool is a large outdoor mineral pool a few blocks from the station. A swim there, a hike above Winter Park, or a walk along Donner Lake, about two miles from Truckee, does not fit those minutes. You leave the train and stay the night.",
+          "The canyons are between the stations. The Zephyr runs through Gore Canyon, Glenwood Canyon, and Ruby Canyon, and you see them from the glass car. The train does not stop in them. It stops for about five minutes at Fraser–Winter Park, about seven in Glenwood Springs, and only briefly in Truckee, below Donner Pass. The Glenwood pool is a large outdoor mineral pool a few blocks from the station. Donner Lake is about two miles from Truckee. If you want a swim, a hike above Winter Park, or a walk along that lake, get off and stay the night.",
       },
       {
         title: "The city on either end",
@@ -602,7 +602,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "The ship is often in port for a long stretch, sometimes by tender. The useful hours are early, before the alleys fill." },
       { label: "Worth the time", text: "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site. The Ancient Agora is nearby. The National Archaeological Museum holds the Mycenaean gold and the classical bronzes. St. Peter’s is in Rome, and the Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city too. The ship docks at Civitavecchia. Rome is about an hour and a half from the pier. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. Long lunches are on the Amalfi coast." },
       { label: "Best for", text: "Travelers who want a new country each morning and will walk for it. Shoulder months beat August." },
-      { label: "Also", text: "You can give the morning to the Acropolis, or to one town. You will not do both." },
+      { label: "Also", text: "Give the morning to the Acropolis, or to one town. There is not time for both." },
     ],
     outings: [
       { fits: "People who will take the first tender up for the caldera, then come back down.", bring: "Sun protection, water, and shoes with a grip. The marble is polished by crowds." },
@@ -766,7 +766,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A river canyon seen from a train roomette window",
     facts: [
       { label: "Time at a stop", text: "On the Zephyr you watch Gore Canyon, Glenwood Canyon, and Ruby Canyon from the glass car. The train does not stop in those canyons. The station stop at Fraser-Winter Park is about five minutes, and the stop at Glenwood Springs is about seven. The stop at Truckee, below Donner Pass, is short too." },
-      { label: "Worth the time", text: "The Zephyr follows the Colorado through those canyons. The Bernina Express climbs past alpine lakes and stone viaducts. You see both from the window. A swim in the Glenwood pool, a hike above Winter Park, or a walk at Donner Lake does not fit the station pause, so you leave the train and stay the night." },
+      { label: "Worth the time", text: "The Zephyr follows the Colorado through those canyons. The Bernina Express climbs past alpine lakes and stone viaducts. You see both from the window. If you want a swim in the Glenwood pool, a hike above Winter Park, or a walk at Donner Lake, get off and stay the night. The station stop is too short for any of those." },
       { label: "Best for", text: "The Northwest, the Rockies, or a Canadian route, in a roomette if the trip is overnight." },
       { label: "Also", text: "On an overnight train a roomette has a bed and a door. A coach seat does not." },
     ],

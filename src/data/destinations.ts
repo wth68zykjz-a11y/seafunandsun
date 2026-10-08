@@ -69,7 +69,7 @@ export const destinations: Destination[] = [
         season: "May–September",
         ship: "Resort or premium ship",
         path: "Seattle round trip",
-        ports: ["Juneau", "Skagway", "Ketchikan", "Tracy Arm, seen from the ship. There is no pier"],
+        ports: ["Juneau", "Skagway", "Ketchikan", "Tracy Arm, from the ship. There is no pier"],
       },
       {
         title: "One-way across the Gulf of Alaska",
@@ -877,7 +877,7 @@ export const destinations: Destination[] = [
     alt: "A passenger train beside a western river with mountains behind",
     lede: "We book scenic trains in North America, sleeper trains in Europe, and the hotel nights that connect them.",
     paragraphs: [
-      "Amtrak, VIA Rail, and the scenic railways of North America are the trains we book, including the nights on either end. The California Zephyr page names the canyons you see from the glass car. A swim in the Glenwood pool, a hike above Winter Park, or a walk at Donner Lake does not fit the station pause, so you leave the train and stay the night. The dining page names what a roomette includes and what coach passengers buy in the cafe.",
+      "Amtrak, VIA Rail, and the scenic railways of North America are the trains we book, along with the hotel nights that connect them. The California Zephyr page names the canyons you see from the glass car. If you want a swim in the Glenwood pool, a hike above Winter Park, or a walk at Donner Lake, the station stop is too short. You get off and stay the night. The dining page says what a roomette includes, and what coach passengers buy in the cafe.",
       "Europe has two kinds of train. The Venice Simplon-Orient-Express, La Dolce Vita Orient Express, the Golden Eagle Danube Express, and the Royal Scotsman are overnight trips: you sleep on the train, meals are usually included, and the cabin you choose is what changes the price. An agent requests many of those dates, because they are not posted. The Glacier Express and the Bernina Express run in daylight through the Alps. The Bernina climbs past lakes and stone viaducts. You get off in the evening and sleep in a hotel.",
       "Land travel sits beside the trains: hotel nights in a city, or a few days between segments. Not every trip is escorted. A guided tour or an excursion may be available, depending on the stop. The quote says whether that stop has a tour, a walk, or only a short pause.",
     ],
@@ -932,7 +932,7 @@ export const destinations: Destination[] = [
         season: "Late spring through fall",
         ship: "Amtrak roomette, with dining-car meals included. Coach pays at the cafe.",
         path: "Chicago to Emeryville, or a segment",
-        ports: ["Gore Canyon, Glenwood Canyon, and Ruby Canyon, seen from the glass car. The train does not stop in them", "The station stop at Fraser-Winter Park is about five minutes. A hike above Winter Park means you leave the train and stay the night", "The station stop at Glenwood Springs is about seven minutes. A swim in the hot-springs pool, a few blocks from the station, means you leave the train and stay the night", "The stop at Truckee is short. Donner Lake is about two miles away. A walk along the shore means you leave the train and stay the night", "Denver, Salt Lake City, or Reno if you split the ticket and stay the night", "At dinner in the dining car you can order steak, chicken, or salmon. Coach buys from the cafe"],
+        ports: ["Gore Canyon, Glenwood Canyon, and Ruby Canyon, seen from the glass car. The train does not stop in them", "The train stops about five minutes at Fraser-Winter Park. If you want a hike above Winter Park, get off and stay the night", "The train stops about seven minutes in Glenwood Springs. If you want a swim in the hot-springs pool, a few blocks from the station, get off and stay the night", "The Truckee stop is short. Donner Lake is about two miles away. If you want to walk the shore, get off and stay the night", "Denver, Salt Lake City, or Reno if you split the ticket and stay the night", "At dinner in the dining car you can order steak, chicken, or salmon. Coach buys from the cafe"],
       },
       {
         title: "The Canadian",
@@ -978,7 +978,7 @@ export const destinations: Destination[] = [
       {
         heading: "Worth going ashore for",
         items: [
-          "Sydney — you can walk the harbor. A bus loop of the suburbs keeps you on the bus",
+          "Sydney — you can walk the harbor. A bus tour of the suburbs is mostly the bus",
           "The reef from Cairns or Airlie Beach, if the ship gives you the hours",
           "Milford Sound from the deck, when the weather allows the ship in",
           "Wellington, or a South Island wine town, walked rather than driven past",

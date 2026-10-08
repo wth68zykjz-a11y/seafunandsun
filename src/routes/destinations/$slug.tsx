@@ -39,7 +39,7 @@ const ashoreNotes: Record<string, string> = {
   european:
     "A daytime stop leaves the afternoon short. Lisbon, the London ports, and the Mediterranean cities on these routes are easier with a night or two before or after, when all-aboard is not the deadline. An overnight, or a departure as late as 10 p.m., leaves the evening free. Tell us which cities you already know. We will put the extra nights on the ones you do not.",
   hawaii:
-    "Time between the islands runs longer than a Caribbean stop, and Pride of America often stays into the evening. You might spend that time at a beach, in the car, or on the north shore. You see Pearl Harbor before or after a California crossing, while you are staying on Oahu and the ship is not counting you back to the gangway. A luau needs the ship still in port after dark.",
+    "The sail between the islands takes longer than a Caribbean hop, and Pride of America often stays into the evening. You might use that time at a beach, in the car, or on the north shore. Pearl Harbor is a visit for before or after a California crossing, while you are staying on Oahu and there is no gangway to watch. A luau still needs the ship in port after dark.",
   bermuda:
     "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi. Hamilton is about 20 minutes by ferry. St. George's is about an hour by bus. An overnight is enough time for the beach, Hamilton, and St. George's. On a short stop, use the excursion sold by the ship if you want to leave the Dockyard. If that tour is late, the ship waits. Sailings from Boston, New York, or Baltimore include sea days each way.",
   "northern-europe":
@@ -292,7 +292,7 @@ export function DestinationArticle({
         </div>
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-ink">
           {rail
-            ? "When you are off the train, you are in the town. You can walk until you want to sit down, and you can talk with people. You might eat where the room is already full, at a famous restaurant if that is why you stopped, or at a small local place such as a wine bar or a café with a short menu. You can visit a museum if you want to be indoors."
+            ? "Once you step off the train, you are in the town. Walk until you want to sit down. Talk with people. You might eat where the room is already full, at a well-known restaurant if that is why you stopped, or at a small local place such as a wine bar or a café with a short menu. Go to a museum if you would rather be indoors."
             : ashoreNotes[place.slug]}
         </p>
         <article className="mt-4 rounded-xl p-5 text-foam" style={{ backgroundColor: tone }}>

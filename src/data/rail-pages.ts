@@ -24,7 +24,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/zephyr-glenwood.jpg",
         alt: "The California Zephyr along the Colorado River under a rock wall",
-        caption: "Glenwood Canyon is between the stations. The train follows the river under the wall. The station stop in Glenwood Springs is about seven minutes, long enough to step onto the platform. The hot-springs pool is a large outdoor mineral pool a few blocks away. The big pool runs about 90°F. A swim takes longer than those seven minutes, so you leave the train, stay the night, and continue on a later train.",
+        caption: "Glenwood Canyon is between the stations. The train follows the river under the wall. In Glenwood Springs the train stops for about seven minutes, long enough to stretch on the platform. The hot-springs pool is a few blocks away, a large outdoor mineral pool that runs about 90°F. If you want to swim, get off, stay the night, and take a later train.",
       },
     ],
     sections: [
@@ -46,7 +46,7 @@ export const railPages: RailPage[] = [
         heading: "Where the train actually stops",
         paragraphs: [
           "The station stop at Fraser–Winter Park is about five minutes. The stop at Glenwood Springs is about seven. The stop at Truckee, below Donner Pass, is short. Those minutes are enough to step onto the platform.",
-          "Those minutes are enough to step onto the platform. They are not a swim, a hike, or a walk at the lake. The Glenwood pool is a large outdoor mineral pool a few blocks from the station, about 90°F in the big pool. A swim means you leave the train and stay the night. A hike in the forest above Winter Park takes hours, and the Fraser stop is about five minutes, so you get off and sleep in Fraser or Winter Park. Donner Lake is about two miles from the Truckee station. A walk along the shore does not fit the pause, so you leave the train and stay in Truckee. Denver, Salt Lake City, or Reno can be a night in the city if you split the ticket.",
+          "Seven minutes in Glenwood Springs, about five in Fraser–Winter Park, and a short pause in Truckee are enough to step off and get back on. They are not enough for what is actually there. The Glenwood pool is a few blocks from the station. If you want a swim in that 90°F water, get off and stay the night. A hike in the forest above Winter Park takes hours, so do the same in Fraser or Winter Park and continue the next day. Donner Lake is about two miles from the Truckee station. If you want to walk the shore, get off and stay in Truckee. You can also split the ticket and spend a night in Denver, Salt Lake City, or Reno.",
         ],
       },
     ],
@@ -108,15 +108,15 @@ export const railPages: RailPage[] = [
         heading: "The train",
         paragraphs: [
           "The Empire Builder leaves Chicago for Seattle. At Spokane, the Portland cars are switched onto a separate section. The trip is about two nights. A roomette has a bed and a door. A coach seat does not.",
-          "You see Glacier National Park from the sightseer lounge. Between East Glacier and Essex the train crosses Marias Pass. The lounge does not cross the pass. The train does.",
+          "You see Glacier National Park from the sightseer lounge. Between East Glacier and Essex the train crosses Marias Pass, and that is the view from the lounge.",
         ],
       },
       {
         heading: "Where the train actually stops",
         paragraphs: [
           "East Glacier Park and West Glacier have summer service, and each station pause is brief. The Essex stop is a flag stop beside the Izaak Walton Inn. The stop at Whitefish is about fifteen minutes on the current timetable. Those minutes are enough to step onto the platform.",
-          "Going-to-the-Sun Road crosses Glacier National Park. Lake McDonald is the lake near the west entrance. A boat on the lake, or a walk beside it, takes hours inside the park. Whitefish is about a half-hour drive from that entrance, and the station stop there is about fifteen minutes. You get off in Whitefish and stay the night so you can go into the park the next day. The stop at Havre is longer, about twenty minutes, on the plains. That stop is for the crew. It is not time in the park.",
-          "On the Portland section the train follows the Columbia River through the gorge. The stop at Bingen–White Salmon is short, on the Washington side. Multnomah Falls is a two-tier waterfall on the Oregon side, about 620 feet. You walk a trail to the bridge in front of it. The train does not stop there. That walk starts from Portland, so you get off and stay the night.",
+          "Going-to-the-Sun Road crosses Glacier National Park, and Lake McDonald sits near the west entrance. A boat on the lake, or a walk beside it, takes hours inside the park. Whitefish is about a half-hour drive from that entrance, and the train only stops there for about fifteen minutes. Get off in Whitefish and stay the night if you want to be in the park the next day. Havre, out on the plains, is a longer stop, about twenty minutes, and it is there so the crew can change. You will not see the park from Havre.",
+          "On the Portland section the train follows the Columbia River through the gorge. The train stops briefly at Bingen–White Salmon, on the Washington side. Multnomah Falls is on the Oregon side, a two-tier waterfall about 620 feet high, with a trail to the bridge in front of it. The train does not stop at the falls. If you want that walk, get off in Portland and stay the night.",
         ],
       },
       {
@@ -142,7 +142,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/southwest-chief-albuquerque.jpg",
         alt: "The Southwest Chief at the platform in Albuquerque",
-        caption: "The stop in Albuquerque is about forty minutes on a recent timetable. That is long enough to step onto the platform. Old Town, with the plaza and San Felipe de Neri, is about two miles from the station. Walking the plaza takes longer than that pause, so you leave the train and stay the night.",
+        caption: "In Albuquerque the train stops for about forty minutes, long enough to step onto the platform. Old Town is about two miles away, with the plaza and the church of San Felipe de Neri. If you want to walk the plaza, get off and stay the night.",
       },
     ],
     sections: [
@@ -157,7 +157,7 @@ export const railPages: RailPage[] = [
         heading: "Where the train actually stops",
         paragraphs: [
           "The stop in Raton is about four minutes. The stop in Lamy is about four minutes. A van from Lamy takes you to a hotel in Santa Fe. Santa Fe is not at the platform.",
-          "The stop in Albuquerque is about forty minutes. The stop in Winslow is a few minutes. La Posada, the old Harvey hotel, sits beside that station. A night there is dinner in the hotel and a walk on the Route 66 streets, which do not fit the platform pause. The stop in Flagstaff is a few minutes as well, and on many dates that stop is at night. The South Rim is the southern edge of the Grand Canyon, about an hour and a half by road from Flagstaff. The Rim Trail is a paved path along that edge. You walk it and look down into the canyon. The station pause is not that walk, so you leave the train and stay.",
+          "The train stops for about forty minutes in Albuquerque, and only a few minutes in Winslow. La Posada, the old Harvey hotel, sits beside the Winslow station, and a night there gives you dinner in the hotel and a walk on the Route 66 streets. You cannot do that from the platform. The Flagstaff stop is a few minutes as well, and on many dates the train is there at night. The South Rim, the southern edge of the Grand Canyon, is about an hour and a half by road from Flagstaff. The Rim Trail is a paved path along that edge. You walk it and look down into the canyon. If you want that walk, get off and stay.",
           "Amtrak has listed a bus connection at Williams Junction for the Grand Canyon Railway. We check whether that stop is on your date. The railway itself is a separate train, from Williams to the South Rim.",
         ],
       },
@@ -184,7 +184,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/coast-cliffs.jpg",
         alt: "An Amtrak locomotive leading the Coast Starlight along a cliff above the surf",
-        caption: "The train follows the cliff. The Santa Barbara station is about a mile from the beach and Stearns Wharf. A swim, or a meal in San Luis Obispo, takes longer than the station pause, so you get off and stay the night.",
+        caption: "The train follows the cliff. The Santa Barbara station is about a mile from the beach and Stearns Wharf. If you want a swim, or a meal in San Luis Obispo, get off and stay the night. The train will not wait.",
       },
     ],
     sections: [
@@ -215,12 +215,12 @@ export const railPages: RailPage[] = [
     slug: "grand-canyon-railway",
     nav: "Grand Canyon Railway",
     title: "Grand Canyon Railway",
-    lede: "Williams to the South Rim, about two hours and fifteen minutes. You see the pines from the train. After you get off, you walk the Rim Trail, the paved path along the southern edge of the canyon, and look down into it.",
+    lede: "Williams to the South Rim takes about two hours and fifteen minutes. You see the pines from the train. After you get off, walk the Rim Trail, the paved path along the southern edge of the canyon, and look down into it.",
     photos: [
       {
         src: "/media/rail/canyon-railway-steam.jpg",
         alt: "A Grand Canyon Railway steam locomotive at the depot",
-        caption: "Steam runs on selected dates. Most days the train is pulled by a diesel. The locomotive is not the canyon.",
+        caption: "Steam runs on selected dates. Most days a diesel pulls the train. Either way, the canyon is at the other end of the ride.",
       },
       {
         src: "/media/rail/canyon-railway-cars.jpg",
@@ -239,7 +239,7 @@ export const railPages: RailPage[] = [
       {
         heading: "The rim",
         paragraphs: [
-          "The South Rim is the southern edge of the Grand Canyon, at Grand Canyon Village. The depot is a short walk from El Tovar and from the Rim Trail, a paved path along that edge. You walk the path and look down into the canyon. A round trip the same day leaves a few hours for that. Sunset from the edge, or a longer walk west toward Hermits Rest, does not fit the afternoon return, so you stay the night in the village and take a later train back to Williams.",
+          "The South Rim is the southern edge of the Grand Canyon, at Grand Canyon Village. From the depot it is a short walk to El Tovar and to the Rim Trail, a paved path along the edge. You walk it and look down into the canyon. A round trip the same afternoon gives you a few hours on that path. If you want sunset from the edge, or a longer walk west toward Hermits Rest, stay the night in the village and ride back to Williams on a later train.",
           "This train does not replace the Southwest Chief. The Chief stops in Flagstaff. Williams is a separate ride. We check the connection on your date before we pair them.",
         ],
       },
