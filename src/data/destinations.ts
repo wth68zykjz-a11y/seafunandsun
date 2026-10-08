@@ -121,7 +121,7 @@ export const destinations: Destination[] = [
         items: [
           "Snorkel the house reef from the beach or by boat",
           "Sunset catamaran sail with drinks in hand",
-          "A full beach day — loungers, snacks, swim stops",
+          "Time at the beach, with loungers, snacks, and stops to swim",
           "Zip lines and jungle ATV rides",
           "Conch fritters in Nassau, chopped conch fried in a seasoned batter, and time at the beach",
           "A dive with a local guide — the reef is better from underwater",
@@ -582,7 +582,7 @@ export const destinations: Destination[] = [
         season: "April–October",
         ship: "Viking, AmaWaterways, Avalon, or Uniworld — compared, not assumed",
         path: "Budapest to Passau, or the reverse",
-        ports: ["Budapest", "Vienna", "Wachau valley", "A smaller town day"],
+        ports: ["Budapest", "Vienna", "Wachau valley", "A smaller town on the river"],
       },
       {
         title: "Rhine castles",
@@ -932,7 +932,7 @@ export const destinations: Destination[] = [
         season: "Late spring through fall",
         ship: "Amtrak roomette, with dining-car meals included. Coach pays at the cafe.",
         path: "Chicago to Emeryville, or a segment",
-        ports: ["Gore Canyon, Glenwood Canyon, and Ruby Canyon, seen from the glass car. The train does not stop in them", "Fraser-Winter Park is about five minutes. A hike means a night off the train", "Glenwood Springs is about seven minutes. The hot-springs pool means a night off the train", "Truckee is a short stop below Donner Pass. Donner Lake means a night off the train", "Denver, Salt Lake City, or Reno if you split the ticket and stay the night", "At dinner in the dining car you can order steak, chicken, or salmon. Coach buys from the cafe"],
+        ports: ["Gore Canyon, Glenwood Canyon, and Ruby Canyon, seen from the glass car. The train does not stop in them", "The station stop at Fraser-Winter Park is about five minutes. A hike means a night off the train", "The station stop at Glenwood Springs is about seven minutes. The hot-springs pool means a night off the train", "The stop at Truckee is short, below Donner Pass. Donner Lake means a night off the train", "Denver, Salt Lake City, or Reno if you split the ticket and stay the night", "At dinner in the dining car you can order steak, chicken, or salmon. Coach buys from the cafe"],
       },
       {
         title: "The Canadian",
@@ -1038,7 +1038,7 @@ export const destinations: Destination[] = [
         ],
       },
       {
-        heading: "The canal day",
+        heading: "While the ship is in the canal",
         items: [
           "You stay on the ship. The locks are the sightseeing.",
           "Caribbean side: Gatun Locks, or Agua Clara if the ship uses the newer, larger locks",
@@ -1048,7 +1048,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "Most canal sailings run in spring and fall, when the fleets reposition. Winter has fewer full transits. The canal day is hot, and rain is normal. It does not stop the transit. A passport is required. Panama uses the US dollar.",
+    when: "Most canal sailings run in spring and fall, when the fleets reposition. Winter has fewer full transits. The canal is hot while the ship is in it, and rain is normal. It does not stop the transit. A passport is required. Panama uses the US dollar.",
     planning: "Tell us whether you fly home from Fort Lauderdale or Miami, or from Los Angeles or San Diego. A full transit ends in a different city than it starts. A partial transit returns to Florida. A night in Panama City only works when the itinerary docks there. Many ships only pass through.",
     itineraries: [
       {
@@ -1057,7 +1057,7 @@ export const destinations: Destination[] = [
         season: "Spring and fall",
         ship: "Princess, Holland America, Celebrity, or a luxury ship whose fare an agent requests",
         path: "Fort Lauderdale or Miami to San Diego or Los Angeles",
-        ports: ["Cartagena", "The canal day", "A Central American or Mexican stop", "The Pacific port where you fly home"],
+        ports: ["Cartagena", "The canal transit", "A Central American or Mexican stop", "The Pacific port where you fly home"],
       },
       {
         title: "Partial transit",
@@ -1073,7 +1073,7 @@ export const destinations: Destination[] = [
         season: "Spring and fall",
         ship: "Often a repositioning, including some from Vancouver or Seattle",
         path: "Los Angeles, San Diego, Seattle, or Vancouver to Florida",
-        ports: ["A Mexican port such as Cabo", "The canal day", "Cartagena", "Fort Lauderdale or Miami"],
+        ports: ["A Mexican port such as Cabo", "The canal transit", "Cartagena", "Fort Lauderdale or Miami"],
       },
     ],
   },

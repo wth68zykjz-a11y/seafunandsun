@@ -86,7 +86,7 @@ export const linePages: LinePage[] = [
       { line: "Holland America", ships: "Older ships about 1,400–1,900. Pinnacle class about 2,650.", where: "Caribbean cruises, Alaska cruises, and longer voyages.", fare: "Balcony often $1,300–$2,600." },
       { line: "Celebrity", ships: "Older Millennium ships about 2,000. Solstice class about 2,850. Edge class about 3,200.", where: "Caribbean cruises from Fort Lauderdale, plus Europe and Alaska.", fare: "Balcony often $1,300–$2,800." },
       { line: "Carnival", ships: "Older Fantasy and Spirit ships about 2,100–2,600. Excel class (Mardi Gras and newer) about 5,200–6,500.", where: "Caribbean and Bahamas cruises from Florida and other East Coast ports.", fare: "Interior often $400–$1,100. Balcony often $800–$1,800." },
-      { line: "Norwegian", ships: "Older Jewel-class ships about 2,400. Prima class about 3,100. Encore and Breakaway classes about 4,000.", where: "Caribbean cruises from Florida and the Northeast. Private-island days are common on the short cruises.", fare: "Interior often $500–$1,300. Balcony often $900–$2,200." },
+      { line: "Norwegian", ships: "Older Jewel-class ships about 2,400. Prima class about 3,100. Encore and Breakaway classes about 4,000.", where: "Caribbean cruises from Florida and the Northeast. A stop at the line’s private island is common on the short cruises.", fare: "Interior often $500–$1,300. Balcony often $900–$2,200." },
       { line: "Princess", ships: "Older Grand-class ships about 2,600. Sun and Sphere classes about 3,500–4,300.", where: "Caribbean cruises from Fort Lauderdale, including some longer ones.", fare: "Balcony often $1,200–$2,600." },
       { line: "Disney", ships: "Magic and Wonder about 2,700. Wish, Dream, and Fantasy about 4,000.", where: "Caribbean cruises from Port Canaveral. Wonder also sails Alaska.", fare: "A week is often $2,000–$4,500 a person. The fare is higher during school holidays. The fare is not comparable to Carnival’s." },
       { line: "MSC", ships: "Smaller ships about 2,500–3,200. Seaside class about 4,100. World class about 6,700.", where: "Caribbean cruises from Miami and Port Canaveral, and Mediterranean cruises.", fare: "Interior often $400–$1,100. Balcony often $800–$1,900. Drinks and gratuities are sometimes bundled, sometimes not." },
@@ -106,8 +106,8 @@ export const linePages: LinePage[] = [
         text: "The main dining room and the buffet are in the fare. Specialty rooms are usually extra. A ship of 4,000 passengers needs more than one restaurant, so the list is long. On a 2,000-passenger ship the list is shorter and the rooms are less crowded.",
       },
       {
-        title: "Short island days",
-        text: "A typical day in port is morning to late afternoon. One plan is enough: a beach, a reef, or a town. The ship is the rest of the day. Bermuda is the exception. Those sailings usually stay long enough to see the island, and the ships are smaller.",
+        title: "Short stops",
+        text: "The ship is usually in port from morning to late afternoon. One plan is enough: a beach, a reef, or a town. You are back on the ship for the rest of the time. Bermuda is the exception. Those sailings usually stay long enough to see the island, and the ships are smaller.",
       },
       {
         title: "What these ships leave out",

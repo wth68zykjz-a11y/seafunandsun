@@ -24,7 +24,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/zephyr-glenwood.jpg",
         alt: "The California Zephyr along the Colorado River under a rock wall",
-        caption: "Glenwood Canyon is between the stations. The train follows the river under the wall. Glenwood Springs, the town, is a stop of about seven minutes.",
+        caption: "Glenwood Canyon is between the stations. The train follows the river under the wall. The station stop in Glenwood Springs is about seven minutes. The town, and the hot-springs pool, need a night off the train.",
       },
     ],
     sections: [
@@ -45,7 +45,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Where the train actually stops",
         paragraphs: [
-          "Fraser–Winter Park is about five minutes. Glenwood Springs is about seven. Truckee, below Donner Pass, is a short stop. Those minutes are enough to step onto the platform.",
+          "The station stop at Fraser–Winter Park is about five minutes. The stop at Glenwood Springs is about seven. The stop at Truckee, below Donner Pass, is short. Those minutes are enough to step onto the platform.",
           "The hot-springs pool in Glenwood Springs, a hike near Winter Park, or a walk to Donner Lake means you get off and sleep in town. Denver, Salt Lake City, or Reno can be a night in the city if you split the ticket.",
         ],
       },
@@ -114,9 +114,9 @@ export const railPages: RailPage[] = [
       {
         heading: "Where the train actually stops",
         paragraphs: [
-          "East Glacier Park and West Glacier are summer stops, and each is a brief station pause. Essex is a flag stop beside the Izaak Walton Inn. Whitefish is about fifteen minutes on the current timetable. Those minutes are enough to step onto the platform.",
-          "A hike on Going-to-the-Sun Road, or a boat on Lake McDonald, means you get off and sleep in Whitefish. Havre is a longer pause on the plains, about twenty minutes. That stop is for the crew. It is not a day in the park.",
-          "On the Portland section the train follows the Columbia River through the gorge. Bingen–White Salmon is a short stop. A walk at Multnomah Falls is not that stop. It means a night in Portland.",
+          "East Glacier Park and West Glacier have summer service, and each station pause is brief. The Essex stop is a flag stop beside the Izaak Walton Inn. The stop at Whitefish is about fifteen minutes on the current timetable. Those minutes are enough to step onto the platform.",
+          "A hike on Going-to-the-Sun Road, or a boat on Lake McDonald, means you get off and sleep in Whitefish. The stop at Havre is longer, about twenty minutes, on the plains. That stop is for the crew. It is not time in the park.",
+          "On the Portland section the train follows the Columbia River through the gorge. The stop at Bingen–White Salmon is short. A walk at Multnomah Falls is not that stop. It means a night in Portland.",
         ],
       },
       {
@@ -137,12 +137,12 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/southwest-chief-raton.jpg",
         alt: "The Southwest Chief leaving a tunnel on Raton Pass",
-        caption: "The Southwest Chief leaves a tunnel on Raton Pass. You see the pines from the sightseer lounge. Raton, the town, is a few minutes at the station. It is not this pass.",
+        caption: "The Southwest Chief leaves a tunnel on Raton Pass. You see the pines from the sightseer lounge. The stop in the town of Raton is a few minutes. The town is not the pass.",
       },
       {
         src: "/media/rail/southwest-chief-albuquerque.jpg",
         alt: "The Southwest Chief at the platform in Albuquerque",
-        caption: "Albuquerque is a stop of about forty minutes on a recent timetable. That is long enough to step onto the platform. Old Town is a night off the train.",
+        caption: "The stop in Albuquerque is about forty minutes on a recent timetable. That is long enough to step onto the platform. Old Town needs a night off the train.",
       },
     ],
     sections: [
@@ -156,8 +156,8 @@ export const railPages: RailPage[] = [
       {
         heading: "Where the train actually stops",
         paragraphs: [
-          "Raton is about four minutes. Lamy is about four minutes. A van from Lamy takes you to a hotel in Santa Fe. Santa Fe is not at the platform.",
-          "Albuquerque is about forty minutes. Winslow is a few minutes, and La Posada sits beside that station. A night in the hotel is how you use the town. Flagstaff is a few minutes as well, and on many dates that stop is at night. The South Rim of the Grand Canyon is about an hour and a half by road from Flagstaff. A walk on the rim means you get off and stay.",
+          "The stop in Raton is about four minutes. The stop in Lamy is about four minutes. A van from Lamy takes you to a hotel in Santa Fe. Santa Fe is not at the platform.",
+          "The stop in Albuquerque is about forty minutes. The stop in Winslow is a few minutes, and La Posada sits beside that station. A night in the hotel is how you use the town. The stop in Flagstaff is a few minutes as well, and on many dates that stop is at night. The South Rim of the Grand Canyon is about an hour and a half by road from Flagstaff. A walk on the rim means you get off and stay.",
           "Amtrak has listed a bus connection at Williams Junction for the Grand Canyon Railway. We check whether that stop is on your date. The railway itself is a separate train, from Williams to the rim.",
         ],
       },
@@ -198,7 +198,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Where the train actually stops",
         paragraphs: [
-          "Portland, Sacramento, Emeryville, San Luis Obispo, and Santa Barbara are the city stops people use. A same-day pause is not a day in any of them. Seattle, Portland, or Santa Barbara can be a night if you split the ticket.",
+          "Portland, Sacramento, Emeryville, San Luis Obispo, and Santa Barbara are cities where the train stops. The pause is not time to use the city. You can spend a night in Seattle, Portland, or Santa Barbara if you split the ticket.",
           "Crater Lake is not beside a platform. Chemult is the closest stop, and the lake is a long drive from there. A visit means you leave the train and stay the night.",
         ],
       },
@@ -215,7 +215,7 @@ export const railPages: RailPage[] = [
     slug: "grand-canyon-railway",
     nav: "Grand Canyon Railway",
     title: "Grand Canyon Railway",
-    lede: "Williams to the South Rim, about two hours and fifteen minutes. You see the pines from the train. The canyon is the walk after you get off.",
+    lede: "Williams to the South Rim, about two hours and fifteen minutes. You see the pines from the train. The walk along the rim starts after you get off.",
     photos: [
       {
         src: "/media/rail/canyon-railway-steam.jpg",
@@ -325,7 +325,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Where you can get off",
         paragraphs: [
-          "Jasper is the town for a night off the train. The station stop is longer than a platform stretch, and it is still not a day at Maligne Lake or the Icefields. Winnipeg is a longer stop, long enough to leave the station and come back. It is not a day in the city.",
+          "Jasper is the town where people get off for a night. The station stop is longer than a platform stretch, and it is still not time at Maligne Lake or the Icefields. The stop in Winnipeg is longer, long enough to leave the station and come back. It is not time to use the city.",
         ],
       },
       {
@@ -366,7 +366,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/dolce-vita.jpg",
         alt: "La Dolce Vita Orient Express, a dark blue carriage with brass-framed windows, at a platform",
-        caption: "La Dolce Vita Orient Express at the platform. You sleep in a cabin on this train. An afternoon in Taormina is time off the train.",
+        caption: "La Dolce Vita Orient Express at the platform. You sleep in a cabin on this train. You can get off and spend the afternoon in Taormina.",
       },
       {
         src: "/media/rail/danube-express.jpg",
@@ -385,7 +385,7 @@ export const railPages: RailPage[] = [
       {
         heading: "La Dolce Vita Orient Express",
         paragraphs: [
-          "This train stays in Italy. A one-night trip can run from Rome toward Venice, or the other way. A two-night trip can run from Palermo to Rome: the coast of Sicily, an afternoon in Taormina, then the train is carried on a ferry across the Strait of Messina. You can watch that crossing from the deck. Naples is an evening stop. Rome is the morning you get off.",
+          "This train stays in Italy. A one-night trip can run from Rome toward Venice, or the other way. A two-night trip can run from Palermo to Rome. The train follows the coast of Sicily, and you can get off and spend the afternoon in Taormina. Then the train is carried on a ferry across the Strait of Messina. You can watch that crossing from the deck. The train stops in Naples in the evening. You get off in Rome in the morning.",
           "You sleep on the train. A deluxe cabin is about seven square meters, with its own bathroom. A suite is larger, about eleven square meters. Lunch and dinner are included. On some Sicily dates the menus are Heinz Beck’s. The cabin is what changes the price. An agent requests the fare.",
         ],
       },
@@ -400,7 +400,7 @@ export const railPages: RailPage[] = [
         heading: "Royal Scotsman",
         paragraphs: [
           "The Royal Scotsman leaves Edinburgh for two, three, four, or seven nights in Scotland. You sleep on the train. Meals are included, and so are the off-train visits on that departure: a distillery, a castle, or a loch, depending on the date.",
-          "Those visits are on the program. They are not a station you can stretch at for five minutes. A day you want in Edinburgh itself is a hotel night before you board, or after you get off.",
+          "If you want time in Edinburgh itself, book a hotel night before you board, or after you get off.",
         ],
       },
     ],
@@ -440,7 +440,7 @@ export const railPages: RailPage[] = [
         heading: "Bernina Express",
         paragraphs: [
           "The Bernina Express runs from Chur or St. Moritz to Tirano, in Italy. The high point is Ospizio Bernina, at 2,253 meters, beside Lago Bianco. The water there is glacial and pale.",
-          "Alp Grüm is a short stop with a terrace facing the Palü Glacier. You can step off for the view and take a later train. The Brusio spiral is a full loop the train makes to lose height. Poschiavo is the town in the valley below. A night in Poschiavo or Tirano is how you use the town. The Bernina car has snacks. It does not have the Glacier Express kitchen.",
+          "The stop at Alp Grüm is short, and the terrace faces the Palü Glacier. You can step off for the view and take a later train. The Brusio spiral is a full loop the train makes to lose height. Poschiavo is the town in the valley below. A night in Poschiavo or Tirano is how you use the town. The Bernina car has snacks. It does not have the Glacier Express kitchen.",
         ],
       },
     ],

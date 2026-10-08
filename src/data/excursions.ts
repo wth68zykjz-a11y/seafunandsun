@@ -157,7 +157,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-european.jpg",
     photoAlt: "A misty canal, a stone bridge, and bicycles along the quay",
     intro:
-      "A European day in port is a city day. Ideas include the capitals on that sailing. If you have already been somewhere, the hours can go to a place that is new.",
+      "On these routes the ship is usually in a city. Ideas include the capitals on that sailing. If you have already been somewhere, the hours can go to a place that is new.",
     excursions: [
       {
         title: "Bruges from the Zeebrugge pier",
@@ -285,7 +285,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-new-england.jpg",
     photoAlt: "A lighthouse and autumn trees on a rocky New England point",
     intro:
-      "Fall sailings here are about color and small ports. A lighthouse, a town, and time to walk is a full day. Quebec and Halifax are the cities. Bar Harbor and the Maine ports are the slower ones.",
+      "Fall sailings here are about color and small ports. A lighthouse and a walk through a town can fill the hours the ship is in port. Quebec and Halifax are the cities. Bar Harbor and the Maine ports are the slower ones.",
     excursions: [
       {
         title: "Lighthouse and a leaf walk",
@@ -493,7 +493,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Minutes at the platform, or a night in town",
         pace: "Easy walking, if you stay the night",
         detail:
-          "The canyons are between the stations. The Zephyr runs through Gore Canyon, Glenwood Canyon, and Ruby Canyon, and you see them from the glass car. The train does not stop in them. Fraser-Winter Park is about five minutes. Glenwood Springs is about seven. Truckee, below Donner Pass, is a short stop. The hot-springs pool in Glenwood Springs, a hike near Winter Park, or a walk to Donner Lake means you get off and sleep in town.",
+          "The canyons are between the stations. The Zephyr runs through Gore Canyon, Glenwood Canyon, and Ruby Canyon, and you see them from the glass car. The train does not stop in them. The station stop at Fraser-Winter Park is about five minutes. The stop at Glenwood Springs is about seven. The stop at Truckee, below Donner Pass, is short. The hot-springs pool in Glenwood Springs, a hike near Winter Park, or a walk to Donner Lake means you get off and sleep in town.",
       },
       {
         title: "The city on either end",
@@ -554,7 +554,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/panama-canal.jpg",
     detailAlt: "The Miraflores Locks building beside a ship in the Panama Canal",
     facts: [
-      { label: "Time in port", text: "The canal day has no gangway. A stop in Cartagena is usually a morning or an afternoon. Panama City is a port only when the itinerary says the ship docks." },
+      { label: "Time in port", text: "While the ship is in the canal there is no gangway. A stop in Cartagena is usually a morning or an afternoon. Panama City is a port only when the itinerary says the ship docks." },
       { label: "Worth the time", text: "Watch the locks from the deck. In Cartagena, you can walk the walled city, and you can eat there. A long coach to a beach uses the hours you would have spent in the city." },
       { label: "Best for", text: "Travelers who want the transit itself, and who can fly home from the other ocean on a full transit." },
       { label: "Also", text: "A partial transit goes into Gatun Lake and comes back out the same side. A full transit goes from one ocean to the other, and it takes longer." },
@@ -584,10 +584,10 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-caribbean.jpg",
     detailAlt: "A snorkel mask and fins on limestone beside clear reef water",
     facts: [
-      { label: "Time in port", text: "Usually morning to late afternoon. Private-island days are the ship’s own beach, not a town." },
+      { label: "Time in port", text: "The ship is usually in port from morning to late afternoon. On a private-island stop, the beach belongs to the ship. It is not a town." },
       { label: "Worth the time", text: "Stop in Old San Juan and walk up to El Morro and the cathedral. In Martinique, stop at a bakery instead of a jewelry shop." },
       { label: "Best for", text: "A first cruise, a family, or anyone who wants short flights from the East Coast and a port every morning." },
-      { label: "Also", text: "A beach day and a town day are separate plans." },
+      { label: "Also", text: "A plan for the beach and a plan for the town are different. You pick one when the stop is short." },
     ],
     outings: [
       { fits: "People who will get in the water over a reef, not beside the pool.", bring: "Reef-safe sunscreen already on, and a rash guard if you burn. The boat may not have shade." },
@@ -615,7 +615,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-european.jpg",
     detailAlt: "Bicycles beside a misty canal and a stone bridge in an old European town",
     facts: [
-      { label: "Time in port", text: "A city day uses most of the hours, but the pier is often an hour from the place you actually want." },
+      { label: "Time in port", text: "A stop in a city uses most of the hours, but the pier is often an hour from the place you actually want." },
       { label: "Worth the time", text: "The belfry is in Bruges, and the menus have mussels steamed in white wine, onion, and celery, usually with fries. The ship docks at Zeebrugge. Bruges is about 20 minutes from the pier. The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. The ship docks at Le Havre. Paris is about two hours from the pier, so a short stop leaves time for one sight. Lunch can fit if the ship leaves later. Shangri-La Paris, looking toward the Eiffel Tower, is a stay in the city before or after the cruise. Westminster Abbey and the Tower of London are in London. The ship docks at Southampton. London is about an hour and a half to two hours from the pier. The Savoy is a stay in the city. The Sagrada Família and the Gothic Quarter are in Barcelona. Cocina Hermanos Torres is a Michelin table in the city if you reserved it ahead, and Camp Nou is there when there is a match. Belém and Alfama are in Lisbon. Hotel Arts is a stay in Barcelona. The Four Seasons Hotel Ritz is a stay in Lisbon." },
       { label: "Best for", text: "Travelers who have a city they still want, or who would rather have one garden than three capitals." },
       { label: "Also", text: "In Paris you can see the Louvre, Notre-Dame, or the Eiffel Tower. The ship docks at Le Havre. Paris is about two hours from the pier, so a short stop leaves time for one sight." },
@@ -660,7 +660,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-northern-europe.jpg",
     detailAlt: "A row of painted wooden wharf houses reflected in calm water",
     facts: [
-      { label: "Time in port", text: "Fjord villages can be a tender of a few hours. Baltic capitals are longer city days." },
+      { label: "Time in port", text: "A stop in a fjord village can be a tender of a few hours. A stop in a Baltic capital runs longer." },
       { label: "Worth the time", text: "The Bryggen wharf is in Bergen, and the fish market serves a shrimp sandwich: cold peeled shrimp on buttered bread, with mayonnaise and lemon. In Copenhagen, a New Nordic menu is local seafood, vegetables, and foraged herbs, and those tables are booked before you sail. The Rijksmuseum is in Amsterdam. It holds Rembrandt’s The Night Watch. The Anne Frank House is the rooms where she hid. Ocean ships dock at IJmuiden, not in the canals. The museum is about 30 to 45 minutes from the pier. Lunch can fit if the ship leaves later. The Waldorf Astoria Amsterdam is a stay in the city before or after the cruise. Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a stay in the city if you want to stay the night. Gamla Stan is in Stockholm. The Vasa Museum holds the warship Vasa, raised from the harbor. Grand Hôtel looks across the water at the palace." },
       { label: "Best for", text: "Long summer light, small ports, and people who like weather to be part of the trip." },
       { label: "Also", text: "If the tender does not run, you can walk in the town for the hours you have." },
@@ -675,8 +675,8 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-new-england.jpg",
     detailAlt: "A gravel carriage road through peak autumn color near a rocky coast",
     facts: [
-      { label: "Time in port", text: "Small Maine ports are half days. Halifax and Québec, when the ship goes upriver, are city days." },
-      { label: "Worth the time", text: "Stop in Halifax to see the Citadel. You can do it on foot. If the ship goes up to Québec, stop there for the view from the Château Frontenac. You can also stay in that hotel before or after the cruise. In Maine, stop for a lighthouse and a lobster roll: lobster meat in a split bun, with mayonnaise or melted butter. That is a full day." },
+      { label: "Time in port", text: "A stop in a small Maine port often lasts about half a day. The stops in Halifax and Québec last longer when the ship goes upriver." },
+      { label: "Worth the time", text: "Stop in Halifax to see the Citadel. You can do it on foot. If the ship goes up to Québec, stop there for the view from the Château Frontenac. You can also stay in that hotel before or after the cruise. In Maine, stop for a lighthouse and a lobster roll: lobster meat in a split bun, with mayonnaise or melted butter. Those hours are the stop." },
       { label: "Best for", text: "Fall color and small harbors, often without a flight. Peak leaves are a narrow window." },
       { label: "Also", text: "You can walk the harbor and the ramparts." },
     ],
@@ -735,10 +735,10 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-south-america.jpg",
     detailAlt: "An empty terrace looking across a bay toward a granite peak at morning",
     facts: [
-      { label: "Time in port", text: "City days can be long. Cape Horn is often a scenic hour from the deck, with no landing." },
+      { label: "Time in port", text: "A stop in a city can run long. Cape Horn is often a scenic hour from the deck, with no landing." },
       { label: "Worth the time", text: "Christ the Redeemer and Sugarloaf are in Rio. You can reserve a Michelin dinner if the ship stays late. In Buenos Aires, San Telmo has parrillas where you can order grilled beef, often a sirloin, cooked over coals." },
-      { label: "Best for", text: "A longer voyage where the city days are the memory and the scenic days are the ship’s job." },
-      { label: "Also", text: "One view is a full day in Rio. A show in Buenos Aires works when the ship stays late." },
+      { label: "Best for", text: "A longer voyage. The cities are what people remember. The scenic stretches are time on the ship." },
+      { label: "Also", text: "Seeing one viewpoint in Rio can use the hours the ship is there. A show in Buenos Aires works when the ship stays late." },
     ],
     outings: [
       { fits: "People who will choose Sugarloaf or Christ the Redeemer and stay with that view.", bring: "Comfortable shoes for the viewpoint." },
@@ -765,7 +765,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-rail.jpg",
     detailAlt: "A river canyon seen from a train roomette window",
     facts: [
-      { label: "Time at a stop", text: "On the Zephyr you watch Gore Canyon, Glenwood Canyon, and Ruby Canyon from the glass car. The train does not stop in those canyons. Fraser-Winter Park is about five minutes, and Glenwood Springs is about seven. Truckee, below Donner Pass, is a short stop too." },
+      { label: "Time at a stop", text: "On the Zephyr you watch Gore Canyon, Glenwood Canyon, and Ruby Canyon from the glass car. The train does not stop in those canyons. The station stop at Fraser-Winter Park is about five minutes, and the stop at Glenwood Springs is about seven. The stop at Truckee, below Donner Pass, is short too." },
       { label: "Worth the time", text: "The Zephyr follows the Colorado through those canyons. The Bernina Express climbs past alpine lakes and stone viaducts. You see both from the window. The hot-springs pool in Glenwood Springs, a hike near Winter Park, or Donner Lake means a night off the train." },
       { label: "Best for", text: "The Northwest, the Rockies, or a Canadian route, in a roomette if the trip is overnight." },
       { label: "Also", text: "On an overnight train a roomette has a bed and a door. A coach seat does not." },
@@ -780,7 +780,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-australia-new-zealand.jpg",
     detailAlt: "A glacial lake and snow-dusted mountains on New Zealand’s South Island",
     facts: [
-      { label: "Time in port", text: "Sydney and Auckland can be long city days. Reef ports need a full day. Milford is often a scenic sail, with no gangway." },
+      { label: "Time in port", text: "The stops in Sydney and Auckland can run long. A stop at the reef needs the hours the ship is there. Milford is often a scenic sail, with no gangway." },
       { label: "Worth the time", text: "Stop in Sydney to see the Opera House. It sits next to where most ships dock. If the ship leaves later, have lunch, or a meat pie on the quay: minced beef in gravy, baked in a pastry case. To see more than the harbor, stay at the Park Hyatt Sydney, across from the Opera House, before the cruise or after you return. In Auckland, walk the harbor and have a grilled lamb chop, the usual lunch." },
       { label: "Best for", text: "Travelers who can spend October through April, Australia’s summer, in one place, and who will fly to Sydney or Auckland to start." },
       { label: "Also", text: "The Great Barrier Reef has warm water, often around 80°F in the Australian summer, and hard coral. You can see clownfish, parrotfish, and giant clams. In Sydney the Opera House stands on the harbor, and you can walk the quay. You can also get a meat pie there: minced beef in gravy, baked in a pastry case." },
