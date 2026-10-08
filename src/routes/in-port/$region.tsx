@@ -59,10 +59,26 @@ function InPortPage() {
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-ink">{page.note}</p>
           <div className="mt-8 grid gap-4">
             {page.stops.map((stop) => (
-              <section key={stop.name} className="rounded-xl border border-line bg-foam p-5">
-                <h2 className="font-display text-2xl text-ink">{stop.name}</h2>
-                <p className="mt-3 text-base leading-relaxed text-ink">{stop.dock}</p>
-                <p className="mt-3 text-base leading-relaxed text-ink">{stop.text}</p>
+              <section key={stop.name} className="overflow-hidden rounded-xl border border-line bg-foam">
+                {stop.photos?.length ? (
+                  <div className={stop.photos.length > 1 ? "grid sm:grid-cols-2" : ""}>
+                    {stop.photos.map((photo) => (
+                      <img
+                        key={photo.src}
+                        src={photo.src}
+                        alt={photo.alt}
+                        loading="lazy"
+                        decoding="async"
+                        className="aspect-photo max-h-72 w-full object-cover"
+                      />
+                    ))}
+                  </div>
+                ) : null}
+                <div className="p-5">
+                  <h2 className="font-display text-2xl text-ink">{stop.name}</h2>
+                  <p className="mt-3 text-base leading-relaxed text-ink">{stop.dock}</p>
+                  <p className="mt-3 text-base leading-relaxed text-ink">{stop.text}</p>
+                </div>
               </section>
             ))}
           </div>

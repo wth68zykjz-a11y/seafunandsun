@@ -4,6 +4,7 @@ export type PortStop = {
   name: string;
   dock: string;
   text: string;
+  photos?: { src: string; alt: string }[];
 };
 
 export type PortActivityPage = {
@@ -39,6 +40,9 @@ export const portActivities: PortActivityPage[] = [
       },
       {
         name: "Ketchikan",
+        photos: [
+          { src: "/media/walks/ketchikan-creek.jpg", alt: "Creek Street, the boardwalk over the creek in Ketchikan" },
+        ],
         dock: "Ships dock on the waterfront.",
         text: "Creek Street is a boardwalk over the creek. You can walk there from the piers. The totem poles at Saxman are a few miles south of town. Totem Bight is about 10 miles north, in a spruce forest above the water. A short stop leaves time for the boardwalk or one of the pole parks. It does not leave time for both parks and a boat.",
       },
@@ -95,6 +99,10 @@ export const portActivities: PortActivityPage[] = [
       },
       {
         name: "Nassau",
+        photos: [
+          { src: "/media/walks/nassau-market.jpg", alt: "The straw market on Bay Street, a covered hall of woven bags, hats, and carvings" },
+          { src: "/media/walks/nassau-parliament.jpg", alt: "Parliament Square, the pink colonial buildings a couple of minutes past the straw market" },
+        ],
         dock: "Ships dock at Prince George Wharf, downtown.",
         text: "Ships dock at Prince George Wharf. Walk out through Festival Place onto Woodes Rogers Walk, then left onto Bay Street. The straw market, a covered hall of woven bags, hats, and carvings, is about five minutes from the gate. Parliament Square, the pink colonial buildings, is a couple of minutes farther along Bay Street. Junkanoo Beach is about 10 to 15 minutes west along the water, past the British Colonial. Cable Beach is on the north shore. A taxi from the pier takes about 15 to 20 minutes, and the sand is pale. A short taxi across the bridge reaches Paradise Island. A conch fritter is chopped conch fried in a seasoned batter.",
       },
@@ -120,6 +128,9 @@ export const portActivities: PortActivityPage[] = [
       },
       {
         name: "San Juan",
+        photos: [
+          { src: "/media/walks/morro.jpg", alt: "The walls of El Morro, the fortress at the end of the walk through Old San Juan" },
+        ],
         dock: "Many eastern cruises begin and end here. The ships dock beside Old San Juan.",
         text: "You walk the blue cobblestones up to El Morro and the cathedral. A short taxi east of the old city reaches Condado. That beach faces the Atlantic, and the surf can be up. It is not a reef lagoon. In town you can order mofongo, mashed fried plantain with garlic, often topped with shrimp or pork.",
       },
@@ -156,6 +167,9 @@ export const portActivities: PortActivityPage[] = [
       },
       {
         name: "Mykonos",
+        photos: [
+          { src: "/media/walks/mykonos-windmills.jpg", alt: "The windmills above the Mykonos waterfront" },
+        ],
         dock: "Most ships tender to the old port.",
         text: "You can walk from the landing to the windmills and the lanes. Little Venice is the row of houses on the water, in town. A taxi from the landing to Ornos takes about 10 to 20 minutes, and the water there is calmer than on the north shore.",
       },
@@ -181,11 +195,17 @@ export const portActivities: PortActivityPage[] = [
       },
       {
         name: "Dubrovnik",
+        photos: [
+          { src: "/media/walks/dubrovnik-walls.jpg", alt: "The city walls around Dubrovnik’s old town" },
+        ],
         dock: "Many ships dock at Gruz, about 15 to 20 minutes by bus from the old town. Some smaller ships tender closer.",
         text: "You walk the city walls around the old town. The cable car goes up to Mount Srđ. Hotel Excelsior looks at the old town and is a stay before or after the cruise.",
       },
       {
         name: "Kotor",
+        photos: [
+          { src: "/media/walks/kotor-walls.jpg", alt: "The walls climbing the hill behind Kotor" },
+        ],
         dock: "The ship comes into the bay. Larger ships anchor and tender. Smaller ships can dock at the quay in town.",
         text: "The walls climb the hill behind the square. A walk on the lower streets does not require the full climb.",
       },
@@ -206,6 +226,9 @@ export const portActivities: PortActivityPage[] = [
       },
       {
         name: "Palma",
+        photos: [
+          { src: "/media/walks/palma-cathedral.jpg", alt: "Palma Cathedral, on the walk from the port into the old town" },
+        ],
         dock: "Ships dock near the cathedral.",
         text: "You can walk into the old town from the port. The cathedral and the Arab baths are on that walk. A taxi from the pier reaches a beach on the bay. You do not walk off the ship onto that sand.",
       },

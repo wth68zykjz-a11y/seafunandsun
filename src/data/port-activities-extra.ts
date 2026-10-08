@@ -10,6 +10,9 @@ export const extraPortPages = [
     stops: [
       {
         name: "Lisbon",
+        photos: [
+          { src: "/media/walks/lisbon.jpg", alt: "Lisbon from the river, with Alfama and the Baixa rising behind the waterfront" },
+        ],
         dock: "Ships dock on the Tagus, below Alfama.",
         text: "You can walk or take a short shuttle up into Alfama and the Baixa. Belém is west along the river. Pastéis de Belém sells a pastel de nata, a custard tart in a flaky shell. The Four Seasons Hotel Ritz is a stay in the city before or after the cruise.",
       },
@@ -118,6 +121,9 @@ export const extraPortPages = [
     stops: [
       {
         name: "Bergen",
+        photos: [
+          { src: "/media/walks/bergen-bryggen.jpg", alt: "Bryggen, the wooden wharf you can walk to from the ship in Bergen" },
+        ],
         dock: "Ships dock by the harbor.",
         text: "You can walk from the ship to Bryggen, the old wooden wharf. The fish market serves a shrimp sandwich: cold peeled shrimp on buttered bread, with mayonnaise and lemon.",
       },
@@ -148,6 +154,9 @@ export const extraPortPages = [
       },
       {
         name: "Reykjavik",
+        photos: [
+          { src: "/media/walks/hallgrimskirkja.jpg", alt: "Hallgrímskirkja, the church you can walk to from the pier in Reykjavik" },
+        ],
         dock: "The ship docks near the old harbor.",
         text: "You can walk to Hallgrímskirkja from the pier. The Blue Lagoon is a geothermal pool on the lava field toward the airport. The ride from the pier takes about 45 minutes. It is not beside the ship.",
       },
@@ -179,6 +188,9 @@ export const extraPortPages = [
       },
       {
         name: "Quebec City",
+        photos: [
+          { src: "/media/walks/quebec-terrace.jpg", alt: "The terrace in front of the Château Frontenac in Quebec City" },
+        ],
         dock: "The ship docks at the Old Port, below the cliff.",
         text: "Upper Town and the Château Frontenac sit above the river. A funicular connects the lower town to the terrace. You can walk the lower town, and you can walk the terrace in front of the Château. Poutine is fries, cheese curds, and brown gravy.",
       },
@@ -200,6 +212,9 @@ export const extraPortPages = [
     stops: [
       {
         name: "Budapest",
+        photos: [
+          { src: "/media/walks/budapest-parliament.jpg", alt: "The Hungarian Parliament on the Danube in Budapest" },
+        ],
         dock: "Ships tie up on the Pest or Buda embankment.",
         text: "Parliament is on the Pest side, and you can walk to it from many docks. The castle is on the Buda hill. A thermal bath is a soak in mineral water, not a swim off the ship.",
       },
@@ -220,6 +235,9 @@ export const extraPortPages = [
       },
       {
         name: "Porto and the Douro",
+        photos: [
+          { src: "/media/walks/porto-ribeira.jpg", alt: "The Ribeira riverfront in Porto" },
+        ],
         dock: "River ships dock in the Ribeira or across the river in Gaia.",
         text: "The wine lodges are in Gaia. The Ribeira is the riverfront in Porto. You walk between them across the bridge.",
       },
@@ -354,6 +372,9 @@ export const extraPortPages = [
       },
       {
         name: "Sydney",
+        photos: [
+          { src: "/media/walks/sydney-quay.jpg", alt: "The walk along Circular Quay toward the Opera House and the Harbour Bridge" },
+        ],
         dock: "Many ships use the Overseas Passenger Terminal at Circular Quay.",
         text: "From that pier you can walk to the Opera House and The Rocks. Bondi is a beach east of the city. The ride takes about 30 minutes. If the ship stays longer, or you add a night before it sails, you can see more than the quay.",
       },
@@ -380,6 +401,9 @@ export const extraPortPages = [
     stops: [
       {
         name: "Sydney",
+        photos: [
+          { src: "/media/walks/sydney-quay.jpg", alt: "The walk along Circular Quay toward the Opera House and the Harbour Bridge" },
+        ],
         dock: "Many ships use the Overseas Passenger Terminal at Circular Quay. Some use White Bay.",
         text: "From Circular Quay you can walk to the Opera House and The Rocks. From White Bay you need a ride into the city. Bondi is east. The ride takes about 30 minutes. The beach is a long curve of sand, and the water is cooler than the Caribbean.",
       },
