@@ -587,7 +587,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "The ship is usually in port from morning to late afternoon. On a private-island stop you use the beach at the pier." },
       { label: "Worth the time", text: "Stop in Old San Juan and walk up to El Morro and the cathedral. In Martinique, stop at a bakery instead of a jewelry shop." },
       { label: "Travelers", text: "This suits a first cruise, a family, or anyone who wants a short flight from the East Coast and a port on most mornings." },
-      { label: "Also", text: "On a short stop, the beach and the town are different places. Check how far each one is from the pier before you plan both." },
+      { label: "Also", text: "On a short stop, the beach is not in the town. Check how far each one is from the pier before you plan both." },
     ],
     outings: [
       { fits: "People who will get in the water over a reef, not beside the pool.", bring: "Reef-safe sunscreen already on, and a rash guard if you burn. The boat may not have shade." },
@@ -601,7 +601,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "The ship is often in port for a long stretch, sometimes by tender. The useful hours are early, before the alleys fill." },
       { label: "Worth the time", text: "The Acropolis is in Athens. The Acropolis Museum beside it holds the sculptures from the site. The Ancient Agora is nearby. The National Archaeological Museum holds the Mycenaean gold and the classical bronzes. St. Peter’s is in Rome, and the Vatican Museums hold the Sistine Chapel ceiling. The Colosseum and the Forum are in the city too. The ship docks at Civitavecchia. Rome is about an hour and a half from the pier. Lunch can fit if the ship leaves later. Rome Cavalieri, a Waldorf Astoria hotel, is a stay in the city before or after the cruise. On the Amalfi coast there is time for a long lunch." },
-      { label: "Travelers", text: "This suits people who want to walk a different city on most mornings. The weather in May, June, September, and October is easier than the weather in August." },
+      { label: "Travelers", text: "This suits people who want a new city on most mornings. The weather in May, June, September, and October is easier than the weather in August." },
       { label: "Also", text: "Give the morning to the Acropolis, or to one town. There is not time for both." },
     ],
     outings: [
@@ -632,7 +632,7 @@ export const portGuides: Record<string, PortGuide> = {
     facts: [
       { label: "Time in port", text: "Inter-island ships often overnight. A sailing from San Diego, Los Angeles, or Vancouver spends more days just getting there." },
       { label: "Worth the time", text: "Stop on Oahu to visit the USS Arizona Memorial. After that, you can order a plate lunch: rice, macaroni salad, and a meat such as kalua pork or chicken katsu." },
-      { label: "Travelers", text: "This suits people who want time in the islands. An inter-island cruise and a cruise from California are different trips, so the stop has to match the one you booked." },
+      { label: "Travelers", text: "This suits people who want time in the islands. An inter-island cruise stays among the islands. A cruise from California spends more nights at sea to get there. The stop has to match the one you booked." },
       { label: "Also", text: "Hana Bay, the black-sand beach, and the food stands are in Hana. The ship docks in Kahului. Hana is about two and a half hours from the pier." },
     ],
     outings: [

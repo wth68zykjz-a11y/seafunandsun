@@ -244,7 +244,7 @@ export const linePages: LinePage[] = [
       { line: "Viking river", ships: "Longships about 190. Viking also has a Mississippi ship.", where: "Danube, Rhine, Seine, Douro, and other European rivers. The Mississippi ship sails the Mississippi.", fare: "The fare for about a week is often $2,500–$5,500 a person, with meals and a daily excursion on most European rivers." },
     ],
     notes: [
-      "Do not compare these fares with a Carnival interior. More of the day is already in the price, and the ship cannot carry 5,000 people up the Danube.",
+      "Do not compare these fares with a Carnival interior. The meals and the daily walk are already in the price, and the ship cannot carry 5,000 people up the Danube.",
       "Regent, Silversea’s ocean ships, Seabourn, Explora, and the yacht lines are compared on the luxury pages. If a search comes back empty, the line is usually one of those. Send the plans and we will price them.",
     ],
     benefits: [
@@ -253,7 +253,7 @@ export const linePages: LinePage[] = [
         text: "A European river ship has a small lounge, a dining room, and a sun deck. An American Cruise Lines paddlewheeler adds the red wheel, a paddlewheel lounge, and open-seating dining. An expedition ship has a lecture room and a place to board the Zodiacs. None of these has a casino district or a wave pool.",
       },
       {
-        title: "Meals, and one outing a day",
+        title: "Meals, and a walking tour each day",
         text: "On most European river ships the meals and a daily walking tour are in the fare. Bikes, a tasting, or a longer transfer are the paid extras. Uniworld and Scenic include more drinks. Read that list before adding another tour.",
       },
       {

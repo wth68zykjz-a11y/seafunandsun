@@ -120,7 +120,7 @@ export const portRegions: PortRegion[] = [
   {
     id: "northern-europe",
     title: "Northern Europe and the Atlantic",
-    lede: "Southampton is a departure port for many different cruises. The other ports here are mainly for a cruise to Norway, the Baltic, or the Canary Islands.",
+    lede: "Southampton is a departure port for Norway, the Baltic, the Mediterranean, the Canaries, and the Atlantic crossing. The other ports on this page are mainly for a cruise to Norway, the Baltic, or the Canary Islands.",
     ports: [
       { name: "Southampton", place: "England", goes: "Norway, the Baltic, the Mediterranean, the Canaries, and the transatlantic crossing.", air: "Fly London Heathrow or Gatwick. British Airways, Virgin Atlantic, American, Delta, and United. Heathrow is about 1.5 hours from the port. Southampton Airport itself is a small field.", zone: "Europe/London", money: "Pound sterling. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/southampton.jpg", alt: "The port of Southampton", slug: "northern-europe" },
       { name: "Dover", place: "England", goes: "Norway and shorter Northern Europe sailings. The white cliffs are at the port.", air: "Same London airports as Southampton. Heathrow is about 1.5 to 2 hours from Dover.", zone: "Europe/London", money: "Pound sterling. Cards are accepted. US dollars are not the local currency.", image: "/media/ports/dover.jpg", alt: "The white cliffs at Dover", slug: "northern-europe" },

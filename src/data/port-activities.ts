@@ -24,7 +24,7 @@ export const portActivities: PortActivityPage[] = [
     region: "Alaskan Cruises",
     title: "What you can do in port in Alaska",
     lede: "These are the usual stops on an Inside Passage cruise or a one-way cruise across the Gulf of Alaska. A scenic sail such as Tracy Arm, Glacier Bay, or Hubbard Glacier has no pier. You watch from the ship.",
-    note: "An excursion can be added in a port. On a stop of four to eight hours, one outing is the realistic plan. If the ship stays longer, you can add another. A tour sold by the ship waits if the group is late. A taxi or a tour you arranged on your own does not make the ship wait.",
+    note: "An excursion can be added in a port. On a stop of four to eight hours, there is time for one plan, not two. If the ship stays longer, you can add the second. A tour sold by the ship waits if the group is late. A taxi or a tour you arranged on your own does not make the ship wait.",
     image: "/media/day-alaskan.jpg",
     imageAlt: "A train crossing a wooden trestle above a misty spruce valley",
     stops: [
@@ -89,7 +89,7 @@ export const portActivities: PortActivityPage[] = [
       },
       {
         name: "Jamaica",
-        dock: "Falmouth, Ocho Rios, and Montego Bay are different piers. The sailing names which one.",
+        dock: "The sailing names the pier: Falmouth, Ocho Rios, or Montego Bay.",
         text: "Dunn’s River Falls is at Ocho Rios. The ride from that pier is short. Falmouth’s pier is beside the town, and you can walk the Georgian streets. Dunn’s River is not in Falmouth.",
       },
       {

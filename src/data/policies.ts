@@ -294,7 +294,7 @@ export const policies: PolicyDoc[] = [
         blocks: [
           {
             type: "p",
-            text: "Every situation is different. Call or text us at (959) 666-2062 or email Admin@Seafunandsun.com and we'll review the exact rules on your fare, room, or flight — and your best options — right away.",
+            text: "The rules depend on the fare, the room, and the flight. Call or text us at (959) 666-2062 or email Admin@Seafunandsun.com and we'll review those rules — and your best options — right away.",
           },
         ],
       },

@@ -84,7 +84,7 @@ export const extraPortPages = [
     region: "Bermuda Cruises",
     title: "What you can do in port in Bermuda",
     lede: "Most ships stay at the Royal Naval Dockyard, on the west end, and many stay overnight.",
-    note: "Horseshoe Bay, Hamilton, and St. George's are three different places. An overnight is enough time for the beach and both towns. On a short stop, use the excursion sold by the ship if you leave the Dockyard. If that tour is late, the ship waits.",
+    note: "Horseshoe Bay is a beach. Hamilton and St. George's are towns. An overnight is enough time for the beach and both towns. On a short stop, use the excursion sold by the ship if you leave the Dockyard. If that tour is late, the ship waits.",
     image: "/media/bermuda.jpg",
     imageAlt: "Pink sand and turquoise water in Bermuda",
     stops: [

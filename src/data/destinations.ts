@@ -175,7 +175,7 @@ export const destinations: Destination[] = [
     card: "Ports & culture",
     image: "/media/mediterranean.jpg",
     alt: "A whitewashed harbor town above a small Mediterranean port",
-    lede: "Most mornings the ship is in a different port. One morning that port may be Barcelona, and the next morning a smaller harbor. Pick the ship for those ports, not for the photograph on the cover.",
+    lede: "Most mornings the ship is in a new port. One morning that port may be Barcelona, and the next morning a smaller harbor. Pick the ship for those ports, not for the photograph on the cover.",
     paragraphs: [
       "Cruises usually run seven to fourteen nights and depart from Barcelona, Civitavecchia for Rome, and Piraeus for Athens. Royal Caribbean, MSC, Norwegian, Celebrity, and Cunard all sail the region, and the luxury lines sail it too. When the itinerary says Venice, the ship usually docks at Ravenna or Trieste, not in the lagoon. We compare the routes, the ports, and what the fare includes, then match the ship to how you like to travel.",
       "A Greek-island cruise of about a week tends to include Athens, Santorini, Mykonos, and Crete. An Adriatic cruise of about a week tends to include Dubrovnik, Kotor, and Split, with the ship in Ravenna or Trieste rather than Venice. A cruise of about a week that starts in Barcelona tends to include Palma, Marseille, Nice, or Monaco. A 14- to 18-day cruise from the United Kingdom can include ports from more than one of those.",
