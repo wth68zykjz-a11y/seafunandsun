@@ -182,7 +182,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Dubrovnik",
         dock: "Many ships dock at Gruz, about 15 to 20 minutes by bus from the old town. Some smaller ships tender closer.",
-        text: "The city walls are the walk around the old town. The cable car goes up to Mount Srđ. Hotel Excelsior looks at the old town and is a stay before or after the cruise.",
+        text: "You walk the city walls around the old town. The cable car goes up to Mount Srđ. Hotel Excelsior looks at the old town and is a stay before or after the cruise.",
       },
       {
         name: "Kotor",

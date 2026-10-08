@@ -77,7 +77,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Half day",
         pace: "Easy",
         detail:
-          "The railroad climbs out of town into the Klondike route. It suits people who do not want a hike. Pair it with a short walk in town, not a second full tour.",
+          "The railroad climbs out of town into the Klondike route. It suits people who do not want a hike. Pair it with a walk on Broadway, not a second full tour.",
       },
     ],
   },
@@ -253,7 +253,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-northern-europe.jpg",
     photoAlt: "A steep fjord village and a waterfall above dark water",
     intro:
-      "In northern Europe the ship may tender you into a fjord village, or you may walk in a Baltic city. Weather decides which tender runs. If the scenic boat is canceled, you can walk in town.",
+      "In northern Europe the ship may tender you into a fjord village, or you may walk to Bryggen in Bergen or an old square in a Baltic city. Weather decides which tender runs. If the scenic boat is canceled and the ship is alongside, you can still walk to that square.",
     excursions: [
       {
         title: "A village at the end of the fjord",
@@ -453,7 +453,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "A full day and an evening",
         pace: "Your choice",
         detail:
-          "A guide is worth booking on an overnight: one neighborhood, a table, and a late return. On a two-hour tender stop you can walk near the landing.",
+          "A guide is worth booking on an overnight: one neighborhood, a table, and a late return. On a two-hour tender stop you can walk the streets nearest the landing.",
       },
       {
         title: "Crossing days, on purpose",
@@ -663,7 +663,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "A stop in a fjord village can be a tender of a few hours. A stop in a Baltic capital runs longer." },
       { label: "Worth the time", text: "The Bryggen wharf is in Bergen, and the fish market serves a shrimp sandwich: cold peeled shrimp on buttered bread, with mayonnaise and lemon. In Copenhagen, a New Nordic menu is local seafood, vegetables, and foraged herbs, and those tables are booked before you sail. The Rijksmuseum is in Amsterdam. It holds Rembrandt’s The Night Watch. The Anne Frank House is the rooms where she hid. Ocean ships dock at IJmuiden, not in the canals. The museum is about 30 to 45 minutes from the pier. Lunch can fit if the ship leaves later. The Waldorf Astoria Amsterdam is a stay in the city before or after the cruise. Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a stay in the city if you want to stay the night. Gamla Stan is in Stockholm. The Vasa Museum holds the warship Vasa, raised from the harbor. Grand Hôtel looks across the water at the palace." },
       { label: "Who it's for", text: "This suits people who want long summer light and small harbors, and who do not mind the weather being part of the trip." },
-      { label: "Also", text: "If the tender does not run, you can walk in the town for the hours you have." },
+      { label: "Also", text: "If the ship is alongside, you can walk to the old square. If the tender is canceled, you stay on board." },
     ],
     outings: [
       { fits: "People who will tender ashore, or stay on deck. Room service on the balcony is the same sail without the tender.", bring: "A real rain jacket." },
@@ -678,7 +678,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "A stop in a small Maine port often lasts about half a day. The stops in Halifax and Québec last longer when the ship goes upriver." },
       { label: "Worth the time", text: "Stop in Halifax to see the Citadel. You can do it on foot. If the ship goes up to Québec, stop there for the view from the Château Frontenac. You can also stay in that hotel before or after the cruise. In Maine, stop for a lighthouse and a lobster roll: lobster meat in a split bun, with mayonnaise or melted butter." },
       { label: "Who it's for", text: "This suits people who want fall color and small harbors, often without a flight. The peak color lasts a short time." },
-      { label: "Also", text: "You can walk the harbor and the ramparts." },
+      { label: "Also", text: "In Halifax you can walk the waterfront and the ramparts at the Citadel. In Québec you can walk the lower town and up to the terrace at the Château Frontenac." },
     ],
     outings: [
       { fits: "People who will time the stop for the maples and a walk out to a lighthouse.", bring: "A fleece. The maples are in color. The wind off the water is colder than it looks." },
@@ -781,7 +781,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A glacial lake and snow-dusted mountains on New Zealand’s South Island",
     facts: [
       { label: "Time in port", text: "The stops in Sydney and Auckland can run long. A stop at the reef needs the hours the ship is there. Milford is often a scenic sail, with no gangway." },
-      { label: "Worth the time", text: "Stop in Sydney to see the Opera House. It sits next to where most ships dock. If the ship leaves later, have lunch, or a meat pie on the quay: minced beef in gravy, baked in a pastry case. To see more than the harbor, stay at the Park Hyatt Sydney, across from the Opera House, before the cruise or after you return. In Auckland, walk the harbor and have a grilled lamb chop, the usual lunch." },
+      { label: "Worth the time", text: "Stop in Sydney to see the Opera House. It sits next to where most ships dock. If the ship leaves later, have lunch, or a meat pie on the quay: minced beef in gravy, baked in a pastry case. To see more than the harbor, stay at the Park Hyatt Sydney, across from the Opera House, before the cruise or after you return. In Auckland, walk the Viaduct Harbour and have a grilled lamb chop, the usual lunch." },
       { label: "Who it's for", text: "This suits people who can travel from October through April, Australia’s summer, and who will fly to Sydney or Auckland to start." },
       { label: "Also", text: "The Great Barrier Reef has warm water, often around 80°F in the Australian summer, and hard coral. You can see clownfish, parrotfish, and giant clams. In Sydney the Opera House stands on the harbor, and you can walk the quay. You can also get a meat pie there: minced beef in gravy, baked in a pastry case." },
     ],

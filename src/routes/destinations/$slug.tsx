@@ -33,7 +33,7 @@ const ashoreNotes: Record<string, string> = {
   alaskan:
     "Most Alaska stops end in the afternoon. Mendenhall Glacier is in Juneau, about 20 minutes from the cruise docks on Gastineau Channel. Creek Street is in downtown Ketchikan. A short ride from there reaches the totem poles at Saxman and Totem Bight. Skagway sits at the foot of White Pass, and the White Pass and Yukon Route railroad climbs from town to the pass. In Glacier Bay or Tracy Arm there is no pier. The ship spends those hours on the water. Some Juneau calls stay late enough that you can eat in town. Nights in Seattle or Vancouver are not cut off by all-aboard. Steamed Dungeness crab can be lunch if you want it.",
   caribbean:
-    "A typical island stop ends in the afternoon. Cozumel and the private islands have a beach and a swim. From the pier in Nassau and the older towns, you can walk. If the ship stays longer in San Juan, you have the afternoon in the old city, and an overnight leaves the evening open. Nights in Miami or Fort Lauderdale are for the city, not the gangway.",
+    "A typical island stop ends in the afternoon. Cozumel and the private islands have a beach and a swim. From the pier in Nassau you can walk to the straw market. In San Juan you can walk up to El Morro. If the ship stays longer there, you have the afternoon in the old city, and an overnight leaves the evening open. Nights in Miami or Fort Lauderdale are for the city, not the gangway.",
   mediterranean:
     "Many stops end in the afternoon. The Gothic Quarter is in Barcelona, and you can walk there from some piers. The Colosseum and the museums are in Rome. Civitavecchia is about an hour to an hour and a half away. The Acropolis is in Athens, about 30 to 45 minutes from Piraeus. When the ship stays overnight, or sails as late as 10 p.m., the evening in the city is open. A reserved dinner can be part of those extra nights.",
   european:
@@ -53,9 +53,9 @@ const ashoreNotes: Record<string, string> = {
   asia:
     "Singapore and Tokyo often keep the ship in port into the evening, and some sail as late as 10 p.m. A beach stop is still only a few hours. A night before or after is a chance to explore one district, or a museum, instead of racing through three cities.",
   "south-america":
-    "Guanabara Bay, Sugarloaf, and Corcovado are in Rio. In Buenos Aires you can walk the neighborhoods, and the evening starts late, which lines up when the ship stays overnight or sails late. A daytime stop can include the waterfront and a neighborhood such as San Telmo. Extra nights are when you can stay out. A grill can be part of those nights if you want a table held.",
+    "Guanabara Bay, Sugarloaf, and Corcovado are in Rio. In Buenos Aires you can walk San Telmo and the waterfront at Puerto Madero, and the evening starts late, which lines up when the ship stays overnight or sails late. A daytime stop can include that waterfront and San Telmo. Extra nights are when you can stay out. A grill can be part of those nights if you want a table held.",
   world:
-    "A world cruise spends many days at sea. On a short stop you can walk around the harbor. On an overnight you have the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights. The ship is not waiting then.",
+    "A world cruise spends many days at sea. On a short stop you can walk the streets nearest the landing. On an overnight you have the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights. The ship is not waiting then.",
   "australia-new-zealand":
     "Sydney Harbour and the Opera House are in Sydney. In Auckland, the waterfront is at the pier, and Mount Eden, a volcanic cone, is about 15 minutes away. The evening in town depends on a late sailaway or an overnight, which some itineraries have. Brisbane and Melbourne turn fewer ships. Extra nights in Sydney or Auckland are for the city after the ship has sailed.",
   "panama-canal":
@@ -64,7 +64,7 @@ const ashoreNotes: Record<string, string> = {
 
 const ashoreLeads: Record<string, string> = {
   alaskan: "Mendenhall Glacier is in Juneau, about 20 minutes from the docks. Creek Street is in downtown Ketchikan. Skagway sits at the foot of White Pass. In Glacier Bay or Tracy Arm there is no pier. The ship spends those hours on the water.",
-  caribbean: "Cozumel and the private islands have beaches. From the pier in Nassau and the older towns, you can walk. If the ship stays longer in San Juan, you have the afternoon in the old city.",
+  caribbean: "Cozumel and the private islands have beaches. From the pier in Nassau you can walk to the straw market. In San Juan you can walk up to El Morro, and a longer stay leaves the afternoon for the old city.",
   mediterranean: "The Gothic Quarter is in Barcelona. The Colosseum is in Rome. Civitavecchia is about an hour to an hour and a half away. The Acropolis is in Athens, about 30 to 45 minutes from Piraeus.",
   european: "A stop in Lisbon, at the London ports, or in a Mediterranean city is short if the ship leaves in the afternoon. If you add nights before or after, you can see one of them properly.",
   hawaii: "Time between the islands runs longer than a Caribbean stop. Pride of America often stays into the evening. A luau still needs the ship in port after dark.",
@@ -74,8 +74,8 @@ const ashoreLeads: Record<string, string> = {
   river: "The ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village.",
   expedition: "The landing is not a visit to a city. You may put on the gear, ride a Zodiac, walk a beach, and take pictures. Weather can cancel it.",
   asia: "Singapore and Tokyo often keep the ship in port into the evening. A beach stop is still only a few hours.",
-  "south-america": "Guanabara Bay, Sugarloaf, and Corcovado are in Rio. In Buenos Aires you can walk the neighborhoods, and the evening starts late, which only helps if the ship stays.",
-  world: "A world cruise has more sea days than port days. On a short stop you can walk around the harbor. On an overnight you have the evening in that city.",
+  "south-america": "Guanabara Bay, Sugarloaf, and Corcovado are in Rio. In Buenos Aires you can walk San Telmo and Puerto Madero, and the evening starts late, which only helps if the ship stays.",
+  world: "A world cruise has more sea days than port days. On a short stop you can walk the streets nearest the landing. On an overnight you have the evening in that city.",
   "australia-new-zealand": "Sydney Harbour and the Opera House are in Sydney. In Auckland, Mount Eden is a volcanic cone about 15 minutes from the pier.",
   "panama-canal": "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock. Cartagena is the city on a lot of these routes.",
 };

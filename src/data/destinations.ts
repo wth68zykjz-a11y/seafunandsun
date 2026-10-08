@@ -96,7 +96,7 @@ export const destinations: Destination[] = [
     card: "Islands & reefs",
     image: "/media/caribbean.jpg",
     alt: "A quiet Caribbean cove with pale sand and clear water",
-    lede: "More ships sail here than in any other region, and from most piers you can walk into town. Many travelers start in the Caribbean, then come back for a particular ship and a shorter list of ports.",
+    lede: "More ships sail here than in any other region. From the pier in Nassau you can walk to the straw market, and in San Juan you can walk up to El Morro. Many travelers start in the Caribbean, then come back for a particular ship and a shorter list of ports.",
     paragraphs: [
       "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
       "Northeast departures mean more sea days. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port. We will say how many sea days are on the one you are looking at before you book it.",
@@ -978,7 +978,7 @@ export const destinations: Destination[] = [
       {
         heading: "Worth going ashore for",
         items: [
-          "Sydney — you can walk the harbor. A bus tour of the suburbs is mostly the bus",
+          "Sydney — you can walk from Circular Quay to the Opera House and The Rocks. A bus tour of the suburbs is mostly the bus",
           "The reef from Cairns or Airlie Beach, if the ship gives you the hours",
           "Milford Sound from the deck, when the weather allows the ship in",
           "Wellington, or a South Island wine town, walked rather than driven past",

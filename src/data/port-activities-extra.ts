@@ -98,7 +98,7 @@ export const extraPortPages = [
       {
         name: "Hamilton",
         dock: "The ship stays at the Dockyard. Hamilton is the capital.",
-        text: "A ferry from the Dockyard takes about 20 minutes. Front Street is the waterfront, and the shops are there. You can walk the town once you land.",
+        text: "A ferry from the Dockyard takes about 20 minutes. Front Street is the waterfront, and the shops are there. You can walk Front Street once you land.",
       },
       {
         name: "St. George's",
@@ -165,12 +165,12 @@ export const extraPortPages = [
       {
         name: "Boston",
         dock: "Most ships use the Black Falcon terminal, in the Seaport.",
-        text: "The Freedom Trail starts at Boston Common. A ride from Black Falcon takes about 15 minutes, and you can walk parts of the waterfront. A lobster roll is lobster meat in a split bun, with butter or mayonnaise.",
+        text: "The Freedom Trail starts at Boston Common. A ride from Black Falcon takes about 15 minutes. From Long Wharf you can walk the Harborwalk toward the aquarium. A lobster roll is lobster meat in a split bun, with butter or mayonnaise.",
       },
       {
         name: "Bar Harbor",
         dock: "Ships tender to the town pier.",
-        text: "The village is small, and you can walk it once you land. Cadillac Mountain is in Acadia National Park. The ride from the pier takes about 20 to 30 minutes. You look over the islands from the summit.",
+        text: "You can walk Main Street from the pier, and the shore path starts at the town landing. Cadillac Mountain is in Acadia National Park. The ride from the pier takes about 20 to 30 minutes. You look over the islands from the summit.",
       },
       {
         name: "Halifax",
@@ -180,7 +180,7 @@ export const extraPortPages = [
       {
         name: "Quebec City",
         dock: "The ship docks at the Old Port, below the cliff.",
-        text: "Upper Town and the Château Frontenac sit above the river. A funicular connects the lower town to the terrace. You can walk both levels. Poutine is fries, cheese curds, and brown gravy.",
+        text: "Upper Town and the Château Frontenac sit above the river. A funicular connects the lower town to the terrace. You can walk the lower town, and you can walk the terrace in front of the Château. Poutine is fries, cheese curds, and brown gravy.",
       },
       {
         name: "Charlottetown",
@@ -242,7 +242,7 @@ export const extraPortPages = [
       {
         name: "Ushuaia",
         dock: "The ship docks in the harbor. This is the start or the end, not an Antarctic landing.",
-        text: "You can walk the waterfront. Tierra del Fuego National Park is outside town. The ride takes about 20 minutes. The Beagle Channel is the water the ship uses on the way south.",
+        text: "You can walk the waterfront to the old prison, now the maritime museum. Tierra del Fuego National Park is outside town. The ride takes about 20 minutes. The Beagle Channel is the water the ship uses on the way south.",
       },
       {
         name: "Antarctic Peninsula",
@@ -319,7 +319,7 @@ export const extraPortPages = [
       {
         name: "Ushuaia",
         dock: "On a Cape Horn sailing the ship docks in town.",
-        text: "You can walk the waterfront. The Beagle Channel is the water you sailed to get here. Tierra del Fuego National Park is outside town.",
+        text: "You can walk the waterfront to the old prison museum. The Beagle Channel is the water you sailed to get here. Tierra del Fuego National Park is outside town.",
       },
       {
         name: "Valparaíso",
@@ -338,7 +338,7 @@ export const extraPortPages = [
     region: "World Cruises",
     title: "What a call is like on a world cruise",
     lede: "A world cruise spends many days at sea. The ports below are ones these voyages often use. The ship does not stop in all of them on one sailing.",
-    note: "On a short stop you can walk around the harbor. On an overnight you have the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights.",
+    note: "On a short stop you can walk the streets nearest the landing. On an overnight you have the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights.",
     image: "/media/world.jpg",
     imageAlt: "Open ocean from the deck of a ship",
     stops: [
