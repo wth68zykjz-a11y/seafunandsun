@@ -256,7 +256,7 @@ function Home() {
           <div className="mt-8 grid gap-6 rounded-xl border border-line bg-foam p-5 sm:grid-cols-[auto_1fr] sm:p-6">
             <LogoMark className="logo-mark size-16" />
             <div>
-              <h2 className="font-display text-3xl text-ink">Laura Scollard books the trip.</h2>
+              <h2 className="font-display text-3xl text-ink">Laura S books the trip.</h2>
               <p className="mt-3 text-base leading-relaxed text-ink">
                 She works from Farmington, Connecticut. The same agent quotes the cruise, the resort, the ski vacation, or the rail trip, and stays with the booking until you are home. You pay the supplier. There is no separate agent fee.
               </p>

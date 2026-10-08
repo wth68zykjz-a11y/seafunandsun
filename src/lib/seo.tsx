@@ -70,7 +70,7 @@ export function agencyGraph() {
         email: bookingEmail,
         founder: {
           "@type": "Person",
-          name: "Laura Scollard",
+          name: "Laura S",
           jobTitle: "Travel agent",
         },
         description:
