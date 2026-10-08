@@ -516,7 +516,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The season runs from May through October. In October the maples are in color, and there are fewer people on deck. In summer the ships go to Cape Cod and the beach towns. In fall they go to Bar Harbor, Halifax, and Quebec.",
+    when: "The season runs from May through October. Cruises visit Cape Cod, the beach towns, Bar Harbor, Halifax, and Quebec. October is the month when the maples are in color, and there are fewer people on deck.",
     planning: "A fall sailing is for the maples in Bar Harbor, Halifax, and Quebec. A summer sailing is for Cape Cod and the beach towns. Say whether you can leave from Boston or New York.",
     itineraries: [
       {
