@@ -292,7 +292,7 @@ export function DestinationArticle({
         </div>
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-ink">
           {rail
-            ? "Once you step off the train, you are in the town. Walk until you want to sit down. Talk with people. You might eat where the room is already full, at a well-known restaurant if that is why you stopped, or at a small local place such as a wine bar or a café with a short menu. Go to a museum if you would rather be indoors."
+            ? "A station stop is a few minutes on the platform. If you get off and stay the night, the train is not your deadline. You can have dinner, go to a museum, or walk a neighborhood the train only passes. That might be a well-known restaurant, if that is why you stopped, or a small local place such as a wine bar or a café with a short menu."
             : ashoreNotes[place.slug]}
         </p>
         <article className="mt-4 rounded-xl p-5 text-foam" style={{ backgroundColor: tone }}>

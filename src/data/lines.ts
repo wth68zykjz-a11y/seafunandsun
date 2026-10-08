@@ -142,7 +142,7 @@ export const linePages: LinePage[] = [
       { line: "Royal Caribbean", ships: "Radiance and Serenade about 2,100. Quantum class about 4,100–4,900 from Seattle.", where: "Inside Passage round-trip cruises, and some one-way cruises to Seward.", fare: "Balcony, 7 nights, often $1,200–$2,800." },
     ],
     notes: [
-      "A Vancouver embarkation needs a passport. Prices in the city are in Canadian dollars. If you stay a few days before or after the cruise, the ship is not counting you back. You can walk the harbor in the daytime or after dark, talk with people, and eat where you want, such as a seafood counter on the water at lunch or a quieter dining room in the evening.",
+      "A Vancouver embarkation needs a passport. Prices in the city are in Canadian dollars. If you stay a few days before or after the cruise, there is no all-aboard. You can walk the harbor, in daylight or after dark, and eat where you want, such as a seafood counter on the water at lunch or a quieter dining room later.",
       "The ship and the ports can match in May and in August. What you see still changes. In May the tidewater glaciers are larger, because less of the winter ice has melted, and the weather is colder. In August the salmon are running and the bears are on the rivers to feed.",
     ],
     benefits: [
