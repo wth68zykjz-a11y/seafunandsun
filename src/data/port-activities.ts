@@ -68,7 +68,7 @@ export const portActivities: PortActivityPage[] = [
     slug: "caribbean",
     region: "Caribbean Cruises",
     title: "What you can do in port in the Caribbean",
-    lede: "A western week, an eastern week, and a southern week do not share the same islands. This page says where the ship docks, and how far the sights are from that pier.",
+    lede: "A western Caribbean cruise, an eastern one, and a southern one do not visit the same islands. This page says where the ship docks, and how far the sights are from that pier.",
     note: "A morning-to-afternoon stop usually leaves time for one plan: the reef, a beach, or the town. If the ship stays overnight, you can add another. An excursion sold by the ship comes with a wait if the tour runs late. A taxi or a tour you booked on your own does not.",
     image: "/media/day-caribbean.jpg",
     imageAlt: "A snorkel mask and fins on limestone beside clear reef water",
@@ -126,7 +126,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Aruba, Bonaire, and Curaçao",
         dock: "These are a southern routing, usually from San Juan, or a longer loop from Florida.",
-        text: "They are not stops on a seven-night western week with Cozumel. In Aruba the ship docks at Oranjestad. A taxi from there goes up the west coast to Eagle Beach. The sand is pale, and the water is calm. In Bonaire the reef starts close to shore, which is why people snorkel from the coast. In Curaçao the ship docks at Willemstad. You can walk to the Handelskade, the colored waterfront, and the Queen Emma Bridge swings open for ships.",
+        text: "They are not on a seven-night western Caribbean cruise with Cozumel. In Aruba the ship docks at Oranjestad. A taxi from there goes up the west coast to Eagle Beach. The sand is pale, and the water is calm. In Bonaire the reef starts close to shore, which is why people snorkel from the coast. In Curaçao the ship docks at Willemstad. You can walk to the Handelskade, the colored waterfront, and the Queen Emma Bridge swings open for ships.",
       },
       {
         name: "Private islands",
