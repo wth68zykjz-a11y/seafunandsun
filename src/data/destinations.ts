@@ -99,7 +99,7 @@ export const destinations: Destination[] = [
     alt: "A quiet Caribbean cove with pale sand and clear water",
     lede: "More ships sail here than anywhere else we book. In Nassau the straw market is a five-minute walk from the ship. In San Juan the walk up to El Morro starts at the dock.",
     paragraphs: [
-      "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. Cruises also start in San Juan, and in some seasons in Fort-de-France, Martinique. A cruise that starts in San Juan reaches those islands in seven nights without the sea days a cruise from Florida needs. A cruise starts in Fort-de-France when MSC Opera or a smaller French ship is based there for the season. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
+      "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. Cruises also start in San Juan, and in some seasons in Fort-de-France, Martinique. A cruise that starts in San Juan reaches those islands in seven nights without the sea days a cruise from Florida needs. A cruise starts in Fort-de-France when MSC Opera or a smaller French ship is based there for the season. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip, rather than picking a ship and then looking for a trip.",
       "Cruises that depart from the Northeast have more days at sea. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port. We will say how many days at sea are on the one you are looking at before you book it.",
       "A western Caribbean cruise often includes Cozumel and Grand Cayman. An eastern one often includes St. Thomas, St. Maarten, and, on a longer sailing, Antigua or Martinique. A southern routing includes Aruba, Bonaire, and Curaçao. The port page says where the ship docks, and how far the sights are from the pier.",
       "A seven-night cruise that starts in Miami is usually a Bahamas cruise, a western Caribbean cruise to Cozumel and Grand Cayman, or an eastern one to St. Thomas and St. Maarten. Two or three of those nights are at sea. A seven-night cruise that starts in San Juan usually includes four or five ports, such as St. Thomas, St. Maarten, Antigua, St. Lucia, Barbados, St. Kitts, or Aruba, Bonaire, and Curaçao, and one or two nights at sea. Miami has more ships and more sailing dates, including the largest ships. The ships that start and end in San Juan are mid-size. Royal Caribbean does that year-round, on ships such as Rhapsody of the Seas and Vision of the Seas. Celebrity and Norwegian do it on some sailings. The Icon-class ships stop in San Juan. A cruise on those ships usually starts in Florida. Old San Juan is beside the dock. A taxi from the Miami terminal reaches South Beach, so a night there is a separate booking. A passport is the document to carry from either port, because several of the islands are foreign.",
@@ -133,7 +133,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "Ships sail the Caribbean year-round. December through April is the peak season: the steadiest weather, and the highest cruise fares. August through October is hurricane season. Named storms rarely reach a ship at sea, and the cruise fares are lower.",
-    planning: "Send the month and the departure port. A seven-night cruise that departs from Miami has more nights at sea than a cruise of the same length that departs from San Juan, because the San Juan ship is already in the islands. A cruise of the same length that departs from New York, Baltimore, or Boston adds sea days each way. Those sea days should be on the itinerary before you choose.",
+    planning: "Send the month and the departure port. A seven-night cruise that departs from Miami has more nights at sea than a cruise of the same length that departs from San Juan, because the San Juan ship is already in the islands. A cruise of the same length that departs from New York, Baltimore, or Boston has more sea days each way. Those sea days should be on the itinerary before you choose.",
     itineraries: [
       {
         title: "Western Caribbean",
@@ -185,7 +185,7 @@ export const destinations: Destination[] = [
         heading: "The routes",
         items: [
           "Greece — Athens, Santorini, Mykonos, Crete",
-          "Italy — Rome at Civitavecchia, the Amalfi coast when the ship actually stops",
+          "Italy — Rome, reached from Civitavecchia, and the Amalfi coast on the sailings that stop there",
           "Venice — from Ravenna or Trieste. Large ships do not dock in the lagoon",
           "Spain — Barcelona, Valencia, and Seville when the ship stops there",
           "France — Marseille, Nice, Monaco",
@@ -270,9 +270,9 @@ export const destinations: Destination[] = [
           "The Alcázar gardens in Seville, and flamenco when the ship stays late enough",
           "Pompeii, the Roman city buried by Vesuvius",
           "Tuscany — hills, vineyards, and a village lunch",
-          "The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. The ship docks at Le Havre. Paris is about two hours from the pier. Shangri-La Paris, looking toward the tower, is a stay in the city before or after the cruise.",
-          "Westminster Abbey and the Tower of London are in London. The ship docks at Southampton. London is about an hour and a half to two hours from the pier. The Savoy is a stay in the city before or after the cruise.",
-          "Belém, Alfama, and Time Out Market are in Lisbon. The Four Seasons Hotel Ritz is a stay in the city before or after the cruise.",
+          "The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. The ship docks at Le Havre. Paris is about two hours from the pier. Shangri-La Paris, looking toward the tower, is a hotel for the nights before or after the cruise.",
+          "Westminster Abbey and the Tower of London are in London. The ship docks at Southampton. London is about an hour and a half to two hours from the pier. The Savoy is a hotel for the nights before or after the cruise.",
+          "Belém, Alfama, and Time Out Market are in Lisbon. The Four Seasons Hotel Ritz is a hotel for the nights before or after the cruise.",
         ],
       },
     ],
@@ -398,7 +398,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "The cruise season runs from April through October. The weather is easier in late spring and early fall. A five-hour stop is rarely enough for Horseshoe Bay, Hamilton, and St. George's.",
-    planning: "Ask whether the ship stays overnight. That is enough time for Horseshoe Bay, Hamilton, and St. George's. On a short stop, the ship's own excursion is the way off the Dockyard, because the ship waits if that tour is late.",
+    planning: "Ask whether the ship stays overnight. That is enough time for Horseshoe Bay, Hamilton, and St. George's. On a short stop, take the excursion sold by the ship if you leave the Dockyard, because the ship waits if that tour is late.",
     itineraries: [
       {
         title: "Bermuda overnight",
@@ -447,7 +447,7 @@ export const destinations: Destination[] = [
           "Waterfall walks in the fjords",
           "Reykjavik and a whale watch",
           "The red fishing cabins of the Lofotens",
-          "Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a stay in the city before or after the cruise.",
+          "Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a hotel for the nights before or after the cruise.",
           "Gamla Stan is in Stockholm. The Vasa Museum holds the warship Vasa, raised from the harbor and kept almost whole. Grand Hôtel looks across the water at the palace.",
           "The northern lights, on a clear night late enough in the year",
         ],
@@ -578,7 +578,7 @@ export const destinations: Destination[] = [
           "A guided walk is included while the ship is tied up",
           "Cycling or a bike tour on quiet roads",
           "A wine or olive-oil stop the ship arranges",
-          "Time on deck in the evening, with the river as the view",
+          "You can sit on deck in the evening and look at the river",
           "Excursions that fit the hours the ship is there, not a whole weekend",
         ],
       },
@@ -627,7 +627,7 @@ export const destinations: Destination[] = [
     card: "Remote coasts",
     image: "/media/expedition.jpg",
     alt: "Sea ice under pale polar light",
-    lede: "The ships are small enough that the beach can be a landing, not a port. You go ashore by Zodiac with a guide. Weather can take that landing away.",
+    lede: "The ships are small enough that the beach can be a landing, not a port. You go ashore by Zodiac with a guide. Weather can cancel that landing.",
     paragraphs: [
       "Lindblad, Ponant, and Hapag-Lloyd sail Antarctica, the Arctic, and the Galápagos, along with the expedition ships of Viking and Silversea. Those same small ships also sail Patagonia. UnCruise sails Alaska and the Pacific Northwest. It does not sail Antarctica or the Galápagos.",
       "Tell us the region and the months. On a smaller ship you spend more time off the ship. We will set out the options that match those months.",
@@ -640,7 +640,7 @@ export const destinations: Destination[] = [
           "The Arctic — Svalbard, Iceland, the Lofotens",
           "The Galápagos — cruises of seven to fourteen days among the islands",
           "Patagonia — fjords and calving glaciers",
-          "Sail as far north as the ice allows.",
+          "The ship sails north until the ice is too thick to continue.",
           "New Zealand & the South Pacific, on select sailings",
         ],
       },
@@ -652,7 +652,7 @@ export const destinations: Destination[] = [
           "Lectures on deck from the expedition team",
           "Photography before and after, with someone who teaches",
           "These ships carry fifty to two hundred guests, not three thousand.",
-          "A backup plan when the weather changes the landing",
+          "Another plan if weather cancels the landing",
         ],
       },
     ],
@@ -704,7 +704,7 @@ export const destinations: Destination[] = [
           "Singapore — Marina Bay at night",
           "Tokyo, Yokohama & Tokyo Bay",
           "Shanghai & Hong Kong",
-          "Phuket — Patong has the beach. Phuket Old Town has the older streets. The ship docks at the deep-water port, not on the sand. Patong is about 40 minutes away. Old Town is closer to 30. A boat toward Phi Phi is about an hour to an hour and a half after that.",
+          "Phuket — Patong has the beach. Phuket Old Town has the older streets. The ship docks at the deep-water port, not on the sand. Patong is about 40 minutes away. Old Town is about 30 minutes from the pier. A boat toward Phi Phi is about an hour to an hour and a half after that.",
           "Ho Chi Minh City, the Mekong, and Ha Long Bay",
           "Busan, Jeju & the Korean coast",
           "Trans-Pacific crossings with a stop at Honolulu or Fiji",
@@ -717,13 +717,13 @@ export const destinations: Destination[] = [
           "Visit the Grand Palace in Bangkok, then boat noodles nearby: rice noodles in a pork or beef broth, darkened with spices and a little blood, with sliced meat and morning glory. The bowls are small",
           "Walk Tokyo’s outer market, then order nigiri, a slice of raw fish on a small pad of vinegared rice. The dawn tuna auction does not fit the hours the ship is in port.",
           "Visit Ho Chi Minh City’s District 1, and have a banh mi: a baguette with pâté, pork, pickled carrot and daikon, cilantro, and chili",
-          "The Peak, the Star Ferry, and theme parks are in Hong Kong. The Peninsula is a stay in the city before or after the cruise.",
-          "The French Concession and the Bund are in Shanghai. The Fairmont Peace Hotel is a stay in the city.",
+          "The Peak, the Star Ferry, and theme parks are in Hong Kong. The Peninsula is a hotel for the nights before or after the cruise.",
+          "The French Concession and the Bund are in Shanghai. The Fairmont Peace Hotel is a hotel for the nights before or after the cruise.",
           "A boat trip in Ha Long Bay, only when the ship is already in the bay",
         ],
       },
     ],
-    when: "December through March is the calmer stretch of the year. Typhoon season peaks in summer, and plans ashore are less certain then.",
+    when: "December through March is the calmer stretch of the year. Typhoons are most common in summer, and a plan ashore is less certain then.",
     planning: "A cruise from Singapore tends to include Phuket, Vietnam, and Hong Kong. A cruise from Tokyo tends to include Yokohama, Osaka or Kagoshima, and Busan. A longer trans-Pacific sailing can add Honolulu, Los Angeles, or Vancouver. Name the city, and how many days you can be away.",
     itineraries: [
       {
@@ -762,7 +762,7 @@ export const destinations: Destination[] = [
     lede: "Rio and the warm coast are one sailing. Cape Horn and the cold fjords are another. They do not share a port list, so the ship should be the one that sails the coast you want.",
     paragraphs: [
       "Many current sailings begin in Rio de Janeiro and run the Brazilian coast. The older pattern was an Atlantic crossing from New York. Carnival, Norwegian, Holland America, and Cunard still sail in the region. The expedition lines sail the routes into the Patagonian fjords. We compare the lines that are actually scheduled, not the ones that sailed it years ago.",
-      "A cruise of about a week that starts in Rio includes Rio and Búzios. A longer Brazilian cruise can add Salvador or Recife. A Patagonia cruise includes Ushuaia, the fjords, and Cape Horn when the weather allows. You book one sailing or the other. They do not share a port list.",
+      "A cruise of about a week that starts in Rio includes Rio and Búzios. A longer Brazilian cruise can include Salvador or Recife. A Patagonia cruise includes Ushuaia, the fjords, and Cape Horn when the weather allows. You book one sailing or the other. They do not share a port list.",
     ],
     lists: [
       {
@@ -866,7 +866,7 @@ export const destinations: Destination[] = [
         season: "Book 12 to 18 months ahead",
         ship: "Often a segment of the full world cruise",
         path: "An arc — Med to Asia, or Pacific to the Atlantic",
-        ports: ["You join and leave mid-voyage", "Flights on both ends, which we can arrange"],
+        ports: ["You can board in the middle of the voyage and leave before it ends", "Flights on both ends, which we can arrange"],
       },
       {
         title: "Transatlantic crossing",
@@ -940,9 +940,9 @@ export const destinations: Destination[] = [
         title: "California Zephyr",
         nights: "About 2 nights on board",
         season: "Late spring through fall",
-        ship: "Amtrak roomette, with dining-car meals included. Coach pays at the cafe.",
+        ship: "Amtrak roomette, with dining-car meals included. Passengers in coach pay at the cafe.",
         path: "Chicago to Emeryville, or a segment",
-        ports: ["Gore Canyon, Glenwood Canyon, and Ruby Canyon, seen from the glass car. The train does not stop in them", "The train stops about five minutes at Fraser-Winter Park. If you want a hike above Winter Park, get off and stay the night", "The train stops about seven minutes in Glenwood Springs. If you want a swim in the hot-springs pool, a few blocks from the station, get off and stay the night. The next Zephyr the same way is the next day", "The Truckee stop is short. Donner Lake is about two miles away. If you want to walk the shore, get off and stay the night", "Denver, Salt Lake City, or Reno if you split the ticket and stay the night", "At dinner in the dining car you can order steak, chicken, or salmon. Coach buys from the cafe"],
+        ports: ["Gore Canyon, Glenwood Canyon, and Ruby Canyon, seen from the glass car. The train does not stop in them", "The train stops about five minutes at Fraser-Winter Park. If you want a hike above Winter Park, get off and stay the night", "The train stops about seven minutes in Glenwood Springs. If you want a swim in the hot-springs pool, a few blocks from the station, get off and stay the night. The next Zephyr the same way is the next day", "The Truckee stop is short. Donner Lake is about two miles away. If you want to walk the shore, get off and stay the night", "Denver, Salt Lake City, or Reno if you split the ticket and stay the night", "At dinner in the dining car you can order steak, chicken, or salmon. Coach passengers buy from the cafe"],
       },
       {
         title: "The Canadian",
@@ -988,7 +988,7 @@ export const destinations: Destination[] = [
       {
         heading: "Worth going ashore for",
         items: [
-          "Sydney — you can walk from Circular Quay to the Opera House and The Rocks. A bus tour of the suburbs is mostly time on the bus",
+          "Sydney — you can walk from Circular Quay to the Opera House and The Rocks. A bus tour of the suburbs spends most of its time on the bus",
           "The reef from Cairns or Airlie Beach, if the ship stays long enough",
           "Milford Sound from the deck, when the weather allows the ship in",
           "Wellington, or a South Island wine town, walked rather than driven past",
@@ -1032,7 +1032,7 @@ export const destinations: Destination[] = [
     card: "Full and partial transits",
     image: "/media/panama-canal.jpg",
     alt: "A ship in the Miraflores Locks on the Panama Canal",
-    lede: "The ship climbs from one ocean into the other. A full transit changes oceans. A partial transit goes into Gatun Lake and comes back out the same side. This is not a loop of beaches.",
+    lede: "The ship climbs from one ocean into the other. On a full transit it leaves one ocean and arrives in the other. A partial transit goes into Gatun Lake and comes back out the same side. It is not a cruise from beach to beach.",
     paragraphs: [
       "Most full transits run fourteen to seventeen nights, one way. The usual departure port on the Caribbean side is Fort Lauderdale, Miami, or New Orleans. Los Angeles or San Diego is the usual Pacific end, and some sailings continue to Seattle or Vancouver. Princess, Holland America, Celebrity, Norwegian, Carnival, Royal Caribbean, and Cunard schedule them, mainly in spring and fall, when ships move between a Caribbean cruise and Los Angeles, San Diego, or an Alaska cruise. Regent, Silversea, Oceania, and Viking ocean do as well. An agent requests many of those fares.",
       "A full transit and a partial transit are both called a Panama Canal cruise. A full transit goes from the Caribbean to the Pacific, or the other way, in about 14 to 17 nights. A partial transit is a round trip from Florida into Gatun Lake, often 10 or 11 nights. Compare those two before you look at a fare.",
@@ -1058,8 +1058,8 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "Most canal sailings run in spring and fall, when the fleets move between regions. In winter there are fewer full transits. The canal is hot while the ship is in it, and rain is normal. The rain does not stop the transit. A passport is required. Panama uses the US dollar.",
-    planning: "Tell us whether you fly home from Fort Lauderdale or Miami, or from Los Angeles or San Diego. A full transit ends in a different city than it starts. A partial transit returns to Florida. A night in Panama City only works when the itinerary docks there. Many ships only pass through.",
+    when: "Most canal sailings run in spring and fall, when the fleets move between regions. In winter there are fewer full transits. The air is hot while the ship is in the canal, and rain is normal. The rain does not stop the transit. A passport is required. Panama uses the US dollar.",
+    planning: "Tell us whether you fly home from Fort Lauderdale or Miami, or from Los Angeles or San Diego. A full transit ends in a different city than it starts. A partial transit returns to Florida. You can stay a night in Panama City only when the itinerary docks there. Many ships only pass through.",
     itineraries: [
       {
         title: "Full transit to the Pacific",

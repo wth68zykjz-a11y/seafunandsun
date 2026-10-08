@@ -158,7 +158,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Athens",
         dock: "Ships dock at Piraeus. The metro or a taxi takes about 30 to 40 minutes to the Acropolis.",
-        text: "The Acropolis Museum, beside the hill, holds the sculptures from the site, including the Parthenon marbles that remain in Athens. You can walk down the hill to the Ancient Agora. The National Archaeological Museum, across the city, holds the Mycenaean gold and the classical bronzes, so plan the museum for a longer stay, not a single morning. In Plaka you can sit down after you come down from the hill. A souvlaki is pork or chicken on a skewer, often in pita with tomato, onion, and tzatziki, which is yogurt with cucumber and garlic. Hotel Grande Bretagne is a stay in the city before or after the cruise.",
+        text: "The Acropolis Museum, beside the hill, holds the sculptures from the site, including the Parthenon marbles that remain in Athens. You can walk down the hill to the Ancient Agora. The National Archaeological Museum, across the city, holds the Mycenaean gold and the classical bronzes, so plan the museum for a longer stay, not a single morning. In Plaka you can sit down after you come down from the hill. A souvlaki is pork or chicken on a skewer, often in pita with tomato, onion, and tzatziki, which is yogurt with cucumber and garlic. Hotel Grande Bretagne is a hotel for the nights before or after the cruise.",
       },
       {
         name: "Santorini",
@@ -181,17 +181,17 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Rome",
         dock: "The ship docks at Civitavecchia, not in Rome. The train or a coach takes about an hour to an hour and a half.",
-        text: "St. Peter’s is in the city. The Vatican Museums hold Michelangelo’s ceiling in the Sistine Chapel and the classical sculpture galleries. The Colosseum, the Forum, and the Palatine are a separate part of the city, about a half hour on foot or a short taxi from the Vatican. A short stop usually leaves time for one of those, not all of them. Cacio e pepe is pasta with pecorino and black pepper. Rome Cavalieri, a Waldorf Astoria hotel, looks over the city and is a stay before or after the cruise.",
+        text: "St. Peter’s is in the city. The Vatican Museums hold Michelangelo’s ceiling in the Sistine Chapel and the classical sculpture galleries. The Colosseum, the Forum, and the Palatine are a separate part of the city, about a half hour on foot or a short taxi from the Vatican. A short stop usually leaves time for one of those, not all of them. Cacio e pepe is pasta with pecorino and black pepper. Rome Cavalieri, a Waldorf Astoria hotel, looks over the city and is a hotel for the nights before or after the cruise.",
       },
       {
         name: "Florence",
         dock: "The ship docks at Livorno. Florence is about an hour and a half from that pier.",
-        text: "The Duomo and the Baptistery are in Florence. The Uffizi holds Italian Renaissance painting, including Botticelli’s Birth of Venus. The Leaning Tower is in Pisa. The ride from the ship takes about 30 minutes. Belmond Villa San Michele, in Fiesole above Florence, is a stay before or after the cruise.",
+        text: "The Duomo and the Baptistery are in Florence. The Uffizi holds Italian Renaissance painting, including Botticelli’s Birth of Venus. The Leaning Tower is in Pisa. The ride from the ship takes about 30 minutes. Belmond Villa San Michele, in Fiesole above Florence, is a hotel for the nights before or after the cruise.",
       },
       {
         name: "Venice",
         dock: "Large ships do not dock in the lagoon. The usual piers are Ravenna, about 2 to 2.5 hours from Venice, or Trieste, about 2 hours.",
-        text: "St. Mark’s Basilica and the Doge’s Palace are in Venice, on the square. A cicchetto is a small snack at a bar, often salt cod on polenta, or sardines in saor, which is onion, vinegar, and raisins. The Gritti Palace, on the Grand Canal, is a stay in the city before or after the cruise.",
+        text: "St. Mark’s Basilica and the Doge’s Palace are in Venice, on the square. A cicchetto is a small snack at a bar, often salt cod on polenta, or sardines in saor, which is onion, vinegar, and raisins. The Gritti Palace, on the Grand Canal, is a hotel for the nights before or after the cruise.",
       },
       {
         name: "Dubrovnik",
@@ -199,7 +199,7 @@ export const portActivities: PortActivityPage[] = [
           { src: "/media/walks/dubrovnik-walls.jpg", alt: "The city walls around Dubrovnik’s old town" },
         ],
         dock: "Many ships dock at Gruz, about 15 to 20 minutes by bus from the old town. Some smaller ships tender closer.",
-        text: "You walk the city walls around the old town. The cable car goes up to Mount Srđ. Hotel Excelsior looks at the old town and is a stay before or after the cruise.",
+        text: "You walk the city walls around the old town. The cable car goes up to Mount Srđ. Hotel Excelsior looks at the old town and is a hotel for the nights before or after the cruise.",
       },
       {
         name: "Kotor",
@@ -222,7 +222,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Barcelona",
         dock: "The cruise terminals are at the port. A shuttle or a walk of about 15 to 20 minutes reaches the bottom of La Rambla.",
-        text: "The Gothic Quarter and La Boqueria, the covered market, are there. The Sagrada Família is about 20 to 30 minutes farther, by metro or taxi. Pa amb tomàquet is bread rubbed with tomato, olive oil, and salt. Hotel Arts, on the waterfront, is a stay before or after the cruise.",
+        text: "The Gothic Quarter and La Boqueria, the covered market, are there. The Sagrada Família is about 20 to 30 minutes farther, by metro or taxi. Pa amb tomàquet is bread rubbed with tomato, olive oil, and salt. Hotel Arts, on the waterfront, is a hotel for the nights before or after the cruise.",
       },
       {
         name: "Palma",

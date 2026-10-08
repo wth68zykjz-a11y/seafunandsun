@@ -14,7 +14,7 @@ export const extraPortPages = [
           { src: "/media/walks/lisbon.jpg", alt: "Lisbon from the river, with Alfama and the Baixa rising behind the waterfront" },
         ],
         dock: "Ships dock on the Tagus, below Alfama.",
-        text: "You can walk or take a short shuttle up into Alfama and the Baixa. Belém is west along the river. Pastéis de Belém sells a pastel de nata, a custard tart in a flaky shell. The Four Seasons Hotel Ritz is a stay in the city before or after the cruise.",
+        text: "You can walk or take a short shuttle up into Alfama and the Baixa. Belém is west along the river. Pastéis de Belém sells a pastel de nata, a custard tart in a flaky shell. The Four Seasons Hotel Ritz is a hotel for the nights before or after the cruise.",
       },
       {
         name: "Porto",
@@ -24,12 +24,12 @@ export const extraPortPages = [
       {
         name: "Le Havre and Paris",
         dock: "Ocean ships dock at Le Havre. They do not sail up the Seine into Paris.",
-        text: "The train from Le Havre to Paris takes about two hours. The Louvre holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. A short stop leaves time for one of those, not all of them. Shangri-La Paris, looking toward the tower, is a stay before or after the cruise.",
+        text: "The train from Le Havre to Paris takes about two hours. The Louvre holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. A short stop leaves time for one of those, not all of them. Shangri-La Paris, looking toward the tower, is a hotel for the nights before or after the cruise.",
       },
       {
         name: "Southampton and London",
         dock: "Ships dock at Southampton.",
-        text: "The train from Southampton to London takes about an hour and a half to two hours. Westminster Abbey and the Tower of London are in London. The Savoy is a stay in the city before or after the cruise.",
+        text: "The train from Southampton to London takes about an hour and a half to two hours. Westminster Abbey and the Tower of London are in London. The Savoy is a hotel for the nights before or after the cruise.",
       },
       {
         name: "Cádiz and Seville",
@@ -150,7 +150,7 @@ export const extraPortPages = [
       {
         name: "Amsterdam",
         dock: "Ocean ships dock at IJmuiden, not in the canals.",
-        text: "The Rijksmuseum holds Rembrandt’s The Night Watch. The ride from the pier takes about 30 to 45 minutes. The Anne Frank House is the rooms where she hid. The Waldorf Astoria Amsterdam is a stay in the city before or after the cruise.",
+        text: "The Rijksmuseum holds Rembrandt’s The Night Watch. The ride from the pier takes about 30 to 45 minutes. The Anne Frank House is the rooms where she hid. The Waldorf Astoria Amsterdam is a hotel for the nights before or after the cruise.",
       },
       {
         name: "Reykjavik",
@@ -296,12 +296,12 @@ export const extraPortPages = [
       {
         name: "Yokohama and Tokyo",
         dock: "The ship docks in Yokohama.",
-        text: "The train from Yokohama into Tokyo takes about half an hour. You pick one district. The Peninsula Tokyo is a stay before or after the cruise, not a sight at the pier.",
+        text: "The train from Yokohama into Tokyo takes about half an hour. You pick one district. The Peninsula Tokyo is a hotel for the nights before or after the cruise, not a sight at the pier.",
       },
       {
         name: "Hong Kong",
         dock: "Many ships dock at Ocean Terminal, in Tsim Sha Tsui.",
-        text: "The Star Ferry crosses the harbor to Hong Kong Island. The Peak Tram climbs to the viewpoint. The lower station is in the city, and the ride takes a few minutes. The Peninsula is a stay on the Kowloon side.",
+        text: "The Star Ferry crosses the harbor to Hong Kong Island. The Peak Tram climbs to the viewpoint. The lower station is in the city, and the ride takes a few minutes. The Peninsula is a hotel on the Kowloon side for the nights before or after the cruise.",
       },
       {
         name: "Bangkok",
