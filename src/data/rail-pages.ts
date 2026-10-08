@@ -339,7 +339,7 @@ export const railPages: RailPage[] = [
     slug: "european-sleepers",
     nav: "European sleepers",
     title: "European sleeper trains",
-    lede: "You sleep on the train. Meals are included. The cabin you choose is what changes the price.",
+    lede: "You dress for dinner as the train leaves the station. The dining car is set, the cabin is yours for the night, and the country goes past the window after dark. These are the Venice Simplon-Orient-Express, La Dolce Vita Orient Express, the Golden Eagle Danube Express, and the Royal Scotsman.",
     photos: [
       {
         src: "/media/rail/vsoe.jpg",
@@ -384,7 +384,7 @@ export const railPages: RailPage[] = [
         heading: "La Dolce Vita Orient Express",
         paragraphs: [
           "This train stays in Italy. A one-night trip can run from Rome toward Venice, or the other way. A two-night trip can run from Palermo to Rome. The train follows the coast of Sicily, and you can get off and spend the afternoon in Taormina. Then the train is carried on a ferry across the Strait of Messina. You can watch that crossing from the deck. The train stops in Naples in the evening. You get off in Rome in the morning.",
-          "You sleep on the train. A deluxe cabin is about seven square meters, with its own bathroom. A suite is larger, about eleven square meters. Lunch and dinner are included. On some Sicily dates the menus are Heinz Beck’s. The cabin is what changes the price. An agent requests the fare.",
+          "You sleep on the train. A deluxe cabin is about seven square meters, with its own bathroom. A suite is larger, about eleven square meters. Lunch and dinner are included. On some Sicily dates the menus are Heinz Beck’s. An agent requests the fare.",
         ],
       },
       {
