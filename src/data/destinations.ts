@@ -932,7 +932,7 @@ export const destinations: Destination[] = [
         season: "Late spring through fall",
         ship: "Amtrak roomette, with dining-car meals included. Coach pays at the cafe.",
         path: "Chicago to Emeryville, or a segment",
-        ports: ["Gore Canyon, Glenwood Canyon, and Ruby Canyon, seen from the glass car. The train does not stop in them", "The train stops about five minutes at Fraser-Winter Park. If you want a hike above Winter Park, get off and stay the night", "The train stops about seven minutes in Glenwood Springs. If you want a swim in the hot-springs pool, a few blocks from the station, get off and stay the night", "The Truckee stop is short. Donner Lake is about two miles away. If you want to walk the shore, get off and stay the night", "Denver, Salt Lake City, or Reno if you split the ticket and stay the night", "At dinner in the dining car you can order steak, chicken, or salmon. Coach buys from the cafe"],
+        ports: ["Gore Canyon, Glenwood Canyon, and Ruby Canyon, seen from the glass car. The train does not stop in them", "The train stops about five minutes at Fraser-Winter Park. If you want a hike above Winter Park, get off and stay the night", "The train stops about seven minutes in Glenwood Springs. If you want a swim in the hot-springs pool, a few blocks from the station, get off and stay the night. The next Zephyr the same way is the next day", "The Truckee stop is short. Donner Lake is about two miles away. If you want to walk the shore, get off and stay the night", "Denver, Salt Lake City, or Reno if you split the ticket and stay the night", "At dinner in the dining car you can order steak, chicken, or salmon. Coach buys from the cafe"],
       },
       {
         title: "The Canadian",

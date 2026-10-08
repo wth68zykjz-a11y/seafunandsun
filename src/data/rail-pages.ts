@@ -24,7 +24,7 @@ export const railPages: RailPage[] = [
       {
         src: "/media/rail/zephyr-glenwood.jpg",
         alt: "The California Zephyr along the Colorado River under a rock wall",
-        caption: "Glenwood Canyon is between the stations. The train follows the river under the wall. In Glenwood Springs the train stops for about seven minutes, long enough to stretch on the platform. The hot-springs pool is a few blocks away, a large outdoor mineral pool that runs about 90°F. If you want to swim, get off, stay the night, and take a later train.",
+        caption: "Glenwood Canyon is between the stations. The train follows the river under the wall. In Glenwood Springs the train stops for about seven minutes, long enough to stretch on the platform. The hot-springs pool is a few blocks away, a large outdoor mineral pool that runs about 90°F. If you want to swim, get off and stay the night. The Zephyr runs once a day each way. The next train in the same direction is the next day, and it needs its own ticket.",
       },
     ],
     sections: [
@@ -46,7 +46,7 @@ export const railPages: RailPage[] = [
         heading: "Where the train actually stops",
         paragraphs: [
           "The station stop at Fraser–Winter Park is about five minutes. The stop at Glenwood Springs is about seven. The stop at Truckee, below Donner Pass, is short. Those minutes are enough to step onto the platform.",
-          "Seven minutes in Glenwood Springs, about five in Fraser–Winter Park, and a short pause in Truckee are enough to step off and get back on. They are not enough for what is actually there. The Glenwood pool is a few blocks from the station. If you want a swim in that 90°F water, get off and stay the night. A hike in the forest above Winter Park takes hours, so do the same in Fraser or Winter Park and continue the next day. Donner Lake is about two miles from the Truckee station. If you want to walk the shore, get off and stay in Truckee. You can also split the ticket and spend a night in Denver, Salt Lake City, or Reno.",
+          "Seven minutes in Glenwood Springs, about five in Fraser–Winter Park, and a short pause in Truckee are enough to step off and get back on. They are not enough for what is actually there. The Glenwood pool is a few blocks from the station. If you want a swim in that 90°F water, get off and stay the night. One train runs each way each day. On the current timetable the eastbound stops about 11:40 a.m. and the westbound about 2:40 p.m. The next train in the same direction is the next day, on a separate ticket. A hike in the forest above Winter Park takes hours, so the same plan works there: sleep in Fraser or Winter Park and continue the next day. Donner Lake is about two miles from the Truckee station. If you want to walk the shore, get off and stay in Truckee. You can also split the ticket and spend a night in Denver, Salt Lake City, or Reno.",
         ],
       },
     ],

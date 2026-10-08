@@ -493,7 +493,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Minutes at the platform, or a night in town",
         pace: "Easy walking, if you stay the night",
         detail:
-          "The canyons are between the stations. The Zephyr runs through Gore Canyon, Glenwood Canyon, and Ruby Canyon, and you see them from the glass car. The train does not stop in them. It stops for about five minutes at Fraser–Winter Park, about seven in Glenwood Springs, and only briefly in Truckee, below Donner Pass. The Glenwood pool is a large outdoor mineral pool a few blocks from the station. Donner Lake is about two miles from Truckee. If you want a swim, a hike above Winter Park, or a walk along that lake, get off and stay the night.",
+          "The canyons are between the stations. The Zephyr runs through Gore Canyon, Glenwood Canyon, and Ruby Canyon, and you see them from the glass car. The train does not stop in them. It stops for about five minutes at Fraser–Winter Park, about seven in Glenwood Springs, and only briefly in Truckee, below Donner Pass. The Glenwood pool is a large outdoor mineral pool a few blocks from the station. Donner Lake is about two miles from Truckee. If you want a swim, a hike above Winter Park, or a walk along that lake, get off and stay the night. The Zephyr runs once a day each way, so the next train the same way is the next day.",
       },
       {
         title: "The city on either end",
