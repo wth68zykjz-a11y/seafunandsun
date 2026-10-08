@@ -30,7 +30,7 @@ const excluded = [
   "Scuba certification, jet skis, and golf.",
   "Tours that leave the property.",
   "Airport transfers, unless the rate says the transfer is included.",
-  "A holiday week often has a minimum number of nights. The Christmas rate is higher than the summer rate.",
+  "A stay over a holiday often has a minimum number of nights. The rate at Christmas is higher than the rate in summer.",
 ];
 
 const regions = [
