@@ -878,7 +878,7 @@ export const destinations: Destination[] = [
     lede: "We book scenic trains in North America, sleeper trains in Europe, and the hotel nights that connect them.",
     paragraphs: [
       "Amtrak, VIA Rail, and the scenic railways of North America run through some of the finest country on the continent. We build the trip around the routing you want, including the nights on either end.",
-      "Europe has two kinds of train. The Venice Simplon-Orient-Express, La Dolce Vita Orient Express, the Golden Eagle Danube Express, and the Royal Scotsman are overnight trips: you sleep on the train, meals are usually included, and the cabin you choose is what changes the price. An agent requests many of those dates, because they are not posted. A scenic day train, such as the Glacier Express or the Bernina Express, covers the daytime trip only. You get off in the evening and sleep in a hotel.",
+      "Europe has two kinds of train. The Venice Simplon-Orient-Express, La Dolce Vita Orient Express, the Golden Eagle Danube Express, and the Royal Scotsman are overnight trips: you sleep on the train, meals are usually included, and the cabin you choose is what changes the price. An agent requests many of those dates, because they are not posted. A scenic day train, such as the Glacier Express or the Bernina Express, runs in daylight. You get off in the evening and sleep in a hotel.",
       "Land travel sits beside the trains: hotel nights in a city, or a few days between segments. Not every trip is escorted. A guided tour or an excursion may be available, depending on the stop. The quote says whether that stop has a tour, a walk, or only a short pause.",
     ],
     lists: [

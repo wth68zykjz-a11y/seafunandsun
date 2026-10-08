@@ -477,7 +477,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-rail.jpg",
     photoAlt: "A silver train crossing a high trestle above a mountain river",
     intro:
-      "On a rail trip the train is the day. Choose a dome car, a stop for fresh air, or a roomette instead of a coach seat. A city night is added only where the connection needs it.",
+      "On a rail trip you sit in a dome car or a roomette and watch the route go by. A fresh-air stop is a few minutes on the platform. A roomette is where you sleep if the train runs overnight. A city night is added only where the connection needs it.",
     excursions: [
       {
         title: "The sightseer lounge, not just a seat",
@@ -765,8 +765,8 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-rail.jpg",
     detailAlt: "A river canyon seen from a train roomette window",
     facts: [
-      { label: "Time at a stop", text: "The train is the day. Fresh-air stops are minutes. A hike means a night off the train, in a town or a park." },
-      { label: "Worth the time", text: "The canyon, or the coast, is why you took the train, and you see it from the window. A longer stop is a night off the train." },
+      { label: "Time at a stop", text: "You spend the travel hours on the train, looking out the window. A fresh-air stop lasts a few minutes. A hike means a night off the train, in a town or a park." },
+      { label: "Worth the time", text: "You took the train to see the canyon or the coast from the window. If you want more time in a town, you spend a night off the train." },
       { label: "Best for", text: "The Northwest, the Rockies, or a Canadian route, in a roomette if the trip is overnight." },
       { label: "Also", text: "An overnight train is more comfortable in a roomette." },
     ],
