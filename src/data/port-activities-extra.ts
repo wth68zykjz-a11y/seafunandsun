@@ -419,7 +419,7 @@ export const extraPortPages = [
       },
       {
         name: "Milford Sound",
-        dock: "Most large ships do not dock. They sail in and turn around.",
+        dock: "Most large ships do not dock. They sail into the sound and leave again.",
         text: "You watch the cliffs and the waterfalls from the deck. A smaller ship may tender. There is no town at the head of the sound for a large ship to use.",
       },
       {
@@ -456,7 +456,7 @@ export const extraPortPages = [
       {
         name: "The ends of the voyage",
         dock: "You board in one city and, on a full transit, leave the ship in another.",
-        text: "Florida to California is the common pair. It is worth spending a few days in Miami or Fort Lauderdale before you sail, or in Los Angeles or San Diego after you arrive. There is no all-aboard on those nights.",
+        text: "Florida to California is the common pair. It is worth spending a few days in Miami or Fort Lauderdale before you sail, or in Los Angeles or San Diego after you arrive. On those nights the ship is not waiting.",
       },
     ],
   },

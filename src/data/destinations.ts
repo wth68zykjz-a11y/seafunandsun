@@ -232,7 +232,7 @@ export const destinations: Destination[] = [
         nights: "7 nights",
         season: "May–September",
         ship: "From Barcelona",
-        path: "Barcelona round trip or open-jaw to Rome",
+        path: "Barcelona round trip, or one way to Rome",
         ports: ["Palma", "Marseille or Provence", "Rome (Civitavecchia)", "A sea day"],
       },
     ],
@@ -516,7 +516,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The season runs from May through October. In October the maples are in color, and there are fewer people on deck. Summer is for Cape Cod and the beach towns. Fall is for Bar Harbor, Halifax, and Quebec.",
+    when: "The season runs from May through October. In October the maples are in color, and there are fewer people on deck. In summer the ships go to Cape Cod and the beach towns. In fall they go to Bar Harbor, Halifax, and Quebec.",
     planning: "A fall sailing is for the maples in Bar Harbor, Halifax, and Quebec. A summer sailing is for Cape Cod and the beach towns. Say whether you can leave from Boston or New York.",
     itineraries: [
       {
@@ -731,7 +731,7 @@ export const destinations: Destination[] = [
         nights: "7–14 nights",
         season: "December–March",
         ship: "Princess, Holland America, Celebrity, or a luxury peer",
-        path: "Singapore round trip or open-jaw",
+        path: "Singapore round trip, or one way",
         ports: ["Phuket", "Vietnam", "A sea day across the South China Sea"],
       },
       {
@@ -801,7 +801,7 @@ export const destinations: Destination[] = [
         nights: "10–14 nights",
         season: "October–March",
         ship: "Expedition line, or Holland America when the routing is theirs",
-        path: "Ushuaia or a Chilean fjord embarkation",
+        path: "Ushuaia, or a start in the Chilean fjords",
         ports: ["A glacier the ship sails past", "Cape Horn, when the weather allows", "Punta Arenas or another far-south port"],
       },
       {

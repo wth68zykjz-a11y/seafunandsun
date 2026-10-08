@@ -31,13 +31,13 @@ export const Route = createFileRoute("/destinations/$slug")({
 
 const ashoreNotes: Record<string, string> = {
   alaskan:
-    "Most Alaska stops end in the afternoon. Mendenhall Glacier is in Juneau, about 20 minutes from the cruise docks on Gastineau Channel. Creek Street is in downtown Ketchikan. A short ride from there reaches the totem poles at Saxman and Totem Bight. Skagway sits at the foot of White Pass, and the White Pass and Yukon Route railroad climbs from town to the pass. In Glacier Bay or Tracy Arm there is no pier. The ship spends those hours on the water. Some Juneau calls stay late enough that you can eat in town. Nights in Seattle or Vancouver are not cut off by all-aboard. Steamed Dungeness crab can be lunch if you want it.",
+    "Most Alaska stops end in the afternoon. Mendenhall Glacier is in Juneau, about 20 minutes from the cruise docks on Gastineau Channel. Creek Street is in downtown Ketchikan. A short ride from there reaches the totem poles at Saxman and Totem Bight. Skagway sits at the foot of White Pass, and the White Pass and Yukon Route railroad climbs from town to the pass. In Glacier Bay or Tracy Arm there is no pier. The ship spends those hours on the water. Some ships stay late enough in Juneau that you can eat in town. Nights in Seattle or Vancouver are not cut off by a return to the ship. Steamed Dungeness crab can be lunch if you want it.",
   caribbean:
     "A typical island stop ends in the afternoon. Cozumel and the private islands have a beach and a swim. In Nassau, ships dock at Prince George Wharf. Walk out through Festival Place, then left onto Bay Street. The straw market is about five minutes from the gate, and Parliament Square is a couple of minutes farther. In San Juan you can walk up to El Morro. If the ship stays longer there, you have the afternoon in the old city, and an overnight leaves the evening open. Nights in Miami or Fort Lauderdale are for the city, not the gangway.",
   mediterranean:
     "Many stops end in the afternoon. The Gothic Quarter is in Barcelona, and you can walk there from some piers. The Colosseum and the museums are in Rome. Civitavecchia is about an hour to an hour and a half away. The Acropolis is in Athens, about 30 to 45 minutes from Piraeus. When the ship stays overnight, or sails as late as 10 p.m., the evening in the city is open. A reserved dinner can be part of those extra nights.",
   european:
-    "A daytime stop leaves the afternoon short. Lisbon, the London ports, and the Mediterranean cities on these routes are easier with a night or two before or after, when all-aboard is not the deadline. An overnight, or a departure as late as 10 p.m., leaves the evening free. Tell us which cities you already know. We will put the extra nights on the ones you do not.",
+    "A daytime stop leaves the afternoon short. Lisbon, the London ports, and the Mediterranean cities on these routes are easier with a night or two before or after, when you do not have to be back on the ship. An overnight, or a departure as late as 10 p.m., leaves the evening free. Tell us which cities you already know. We will put the extra nights on the ones you do not.",
   hawaii:
     "The sail between the islands takes longer than a Caribbean hop, and Pride of America often stays into the evening. You might use that time at a beach, in the car, or on the north shore. Pearl Harbor is a visit for before or after a California crossing, while you are staying on Oahu and there is no gangway to watch. A luau still needs the ship in port after dark.",
   bermuda:
@@ -59,7 +59,7 @@ const ashoreNotes: Record<string, string> = {
   "australia-new-zealand":
     "Sydney Harbour and the Opera House are in Sydney. In Auckland, the waterfront is at the pier, and Mount Eden, a volcanic cone, is about 15 minutes away. The evening in town depends on a late sailaway or an overnight, which some itineraries have. Brisbane and Melbourne turn fewer ships. Extra nights in Sydney or Auckland are for the city after the ship has sailed.",
   "panama-canal":
-    "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. Cartagena is the city these cruises usually stop in. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego, when there is no all-aboard.",
+    "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. Cartagena is the city these cruises usually stop in. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego, when the ship is not waiting.",
 };
 
 const ashoreLeads: Record<string, string> = {

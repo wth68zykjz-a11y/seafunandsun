@@ -151,7 +151,7 @@ export const portActivities: PortActivityPage[] = [
     region: "Mediterranean Cruises",
     title: "What you can do in port in the Mediterranean",
     lede: "The ship is often an hour or more from the city on the brochure. This page names the dock, the ride, and what is in the city.",
-    note: "A port call usually leaves time for one sight and a meal, not every museum in the city. If you stay before or after the cruise, there is no all-aboard, and you can add the rest. An excursion can be arranged as an add-on.",
+    note: "A stop often has time for one sight and a meal. The city has more than that. If you stay before or after the cruise, the ship is not waiting, and you can add the rest. An excursion can be arranged as an add-on.",
     image: "/media/day-mediterranean.jpg",
     imageAlt: "Empty blue chairs on a terrace above a caldera harbor at dawn",
     stops: [
@@ -217,7 +217,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Amalfi",
         dock: "When the ship stops, it is usually a tender into Amalfi.",
-        text: "The cathedral steps and the paper shops are in the town. A boat along the coast reaches Positano. That is not the Amalfi landing. Lunch can run long if all-aboard is late enough. A common plate is scialatielli ai frutti di mare, a short local pasta with mussels, clams, and shrimp.",
+        text: "The cathedral steps and the paper shops are in the town. A boat along the coast reaches Positano. That is not the Amalfi landing. Lunch can run long if the ship leaves late enough. A common plate is scialatielli ai frutti di mare, a short local pasta with mussels, clams, and shrimp.",
       },
       {
         name: "Barcelona",

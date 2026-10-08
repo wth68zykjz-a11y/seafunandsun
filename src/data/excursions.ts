@@ -645,7 +645,7 @@ export const portGuides: Record<string, PortGuide> = {
     detail: "/media/day-bermuda.jpg",
     detailAlt: "Pink sand curving toward a pastel cottage and clear water",
     facts: [
-      { label: "Time in port", text: "Ships usually stay more than a day, so you do not have to see the island between breakfast and all-aboard." },
+      { label: "Time in port", text: "Ships usually stay more than a day, so you do not have to see the island between breakfast and the time you have to be back on the ship." },
       { label: "Worth the time", text: "Stop in St. George’s to see St. Peter’s Church. The town is quiet enough that you do not need a timed tour. In Hamilton, order a fish sandwich on raisin bread." },
       { label: "Travelers", text: "This suits people who want a short sailing from the East Coast, with time on one island." },
       { label: "Also", text: "You can go to Horseshoe Bay, and you can go into Hamilton or St. George’s." },

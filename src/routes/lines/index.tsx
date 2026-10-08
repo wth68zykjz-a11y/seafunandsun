@@ -25,7 +25,7 @@ function LinesPage() {
       <p className="mx-auto max-w-6xl px-4 pb-6 text-mute">
         Fort Lauderdale gets you on the ship. Miami, Vancouver, and Barcelona are good cities to explore before or after.{" "}
         <Link to="/ports" className="font-medium text-tide">
-          See the departure and embarkation ports
+          See the departure ports
         </Link>
         .
       </p>

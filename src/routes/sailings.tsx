@@ -87,7 +87,7 @@ const weeklyDeals = [
     ports: "europe",
     destination: "mediterranean",
     region: "Mediterranean cruises",
-    text: "Viking’s ocean ships turn in Barcelona for the Western Mediterranean. The river ships are a separate trip and embark in cities such as Budapest and Amsterdam.",
+    text: "Viking’s ocean ships start and end in Barcelona for the Western Mediterranean. The river ships are a separate trip and start in cities such as Budapest and Amsterdam.",
   },
   {
     line: "Cunard",
@@ -96,7 +96,7 @@ const weeklyDeals = [
     ports: "europe",
     destination: "northern-europe",
     region: "Northern Europe cruises",
-    text: "Cunard’s Southampton sailings include the Atlantic crossing, Northern Europe, and some Mediterranean voyages. Some crossings also embark in New York.",
+    text: "Cunard’s Southampton sailings include the Atlantic crossing, Northern Europe, and some Mediterranean voyages. Some crossings also start in New York.",
   },
   {
     line: "Explora Journeys",
