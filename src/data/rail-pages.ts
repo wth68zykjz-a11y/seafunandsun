@@ -58,6 +58,11 @@ export const railPages: RailPage[] = [
     lede: "The dining car and the cafe are not the same meal. A roomette includes one. Coach passengers pay for the other.",
     photos: [
       {
+        src: "/media/rail/superliner-diner.jpg",
+        alt: "A Superliner dining car with white tablecloths and booths",
+        caption: "A Superliner dining car, the same kind of car on the Zephyr, the Chief, the Empire Builder, and the Coast Starlight. A roomette includes the meal at one of these tables.",
+      },
+      {
         src: "/media/rail/zephyr-canyon.jpg",
         alt: "The California Zephyr beside the Colorado River",
         caption: "Dinner on the westbound train is often while the train is still on the plains or climbing toward Denver. The canyon comes the next day, and you can watch it from the glass car between meals.",
@@ -69,7 +74,7 @@ export const railPages: RailPage[] = [
         paragraphs: [
           "Meals in the dining car come with a roomette: breakfast, lunch, and a three-course dinner, plus room service. The first alcoholic drink at dinner is included.",
           "At breakfast you can order railroad French toast or a three-egg omelet. At dinner you can order a flatiron steak, pan-roasted chicken, or Atlantic salmon, and a dessert such as white-chocolate blueberry cobbler. Amtrak changes the menu, so the dishes on your date can differ.",
-          "The westbound train leaves Chicago in the afternoon, so the first meal is dinner. The last day, into Emeryville, is breakfast and lunch.",
+          "The westbound Zephyr leaves Chicago in the afternoon, so the first meal is dinner. The last day, into Emeryville, is breakfast and lunch. The same dining car runs on the Southwest Chief, on the Seattle section of the Empire Builder, and on the Coast Starlight. Between Spokane and Portland the Empire Builder does not carry it. Amtrak serves a cold meal in the room on that section.",
         ],
       },
       {
@@ -130,6 +135,11 @@ export const railPages: RailPage[] = [
     lede: "Chicago to Los Angeles, about two nights. You see Raton Pass and Apache Canyon from the sightseer lounge. The train does not stop in the canyon.",
     photos: [
       {
+        src: "/media/rail/southwest-chief-raton.jpg",
+        alt: "The Southwest Chief leaving a tunnel on Raton Pass",
+        caption: "The Southwest Chief leaves a tunnel on Raton Pass. You see the pines from the sightseer lounge. Raton, the town, is a few minutes at the station. It is not this pass.",
+      },
+      {
         src: "/media/rail/southwest-chief-albuquerque.jpg",
         alt: "The Southwest Chief at the platform in Albuquerque",
         caption: "Albuquerque is a stop of about forty minutes on a recent timetable. That is long enough to step onto the platform. Old Town is a night off the train.",
@@ -140,7 +150,7 @@ export const railPages: RailPage[] = [
         heading: "The train",
         paragraphs: [
           "The Southwest Chief runs between Chicago and Los Angeles. The trip is about forty-three hours. A roomette has a bed and a door. A coach seat does not.",
-          "You see the Sangre de Cristo Mountains, Raton Pass, and Apache Canyon from the sightseer lounge. Westbound daylight is the better look at that stretch. The lounge does not cross the pass. The train does.",
+          "West of Albuquerque the train crosses the high desert toward Gallup and Winslow. The San Francisco Peaks stand above Flagstaff. On many dates you pass them in the dark. A daylight look at Raton Pass and Apache Canyon is the westbound afternoon.",
         ],
       },
       {
@@ -253,20 +263,30 @@ export const railPages: RailPage[] = [
         alt: "An Amtrak train along the Hudson, with Bannerman Castle in the foreground",
         caption: "The Adirondack follows the Hudson north from New York. Bannerman Castle is on an island in the river. You see it from the train. The train does not stop there.",
       },
+      {
+        src: "/media/rail/adirondack-champlain.jpg",
+        alt: "Lake Champlain seen from the Adirondack, with a low ridge on the far shore",
+        caption: "Lake Champlain from the Adirondack. The water is beside the train. Fort Ticonderoga is a drive from the Ticonderoga station, not this stretch of shore.",
+      },
+      {
+        src: "/media/rail/downeaster.jpg",
+        alt: "The Downeaster locomotive leading passenger cars through trees",
+        caption: "The Downeaster between Boston and Brunswick. Portland is the city on the way. The station is across the river from the Old Port.",
+      },
     ],
     sections: [
       {
         heading: "Adirondack",
         paragraphs: [
-          "The Adirondack runs from Moynihan Train Hall in New York to Montreal in about eleven hours. It follows the Hudson, then the west shore of Lake Champlain, with the Adirondacks on the other side. You see the lake from the coach window.",
-          "There is no sleeper. A town along the lake, or Fort Ticonderoga, is not a five-minute platform stop. If you get off, the rest of the trip is a new ticket, and the night is a hotel.",
+          "The Adirondack runs from Moynihan Train Hall in New York to Montreal in about eleven hours. It follows the Hudson past Rhinecliff and Hudson, then the west shore of Lake Champlain, with the Adirondacks on the other side. You see the lake from the coach window.",
+          "Ticonderoga is a station. Fort Ticonderoga is a drive from that station, on the lake. Port Kent, in season, is the stop for the ferry toward Burlington. None of those pauses is a day in town. If you get off, the rest of the trip is a new ticket, and the night is a hotel.",
         ],
       },
       {
         heading: "Vermonter and Downeaster",
         paragraphs: [
-          "The Vermonter runs from Washington to St. Albans and follows the Connecticut River through Massachusetts and Vermont. You see the valley from the window. A night in a town along that river is a hotel, not the station pause.",
-          "The Downeaster runs from Boston to Brunswick several times a day, in about three and a half hours. Portland is the city on the way. The Old Port, and a table there, mean you get off and stay. The ride itself is not that evening.",
+          "The Vermonter runs from Washington to St. Albans. South of Springfield it is a city railroad. North of there it follows the Connecticut River through Brattleboro and White River Junction. You see the valley from the window. Essex Junction is the stop for Burlington, and Burlington itself is a bus ride. A night in Montpelier or Burlington is a hotel.",
+          "The Downeaster runs from Boston’s North Station to Brunswick several times a day, in about three and a half hours. It stops at Old Orchard Beach in season, at Portland, and at Freeport. The Portland station is across the Fore River from the Old Port. A table there, or a walk on the sand at Old Orchard, means you get off and stay. The ride itself is not that evening.",
         ],
       },
       {
@@ -338,6 +358,16 @@ export const railPages: RailPage[] = [
         alt: "The lounge of the Royal Scotsman, with sofas and lamps",
         caption: "The lounge is where you sit between stops. It is not the cabin, and it is not the dining car.",
       },
+      {
+        src: "/media/rail/dolce-vita.jpg",
+        alt: "La Dolce Vita Orient Express, a dark blue carriage with brass-framed windows, at a platform",
+        caption: "La Dolce Vita Orient Express at the platform. You sleep in a cabin on this train. An afternoon in Taormina is time off the train.",
+      },
+      {
+        src: "/media/rail/danube-express.jpg",
+        alt: "The blue and cream Golden Eagle Danube Express crossing a stone viaduct",
+        caption: "The Golden Eagle Danube Express crosses a stone viaduct. You sleep in a cabin. A day in Sarajevo or Mostar is time off the train, and some nights on that route are in a hotel.",
+      },
     ],
     sections: [
       {
@@ -348,10 +378,17 @@ export const railPages: RailPage[] = [
         ],
       },
       {
-        heading: "La Dolce Vita and the Golden Eagle",
+        heading: "La Dolce Vita Orient Express",
         paragraphs: [
-          "La Dolce Vita Orient Express runs in Italy. Dates include Rome, Venice, and Sicily. You sleep on the train, and meals are included.",
-          "The Golden Eagle Danube Express runs through Central Europe and the Balkans in a private cabin. Meals are included. An agent requests that fare as well.",
+          "This train stays in Italy. A one-night trip can run from Rome toward Venice, or the other way. A two-night trip can run from Palermo to Rome: the coast of Sicily, an afternoon in Taormina, then the train is carried on a ferry across the Strait of Messina. You can watch that crossing from the deck. Naples is an evening stop. Rome is the morning you get off.",
+          "You sleep on the train. A deluxe cabin is about seven square meters, with its own bathroom. A suite is larger, about eleven square meters. Lunch and dinner are included. On some Sicily dates the menus are Heinz Beck’s. The cabin is what changes the price. An agent requests the fare.",
+        ],
+      },
+      {
+        heading: "Golden Eagle Danube Express",
+        paragraphs: [
+          "The Golden Eagle Danube Express runs through Central Europe and the Balkans. One route leaves Venice for Istanbul, with time off the train in Trieste, Sarajevo, Mostar, Belgrade, Sofia, and Plovdiv. You do not stay on the train for every night. Some of those cities are a hotel.",
+          "A Superior Deluxe cabin is about nine square meters, with a shower. Breakfast is at the table. Lunch and dinner come with wine. Dress on this train is informal, which is not the case on the Venice Simplon-Orient-Express. An agent requests the fare.",
         ],
       },
       {
