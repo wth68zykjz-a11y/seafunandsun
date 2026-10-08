@@ -477,7 +477,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/ex-rail.jpg",
     photoAlt: "A silver train crossing a high trestle above a mountain river",
     intro:
-      "On the California Zephyr the glass car follows the Colorado River through the canyon. On the Empire Builder that same kind of car crosses the Rockies. A fresh-air stop is a few minutes on the platform, long enough to stretch. If the train runs overnight, you sleep in a roomette and the lounge stays a place to sit. A hotel night in Chicago, Seattle, or Vancouver goes in only where the connection needs it.",
+      "The California Zephyr follows the Colorado River through the canyon. The Empire Builder crosses the Rockies. You see the river and the pass best from the glass car. A fresh-air stop is a few minutes on the platform, long enough to stretch. If the train runs overnight, you sleep in a roomette and the lounge stays a place to sit. A hotel night in Chicago, Seattle, or Vancouver goes in only where the connection needs it.",
     excursions: [
       {
         title: "The sightseer lounge, not just a seat",
