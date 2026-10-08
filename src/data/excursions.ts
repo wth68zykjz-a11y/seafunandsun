@@ -101,7 +101,7 @@ export const shores: Record<string, DestinationShore> = {
         length: "Most of the port day",
         pace: "Easy",
         detail:
-          "Cozumel’s west beaches are pale sand and calm water. Nassau’s Cable Beach is a city beach, and the snack is a conch fritter: chopped conch fried in a seasoned batter. A private-island cove, such as CocoCay or Castaway Cay, is sheltered, warm, and calm. The grill there is the ship’s burgers, not a local kitchen.",
+          "Cozumel’s west beaches have pale sand, and the water there is calm. At Nassau’s Cable Beach you can order a conch fritter, chopped conch fried in a seasoned batter. CocoCay and Castaway Cay have a sheltered cove. The water is warm and calm. The grill serves the ship’s burgers, not food from a local kitchen.",
       },
       {
         title: "A bakery, then the market",
@@ -631,7 +631,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "A sea turtle in clear shallows beside black volcanic sand",
     facts: [
       { label: "Time in port", text: "Inter-island ships often overnight. A sailing from San Diego, Los Angeles, or Vancouver spends more days just getting there." },
-      { label: "Worth the time", text: "Stop on Oahu to visit the USS Arizona Memorial. After that, a plate lunch is an idea." },
+      { label: "Worth the time", text: "Stop on Oahu to visit the USS Arizona Memorial. After that, you can order a plate lunch: rice, macaroni salad, and a meat such as kalua pork or chicken katsu." },
       { label: "Best for", text: "People who want the islands, not a new port every morning. Match the excursion to the kind of Hawaii trip you booked." },
       { label: "Also", text: "Hana Bay, the black-sand beach, and the food stands are in Hana. The ship docks in Kahului. Hana is about two and a half hours from the pier." },
     ],
@@ -736,7 +736,7 @@ export const portGuides: Record<string, PortGuide> = {
     detailAlt: "An empty terrace looking across a bay toward a granite peak at morning",
     facts: [
       { label: "Time in port", text: "City days can be long. Cape Horn is often a scenic hour from the deck, with no landing." },
-      { label: "Worth the time", text: "Christ the Redeemer and Sugarloaf are in Rio. A Michelin dinner is another idea when the ship stays late and you reserved it ahead. In Buenos Aires, the lunch in San Telmo is grilled beef, often a sirloin, cooked over coals." },
+      { label: "Worth the time", text: "Christ the Redeemer and Sugarloaf are in Rio. You can reserve a Michelin dinner if the ship stays late. In Buenos Aires, San Telmo has parrillas where you can order grilled beef, often a sirloin, cooked over coals." },
       { label: "Best for", text: "A longer voyage where the city days are the memory and the scenic days are the ship’s job." },
       { label: "Also", text: "One view is a full day in Rio. A show in Buenos Aires works when the ship stays late." },
     ],
@@ -783,7 +783,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Sydney and Auckland can be long city days. Reef ports need a full day. Milford is often a scenic sail, with no gangway." },
       { label: "Worth the time", text: "Stop in Sydney to see the Opera House. It sits next to where most ships dock. If the ship leaves later, have lunch, or a meat pie on the quay: minced beef in gravy, baked in a pastry case. To see more than the harbor, stay at the Park Hyatt Sydney, across from the Opera House, before the cruise or after you return. In Auckland, walk the harbor and have a grilled lamb chop, the usual lunch." },
       { label: "Best for", text: "Travelers who can spend October through April, Australia’s summer, in one place, and who will fly to Sydney or Auckland to start." },
-      { label: "Also", text: "The Great Barrier Reef is warm water, often around 80°F in the Australian summer, over hard coral. You can see clownfish, parrotfish, and giant clams. Sydney’s harbor is not that reef. The Opera House and the quay are a walk, and the snack is a meat pie: minced beef in gravy, baked in a pastry case." },
+      { label: "Also", text: "The Great Barrier Reef has warm water, often around 80°F in the Australian summer, and hard coral. You can see clownfish, parrotfish, and giant clams. In Sydney the Opera House stands on the harbor, and you can walk the quay. You can also get a meat pie there: minced beef in gravy, baked in a pastry case." },
     ],
     outings: [
       { fits: "People who will walk the quay to the Opera House.", bring: "Comfortable shoes and a plan near the harbor." },

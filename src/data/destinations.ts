@@ -100,7 +100,7 @@ export const destinations: Destination[] = [
     paragraphs: [
       "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
       "Northeast departures mean more sea days. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port. We will say how many sea days are on the one you are looking at before you book it.",
-      "Cozumel’s west shore is calm and clear, about 80°F, over a coral wall. A short boat ride reaches Palancar Reef, where you can see parrotfish and, sometimes, a turtle. The east shore is windward, rocky, and rough, and ships do not use it. Lunch on the island is grilled snapper or ceviche, raw fish cured in lime. Antigua’s Nelson’s Dockyard, at English Harbour, is a Georgian naval yard you can walk. Dickenson Bay, on the west, is pale sand and calm water. Half Moon Bay, on the east, has reef and more surge. The plate is fungi and saltfish: cornmeal cooked with salted cod. A private island, such as Perfect Day at CocoCay or Castaway Cay, is a sheltered cove the line built. The water is calm and warm. There is no town and no local kitchen. The grill is burgers, not island food. San Juan is a city stop. Old San Juan has blue cobblestones and the forts at El Morro. Condado is an Atlantic city beach, and it can have surf. It is not a reef lagoon. Lunch is mofongo, mashed fried plantain with garlic, often topped with shrimp or pork.",
+      "On Cozumel’s west shore the water is calm and clear, about 80°F, over a coral wall. A short boat ride reaches Palancar Reef, where you can see parrotfish and, sometimes, a turtle. On the east shore the coast is rocky and the water is rough, and ships do not use it. On the island you can order grilled snapper or ceviche, raw fish cured in lime. At English Harbour in Antigua, Nelson’s Dockyard is a Georgian naval yard you can walk. Dickenson Bay, on the west, has pale sand and calm water. Half Moon Bay, on the east, has reef and more surge. In Antigua you can order fungi and saltfish, cornmeal cooked with salted cod. Perfect Day at CocoCay and Castaway Cay have a sheltered cove the line built. The water there is calm and warm. There is no town and no local kitchen. The grill serves burgers, not island food. San Juan has blue cobblestones in the old city and the forts at El Morro. Condado has an Atlantic beach, and the surf can be up. It is not a reef lagoon. In San Juan you can order mofongo, mashed fried plantain with garlic, often topped with shrimp or pork.",
     ],
     lists: [
       {
@@ -545,7 +545,7 @@ export const destinations: Destination[] = [
     lede: "You follow one river and walk off into the towns. The ship, the cabin, and what the fare includes are the comparison.",
     paragraphs: [
       "On the Danube, the Rhine, the Seine, and the Douro, the usual lines are Viking, AmaWaterways, Avalon, Uniworld, and Scenic. American Cruise Lines does not sail those rivers. It is a U.S. line: the Mississippi, the Ohio, the Columbia and Snake, and the Great Lakes. Viking also sails the Mississippi. Windstar is an ocean line and does not sail any of these.",
-      "In Budapest you walk the Danube promenade and can eat goulash, beef and paprika in a thick sauce. In Vienna the plate is schnitzel, a pounded veal cutlet fried in breadcrumbs. In the Wachau the river narrows between apricot orchards and Riesling vineyards. On the Mississippi, New Orleans is beignets, fried dough with powdered sugar, and gumbo, a dark roux stew of shrimp or chicken. The landings north of New Orleans are small river towns, not a European capital. Name the river and the season. We put the ships that sail that river next to one another.",
+      "In Budapest you can walk the Danube promenade and order goulash, beef and paprika in a thick sauce. In Vienna you can order schnitzel, a pounded veal cutlet fried in breadcrumbs. In the Wachau the river narrows between apricot orchards and Riesling vineyards. In New Orleans you can get beignets, fried dough with powdered sugar, and gumbo, a dark roux stew of shrimp or chicken. The landings north of New Orleans are small river towns, not a European capital. Name the river and the season. We put the ships that sail that river next to one another.",
     ],
     lists: [
       {
@@ -557,7 +557,7 @@ export const destinations: Destination[] = [
           "The Douro — Porto and the wine country",
           "The Mississippi — New Orleans north, Viking and American Cruise Lines",
           "The Ohio & the Great Lakes — American Cruise Lines",
-          "The Moselle is steep Riesling vineyards and towns such as Cochem and Bernkastel. The Mekong is a wide brown river, with floating markets. In Vietnam the bowl is pho, rice noodles in beef broth. In Cambodia it is fish amok, fish steamed in coconut and lemongrass. Viking and the other river lines sail both rivers",
+          "The Moselle has steep Riesling vineyards and towns such as Cochem and Bernkastel. The Mekong is a wide brown river, and it has floating markets. In Vietnam you can order pho, rice noodles in beef broth. In Cambodia you can order fish amok, fish steamed in coconut and lemongrass. Viking and the other river lines sail both rivers",
           "The Nile — Viking, AmaWaterways, and Uniworld",
           "The Amazon — a few small ships out of Manaus, not the European river lines",
         ],
@@ -986,7 +986,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The season runs from October through April, which is summer down there. November through March is the core. The Great Barrier Reef is warm water. Milford Sound and the other fiords are cold. A sailing that does both is a compromise between those two.",
+    when: "The season runs from October through April, which is summer down there. November through March is the core. The Great Barrier Reef has warm water. The water in Milford Sound and the other fiords is cold. A sailing that includes both spends time in each.",
     planning: "Flights to Sydney or Auckland belong in the quote. A quote that leaves them out is not the full price.",
     itineraries: [
       {
