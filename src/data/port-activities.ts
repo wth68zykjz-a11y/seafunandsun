@@ -96,7 +96,7 @@ export const portActivities: PortActivityPage[] = [
       {
         name: "Nassau",
         dock: "Ships dock at Prince George Wharf, downtown.",
-        text: "You can walk from the ship to the straw market and the old streets. Cable Beach is on the north shore. A taxi from the pier takes about 15 to 20 minutes, and the sand is pale. A short taxi across the bridge reaches Paradise Island. A conch fritter is chopped conch fried in a seasoned batter.",
+        text: "Ships dock at Prince George Wharf. Walk out through Festival Place onto Woodes Rogers Walk, then left onto Bay Street. The straw market, a covered hall of woven bags, hats, and carvings, is about five minutes from the gate. Parliament Square, the pink colonial buildings, is a couple of minutes farther along Bay Street. Junkanoo Beach is about 10 to 15 minutes west along the water, past the British Colonial. Cable Beach is on the north shore. A taxi from the pier takes about 15 to 20 minutes, and the sand is pale. A short taxi across the bridge reaches Paradise Island. A conch fritter is chopped conch fried in a seasoned batter.",
       },
       {
         name: "St. Thomas",

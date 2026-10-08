@@ -96,7 +96,7 @@ export const destinations: Destination[] = [
     card: "Islands & reefs",
     image: "/media/caribbean.jpg",
     alt: "A quiet Caribbean cove with pale sand and clear water",
-    lede: "More ships sail here than in any other region. From the pier in Nassau you can walk to the straw market, and in San Juan you can walk up to El Morro. Many travelers start in the Caribbean, then come back for a particular ship and a shorter list of ports.",
+    lede: "More ships sail here than in any other region. In Nassau, the walk from Prince George Wharf through Festival Place reaches the straw market on Bay Street in about five minutes. In San Juan you can walk up to El Morro. Many travelers start in the Caribbean, then come back for a particular ship and a shorter list of ports.",
     paragraphs: [
       "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip rather than the other way around.",
       "Northeast departures mean more sea days. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port. We will say how many sea days are on the one you are looking at before you book it.",
