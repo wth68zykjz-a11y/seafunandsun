@@ -162,7 +162,7 @@ function PortRegionPage() {
         <div className="rounded-xl bg-sea px-6 py-8 text-foam">
           <h2 className="font-display text-3xl">Not sure which port fits?</h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-foam">
-            Tell us who is traveling and which coast you want. We will match the port, the sea days, and the flight.
+            Tell us the coast you want. We will match the port, the sea days, and the flight.
           </p>
           <Link to="/quote" className="mt-6 inline-flex min-h-11 items-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
             Request a quote

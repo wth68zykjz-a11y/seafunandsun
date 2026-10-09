@@ -115,7 +115,7 @@ function ResortsPage() {
             </Link>
           </p>
           <p>
-            For a traveler leaving Connecticut, the airfare is often the larger cost. Hartford, Boston, and the New York airports do not all serve the same islands. A “free flight” offer is often a higher room rate that assumes you take the resort’s air. We price the room and the flights separately, so you can see the hotel cost and the airfare on their own.
+            The airfare is often the larger part of the cost, and the airports near you do not all serve the same islands. We book the flight from the airport you use. A “free flight” offer is often a higher room rate that assumes you take the resort’s air. We price the room and the flights separately, so you can see the hotel cost and the airfare on their own.
           </p>
         </div>
 
@@ -193,7 +193,7 @@ function ResortsPage() {
         </article>
 
         <p className="mt-6 max-w-3xl text-base leading-relaxed text-ink">
-          A posted nightly rate is not always the rate we can book. An agent requests preferred rates, wedding blocks, and most villa stays. Send the dates and who is traveling. You pay the resort. We do not hold the payment.
+          A posted nightly rate is not always the rate we can book. An agent requests preferred rates, wedding blocks, and most villa stays. Send the dates. You pay the resort. We do not hold the payment.
         </p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
@@ -208,7 +208,7 @@ function ResortsPage() {
           <p className="text-sm font-medium text-tide">The property, not a slogan</p>
           <h2 className="mt-2 font-display text-4xl">Tell us the dates and who is going.</h2>
           <p className="mt-4 text-mute">
-            Adults or a family, a beach week or an overwater villa, and a budget range. If you would rather we propose the island, say so. We reply the same day in most cases.
+            Tell us whether you want a beach week or an overwater villa, and a budget. If you would rather we propose the island, say so. We reply the same day in most cases.
           </p>
           <ul className="mt-6 grid gap-2 text-base">
             <li>

@@ -128,7 +128,7 @@ export const linePages: LinePage[] = [
         caption: "Alaska ships are about 1,800 to 4,200 passengers, small enough for a narrow channel.",
       },
     ],
-    lede: "An Alaska cruise uses a mid-size ship. Seattle is the departure port for a round-trip cruise through the Inside Passage. Vancouver is the Canadian departure port, often for a one-way cruise to Seward or Whittier. Hawaii’s inter-island ship is smaller and sails from Honolulu.",
+    lede: "A round-trip Inside Passage cruise usually leaves from Seattle. A one-way cruise to Seward or Whittier usually leaves from Vancouver, and that start needs a passport. Hawaii’s inter-island ship is smaller and sails from Honolulu.",
     size: "These are mid-size ocean ships. Most carry about 1,800 to 4,200 passengers. One ship in this group is smaller and stays among the islands.",
     rows: [
       { line: "Silversea and Seabourn", ships: "About 450–600 on the Alaska ships.", where: "One-way cruises between Vancouver and Seward, and a smaller set of coastal cruises.", fare: "Often $6,000–$14,000 a person for 7 nights. More is included than on the lines above. An agent requests many of these fares." },

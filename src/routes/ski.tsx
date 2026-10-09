@@ -98,7 +98,7 @@ function SkiPage() {
           <p className="text-sm font-medium text-tide">The dates, and who skis</p>
           <h2 className="mt-2 font-display text-4xl">Tell us the mountain, or let us propose it.</h2>
           <p className="mt-4 text-mute">
-            Club Med or a hotel, the ages of anyone who needs lessons, and a budget range. We reply the same day in most cases.
+            Tell us whether you want Club Med or a hotel, the ages of anyone who needs lessons, and a budget. We reply the same day in most cases.
           </p>
           <ul className="mt-6 grid gap-2 text-base">
             <li>

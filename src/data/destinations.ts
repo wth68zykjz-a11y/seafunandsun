@@ -45,7 +45,7 @@ export const destinations: Destination[] = [
         heading: "The routes",
         items: [
           "Round-trip cruises from Seattle through the Inside Passage, 7 to 14 nights",
-          "Vancouver is the departure port for a one-way cruise to Seward or Whittier, and for some Inside Passage round trips. A passport is required. The currency ashore is the Canadian dollar",
+          "A one-way cruise to Seward or Whittier usually leaves from Vancouver, and so do some Inside Passage round trips. That start needs a passport. The currency in the city is the Canadian dollar",
           "Seattle to Seward or Whittier — one way, across the Gulf of Alaska",
           "Glacier-focused sailings — Tracy Arm, Endicott Arm, College Fjord, Glacier Bay",
         ],

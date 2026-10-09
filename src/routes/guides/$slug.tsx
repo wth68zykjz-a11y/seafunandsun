@@ -66,7 +66,7 @@ function GuidePage() {
         <div className="mt-10 grid gap-8 lg:grid-cols-2">
           <div>
             <h2 className="font-display text-3xl text-ink">Ask for this comparison on a quote.</h2>
-            <p className="mt-3 text-base leading-relaxed text-ink">Name the month and who is traveling. We will price the cruise that matches the city you want to leave from.</p>
+            <p className="mt-3 text-base leading-relaxed text-ink">Tell us the month. We will price the cruise that matches the city you want to leave from.</p>
           </div>
           <QuoteForm preset={guide.quotePlace} />
         </div>
