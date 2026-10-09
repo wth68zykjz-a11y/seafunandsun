@@ -5,6 +5,7 @@ import { destinationBySlug, destinationTone, sampleNote } from "@/data/destinati
 import { railPages } from "@/data/rail-pages";
 import { shoreNote, shores, portGuides } from "@/data/excursions";
 import { portActivityBySlug } from "@/data/port-activities";
+import { destinationPhotos, type DestinationPhoto } from "@/data/destination-photos";
 import { breadcrumbLd, clip, JsonLd, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/destinations/$slug")({
@@ -80,6 +81,15 @@ const ashoreLeads: Record<string, string> = {
   "panama-canal": "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock. These cruises usually stop in Cartagena.",
 };
 
+function PhotoFigure({ photo }: { photo: DestinationPhoto }) {
+  return (
+    <figure className="overflow-hidden rounded-xl border border-line bg-foam">
+      <img src={photo.src} alt={photo.alt} width={1400} height={933} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
+      <figcaption className="px-4 py-3 text-base leading-relaxed text-ink">{photo.caption}</figcaption>
+    </figure>
+  );
+}
+
 function DestinationPage() {
   const place = Route.useLoaderData();
   if (!place) {
@@ -110,6 +120,12 @@ export function DestinationArticle({
   const tone = destinationTone[place.slug] ?? "#0c2340";
   const pagePath = path ?? `/destinations/${place.slug}`;
   const inPort = portActivityBySlug(place.slug);
+  const photos = [...(place.photos ?? []), ...(destinationPhotos[place.slug] ?? [])].filter(
+    (photo, index, all) => all.findIndex((item) => item.src === photo.src) === index && photo.src !== place.image,
+  );
+  const paragraphPhotos = photos.slice(0, place.paragraphs.length);
+  const itineraryPhotos = photos.slice(place.paragraphs.length, place.paragraphs.length + place.itineraries.length);
+  const sparePhotos = photos.slice(place.paragraphs.length + place.itineraries.length);
   return (
     <Shell>
       <div className="relative">
@@ -207,21 +223,17 @@ export function DestinationArticle({
       {rail ? null : (
       <>
       <section className="mx-auto max-w-6xl px-4 py-12">
-        <div className="max-w-3xl space-y-4 text-lg">
-          {place.paragraphs.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
+        <div className="grid gap-8">
+          {place.paragraphs.map((paragraph, index) => {
+            const photo = paragraphPhotos[index];
+            return (
+              <div key={paragraph} className={photo ? "grid items-center gap-6 lg:grid-cols-2" : "max-w-3xl"}>
+                <p className={`text-lg leading-relaxed text-ink ${photo && index % 2 === 1 ? "lg:order-2" : ""}`}>{paragraph}</p>
+                {photo ? <PhotoFigure photo={photo} /> : null}
+              </div>
+            );
+          })}
         </div>
-        {place.photos?.length ? (
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {place.photos.map((photo) => (
-              <figure key={photo.src} className="overflow-hidden rounded-xl border border-line bg-foam">
-                <img src={photo.src} alt={photo.alt} width={1400} height={933} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
-                <figcaption className="px-4 py-3 text-base leading-relaxed text-ink">{photo.caption}</figcaption>
-              </figure>
-            ))}
-          </div>
-        ) : null}
         {place.slug === "alaskan" || place.slug === "bermuda" || place.slug === "panama-canal" ? (
           <p className="mt-6">
             <Link
@@ -372,22 +384,36 @@ export function DestinationArticle({
             : sampleNote}
         </p>
         <div className="mt-6 grid gap-4 lg:grid-cols-3">
-          {place.itineraries.map((trip) => (
-            <article key={trip.title} className="rounded-xl border border-line p-4">
+          {place.itineraries.map((trip, index) => {
+            const photo = itineraryPhotos[index];
+            return (
+            <article key={trip.title} className="overflow-hidden rounded-xl border border-line bg-foam">
+              {photo ? <img src={photo.src} alt={photo.alt} width={1400} height={933} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" /> : null}
+              <div className="p-4">
               <h3 className="font-display text-2xl">{trip.title}</h3>
               <p className="mt-2 text-base text-tide">
                 {trip.nights} · {trip.season}
               </p>
               <p className="mt-3 text-base leading-relaxed text-ink">{trip.path}</p>
               <p className="mt-1 text-base leading-relaxed text-ink">{trip.ship}</p>
+              {photo ? <p className="mt-2 text-base leading-relaxed text-ink">{photo.caption}</p> : null}
               <ul className="mt-3 grid gap-1 text-base leading-relaxed text-ink">
                 {trip.ports.map((port) => (
                   <li key={port}>{port}</li>
                 ))}
               </ul>
+              </div>
             </article>
-          ))}
+            );
+          })}
         </div>
+        {sparePhotos.length ? (
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {sparePhotos.map((photo) => (
+              <PhotoFigure key={photo.src} photo={photo} />
+            ))}
+          </div>
+        ) : null}
       </section>
       </>
       )}
