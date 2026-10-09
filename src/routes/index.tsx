@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "Where are you based?",
-    a: "We are based in Farmington, Connecticut. You call, text, or email. The process is the same if you live nearby or farther away.",
+    a: "We are based in Farmington, Connecticut. You call, text, or email. We book for travelers across the country.",
   },
   {
     q: "Why is there no fare for some trips?",

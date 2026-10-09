@@ -106,7 +106,7 @@ function ResortsPage() {
       <section className="mx-auto max-w-6xl px-4 py-12">
         <div className="max-w-3xl space-y-4 text-lg">
           <p>
-            An all-inclusive rate is a room plus a meal plan. It does not cover everything. At most of the resorts we book, the meals and a set of drinks are included. The spa, the motorized water sports, a day trip off the property, and sometimes the airport transfer are not. We read that list before we recommend the hotel.
+            At most of the resorts we book, the rate includes the room, the meals, and a set of drinks. Non-motorized water sports and the fitness room are included at most of them too. Gratuities are included at Sandals, Beaches, and much of the Hyatt Inclusive Collection. The spa, motorized sports, and a day off the property are usually booked separately. We check that for the hotel before we recommend it.
           </p>
           <p>
             Resorts also differ by who they accept. Sandals, Secrets, Breathless, and Hyatt Zilara are adults only. Beaches, Hyatt Ziva, Dreams, and Club Med’s beach villages take children, and the kids’ clubs do not all start at the same age. A couples resort with a quiet pool is the wrong booking for a reunion.{" "}
@@ -131,7 +131,7 @@ function ResortsPage() {
             </ul>
           </article>
           <article className="rounded-xl border border-line bg-foam p-5">
-            <h2 className="font-display text-2xl">What it often leaves out</h2>
+            <h2 className="font-display text-2xl">Often booked separately</h2>
             <ul className="mt-3 grid gap-2 text-base leading-relaxed text-ink">
               {excluded.map((item) => (
                 <li key={item} className="border-t border-line pt-2 first:border-0 first:pt-0">
