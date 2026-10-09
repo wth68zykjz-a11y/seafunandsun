@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "What if my plans change after I book?",
-    a: "Call us before you contact the supplier. We handle date changes with them. What can be returned is in the refund policy. We do not keep your payment, and we cannot refund money the supplier will not release.",
+    a: "Call us before you contact the supplier. We handle date changes with them. The supplier’s refund policy says which payments can come back. We do not keep your payment, and we cannot return money the supplier will not release.",
   },
   {
     q: "How do I pay?",

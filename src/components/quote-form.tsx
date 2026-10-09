@@ -26,39 +26,6 @@ const tripPlaces: Record<Trip, string[]> = {
   other: ["Disney", "Flights, hotels, or a group", "Not sure yet"],
 };
 
-const styleCopy: Record<Trip, { label: string; placeholder: string; plans: string }> = {
-  cruise: {
-    label: "Cabin",
-    placeholder: "Veranda, suite, or a river stateroom",
-    plans: "Ports you want, a budget, and whether you prefer a quiet ship or a full resort ship.",
-  },
-  expedition: {
-    label: "Cabin",
-    placeholder: "A cabin with a balcony, or the smallest ship that still has one",
-    plans: "Antarctica, the Arctic, or the Galápagos, the month, and a budget.",
-  },
-  resort: {
-    label: "Room",
-    placeholder: "Ocean view, a suite, or a family room",
-    plans: "Adults-only or family, the airport you can fly from, and a budget.",
-  },
-  ski: {
-    label: "Stay",
-    placeholder: "A Club Med village, or a hotel",
-    plans: "The mountain, whether the lift pass should be included, and a budget.",
-  },
-  land: {
-    label: "Train",
-    placeholder: "A sleeper or a city stay",
-    plans: "The cities, the nights between them, and a budget. A guided tour only if that place has one.",
-  },
-  other: {
-    label: "What you want",
-    placeholder: "A ship, a hotel, a train, or a mix",
-    plans: "The shape of the trip, who is going, and a budget. We will say which kind of booking fits.",
-  },
-};
-
 function tripFromPreset(preset: string): Trip {
   if (preset === "Resort" || preset === "All-inclusive resort") return "resort";
   if (preset === "Club Med ski" || preset === "Luxury ski") return "ski";
@@ -100,7 +67,6 @@ export function QuoteForm({
   const [emailNote, setEmailNote] = useState("");
   const [error, setError] = useState("");
   const active: Trip = chooseTrip ? trip : kind === "ski" ? "ski" : kind === "land" ? "land" : "cruise";
-  const style = styleCopy[active];
   const placeDefault =
     active === "cruise"
       ? cruisePlaces.some((item) => item.title === knownPreset)
@@ -125,7 +91,7 @@ export function QuoteForm({
           destination: String(data.get("destination") ?? ""),
           travelWindow: String(data.get("travelWindow") ?? ""),
           partySize: "",
-          cabin: active === "resort" ? "" : String(data.get("cabin") ?? ""),
+          cabin: "",
           plans: `${trips.find((item) => item.id === active)?.label ?? "Trip"}. ${String(data.get("plans") ?? "")}`,
           marketingOptIn: data.get("marketingOptIn") === "on",
           companyWebsite: String(data.get("companyWebsite") ?? ""),
@@ -218,12 +184,6 @@ export function QuoteForm({
           <input className={field} name="travelWindow" placeholder="Optional" />
         </label>
       </div>
-      {active === "resort" ? null : (
-      <label className="mt-3 grid gap-1 text-base font-medium">
-        {style.label}
-        <input className={field} name="cabin" placeholder="Optional" />
-      </label>
-      )}
       <label className="mt-3 grid gap-1 text-base font-medium">
         Travel plans
         <textarea className={`${field} min-h-20 py-2`} name="plans" defaultValue={note} placeholder="Optional. Flights, a hotel, a shore excursion, or other notes." />
