@@ -627,7 +627,7 @@ export const destinations: Destination[] = [
     card: "Remote coasts",
     image: "/media/expedition.jpg",
     alt: "Sea ice under pale polar light",
-    lede: "The ships are small enough that the beach can be a landing, not a port. You go ashore by Zodiac with a guide. Weather can cancel that landing.",
+    lede: "Antarctica, the Arctic, and the Galápagos are sailed on small ships. Going ashore is the point of those cruises. You go by Zodiac with a guide. Weather can cancel the landing.",
     paragraphs: [
       "Lindblad, Ponant, and Hapag-Lloyd sail Antarctica, the Arctic, and the Galápagos, along with the expedition ships of Viking and Silversea. Those same small ships also sail Patagonia. UnCruise sails Alaska and the Pacific Northwest. It does not sail Antarctica or the Galápagos.",
       "Tell us the region and the months. On a smaller ship you spend more time off the ship. We will set out the options that match those months.",
@@ -640,8 +640,7 @@ export const destinations: Destination[] = [
           "The Arctic — Svalbard, Iceland, the Lofotens",
           "The Galápagos — cruises of seven to fourteen days among the islands",
           "Patagonia — fjords and calving glaciers",
-          "The ship sails north until the ice is too thick to continue.",
-          "New Zealand & the South Pacific, on select sailings",
+          "New Zealand and the South Pacific, on some sailings",
         ],
       },
       {

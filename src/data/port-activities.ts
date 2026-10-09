@@ -151,7 +151,7 @@ export const portActivities: PortActivityPage[] = [
     region: "Mediterranean Cruises",
     title: "What you can do in port in the Mediterranean",
     lede: "The ship is often an hour or more from the city on the brochure. This page names the dock, the ride, and what is in the city.",
-    note: "A stop often has time for one sight and a meal. The city has more than that. If you stay before or after the cruise, the ship is not waiting, and you can add the rest. An excursion can be arranged as an add-on.",
+    note: "A stop often has time for one sight and a meal. The city has more than that. If you stay before or after the cruise, you are not due back on the ship, so the morning and the evening are yours. An excursion can be arranged as an add-on.",
     image: "/media/day-mediterranean.jpg",
     imageAlt: "Empty blue chairs on a terrace above a caldera harbor at dawn",
     stops: [

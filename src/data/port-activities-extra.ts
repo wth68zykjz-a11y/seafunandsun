@@ -167,7 +167,7 @@ export const extraPortPages = [
     region: "Canada & New England Cruises",
     title: "What you can do in port in Canada and New England",
     lede: "These stops are towns and cities on the coast, from Boston up to the St. Lawrence.",
-    note: "Many stops end in the afternoon. A foliage sailing in the fall is more likely to stay late than a short stop in summer. Extra nights in Boston or Quebec give you the evening, when the ship is not waiting.",
+    note: "Many stops end in the afternoon. A foliage sailing in the fall is more likely to stay late than a short stop in summer. Extra nights in Boston or Quebec give you the evening in the city. You are not due back on the ship.",
     image: "/media/new-england.jpg",
     imageAlt: "A New England harbor with autumn color on the hills",
     stops: [
@@ -456,7 +456,7 @@ export const extraPortPages = [
       {
         name: "The ends of the voyage",
         dock: "You board in one city and, on a full transit, leave the ship in another.",
-        text: "Florida to California is the common pair. It is worth spending a few days in Miami or Fort Lauderdale before you sail, or in Los Angeles or San Diego after you arrive. On those nights the ship is not waiting.",
+        text: "Florida to California is the common pair. It is worth spending a few days in Miami or Fort Lauderdale before you sail, or in Los Angeles or San Diego after you arrive. On those nights you are in the city. The cruise has not started, or it is over.",
       },
     ],
   },

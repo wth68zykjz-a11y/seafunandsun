@@ -31,7 +31,7 @@ export const Route = createFileRoute("/destinations/$slug")({
 
 const ashoreNotes: Record<string, string> = {
   alaskan:
-    "Most Alaska stops end in the afternoon. Mendenhall Glacier is in Juneau, about 20 minutes from the cruise docks on Gastineau Channel. Creek Street is in downtown Ketchikan. A short ride from there reaches the totem poles at Saxman and Totem Bight. Skagway sits at the foot of White Pass, and the White Pass and Yukon Route railroad climbs from town to the pass. In Glacier Bay or Tracy Arm there is no pier. The ship spends those hours on the water. Some ships stay late enough in Juneau that you can eat in town. Nights in Seattle or Vancouver are not cut off by a return to the ship. Steamed Dungeness crab can be lunch if you want it.",
+    "Most Alaska stops end in the afternoon. Mendenhall Glacier is in Juneau, about 20 minutes from the cruise docks on Gastineau Channel. Creek Street is in downtown Ketchikan. A short ride from there reaches the totem poles at Saxman and Totem Bight. Skagway sits at the foot of White Pass, and the White Pass and Yukon Route railroad climbs from town to the pass. In Glacier Bay or Tracy Arm there is no pier. The ship spends those hours on the water. Some ships stay late enough in Juneau that you can eat in town. If you stay in Seattle or Vancouver before or after the cruise, you have the evening in the city. Steamed Dungeness crab can be lunch if you want it.",
   caribbean:
     "A typical island stop ends in the afternoon. Cozumel and the private islands have a beach and a swim. In Nassau, ships dock at Prince George Wharf. Walk out through Festival Place, then left onto Bay Street. The straw market is about five minutes from the gate, and Parliament Square is a couple of minutes farther. In San Juan you can walk up to El Morro. If the ship stays longer there, you have the afternoon in the old city, and an overnight leaves the evening open. Nights in Miami or Fort Lauderdale are in the city, after you leave the ship.",
   mediterranean:
@@ -39,7 +39,7 @@ const ashoreNotes: Record<string, string> = {
   european:
     "A daytime stop leaves the afternoon short. Lisbon, the London ports, and the Mediterranean cities on these routes are easier with a night or two before or after, when you do not have to be back on the ship. An overnight, or a departure as late as 10 p.m., leaves the evening free. Tell us which cities you already know. We will put the extra nights on the ones you do not.",
   hawaii:
-    "The sail between the islands takes longer than a short Caribbean cruise, and Pride of America often stays into the evening. You might use that time at a beach, in the car, or on the north shore. Pearl Harbor is a visit for before or after a California crossing, while you are staying on Oahu and the ship is not waiting. A luau still needs the ship in port after dark.",
+    "The sail between the islands takes longer than a short Caribbean cruise, and Pride of America often stays into the evening. You might use that time at a beach, in the car, or on the north shore. Pearl Harbor is easier before or after a California crossing, while you are staying on Oahu. A luau still needs the ship in port after dark.",
   bermuda:
     "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi. Hamilton is about 20 minutes by ferry. St. George's is about an hour by bus. An overnight is enough time for the beach, Hamilton, and St. George's. On a short stop, use the excursion sold by the ship if you want to leave the Dockyard. If that tour is late, the ship waits. Sailings from Boston, New York, or Baltimore include sea days each way.",
   "northern-europe":
@@ -49,17 +49,17 @@ const ashoreNotes: Record<string, string> = {
   river:
     "A river ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village, and people often ride a bike along the river while the ship is there. A Mississippi sailing follows the Mississippi, with New Orleans and the river towns. A Danube sailing follows the Danube, with Budapest and Vienna. Extra nights in Budapest, Paris, Amsterdam, or New Orleans cover the parts of the city the ship only passes.",
   expedition:
-    "An expedition landing may never reach a town. You put on the boots and the parka the ship issues, ride a Zodiac to a beach or the ice, and walk the path the guides mark. You may stand near penguins or seals and take pictures from the distance they set. If the water is calm, some ships add a kayak or a canoe for people who asked. Weather can cancel the landing and leave you on deck. Ushuaia and Longyearbyen are towns you can use before or after the voyage. The landing is not in a town.",
+    "An expedition landing may never reach a town. You put on the boots and the parka the ship issues, ride a Zodiac to a beach or the ice, and walk the path the guides mark. You may stand near penguins or seals and take pictures from the distance they set. If the water is calm, some ships add a kayak or a canoe for people who asked. Weather can cancel the landing and leave you on deck. Ushuaia and Longyearbyen are towns where you can stay before or after the voyage. The landing itself is on a beach or the ice, not in a city.",
   asia:
     "Singapore and Tokyo often keep the ship in port into the evening, and some sail as late as 10 p.m. A beach stop is still only a few hours. A night before or after is a chance to explore one district, or a museum, instead of racing through three cities.",
   "south-america":
     "Guanabara Bay, Sugarloaf, and Corcovado are in Rio. In Buenos Aires you can walk San Telmo and the waterfront at Puerto Madero, and the evening starts late, which lines up when the ship stays overnight or sails late. A daytime stop can include that waterfront and San Telmo. Extra nights are when you can stay out. A grill can be part of those nights if you want a table held.",
   world:
-    "A world cruise spends many days at sea. On a short stop you can walk the streets nearest the landing. On an overnight you have the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights. The ship is not waiting then.",
+    "A world cruise spends many days at sea. On a short stop you can walk the streets nearest the pier. On an overnight you have the evening in that city. Southampton, Sydney, and Singapore, where many of these voyages start or end, are the places to add nights.",
   "australia-new-zealand":
     "Sydney Harbour and the Opera House are in Sydney. In Auckland, the waterfront is at the pier, and Mount Eden, a volcanic cone, is about 15 minutes away. The evening in town depends on a late departure or an overnight, which some itineraries have. Fewer cruises start and end in Brisbane or Melbourne. Extra nights in Sydney or Auckland are in the city after the ship has sailed.",
   "panama-canal":
-    "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. Cartagena is the city these cruises usually stop in. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego, when the ship is not waiting.",
+    "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. Cartagena is the city these cruises usually stop in. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego. You have the evening there because the cruise has not started, or it has ended.",
 };
 
 const ashoreLeads: Record<string, string> = {
@@ -72,10 +72,10 @@ const ashoreLeads: Record<string, string> = {
   "northern-europe": "Bryggen is the old wharf in Bergen. Nyhavn is the canal in Copenhagen. The Rijksmuseum is in Amsterdam, and it holds Rembrandt’s The Night Watch. Ocean ships dock at IJmuiden, not in the canals. The museum is about 30 to 45 minutes from the pier.",
   "canada-new-england": "Boston Harbor and the Freedom Trail are in Boston. In Quebec, Upper Town and the Château Frontenac sit above the St. Lawrence. A fall sailing is more likely to leave late than a short summer stop.",
   river: "The ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village.",
-  expedition: "The landing is not a visit to a city. You may put on the gear, ride a Zodiac, walk a beach, and take pictures. Weather can cancel it.",
+  expedition: "You may put on the gear, ride a Zodiac to a beach or the ice, and take pictures. Going ashore is the reason for the cruise. Weather can cancel it. The landing is on a beach or the ice, not a walk through a city.",
   asia: "Singapore and Tokyo often keep the ship in port into the evening. A beach stop is still only a few hours.",
   "south-america": "Guanabara Bay, Sugarloaf, and Corcovado are in Rio. In Buenos Aires you can walk San Telmo and Puerto Madero, and the evening starts late, which only helps if the ship stays.",
-  world: "A world cruise has more sea days than port days. On a short stop you can walk the streets nearest the landing. On an overnight you have the evening in that city.",
+  world: "A world cruise has more sea days than port days. On a short stop you can walk the streets nearest the pier. On an overnight you have the evening in that city.",
   "australia-new-zealand": "Sydney Harbour and the Opera House are in Sydney. In Auckland, Mount Eden is a volcanic cone about 15 minutes from the pier.",
   "panama-canal": "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock. Cartagena is the city these cruises usually stop in.",
 };

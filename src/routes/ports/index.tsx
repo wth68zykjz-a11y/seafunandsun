@@ -28,8 +28,8 @@ function PortsIndex() {
         <div className="relative z-10">
       <PageIntro
         kicker="Departure ports"
-        title="Fort Lauderdale gets you on the ship. Miami, Vancouver, and Barcelona are good cities to explore before you sail."
-        lede="Each region lists the departure ports, where those cruises usually go, and which airlines serve the city. A cruise date and an airline schedule do not stay lined up on their own. The flight has to land before you board, and the flight home has to leave after the ship is back. We book that pair for the cruise you choose."
+        title="Ships leave from these cities."
+        lede="Each region lists the departure ports, where those cruises usually go, and which airlines serve the city. A resort is not on this list. You fly there and stay. A cruise date and an airline schedule do not stay lined up on their own. The flight has to land before you board, and the flight home has to leave after the ship is back. We book that pair for the cruise you choose."
       />
       <p className="mx-auto max-w-6xl px-4 pb-6 text-mute">
         Ship size and a general price range are on the{" "}

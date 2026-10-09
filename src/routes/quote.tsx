@@ -31,7 +31,7 @@ function QuotePage() {
       />
       <ol className="mx-auto grid max-w-6xl gap-4 px-4 pb-10 sm:grid-cols-2">
         {[
-          ["1. Tell us the trip", "Use the form, call, or text. Name the place, the dates, and who is traveling."],
+          ["1. Tell us the trip", "Use the form, call, or text. Name the place, the dates, and who is traveling. A cruise departs from a port such as Miami, Seattle, or Vancouver. A resort does not. You fly there and stay. We arrange either trip from your home."],
           ["2. We price the pieces separately", "The cruise or hotel, the flight, and any nights before or after are priced on their own, so you can see which price changed. A past-passenger number may improve the cruise price. A frequent-flyer number may improve the airfare. Military discounts are often available on both. Tell us if one of these applies."],
           ["3. You choose", "We send the sailing, the cabin, and the price. You approve it before anything is booked. Yacht sailings, many luxury hotels, and European sleeper trains have no public fare. An agent requests that price and sends it to you."],
           ["4. You pay the supplier", "The card payment goes to the cruise line, resort, hotel, or operator. We do not hold the card. There is no separate agent fee. The supplier pays our commission."],

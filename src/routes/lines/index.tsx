@@ -23,7 +23,7 @@ function LinesPage() {
         lede="Select a card. The heading is the passenger count. The line above it is the type of ship."
       />
       <p className="mx-auto max-w-6xl px-4 pb-6 text-mute">
-        Fort Lauderdale gets you on the ship. Miami, Vancouver, and Barcelona are good cities to explore before or after.{" "}
+        A cruise can depart from Fort Lauderdale, Miami, Seattle, or Vancouver. A resort does not. You fly to the resort and stay. Miami, Vancouver, and Barcelona are also worth a few days before or after a cruise.{" "}
         <Link to="/ports" className="font-medium text-tide">
           See the departure ports
         </Link>
