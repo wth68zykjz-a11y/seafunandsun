@@ -82,7 +82,7 @@ const doors: Door[] = [
   {
     kicker: "Beach",
     title: "Resorts",
-    body: "The room opens onto the water. Sandals, Beaches, Hyatt, Secrets, and Club Med.",
+    body: "The room opens onto the water. We book Sandals, Beaches, Hyatt, Secrets, and Club Med.",
     image: "/media/card-resorts.webp",
     mobileImage: "/media/card-resorts-sm.webp",
     alt: "An overwater villa with its own pool on a turquoise lagoon",
@@ -94,7 +94,7 @@ const doors: Door[] = [
   {
     kicker: "Snow",
     title: "Ski",
-    body: "Cold air, an unmarked ridge, and the valley still dark below. You point the skis downhill and the speed arrives all at once. Aspen, Banff, the Alps, and Niseko.",
+    body: "You point the skis downhill and the speed arrives all at once. Club Med often includes the meals and the lift pass. At hotels in Aspen, Banff, the Alps, and Niseko, the pass is usually separate.",
     image: "/media/card-ski.webp",
     mobileImage: "/media/card-ski-sm.webp",
     alt: "A person in a red jacket facing the Matterhorn across a snowfield",
@@ -106,7 +106,7 @@ const doors: Door[] = [
   {
     kicker: "Small ships",
     title: "Expedition",
-    body: "You ride a small boat to a beach of ice, and there is no town there. Antarctica, the Arctic, and the Galápagos.",
+    body: "You ride a small boat to a beach of ice, and there is no town there. Those cruises go to Antarctica, the Arctic, and the Galápagos.",
     image: "/media/card-expedition.webp",
     mobileImage: "/media/card-expedition-sm.webp",
     alt: "An expedition ship among Antarctic ice, with a turquoise iceberg in front",
@@ -119,7 +119,7 @@ const doors: Door[] = [
   {
     kicker: "On the ground",
     title: "Rail and land",
-    body: "You see a canyon from the glass car, or you sit down to dinner as the station lights fall behind. Scenic trains here, sleeper trains in Europe, and a hotel night between them.",
+    body: "You see a canyon from the glass car, or you sit down to dinner as the station lights fall behind. We book scenic trains here, sleeper trains in Europe, and a hotel night between them.",
     image: "/media/card-rail.webp",
     mobileImage: "/media/card-rail-sm.webp",
     alt: "The Glacier Express crossing a stone viaduct in the Alps",
@@ -182,7 +182,7 @@ function Home() {
           <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-[#0c2340] via-[#1a4d73] to-[#d4923c] px-5 py-8 text-foam lg:px-12 lg:py-16">
             <div className="relative grid items-center gap-8 lg:grid-cols-[1fr_15rem]">
               <div>
-                <p className="hero-copy text-base font-medium text-foam">Independent travel company · Farmington, CT</p>
+                <p className="hero-copy text-base font-medium text-foam">We are based in Farmington, Connecticut. You can call, text, or email.</p>
                 <h1 className="hero-title mt-3 text-4xl text-foam sm:mt-4 sm:text-6xl">
                   The right trip,
                   <span className="mt-2 block font-medium italic text-gold">booked with care.</span>
@@ -268,7 +268,7 @@ function Home() {
           </p>
           <ol className="mt-6 grid gap-4 md:grid-cols-3">
             {[
-              ["1. Tell us the trip", "Use the form, call, or text. Name the place, the dates, and who is traveling."],
+              ["1. Tell us the trip", "Use the form, call, or text. Name the place and the dates."],
               ["2. We send the price", "You see the sailing or the hotel, the cabin or the room, and the flights if you want them. You approve it before anything is booked."],
               ["3. You pay the supplier", "The card payment goes to the cruise line, the resort, or the operator. We do not hold the card."],
             ].map(([title, text]) => (
@@ -332,7 +332,7 @@ function Home() {
           <div>
             <p className="text-sm font-medium text-tide">A quote</p>
             <h2 className="mt-2 font-display text-3xl sm:text-4xl">A few details are enough to begin.</h2>
-            <p className="mt-4 text-base leading-relaxed text-ink">The destination, the dates, and who is traveling. Add flights, a hotel, or an excursion if you want them arranged.</p>
+            <p className="mt-4 text-base leading-relaxed text-ink">Tell us the destination and the dates. Add flights, a hotel, or an excursion if you want them arranged.</p>
             <ul className="mt-6 grid gap-2 text-base">
               <li>
                 Call or text{" "}
