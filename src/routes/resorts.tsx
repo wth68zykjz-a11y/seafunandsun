@@ -21,7 +21,7 @@ const included = [
   "Breakfast, lunch, and dinner at the restaurants on the inclusion list. A few of those restaurants take reservations, and those tables fill.",
   "House wine, beer, and a defined liquor list. The top shelf is often a separate charge.",
   "Non-motorized water sports and the fitness room, at most of the properties we book.",
-  "Gratuities, at Sandals, Beaches, and much of the Hyatt Inclusive Collection. Not at every brand. We check.",
+  "Gratuities, at Sandals, Beaches, and much of the Hyatt Inclusive Collection. Not at every brand.",
 ];
 
 const excluded = [
@@ -83,7 +83,7 @@ function ResortsPage() {
           <p className="text-sm font-medium text-tide">All-inclusive resorts</p>
           <h1 className="mt-2 font-display text-3xl sm:text-5xl">Breakfast is already in the rate.</h1>
           <p className="mt-4 text-lg text-mute">
-            The room faces the water, or the garden, and the quote names which one before you pay. It can also include the flights, the airport transfer, and a day away from the property. We look at what the rate covers, which airport you fly from, and whether the property fits the people traveling.
+            The room faces the water, or the garden, and the quote names which one before you pay. It can also include the flights, the airport transfer, and a day away from the property.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Link
@@ -106,7 +106,7 @@ function ResortsPage() {
       <section className="mx-auto max-w-6xl px-4 py-12">
         <div className="max-w-3xl space-y-4 text-lg">
           <p>
-            At most of the resorts we book, the rate includes the room, the meals, and a set of drinks. Non-motorized water sports and the fitness room are included at most of them too. Gratuities are included at Sandals, Beaches, and much of the Hyatt Inclusive Collection. The spa, motorized sports, and a day off the property are usually booked separately. We check that for the hotel before we recommend it.
+            At most of the resorts we book, the rate includes the room, the meals, and a set of drinks. Non-motorized water sports and the fitness room are included at most of them too. Gratuities are included at Sandals, Beaches, and much of the Hyatt Inclusive Collection. The spa, motorized sports, and a day off the property are usually booked separately.
           </p>
           <p>
             Resorts also differ by who they accept. Sandals, Secrets, Breathless, and Hyatt Zilara are adults only. Beaches, Hyatt Ziva, Dreams, and Club Med’s beach villages take children, and the kids’ clubs do not all start at the same age. A couples resort with a quiet pool is the wrong booking for a reunion.{" "}
