@@ -43,7 +43,7 @@ function DestinationsPage() {
           </Link>
         </article>
       </div>
-      <div className="mx-auto grid max-w-6xl gap-4 px-4 pb-20 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl items-stretch gap-4 px-4 pb-20 sm:grid-cols-2 lg:grid-cols-3">
         {orderedDestinations()
           .filter((item) => item.slug !== "rail")
           .map((item) => (
@@ -51,17 +51,16 @@ function DestinationsPage() {
             key={item.slug}
             to="/destinations/$slug"
             params={{ slug: item.slug }}
-            className="group overflow-hidden rounded-xl border border-line bg-foam hover:border-tide"
+            className="group flex h-full flex-col overflow-hidden rounded-xl border border-line bg-foam hover:border-tide"
           >
             <img src={item.image} alt={item.alt} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
-            <div className="p-4">
+            <div className="flex flex-1 flex-col p-5">
               <p className="text-sm font-medium text-tide">{item.card}</p>
               <h2 className="mt-1 font-display text-3xl">{item.title}</h2>
               <p className="mt-2 text-base leading-relaxed text-ink">{item.lede}</p>
-              {portActivityBySlug(item.slug) ? (
-                <p className="mt-3 text-sm font-medium text-tide">What you can do in port is on the next page.</p>
-              ) : null}
-              <span className="mt-4 inline-flex text-sm font-medium text-tide group-hover:underline">Learn more</span>
+              <span className="mt-4 inline-flex text-sm font-medium text-tide group-hover:underline">
+                {portActivityBySlug(item.slug) ? "Open the region" : "Learn more"}
+              </span>
             </div>
           </Link>
         ))}

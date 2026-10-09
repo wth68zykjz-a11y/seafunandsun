@@ -149,8 +149,8 @@ export function DestinationArticle({
               ],
         )}
       />
-      <section className="mx-auto grid max-w-6xl gap-6 px-4 pt-8 lg:grid-cols-2">
-        <img src={place.image} alt={place.alt} fetchPriority="high" decoding="async" className="aspect-photo w-full rounded-xl object-cover" />
+      <section className="mx-auto grid max-w-6xl items-stretch gap-6 px-4 pt-8 lg:grid-cols-2">
+        <img src={place.image} alt={place.alt} fetchPriority="high" decoding="async" className="h-full min-h-72 w-full rounded-xl object-cover" />
         <div className="flex flex-col justify-center rounded-xl px-6 py-8 text-foam lg:px-8" style={{ backgroundColor: tone }}>
           <p className="text-base text-foam">
             {rail ? (
@@ -223,23 +223,28 @@ export function DestinationArticle({
       {rail ? null : (
       <>
       <section className="mx-auto max-w-6xl px-4 py-12">
-        <div className="grid gap-8">
+        <div className="grid gap-10">
           {place.paragraphs.map((paragraph, index) => {
             const photo = paragraphPhotos[index];
+            const photoFirst = index % 2 === 1;
             return (
-              <div key={paragraph} className={photo ? "grid items-center gap-6 lg:grid-cols-2" : "max-w-3xl"}>
-                <p className={`text-lg leading-relaxed text-ink ${photo && index % 2 === 1 ? "lg:order-2" : ""}`}>{paragraph}</p>
-                {photo ? <PhotoFigure photo={photo} /> : null}
+              <div key={paragraph} className={photo ? "grid items-start gap-6 lg:grid-cols-12" : "max-w-3xl"}>
+                <p className={`text-lg leading-relaxed text-ink ${photo ? `lg:col-span-7 ${photoFirst ? "lg:order-2" : ""}` : ""}`}>{paragraph}</p>
+                {photo ? (
+                  <div className={`lg:col-span-5 ${photoFirst ? "lg:order-1" : ""}`}>
+                    <PhotoFigure photo={photo} />
+                  </div>
+                ) : null}
               </div>
             );
           })}
         </div>
         {place.slug === "alaskan" || place.slug === "bermuda" || place.slug === "panama-canal" ? (
-          <p className="mt-6">
+          <p className="mt-8">
             <Link
               to="/guides/$slug"
               params={{ slug: place.slug === "alaskan" ? "alaska-seattle-vancouver" : place.slug === "bermuda" ? "bermuda-northeast" : "panama-transit" }}
-              className="inline-flex min-h-11 items-center text-base font-medium text-tide"
+              className="inline-flex min-h-11 items-center justify-center rounded-md border border-line bg-foam px-4 text-sm font-medium text-ink"
             >
               {place.slug === "alaskan"
                 ? "Seattle or Vancouver as the departure port"
@@ -249,13 +254,13 @@ export function DestinationArticle({
             </Link>
           </p>
         ) : null}
-        <div className="mt-10 grid gap-4 lg:grid-cols-2">
+        <div className="mt-10 grid items-start gap-4 lg:grid-cols-2">
           {place.lists.map((list) => (
-            <article key={list.heading} className="rounded-xl border border-line bg-foam p-5">
+            <article key={list.heading} className="rounded-xl border border-line bg-foam p-5 sm:p-6">
               <h2 className="font-display text-2xl">{list.heading}</h2>
-              <ul className="mt-3 grid gap-2 text-base text-ink">
+              <ul className="mt-4 grid gap-3 text-base leading-relaxed text-ink">
                 {list.items.map((item) => (
-                  <li key={item} className="border-t border-line pt-2 first:border-0 first:pt-0">
+                  <li key={item} className="border-t border-line pt-3 first:border-0 first:pt-0">
                     {item}
                   </li>
                 ))}
@@ -263,15 +268,24 @@ export function DestinationArticle({
             </article>
           ))}
         </div>
-        <p className="mt-6 max-w-3xl text-lg leading-relaxed text-ink">
-          {rail
-            ? "A station stop is a few minutes on the platform. If you get off and stay the night, the train is not your deadline. You can have dinner, go to a museum, or walk a neighborhood the train only passes. That might be a well-known restaurant, if that is why you stopped, or a small local place such as a wine bar or a café with a short menu."
-            : ashoreNotes[place.slug]}
-        </p>
-        <article className="mt-4 rounded-xl p-5 text-foam" style={{ backgroundColor: tone }}>
+        <div className="mt-8 max-w-3xl rounded-xl border border-line bg-foam p-5 sm:p-6">
+          <p className="text-lg leading-relaxed text-ink">
+            {rail
+              ? "A station stop is a few minutes on the platform. If you get off and stay the night, the train is not your deadline. You can have dinner, go to a museum, or walk a neighborhood the train only passes. That might be a well-known restaurant, if that is why you stopped, or a small local place such as a wine bar or a café with a short menu."
+              : ashoreNotes[place.slug]}
+          </p>
+        </div>
+        <article className="mt-4 rounded-xl p-5 text-foam sm:p-6" style={{ backgroundColor: tone }}>
           <h2 className="font-display text-2xl">When to go</h2>
           <p className="mt-3 max-w-3xl text-base leading-relaxed text-foam">{place.when}</p>
         </article>
+        {sparePhotos.length ? (
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {sparePhotos.map((photo) => (
+              <PhotoFigure key={photo.src} photo={photo} />
+            ))}
+          </div>
+        ) : null}
       </section>
 
       {portGuides[place.slug] ? (
@@ -286,15 +300,15 @@ export function DestinationArticle({
             />
             <div>
               <p className="text-sm font-medium text-tide">{rail ? "On the route" : "In port"}</p>
-              <h2 className="mt-2 font-display text-4xl">{rail ? "What to expect on the route" : "What to expect in port"}</h2>
+              <h2 className="mt-2 font-display text-3xl">{rail ? "What to expect on the route" : "What to expect in port"}</h2>
               <p className="mt-3 text-lg leading-relaxed text-ink">
                 {rail
                   ? "You are on the train for most of the trip. A station stop is short. The notes below say what you can see from the window, and what will not fit at the station."
                   : ashoreLeads[place.slug]}
               </p>
-              <dl className="mt-5 grid gap-4 sm:grid-cols-2">
+              <dl className="mt-5 grid gap-3 sm:grid-cols-2">
                 {portGuides[place.slug].facts.map((fact) => (
-                  <div key={fact.label}>
+                  <div key={fact.label} className="rounded-lg border border-line bg-foam p-4">
                     <dt className="text-base font-medium text-tide">{fact.label}</dt>
                     <dd className="mt-1 text-base leading-relaxed text-ink">{fact.text}</dd>
                   </div>
@@ -332,7 +346,7 @@ export function DestinationArticle({
             />
             <div className="lg:col-span-3">
               <p className="text-sm font-medium text-tide">{rail ? "Optional" : "Optional excursions"}</p>
-              <h2 className="mt-2 font-display text-4xl">{rail ? "Stops and cities" : "Excursions you can add"}</h2>
+              <h2 className="mt-2 font-display text-3xl">{rail ? "Stops and cities" : "Excursions you can add"}</h2>
               <p className="mt-3 text-mute">
                 {rail
                   ? "A guided tour or an excursion can be arranged in the city or at the stop, as an add-on to enrich the trip. It depends on the place. The operator, the hours, and the price change."
@@ -377,27 +391,30 @@ export function DestinationArticle({
       ) : null}
 
       <section className="mx-auto max-w-6xl px-4 pb-12">
-        <h2 className="font-display text-4xl">Sample itineraries</h2>
+        <h2 className="font-display text-3xl">Sample itineraries</h2>
         <p className="mt-2 max-w-2xl text-base leading-relaxed text-ink">
           {rail
             ? "These are typical routes. Trains, hotels, dates, and fares change."
             : sampleNote}
         </p>
-        <div className="mt-6 grid gap-4 lg:grid-cols-3">
+        <div className="mt-6 grid items-stretch gap-4 lg:grid-cols-3">
           {place.itineraries.map((trip, index) => {
             const photo = itineraryPhotos[index];
             return (
-            <article key={trip.title} className="overflow-hidden rounded-xl border border-line bg-foam">
-              {photo ? <img src={photo.src} alt={photo.alt} width={1400} height={933} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" /> : null}
-              <div className="p-4">
+            <article key={trip.title} className="flex h-full flex-col overflow-hidden rounded-xl border border-line bg-foam">
+              {photo ? (
+                <figure>
+                  <img src={photo.src} alt={photo.alt} width={1400} height={933} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
+                  <figcaption className="border-b border-line px-4 py-3 text-base leading-relaxed text-ink">{photo.caption}</figcaption>
+                </figure>
+              ) : null}
+              <div className="flex flex-1 flex-col p-5">
               <h3 className="font-display text-2xl">{trip.title}</h3>
-              <p className="mt-2 text-base text-tide">
-                {trip.nights} · {trip.season}
-              </p>
+              <p className="mt-2 text-base font-medium text-tide">{trip.nights}</p>
+              <p className="mt-1 text-base text-ink">{trip.season}</p>
               <p className="mt-3 text-base leading-relaxed text-ink">{trip.path}</p>
-              <p className="mt-1 text-base leading-relaxed text-ink">{trip.ship}</p>
-              {photo ? <p className="mt-2 text-base leading-relaxed text-ink">{photo.caption}</p> : null}
-              <ul className="mt-3 grid gap-1 text-base leading-relaxed text-ink">
+              <p className="mt-2 text-base leading-relaxed text-ink">{trip.ship}</p>
+              <ul className="mt-4 grid gap-2 border-t border-line pt-3 text-base leading-relaxed text-ink">
                 {trip.ports.map((port) => (
                   <li key={port}>{port}</li>
                 ))}
@@ -407,13 +424,6 @@ export function DestinationArticle({
             );
           })}
         </div>
-        {sparePhotos.length ? (
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {sparePhotos.map((photo) => (
-              <PhotoFigure key={photo.src} photo={photo} />
-            ))}
-          </div>
-        ) : null}
       </section>
       </>
       )}
