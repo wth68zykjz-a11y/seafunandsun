@@ -957,7 +957,7 @@ export const destinations: Destination[] = [
         season: "Mostly spring through fall",
         ship: "Belmond. Historic cabins, suites, and grand suites",
         path: "Often Paris toward Venice. Some dates run through to Istanbul.",
-        ports: ["Meals are served on the train", "You choose the cabin before you pay", "We send the price after we request it"],
+        ports: ["Meals are served on the train"],
       },
     ],
   },
