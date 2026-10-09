@@ -78,7 +78,7 @@ export const guides: Guide[] = [
     title: "Bermuda cruise from Boston, New York, or Baltimore",
     description:
       "Bermuda cruises depart from Boston, New York, and Baltimore. Each one has a sea day on the way there and a sea day on the way back. Sea Fun & Sun, Farmington, Connecticut.",
-    lede: "Boston, New York, and Baltimore are the departure ports. Bermuda is the island. The ship still spends a day at sea each way, including from Boston.",
+    lede: "Bermuda cruises leave from Boston, New York, and Baltimore. The ship still spends a day at sea each way, including from Boston.",
     image: "/media/bermuda.jpg",
     alt: "Pink sand and clear shallow water on a Bermuda beach",
     note: "Royal Caribbean, Carnival, Norwegian, and Celebrity sail these weeks. A cruise from Miami does not routinely include Bermuda. Many ships stay overnight at the Royal Naval Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi. Hamilton is about 20 minutes by ferry. St. George's is about an hour by bus. On a short stop, use the excursion sold by the ship if you leave the Dockyard. If that tour is late, the ship waits.",

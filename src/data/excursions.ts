@@ -21,7 +21,7 @@ export const shores: Record<string, DestinationShore> = {
     photo: "/media/panama-canal.jpg",
     photoAlt: "A ship in the Miraflores Locks on the Panama Canal",
     intro:
-      "The transit is the reason for the cruise, and it happens from the deck. Time ashore is separate. Cartagena is the city these cruises usually stop in. Panama City is on the itinerary only when the ship docks there.",
+      "The transit is the reason for the cruise, and it happens from the deck. Time ashore is separate. These cruises usually stop in Cartagena. Panama City is on the itinerary only when the ship docks there.",
     excursions: [
       {
         title: "The locks, from the ship",

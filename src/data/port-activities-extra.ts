@@ -270,7 +270,7 @@ export const extraPortPages = [
       {
         name: "Puerto Ayora",
         dock: "Small ships use a panga, a local open boat, between the ship and the landing.",
-        text: "Puerto Ayora is the town on Santa Cruz. The Charles Darwin Research Station is there, and you can see giant tortoises. Baltra is the airport island, and the ride there is separate. Puerto Ayora and Baltra are not the same stop.",
+        text: "In Puerto Ayora, on Santa Cruz, the Charles Darwin Research Station has giant tortoises. The airport is on Baltra, and the ride there is separate. Puerto Ayora and Baltra are not the same stop.",
       },
       {
         name: "Longyearbyen",
@@ -433,7 +433,7 @@ export const extraPortPages = [
     slug: "panama-canal",
     region: "Panama Canal Cruises",
     title: "What you can do on a Panama Canal cruise",
-    lede: "While the ship is in the canal, you are on deck. Cartagena is the city these cruises usually stop in.",
+    lede: "While the ship is in the canal, you are on deck. These cruises usually stop in Cartagena.",
     note: "A full transit goes from one ocean to the other. A partial transit enters Gatun Lake and comes back out the same locks. The comparison is on the Panama Canal region page.",
     image: "/media/panama-canal.jpg",
     imageAlt: "A ship in the Panama Canal",

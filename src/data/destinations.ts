@@ -109,7 +109,7 @@ export const destinations: Destination[] = [
       {
         heading: "Popular sailings",
         items: [
-          "Cozumel is the island off the Yucatán, and ships dock there. Cancún is a resort area on the mainland. Ships do not dock in Cancún",
+          "Ships dock at Cozumel, off the Yucatán. Cancún is on the mainland, and ships do not dock there",
           "Grand Cayman — Stingray City and the reef",
           "Nassau and Freeport",
           "St. Thomas and St. Maarten",

@@ -323,7 +323,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Where you can get off",
         paragraphs: [
-          "Jasper is the town where people get off for a night. The station stop is longer than a platform stretch, and it is still too short for a visit to Maligne Lake or the Icefields. The stop in Winnipeg is longer, long enough to leave the station and come back. It is not long enough to see the city.",
+          "People get off in Jasper for a night. The station stop is longer than a platform stretch, and it is still too short for a visit to Maligne Lake or the Icefields. The stop in Winnipeg is longer, long enough to leave the station and come back. It is not long enough to see the city.",
         ],
       },
       {
@@ -438,7 +438,7 @@ export const railPages: RailPage[] = [
         heading: "Bernina Express",
         paragraphs: [
           "The Bernina Express runs from Chur or St. Moritz to Tirano, in Italy. The high point is Ospizio Bernina, at 2,253 meters, beside Lago Bianco. The water there is glacial and pale.",
-          "The stop at Alp Grüm is short, and the terrace faces the Palü Glacier. You can step off for the view and take a later train. The Brusio spiral is a full loop the train makes to lose height. Poschiavo is the town in the valley below. If you want time in Poschiavo or Tirano, get off and stay the night. The car has snacks.",
+          "The stop at Alp Grüm is short, and the terrace faces the Palü Glacier. You can step off for the view and take a later train. The Brusio spiral is a full loop the train makes to lose height. Poschiavo sits in the valley below. If you want time in Poschiavo or Tirano, get off and stay the night. The car has snacks.",
         ],
       },
     ],

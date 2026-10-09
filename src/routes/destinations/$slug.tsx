@@ -59,7 +59,7 @@ const ashoreNotes: Record<string, string> = {
   "australia-new-zealand":
     "Sydney Harbour and the Opera House are in Sydney. In Auckland, the waterfront is at the pier, and Mount Eden, a volcanic cone, is about 15 minutes away. The evening in town depends on a late departure or an overnight, which some itineraries have. Fewer cruises start and end in Brisbane or Melbourne. Extra nights in Sydney or Auckland are in the city after the ship has sailed.",
   "panama-canal":
-    "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. Cartagena is the city these cruises usually stop in. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego. You have the evening there because the cruise has not started, or it has ended.",
+    "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock, and many ships only pass through. These cruises usually stop in Cartagena. Extra nights belong at the start or the end, in Fort Lauderdale, Miami, Los Angeles, or San Diego. You have the evening there because the cruise has not started, or it has ended.",
 };
 
 const ashoreLeads: Record<string, string> = {
@@ -77,7 +77,7 @@ const ashoreLeads: Record<string, string> = {
   "south-america": "Guanabara Bay, Sugarloaf, and Corcovado are in Rio. In Buenos Aires you can walk San Telmo and Puerto Madero, and the evening starts late, which only helps if the ship stays.",
   world: "A world cruise has more sea days than port days. On a short stop you can walk the streets nearest the pier. On an overnight you have the evening in that city.",
   "australia-new-zealand": "Sydney Harbour and the Opera House are in Sydney. In Auckland, Mount Eden is a volcanic cone about 15 minutes from the pier.",
-  "panama-canal": "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock. Cartagena is the city these cruises usually stop in.",
+  "panama-canal": "While the ship is in the canal, you are on deck. You are not ashore unless the itinerary lists a dock. These cruises usually stop in Cartagena.",
 };
 
 function DestinationPage() {

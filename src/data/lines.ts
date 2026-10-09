@@ -80,7 +80,7 @@ export const linePages: LinePage[] = [
         caption: "A Caribbean cruise that departs from Florida often uses a ship this size. A Bermuda cruise is usually on a smaller ship, about 2,000 to 4,000 passengers.",
       },
     ],
-    lede: "The biggest ships sail Caribbean cruises that depart from Florida. Bermuda cruises that depart from the Northeast are usually on a smaller ship, and the ship stays longer because Bermuda is the destination.",
+    lede: "The biggest ships sail Caribbean cruises that depart from Florida. A Bermuda cruise from the Northeast is usually on a smaller ship, and it stays long enough for more than one outing.",
     size: "These are large ocean ships. Many carry 4,000 to about 7,000 passengers. Some of the ships on the shorter cruises carry about 2,000 to 4,000.",
     rows: [
       { line: "Holland America", ships: "Older ships about 1,400–1,900. Pinnacle class about 2,650.", where: "Caribbean cruises, Alaska cruises, and longer voyages.", fare: "Balcony often $1,300–$2,600." },
@@ -107,7 +107,7 @@ export const linePages: LinePage[] = [
       },
       {
         title: "Short stops",
-        text: "The ship is usually in port from morning to late afternoon. One plan is enough: a beach, a reef, or a town. You are back on the ship for the rest of the time. Bermuda is the exception. Those sailings usually stay long enough to see the island, and the ships are smaller.",
+        text: "The ship is usually in port from morning to late afternoon. One plan is enough: a beach, a reef, or a town. You are back on the ship for the rest of the time. A Bermuda sailing usually stays longer, and those ships are smaller.",
       },
       {
         title: "What these ships leave out",

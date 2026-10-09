@@ -24,7 +24,7 @@ const weeklyDeals = [
     ports: "americas",
     destination: "caribbean",
     region: "Caribbean cruises",
-    text: "Cape Liberty, in Bayonne, New Jersey, is the port Royal Caribbean uses in the Northeast. A Caribbean cruise that departs from there has more sea days than a cruise to the same islands that departs from Miami.",
+    text: "Royal Caribbean uses Cape Liberty, in Bayonne, New Jersey, for Northeast sailings. A Caribbean cruise that departs from there has more sea days than a cruise to the same islands that departs from Miami.",
   },
   {
     line: "Norwegian Cruise Line",
