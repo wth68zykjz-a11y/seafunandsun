@@ -283,7 +283,7 @@ function Home() {
             <div>
               <h2 className="font-display text-3xl text-ink">Laura S books the trip.</h2>
               <p className="mt-3 text-base leading-relaxed text-ink">
-                She works from Farmington, Connecticut. The same agent quotes the cruise, the resort, the ski vacation, or the rail trip, and stays with the booking until you are home. You pay the supplier. There is no separate agent fee.
+                She works from Farmington, Connecticut. The same agent quotes the cruise, the resort, the ski vacation, or the rail trip, and stays with the booking until you are home.
               </p>
               <p className="mt-3 text-base leading-relaxed text-ink">
                 Call or text{" "}
