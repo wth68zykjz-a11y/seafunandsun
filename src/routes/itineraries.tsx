@@ -40,11 +40,11 @@ function ItinerariesPage() {
         />
       </div>
       <div className="mx-auto max-w-6xl px-4 pt-8 pb-20">
-        <div className="flex gap-2 overflow-x-auto pb-4">
+        <div className="flex flex-wrap gap-2 pb-4">
           <Link
             to="/itineraries"
             search={{ place: undefined }}
-            className={`shrink-0 rounded-md border px-3 py-2 text-sm ${place === "all" || !active ? "border-sea bg-sea text-foam" : "border-line bg-foam text-ink"}`}
+            className={`inline-flex min-h-11 items-center rounded-md border px-3 text-sm ${place === "all" || !active ? "border-sea bg-sea text-foam" : "border-line bg-foam text-ink"}`}
           >
             All
           </Link>
@@ -53,7 +53,7 @@ function ItinerariesPage() {
               key={item.slug}
               to="/itineraries"
               search={{ place: item.slug }}
-              className={`shrink-0 rounded-md border px-3 py-2 text-sm ${place === item.slug ? "border-sea bg-sea text-foam" : "border-line bg-foam text-ink"}`}
+              className={`inline-flex min-h-11 items-center rounded-md border px-3 text-sm ${place === item.slug ? "border-sea bg-sea text-foam" : "border-line bg-foam text-ink"}`}
             >
               {item.nav}
             </Link>

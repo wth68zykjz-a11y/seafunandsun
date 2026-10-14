@@ -467,7 +467,7 @@ export function DestinationArticle({
 
       <section className="mx-auto grid max-w-6xl gap-8 px-4 pb-20 lg:grid-cols-2">
         <div>
-          <h2 className="font-display text-4xl">{rail ? "Planning a rail trip?" : `Planning ${place.nav.toLowerCase()}?`}</h2>
+          <h2 className="font-display text-3xl sm:text-4xl">{rail ? "Planning a rail trip?" : `Planning ${place.nav.toLowerCase()}?`}</h2>
           <p className="mt-3 text-mute">{place.planning}</p>
         </div>
         <QuoteForm preset={place.title} kind={rail ? "land" : "cruise"} />

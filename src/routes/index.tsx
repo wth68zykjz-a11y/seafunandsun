@@ -199,30 +199,24 @@ function Home() {
                       Select a category
                     </a>
                   </div>
-                  <dl className="mt-5 grid w-full grid-cols-2 divide-x divide-gold/40 border-t border-gold/30 pt-4 text-center text-gold sm:mt-8 sm:flex sm:w-auto sm:items-center sm:justify-center sm:gap-x-8 sm:divide-x-0 sm:border-0 sm:pt-0">
-                    <div className="px-2 sm:flex sm:items-center sm:gap-3 sm:px-0">
+                  <dl className="mt-5 grid w-full gap-4 border-t border-gold/30 pt-4 text-center text-gold sm:mt-8 sm:flex sm:w-auto sm:items-center sm:justify-center sm:gap-x-8 sm:border-0 sm:pt-0">
+                    <div className="sm:flex sm:items-center sm:gap-3">
                       <svg viewBox="0 0 36 36" className="mx-auto hidden size-9 sm:block" fill="none" aria-hidden="true">
                         <circle cx="16" cy="11" r="4" stroke="currentColor" strokeWidth="1.6" />
                         <path d="M8 26c1.4-4.2 4-6.2 8-6.2s6.6 2 8 6.2" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
                         <path d="M24 22.5l1.2 2.4 2.6.4-1.9 1.8.5 2.6L24 28.4l-2.4 1.3.5-2.6-1.9-1.8 2.6-.4L24 22.5z" fill="currentColor" />
                       </svg>
                       <dd className="hero-stat text-3xl leading-none sm:text-4xl">1</dd>
-                      <dt className="hero-copy mt-1 text-sm font-medium leading-tight sm:mt-0">
-                        One agent
-                        <br />
-                        on your booking
-                      </dt>
+                      <dt className="hero-copy mt-1 text-sm font-medium leading-tight sm:mt-0">One agent on your booking</dt>
                     </div>
                     <div className="hidden h-10 w-px bg-gold sm:block" aria-hidden="true" />
-                    <div className="px-2 sm:flex sm:items-center sm:gap-3 sm:px-0">
+                    <div className="border-t border-gold/30 pt-4 sm:flex sm:items-center sm:gap-3 sm:border-0 sm:pt-0">
                       <svg viewBox="0 0 36 36" className="mx-auto hidden size-9 sm:block" fill="none" aria-hidden="true">
                         <circle cx="18" cy="18" r="11" stroke="currentColor" strokeWidth="1.6" />
                         <path d="M18 11v14M15 14.5c.8-1 1.8-1.5 3-1.5 1.8 0 3 1 3 2.4S19.8 18 18 18s-3 .8-3 2.3 1.3 2.4 3.1 2.4c1.2 0 2.2-.4 3-1.3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
                       </svg>
                       <dd className="hero-stat text-3xl leading-none sm:text-4xl">$0</dd>
-                      <dt className="hero-copy mt-1 text-sm font-medium leading-tight sm:mt-0">
-                        No agent fee
-                      </dt>
+                      <dt className="hero-copy mt-1 text-sm font-medium leading-tight sm:mt-0">No agent fee</dt>
                     </div>
                   </dl>
                 </div>

@@ -172,7 +172,7 @@ function ResortsPage() {
             <Link
               to="/quote"
               search={{ place: "Disney resort" }}
-              className="mt-5 inline-flex min-h-11 w-fit items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
+              className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep sm:w-fit"
             >
               Request a Disney stay
             </Link>
@@ -207,7 +207,7 @@ function ResortsPage() {
       <section className="mx-auto grid max-w-6xl gap-8 px-4 pb-20 lg:grid-cols-2">
         <div>
           <p className="text-sm font-medium text-tide">The property, not a slogan</p>
-          <h2 className="mt-2 font-display text-4xl">Tell us the dates and who is going.</h2>
+          <h2 className="mt-2 font-display text-3xl sm:text-4xl">Tell us the dates and who is going.</h2>
           <p className="mt-4 text-mute">
             Tell us whether you want a beach week or an overwater villa, and a budget. If you would rather we propose the island, say so. We reply the same day in most cases.
           </p>

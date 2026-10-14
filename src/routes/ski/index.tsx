@@ -51,7 +51,7 @@ function SkiPage() {
       </section>
 
       <section id="luxury" className="mx-auto max-w-6xl scroll-mt-24 px-4 py-12">
-        <h2 className="font-display text-4xl">Luxury hotels</h2>
+        <h2 className="font-display text-3xl sm:text-4xl">Luxury hotels</h2>
         <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink">
           These are traditional ski hotels: the rate is the room, and sometimes breakfast. The lift pass, lessons, rentals, most dinners, and the transfer are separate. Christmas and February school holidays are often gone a year out. Aspen, Jackson Hole, Deer Valley, Banff, Mammoth, Zermatt, St. Moritz, Chamonix, Megève, and Niseko United are on Ikon. Vail, Whistler Blackcomb, and Les 3 Vallées are on Epic.
         </p>
@@ -77,7 +77,7 @@ function SkiPage() {
       <section className="mx-auto grid max-w-6xl gap-8 px-4 pb-20 lg:grid-cols-2">
         <div>
           <p className="text-sm font-medium text-tide">The dates, and who skis</p>
-          <h2 className="mt-2 font-display text-4xl">Tell us the mountain, or let us propose it.</h2>
+          <h2 className="mt-2 font-display text-3xl sm:text-4xl">Tell us the mountain, or let us propose it.</h2>
           <p className="mt-4 text-mute">
             Tell us whether you want Club Med or a hotel, the ages of anyone who needs lessons, and a budget. We reply the same day in most cases.
           </p>

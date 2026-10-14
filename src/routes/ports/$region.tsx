@@ -123,7 +123,7 @@ function PortRegionPage() {
             key={item.slug}
             to="/ports/$region"
             params={{ region: item.slug }}
-            className={`rounded-md px-3 py-2 text-sm font-medium ${item.slug === page.slug ? "bg-gold text-ink" : "bg-sea text-foam"}`}
+            className={`inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium ${item.slug === page.slug ? "bg-gold text-ink" : "bg-sea text-foam"}`}
           >
             {item.title}
           </Link>

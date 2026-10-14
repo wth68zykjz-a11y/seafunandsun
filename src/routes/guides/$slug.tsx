@@ -45,7 +45,7 @@ function GuidePage() {
             </Link>
           )}
         </p>
-        <h1 className="mt-2 max-w-3xl font-display text-4xl leading-tight text-ink sm:text-5xl">{guide.title}</h1>
+        <h1 className="mt-2 max-w-3xl font-display text-3xl leading-tight text-ink sm:text-5xl">{guide.title}</h1>
         <p className="mt-4 max-w-3xl text-lg leading-relaxed text-ink">{guide.lede}</p>
         <div className="mt-8 grid gap-4 lg:grid-cols-2">
           {guide.sides.map((side) => (
