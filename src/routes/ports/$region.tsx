@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { PageIntro, Shell } from "@/components/site-chrome";
 import { cruisePlaces } from "@/data/place-names";
-import { airlineNote, portPageBySlug, portPages, type Port, type PortCall } from "@/data/ports";
+import { portPageBySlug, portPages, type Port, type PortCall } from "@/data/ports";
 import { CabinGuide } from "@/components/cabin-guide";
 import { LocalClock } from "@/components/local-clock";
 import { clip, pageHead } from "@/lib/seo";
@@ -151,8 +151,7 @@ function PortRegionPage() {
           </div>
         </section>
       ) : null}
-      <div className="mx-auto max-w-6xl space-y-3 px-4 pb-8 text-base leading-relaxed text-ink">
-        <p>{airlineNote}</p>
+      <div className="mx-auto max-w-6xl px-4 pb-8 text-base leading-relaxed text-ink">
         <p>
           The cruise fare is usually billed in US dollars. On shore, prices are in the currency named on that city’s card. US cash works in the United States and Puerto Rico. Elsewhere, including Canada, a shop that takes US bills usually sets a worse rate than your bank. If you want cash, order the local currency from your bank before you leave. A travel card with no international transaction fee is the other way to pay.
         </p>

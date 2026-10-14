@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { CabinGuide } from "@/components/cabin-guide";
 import { PageIntro, Shell } from "@/components/site-chrome";
-import { airlineNote, portPages } from "@/data/ports";
+import { portPages } from "@/data/ports";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/ports/")({
@@ -48,7 +48,6 @@ function PortsIndex() {
         ))}
       </div>
       <CabinGuide />
-      <p className="mx-auto max-w-6xl px-4 pb-20 text-base leading-relaxed text-ink">{airlineNote}</p>
         </div>
       </div>
     </Shell>

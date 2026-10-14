@@ -36,9 +36,6 @@ export type PortPage = {
   calls?: PortCall[];
 };
 
-export const airlineNote =
-  "These are airlines that serve the city. A route can be seasonal, and a nonstop on one date may be a connection on another. We check the flight against the day the ship leaves and the day it returns before you book it.";
-
 export const portRegions: PortRegion[] = [
   {
     id: "florida-gulf",
