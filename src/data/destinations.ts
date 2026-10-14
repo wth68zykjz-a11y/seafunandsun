@@ -388,7 +388,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The cruise season runs from April through October. The weather is easier in late spring and early fall.",
+    when: "Sailing season to Bermuda stretches from April through October. While summer brings warmth, the weather is often at its absolute best during the pleasant shoulder months of late spring and early fall.",
     planning: "Tell us whether you want Boston, New York, or Baltimore, and whether that sailing stays overnight.",
     itineraries: [
       {
