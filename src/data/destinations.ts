@@ -919,7 +919,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "Summer is the classic season in North America. The parks are open, the passes are green, and the light lasts. In fall the Rockies are in color, and the stations are quieter. European sleeper trains run mostly from spring through fall, and the famous dates sell out early. We will match the season to the route.",
-    planning: "Name the route: the Empire Builder, the Canadian, or a European sleeper. The nights in between are part of the booking.",
+    planning: "Tell us the journey: the Empire Builder through Glacier National Park, the Canadian across the Rockies toward Vancouver, or a European sleeper where dinner is served as the country goes dark. The hotel nights between trains are part of the trip, and they belong in the same booking.",
     itineraries: [
       {
         title: "Empire Builder",
