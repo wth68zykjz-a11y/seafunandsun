@@ -189,7 +189,7 @@ function ResortsPage() {
         <article className="mt-4 rounded-xl bg-sea p-5 text-foam">
           <h2 className="font-display text-2xl">When to go</h2>
           <p className="mt-3 max-w-3xl text-base leading-relaxed text-foam">
-            Caribbean hurricane season runs June through November. The resort rate for a late-summer week can be lower, and that week can also carry a real storm risk. We will say which of those applies to your dates. The Mexican Caribbean is hot and wet in summer and more reliable from December through April. School breaks and the weeks around Christmas sell out, and the rate for those weeks is higher than the rate for a week in September. Overwater villas are booked on their own dates, and an agent almost always requests those rates.
+            Caribbean hurricane season runs June through November. The resort rate for a late-summer week can be lower, and that week can also carry a real storm risk. The Mexican Caribbean is hot and wet in summer and more reliable from December through April. School breaks and the weeks around Christmas sell out, and the rate for those weeks is higher than the rate for a week in September. Overwater villas are booked on their own dates, and an agent almost always requests those rates.
           </p>
         </article>
 
