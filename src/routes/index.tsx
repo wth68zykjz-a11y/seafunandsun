@@ -70,7 +70,7 @@ const doors: Door[] = [
   {
     kicker: "Ships",
     title: "Cruises",
-    body: "You might see a glacier in the morning, swim a reef in the afternoon, or wake in a new harbor. Each region has its own page.",
+    body: "Wake up in a new harbor. From the icy fjords of Alaska to the coral reefs of the Caribbean, every region offers a different way to see the world.",
     image: "/media/card-cruises.webp",
     mobileImage: "/media/card-cruises-sm.webp",
     alt: "Cruise ships docked along a pier in turquoise water",
@@ -82,7 +82,7 @@ const doors: Door[] = [
   {
     kicker: "Beach",
     title: "Resorts",
-    body: "The room opens onto the water at Sandals, Beaches, Hyatt, Secrets, and Club Med.",
+    body: "Step directly from your room into clear water. We match you with all-inclusive resorts, including Sandals, Beaches, Hyatt, Secrets, and Club Med.",
     image: "/media/card-resorts.webp",
     mobileImage: "/media/card-resorts-sm.webp",
     alt: "An overwater villa with its own pool on a turquoise lagoon",
@@ -94,7 +94,7 @@ const doors: Door[] = [
   {
     kicker: "Snow",
     title: "Ski",
-    body: "You point the skis downhill and the speed arrives all at once. Club Med often includes the meals and the lift pass, while a hotel in Aspen, Banff, the Alps, or Niseko usually leaves the pass separate.",
+    body: "Experience the thrill of the descent. Club Med resorts include the lift pass and the meals. At hotels in Aspen, Banff, the Alps, and Niseko, the pass can be arranged separately.",
     image: "/media/card-ski.webp",
     mobileImage: "/media/card-ski-sm.webp",
     alt: "A person in a red jacket facing the Matterhorn across a snowfield",
@@ -106,7 +106,7 @@ const doors: Door[] = [
   {
     kicker: "Small ships",
     title: "Expedition",
-    body: "You ride a small boat ashore, sometimes onto a beach of ice where there is no town. These cruises go to Antarctica, the Arctic, and the Galápagos.",
+    body: "Venture beyond the usual ports. Small expedition ships take you by Zodiac to Antarctica, the Arctic, and the Galápagos.",
     image: "/media/card-expedition.webp",
     mobileImage: "/media/card-expedition-sm.webp",
     alt: "An expedition ship among Antarctic ice, with a turquoise iceberg in front",
@@ -119,7 +119,7 @@ const doors: Door[] = [
   {
     kicker: "On the ground",
     title: "Rail and land",
-    body: "You see a canyon from the glass car, or you sit down to dinner as the station lights fall behind. We book scenic trains here, sleeper trains in Europe, and a hotel night between them.",
+    body: "Take in a canyon from the glass car, or sit down to dinner as the station lights fade. We arrange scenic trains, European sleeper trains, and the hotel nights between them.",
     image: "/media/card-rail.webp",
     mobileImage: "/media/card-rail-sm.webp",
     alt: "The Glacier Express crossing a stone viaduct in the Alps",
