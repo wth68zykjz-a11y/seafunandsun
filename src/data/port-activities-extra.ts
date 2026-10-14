@@ -95,8 +95,8 @@ export const extraPortPages = [
       },
       {
         name: "Horseshoe Bay",
-        dock: "This is not where the ship docks.",
-        text: "The sand is pale pink, from crushed shell and coral. A taxi from the Dockyard takes about 30 minutes. A bus is closer to 45. The water on a calm day is clear enough to see the bottom near shore.",
+        dock: "This beach is away from the cruise docks.",
+        text: "The sand is a famous pale pink, colored by crushed coral and shells. A 30-minute taxi ride or a 45-minute bus ride from the Dockyard reaches the beach. On a calm day, the clear water offers excellent visibility right near the shore.",
       },
       {
         name: "Hamilton",
@@ -105,8 +105,8 @@ export const extraPortPages = [
       },
       {
         name: "St. George's",
-        dock: "When the ship is at the Dockyard, it does not also dock in St. George's.",
-        text: "St. George's is the older town, at the east end. A bus from the Dockyard takes about an hour. Tobacco Bay has a sheltered beach and rock formations. The town has its own streets and a fort.",
+        dock: "A bus from the Dockyard takes about an hour.",
+        text: "St. George's is an older town at the island's east end, with its own streets and a historic fort. Tobacco Bay is a sheltered beach there, surrounded by rock formations.",
       },
     ],
   },
@@ -173,13 +173,13 @@ export const extraPortPages = [
     stops: [
       {
         name: "Boston",
-        dock: "Most ships use the Black Falcon terminal, in the Seaport.",
-        text: "The Freedom Trail starts at Boston Common. A ride from Black Falcon takes about 15 minutes. From Long Wharf you can walk the Harborwalk toward the aquarium. A lobster roll is lobster meat in a split bun, with butter or mayonnaise.",
+        dock: "Ships generally dock in the Seaport district at the Black Falcon terminal.",
+        text: "A 15-minute ride from the terminal takes you to Boston Common, the starting point of the Freedom Trail. You can also stroll along the Harborwalk from Long Wharf toward the aquarium and have a lobster roll.",
       },
       {
         name: "Bar Harbor",
-        dock: "Ships tender to the town pier.",
-        text: "You can walk Main Street from the pier, and the shore path starts at the town landing. Cadillac Mountain is in Acadia National Park. The ride from the pier takes about 20 to 30 minutes. You look over the islands from the summit.",
+        dock: "Ships anchor and tender to the town pier.",
+        text: "From the landing you can walk along the shore path or explore the shops on Main Street. For a view over the islands, a 20- to 30-minute ride reaches the summit of Cadillac Mountain in Acadia National Park.",
       },
       {
         name: "Halifax",
@@ -404,8 +404,8 @@ export const extraPortPages = [
         photos: [
           { src: "/media/walks/sydney-quay.jpg", alt: "The walk along Circular Quay toward the Opera House and the Harbour Bridge" },
         ],
-        dock: "Many ships use the Overseas Passenger Terminal at Circular Quay. Some use White Bay.",
-        text: "From Circular Quay you can walk to the Opera House and The Rocks. From White Bay you need a ride into the city. Bondi is east. The ride takes about 30 minutes. The beach is a long curve of sand, and the water is cooler than the Caribbean.",
+        dock: "Ships typically dock at the Overseas Passenger Terminal at Circular Quay or at White Bay.",
+        text: "From Circular Quay, you can walk to the Opera House and the historic Rocks district. If your ship docks at White Bay, a short ride is required to reach the city center. To visit the long, curved sandy beach of Bondi, expect a 30-minute ride east.",
       },
       {
         name: "Auckland",
@@ -414,8 +414,8 @@ export const extraPortPages = [
       },
       {
         name: "Melbourne",
-        dock: "The ship docks at Station Pier, in Port Melbourne.",
-        text: "A tram from the pier into the city takes about 20 to 30 minutes. The laneways and the cafés are in the center, not at the pier.",
+        dock: "Ships dock at Station Pier in Port Melbourne.",
+        text: "A convenient tram ride of 20 to 30 minutes takes you from the pier into the city center, where you can explore Melbourne's famous laneways and café culture.",
       },
       {
         name: "Milford Sound",

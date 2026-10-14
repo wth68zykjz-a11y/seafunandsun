@@ -84,8 +84,8 @@ export const portActivities: PortActivityPage[] = [
       },
       {
         name: "Grand Cayman",
-        dock: "Most ships tender into George Town, or use a pier when one is assigned.",
-        text: "Stingray City is a shallow sandbar. The boat ride from the harbor takes about 45 minutes, and southern stingrays swim up to the boat. A taxi from George Town to Seven Mile Beach takes about 15 to 20 minutes. The sand is pale, and the water on the west side is calm.",
+        dock: "Most ships tender into George Town, or use a pier when one is available.",
+        text: "A taxi from the town center to the pale sands of Seven Mile Beach takes about 15 to 20 minutes. A boat ride reaches Stingray City, a shallow sandbar where southern stingrays swim right up to the boat.",
       },
       {
         name: "Jamaica",
@@ -131,8 +131,8 @@ export const portActivities: PortActivityPage[] = [
         photos: [
           { src: "/media/walks/morro.jpg", alt: "The walls of El Morro, the fortress at the end of the walk through Old San Juan" },
         ],
-        dock: "Cruises start and end here, beside Old San Juan. Royal Caribbean’s mid-size ships do that year-round. Viking and Silversea start some cruises here too. The largest ships usually only stop, at the same dock.",
-        text: "You walk the blue cobblestones up to El Morro and the cathedral. A short taxi east of the old city reaches Condado. That beach faces the Atlantic, and the surf can be up. It is not a reef lagoon. In town you can order mofongo, mashed fried plantain with garlic, often topped with shrimp or pork.",
+        dock: "Ships dock beside the blue cobblestone streets of Old San Juan.",
+        text: "From the pier you can walk up to El Morro and the cathedral. If you prefer a beach, a short taxi ride east brings you to Condado, which faces the open Atlantic. In town you can order mofongo, mashed fried plantain with garlic.",
       },
       {
         name: "Aruba, Bonaire, and Curaçao",

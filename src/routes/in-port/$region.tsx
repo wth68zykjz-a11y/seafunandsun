@@ -101,7 +101,7 @@ function InPortPage() {
             className="mt-8 aspect-photo max-h-80 w-full rounded-xl object-cover"
           />
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-ink">{page.note}</p>
-          <div className="mt-8 grid gap-4">
+          <div className="mt-8 grid items-start gap-4 lg:grid-cols-2">
             {page.stops.map((stop) => {
               const thumb = stop.photos?.[0] ?? portThumbs[stop.name];
               const extra = stop.photos && stop.photos.length > 1 ? stop.photos.slice(1) : [];
@@ -139,7 +139,7 @@ function InPortPage() {
             <div>
               <h2 className="font-display text-3xl text-ink">Add one of these to the quote</h2>
               <p className="mt-3 text-base leading-relaxed text-ink">
-                Share your preferred ports and excursions. Rest easy knowing every detail is seamlessly coordinated with your ship's exact arrival and departure times before it is added to your itinerary.
+                Share your preferred ports and desired activities. Enjoy complete peace of mind knowing that every excursion is carefully coordinated with your ship's exact arrival and departure times before it is added to your custom itinerary.
               </p>
             </div>
             <QuoteForm preset={page.region} kind="cruise" />
