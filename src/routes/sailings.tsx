@@ -206,9 +206,9 @@ export const Route = createFileRoute("/sailings")({
   pendingComponent: PromotionsPending,
   head: () =>
     pageHead({
-      title: "Current promotions",
+      title: "Current Travel Promotions & Cruise Deals | Sea Fun & Sun",
       description:
-        "Current cruise and resort promotions from Sea Fun & Sun. Request a quote and we will confirm the fare before anything is booked.",
+        "View our latest exclusive cruise offers, resort promotions, and seasonal travel specials. Contact Sea Fun & Sun to secure your special rate today.",
       path: "/sailings",
       image: "/media/page-sailings.jpg",
     }),

@@ -7,9 +7,9 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/destinations/")({
   head: () =>
     pageHead({
-      title: "Cruise destinations",
+      title: "Worldwide Cruise & Travel Destinations | Sea Fun & Sun",
       description:
-        "Cruise regions from Alaska to Australia, including river and expedition ships. Booked by Sea Fun & Sun in Farmington, Connecticut.",
+        "Discover the world's most breathtaking cruise regions—from Alaska and the Caribbean to Europe and expedition voyages. Request your custom itinerary today.",
       path: "/destinations",
     }),
   component: DestinationsPage,

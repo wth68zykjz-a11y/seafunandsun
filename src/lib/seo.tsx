@@ -23,8 +23,9 @@ export function pageHead(opts: {
   path: string;
   image?: string;
   noindex?: boolean;
+  exactTitle?: boolean;
 }) {
-  const title = opts.title.includes("Sea Fun") ? opts.title : `${opts.title} — ${siteName}`;
+  const title = opts.exactTitle || opts.title.includes("Sea Fun") ? opts.title : `${opts.title} — ${siteName}`;
   const url = absoluteUrl(opts.path);
   const image = absoluteUrl(opts.image ?? "/og.jpg");
   return {

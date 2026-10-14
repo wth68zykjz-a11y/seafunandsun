@@ -8,9 +8,9 @@ import { breadcrumbLd, JsonLd, pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/ski/")({
   head: () =>
     pageHead({
-      title: "Ski vacations",
+      title: "Luxury Ski Packages & Alpine Resorts | Sea Fun & Sun",
       description:
-        "Ski vacations from Sea Fun & Sun: Club Med with meals and lifts often included, or luxury hotels in North America, the Alps, and Japan.",
+        "From Aspen and Jackson Hole to Courchevel and Niseko, we curate elite ski packages, mountain lodging, and pass logistics for effortless alpine getaways.",
       path: "/ski",
       image: "/media/ski-alps.jpg",
     }),

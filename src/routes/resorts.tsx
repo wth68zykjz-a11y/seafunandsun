@@ -7,11 +7,12 @@ import { breadcrumbLd, JsonLd, pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/resorts")({
   head: () =>
     pageHead({
-      title: "All-inclusive resorts",
+      title: "All-Inclusive Resort Vacations | Sandals, Hyatt & More",
       description:
-        "All-inclusive beach resorts and Disney park stays, booked by Sea Fun & Sun in Farmington, Connecticut.",
+        "Step directly from your room into crystal-clear waters. We book premier all-inclusive beach resorts including Sandals, Beaches, Hyatt, Secrets, and Club Med.",
       path: "/resorts",
       image: "/media/resort-villas.jpg",
+      exactTitle: true,
     }),
   component: ResortsPage,
 });

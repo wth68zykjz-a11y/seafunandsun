@@ -1,17 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { DestinationArticle } from "@/routes/destinations/$slug";
 import { destinationBySlug } from "@/data/destinations";
-import { clip, pageHead } from "@/lib/seo";
+import { pageHead } from "@/lib/seo";
 
 const place = destinationBySlug("rail");
 
 export const Route = createFileRoute("/rail/")({
   head: () =>
     pageHead({
-      title: place?.title ?? "Rail and land",
-      description: place
-        ? clip(`${place.lede} Booked by Sea Fun & Sun in Farmington, Connecticut.`)
-        : "Rail vacations and land trips booked by Sea Fun & Sun in Farmington, Connecticut, including luxury European trains.",
+      title: "Scenic Rail & Land Travel Packages | Sea Fun & Sun",
+      description:
+        "Experience breathtaking canyon views from glass-domed cars or classic European sleeper trains, seamlessly coordinated with custom luxury hotel stays.",
       path: "/rail",
     }),
   component: RailPage,

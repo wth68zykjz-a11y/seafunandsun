@@ -8,6 +8,39 @@ import { portActivityBySlug } from "@/data/port-activities";
 import { destinationPhotos, type DestinationPhoto } from "@/data/destination-photos";
 import { breadcrumbLd, clip, JsonLd, pageHead } from "@/lib/seo";
 
+const destinationSeo: Record<string, { title: string; description: string }> = {
+  alaskan: {
+    title: "Alaska Cruise Packages & Itinerary Planning | Sea Fun & Sun",
+    description:
+      "Experience massive glaciers, whales, and the Inside Passage. Compare round-trip Seattle sailings and one-way Gulf routes with expert Alaska guidance.",
+  },
+  caribbean: {
+    title: "Caribbean Cruises & Island Getaways | Sea Fun & Sun",
+    description:
+      "Find your ideal Caribbean escape. We compare western reef routes, southern island loops, and eastern sailings departing from Florida and San Juan.",
+  },
+  european: {
+    title: "European Cruises & Atlantic City Voyages | Sea Fun & Sun",
+    description:
+      "Sail from Lisbon to London and Amsterdam. Let our expert agents handle the complex port distances and map out your dream European cruise and hotel stay.",
+  },
+  mediterranean: {
+    title: "Mediterranean Cruises & Greek Isles | Sea Fun & Sun",
+    description:
+      "Wake up in Barcelona, Rome, or Athens. Explore our curated Mediterranean and Adriatic cruise packages, complete with expert tips for every port.",
+  },
+  asia: {
+    title: "Asia Cruises & Pacific Itineraries | Sea Fun & Sun",
+    description:
+      "Sail from vibrant hubs like Singapore and Tokyo. We handle the complex flights and hotel stays to ensure your Asian cruise is entirely seamless.",
+  },
+  expedition: {
+    title: "Small-Ship Expedition Cruises | Sea Fun & Sun Travel",
+    description:
+      "Venture beyond traditional ports. We book small-ship expedition cruises with Zodiac landings and naturalists in Antarctica, the Arctic, and the Galápagos.",
+  },
+};
+
 export const Route = createFileRoute("/destinations/$slug")({
   beforeLoad: ({ params }) => {
     if (params.slug === "rail") throw redirect({ to: "/rail", statusCode: 301 });
@@ -17,16 +50,20 @@ export const Route = createFileRoute("/destinations/$slug")({
     if (!place) throw notFound();
     return place;
   },
-  head: ({ loaderData }) =>
-    pageHead({
-      title: loaderData?.title ?? "Destination",
-      description: loaderData
-        ? clip(`${loaderData.lede} Booked by Sea Fun & Sun in Farmington, Connecticut.`)
-        : "Cruise destinations booked by Sea Fun & Sun in Farmington, Connecticut.",
+  head: ({ loaderData }) => {
+    const seo = loaderData ? destinationSeo[loaderData.slug] : undefined;
+    return pageHead({
+      title: seo?.title ?? loaderData?.title ?? "Destination",
+      description:
+        seo?.description ??
+        (loaderData
+          ? clip(`${loaderData.lede} Booked by Sea Fun & Sun in Farmington, Connecticut.`)
+          : "Cruise destinations booked by Sea Fun & Sun in Farmington, Connecticut."),
       path: loaderData ? `/destinations/${loaderData.slug}` : "/destinations",
       image: loaderData?.image,
       noindex: !loaderData,
-    }),
+    });
+  },
   component: DestinationPage,
 });
 

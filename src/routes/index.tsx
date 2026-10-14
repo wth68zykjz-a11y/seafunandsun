@@ -8,9 +8,9 @@ import { faqLd, JsonLd, pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/")({
   head: () => {
     const head = pageHead({
-      title: "Sea Fun & Sun | Cruises, resorts, ski vacations, and rail trips — Farmington, CT",
+      title: "Sea Fun & Sun | Luxury Travel & Custom Cruise Planner",
       description:
-        "When we book a cruise, a resort, a ski vacation, or a rail trip, one agent handles it. Sea Fun & Sun, Farmington, Connecticut. No separate agent fee.",
+        "Plan your next escape with an independent travel expert based in Farmington, CT. Specializing in custom cruises, all-inclusive resorts, and ski getaways.",
       path: "/",
       image: "/media/card-cruises.webp",
     });
