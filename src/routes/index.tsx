@@ -283,7 +283,7 @@ function Home() {
             <div>
               <h2 className="font-display text-3xl text-ink">The Sea Fun & Sun Difference</h2>
               <p className="mt-3 text-base leading-relaxed text-ink">
-                Based right here in Farmington, Connecticut, Laura S handles your booking from start to finish. You will never be handed off to a call center; the exact same expert agent who builds your initial quote stays with your vacation until you are safely back home.
+                Based in Farmington, Connecticut, Laura S handles your booking from start to finish. You will never be handed off to a call center; the exact same expert agent who builds your initial quote stays with your vacation until you are safely back home.
               </p>
               <p className="mt-3 text-base leading-relaxed text-ink">
                 Call or text{" "}
