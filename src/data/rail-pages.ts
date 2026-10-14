@@ -54,7 +54,7 @@ export const railPages: RailPage[] = [
     slug: "zephyr-dining",
     nav: "Zephyr dining",
     title: "California Zephyr dining",
-    lede: "The dining car and the cafe are not the same meal. A roomette includes one. Coach passengers pay for the other.",
+    lede: "The Zephyr has a dining car and a cafe under the sightseer lounge. A roomette includes breakfast, lunch, and dinner in the dining car. The cafe sells sandwiches, snacks, and drinks to every passenger.",
     photos: [
       {
         src: "/media/rail/superliner-diner.jpg",
@@ -131,7 +131,7 @@ export const railPages: RailPage[] = [
     slug: "southwest-chief",
     nav: "Southwest Chief",
     title: "Southwest Chief",
-    lede: "Two nights from Chicago to Los Angeles. Raton Pass and Apache Canyon pass the sightseer lounge. The train does not stop in the canyon.",
+    lede: "A two-night journey from Chicago to Los Angeles. You see Raton Pass and Apache Canyon from the sightseer lounge.",
     photos: [
       {
         src: "/media/rail/southwest-chief-raton.jpg",
@@ -155,9 +155,9 @@ export const railPages: RailPage[] = [
       {
         heading: "Where the train actually stops",
         paragraphs: [
-          "The stop in Raton is about four minutes. The stop in Lamy is about four minutes. A van from Lamy takes you to a hotel in Santa Fe. Santa Fe is not at the platform.",
-          "The train stops for about forty minutes in Albuquerque, and only a few minutes in Winslow. La Posada, the old Harvey hotel, sits beside the Winslow station, and a night there gives you dinner in the hotel and a walk on the Route 66 streets. You cannot do that from the platform. The Flagstaff stop is a few minutes as well, and on many dates the train is there at night. The South Rim, the southern edge of the Grand Canyon, is about an hour and a half by road from Flagstaff. The Rim Trail is a paved path along that edge. You walk it and look down into the canyon. If you want that walk, get off and stay.",
-          "Amtrak has listed a bus connection at Williams Junction for the Grand Canyon Railway. We check whether that stop is on your date. The railway itself is a separate train, from Williams to the South Rim.",
+          "The train pauses in Lamy for about four minutes. A van from there goes to a hotel in Santa Fe. Santa Fe is not at the platform.",
+          "In Albuquerque the train stops for about forty minutes, long enough for the platform and the vendors beside it. Old Town is about two miles away. If you want the plaza and the church of San Felipe de Neri, get off and stay the night.",
+          "The Flagstaff stop is a few minutes, and on many dates the train is there at night. The South Rim is about an hour and a half by road from Flagstaff. Amtrak has listed a bus at Williams Junction for the Grand Canyon Railway, a separate train from Williams to the rim. If you want to walk the Rim Trail, that is a night off the Chief.",
         ],
       },
       {
@@ -299,7 +299,7 @@ export const railPages: RailPage[] = [
     slug: "the-canadian",
     nav: "The Canadian",
     title: "The Canadian",
-    lede: "About four nights of country, from Toronto to Vancouver. You sleep in a cabin. The Shield and the Rockies are what you see from the dome.",
+    lede: "About four nights from Toronto to Vancouver. You see the lakes of the Canadian Shield, the prairie, and the Rockies from the Skyline and Park cars.",
     photos: [
       {
         src: "/media/rail/canadian-rockies.jpg",
@@ -317,7 +317,7 @@ export const railPages: RailPage[] = [
         heading: "The train",
         paragraphs: [
           "The Canadian takes about four nights from Toronto to Vancouver. It crosses the lakes of the Canadian Shield, the prairie, and the Rockies. You see the Shield from the Skyline dome. West of Jasper you see Mount Robson from the train. Between Kamloops and Vancouver the train follows the Fraser Canyon. You see the river from the dome.",
-          "Sleeper Plus is a cabin for one, a cabin for two, or an upper or lower berth. The bed is in the cabin or the berth. The dome is where you sit to look out. Prestige is a larger cabin, with more time in the Park car at the rear. That car has a second dome. Economy does not include the meals.",
+          "Sleeper Plus is a cabin for one, a cabin for two, or an upper or lower berth. It includes the meals and time in the Skyline dome when a seat is free. Prestige is a larger cabin, with more time in the Park car at the rear, and that car has a second dome. Economy is a seat, and the meals are not included.",
         ],
       },
       {
@@ -329,7 +329,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Meals",
         paragraphs: [
-          "Sleeper Plus includes breakfast, lunch, and dinner in the dining car. Breakfast starts at 6:30. You choose one of two seatings for lunch and dinner. There is always a vegetarian dish. Wine is sold by the glass. It is not included the way the first drink is on Amtrak.",
+          "Sleeper Plus includes breakfast, lunch, and dinner in the dining car. Breakfast starts at 6:30. You choose one of two seatings for lunch and dinner. There is always a vegetarian dish. VIA changes the menu. Breakfast has included a chef’s omelette. Dinner has included trout, pesto chicken, and beef. Wine is sold by the glass.",
           "VIA changes the menu. Breakfast has included a chef’s omelette. Lunch has included a pulled-turkey wrap and ginger beef on rice. Dinner has included trout, pesto chicken, and beef. The dishes on your date can differ.",
         ],
       },

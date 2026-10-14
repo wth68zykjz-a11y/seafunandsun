@@ -345,7 +345,7 @@ function PromotionsIntro() {
       <PageIntro
         kicker="Promotions"
         title="Exclusive Offers & Seasonal Promotions"
-        lede="Extraordinary travel, paired with exceptional value."
+        lede="Cruise, river, and resort offers, checked against the fare rules before you book."
       />
       <div className="mx-auto max-w-6xl space-y-4 px-4">
         <p className="max-w-3xl text-base leading-relaxed text-ink">

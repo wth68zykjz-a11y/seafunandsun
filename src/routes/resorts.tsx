@@ -18,11 +18,11 @@ export const Route = createFileRoute("/resorts")({
 });
 
 const included = [
-  "A category called deluxe is not an ocean view unless the description says ocean view.",
   "Breakfast, lunch, and dinner at the restaurants on the inclusion list. A few of those restaurants take reservations, and those tables fill.",
   "House wine, beer, and a defined liquor list. The top shelf is often a separate charge.",
   "Non-motorized water sports and the fitness room, at most of the properties we book.",
   "Gratuities, at Sandals, Beaches, and much of the Hyatt Inclusive Collection. Not at every brand.",
+  "A category called deluxe is not an ocean view unless the description says ocean view.",
 ];
 
 const excluded = [
@@ -84,9 +84,9 @@ function ResortsPage() {
         />
         <div className="flex flex-col justify-center">
           <p className="text-sm font-medium text-tide">All-inclusive resorts</p>
-          <h1 className="mt-2 font-display text-3xl sm:text-5xl">Breakfast is already in the rate.</h1>
+          <h1 className="mt-2 font-display text-3xl sm:text-5xl">The meals are already in the rate.</h1>
           <p className="mt-4 text-lg text-mute">
-            The room faces the water, or the garden. Flights, the airport transfer, and a day away from the property can be added.
+            At most of these resorts a set of drinks and the non-motorized water sports are included too. Flights, the airport transfer, and a day away from the property can be added.
           </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Link

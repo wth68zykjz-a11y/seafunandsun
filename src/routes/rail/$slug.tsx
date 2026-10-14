@@ -88,7 +88,11 @@ function RailTopicPage() {
             </Link>
           ))}
       </nav>
-      <QuoteForm preset="Rail Vacations" kind="land" />
+        <div className="mx-auto max-w-6xl px-4 pb-4">
+          <h2 className="font-display text-3xl">Plan the rail trip.</h2>
+          <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink">Tell us the route, the dates, and whether you want a private room. We will send a plan for that train and the nights between stations.</p>
+        </div>
+        <QuoteForm preset="Rail Vacations" kind="land" />
     </Shell>
   );
 }
