@@ -31,13 +31,13 @@ export const railPages: RailPage[] = [
       {
         heading: "The train",
         paragraphs: [
-          "The California Zephyr runs between Chicago and Emeryville, across the bay from San Francisco. A bus from Emeryville connects into the city. The trip is about two nights on the train. A roomette has a bed and a door. A coach seat does not. You see the Colorado River and Donner Pass from the glass car.",
+          "The California Zephyr runs between Chicago and Emeryville, across the bay from San Francisco. A bus from Emeryville connects into the city. The trip is about two nights on the train. A roomette has a bed and a door. You see the Colorado River and Donner Pass from the glass car.",
         ],
       },
       {
         heading: "What you see from the glass car",
         paragraphs: [
-          "After Denver the train passes through the Moffat Tunnel, then Gore Canyon, Byers Canyon, and Glenwood Canyon along the Colorado River. West of Grand Junction it follows the river through Ruby Canyon. The train does not stop in those canyons.",
+          "After Denver the train passes through the Moffat Tunnel, then Gore Canyon, Byers Canyon, and Glenwood Canyon along the Colorado River. West of Grand Junction it follows the river through Ruby Canyon. You see those canyons from the sightseer lounge.",
           "In California the train crosses Donner Pass. The Truckee River and Donner Lake are beside the tracks. The last stretch runs along San Pablo Bay into Emeryville.",
         ],
       },
@@ -106,7 +106,7 @@ export const railPages: RailPage[] = [
       {
         heading: "The train",
         paragraphs: [
-          "The Empire Builder leaves Chicago for Seattle. At Spokane, the Portland cars are switched onto a separate section. The trip is about two nights. A roomette has a bed and a door. A coach seat does not.",
+          "The Empire Builder leaves Chicago for Seattle. At Spokane, the Portland cars are switched onto a separate section. The trip is about two nights. A roomette has a bed and a door.",
           "You see Glacier National Park from the sightseer lounge. Between East Glacier and Essex the train crosses Marias Pass, and that is the view from the lounge.",
         ],
       },
@@ -115,7 +115,7 @@ export const railPages: RailPage[] = [
         paragraphs: [
           "East Glacier Park and West Glacier have summer service, and each station pause is brief. The Essex stop is a flag stop beside the Izaak Walton Inn. The stop at Whitefish is about fifteen minutes on the current timetable. Those minutes are enough to step onto the platform.",
           "Going-to-the-Sun Road crosses Glacier National Park, and Lake McDonald sits near the west entrance. A boat on the lake, or a walk beside it, takes hours inside the park. The drive from Whitefish to that entrance is about half an hour, and the train only stops in Whitefish for about fifteen minutes. Get off in Whitefish and stay the night if you want to be in the park the next day. The stop in Havre, out on the plains, is longer, about twenty minutes, and it is there so the crew can change. You will not see the park from Havre.",
-          "On the Portland section the train follows the Columbia River through the gorge. The train stops briefly at Bingen–White Salmon, on the Washington side. Multnomah Falls is on the Oregon side, a two-tier waterfall about 620 feet high, with a trail to the bridge in front of it. The train does not stop at the falls. If you want that walk, get off in Portland and stay the night.",
+          "On the Portland section the train follows the Columbia River through the gorge, and you see Multnomah Falls from the train. The falls are on the Oregon side, a two-tier waterfall about 620 feet high, with a trail to the bridge in front of them. The station on the Washington side is Bingen–White Salmon, and the pause there is brief. A walk to the bridge is a night in Portland.",
         ],
       },
       {
@@ -148,7 +148,7 @@ export const railPages: RailPage[] = [
       {
         heading: "The train",
         paragraphs: [
-          "The Southwest Chief runs between Chicago and Los Angeles. The trip is about forty-three hours. A roomette has a bed and a door. A coach seat does not.",
+          "The Southwest Chief runs between Chicago and Los Angeles. The trip is about forty-three hours. A roomette has a bed and a door.",
           "West of Albuquerque the train crosses the high desert toward Gallup and Winslow. The San Francisco Peaks stand above Flagstaff. On many dates you pass them in the dark. A daylight look at Raton Pass and Apache Canyon is the westbound afternoon.",
         ],
       },
@@ -173,7 +173,7 @@ export const railPages: RailPage[] = [
     slug: "coast-starlight",
     nav: "Coast Starlight",
     title: "Coast Starlight",
-    lede: "One night from Seattle to Los Angeles. Mount Shasta and the Pacific are outside the sightseer lounge. The train does not stop on the beach.",
+    lede: "One night from Seattle to Los Angeles. You see Mount Shasta and the Pacific from the sightseer lounge.",
     photos: [
       {
         src: "/media/rail/coast-starlight.jpg",
@@ -190,8 +190,8 @@ export const railPages: RailPage[] = [
       {
         heading: "The train",
         paragraphs: [
-          "The Coast Starlight runs between Seattle and Los Angeles in about thirty-five hours. A roomette has a bed and a door. A coach seat does not.",
-          "In Oregon and northern California you can see the Cascades, and Mount Shasta when the weather is clear. The train does not stop at the mountain. Between San Luis Obispo and Santa Barbara the train runs along the Pacific. You see that shore from the sightseer lounge.",
+          "The Coast Starlight runs between Seattle and Los Angeles in about thirty-five hours. A roomette includes the meals in the dining car.",
+          "In Oregon and northern California you can see the Cascades, and Mount Shasta when the weather is clear. Between San Luis Obispo and Santa Barbara the train runs along the Pacific, and you see that shore from the sightseer lounge. Portland, Sacramento, San Luis Obispo, and Santa Barbara are the cities where a night off the train gives you the day.",
         ],
       },
       {
@@ -244,8 +244,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Meals",
         paragraphs: [
-          "The cafe car sells sandwiches, snacks, and drinks to every passenger. First Class and the dome and parlor cars add a snack: pastries and coffee on the way north, cheese and vegetables on the way back. That snack is not a dining-car dinner.",
-          "A plated breakfast is at the Fred Harvey restaurant in Williams. Dinner is at El Tovar, beside the Rim Trail, a short walk from the depot. We book the hotel and the table with the train when you want them.",
+          "The cafe car sells sandwiches, snacks, and drinks to every passenger. First Class and the dome and parlor cars add pastries and coffee on the way north, and cheese and vegetables on the way back. Breakfast is at the Fred Harvey restaurant in Williams. Dinner is at El Tovar, beside the Rim Trail.",
         ],
       },
     ],
@@ -254,7 +253,7 @@ export const railPages: RailPage[] = [
     slug: "northeast-trains",
     nav: "Northeast trains",
     title: "Adirondack, Vermonter, and Downeaster",
-    lede: "Daylight only. The Hudson, the Connecticut River, or the Maine coast is outside the coach window. There is no bed and no dining car.",
+    lede: "Daylight trains along the Hudson, the Connecticut River, or the Maine coast. A cafe car sells sandwiches, snacks, and drinks.",
     photos: [
       {
         src: "/media/rail/adirondack-hudson.jpg",
@@ -290,7 +289,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Meals",
         paragraphs: [
-          "Each of these trains has a cafe. You buy sandwiches, snacks, and drinks. There is no dining car and no sleeper.",
+          "Each of these trains has a cafe car for sandwiches, snacks, and drinks. You sleep in a hotel if you get off for the night.",
         ],
       },
     ],
@@ -377,21 +376,21 @@ export const railPages: RailPage[] = [
         heading: "Venice Simplon-Orient-Express",
         paragraphs: [
           "This is Belmond. Many dates run from Paris toward Venice, and some continue toward Istanbul or Vienna. You sleep on the train. Dinner and breakfast are included. A longer route can include lunch.",
-          "You can book a historic twin, a suite, or a grand suite. The cabin is where you sleep. Dinner is in the dining car, and the dress for dinner is formal. An agent requests the fare, because these dates are not posted like an Amtrak roomette.",
+          "You can book a historic twin, a suite, or a grand suite. The cabin is where you sleep. Dinner is in the dining car, and the dress for dinner is formal. The fare is requested for your dates.",
         ],
       },
       {
         heading: "La Dolce Vita Orient Express",
         paragraphs: [
           "This train stays in Italy. A one-night trip can run from Rome toward Venice, or the other way. A two-night trip can run from Palermo to Rome. The train follows the coast of Sicily, and you can get off and spend the afternoon in Taormina. Then the train is carried on a ferry across the Strait of Messina. You can watch that crossing from the deck. The train stops in Naples in the evening. You get off in Rome in the morning.",
-          "You sleep on the train. A deluxe cabin is about seven square meters, with its own bathroom. A suite is larger, about eleven square meters. Lunch and dinner are included. On some Sicily dates the menus are Heinz Beck’s. An agent requests the fare.",
+          "You sleep on the train. A deluxe cabin is about seven square meters, with its own bathroom. A suite is larger, about eleven square meters. Lunch and dinner are included. On some Sicily dates the menus are Heinz Beck’s. The fare is requested for your dates.",
         ],
       },
       {
         heading: "Golden Eagle Danube Express",
         paragraphs: [
           "The Golden Eagle Danube Express runs through Central Europe and the Balkans. One route leaves Venice for Istanbul, and you get off in Trieste, Sarajevo, Mostar, Belgrade, Sofia, and Plovdiv. You do not sleep on the train every night. On some nights you sleep in a hotel in one of those cities.",
-          "A Superior Deluxe cabin is about nine square meters, with a shower. Breakfast is at the table. Lunch and dinner come with wine. Dress on this train is informal. An agent requests the fare.",
+          "A Superior Deluxe cabin is about nine square meters, with a shower. Breakfast is at the table. Lunch and dinner come with wine. Dress on this train is informal. The fare is requested for your dates.",
         ],
       },
       {
@@ -407,7 +406,7 @@ export const railPages: RailPage[] = [
     slug: "alpine-trains",
     nav: "Alpine day trains",
     title: "Glacier Express and Bernina Express",
-    lede: "These trains cross the passes in daylight, and the panorama windows stay full of rock and snow. You sleep in a hotel, not on the train.",
+    lede: "These trains cross the passes in daylight, and the panorama windows stay full of rock and snow. You sleep in a hotel in Zermatt, St. Moritz, or Chur.",
     photos: [
       {
         src: "/media/rail/glacier-express.jpg",
@@ -431,7 +430,7 @@ export const railPages: RailPage[] = [
         paragraphs: [
           "The Glacier Express runs from Zermatt to St. Moritz, or the reverse, in about eight hours. It crosses 291 bridges and passes through 91 tunnels. The high point is the Oberalp Pass, at 2,033 meters. The Rhine Gorge is a pale canyon. You see both from the panorama windows.",
           "Meals are served at your seat. Excellence class includes a set menu. A recent menu started with Swiss smoked trout, then pea soup, a fillet of Swiss beef, a plate of Grisons mountain cheese and sheep’s cheese, and chocolate cake, with wine. First and second class can order a shorter lunch. The menu changes.",
-          "You get off in the evening and sleep in a hotel in Zermatt or St. Moritz. The Matterhorn stands above Zermatt. You see it from the town, before the train or after it. The Glacier Express does not climb the mountain.",
+          "You get off in the evening and sleep in a hotel in Zermatt or St. Moritz. The Matterhorn stands above Zermatt, and you see it from the town, before the train or after it.",
         ],
       },
       {

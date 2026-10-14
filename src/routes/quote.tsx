@@ -26,16 +26,16 @@ function QuotePage() {
     <Shell>
       <PageIntro
         kicker="A quote"
-        title="Tell us where you want to go."
-        lede="Tell us the place and the dates. You approve the price before anything is booked."
+        title="How a trip is planned."
+        lede="Tell us the place and the dates. You see the price before anything is booked."
       />
       <ol className="mx-auto grid max-w-6xl gap-4 px-4 pb-10 sm:grid-cols-2">
         {[
-          ["1. Tell us the trip", "Call, text, or use the form, and name the place and the dates. A cruise leaves from a port such as Miami, Seattle, or Vancouver. A resort does not. You fly there and stay. We arrange either trip from your home."],
-          ["2. We price the pieces separately", "The cruise or hotel, the flight, and any nights before or after are priced on their own, so you can see which price changed. A past-passenger number may improve the cruise price. A frequent-flyer number may improve the airfare. Military discounts are often available on both. Tell us if one of these applies."],
-          ["3. You choose", "We send the sailing, the cabin, and the price. You approve it before anything is booked. Yacht sailings, many luxury hotels, and European sleeper trains have no public fare. An agent requests that price and sends it to you."],
-          ["4. You pay the supplier", "The card payment goes to the cruise line, resort, hotel, or operator. We do not hold the card. There is no separate agent fee. The supplier pays our commission."],
-          ["5. One agent handles the booking", "That person arranges the trip, takes the deposit, watches the final-payment date, makes a change if you need one, and matches the flight to the day the ship leaves and the day it returns."],
+          ["1. The trip", "Call, text, or use the form. Name the place, the dates, and whether anyone has a past-passenger number, a frequent-flyer number, or a military discount."],
+          ["2. The prices, listed separately", "The cruise or hotel, the flight, the rail ticket, and any nights before or after are priced on their own, so you can see each part."],
+          ["3. You choose", "You see the cabin, the room, or the train compartment, and the price, before anything is booked. Yacht sailings, many luxury hotels, and European sleeper trains are priced by request."],
+          ["4. You pay the supplier", "The card payment goes to the cruise line, the hotel, or the rail operator."],
+          ["5. One agent stays with the booking", "That person takes the deposit, watches the final-payment date, and matches the flight to the day you leave and the day you return."],
         ].map(([title, text]) => (
           <li key={title} className="rounded-xl border border-line bg-foam p-5">
             <h2 className="font-display text-2xl text-ink">{title}</h2>

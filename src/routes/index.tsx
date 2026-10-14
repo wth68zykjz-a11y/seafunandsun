@@ -263,9 +263,9 @@ function Home() {
           </p>
           <ol className="mt-6 grid gap-4 md:grid-cols-3">
             {[
-              ["1. Tell us the trip", "Call, text, or use the form, and name the place and the dates."],
-              ["2. We send the price", "You see the sailing or the hotel, the cabin or the room, and the flights if you want them included. Nothing is booked until you approve it."],
-              ["3. You pay the supplier", "The payment goes to the cruise line, the resort, or the operator. We do not hold the card."],
+              ["1. The trip", "Call, text, or use the form, and name the place and the dates."],
+              ["2. The price", "You see the sailing or the hotel, the cabin or the room, and the flights if you want them included. Nothing is booked until you approve it."],
+              ["3. You pay the supplier", "The payment goes to the cruise line, the resort, or the rail operator."],
             ].map(([title, text]) => (
               <li key={title} className="rounded-xl border border-line bg-foam p-5">
                 <h3 className="font-display text-2xl text-ink">{title}</h3>
