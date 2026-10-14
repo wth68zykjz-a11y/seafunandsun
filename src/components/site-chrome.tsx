@@ -67,7 +67,7 @@ export function Header() {
   const path = useRouterState({ select: (state) => state.location.pathname });
 
   return (
-    <header className="sticky top-0 z-20 border-b border-sea bg-sea">
+    <header className="sticky top-0 z-20 border-b border-sea bg-sea pt-[env(safe-area-inset-top)]">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Wordmark tone="foam" />
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
@@ -245,7 +245,7 @@ export function Header() {
         </nav>
       ) : null}
       {open ? (
-        <div className="border-t border-foam/15 bg-sea px-4 py-3 text-foam lg:hidden">
+        <div className="max-h-[calc(100dvh-4.75rem-env(safe-area-inset-top))] overflow-y-auto overscroll-contain border-t border-foam/15 bg-sea px-4 py-3 text-foam lg:hidden">
           <nav className="grid" aria-label="Mobile">
             <details className="border-b border-foam/15">
               <summary className="flex min-h-12 cursor-pointer list-none items-center gap-1 text-base font-medium [&::-webkit-details-marker]:hidden">
@@ -371,35 +371,37 @@ export function Footer() {
             </a>
           </p>
         </div>
-        <div>
-          <p className="text-base font-medium">Explore</p>
-          <ul className="mt-2 grid gap-y-2 text-base leading-6 text-foam/90">
-            <li><Link to="/destinations" className="hover:text-foam">Destinations & Cruises</Link></li>
-            <li><Link to="/resorts" className="hover:text-foam">Resorts</Link></li>
-            <li><Link to="/ski" className="hover:text-foam">Ski Vacations</Link></li>
-            <li>
-              <Link to="/destinations/$slug" params={{ slug: "expedition" }} className="hover:text-foam">
-                Expedition Cruises
-              </Link>
-            </li>
-            <li><Link to="/rail" className="hover:text-foam">Rail & Land Journeys</Link></li>
-            <li><Link to="/sailings" hash="promotions" className="hover:text-foam">Current Promotions</Link></li>
-          </ul>
-        </div>
-        <div>
-          <p className="text-base font-medium">Destinations</p>
-          <ul className="mt-2 grid gap-y-2 text-base leading-6 text-foam/90">
-            <li><Link to="/destinations/$slug" params={{ slug: "alaskan" }} className="hover:text-foam">Alaska Cruises</Link></li>
-            <li><Link to="/destinations/$slug" params={{ slug: "caribbean" }} className="hover:text-foam">Caribbean Cruises</Link></li>
-            <li><Link to="/destinations/$slug" params={{ slug: "european" }} className="hover:text-foam">European Cruises</Link></li>
-            <li><Link to="/destinations/$slug" params={{ slug: "mediterranean" }} className="hover:text-foam">Mediterranean</Link></li>
-            <li><Link to="/destinations/$slug" params={{ slug: "asia" }} className="hover:text-foam">Asia Cruises</Link></li>
-            <li><Link to="/destinations/$slug" params={{ slug: "australia-new-zealand" }} className="hover:text-foam">Australia & New Zealand</Link></li>
-            <li><Link to="/destinations/$slug" params={{ slug: "world" }} className="hover:text-foam">World Cruises</Link></li>
-          </ul>
+        <div className="grid grid-cols-2 items-start gap-x-6 gap-y-8 lg:contents">
+          <div>
+            <p className="text-base font-medium">Explore</p>
+            <ul className="mt-2 grid gap-y-2 text-base leading-6 text-foam/90">
+              <li><Link to="/destinations" className="hover:text-foam">Destinations & Cruises</Link></li>
+              <li><Link to="/resorts" className="hover:text-foam">Resorts</Link></li>
+              <li><Link to="/ski" className="hover:text-foam">Ski Vacations</Link></li>
+              <li>
+                <Link to="/destinations/$slug" params={{ slug: "expedition" }} className="hover:text-foam">
+                  Expedition Cruises
+                </Link>
+              </li>
+              <li><Link to="/rail" className="hover:text-foam">Rail & Land Journeys</Link></li>
+              <li><Link to="/sailings" hash="promotions" className="hover:text-foam">Current Promotions</Link></li>
+            </ul>
+          </div>
+          <div>
+            <p className="text-base font-medium">Destinations</p>
+            <ul className="mt-2 grid gap-y-2 text-base leading-6 text-foam/90">
+              <li><Link to="/destinations/$slug" params={{ slug: "alaskan" }} className="hover:text-foam">Alaska Cruises</Link></li>
+              <li><Link to="/destinations/$slug" params={{ slug: "caribbean" }} className="hover:text-foam">Caribbean Cruises</Link></li>
+              <li><Link to="/destinations/$slug" params={{ slug: "european" }} className="hover:text-foam">European Cruises</Link></li>
+              <li><Link to="/destinations/$slug" params={{ slug: "mediterranean" }} className="hover:text-foam">Mediterranean</Link></li>
+              <li><Link to="/destinations/$slug" params={{ slug: "asia" }} className="hover:text-foam">Asia Cruises</Link></li>
+              <li><Link to="/destinations/$slug" params={{ slug: "australia-new-zealand" }} className="hover:text-foam">Australia & New Zealand</Link></li>
+              <li><Link to="/destinations/$slug" params={{ slug: "world" }} className="hover:text-foam">World Cruises</Link></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="border-t border-foam/15">
+      <div className="border-t border-foam/15 pb-[env(safe-area-inset-bottom)]">
         <div className="mx-auto grid max-w-6xl gap-2 px-4 py-4 text-base leading-relaxed text-foam/90">
           <p>© {new Date().getFullYear()} Sea Fun & Sun · Farmington, CT</p>
           <p>Booking engine powered by Outside Agents · Independent Affiliate of A.S.A.P. Cruises Inc.</p>

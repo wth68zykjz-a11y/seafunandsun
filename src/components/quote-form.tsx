@@ -128,7 +128,7 @@ export function QuoteForm({
   }
 
   return (
-    <form onSubmit={onSubmit} className="mx-auto w-full max-w-lg rounded-xl border border-line bg-foam p-3 shadow-card sm:p-4 lg:mx-0">
+    <form onSubmit={onSubmit} className="mx-auto w-full max-w-lg rounded-xl border border-line bg-foam p-4 shadow-card lg:mx-0">
       <h3 className="font-display text-xl text-ink">Request a quote</h3>
       <p className="mt-1 text-base leading-relaxed text-ink">Tell us your name, your email, and where you want to go. We reply the same day in most cases. There is no separate agent fee.</p>
       {chooseTrip ? (
@@ -189,7 +189,7 @@ export function QuoteForm({
         <textarea className={`${field} min-h-20 py-2`} name="plans" defaultValue={note} placeholder="Optional. Flights, a hotel, a shore excursion, or other notes." />
       </label>
       <label className="mt-3 flex items-start gap-3 text-base leading-relaxed text-ink">
-        <input name="marketingOptIn" type="checkbox" className="mt-1 size-4 accent-tide" />
+        <input name="marketingOptIn" type="checkbox" className="mt-1 size-6 shrink-0 accent-tide" />
         <span>
           You may call or text me about this trip. This is optional, and it is not required in order to request a quote. Reply STOP to opt out later. See the{" "}
           <Link to="/policies/$doc" params={{ doc: "privacy" }} className="text-tide underline-offset-2 hover:underline">

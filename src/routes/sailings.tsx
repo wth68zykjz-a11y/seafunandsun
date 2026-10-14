@@ -279,6 +279,15 @@ function DealsOfTheWeek({ offers }: { offers: SupplierOffer[] }) {
           );
         })}
       </div>
+      <img
+        src="/media/page-sailings-sm.webp"
+        alt="The bow of a white ship in calm water at golden hour"
+        width={640}
+        height={427}
+        loading="lazy"
+        decoding="async"
+        className="mt-8 aspect-photo max-h-56 w-full rounded-xl object-cover md:hidden"
+      />
       <h3 className="mt-12 font-display text-2xl text-ink">More current offers</h3>
       {offerGroups.map((group) => {
         const items =
@@ -369,7 +378,7 @@ function SailingsPage() {
   return (
     <Shell>
       <PromotionsIntro />
-      <div className="mx-auto mt-8 max-w-6xl px-4">
+      <div className="mx-auto mt-8 hidden max-w-6xl px-4 md:block">
         <img src="/media/page-sailings-sm.webp" alt="The bow of a white ship in calm water at golden hour" width={640} height={427} loading="lazy" decoding="async" className="aspect-photo max-h-72 w-full rounded-xl object-cover" />
       </div>
       <section id="promotions" className="mx-auto mt-10 max-w-6xl scroll-mt-24 px-4 pb-20">

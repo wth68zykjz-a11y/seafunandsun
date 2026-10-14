@@ -204,8 +204,8 @@ export function DestinationArticle({
           </p>
           <p className="mt-3 text-base font-medium text-foam">{place.card}</p>
           <h1 className="mt-2 font-display text-3xl sm:text-5xl">{place.title}</h1>
-          <p className="mt-4 text-lg text-foam">{place.lede}</p>
-          {place.ledeMore ? <p className="mt-4 text-lg text-foam">{place.ledeMore}</p> : null}
+          <p className="mt-4 hidden text-lg text-foam lg:block">{place.lede}</p>
+          {place.ledeMore ? <p className="mt-4 hidden text-lg text-foam lg:block">{place.ledeMore}</p> : null}
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Link
               to="/quote"
@@ -237,6 +237,11 @@ export function DestinationArticle({
           )}
         </div>
       </section>
+
+      <div className="mx-auto max-w-3xl space-y-4 px-4 pt-6 lg:hidden">
+        <p className="text-lg leading-relaxed text-ink">{place.lede}</p>
+        {place.ledeMore ? <p className="text-lg leading-relaxed text-ink">{place.ledeMore}</p> : null}
+      </div>
 
       {rail ? (
         <section className="mx-auto max-w-6xl px-4 pb-4">
