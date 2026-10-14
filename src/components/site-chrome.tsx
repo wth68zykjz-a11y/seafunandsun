@@ -1,15 +1,11 @@
 import { useState, type ReactNode } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Facebook, Instagram, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Facebook, Instagram, Menu, Phone, X } from "lucide-react";
 import { destinations } from "@/data/destinations";
 import { railPages } from "@/data/rail-pages";
 import { bookingEmail, facebook, instagram, licenseLine, phone, phoneHref } from "@/data/links";
 
-const landLinks = [
-  { to: "/resorts", label: "Resorts" },
-  { to: "/ski", label: "Ski vacations" },
-  { to: "/rail", label: "Rail and land" },
-] as const;
+const cruiseRegions = destinations.filter((item) => item.slug !== "rail");
 
 function navStyle(active: boolean) {
   return active
@@ -74,28 +70,45 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Wordmark tone="foam" />
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
-          <Link
-            to="/destinations"
-            className="rounded-md px-2.5 py-2 text-sm font-medium"
-            style={navStyle(path.startsWith("/destinations") || path.startsWith("/in-port") || path.startsWith("/lines") || path.startsWith("/ports"))}
-          >
-            Destinations
-          </Link>
-          <details className="relative" key={`land-${path}`}>
+          <details className="relative" key={`cruises-${path}`}>
             <summary
-              className="flex min-h-11 cursor-pointer list-none items-center rounded-md px-2.5 text-sm font-medium [&::-webkit-details-marker]:hidden"
-              style={navStyle(path.startsWith("/resorts") || path.startsWith("/ski") || path.startsWith("/rail"))}
+              className="flex min-h-11 cursor-pointer list-none items-center gap-1 rounded-md px-2.5 text-sm font-medium [&::-webkit-details-marker]:hidden"
+              style={navStyle(path.startsWith("/destinations") || path.startsWith("/in-port") || path.startsWith("/lines") || path.startsWith("/ports"))}
             >
-              Land Vacations
+              Cruises
+              <ChevronDown className="size-4" aria-hidden="true" />
             </summary>
-            <div className="absolute left-0 top-full z-30 mt-1 min-w-52 rounded-md border border-line bg-foam p-2 text-ink shadow-lg">
-              {landLinks.map((item) => (
-                <Link key={item.to} to={item.to} className="block rounded-md px-3 py-2 text-sm font-medium hover:bg-paper">
-                  {item.label}
+            <div className="absolute left-0 top-full z-30 mt-1 max-h-[70vh] w-72 overflow-y-auto rounded-md border border-line bg-foam p-2 text-ink shadow-lg">
+              <Link to="/destinations" className="block rounded-md px-3 py-2 text-base font-medium hover:bg-paper">
+                All cruise regions
+              </Link>
+              {cruiseRegions.map((item) => (
+                <Link
+                  key={item.slug}
+                  to="/destinations/$slug"
+                  params={{ slug: item.slug }}
+                  className="block rounded-md px-3 py-2 text-base hover:bg-paper"
+                >
+                  {item.nav}
                 </Link>
               ))}
+              <Link to="/lines" className="block rounded-md px-3 py-2 text-base hover:bg-paper">
+                Compare cruise lines
+              </Link>
+              <Link to="/ports" className="block rounded-md px-3 py-2 text-base hover:bg-paper">
+                Departure ports
+              </Link>
             </div>
           </details>
+          <Link to="/resorts" className="rounded-md px-2.5 py-2 text-sm font-medium" style={navStyle(path.startsWith("/resorts"))}>
+            Resorts
+          </Link>
+          <Link to="/ski" className="rounded-md px-2.5 py-2 text-sm font-medium" style={navStyle(path.startsWith("/ski"))}>
+            Ski
+          </Link>
+          <Link to="/rail" className="rounded-md px-2.5 py-2 text-sm font-medium" style={navStyle(path.startsWith("/rail"))}>
+            Rail
+          </Link>
           <Link
             to="/sailings"
             hash="promotions"
@@ -205,24 +218,41 @@ export function Header() {
       {open ? (
         <div className="border-t border-foam/15 bg-sea px-4 py-3 text-foam lg:hidden">
           <nav className="grid" aria-label="Mobile">
-            <Link to="/destinations" onClick={() => setOpen(false)} className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium">
-              Destinations
-            </Link>
             <details className="border-b border-foam/15">
-              <summary className="flex min-h-12 cursor-pointer list-none items-center text-base font-medium [&::-webkit-details-marker]:hidden">
-                Land Vacations
+              <summary className="flex min-h-12 cursor-pointer list-none items-center gap-1 text-base font-medium [&::-webkit-details-marker]:hidden">
+                Cruises
+                <ChevronDown className="size-4" aria-hidden="true" />
               </summary>
-              {landLinks.map((item) => (
+              <Link to="/destinations" onClick={() => setOpen(false)} className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base">
+                All cruise regions
+              </Link>
+              {cruiseRegions.map((page) => (
                 <Link
-                  key={item.to}
-                  to={item.to}
+                  key={page.slug}
+                  to="/destinations/$slug"
+                  params={{ slug: page.slug }}
                   onClick={() => setOpen(false)}
                   className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base"
                 >
-                  {item.label}
+                  {page.nav}
                 </Link>
               ))}
+              <Link to="/lines" onClick={() => setOpen(false)} className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base">
+                Compare cruise lines
+              </Link>
+              <Link to="/ports" onClick={() => setOpen(false)} className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base">
+                Departure ports
+              </Link>
             </details>
+            <Link to="/resorts" onClick={() => setOpen(false)} className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium">
+              Resorts
+            </Link>
+            <Link to="/ski" onClick={() => setOpen(false)} className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium">
+              Ski
+            </Link>
+            <Link to="/rail" onClick={() => setOpen(false)} className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium">
+              Rail
+            </Link>
             <Link
               to="/sailings"
               hash="promotions"
