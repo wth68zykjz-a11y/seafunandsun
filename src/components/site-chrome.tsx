@@ -3,6 +3,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { ChevronDown, Facebook, Instagram, Menu, Phone, X } from "lucide-react";
 import { destinations } from "@/data/destinations";
 import { railPages } from "@/data/rail-pages";
+import { skiPages } from "@/data/ski-pages";
 import { bookingEmail, facebook, instagram, licenseLine, phone, phoneHref } from "@/data/links";
 
 const cruiseRegions = destinations.filter((item) => item.slug !== "rail");
@@ -187,6 +188,34 @@ export function Header() {
           </div>
         </nav>
       ) : null}
+      {path.startsWith("/ski") ? (
+        <nav aria-label="Ski" className="hidden border-t border-foam/15 bg-[#0a3a52] lg:block">
+          <div className="mx-auto flex max-w-6xl touch-pan-x gap-2 overflow-x-auto px-4 py-2">
+            <Link
+              to="/ski"
+              className="inline-flex min-h-11 shrink-0 items-center rounded-md px-3 text-sm font-medium"
+              style={path === "/ski" ? { backgroundColor: "#f7fbf9", color: "#0c2340" } : { color: "#f7fbf9" }}
+            >
+              Overview
+            </Link>
+            {skiPages.map((item) => {
+              const href = `/ski/${item.slug}`;
+              const active = path === href;
+              return (
+                <Link
+                  key={item.slug}
+                  to="/ski/$slug"
+                  params={{ slug: item.slug }}
+                  className="inline-flex min-h-11 shrink-0 items-center rounded-md px-3 text-sm font-medium"
+                  style={active ? { backgroundColor: "#f7fbf9", color: "#0c2340" } : { color: "#f7fbf9" }}
+                >
+                  {item.nav}
+                </Link>
+              );
+            })}
+          </div>
+        </nav>
+      ) : null}
       {path.startsWith("/rail") ? (
         <nav aria-label="Rail" className="hidden border-t border-foam/15 bg-[#0a3a52] lg:block">
           <div className="mx-auto flex max-w-6xl touch-pan-x gap-2 overflow-x-auto px-4 py-2">
@@ -247,9 +276,25 @@ export function Header() {
             <Link to="/resorts" onClick={() => setOpen(false)} className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium">
               Resorts
             </Link>
-            <Link to="/ski" onClick={() => setOpen(false)} className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium">
-              Ski
-            </Link>
+            <details className="border-b border-foam/15">
+              <summary className="flex min-h-12 cursor-pointer list-none items-center text-base font-medium [&::-webkit-details-marker]:hidden">
+                Ski
+              </summary>
+              <Link to="/ski" onClick={() => setOpen(false)} className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base">
+                Overview
+              </Link>
+              {skiPages.map((page) => (
+                <Link
+                  key={page.slug}
+                  to="/ski/$slug"
+                  params={{ slug: page.slug }}
+                  onClick={() => setOpen(false)}
+                  className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base"
+                >
+                  {page.nav}
+                </Link>
+              ))}
+            </details>
             <Link to="/rail" onClick={() => setOpen(false)} className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium">
               Rail
             </Link>
