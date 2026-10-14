@@ -77,29 +77,10 @@ export function Header() {
           <Link
             to="/destinations"
             className="rounded-md px-2.5 py-2 text-sm font-medium"
-            style={navStyle(path.startsWith("/destinations") || path.startsWith("/in-port"))}
+            style={navStyle(path.startsWith("/destinations") || path.startsWith("/in-port") || path.startsWith("/lines") || path.startsWith("/ports"))}
           >
             Destinations
           </Link>
-          <details className="relative" key={`cruises-${path}`}>
-            <summary
-              className="flex min-h-11 cursor-pointer list-none items-center rounded-md px-2.5 text-sm font-medium [&::-webkit-details-marker]:hidden"
-              style={navStyle(path.startsWith("/lines") || path.startsWith("/ports"))}
-            >
-              Cruises
-            </summary>
-            <div className="absolute left-0 top-full z-30 mt-1 min-w-52 rounded-md border border-line bg-foam p-2 text-ink shadow-lg">
-              <Link to="/destinations" className="block rounded-md px-3 py-2 text-sm font-medium hover:bg-paper">
-                Cruise regions
-              </Link>
-              <Link to="/lines" className="block rounded-md px-3 py-2 text-sm font-medium hover:bg-paper">
-                Compare cruise lines
-              </Link>
-              <Link to="/ports" className="block rounded-md px-3 py-2 text-sm font-medium hover:bg-paper">
-                Departure ports
-              </Link>
-            </div>
-          </details>
           <details className="relative" key={`land-${path}`}>
             <summary
               className="flex min-h-11 cursor-pointer list-none items-center rounded-md px-2.5 text-sm font-medium [&::-webkit-details-marker]:hidden"
@@ -227,33 +208,6 @@ export function Header() {
             <Link to="/destinations" onClick={() => setOpen(false)} className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium">
               Destinations
             </Link>
-            <details className="border-b border-foam/15">
-              <summary className="flex min-h-12 cursor-pointer list-none items-center text-base font-medium [&::-webkit-details-marker]:hidden">
-                Cruises
-              </summary>
-              <Link to="/destinations" onClick={() => setOpen(false)} className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base">
-                Cruise regions
-              </Link>
-              <Link to="/lines" onClick={() => setOpen(false)} className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base">
-                Compare cruise lines
-              </Link>
-              <Link to="/ports" onClick={() => setOpen(false)} className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base">
-                Departure ports
-              </Link>
-              {destinations
-                .filter((page) => page.slug !== "rail")
-                .map((page) => (
-                  <Link
-                    key={page.slug}
-                    to="/destinations/$slug"
-                    params={{ slug: page.slug }}
-                    onClick={() => setOpen(false)}
-                    className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base"
-                  >
-                    {page.nav}
-                  </Link>
-                ))}
-            </details>
             <details className="border-b border-foam/15">
               <summary className="flex min-h-12 cursor-pointer list-none items-center text-base font-medium [&::-webkit-details-marker]:hidden">
                 Land Vacations
