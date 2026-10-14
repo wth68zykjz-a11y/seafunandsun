@@ -34,11 +34,11 @@ export const Route = createFileRoute("/")({
 const faqs = [
   {
     q: "Who is Sea Fun & Sun?",
-    a: "Sea Fun & Sun is an independent travel agency in Farmington, Connecticut. It books ocean and river cruises, expedition ships, all-inclusive resorts, ski vacations, and rail trips. Call or text (959) 666-2062, or write to Booking@Seafunandsun.com.",
+    a: "Sea Fun & Sun is an independent travel agency based in Farmington, Connecticut, specializing in ocean and river cruises, expedition ships, all-inclusive resorts, ski getaways, and scenic rail journeys.",
   },
   {
     q: "What if my plans change after I book?",
-    a: "Call us before you contact the supplier. We handle date changes with them. The supplier’s refund policy says which payments can come back. We do not keep your payment, and we cannot return money the supplier will not release.",
+    a: "Call us before you contact the supplier. We handle date changes and modifications directly with them, helping you navigate their refund and credit policies seamlessly.",
   },
   {
     q: "How do I pay?",
