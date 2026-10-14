@@ -578,7 +578,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "The season runs from April through October, and the dates depend on the river. In spring the fruit trees along the Rhine are in blossom. In fall the vineyards change color and the light is better. The ships sail during a set season, so the dates matter as much as the fare.",
-    planning: "Name the river. A Danube ship and a Mississippi ship are not interchangeable. An agent requests many of these fares, because they are not posted.",
+    planning: "Name the river, and we will set the ships that sail it side by side. To truly experience Budapest, Paris, Amsterdam, or New Orleans, add a hotel stay before or after the cruise. The ship ties up in the city, and the extra nights are how you wander the neighborhoods a day on the river only begins. An agent requests many of these fares, because they are not posted.",
     itineraries: [
       {
         title: "Danube capitals",
