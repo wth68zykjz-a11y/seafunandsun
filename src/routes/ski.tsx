@@ -74,6 +74,7 @@ function SkiPage() {
             <p className="text-base leading-relaxed text-ink">
               Where you stay shapes your entire ski day. Choosing a room right at the mountain’s base allows you to clip in and ski directly from your door, while staying in town offers vibrant dining and nightlife just a short shuttle ride from the lifts. We match you with the perfect property for your travel style—whether that is the ultimate ski-in luxury of The Little Nell at Aspen Mountain, or the elegant alpine retreats of the Four Seasons in Jackson Hole’s Teton Village and Whistler.
             </p>
+            <img src="/media/ski-stowe.jpg" alt="The ski village at Stowe, Vermont, lit at dusk beneath the trails" width={1400} height={800} loading="lazy" decoding="async" className="aspect-photo w-full rounded-xl object-cover" />
             <p className="text-base leading-relaxed text-ink">
               If you are heading to the Canadian Rockies, you can choose between the grand, historic Fairmont hotels in the town of Banff or out by Lake Louise, granting you easy access to the spectacular runs at Sunshine, Lake Louise, and Norquay. For a lively and relaxed California vibe, Mammoth offers incredibly convenient village hotels positioned right at the base so you are never far from the action.
             </p>
