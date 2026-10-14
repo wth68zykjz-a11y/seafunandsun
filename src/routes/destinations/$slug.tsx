@@ -145,6 +145,39 @@ function DestinationPage() {
   return <DestinationArticle place={place} />;
 }
 
+function FactIcon({ label }: { label: string }) {
+  const common = { viewBox: "0 0 24 24", className: "size-5 shrink-0 text-tide", fill: "none", "aria-hidden": true as const };
+  if (/time/i.test(label)) {
+    return (
+      <svg {...common}>
+        <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.6" />
+        <path d="M12 8v4.5l3 2" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+      </svg>
+    );
+  }
+  if (/worth/i.test(label)) {
+    return (
+      <svg {...common}>
+        <path d="M12 4.5l1.8 3.7 4.1.6-3 2.9.7 4.1L12 13.8 8.4 15.8l.7-4.1-3-2.9 4.1-.6L12 4.5z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+      </svg>
+    );
+  }
+  if (/travel/i.test(label)) {
+    return (
+      <svg {...common}>
+        <circle cx="12" cy="8" r="2.4" stroke="currentColor" strokeWidth="1.6" />
+        <path d="M6.5 18.5c.8-3 2.8-4.5 5.5-4.5s4.7 1.5 5.5 4.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+      </svg>
+    );
+  }
+  return (
+    <svg {...common}>
+      <rect x="5" y="5" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="1.6" />
+      <path d="M12 8.5v7M8.5 12h7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export function DestinationArticle({
   place,
   rail = false,
@@ -318,9 +351,15 @@ export function DestinationArticle({
               : ashoreNotes[place.slug]}
           </p>
         </div>
-        <article className="mt-4 rounded-xl p-5 text-foam sm:p-6" style={{ backgroundColor: tone }}>
-          <h2 className="font-display text-2xl">When to go</h2>
-          <p className="mt-3 max-w-3xl text-base leading-relaxed text-foam">{place.when}</p>
+        <article className="relative mt-4 overflow-hidden rounded-xl text-foam">
+          {paragraphPhotos[0] ? (
+            <img src={paragraphPhotos[0].src} alt="" className="absolute inset-0 h-full w-full object-cover" />
+          ) : null}
+          <div className="absolute inset-0" style={{ backgroundColor: tone, opacity: paragraphPhotos[0] ? 0.82 : 1 }} />
+          <div className="relative p-5 sm:p-8">
+            <h2 className="font-display text-2xl">When to go</h2>
+            <p className="mt-3 max-w-3xl text-base leading-relaxed text-foam">{place.when}</p>
+          </div>
         </article>
         {sparePhotos.length ? (
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -349,11 +388,14 @@ export function DestinationArticle({
                   ? "You are on the train for most of the trip. A station stop is short. The notes below say what you can see from the window, and what will not fit at the station."
                   : ashoreLeads[place.slug]}
               </p>
-              <dl className="mt-5 grid gap-3 sm:grid-cols-2">
+              <dl className="mt-5 grid items-start gap-3 sm:grid-cols-2">
                 {portGuides[place.slug].facts.map((fact) => (
                   <div key={fact.label} className="rounded-lg border border-line bg-foam p-4">
-                    <dt className="text-base font-medium text-tide">{fact.label}</dt>
-                    <dd className="mt-1 text-base leading-relaxed text-ink">{fact.text}</dd>
+                    <dt className="flex items-center gap-2 text-base font-medium text-tide">
+                      <FactIcon label={fact.label} />
+                      {fact.label}
+                    </dt>
+                    <dd className="mt-2 text-base leading-relaxed text-ink">{fact.text}</dd>
                   </div>
                 ))}
               </dl>
@@ -440,28 +482,34 @@ export function DestinationArticle({
             ? "These are typical routes. Trains, hotels, dates, and fares change."
             : sampleNote}
         </p>
-        <div className="mt-6 grid items-stretch gap-4 lg:grid-cols-3">
+        <div className="mt-6 grid items-start gap-4 lg:grid-cols-3">
           {place.itineraries.map((trip, index) => {
             const photo = itineraryPhotos[index];
             return (
-            <article key={trip.title} className="flex h-full flex-col overflow-hidden rounded-xl border border-line bg-foam">
+            <article key={trip.title} className="flex flex-col overflow-hidden rounded-xl border border-line bg-foam">
               {photo ? (
                 <figure>
                   <img src={photo.src} alt={photo.alt} width={1400} height={933} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
                   <figcaption className="border-b border-line px-4 py-3 text-base leading-relaxed text-ink">{photo.caption}</figcaption>
                 </figure>
               ) : null}
-              <div className="flex flex-1 flex-col p-5">
+              <div className="flex flex-col p-5">
               <h3 className="font-display text-2xl">{trip.title}</h3>
               <p className="mt-2 text-base font-medium text-tide">{trip.nights}</p>
               <p className="mt-1 text-base text-ink">{trip.season}</p>
               <p className="mt-3 text-base leading-relaxed text-ink">{trip.path}</p>
               <p className="mt-2 text-base leading-relaxed text-ink">{trip.ship}</p>
-              <ul className="mt-4 grid gap-2 border-t border-line pt-3 text-base leading-relaxed text-ink">
-                {trip.ports.map((port) => (
-                  <li key={port}>{port}</li>
+              <ol className="mt-4 grid border-t border-line pt-3 text-base leading-relaxed text-ink">
+                {trip.ports.map((port, step) => (
+                  <li key={port} className="relative pb-3 pl-7 last:pb-0">
+                    <span className="absolute left-0 top-1 grid size-5 place-items-center rounded-full bg-tide text-xs font-medium leading-none text-foam" aria-hidden="true">
+                      {step + 1}
+                    </span>
+                    {step < trip.ports.length - 1 ? <span className="absolute left-[9px] top-6 h-[calc(100%-0.85rem)] w-px bg-line" aria-hidden="true" /> : null}
+                    {port}
+                  </li>
                 ))}
-              </ul>
+              </ol>
               </div>
             </article>
             );
