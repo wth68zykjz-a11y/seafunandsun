@@ -83,8 +83,7 @@ function ResortsPage() {
           className="aspect-photo w-full rounded-xl object-cover"
         />
         <div className="flex flex-col justify-center">
-          <p className="text-sm font-medium text-tide">All-inclusive resorts</p>
-          <h1 className="mt-2 font-display text-3xl sm:text-5xl">The meals are already in the rate.</h1>
+          <h1 className="font-display text-3xl sm:text-5xl">All-inclusive resorts</h1>
           <p className="mt-4 text-lg text-mute">
             At most of these resorts a set of drinks and the non-motorized water sports are included too. Flights, the airport transfer, and a day away from the property can be added.
           </p>
