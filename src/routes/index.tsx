@@ -192,10 +192,10 @@ function Home() {
                 </p>
                 <div className="mt-6 w-full sm:mt-8 sm:inline-flex sm:w-auto sm:flex-col sm:items-center">
                   <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-                    <Link to="/quote" className="inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
+                    <Link to="/quote" className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep sm:w-auto">
                       Request a quote
                     </Link>
-                    <a href="#trips" className="inline-flex min-h-11 items-center justify-center rounded-md bg-gold px-5 text-sm font-medium text-ink hover:bg-gold-deep">
+                    <a href="#trips" className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-gold px-5 text-sm font-medium text-ink hover:bg-gold-deep sm:w-auto">
                       Select a category
                     </a>
                   </div>

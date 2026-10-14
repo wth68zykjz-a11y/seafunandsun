@@ -47,12 +47,12 @@ function Wordmark({ tone = "ink" }: { tone?: "ink" | "foam" }) {
         <LogoMark className="logo-mark size-9 sm:size-11" />
       </span>
       <span className="min-w-0 leading-none">
-        <span className={`block font-logo text-[0.78rem] tracking-[0.06em] sm:text-[1.05rem] sm:tracking-[0.1em] ${onDark ? "text-foam" : "text-ink"}`}>
+        <span className={`block truncate font-logo text-[0.78rem] tracking-[0.06em] sm:text-[1.05rem] sm:tracking-[0.1em] ${onDark ? "text-foam" : "text-ink"}`}>
           SEA FUN & SUN
         </span>
-        <span className="mt-1 flex items-center gap-1.5">
-          <span className={`h-px w-2 sm:w-3 ${onDark ? "bg-gold" : "bg-gold-ink"}`} />
-          <span className={`text-[0.62rem] font-semibold tracking-[0.12em] sm:text-[0.58rem] sm:tracking-[0.22em] ${onDark ? "text-gold" : "text-gold-ink"}`}>
+        <span className="mt-1 flex min-w-0 items-center gap-1.5">
+          <span className={`h-px w-2 shrink-0 sm:w-3 ${onDark ? "bg-gold" : "bg-gold-ink"}`} />
+          <span className={`truncate text-[0.62rem] font-semibold tracking-[0.12em] sm:text-[0.58rem] sm:tracking-[0.22em] ${onDark ? "text-gold" : "text-gold-ink"}`}>
             TRAVEL COMPANY
           </span>
           <span className={`h-px w-2 sm:w-3 ${onDark ? "bg-gold" : "bg-gold-ink"}`} />
@@ -277,8 +277,9 @@ export function Header() {
               Resorts
             </Link>
             <details className="border-b border-foam/15">
-              <summary className="flex min-h-12 cursor-pointer list-none items-center text-base font-medium [&::-webkit-details-marker]:hidden">
+              <summary className="flex min-h-12 cursor-pointer list-none items-center gap-1 text-base font-medium [&::-webkit-details-marker]:hidden">
                 Ski
+                <ChevronDown className="size-4" aria-hidden="true" />
               </summary>
               <Link to="/ski" onClick={() => setOpen(false)} className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base">
                 Overview
@@ -295,9 +296,26 @@ export function Header() {
                 </Link>
               ))}
             </details>
-            <Link to="/rail" onClick={() => setOpen(false)} className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium">
-              Rail
-            </Link>
+            <details className="border-b border-foam/15">
+              <summary className="flex min-h-12 cursor-pointer list-none items-center gap-1 text-base font-medium [&::-webkit-details-marker]:hidden">
+                Rail
+                <ChevronDown className="size-4" aria-hidden="true" />
+              </summary>
+              <Link to="/rail" onClick={() => setOpen(false)} className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base">
+                Overview
+              </Link>
+              {railPages.map((page) => (
+                <Link
+                  key={page.slug}
+                  to="/rail/$slug"
+                  params={{ slug: page.slug }}
+                  onClick={() => setOpen(false)}
+                  className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base"
+                >
+                  {page.nav}
+                </Link>
+              ))}
+            </details>
             <Link
               to="/sailings"
               hash="promotions"

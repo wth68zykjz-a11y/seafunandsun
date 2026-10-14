@@ -34,7 +34,7 @@ function DestinationsPage() {
           <p className="mt-3 text-base leading-relaxed text-ink">
             Fort Lauderdale is a working port, built to get you on the ship. Miami, Barcelona, Vancouver, and Sydney are better cities if you want a few days before you sail or after you return. A Caribbean cruise from Miami or Fort Lauderdale spends more nights in the islands than a cruise of the same length from New York, New Jersey, Baltimore, or Boston. A southern or eastern Caribbean cruise can also start in San Juan, and in some seasons in Fort-de-France. An Alaska cruise usually leaves from Seattle or Vancouver.
           </p>
-          <Link to="/ports" className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep">
+          <Link to="/ports" className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep sm:w-auto">
             See the ports
           </Link>
         </article>
@@ -43,7 +43,7 @@ function DestinationsPage() {
           <p className="mt-3 text-base leading-relaxed text-ink">
             The comparison pages list the usual passenger count and a general price range, from the smallest ships to the largest. An excursion in a port can be added to the quote. It is not in the cruise fare unless the line includes it.
           </p>
-          <Link to="/lines" className="mt-5 inline-flex min-h-11 items-center justify-center rounded-md bg-tide px-4 text-sm font-medium text-foam hover:bg-tide-deep">
+          <Link to="/lines" className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-tide px-4 text-sm font-medium text-foam hover:bg-tide-deep sm:w-auto">
             Compare cruise lines
           </Link>
         </article>

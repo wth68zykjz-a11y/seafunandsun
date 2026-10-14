@@ -90,13 +90,13 @@ function ResortsPage() {
             <Link
               to="/quote"
               search={{ place: "All-inclusive resort" }}
-              className="inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
+              className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep sm:w-auto"
             >
               Request a quote
             </Link>
             <a
               href={phoneHref}
-              className="inline-flex min-h-11 items-center justify-center rounded-md border border-line bg-foam px-4 text-sm font-medium text-ink"
+              className="inline-flex min-h-11 w-full items-center justify-center rounded-md border border-line bg-foam px-4 text-sm font-medium text-ink sm:w-auto"
             >
               Call {phone}
             </a>

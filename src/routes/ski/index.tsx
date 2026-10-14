@@ -43,7 +43,7 @@ function SkiPage() {
           <Link
             to="/quote"
             search={{ place: "Club Med ski" }}
-            className="mt-6 inline-flex min-h-11 w-fit items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
+            className="mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep sm:w-fit"
           >
             Request a Club Med week
           </Link>
@@ -66,7 +66,7 @@ function SkiPage() {
               <img src={page.image} alt={page.alt} loading="lazy" decoding="async" className="aspect-photo w-full object-cover" />
               <div className="flex flex-1 flex-col p-5">
                 <h3 className="font-display text-2xl">{page.nav}</h3>
-                <p className="mt-2 text-base leading-relaxed text-ink">{page.lede}</p>
+                <p className="mt-2 line-clamp-4 text-base leading-relaxed text-ink">{page.lede}</p>
                 <span className="mt-4 text-sm font-medium text-tide">See this region</span>
               </div>
             </Link>

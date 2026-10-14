@@ -209,7 +209,7 @@ export function DestinationArticle({
             <Link
               to="/quote"
               search={{ place: place.title }}
-              className="inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
+              className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep sm:w-auto"
             >
               Request a quote
             </Link>
@@ -217,7 +217,7 @@ export function DestinationArticle({
               <Link
                 to="/in-port/$region"
                 params={{ region: place.slug }}
-                className="inline-flex min-h-11 items-center justify-center rounded-md bg-gold px-4 text-sm font-medium text-ink hover:bg-gold-deep"
+                className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-gold px-4 text-sm font-medium text-ink hover:bg-gold-deep sm:w-auto"
               >
                 What you can do in port
               </Link>
@@ -281,7 +281,7 @@ export function DestinationArticle({
             <Link
               to="/guides/$slug"
               params={{ slug: place.slug === "alaskan" ? "alaska-seattle-vancouver" : place.slug === "bermuda" ? "bermuda-northeast" : "panama-transit" }}
-              className="inline-flex min-h-11 items-center justify-center rounded-md border border-line bg-foam px-4 text-sm font-medium text-ink"
+              className="inline-flex min-h-11 w-full items-center justify-center rounded-md border border-line bg-foam px-4 text-center text-sm font-medium text-ink sm:w-auto"
             >
               {place.slug === "alaskan"
                 ? "Seattle or Vancouver as the departure port"

@@ -47,7 +47,7 @@ function RailTopicPage() {
       />
       <article className="mx-auto max-w-3xl px-4 py-10">
         <p className="text-sm font-medium text-tide">Rail and land</p>
-        <h1 className="mt-2 font-display text-4xl text-ink">{page.title}</h1>
+        <h1 className="mt-2 font-display text-3xl text-ink sm:text-4xl">{page.title}</h1>
         <p className="mt-4 text-lg leading-relaxed text-ink">{page.lede}</p>
         {page.photos.length ? (
           <div className={`mt-6 grid gap-4 ${page.photos.length > 1 ? "md:grid-cols-2" : ""}`}>
@@ -69,11 +69,11 @@ function RailTopicPage() {
             ))}
           </section>
         ))}
-        <div className="mt-8 flex flex-wrap gap-3">
-          <Link to="/quote" search={{ place: "Rail Vacations" }} className="inline-flex min-h-11 items-center rounded-md bg-coral px-4 text-sm font-medium text-foam">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <Link to="/quote" search={{ place: "Rail Vacations" }} className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-4 text-sm font-medium text-foam sm:w-auto">
             Request a quote
           </Link>
-          <Link to="/rail" className="inline-flex min-h-11 items-center rounded-md border border-line bg-foam px-4 text-sm font-medium text-ink">
+          <Link to="/rail" className="inline-flex min-h-11 w-full items-center justify-center rounded-md border border-line bg-foam px-4 text-sm font-medium text-ink sm:w-auto">
             All rail trips
           </Link>
         </div>
@@ -84,7 +84,7 @@ function RailTopicPage() {
           .map((item) => (
             <Link key={item.slug} to="/rail/$slug" params={{ slug: item.slug }} className="rounded-xl border border-line bg-foam p-4 hover:border-tide">
               <h2 className="font-display text-2xl">{item.nav}</h2>
-              <p className="mt-2 text-base leading-relaxed text-ink">{item.lede}</p>
+              <p className="mt-2 line-clamp-4 text-base leading-relaxed text-ink">{item.lede}</p>
             </Link>
           ))}
       </nav>

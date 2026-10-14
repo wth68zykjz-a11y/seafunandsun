@@ -59,7 +59,7 @@ function PortCard({ port }: { port: Port }) {
         <Link
           to="/destinations/$slug"
           params={{ slug: port.slug! }}
-          className="mt-5 inline-flex min-h-11 items-center rounded-md bg-coral px-4 text-base font-medium text-foam hover:bg-coral-deep"
+          className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-4 text-base font-medium text-foam hover:bg-coral-deep sm:w-auto"
           style={{ backgroundColor: "#8e3426", color: "#f7fbf9" }}
         >
           See {destination}
@@ -163,7 +163,7 @@ function PortRegionPage() {
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-foam">
             Tell us the coast you want. We will match the port, the sea days, and the flight.
           </p>
-          <Link to="/quote" className="mt-6 inline-flex min-h-11 items-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
+          <Link to="/quote" className="mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep sm:w-auto">
             Request a quote
           </Link>
         </div>

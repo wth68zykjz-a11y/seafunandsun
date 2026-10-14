@@ -352,7 +352,7 @@ function SailingsPage() {
         lede="Tell us which offer you want, or describe the trip. We confirm the fare and the rules, then you approve it before anything is booked."
       />
       <div className="mx-auto max-w-6xl px-4">
-        <Link to="/quote" className="inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep">
+        <Link to="/quote" className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep sm:w-auto">
           Request a quote
         </Link>
       </div>
