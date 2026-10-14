@@ -80,7 +80,7 @@ export const linePages: LinePage[] = [
         caption: "A Caribbean cruise that departs from Florida often uses a ship this size. A Bermuda cruise is usually on a smaller ship, about 2,000 to 4,000 passengers.",
       },
     ],
-    lede: "The biggest ships sail Caribbean cruises that depart from Florida. A Bermuda cruise from the Northeast is usually on a smaller ship, and it stays long enough for more than one outing.",
+    lede: "The biggest ships sail Caribbean cruises that depart from Florida. Those weeks are built around pools, restaurants, shows, and, on several lines, a stop at the line’s own beach. A Bermuda cruise from the Northeast is usually on a smaller ship, and it stays long enough for more than one outing.",
     size: "These are large ocean ships. Many carry 4,000 to about 7,000 passengers. Some of the ships on the shorter cruises carry about 2,000 to 4,000.",
     rows: [
       { line: "Holland America", ships: "Older ships about 1,400–1,900. Pinnacle class about 2,650.", where: "Caribbean cruises, Alaska cruises, and longer voyages.", fare: "Balcony often $1,300–$2,600." },
@@ -98,11 +98,11 @@ export const linePages: LinePage[] = [
     ],
     benefits: [
       {
-        title: "Pools, water parks, and a private island",
+        title: "Resort decks and private islands",
         text: "The Florida ships are the ones with several pools and, on Royal Caribbean, Carnival’s Excel class, and MSC’s largest ships, a water park. Many of those weeks also stop at the line’s own beach: Perfect Day at CocoCay, Celebration Key, Ocean Cay, Great Stirrup Cay, or Castaway Cay. That stop has a beach and no city to walk. Holland America and Celebrity do not have that water park or that island.",
       },
       {
-        title: "Restaurants",
+        title: "Dining and the evening",
         text: "The main dining room and the buffet are in the fare. Specialty rooms are usually extra. A ship of 4,000 passengers needs more than one restaurant, so the list is long. On a 2,000-passenger ship the list is shorter and the rooms are less crowded.",
       },
       {
@@ -128,7 +128,7 @@ export const linePages: LinePage[] = [
         caption: "Alaska ships are about 1,800 to 4,200 passengers, small enough for a narrow channel.",
       },
     ],
-    lede: "A round-trip Inside Passage cruise usually leaves from Seattle. A one-way cruise to Seward or Whittier usually leaves from Vancouver, and that start needs a passport. Hawaii’s inter-island ship is smaller and sails from Honolulu.",
+    lede: "A round-trip Inside Passage cruise usually leaves from Seattle. A one-way cruise to Seward or Whittier usually leaves from Vancouver, and that start needs a passport. These mid-size ships fit a narrower channel, with observation decks and lectures on a glacier day. Hawaii’s inter-island ship is smaller and sails from Honolulu.",
     size: "These are mid-size ocean ships. Most carry about 1,800 to 4,200 passengers. One ship in this group is smaller and stays among the islands.",
     rows: [
       { line: "Silversea and Seabourn", ships: "About 450–600 on the Alaska ships.", where: "One-way cruises between Vancouver and Seward, and a smaller set of coastal cruises.", fare: "Often $6,000–$14,000 a person for 7 nights. More is included than on the lines above. An agent requests many of these fares." },
@@ -147,15 +147,15 @@ export const linePages: LinePage[] = [
     ],
     benefits: [
       {
-        title: "Glaciers and wildlife",
+        title: "Glacier viewing and outdoor decks",
         text: "Glacier days, whale water, and long evenings are why these ships are here. Norwegian’s larger Seattle ships and Royal Caribbean’s Quantum class have pools, slides, and a show. Holland America and Princess put more of the ship into lectures, naturalists, and the viewing decks.",
       },
       {
-        title: "Restaurants",
+        title: "Dining",
         text: "The dining room is in the fare. Specialty rooms are usually extra, and there are fewer of them than on a Caribbean mega-ship. On Silversea and Seabourn the drinks, and more of the dining, are already in the price.",
       },
       {
-        title: "Time in port, and time on deck",
+        title: "Time in port",
         text: "Most stops last about six to eight hours. In Juneau you can walk from the dock to the Mount Roberts tram. In Skagway you can walk Broadway. In Ketchikan you can walk to Creek Street. At a glacier such as Glacier Bay or Tracy Arm, the ship may not land at all. Bring a warm layer. The pools are open, and the weather does not always agree.",
       },
       {
@@ -182,7 +182,7 @@ export const linePages: LinePage[] = [
         caption: "Norway, the Baltic, and many Greek-island weeks use a smaller ship. Seabourn Ovation carries about 600.",
       },
     ],
-    lede: "A western Mediterranean cruise that departs from Barcelona, Rome, or Athens can be on a ship of 4,000 to 6,000 passengers. A cruise to the Greek islands, the Baltic, or Norway is more often on a ship of about 1,500 to 3,500. Venice is reached from Ravenna or Trieste.",
+    lede: "A western Mediterranean cruise that departs from Barcelona, Rome, or Athens can be on a ship of 4,000 to 6,000 passengers, with several pools and a long list of restaurants. A cruise to the Greek islands, the Baltic, or Norway is more often on a ship of about 1,500 to 3,500, which can dock closer to the center of a smaller harbor. Venice is reached from Ravenna or Trieste.",
     size: "This group mixes mid-size and large ocean ships. Some carry about 1,500 to 3,500 passengers. Others carry 4,000 to 6,000.",
     rows: [
       { line: "Princess and Holland America", ships: "About 1,900–3,600.", where: "Mediterranean, British Isles, Baltic, and Norway cruises.", fare: "Balcony, 7 nights, often $1,500–$3,400." },
@@ -199,7 +199,7 @@ export const linePages: LinePage[] = [
     ],
     benefits: [
       {
-        title: "Pools on the large ships, decks on the smaller ones",
+        title: "Onboard atmosphere",
         text: "A seven-night western Mediterranean cruise that departs from Barcelona or Rome can be on a ship with several pools and a long list of restaurants. Cruises to Norway, the Baltic, and many Greek islands use smaller ships. Those have a pool and a show, and they can dock in a harbor in the middle of town.",
       },
       {
@@ -207,7 +207,7 @@ export const linePages: LinePage[] = [
         text: "The main dining room is in the fare. Specialty dining is usually extra on MSC, Royal Caribbean, Norwegian, and Carnival. Celebrity, Princess, and Holland America have fewer rooms and a quieter dining room. Cunard still has a more formal evening on the Queens.",
       },
       {
-        title: "The sights are in the city",
+        title: "The cities",
         text: "In these cities you walk. Start early, before the heat and the crowds. St. Mark’s is in Venice. Large ships dock at Ravenna or Trieste. Venice is about two hours from those piers.",
       },
       {
@@ -294,7 +294,7 @@ export const linePages: LinePage[] = [
         caption: "Silver Shadow carries about 390 guests. Some Caribbean cruises start and end in San Juan. This photo is the same ship in Alaska.",
       },
     ],
-    lede: "These lines sail the Caribbean, Alaska, the Mediterranean, and longer routes on ships that stay under about 1,250 passengers. An agent requests most of these fares.",
+    lede: "These ships stay under about 1,250 guests and sail the Caribbean, Alaska, the Mediterranean, and longer routes. The public rooms are quieter than on a large resort ship. On Regent, Silversea, Seabourn, and Explora, drinks and gratuities are already in the fare. An agent requests most of these prices.",
     size: "These ships run from about 450 passengers to about 1,200. Explora is about 922. Oceania’s larger ships are about 1,200.",
     rows: [
       { line: "Silversea", ships: "Ocean ships about 300–730. Silver Shadow is about 390. Silver Nova and Silver Ray are about 728.", where: "Some Caribbean cruises start and end in San Juan, including Silver Shadow. Others sail one way between Miami and San Juan. Also Alaska, the Mediterranean, longer voyages, and expedition routes. Drinks, a butler, and gratuities are in the fare.", fare: "The fare for about a week is often $6,000–$15,000 a person." },
@@ -310,16 +310,16 @@ export const linePages: LinePage[] = [
     ],
     benefits: [
       {
-        title: "A pool, not a water park",
-        text: "These ships have a pool, a spa, and enough open deck to watch a sail-in. They do not have slides, surf simulators, or a private-island day on the mega-ship scale. The space per person is the amenity.",
+        title: "Pools and open decks",
+        text: "These ships have a pool, a spa, and open deck for a sail-in. They do not have slides, surf simulators, or a mega-ship water park. The space per guest is the point.",
       },
       {
-        title: "Restaurants, with more included",
+        title: "Dining, with more included",
         text: "There are several restaurants, not twenty. On Regent, Silversea, Seabourn, and Explora the drinks and gratuities are in the fare. Regent also includes many shore trips, and often economy air. Oceania and Viking include more than a mass-market ship and less than Regent. Specialty dining on Oceania is often extra.",
       },
       {
-        title: "A quieter ship, and smaller ports",
-        text: "You can learn the names of the people at the next table. The ship can dock in smaller harbors. Staffing is higher. Silversea puts a butler in every suite.",
+        title: "Smaller harbors",
+        text: "The ship can dock in a smaller harbor. Staffing is higher than on a large resort ship, and you can learn the names of the people at the next table. Silversea includes a butler in every suite.",
       },
       {
         title: "What these ships leave out",

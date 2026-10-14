@@ -43,11 +43,11 @@ function PortCard({ port }: { port: Port }) {
       <p className="text-sm font-medium text-tide">{port.place}</p>
       <h3 className="mt-1 font-display text-2xl text-ink">{port.name}</h3>
       <p className="mt-2 text-base leading-relaxed text-ink">
-        <span className="font-medium text-ink">Cruises go to: </span>
+        <span className="font-medium text-ink">Where the cruises go: </span>
         {port.goes}
       </p>
       <p className="mt-2 text-base leading-relaxed text-ink">
-        <span className="font-medium text-ink">Airlines: </span>
+        <span className="font-medium text-ink">Flights: </span>
         {port.air}
       </p>
       <LocalClock zone={port.zone} />
@@ -55,6 +55,12 @@ function PortCard({ port }: { port: Port }) {
         <span className="font-medium text-ink">Currency: </span>
         {port.money}
       </p>
+      {port.tip ? (
+        <p className="mt-2 text-base leading-relaxed text-ink">
+          <span className="font-medium text-ink">Before you sail: </span>
+          {port.tip}
+        </p>
+      ) : null}
       {destination ? (
         <Link
           to="/destinations/$slug"
