@@ -82,7 +82,7 @@ const doors: Door[] = [
   {
     kicker: "Beach",
     title: "Resorts",
-    body: "Step directly from your room into crystal-clear waters. We proudly match our clients with premier all-inclusive resorts, including Sandals, Beaches, Hyatt, Secrets, and Club Med.",
+    body: "Step directly from your room into crystal-clear waters. Find your perfect match among premier all-inclusive resorts, including Sandals, Beaches, Hyatt, Secrets, and Club Med.",
     image: "/media/card-resorts.webp",
     mobileImage: "/media/card-resorts-sm.webp",
     alt: "An overwater villa with its own pool on a turquoise lagoon",
@@ -119,7 +119,7 @@ const doors: Door[] = [
   {
     kicker: "On the ground",
     title: "Rail and land",
-    body: "Take in canyon views from a glass-domed car, or sit down to dinner as the station lights fade into the distance. We arrange everything from scenic daytime routes to classic European sleeper trains, perfectly coordinated with your hotel stays in between.",
+    body: "Take in canyon views from a glass-domed car, or sit down to dinner as the station lights fade into the distance. Enjoy a seamless journey where everything from scenic daytime routes to classic European sleeper trains is perfectly coordinated with your hotel stays.",
     image: "/media/card-rail.webp",
     mobileImage: "/media/card-rail-sm.webp",
     alt: "The Glacier Express crossing a stone viaduct in the Alps",

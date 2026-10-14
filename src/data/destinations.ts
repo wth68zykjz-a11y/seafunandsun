@@ -448,12 +448,12 @@ export const destinations: Destination[] = [
       {
         heading: "In port",
         items: [
-          "Waterfall walks in the fjords",
-          "Reykjavik and a whale watch",
-          "The red fishing cabins of the Lofotens",
-          "Nyhavn and Rosenborg are in Copenhagen. Hotel d’Angleterre is a hotel for the nights before or after the cruise.",
-          "Gamla Stan is in Stockholm. The Vasa Museum holds the warship Vasa, raised from the harbor and kept almost whole. Grand Hôtel looks across the water at the palace.",
-          "The northern lights, on a clear night late enough in the year",
+          "Embark on guided waterfall walks through the dramatic Norwegian fjords.",
+          "Explore Reykjavik and head out on a scenic whale-watching excursion.",
+          "Admire the iconic red fishing cabins dotted along the Lofoten Islands.",
+          "Wander along the Nyhavn canal and visit Rosenborg Castle in Copenhagen.",
+          "Discover the cobblestone streets of Gamla Stan and the Vasa Museum in Stockholm.",
+          "Witness the spectacular northern lights on clear nights later in the season.",
         ],
       },
     ],
@@ -558,7 +558,7 @@ export const destinations: Destination[] = [
     card: "European and American rivers",
     image: "/media/river.jpg",
     alt: "A riverside town and vineyards at dusk",
-    lede: "Glide along the world's most storied waterways, stepping directly from your ship into the heart of historic towns and European capitals. From the castles of the Rhine to the vineyards of the Douro, we will compare the top river lines side-by-side—evaluating the ships, the suites, and the included excursions—to find your perfect floating boutique hotel.",
+    lede: "Glide along the world's most storied waterways, stepping directly from your ship into the heart of historic towns and European capitals. From the castles of the Rhine to the vineyards of the Douro, evaluate the top river lines side-by-side—comparing the ships, suites, and included excursions—to find your perfect floating boutique hotel.",
     ledeMore:
       "Step off your ship to enjoy unparalleled access to city centers. Because the vessels tie up directly in town, you can walk straight off the deck into Vienna, Budapest, or New Orleans. Your fare typically includes a guided morning walking tour in each destination, leaving your afternoons completely free. Borrow a ship bicycle to ride through the Wachau Valley, enjoy a local wine tasting, or sit at a local café for a slice of Sachertorte while watching the river flow by.",
     paragraphs: [
@@ -569,11 +569,11 @@ export const destinations: Destination[] = [
       {
         heading: "The classic rivers",
         items: [
-          "The Danube — Budapest to the Wachau, or Vienna toward the Black Forest",
-          "The Rhine — Cologne to Amsterdam, past the castles",
-          "The Seine and Normandy — Paris, Rouen, and Honfleur",
-          "The Douro — Porto and the wine country",
-          "The Mississippi — New Orleans north, Viking and American Cruise Lines",
+          "The Danube: Sail from Budapest to the Wachau Valley, or from Vienna toward the Black Forest.",
+          "The Rhine: Cruise from Cologne to Amsterdam, passing historic cliffside castles.",
+          "The Seine and Normandy: Travel through France with stops in Paris, Rouen, and Honfleur.",
+          "The Douro: Wind through Portugal's renowned Porto and the surrounding wine country.",
+          "The Mississippi: Explore New Orleans, northern historic sites, and classic American river routes.",
           "The Ohio & the Great Lakes — American Cruise Lines",
           "The Moselle has steep Riesling vineyards and towns such as Cochem and Bernkastel. The Mekong is a wide brown river, and it has floating markets. In Vietnam you can order pho, rice noodles in beef broth. In Cambodia you can order fish amok, fish steamed in coconut and lemongrass. Viking and the other river lines sail both rivers",
           "The Nile — Viking, AmaWaterways, and Uniworld",
@@ -776,22 +776,22 @@ export const destinations: Destination[] = [
     card: "Rio & Cape Horn",
     image: "/media/south-america.jpg",
     alt: "A Patagonian fjord with a distant glacier",
-    lede: "Experience stunning extremes across South America, where your route defines your adventure. Choose a sun-drenched coastal sailing to explore the vibrant beaches of Rio de Janeiro, or journey south to navigate the icy, dramatic fjords of Cape Horn. Because these distinct routes do not overlap, we will ensure you are on the exact itinerary that matches your vision.",
+    lede: "Experience stunning extremes across South America, where your route defines your adventure. Choose a sun-drenched coastal sailing to explore the vibrant beaches of Rio de Janeiro, or journey south to navigate the icy, dramatic fjords of Cape Horn. Because these distinct routes do not overlap, enjoy peace of mind knowing your itinerary perfectly matches your vision, with side-by-side comparisons of the most up-to-date sailing schedules.",
     ledeMore:
       "Your daily experience shifts dramatically with the landscape. In major cities like Buenos Aires or Rio, explore distinct neighborhoods like San Telmo, enjoy a late-night tango show, or take a cable car up Sugarloaf Mountain. On the southern routes, however, highlights like Cape Horn and the Patagonia glaciers become scenic sailing days where you take in the breathtaking views directly from the warmth of the ship, often with no port landing at all.",
     paragraphs: [
-      "Many current sailings begin in Rio de Janeiro and run the Brazilian coast. The older pattern was an Atlantic crossing from New York. Carnival, Norwegian, Holland America, and Cunard still sail in the region. The expedition lines sail the routes into the Patagonian fjords. We compare the lines that are actually scheduled, not the ones that sailed it years ago.",
+      "Many current sailings begin in Rio de Janeiro and run the Brazilian coast. The older pattern was an Atlantic crossing from New York. Carnival, Norwegian, Holland America, and Cunard still sail in the region. The expedition lines sail the routes into the Patagonian fjords.",
       "A cruise of about a week that starts in Rio includes Rio and Búzios. In the city you can ride the cable car up Sugarloaf, with the beaches and the water below you. A longer Brazilian cruise can include Salvador or Recife. Farther south, Buenos Aires gives you neighborhoods such as San Telmo, and a tango show if the ship stays into the evening. A Patagonia cruise includes Ushuaia, the fjords, and Cape Horn when the weather allows. On those southern days you often stay aboard and watch the glaciers from the warmth of the ship. You book one sailing or the other. They do not share a port list.",
     ],
     lists: [
       {
         heading: "The stops",
         items: [
-          "Rio de Janeiro — the beaches, Sugarloaf, and Corcovado, with the city between them",
-          "The Brazilian coast — Salvador, Recife, Florianópolis",
-          "Patagonia — fjords, glaciers, Ushuaia",
-          "The Andean coast — Callao, Valparaíso",
-          "The Falklands & the sub-Antarctic, on the far routes",
+          "Rio de Janeiro: Explore the iconic beaches, Sugarloaf Mountain, Corcovado, and the vibrant city in between.",
+          "The Brazilian coast: Visit rich cultural hubs like Salvador, Recife, and Paranaguá.",
+          "Patagonia: Navigate dramatic fjords, towering glaciers, and the remote outpost of Ushuaia.",
+          "The Andean coast: Discover coastal gems like Callao and Valparaiso.",
+          "The Falklands: Venture into the sub-Antarctic waters to experience the remote Falkland Islands.",
         ],
       },
       {
@@ -844,19 +844,19 @@ export const destinations: Destination[] = [
     ledeMore:
       "A world cruise is a marathon of discovery, blending long stretches of relaxing sea days with carefully selected port calls. While short daytime stops are perfect for exploring the streets right near the pier, the true value lies in the overnight stays. When your ship docks overnight in a major global city like Singapore or Sydney, take advantage of the rare opportunity to book private guides, secure exclusive dinner reservations, and experience the culture long after the sun goes down.",
     paragraphs: [
-      "Cunard, Regent, Silversea, and Holland America run full and partial world cruises. Other large lines run the transatlantic crossings and the season-long loops. We compare the routes, the port lists, and the inclusions. On a voyage of about ninety days, what the fare includes matters more than it does on a cruise of about a week.",
+      "Cunard, Regent, Silversea, and Holland America run full and partial world cruises. Other large lines run the transatlantic crossings and the season-long loops. Compare routes, port lists, and inclusions side-by-side. For a voyage of ninety days or more, understanding exactly what your fare covers is essential for a seamless journey.",
       "The voyage mixes long, easy days at sea with the ports you came for. A short stop is the streets nearest the pier. An overnight in a city such as Singapore or Sydney is the evening: time for a guide if you want one, and a dinner reservation after dark. Tell us the months you can be away and the places you do not want to miss.",
     ],
     lists: [
       {
         heading: "The routes",
         items: [
-          "Full round-the-world — 90 to 120 days, the great circle of ports",
-          "Half the voyage — 45 to 70 days, covering part of the route",
-          "The transatlantic crossings, both ways",
-          "The Indian Ocean loop",
-          "The Pacific loop, island by island",
-          "Mediterranean-to-Africa runs, and the reverse",
+          "Full round the world: Embark on a 90 to 120-day grand circle of global ports.",
+          "Half the voyage: Spend 45 to 70 days covering a curated segment of the route.",
+          "Transatlantic crossings: Sail classic oceanliner routes between the Americas and Europe.",
+          "The Indian Ocean loop: Explore exotic ports of call across the Indian Ocean.",
+          "The Pacific loop: Island-hop through the diverse cultures and landscapes of the Pacific.",
+          "Mediterranean to Africa: Journey from historic European shores to the coasts of Africa.",
         ],
       },
       {

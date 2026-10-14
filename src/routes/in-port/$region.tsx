@@ -86,7 +86,7 @@ function InPortPage() {
             <div>
               <h2 className="font-display text-3xl text-ink">Add one of these to the quote</h2>
               <p className="mt-3 text-base leading-relaxed text-ink">
-                Tell us the port and what you want to do there. We check it against the ship’s arrival and the time you have to be back on board before we add it.
+                Share your preferred ports and excursions. Rest easy knowing every detail is seamlessly coordinated with your ship's exact arrival and departure times before it is added to your itinerary.
               </p>
             </div>
             <QuoteForm preset={page.region} kind="cruise" />

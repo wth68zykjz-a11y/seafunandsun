@@ -145,6 +145,28 @@ function DestinationPage() {
   return <DestinationArticle place={place} />;
 }
 
+function bulletedList(slug: string, heading: string) {
+  return (
+    (slug === "hawaii" && heading === "In port") ||
+    (slug === "canada-new-england" && heading === "In port") ||
+    (slug === "european" && heading === "Worth going ashore for") ||
+    (slug === "northern-europe" && heading === "In port") ||
+    (slug === "river" && heading === "The classic rivers") ||
+    (slug === "south-america" && heading === "The stops") ||
+    (slug === "world" && heading === "The routes")
+  );
+}
+
+function LabeledItem({ text }: { text: string }) {
+  const split = text.match(/^([^:]{2,48}):\s+(.+)$/);
+  if (!split) return text;
+  return (
+    <>
+      <span className="font-semibold">{split[1]}:</span> {split[2]}
+    </>
+  );
+}
+
 function FactIcon({ label }: { label: string }) {
   const common = { viewBox: "0 0 24 24", className: "size-5 shrink-0 text-tide", fill: "none", "aria-hidden": true as const };
   if (/time/i.test(label)) {
@@ -334,10 +356,10 @@ export function DestinationArticle({
           {place.lists.map((list) => (
             <article key={list.heading} className={`rounded-xl border border-line bg-foam p-5 sm:p-6 ${list.items.some((item) => item.length > 280) ? "lg:col-span-2" : ""}`}>
               <h2 className="font-display text-2xl">{list.heading}</h2>
-              <ul className={`mt-4 grid gap-3 text-base leading-relaxed text-ink ${(place.slug === "hawaii" && list.heading === "In port") || (place.slug === "canada-new-england" && list.heading === "In port") || (place.slug === "european" && list.heading === "Worth going ashore for") ? "list-disc pl-5" : ""}`}>
+              <ul className={`mt-4 grid gap-3 text-base leading-relaxed text-ink ${bulletedList(place.slug, list.heading) ? "list-disc pl-5" : ""}`}>
                 {list.items.map((item) => (
-                  <li key={item} className={(place.slug === "hawaii" && list.heading === "In port") || (place.slug === "canada-new-england" && list.heading === "In port") || (place.slug === "european" && list.heading === "Worth going ashore for") ? "pl-1" : "border-t border-line pt-3 first:border-0 first:pt-0"}>
-                    {item}
+                  <li key={item} className={bulletedList(place.slug, list.heading) ? "pl-1" : "border-t border-line pt-3 first:border-0 first:pt-0"}>
+                    <LabeledItem text={item} />
                   </li>
                 ))}
               </ul>
