@@ -50,8 +50,7 @@ function SkiPage() {
       </section>
 
       <section id="luxury" className="mx-auto max-w-6xl scroll-mt-24 px-4 py-12">
-        <p className="text-sm font-medium text-tide">Luxury hotels</p>
-        <h2 className="mt-2 max-w-3xl font-display text-4xl">The hotel rate is for the room. The skiing is booked separately.</h2>
+        <h2 className="font-display text-4xl">Luxury hotels</h2>
         <p className="mt-3 max-w-3xl text-mute">
           These are traditional ski hotels: the rate is the room, and sometimes breakfast. The lift pass, lessons, rentals, most dinners, and the transfer are separate. Christmas and February school holidays are often gone a year out.
         </p>
