@@ -160,13 +160,6 @@ export const destinations: Destination[] = [
         ports: ["Aruba", "Bonaire", "Curaçao"],
       },
     ],
-    photos: [
-      { src: "/media/ships/explora.jpg", alt: "Explora III, a dark-hulled ship of about 900 guests, seen from above the stern", caption: "Explora carries about 900 guests, all in suites. A Caribbean cruise on Explora usually starts in San Juan and ends in Miami, or the reverse." },
-      { src: "/media/ships/viking-ocean.jpg", alt: "A Viking ocean ship in a Norwegian fjord", caption: "A Viking ocean ship carries about 930 guests. This photo is in a Norwegian fjord. The 10-night Caribbean cruise uses a ship of this size and starts and ends in San Juan." },
-      { src: "/media/ships/silver-shadow.jpg", alt: "Silver Shadow, a small white Silversea ship, with a glacier behind it", caption: "Silver Shadow carries about 390 guests. Some Caribbean cruises on this ship start and end in San Juan. This photo is the same ship in Alaska." },
-      { src: "/media/ships/royal-clipper.jpg", alt: "Royal Clipper under full sail, with green islands behind the masts", caption: "Royal Clipper carries about 227 guests. Star Clippers cruises start in St. Maarten, Barbados, Antigua, Aruba, or Grenada. They do not start in San Juan or Miami." },
-      { src: "/media/ships/msc-opera.jpg", alt: "MSC Opera docked at a tropical pier, with the name on the bow", caption: "MSC Opera carries about 2,600 guests. It is much smaller than the MSC ships that start in Miami. Southern Caribbean cruises on Opera start in La Romana, and later in Fort-de-France." },
-    ],
   },
   {
     slug: "mediterranean",
