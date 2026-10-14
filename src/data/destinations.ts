@@ -97,7 +97,7 @@ export const destinations: Destination[] = [
     card: "Islands & reefs",
     image: "/media/caribbean.jpg",
     alt: "A quiet Caribbean cove with pale sand and clear water",
-    lede: "More ships sail here than anywhere else we book. In Nassau the straw market is a five-minute walk from the ship. In San Juan the walk up to El Morro starts at the dock.",
+    lede: "The Caribbean has more sailings than any other region we book, so there is room to find the island escape that fits. The western routes are reefs and beaches. A southern routing reaches the warm water of Aruba and Bonaire. In Nassau the straw market is a five-minute walk from the ship. In San Juan the walk up to El Morro starts the moment you step off the pier.",
     paragraphs: [
       "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. Cruises also start in San Juan, and in some seasons in Fort-de-France, Martinique. A cruise that starts in San Juan reaches those islands in seven nights without the sea days a cruise from Florida needs. A cruise starts in Fort-de-France when MSC Opera or a smaller French ship is based there for the season. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip, rather than picking a ship and then looking for a trip.",
       "Cruises that depart from the Northeast have more days at sea. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port. We will say how many days at sea are on the one you are looking at before you book it.",
@@ -175,10 +175,10 @@ export const destinations: Destination[] = [
     card: "Ports & culture",
     image: "/media/mediterranean.jpg",
     alt: "A whitewashed harbor town above a small Mediterranean port",
-    lede: "One morning the ship is in Barcelona. The next, it is in a harbor small enough that you can see the houses from the rail. Choose the ship for those ports, not for the photograph on the cover.",
+    lede: "One morning you wake in the heart of Barcelona. The next, the ship is in a harbor small enough that you can see the cliffside houses from the rail. We match the ship to the ports you care about, whether you want the heat of August or the cooler, quieter months on either side of summer.",
     paragraphs: [
       "Cruises usually run seven to fourteen nights and depart from Barcelona, Civitavecchia for Rome, and Piraeus for Athens. Royal Caribbean, MSC, Norwegian, Celebrity, and Cunard all sail the region, and the luxury lines sail it too. When the itinerary says Venice, the ship usually docks at Ravenna or Trieste, not in the lagoon. We compare the routes, the ports, and what the fare includes, then match the ship to how you like to travel.",
-      "A Greek-island cruise of about a week tends to include Athens, Santorini, Mykonos, and Crete. An Adriatic cruise of about a week tends to include Dubrovnik, Kotor, and Split, with the ship in Ravenna or Trieste rather than Venice. A cruise of about a week that starts in Barcelona tends to include Palma, Marseille, Nice, or Monaco. A 14- to 18-day cruise from the United Kingdom can include ports from more than one of those.",
+      "A Greek-island cruise of about a week tends to include Athens, Santorini, Mykonos, and Crete. An Adriatic cruise of about a week tends to include Dubrovnik, Kotor, and Split, with the ship in Ravenna or Trieste rather than Venice. A cruise of about a week that starts in Barcelona tends to include Palma, Marseille, Nice, or Monaco. You can walk straight into Barcelona’s Gothic Quarter from some piers. The Colosseum is in Rome, about an hour to an hour and a half from Civitavecchia. The Acropolis is in Athens, about 30 to 45 minutes from Piraeus. Pompeii, the Roman city buried by Vesuvius, is the stop near Naples. Give the morning to one of those great sights. A 14- to 18-day cruise from the United Kingdom can include ports from more than one of those coasts.",
     ],
     lists: [
       {
@@ -244,10 +244,10 @@ export const destinations: Destination[] = [
     card: "Cities by sea",
     image: "/media/european.jpg",
     alt: "A historic canal and stone bridge in soft morning light",
-    lede: "You can be in Lisbon in the morning and in a northern city by the time the light goes. These cruises usually leave from Lisbon, Amsterdam, Le Havre, or Southampton.",
+    lede: "Wake up to the hills of Lisbon and sail on toward a different capital by evening. These voyages leave from Lisbon, Amsterdam, Le Havre, or Southampton, so you move from city to city without packing again between them. A winter sailing turns toward the Canary Islands.",
     paragraphs: [
       "Cruises usually run seven to fourteen nights and depart from Lisbon, Amsterdam, Le Havre, or Southampton. The usual ports are Lisbon, Porto, Amsterdam, Bruges, and London. A winter cruise from Lisbon or Southampton tends to include Tenerife, Gran Canaria, or Funchal. Barcelona, Rome, Greece, and the Adriatic are on the Mediterranean page. Cunard, MSC, Celebrity, and Royal Caribbean sail these routes. We compare them, and we build the trip around the cities you want.",
-      "The usual mistake in Europe is trying to see too much. Tell us which cities you have already visited, and we will build the sailing around the ones you have not.",
+      "The pleasure of these cruises is the string of cities, and the planning is in the distances. The Louvre is in Paris, about two hours from the docks at Le Havre, and it holds the Mona Lisa and the Winged Victory of Samothrace. The Tower of London is about an hour and a half to two hours from Southampton. A daytime stop leaves time for one great sight. A few nights at the Savoy in London, or at the Four Seasons Hotel Ritz in Lisbon, let you stay with the city after the ship has gone.",
     ],
     lists: [
       {
@@ -312,10 +312,10 @@ export const destinations: Destination[] = [
     card: "Islands & volcanoes",
     image: "/media/hawaii.jpg",
     alt: "Black volcanic rock and turquoise water on a Hawaiian coast",
-    lede: "The ship carries you from one island to the next, so there is no car between them. A longer sailing from San Diego, Los Angeles, or Vancouver keeps going, as far as Tahiti.",
+    lede: "The ship carries you from island to island, past green valleys and active volcanoes, with no flight and no car between them. A longer sailing from San Diego, Los Angeles, or Vancouver can continue across the Pacific as far as Tahiti and Moorea.",
     paragraphs: [
       "Norwegian's Pride of America stays among the Hawaiian islands and returns to Honolulu. Holland America, Princess, and Celebrity sail from San Diego, Los Angeles, or Vancouver. Those cruises spend several days at sea before the islands, and some continue to Tahiti. Ships stop at Maui. They rarely depart from there.",
-      "Tell us which islands you want time on, and we will find the sailings that actually stop there.",
+      "Tell us which islands you want time on. Inter-island sailings often stay into the evening, which is when a luau works: kalua pig, cooked in an underground oven, and poi, pounded taro. You can also stay for sunset on a black-sand beach. A cruise from California or Vancouver spends several days at sea before the islands, and those days are part of the vacation. Extra nights on Oahu let you see Pearl Harbor before the ship ever sails.",
     ],
     lists: [
       {
@@ -368,9 +368,9 @@ export const destinations: Destination[] = [
     card: "Pink sand beaches",
     image: "/media/bermuda.jpg",
     alt: "Pink sand and clear shallow water on an empty Bermuda beach",
-    lede: "The sand at Horseshoe Bay is pink. Hamilton and St. George's are the towns farther along the island. Ships dock at the Royal Naval Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi and closer to 45 by bus. Hamilton is about 20 minutes by ferry.",
+    lede: "Horseshoe Bay has blush-pink sand, and the towns still have a British colonial charm. A seven-night cruise from Boston, New York, or Baltimore gives you easy sea days each way and a long stay on the island. We can also pair the cruise with extra nights ashore.",
     paragraphs: [
-      "Most Bermuda cruises run about seven nights and depart from Boston, New York, or Baltimore. Many stay overnight, which means the ship is still there the next morning. That is enough time for Horseshoe Bay, Hamilton, and St. George's, at the east end. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly sail there. On a five-hour stop you stay near the Dockyard, unless you take an excursion sold by the ship. If that tour runs late, the ship waits. A taxi or a tour you booked on your own does not make the ship wait.",
+      "Most Bermuda cruises run about seven nights and depart from Boston, New York, or Baltimore. Ships dock at the Royal Naval Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi. Hamilton is a scenic 20-minute ferry across the harbor, and St. George's, with its quiet pastel streets, is about an hour by bus. Many ships stay overnight, so you can see the beach and both towns without rushing back for an afternoon sailing. A fish sandwich on raisin bread is the lunch people look for. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly sail there. On a five-hour stop you stay near the Dockyard, unless you take an excursion sold by the ship. If that tour runs late, the ship waits. A taxi or a tour you booked on your own does not make the ship wait.",
       "A cruise that departs from Boston still has a day at sea each way. That cruise is shorter than a Caribbean cruise that departs from New York. The ocean is part of either cruise.",
       "Bermuda also works as a destination of its own: an island stay, or a sailing that departs from the island. The two combine easily, and we will arrange both.",
     ],
@@ -385,6 +385,7 @@ export const destinations: Destination[] = [
           "Gibbs Hill lighthouse, above the south shore",
           "The ferry across Hamilton Harbour",
           "A drink of rum and pineapple",
+          "A fish sandwich on raisin bread, the lunch people look for in Hamilton",
         ],
       },
       {
@@ -425,10 +426,10 @@ export const destinations: Destination[] = [
     card: "Fjords & Iceland",
     image: "/media/northern-europe.jpg",
     alt: "A steep fjord with a thin waterfall and low clouds",
-    lede: "In summer the sun barely leaves the sky. At Svalbard and Greenland, you are looking at ice. A ship of about 200 guests can enter a narrow fjord. A ship of about 2,500 stays in the wider water.",
+    lede: "Sail under a summer sky that barely goes dark. From the ice of Svalbard and the coasts of Iceland to the Norwegian fjords, the ship sets the trip. A vessel of about 200 guests can slip into a narrow fjord. A larger ship keeps to the wider water and the Baltic capitals, with the comfort of a resort on board.",
     paragraphs: [
       "Holland America, Princess, Norwegian, Celebrity, MSC, Viking, and Cunard sail the fjords, Iceland, and the Baltic from Amsterdam, Copenhagen, Southampton, and the Norwegian ports. Hapag-Lloyd and the expedition lines go farther north, toward Svalbard and Greenland.",
-      "A fjord cruise of about a week tends to include Bergen, Geiranger, and Flåm. An Iceland cruise tends to include Reykjavik. A Baltic cruise tends to include Copenhagen, Stockholm, Tallinn, and Helsinki. A longer sailing can add the Lofotens, Svalbard, or Greenland.",
+      "A fjord cruise of about a week tends to include Bergen, Geiranger, and Flåm. In a small place like Geiranger you often come ashore by tender. An Iceland cruise tends to include Reykjavik. A Baltic cruise tends to include Copenhagen, Stockholm, Tallinn, and Helsinki. Nyhavn is the canal quarter in Copenhagen. Ocean ships for Amsterdam dock at IJmuiden, about 30 to 45 minutes from the Rijksmuseum, which holds Rembrandt’s The Night Watch. If weather cancels a tender in a fjord, the view from the deck is still the reason you came. A longer sailing can add the Lofotens, Svalbard, or Greenland.",
     ],
     lists: [
       {
@@ -489,10 +490,10 @@ export const destinations: Destination[] = [
     card: "Fall foliage",
     image: "/media/new-england.jpg",
     alt: "A white lighthouse and autumn trees on a rocky New England point",
-    lede: "From the Northeast, Boston and New York are close enough that you can skip a flight. In October the maples along this coast turn red.",
+    lede: "From the Northeast, Boston and New York are close enough that you can skip the flight and sail straight up the coast. Time it for October, when the maples turn crimson and gold, or come in summer for warmer days on deck.",
     paragraphs: [
       "Most cruises run three to eleven nights and depart from Boston. Longer cruises depart from New York. Royal Caribbean, Carnival, Norwegian, Celebrity, and Princess all sail the region. We compare them directly, without a preference for any one line.",
-      "These cruises stop at Cape Cod, Halifax, Quebec, and, on some loops, Bermuda. You can see a lot from the deck. You see more when you go ashore.",
+      "These itineraries open classic, smaller harbors. A stop in a Maine town such as Bar Harbor is often a few hours, just long enough for a stroll and a fresh lobster roll. Halifax and Quebec usually keep the ship longer. In Quebec the ship docks below Upper Town, and you walk the cobblestone streets up to the terrace in front of the Château Frontenac.",
     ],
     lists: [
       {
@@ -552,10 +553,10 @@ export const destinations: Destination[] = [
     card: "European and American rivers",
     image: "/media/river.jpg",
     alt: "A riverside town and vineyards at dusk",
-    lede: "The ship follows one river, and you step off into the town. Then we set the ship, the cabin, and what the fare includes side by side.",
+    lede: "The ship follows one river, and you step from the deck into the heart of the town. Castles line the Rhine. Vineyards line the Douro. We set the ships, the suites, and the included excursions side by side, until the right one feels like a small hotel that moves.",
     paragraphs: [
       "On the Danube, the Rhine, the Seine, and the Douro, the usual lines are Viking, AmaWaterways, Avalon, Uniworld, and Scenic. American Cruise Lines does not sail those rivers. It sails in the United States, on the Mississippi, the Ohio, the Columbia and Snake, and the Great Lakes. Viking also sails the Mississippi. Windstar is an ocean line and does not sail any of these.",
-      "In Budapest you can walk the Danube promenade and order goulash, beef and paprika in a thick sauce. In Vienna you can order schnitzel, a pounded veal cutlet fried in breadcrumbs. In the Wachau the river narrows between apricot orchards and Riesling vineyards. In New Orleans you can get beignets, fried dough with powdered sugar, and gumbo, a dark roux stew of shrimp or chicken. The landings north of New Orleans are small river towns, not a European capital. Name the river and the season. We put the ships that sail that river next to one another.",
+      "You step off into the town, which is the pleasure of a river ship. In Budapest you can walk the Danube promenade and order goulash, beef and paprika in a thick sauce. In Vienna you can order schnitzel, a pounded veal cutlet fried in breadcrumbs, or Sachertorte, a chocolate cake with apricot jam, at a café by the river. In the Wachau the river narrows between apricot orchards and Riesling vineyards, and you can take a bicycle off the ship and ride that path. A guided walk in the morning is included on most of these ships, and the afternoon is yours. In New Orleans you can get beignets, fried dough with powdered sugar, and gumbo, a dark roux stew of shrimp or chicken. The landings north of New Orleans are small river towns. Name the river and the season. We put the ships that sail it next to one another.",
     ],
     lists: [
       {
@@ -627,10 +628,10 @@ export const destinations: Destination[] = [
     card: "Remote coasts",
     image: "/media/expedition.jpg",
     alt: "Sea ice under pale polar light",
-    lede: "Antarctica, the Arctic, and the Galápagos are sailed on small ships. Going ashore is the point of those cruises. You go by Zodiac with a guide. Weather can cancel the landing.",
+    lede: "Journey to coasts a large ship never reaches. Antarctica, the Arctic, and the Galápagos are sailed on small ships, often carrying fifty to two hundred guests, and going ashore is the heart of the voyage. On the polar cruises you come close to ice, whales, and wildlife. In the Galápagos the landings put you among the animals on the islands.",
     paragraphs: [
       "Lindblad, Ponant, and Hapag-Lloyd sail Antarctica, the Arctic, and the Galápagos, along with the expedition ships of Viking and Silversea. Those same small ships also sail Patagonia. UnCruise sails Alaska and the Pacific Northwest. It does not sail Antarctica or the Galápagos.",
-      "Tell us the region and the months. On a smaller ship you spend more time off the ship. We will set out the options that match those months.",
+      "A landing feels different from a pier. You pull on the boots and parka the ship provides and ride a Zodiac onto a beach or the ice. The expedition team sets the day around the weather, and the guides set how close you stand to penguins or seals. When the water is calm, many ships will put kayaks in. A Galápagos landing is on an island, not on ice.",
     ],
     lists: [
       {
@@ -758,10 +759,10 @@ export const destinations: Destination[] = [
     card: "Rio & Cape Horn",
     image: "/media/south-america.jpg",
     alt: "A Patagonian fjord with a distant glacier",
-    lede: "Rio and the warm coast are one sailing. Cape Horn and the cold fjords are another. They do not share a port list, so the ship should be the one that sails the coast you want.",
+    lede: "Rio and the warm coast are one kind of voyage. Cape Horn and the icy fjords are another, and the two do not share a port list. Choose the sunlit beaches, or the dramatic south. We book the itinerary that matches the coast you want.",
     paragraphs: [
       "Many current sailings begin in Rio de Janeiro and run the Brazilian coast. The older pattern was an Atlantic crossing from New York. Carnival, Norwegian, Holland America, and Cunard still sail in the region. The expedition lines sail the routes into the Patagonian fjords. We compare the lines that are actually scheduled, not the ones that sailed it years ago.",
-      "A cruise of about a week that starts in Rio includes Rio and Búzios. A longer Brazilian cruise can include Salvador or Recife. A Patagonia cruise includes Ushuaia, the fjords, and Cape Horn when the weather allows. You book one sailing or the other. They do not share a port list.",
+      "A cruise of about a week that starts in Rio includes Rio and Búzios. In the city you can ride the cable car up Sugarloaf, with the beaches and the water below you. A longer Brazilian cruise can include Salvador or Recife. Farther south, Buenos Aires gives you neighborhoods such as San Telmo, and a tango show if the ship stays into the evening. A Patagonia cruise includes Ushuaia, the fjords, and Cape Horn when the weather allows. On those southern days you often stay aboard and watch the glaciers from the warmth of the ship. You book one sailing or the other. They do not share a port list.",
     ],
     lists: [
       {
@@ -820,10 +821,10 @@ export const destinations: Destination[] = [
     card: "Grand voyages",
     image: "/media/world.jpg",
     alt: "A large cruise ship crossing open ocean",
-    lede: "These voyages run about 70 to 120 days, and they stop at ports a shorter cruise never puts on the same list. Look at the calendar, and the fare, before you give one ship that many months.",
+    lede: "A world cruise is the long voyage, about 70 to 120 days, and it opens ports a shorter cruise never puts on the same list. You live on the ship for months, so we look closely at the inclusions, the routing, and the way life on board feels before you commit.",
     paragraphs: [
       "Cunard, Regent, Silversea, and Holland America run full and partial world cruises. Other large lines run the transatlantic crossings and the season-long loops. We compare the routes, the port lists, and the inclusions. On a voyage of about ninety days, what the fare includes matters more than it does on a cruise of about a week.",
-      "Tell us the months you can be away and the places you do not want to miss. We will show you the sailings that satisfy both.",
+      "The voyage mixes long, easy days at sea with the ports you came for. A short stop is the streets nearest the pier. An overnight in a city such as Singapore or Sydney is the evening: time for a guide if you want one, and a dinner reservation after dark. Tell us the months you can be away and the places you do not want to miss.",
     ],
     lists: [
       {
@@ -968,10 +969,10 @@ export const destinations: Destination[] = [
     card: "Reefs & fiords",
     image: "/media/australia-new-zealand.jpg",
     alt: "Sydney Opera House and a cruise ship on the harbor",
-    lede: "Sydney, the warm water of the Reef, and the cold fiords of the South Island can share one sailing. The flight from the Northeast is long, so look at the season and the ship before you book.",
+    lede: "Sydney, the warm water of the Great Barrier Reef, and the icy fiords of New Zealand’s South Island can share one sailing. The flight from the East Coast is a real part of the journey, so we match the season and the ship to the time you have, whether that is the bright southern summer or the quieter months on either side of it.",
     paragraphs: [
       "Most cruises run ten to twenty-one nights and depart from Sydney, Auckland, or Brisbane. Longer repositioning voyages come from Hawaii, Los Angeles, or Vancouver. Princess, Holland America, Celebrity, Royal Caribbean, Cunard, and the smaller luxury lines sail the region in the southern summer. We compare the ports on the itinerary. We do not start from a favorite line.",
-      "The useful split is Sydney, Brisbane, and Cairns; a New Zealand circuit from Auckland; or one sailing across the Tasman that does both. Tell us which of those you want. We will start from the ports, not from a brand.",
+      "The usual choices are the Australian coast from Sydney, a New Zealand circuit from Auckland, or one sailing across the Tasman that does both. In Sydney the ship docks at Circular Quay, beside the Opera House, and you can walk the waterfront or sit down to a meat pie. The reef itself is a boat ride from Cairns or Airlie Beach, out among clownfish and giant clams. In Milford Sound the ship rarely docks. You watch the fiord walls glide past from the deck or a balcony.",
     ],
     lists: [
       {
@@ -1031,10 +1032,10 @@ export const destinations: Destination[] = [
     card: "Full and partial transits",
     image: "/media/panama-canal.jpg",
     alt: "A ship in the Miraflores Locks on the Panama Canal",
-    lede: "The ship climbs from one ocean into the other. On a full transit it leaves one ocean and arrives in the other. A partial transit goes into Gatun Lake and comes back out the same side. It is not a cruise from beach to beach.",
+    lede: "The ship climbs from one ocean into the other, through one of the great works of engineering. A full transit of about 14 to 17 nights goes all the way from the Caribbean to the Pacific, or the other way. A shorter partial transit, often about 10 nights, enters Gatun Lake and returns the way it came. These sailings are most common in spring and fall, when the fleets change oceans.",
     paragraphs: [
       "Most full transits run fourteen to seventeen nights, one way. The usual departure port on the Caribbean side is Fort Lauderdale, Miami, or New Orleans. Los Angeles or San Diego is the usual Pacific end, and some sailings continue to Seattle or Vancouver. Princess, Holland America, Celebrity, Norwegian, Carnival, Royal Caribbean, and Cunard schedule them, mainly in spring and fall, when ships move between a Caribbean cruise and Los Angeles, San Diego, or an Alaska cruise. Regent, Silversea, Oceania, and Viking ocean do as well. An agent requests many of those fares.",
-      "A full transit and a partial transit are both called a Panama Canal cruise. A full transit goes from the Caribbean to the Pacific, or the other way, in about 14 to 17 nights. A partial transit is a round trip from Florida into Gatun Lake, often 10 or 11 nights. Compare those two before you look at a fare.",
+      "A full transit and a partial transit are both called a Panama Canal cruise, and the highlight happens on deck. As the ship moves through Gatun or Agua Clara, and later Miraflores or Cocoli, you watch the locks lift it from one level to the next. Many ships pass Panama City without docking. Cartagena is the city these cruises usually do stop in, and an afternoon there is the old stone streets inside the walls.",
     ],
     lists: [
       {
