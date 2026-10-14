@@ -1,10 +1,10 @@
 import { useState, type ReactNode } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { ChevronDown, Facebook, Instagram, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import { destinations } from "@/data/destinations";
 import { railPages } from "@/data/rail-pages";
 import { skiPages } from "@/data/ski-pages";
-import { bookingEmail, facebook, instagram, licenseLine, phone, phoneHref } from "@/data/links";
+import { bookingEmail, facebook, instagram, phone, phoneHref } from "@/data/links";
 
 const cruiseRegions = destinations.filter((item) => item.slug !== "rail");
 
@@ -330,10 +330,9 @@ export function Footer() {
         <div>
           <Wordmark tone="foam" />
           <p className="mt-3 max-w-sm text-base leading-relaxed text-foam/90">
-            Based in Farmington, Connecticut, Sea Fun & Sun is an independent travel agency dedicated to crafting seamless, unforgettable vacations. From ocean cruises to alpine ski resorts, we handle the details so you can focus on the journey.
+            Based in Farmington, Connecticut, we are an independent travel agency dedicated to crafting seamless, unforgettable vacations. From ocean cruises to alpine ski resorts, a single dedicated agent handles every detail from your first quote until you are home.
           </p>
-          <p className="mt-4 text-base font-medium">Get in Touch</p>
-          <p className="mt-2 text-base leading-relaxed">
+          <p className="mt-4 text-base leading-relaxed">
             Call or Text:{" "}
             <a href={phoneHref} className="underline-offset-2 hover:underline">
               {phone}
@@ -344,69 +343,59 @@ export function Footer() {
               {bookingEmail}
             </a>
           </p>
-          <div className="mt-4 flex gap-2">
-            <a
-              href={instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="inline-flex size-11 items-center justify-center rounded-md bg-gold text-ink hover:bg-gold-deep"
-            >
-              <Instagram className="size-5" aria-hidden="true" />
+          <p className="mt-3 text-base">
+            <a href={instagram} target="_blank" rel="noopener noreferrer" className="underline-offset-2 hover:underline">
+              Instagram
             </a>
-            <a
-              href={facebook}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              className="inline-flex size-11 items-center justify-center rounded-md bg-foam text-ink"
-            >
-              <Facebook className="size-5" aria-hidden="true" />
+            {" · "}
+            <a href={facebook} target="_blank" rel="noopener noreferrer" className="underline-offset-2 hover:underline">
+              Facebook
             </a>
-          </div>
+          </p>
         </div>
         <div>
           <p className="text-base font-medium">Explore</p>
-          <ul className="mt-2 grid grid-cols-1 gap-y-2 text-base leading-6 text-foam/90 sm:grid-cols-2 sm:gap-x-4">
-            <li><Link to="/destinations" className="hover:text-foam">Cruises</Link></li>
+          <ul className="mt-2 grid gap-y-2 text-base leading-6 text-foam/90">
+            <li><Link to="/destinations" className="hover:text-foam">Destinations & Cruises</Link></li>
             <li><Link to="/resorts" className="hover:text-foam">Resorts</Link></li>
             <li><Link to="/ski" className="hover:text-foam">Ski Vacations</Link></li>
-            <li><Link to="/rail" className="hover:text-foam">Rail & Land</Link></li>
+            <li>
+              <Link to="/destinations/$slug" params={{ slug: "expedition" }} className="hover:text-foam">
+                Expedition Cruises
+              </Link>
+            </li>
+            <li><Link to="/rail" className="hover:text-foam">Rail & Land Journeys</Link></li>
             <li><Link to="/sailings" hash="promotions" className="hover:text-foam">Current Promotions</Link></li>
-            <li><Link to="/quote" className="hover:text-foam">Request a Quote</Link></li>
           </ul>
         </div>
         <div>
           <p className="text-base font-medium">Destinations</p>
-          <ul className="mt-2 grid grid-cols-1 gap-y-2 text-base leading-6 text-foam/90 sm:grid-cols-2 sm:gap-x-4">
-            {destinations
-              .filter((item) => item.slug !== "rail")
-              .map((item) => (
-                <li key={item.slug}>
-                  <Link to="/destinations/$slug" params={{ slug: item.slug }} className="hover:text-foam">
-                    {item.nav}
-                  </Link>
-                </li>
-              ))}
+          <ul className="mt-2 grid gap-y-2 text-base leading-6 text-foam/90">
+            <li><Link to="/destinations/$slug" params={{ slug: "alaskan" }} className="hover:text-foam">Alaska Cruises</Link></li>
+            <li><Link to="/destinations/$slug" params={{ slug: "caribbean" }} className="hover:text-foam">Caribbean Cruises</Link></li>
+            <li><Link to="/destinations/$slug" params={{ slug: "european" }} className="hover:text-foam">European Cruises</Link></li>
+            <li><Link to="/destinations/$slug" params={{ slug: "mediterranean" }} className="hover:text-foam">Mediterranean</Link></li>
+            <li><Link to="/destinations/$slug" params={{ slug: "asia" }} className="hover:text-foam">Asia Cruises</Link></li>
+            <li><Link to="/destinations/$slug" params={{ slug: "australia-new-zealand" }} className="hover:text-foam">Australia & New Zealand</Link></li>
+            <li><Link to="/destinations/$slug" params={{ slug: "world" }} className="hover:text-foam">World Cruises</Link></li>
           </ul>
         </div>
       </div>
       <div className="border-t border-foam/15">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-4 text-base leading-relaxed text-foam/90 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-4">
+        <div className="mx-auto grid max-w-6xl gap-2 px-4 py-4 text-base leading-relaxed text-foam/90">
           <p>© {new Date().getFullYear()} Sea Fun & Sun · Farmington, CT</p>
-          <p>Booking engine powered by Outside Agents</p>
+          <p>Booking engine powered by Outside Agents · Independent Affiliate of A.S.A.P. Cruises Inc.</p>
+          <p>FL Seller of Travel ST15578 · CA Seller of Travel 2090937-50 · WA UBID 603189022</p>
           <p>
             <Link to="/policies/$doc" params={{ doc: "terms" }} className="underline-offset-2 hover:underline">Terms</Link>
             {" · "}
             <Link to="/policies/$doc" params={{ doc: "refund" }} className="underline-offset-2 hover:underline">Refunds</Link>
             {" · "}
             <Link to="/policies/$doc" params={{ doc: "privacy" }} className="underline-offset-2 hover:underline">Privacy</Link>
-          </p>
-          <p>{licenseLine}</p>
-          <p>
-            <a href="/llms.txt" className="underline-offset-2 hover:underline">Facts for AI</a>
             {" · "}
             <a href="/sitemap.xml" className="underline-offset-2 hover:underline">Sitemap</a>
+            {" · "}
+            <a href="/llms.txt" className="underline-offset-2 hover:underline">Facts for AI</a>
           </p>
         </div>
       </div>
