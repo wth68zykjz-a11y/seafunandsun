@@ -59,19 +59,14 @@ function ItinerariesPage() {
             </Link>
           ))}
         </div>
-        <div className="mt-4 grid gap-8">
-          {shown.map((item) => (
-            <section key={item.slug}>
-              <div className="flex items-end justify-between gap-4">
-                <h2 className="font-display text-3xl">{item.title}</h2>
-                <Link to="/destinations/$slug" params={{ slug: item.slug }} className="text-sm font-medium text-tide">
-                  Destination page
-                </Link>
-              </div>
+        <div className="mt-4 grid gap-4">
+          {shown.map((item, index) => {
+            const body = (
+              <>
               <div className="mt-4 grid gap-4 overflow-hidden rounded-xl border border-line bg-foam md:grid-cols-[220px_1fr]">
                 <img src={item.image} alt={item.alt} loading="lazy" decoding="async" className="h-48 w-full object-cover md:h-full" />
                 <div className="p-4">
-                  <p className="text-base leading-relaxed text-ink">{item.lede}</p>
+                  <p className="text-base leading-relaxed text-ink">{item.lede.split(/(?<=\.)\s/)[0]}</p>
                   <Link to="/destinations/$slug" params={{ slug: item.slug }} className="mt-3 inline-flex min-h-11 items-center text-sm font-medium text-tide">
                     More on {item.nav}, including excursions
                   </Link>
@@ -128,8 +123,28 @@ function ItinerariesPage() {
                   </article>
                 ))}
               </div>
-            </section>
-          ))}
+              </>
+            );
+            if (active) {
+              return (
+                <section key={item.slug}>
+                  <div className="flex items-end justify-between gap-4">
+                    <h2 className="font-display text-3xl">{item.title}</h2>
+                    <Link to="/destinations/$slug" params={{ slug: item.slug }} className="text-sm font-medium text-tide">
+                      Destination page
+                    </Link>
+                  </div>
+                  {body}
+                </section>
+              );
+            }
+            return (
+              <details key={item.slug} open={index === 0} className="rounded-xl border border-line bg-paper p-4">
+                <summary className="cursor-pointer font-display text-2xl text-ink">{item.title}</summary>
+                {body}
+              </details>
+            );
+          })}
         </div>
       </div>
     </Shell>

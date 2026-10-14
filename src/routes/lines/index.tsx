@@ -29,6 +29,25 @@ function LinesPage() {
         </Link>
         .
       </p>
+      <div className="mx-auto max-w-6xl px-4 pb-8">
+        <h2 className="font-display text-3xl">Choose by size</h2>
+        <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink">
+          These four bands do not overlap. The cards below are the ships that sail a region, so one line can appear in more than one card.
+        </p>
+        <div className="mt-4 grid gap-3 sm:grid-cols-2">
+          {[
+            ["Under 1,000 guests", "River ships, expedition ships, and yachts. They dock in small harbors.", "/lines/small"],
+            ["1,000 to 2,500 guests", "Luxury ocean ships. More dining, and a harbor closer to town.", "/lines/luxury"],
+            ["2,500 to 5,000 guests", "Princess, Celebrity, Holland America, and many Norwegian ships. Pools, shows, and a full dining room.", "/lines/europe"],
+            ["5,000 guests and up", "Royal Caribbean’s Oasis and Icon ships, and MSC’s largest ships. Water parks, surf simulators, and a boardwalk.", "/lines/large"],
+          ].map(([title, text, to]) => (
+            <Link key={title} to={to} className="rounded-xl border border-line bg-foam p-5 hover:border-tide">
+              <h3 className="font-display text-2xl">{title}</h3>
+              <p className="mt-2 text-base leading-relaxed text-ink">{text}</p>
+            </Link>
+          ))}
+        </div>
+      </div>
       <div className="mx-auto grid max-w-6xl gap-4 px-4 pb-20 sm:grid-cols-2">
         {linePagesInSizeOrder.map((page) => (
           <Link key={page.slug} to="/lines/$slug" params={{ slug: page.slug }} className="group overflow-hidden rounded-xl border border-line bg-foam hover:border-tide">

@@ -137,9 +137,9 @@ function InPortPage() {
           </div>
           <div className="mt-10 grid gap-8 lg:grid-cols-2">
             <div>
-              <h2 className="font-display text-3xl text-ink">Add one of these to the quote</h2>
+              <h2 className="font-display text-3xl text-ink">Add excursions to your quote</h2>
               <p className="mt-3 text-base leading-relaxed text-ink">
-                Share your preferred ports and desired activities. Enjoy complete peace of mind knowing that every excursion is carefully coordinated with your ship's exact arrival and departure times before it is added to your custom itinerary.
+                Share your preferred ports and activities with us. We carefully verify every excursion against your ship’s exact arrival and departure schedule to ensure seamless, worry-free timing before finalizing your itinerary.
               </p>
             </div>
             <QuoteForm preset={page.region} kind="cruise" />

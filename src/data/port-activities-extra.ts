@@ -215,13 +215,13 @@ export const extraPortPages = [
         photos: [
           { src: "/media/walks/budapest-parliament.jpg", alt: "The Hungarian Parliament on the Danube in Budapest" },
         ],
-        dock: "Ships tie up on the Pest or Buda embankment.",
-        text: "Parliament is on the Pest side, and you can walk to it from many docks. The castle is on the Buda hill. A thermal bath is a soak in mineral water, not a swim off the ship.",
+        dock: "River ships tie up along the Buda or Pest embankments.",
+        text: "Docks on the Pest side are a walk from Parliament. Across the river, Buda Hill has the castle and the mineral thermal baths, a soak in mineral water rather than a swim off the ship.",
       },
       {
         name: "Vienna",
-        dock: "Ships tie up on the Danube or the canal.",
-        text: "St. Stephen’s Cathedral is in the old center. A walk or a short tram gets you there from the dock. A schnitzel is a thin fried cutlet, usually veal or pork.",
+        dock: "Ships dock along the Danube or the Danube Canal.",
+        text: "A tram ride or a walk brings you into the old center and to St. Stephen’s Cathedral. Schnitzel, the local plate to order, is a thin fried cutlet, usually veal or pork.",
       },
       {
         name: "Cologne and the Rhine",
@@ -326,13 +326,13 @@ export const extraPortPages = [
     stops: [
       {
         name: "Rio de Janeiro",
-        dock: "The ship docks at Pier Mauá.",
-        text: "Sugarloaf is the granite peak at the mouth of the bay. You ride a cable car up it. Corcovado and the Christ statue are inland. The ride from the pier to the train or the van takes about 30 to 40 minutes. Guanabara Bay is the water the ship is already on.",
+        dock: "Ships dock at Pier Mauá on Guanabara Bay.",
+        text: "Ride the cable car up Sugarloaf, the granite peak at the mouth of the bay. Corcovado and the Christ statue are inland. The ride from the pier to the train or the van takes about 30 to 40 minutes.",
       },
       {
         name: "Buenos Aires",
-        dock: "The ship docks at the port, a ride from the neighborhoods.",
-        text: "San Telmo has the old streets and the Sunday market. A taxi from the port gets you there. A parrilla is a grill restaurant. The beef is cooked over a fire, often with chimichurri, a sauce of parsley, garlic, vinegar, and oil.",
+        dock: "The ship docks at the port, a short taxi ride from the neighborhoods.",
+        text: "San Telmo has cobblestone streets and a Sunday antique market. A parrilla is a grill restaurant. The beef is cooked over a fire, often with chimichurri, a sauce of parsley, garlic, vinegar, and oil.",
       },
       {
         name: "Ushuaia",
@@ -368,7 +368,7 @@ export const extraPortPages = [
       {
         name: "Southampton",
         dock: "Many world cruises start or end here.",
-        text: "The train from Southampton to London takes about an hour and a half to two hours. Add nights in London if you want the city. The port itself is for boarding.",
+        text: "The train to central London takes about 90 to 120 minutes. Southampton is a practical place to add nights in London before the ship sails or after it returns.",
       },
       {
         name: "Sydney",
@@ -385,8 +385,8 @@ export const extraPortPages = [
       },
       {
         name: "Cape Town",
-        dock: "The ship docks at the cruise terminal beside the V&A Waterfront.",
-        text: "You can walk to the waterfront from that terminal. Table Mountain is above the city. The cable car runs when the wind allows. The ride from the pier to the lower station takes about 15 minutes.",
+        dock: "Ships dock beside the Victoria & Alfred Waterfront.",
+        text: "Dining and shopping at the waterfront are a walk from the terminal. Table Mountain is above the city. The cable car runs when the wind allows, and the ride from the pier to the lower station takes about 15 minutes.",
       },
     ],
   },
@@ -441,12 +441,12 @@ export const extraPortPages = [
       {
         name: "The canal",
         dock: "You stay on the ship during the transit.",
-        text: "You watch the locks from the deck. A full transit passes every lock and the Culebra Cut. A partial transit uses the Caribbean locks and Gatun Lake, then comes back out the same side.",
+        text: "You watch the transit from the deck as the ship moves through the locks and the Culebra Cut. A full transit goes from one ocean to the other. A partial transit enters Gatun Lake through the Caribbean locks, then returns the same way.",
       },
       {
         name: "Cartagena",
-        dock: "The ship docks at the cruise terminal, outside the old city.",
-        text: "The walled city has the colored streets and the fort. A taxi or a shuttle from the terminal takes about 15 to 20 minutes. You walk once you are inside the walls.",
+        dock: "Ships dock at the cruise terminal, a 15- to 20-minute taxi or shuttle ride from the historic center.",
+        text: "Once you are inside the stone walls, the colored streets, the plazas, and the fort are a walk.",
       },
       {
         name: "Colón and Panama City",
