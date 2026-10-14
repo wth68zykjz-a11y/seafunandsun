@@ -5,13 +5,17 @@ import { destinations } from "@/data/destinations";
 import { railPages } from "@/data/rail-pages";
 import { bookingEmail, facebook, instagram, licenseLine, phone, phoneHref } from "@/data/links";
 
-const nav = [
-  { to: "/destinations", label: "Cruises" },
-  { to: "/ports", label: "Ports" },
+const landLinks = [
   { to: "/resorts", label: "Resorts" },
-  { to: "/ski", label: "Ski" },
-  { to: "/rail", label: "Rail" },
+  { to: "/ski", label: "Ski vacations" },
+  { to: "/rail", label: "Rail and land" },
 ] as const;
+
+function navStyle(active: boolean) {
+  return active
+    ? { backgroundColor: "#f7fbf9", color: "#0c2340" }
+    : { color: "#f7fbf9" };
+}
 
 export function LogoMark({ className }: { className: string }) {
   return (
@@ -70,32 +74,67 @@ export function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Wordmark tone="foam" />
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
-          {nav.map((item) => {
-            const active = path.startsWith(item.to);
-            return (
-              <Link
-                key={item.to}
-                to={item.to}
-                className={`rounded-md px-2.5 py-2 text-sm font-medium ${active ? "bg-foam" : "hover:bg-sea-2"}`}
-                style={active ? { backgroundColor: "#f7fbf9", color: "#0c2340" } : { color: "#f7fbf9" }}
-              >
-                {item.label}
+          <Link
+            to="/destinations"
+            className="rounded-md px-2.5 py-2 text-sm font-medium"
+            style={navStyle(path.startsWith("/destinations") || path.startsWith("/in-port"))}
+          >
+            Destinations
+          </Link>
+          <details className="relative" key={`cruises-${path}`}>
+            <summary
+              className="flex min-h-11 cursor-pointer list-none items-center rounded-md px-2.5 text-sm font-medium [&::-webkit-details-marker]:hidden"
+              style={navStyle(path.startsWith("/lines") || path.startsWith("/ports"))}
+            >
+              Cruises
+            </summary>
+            <div className="absolute left-0 top-full z-30 mt-1 min-w-52 rounded-md border border-line bg-foam p-2 text-ink shadow-lg">
+              <Link to="/destinations" className="block rounded-md px-3 py-2 text-sm font-medium hover:bg-paper">
+                Cruise regions
               </Link>
-            );
-          })}
+              <Link to="/lines" className="block rounded-md px-3 py-2 text-sm font-medium hover:bg-paper">
+                Compare cruise lines
+              </Link>
+              <Link to="/ports" className="block rounded-md px-3 py-2 text-sm font-medium hover:bg-paper">
+                Departure ports
+              </Link>
+            </div>
+          </details>
+          <details className="relative" key={`land-${path}`}>
+            <summary
+              className="flex min-h-11 cursor-pointer list-none items-center rounded-md px-2.5 text-sm font-medium [&::-webkit-details-marker]:hidden"
+              style={navStyle(path.startsWith("/resorts") || path.startsWith("/ski") || path.startsWith("/rail"))}
+            >
+              Land Vacations
+            </summary>
+            <div className="absolute left-0 top-full z-30 mt-1 min-w-52 rounded-md border border-line bg-foam p-2 text-ink shadow-lg">
+              {landLinks.map((item) => (
+                <Link key={item.to} to={item.to} className="block rounded-md px-3 py-2 text-sm font-medium hover:bg-paper">
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </details>
           <Link
             to="/sailings"
             hash="promotions"
-            className="ml-2 inline-flex min-h-11 items-center rounded-md bg-gold px-4 text-sm font-medium text-ink hover:bg-gold-deep"
+            className="rounded-md px-2.5 py-2 text-sm font-medium"
+            style={navStyle(path.startsWith("/sailings") || path.startsWith("/promotions"))}
           >
             Promotions
           </Link>
           <a
             href={phoneHref}
-            className="ml-2 inline-flex min-h-11 items-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
+            className="ml-1 inline-flex min-h-11 items-center rounded-md px-2.5 text-sm font-medium text-foam hover:bg-sea-2"
           >
             {phone}
           </a>
+          <Link
+            to="/quote"
+            className="ml-1 inline-flex min-h-11 items-center rounded-md bg-coral px-4 text-sm font-medium text-foam hover:bg-coral-deep"
+          >
+            Request a Quote
+          </Link>
         </nav>
         <div className="flex shrink-0 items-center gap-2 lg:hidden">
           <a
@@ -185,67 +224,67 @@ export function Header() {
       {open ? (
         <div className="border-t border-foam/15 bg-sea px-4 py-3 text-foam lg:hidden">
           <nav className="grid" aria-label="Mobile">
-            {nav.map((item) => (
-              <span key={item.to}>
+            <Link to="/destinations" onClick={() => setOpen(false)} className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium">
+              Destinations
+            </Link>
+            <details className="border-b border-foam/15">
+              <summary className="flex min-h-12 cursor-pointer list-none items-center text-base font-medium [&::-webkit-details-marker]:hidden">
+                Cruises
+              </summary>
+              <Link to="/destinations" onClick={() => setOpen(false)} className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base">
+                Cruise regions
+              </Link>
+              <Link to="/lines" onClick={() => setOpen(false)} className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base">
+                Compare cruise lines
+              </Link>
+              <Link to="/ports" onClick={() => setOpen(false)} className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base">
+                Departure ports
+              </Link>
+              {destinations
+                .filter((page) => page.slug !== "rail")
+                .map((page) => (
+                  <Link
+                    key={page.slug}
+                    to="/destinations/$slug"
+                    params={{ slug: page.slug }}
+                    onClick={() => setOpen(false)}
+                    className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base"
+                  >
+                    {page.nav}
+                  </Link>
+                ))}
+            </details>
+            <details className="border-b border-foam/15">
+              <summary className="flex min-h-12 cursor-pointer list-none items-center text-base font-medium [&::-webkit-details-marker]:hidden">
+                Land Vacations
+              </summary>
+              {landLinks.map((item) => (
                 <Link
+                  key={item.to}
                   to={item.to}
                   onClick={() => setOpen(false)}
-                  className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium"
+                  className="flex min-h-11 items-center border-t border-foam/15 pl-4 text-base"
                 >
                   {item.label}
                 </Link>
-                {item.to === "/destinations" ? (
-                  <details className="border-b border-foam/15">
-                    <summary className="flex min-h-11 cursor-pointer list-none items-center pl-4 text-base">Regions</summary>
-                    <Link
-                      to="/lines"
-                      onClick={() => setOpen(false)}
-                      className="flex min-h-11 items-center border-t border-foam/15 pl-8 text-base"
-                    >
-                      Compare
-                    </Link>
-                    {destinations
-                      .filter((page) => page.slug !== "rail")
-                      .map((page) => (
-                        <Link
-                          key={page.slug}
-                          to="/destinations/$slug"
-                          params={{ slug: page.slug }}
-                          onClick={() => setOpen(false)}
-                          className="flex min-h-11 items-center border-t border-foam/15 pl-8 text-base"
-                        >
-                          {page.nav}
-                        </Link>
-                      ))}
-                  </details>
-                ) : null}
-                {item.to === "/rail" ? (
-                  <details className="border-b border-foam/15">
-                    <summary className="flex min-h-11 cursor-pointer list-none items-center pl-4 text-base">Trains</summary>
-                    {railPages.map((page) => (
-                      <Link
-                        key={page.slug}
-                        to="/rail/$slug"
-                        params={{ slug: page.slug }}
-                        onClick={() => setOpen(false)}
-                        className="flex min-h-11 items-center border-t border-foam/15 pl-8 text-base"
-                      >
-                        {page.nav}
-                      </Link>
-                    ))}
-                  </details>
-                ) : null}
-              </span>
-            ))}
+              ))}
+            </details>
             <Link
               to="/sailings"
               hash="promotions"
               onClick={() => setOpen(false)}
-              className="mt-3 inline-flex min-h-11 items-center justify-center rounded-md bg-gold px-3 text-base font-medium text-ink"
+              className="flex min-h-12 items-center border-b border-foam/15 text-base font-medium"
             >
               Promotions
             </Link>
-            <a href={phoneHref} className="mt-2 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-3 text-base font-medium text-foam">
+            <Link
+              to="/quote"
+              onClick={() => setOpen(false)}
+              className="mt-3 inline-flex min-h-11 items-center justify-center rounded-md bg-coral px-3 text-base font-medium text-foam"
+            >
+              Request a Quote
+            </Link>
+            <a href={phoneHref} className="mt-2 inline-flex min-h-11 items-center justify-center rounded-md bg-foam px-3 text-base font-medium text-ink">
               Call or text {phone}
             </a>
           </nav>
@@ -261,48 +300,51 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-8 lg:grid-cols-3 lg:items-start">
         <div>
           <Wordmark tone="foam" />
-          <p className="mt-3 max-w-sm text-base leading-relaxed text-foam/90">An independent travel company in Farmington, Connecticut. We book cruises, resorts, ski vacations, and rail trips.</p>
-          <p className="mt-3 text-base leading-relaxed">
+          <p className="mt-3 max-w-sm text-base leading-relaxed text-foam/90">
+            Based in Farmington, Connecticut, Sea Fun & Sun is an independent travel agency dedicated to crafting seamless, unforgettable vacations. From ocean cruises to alpine ski resorts, we handle the details so you can focus on the journey.
+          </p>
+          <p className="mt-4 text-base font-medium">Get in Touch</p>
+          <p className="mt-2 text-base leading-relaxed">
+            Call or Text:{" "}
             <a href={phoneHref} className="underline-offset-2 hover:underline">
               {phone}
             </a>
             <br />
+            Email:{" "}
             <a href={`mailto:${bookingEmail}`} className="break-all underline-offset-2 hover:underline">
               {bookingEmail}
             </a>
           </p>
-          <div className="mt-4 grid max-w-sm grid-cols-2 gap-2">
+          <div className="mt-4 flex gap-2">
             <a
               href={instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-gold px-3 text-sm font-medium text-ink hover:bg-gold-deep"
+              aria-label="Instagram"
+              className="inline-flex size-11 items-center justify-center rounded-md bg-gold text-ink hover:bg-gold-deep"
             >
-              <Instagram className="size-4" aria-hidden="true" />
-              Instagram
+              <Instagram className="size-5" aria-hidden="true" />
             </a>
             <a
               href={facebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-foam px-3 text-sm font-medium text-ink"
+              aria-label="Facebook"
+              className="inline-flex size-11 items-center justify-center rounded-md bg-foam text-ink"
             >
-              <Facebook className="size-4" aria-hidden="true" />
-              Facebook
+              <Facebook className="size-5" aria-hidden="true" />
             </a>
           </div>
         </div>
         <div>
           <p className="text-base font-medium">Explore</p>
           <ul className="mt-2 grid grid-cols-1 gap-y-2 text-base leading-6 text-foam/90 sm:grid-cols-2 sm:gap-x-4">
+            <li><Link to="/destinations" className="hover:text-foam">Cruises</Link></li>
             <li><Link to="/resorts" className="hover:text-foam">Resorts</Link></li>
-            <li><Link to="/ski" className="hover:text-foam">Ski</Link></li>
-            <li><Link to="/rail" className="hover:text-foam">Rail and land</Link></li>
-            <li><Link to="/sailings" hash="promotions" className="hover:text-foam">Promotions</Link></li>
-            <li><Link to="/ports" className="hover:text-foam">Departure ports</Link></li>
-            <li><Link to="/lines" className="hover:text-foam">Cruise lines</Link></li>
-            <li><Link to="/itineraries" className="hover:text-foam">Itineraries</Link></li>
-            <li><Link to="/quote" className="hover:text-foam">Request a quote</Link></li>
+            <li><Link to="/ski" className="hover:text-foam">Ski Vacations</Link></li>
+            <li><Link to="/rail" className="hover:text-foam">Rail & Land</Link></li>
+            <li><Link to="/sailings" hash="promotions" className="hover:text-foam">Current Promotions</Link></li>
+            <li><Link to="/quote" className="hover:text-foam">Request a Quote</Link></li>
           </ul>
         </div>
         <div>
