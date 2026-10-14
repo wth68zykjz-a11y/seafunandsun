@@ -64,14 +64,31 @@ function SkiPage() {
         >
           Request a luxury hotel
         </Link>
-        <div className="mt-8 grid gap-4 lg:grid-cols-3">
-          <article className="rounded-xl border border-line bg-foam p-5">
-            <img src="/media/ski-north.jpg" alt="Snow-covered pines on a ridge at sunrise" loading="lazy" decoding="async" className="aspect-photo w-full rounded-xl object-cover" />
-            <h3 className="mt-4 font-display text-2xl">North America</h3>
-            <p className="mt-2 text-base leading-relaxed text-ink">
-              Aspen, Jackson Hole, Deer Valley, Vail, Banff, Mammoth, and Whistler. The Little Nell is ski-in at Aspen Mountain. Four Seasons is in Teton Village at Jackson Hole, and at Whistler. In Banff, the Fairmont hotels are in town and at Lake Louise, and the lifts are at Sunshine, Lake Louise, and Norquay. At Mammoth, the stay is a village hotel at the base, not a grand Alpine hotel. A room in town means a car or a shuttle to the lifts. A room at the base means you can ski from the door.
+        <article className="mt-8 grid items-start gap-6 lg:grid-cols-12">
+          <img src="/media/ski-north.jpg" alt="Snow-covered pines on a ridge at sunrise" loading="lazy" decoding="async" className="aspect-photo w-full rounded-xl object-cover lg:col-span-5" />
+          <div className="grid gap-3 lg:col-span-7">
+            <h3 className="font-display text-2xl">North America</h3>
+            <p className="text-base leading-relaxed text-ink">
+              From the legendary powder of Jackson Hole to the classic New England charm of Stowe, North America offers some of the most iconic mountain experiences in the world. We curate ski packages across premier destinations in the West—including Aspen, Deer Valley, Vail, Mammoth, and Whistler—as well as the legendary peaks of the East.
             </p>
-          </article>
+            <p className="text-base leading-relaxed text-ink">
+              Where you stay shapes your entire ski day. Choosing a room right at the mountain’s base allows you to clip in and ski directly from your door, while staying in town offers vibrant dining and nightlife just a short shuttle ride from the lifts. We match you with the perfect property for your travel style—whether that is the ultimate ski-in luxury of The Little Nell at Aspen Mountain, or the elegant alpine retreats of the Four Seasons in Jackson Hole’s Teton Village and Whistler.
+            </p>
+            <p className="text-base leading-relaxed text-ink">
+              If you are heading to the Canadian Rockies, you can choose between the grand, historic Fairmont hotels in the town of Banff or out by Lake Louise, granting you easy access to the spectacular runs at Sunshine, Lake Louise, and Norquay. For a lively and relaxed California vibe, Mammoth offers incredibly convenient village hotels positioned right at the base so you are never far from the action.
+            </p>
+            <p className="text-base leading-relaxed text-ink">
+              Closer to the East Coast, we arrange escapes to the massive, interconnected peaks of Killington and the picturesque descents of Le Massif in Quebec, where the trails seem to plunge directly into the icy St. Lawrence River. If you are chasing deep eastern powder, we can send you to the northern reaches of Vermont to ski Jay Peak, renowned for a unique mountain microclimate that produces some of the most prolific and reliable snowfall on this side of the continent.
+            </p>
+            <p className="text-base leading-relaxed text-ink">
+              Because North American mountains are often governed by complex lift networks like the Epic or Ikon pass systems, planning ahead is essential. We help you navigate these pass options and secure your access long before you reach the mountain. Whether you are chasing deep January powder or sunny, bluebird spring skiing in March, we ensure the logistics are handled.
+            </p>
+            <p className="text-base leading-relaxed text-ink">
+              A great ski trip is about more than just the descent. Beyond the slopes, these mountain towns are destinations in their own right. Whether you are looking for world-class après-ski in Aspen, a horse-drawn sleigh ride in the Rockies, or a quiet heated pool to relax your legs after a long day on the mountain, we design the entire alpine escape from morning to night.
+            </p>
+          </div>
+        </article>
+        <div className="mt-8 grid gap-4 lg:grid-cols-2">
           <article className="rounded-xl border border-line bg-foam p-5">
             <img src="/media/ski-alps-run.jpg" alt="A skier on a slope with the Matterhorn behind" loading="lazy" decoding="async" className="aspect-photo w-full rounded-xl object-cover" />
             <h3 className="mt-4 font-display text-2xl">The Alps</h3>
