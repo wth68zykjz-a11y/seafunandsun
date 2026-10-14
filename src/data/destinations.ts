@@ -316,7 +316,7 @@ export const destinations: Destination[] = [
     ledeMore:
       "Enjoy long port stays on inter-island sailings, frequently overnighting so you can experience an authentic evening luau—complete with kalua pork and poi—or watch the sunset from a black-sand beach. If sailing from California or Vancouver, you will spend several days at sea crossing the Pacific before reaching the islands, making the voyage itself a major part of your vacation. We recommend booking extra nights on Oahu to visit Pearl Harbor before your ship sets sail.",
     paragraphs: [
-      "Norwegian's Pride of America stays among the Hawaiian islands and returns to Honolulu. Holland America, Princess, and Celebrity sail from San Diego, Los Angeles, or Vancouver. Those cruises spend several days at sea before the islands, and some continue to Tahiti. Ships stop at Maui. They rarely depart from there.",
+      "Norwegian's Pride of America stays among the Hawaiian islands and returns to Honolulu. Holland America, Princess, and Celebrity sail from San Diego, Los Angeles, or Vancouver. Those cruises spend several days at sea before the islands, and some continue to Tahiti. Ships stop at Maui.",
       "Tell us which islands you want time on. Inter-island sailings often stay into the evening, which is when a luau works: kalua pig, cooked in an underground oven, and poi, pounded taro. You can also stay for sunset on a black-sand beach. A cruise from California or Vancouver spends several days at sea before the islands, and those days are part of the vacation. Extra nights on Oahu let you see Pearl Harbor before the ship ever sails.",
     ],
     lists: [
