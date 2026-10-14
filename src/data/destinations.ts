@@ -578,7 +578,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "The season runs from April through October, and the dates depend on the river. In spring the fruit trees along the Rhine are in blossom. In fall the vineyards change color and the light is better. The ships sail during a set season, so the dates matter as much as the fare.",
-    planning: "Name the river, and we will set the ships that sail it side by side. To truly experience Budapest, Paris, Amsterdam, or New Orleans, add a hotel stay before or after the cruise. The ship ties up in the city, and the extra nights are how you wander the neighborhoods a day on the river only begins. An agent requests many of these fares, because they are not posted.",
+    planning: "To truly experience Budapest, Paris, Amsterdam, or New Orleans, add a hotel stay before or after the cruise. The ship ties up in the city, and the extra nights are how you wander the neighborhoods a day on the river only begins.",
     itineraries: [
       {
         title: "Danube capitals",
@@ -919,7 +919,7 @@ export const destinations: Destination[] = [
       },
     ],
     when: "Summer is the classic season in North America. The parks are open, the passes are green, and the light lasts. In fall the Rockies are in color, and the stations are quieter. European sleeper trains run mostly from spring through fall, and the famous dates sell out early. We will match the season to the route.",
-    planning: "Tell us the journey: the Empire Builder through Glacier National Park, the Canadian across the Rockies toward Vancouver, or a European sleeper where dinner is served as the country goes dark. The hotel nights between trains are part of the trip, and they belong in the same booking.",
+    planning: "Tell us the journey: the Empire Builder through Glacier National Park, the Canadian across the Rockies toward Vancouver, or a European sleeper where dinner is served as the country goes dark. The hotel nights between trains are part of the trip.",
     itineraries: [
       {
         title: "Empire Builder",
