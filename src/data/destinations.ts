@@ -269,7 +269,7 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "May through September is the classic season. In the shoulder months the ports are the same, with fewer crowds, and the light is often better. In winter, a crossing between Southampton and New York spends those days on the ocean.",
+    when: "While European sailings run from May through September, the savvy traveler targets the shoulder months. Late spring and early fall offer the ideal combination of comfortable weather, beautiful light, and significantly fewer crowds in the historic ports.",
     planning: "Tell us which cities you have already seen. Barcelona, Rome, Greece, and the Adriatic are on the Mediterranean page. This page covers Lisbon, Amsterdam, London, and the Canary Islands.",
     itineraries: [
       {
