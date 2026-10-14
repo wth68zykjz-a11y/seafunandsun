@@ -94,7 +94,7 @@ const doors: Door[] = [
   {
     kicker: "Snow",
     title: "Ski",
-    body: "Experience the thrill of the descent. We offer comprehensive ski packages—from Club Med resorts with included lift passes and meals, to premier hotels in Aspen, Banff, the Alps, and Niseko where we can customize your pass options.",
+    body: "Experience the thrill of the descent. We offer comprehensive ski packages—from Club Med resorts with seamlessly included lift passes and meals, to premier hotels in Aspen, Banff, the Alps, and Niseko, where we curate your access to the mountain, leaving you free to simply chase the perfect run.",
     image: "/media/card-ski.webp",
     mobileImage: "/media/card-ski-sm.webp",
     alt: "A person in a red jacket facing the Matterhorn across a snowfield",
