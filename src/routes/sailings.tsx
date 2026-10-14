@@ -330,14 +330,36 @@ function DealsOfTheWeek({ offers }: { offers: SupplierOffer[] }) {
   );
 }
 
+function PromotionsIntro() {
+  return (
+    <>
+      <PageIntro
+        kicker="Promotions"
+        title="Exclusive Offers & Seasonal Promotions"
+        lede="Extraordinary travel, paired with exceptional value."
+      />
+      <div className="mx-auto max-w-6xl space-y-4 px-4">
+        <p className="max-w-3xl text-base leading-relaxed text-ink">
+          Explore our current, daily-updated promotions from our premier cruise, resort, and expedition partners below. When you see an itinerary or offer that inspires you, simply request a custom quote. Your dedicated agent will verify the current fares, apply your promotional benefits, and handle all the fine print before your booking is ever finalized.
+        </p>
+        <p className="max-w-3xl rounded-xl border border-line bg-foam p-5 text-base leading-relaxed text-ink">
+          Because these offers update daily directly from our partners, you may occasionally see internal supplier terminology, specific cabin codes, or complex fare rules. Do not worry about decoding them. That is exactly what we are here for. We translate the fine print so you can focus on the destination.
+        </p>
+        <div>
+          <Link to="/quote" className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-5 text-base font-medium text-foam hover:bg-coral-deep sm:w-auto">
+            Request a Custom Quote
+          </Link>
+          <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink">Found a promotion you love? Send us the details and we will secure the exact pricing and dates for you.</p>
+        </div>
+      </div>
+    </>
+  );
+}
 function PromotionsPending() {
   return (
     <Shell>
-      <PageIntro
-        kicker="Promotions"
-        title="Current offers, booked with a quote."
-        lede="The offers are loading. The page is here, and the list follows in a moment."
-      />
+      <PromotionsIntro />
+      <p className="mx-auto max-w-6xl px-4 pt-8 text-base text-ink">The offers are loading. The page is here, and the list follows in a moment.</p>
     </Shell>
   );
 }
@@ -346,21 +368,19 @@ function SailingsPage() {
   const feed = Route.useLoaderData();
   return (
     <Shell>
-      <PageIntro
-        kicker="Promotions"
-        title="Current offers, booked with a quote."
-        lede="Tell us which offer you want, or describe the trip. We confirm the fare and the rules, then you approve it before anything is booked."
-      />
-      <div className="mx-auto max-w-6xl px-4">
-        <Link to="/quote" className="inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-5 text-sm font-medium text-foam hover:bg-coral-deep sm:w-auto">
-          Request a quote
-        </Link>
-      </div>
+      <PromotionsIntro />
       <div className="mx-auto mt-8 max-w-6xl px-4">
         <img src="/media/page-sailings-sm.webp" alt="The bow of a white ship in calm water at golden hour" width={640} height={427} loading="lazy" decoding="async" className="aspect-photo max-h-72 w-full rounded-xl object-cover" />
       </div>
       <section id="promotions" className="mx-auto mt-10 max-w-6xl scroll-mt-24 px-4 pb-20">
         <DealsOfTheWeek offers={feed.offers.map(labelExplora)} />
+        <div className="mt-12 rounded-xl border border-line bg-foam p-5">
+          <h2 className="font-display text-3xl text-ink">Ask us about an offer</h2>
+          <p className="mt-3 max-w-3xl text-base leading-relaxed text-ink">Found a promotion you love? Send us the details and we will secure the exact pricing and dates for you.</p>
+          <Link to="/quote" className="mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-coral px-5 text-base font-medium text-foam hover:bg-coral-deep sm:w-auto">
+            Ask Us About an Offer
+          </Link>
+        </div>
         <p className="mt-8 max-w-3xl text-sm leading-6 text-mute">{licenseLine}</p>
       </section>
     </Shell>
