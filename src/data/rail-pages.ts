@@ -406,17 +406,17 @@ export const railPages: RailPage[] = [
     slug: "alpine-trains",
     nav: "Alpine day trains",
     title: "Glacier Express and Bernina Express",
-    lede: "These trains cross the passes in daylight, and the panorama windows stay full of rock and snow. You sleep in a hotel in Zermatt, St. Moritz, or Chur.",
+    lede: "Board the Glacier Express for a daylight trip through the Swiss Alps. From the panoramic windows you see sheer rock, Alpine pasture, and snow on the peaks. The train runs between Zermatt and St. Moritz, across 291 bridges and through 91 tunnels, including the curve onto the Landwasser Viaduct. The Bernina Express continues from Chur or St. Moritz toward Tirano. You sleep in a hotel in Zermatt, St. Moritz, or Chur.",
     photos: [
       {
         src: "/media/rail/glacier-express.jpg",
         alt: "The red and white Glacier Express crossing a stone viaduct in snow",
-        caption: "The Glacier Express crosses the Alps in daylight. The panorama windows are where you sit. The train is what crosses the viaduct.",
+        caption: "You sit beside the panoramic windows as the Glacier Express crosses the Swiss Alps in daylight. The train climbs the passes and curves over the viaducts, with snow on the peaks, the gorges, and the valleys outside.",
       },
       {
         src: "/media/rail/landwasser.jpg",
         alt: "A red train on the Landwasser Viaduct, curving into a tunnel in the cliff",
-        caption: "The Landwasser Viaduct is on the Glacier Express route. The train curves into the tunnel. You see that curve from the window.",
+        caption: "From a seat beside the panoramic windows, you watch the Glacier Express curve onto the Landwasser Viaduct and into the tunnel, with the peaks and the gorge outside.",
       },
       {
         src: "/media/rail/bernina-express.jpg",
@@ -428,7 +428,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Glacier Express",
         paragraphs: [
-          "The Glacier Express runs from Zermatt to St. Moritz, or the reverse, in about eight hours. It crosses 291 bridges and passes through 91 tunnels. The high point is the Oberalp Pass, at 2,033 meters. The Rhine Gorge is a pale canyon. You see both from the panorama windows.",
+          "Crossing the Swiss Alps in daylight, the Glacier Express runs from Zermatt to St. Moritz, or the reverse, in about eight hours. From a seat beside the panoramic windows, you watch the train climb, follow the river canyons, and cross the stone viaducts. The route includes the Rhine Gorge, the Oberalp Pass at 2,033 meters, and the curve onto the Landwasser Viaduct.",
           "Meals are served at your seat. Excellence class includes a set menu. A recent menu started with Swiss smoked trout, then pea soup, a fillet of Swiss beef, a plate of Grisons mountain cheese and sheep’s cheese, and chocolate cake, with wine. First and second class can order a shorter lunch. The menu changes.",
           "You get off in the evening and sleep in a hotel in Zermatt or St. Moritz. The Matterhorn stands above Zermatt, and you see it from the town, before the train or after it.",
         ],
