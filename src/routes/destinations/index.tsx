@@ -24,7 +24,7 @@ function DestinationsPage() {
         lede="An ocean cruise wakes you in a new harbor. A river cruise follows one river into town. An expedition cruise lands on a beach that has no port. Choose a region below. Europe is split into the Mediterranean, the Atlantic cities such as Lisbon and London, and the north: the Norwegian fjords, Iceland, and the Baltic. A world cruise runs for months. Each region has its own page, and a second page for what you can do once the ship is there."
       />
       <p className="mx-auto max-w-6xl px-4 pb-6 text-base">
-        <a href="/destination-pages.zip" className="font-medium text-tide underline underline-offset-2">
+        <a href="/destination-text.html" className="font-medium text-tide underline underline-offset-2">
           Download the text of these pages
         </a>
       </p>
