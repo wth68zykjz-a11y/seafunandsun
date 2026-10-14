@@ -334,11 +334,11 @@ export const destinations: Destination[] = [
       {
         heading: "In port",
         items: [
-          "Snorkel with sea turtles, from the ship or by kayak",
-          "The Road to Hana, from Kahului",
-          "A plantation lunch on the island",
-          "A luau, on the evenings the ship stays in port long enough: kalua pig, pork cooked in an underground oven, and poi, pounded taro",
-          "Pearl Harbor in the morning, and a beach after that",
+          "Snorkel with sea turtles directly from the ship or via a kayak excursion.",
+          "Drive the scenic Road to Hana from Kahului.",
+          "Enjoy an authentic plantation lunch on the island.",
+          "Experience a traditional luau on evenings with late departures, featuring kalua pig cooked in an underground oven and pounded taro poi.",
+          "Visit Pearl Harbor in the morning, followed by a relaxing afternoon at the beach.",
         ],
       },
     ],
