@@ -8,7 +8,7 @@ export type SkiPage = {
   image: string;
   alt: string;
   photos: SkiPhoto[];
-  paragraphs: string[];
+  sections?: { heading: string; paragraphs: string[] }[];
 };
 
 export const skiPages: SkiPage[] = [
@@ -69,7 +69,7 @@ export const skiPages: SkiPage[] = [
     slug: "japan",
     nav: "Japan",
     title: "Japan ski vacations",
-    lede: "Niseko, on Hokkaido, when you want powder and a night on the lit slopes.",
+    lede: "Niseko, Rusutsu, and Furano on Hokkaido, and Hakuba and Nozawa Onsen in the Japanese Alps.",
     image: "/media/ski-japan.jpg",
     alt: "Mount Yotei above the ski runs at Niseko, Japan",
     photos: [
@@ -80,8 +80,40 @@ export const skiPages: SkiPage[] = [
       },
     ],
     paragraphs: [
-      "Choose Niseko, on Hokkaido, when you want powder rather than an Alpine village. Mount Yotei sits above the runs. Park Hyatt Niseko Hanazono is ski-in, ski-out, with onsen baths in the hotel. January and early February are the deep weeks, and they are also the busiest. Mid-December and March are the quieter request, if the snow is in. Niseko also runs night skiing on lit slopes. That is a ticket for a set evening, not a promise of a full moon.",
-      "Niseko United is on Ikon. A pass covers a set number of days, not the whole season, and it does not replace a hotel rate that already includes the local lifts. We check that season’s rules before counting the lifts as paid.",
+      "When your priority is chasing the world’s deepest, most legendary powder rather than a traditional Alpine village, Japan is the ultimate destination. From the storm-tracked volcanoes of Hokkaido to the dramatic peaks of the Japanese Alps on Honshu, we curate bespoke itineraries that match your exact skiing style.",
+    ],
+    sections: [
+      {
+        heading: "Niseko and Hokkaido’s powder",
+        paragraphs: [
+          "When your heart is set on dry, weightless powder rather than a European chalet scene, Niseko on Hokkaido’s western coast is legendary. Here, you carve through waist-deep snow with the volcanic cone of Mount Yotei towering over the runs. For a seamless stay, we recommend the Park Hyatt Niseko Hanazono, where you can ski directly from the mountain to your door before soaking your tired legs in the hotel’s traditional hot spring onsen baths.",
+          "Timing your journey to Japan requires careful planning. While January and early February deliver the deepest, most famous snow—making them the busiest weeks on the mountain—we can also arrange a quieter escape in mid-December or March, carefully tracking the forecasts to ensure the snow has arrived or is holding strong. Niseko is famous for its illuminated night skiing. Rather than hoping for the light of a full moon, the resort operates floodlit slopes on scheduled evenings, and we secure your tickets in advance so you can ski through the powder long after the sun goes down.",
+        ],
+      },
+      {
+        heading: "Rusutsu",
+        paragraphs: [
+          "Just south of Niseko lies Rusutsu, a resort spread across three peaks: West Mountain, East Mountain, and Mount Isola. While Niseko attracts the international spotlight, Rusutsu remains a favorite for skiers who live for wide-open spaces and tree skiing. The resort features natural glades that channel the same Hokkaido powder, with fewer crowds on the slopes. At the base, The Westin Rusutsu Resort provides spacious rooms and access to the lifts, at a quieter pace about an hour and a half from New Chitose Airport.",
+        ],
+      },
+      {
+        heading: "Furano",
+        paragraphs: [
+          "For travelers seeking a deeper connection to traditional Japanese mountain culture alongside the snow, Furano in central Hokkaido is the choice. Because it sits further inland than the coastal resorts, Furano’s snow is dry and light, falling across long groomed runs and steep off-piste terrain. Divided into the Furano and Kitanomine zones, the area keeps a local character, with izakayas and family-run ramen shops. Staying at the Shin Furano Prince Hotel puts you on the slope edge, so you can step out of your room and straight onto the snow.",
+        ],
+      },
+      {
+        heading: "Hakuba Valley",
+        paragraphs: [
+          "If you want vertical scale, dramatic peaks, and an alpine feel, look to the Hakuba Valley in Nagano Prefecture on Honshu, the main island. Home to ten resorts clustered along the Northern Alps, the site of the 1998 Winter Olympics, Hakuba runs from steep couloirs to wide family runs. Whether you want the village at Happo-One or the tree runs at Cortina, tucked at the north end of the valley, we match your lodging to the terrain you want to ski.",
+        ],
+      },
+      {
+        heading: "Nozawa Onsen",
+        paragraphs: [
+          "For skiers who want their powder days paired with a historic village, Nozawa Onsen is the match. This hot spring village sits directly beneath a ski mountain that stretches over 10 kilometers from top to bottom. Rather than a modern resort base, your afternoons here are spent wandering narrow lanes lined with traditional wooden inns, sampling local food, and soaking in thirteen free public sotoyu, the community hot spring baths maintained by the villagers. Village life and the skiing are in the same place.",
+        ],
+      },
     ],
   },
 ];

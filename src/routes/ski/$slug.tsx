@@ -69,6 +69,16 @@ function SkiRegionPage() {
               ) : null}
             </div>
           ))}
+          {page.sections?.map((section) => (
+            <section key={section.heading} className="mt-4">
+              <h2 className="font-display text-2xl">{section.heading}</h2>
+              {section.paragraphs.map((paragraph) => (
+                <p key={paragraph} className="mt-3 text-base leading-relaxed text-ink">
+                  {paragraph}
+                </p>
+              ))}
+            </section>
+          ))}
         </div>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
