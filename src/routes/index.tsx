@@ -70,7 +70,7 @@ const doors: Door[] = [
   {
     kicker: "Ships",
     title: "Cruises",
-    body: "Wake up in a new harbor. From the icy fjords of Alaska to the coral reefs of the Caribbean, every region offers a different way to see the world.",
+    body: "Wake up in a vibrant new harbor every morning. From the icy fjords of Alaska to the vibrant coral reefs of the Caribbean, every region offers a completely different way to see the world.",
     image: "/media/card-cruises.webp",
     mobileImage: "/media/card-cruises-sm.webp",
     alt: "Cruise ships docked along a pier in turquoise water",
@@ -82,7 +82,7 @@ const doors: Door[] = [
   {
     kicker: "Beach",
     title: "Resorts",
-    body: "Step directly from your room into clear water. We match you with all-inclusive resorts, including Sandals, Beaches, Hyatt, Secrets, and Club Med.",
+    body: "Step directly from your room into crystal-clear waters. We proudly match our clients with premier all-inclusive resorts, including Sandals, Beaches, Hyatt, Secrets, and Club Med.",
     image: "/media/card-resorts.webp",
     mobileImage: "/media/card-resorts-sm.webp",
     alt: "An overwater villa with its own pool on a turquoise lagoon",
@@ -94,7 +94,7 @@ const doors: Door[] = [
   {
     kicker: "Snow",
     title: "Ski",
-    body: "Experience the thrill of the descent. Club Med resorts include the lift pass and the meals. At hotels in Aspen, Banff, the Alps, and Niseko, the pass can be arranged separately.",
+    body: "Experience the thrill of the descent. We offer comprehensive ski packages—from Club Med resorts with included lift passes and meals, to premier hotels in Aspen, Banff, the Alps, and Niseko where we can customize your pass options.",
     image: "/media/card-ski.webp",
     mobileImage: "/media/card-ski-sm.webp",
     alt: "A person in a red jacket facing the Matterhorn across a snowfield",
@@ -106,7 +106,7 @@ const doors: Door[] = [
   {
     kicker: "Small ships",
     title: "Expedition",
-    body: "Venture beyond the usual ports. Small expedition ships take you by Zodiac to Antarctica, the Arctic, and the Galápagos.",
+    body: "Venture to the world's most remote shores. We book small-ship expedition cruises that take you beyond the reach of traditional ports—via agile Zodiac boats—to the untouched landscapes of Antarctica, the Arctic, and the Galápagos.",
     image: "/media/card-expedition.webp",
     mobileImage: "/media/card-expedition-sm.webp",
     alt: "An expedition ship among Antarctic ice, with a turquoise iceberg in front",
@@ -119,7 +119,7 @@ const doors: Door[] = [
   {
     kicker: "On the ground",
     title: "Rail and land",
-    body: "Take in a canyon from the glass car, or sit down to dinner as the station lights fade. We arrange scenic trains, European sleeper trains, and the hotel nights between them.",
+    body: "Take in canyon views from a glass-domed car, or sit down to dinner as the station lights fade into the distance. We arrange everything from scenic daytime routes to classic European sleeper trains, perfectly coordinated with your hotel stays in between.",
     image: "/media/card-rail.webp",
     mobileImage: "/media/card-rail-sm.webp",
     alt: "The Glacier Express crossing a stone viaduct in the Alps",
