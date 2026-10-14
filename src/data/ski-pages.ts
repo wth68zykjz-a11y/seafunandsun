@@ -8,7 +8,7 @@ export type SkiPage = {
   image: string;
   alt: string;
   photos: SkiPhoto[];
-  sections?: { heading: string; paragraphs: string[] }[];
+  sections?: { heading: string; paragraphs: string[]; photo?: SkiPhoto }[];
 };
 
 export const skiPages: SkiPage[] = [
@@ -26,9 +26,19 @@ export const skiPages: SkiPage[] = [
         caption: "Stowe, Vermont. The village sits under the trails.",
       },
       {
-        src: "/media/ski-north.jpg",
-        alt: "Snow-covered pines on a ridge at sunrise",
-        caption: "A ridge in the Rockies at first light.",
+        src: "/media/ski-whistler.jpg",
+        alt: "Whistler village at dusk, with ski runs on the mountains behind it",
+        caption: "Whistler. The village is below the runs, and the peaks stay lit after the lifts close.",
+      },
+      {
+        src: "/media/ski-louise.jpg",
+        alt: "Frozen Lake Louise with snow-covered peaks behind it",
+        caption: "Lake Louise in winter. The Fairmont is at the lake, and the ski area is above the village.",
+      },
+      {
+        src: "/media/ski-lemassif.jpg",
+        alt: "A skier on Le Massif with the frozen St. Lawrence River below",
+        caption: "Le Massif, Quebec. The trails drop toward the St. Lawrence.",
       },
     ],
     paragraphs: [
@@ -49,14 +59,19 @@ export const skiPages: SkiPage[] = [
     alt: "A skier on a slope with the Matterhorn behind",
     photos: [
       {
-        src: "/media/ski-alps-run.jpg",
-        alt: "A skier on a slope with the Matterhorn behind",
-        caption: "Zermatt sits under the Matterhorn. The village is car-free.",
+        src: "/media/ski-zermatt.jpg",
+        alt: "Zermatt at dusk, with the Matterhorn above the lit village",
+        caption: "Zermatt is car-free. The Matterhorn stands over the village.",
       },
       {
-        src: "/media/ski-alps.jpg",
-        alt: "A person in a red jacket facing the Matterhorn across a snowfield",
-        caption: "The Matterhorn across a snowfield above Zermatt.",
+        src: "/media/ski-megeve.jpg",
+        alt: "The snow-covered church and village of Megève at sunset",
+        caption: "Megève. The village sits in the valley, with the slopes on the ridges above it.",
+      },
+      {
+        src: "/media/ski-alps-run.jpg",
+        alt: "A skier on a slope with the Matterhorn behind",
+        caption: "A run above Zermatt, with the Matterhorn behind the slope.",
       },
     ],
     paragraphs: [
@@ -72,13 +87,7 @@ export const skiPages: SkiPage[] = [
     lede: "Niseko, Rusutsu, and Furano on Hokkaido, and Hakuba and Nozawa Onsen in the Japanese Alps.",
     image: "/media/ski-japan.jpg",
     alt: "Mount Yotei above the ski runs at Niseko, Japan",
-    photos: [
-      {
-        src: "/media/ski-japan.jpg",
-        alt: "Mount Yotei above the ski runs at Niseko, Japan",
-        caption: "Mount Yotei stands above the runs at Niseko.",
-      },
-    ],
+    photos: [],
     paragraphs: [
       "When your priority is chasing the world’s deepest, most legendary powder rather than a traditional Alpine village, Japan is the ultimate destination. From the storm-tracked volcanoes of Hokkaido to the dramatic peaks of the Japanese Alps on Honshu, we curate bespoke itineraries that match your exact skiing style.",
     ],
@@ -89,6 +98,11 @@ export const skiPages: SkiPage[] = [
           "When your heart is set on dry, weightless powder rather than a European chalet scene, Niseko on Hokkaido’s western coast is legendary. Here, you carve through waist-deep snow with the volcanic cone of Mount Yotei towering over the runs. For a seamless stay, we recommend the Park Hyatt Niseko Hanazono, where you can ski directly from the mountain to your door before soaking your tired legs in the hotel’s traditional hot spring onsen baths.",
           "Timing your journey to Japan requires careful planning. While January and early February deliver the deepest, most famous snow—making them the busiest weeks on the mountain—we can also arrange a quieter escape in mid-December or March, carefully tracking the forecasts to ensure the snow has arrived or is holding strong. Niseko is famous for its illuminated night skiing. Rather than hoping for the light of a full moon, the resort operates floodlit slopes on scheduled evenings, and we secure your tickets in advance so you can ski through the powder long after the sun goes down.",
         ],
+        photo: {
+          src: "/media/ski-japan.jpg",
+          alt: "Mount Yotei above the ski runs at Niseko, Japan",
+          caption: "Mount Yotei stands above the runs at Niseko.",
+        },
       },
       {
         heading: "Rusutsu",
@@ -101,18 +115,33 @@ export const skiPages: SkiPage[] = [
         paragraphs: [
           "For travelers seeking a deeper connection to traditional Japanese mountain culture alongside the snow, Furano in central Hokkaido is the choice. Because it sits further inland than the coastal resorts, Furano’s snow is dry and light, falling across long groomed runs and steep off-piste terrain. Divided into the Furano and Kitanomine zones, the area keeps a local character, with izakayas and family-run ramen shops. Staying at the Shin Furano Prince Hotel puts you on the slope edge, so you can step out of your room and straight onto the snow.",
         ],
+        photo: {
+          src: "/media/ski-furano.jpg",
+          alt: "Groomed ski runs and the gondola at Furano’s Kitanomine zone",
+          caption: "Furano. The Kitanomine runs are wide and groomed, with the lifts at the base.",
+        },
       },
       {
         heading: "Hakuba Valley",
         paragraphs: [
           "If you want vertical scale, dramatic peaks, and an alpine feel, look to the Hakuba Valley in Nagano Prefecture on Honshu, the main island. Home to ten resorts clustered along the Northern Alps, the site of the 1998 Winter Olympics, Hakuba runs from steep couloirs to wide family runs. Whether you want the village at Happo-One or the tree runs at Cortina, tucked at the north end of the valley, we match your lodging to the terrain you want to ski.",
         ],
+        photo: {
+          src: "/media/ski-hakuba.jpg",
+          alt: "Snowy peaks of the Hakuba Valley above the village and ski jumps",
+          caption: "Hakuba Valley. The Northern Alps rise behind the village. The Olympic jumps are still on the hill.",
+        },
       },
       {
         heading: "Nozawa Onsen",
         paragraphs: [
           "For skiers who want their powder days paired with a historic village, Nozawa Onsen is the match. This hot spring village sits directly beneath a ski mountain that stretches over 10 kilometers from top to bottom. Rather than a modern resort base, your afternoons here are spent wandering narrow lanes lined with traditional wooden inns, sampling local food, and soaking in thirteen free public sotoyu, the community hot spring baths maintained by the villagers. Village life and the skiing are in the same place.",
         ],
+        photo: {
+          src: "/media/ski-nozawa.jpg",
+          alt: "Steam rising from a public hot-spring bath in snowy Nozawa Onsen",
+          caption: "Nozawa Onsen. Steam rises from a public bath in the village, with the mountain behind it.",
+        },
       },
     ],
   },

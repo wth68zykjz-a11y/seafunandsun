@@ -77,6 +77,20 @@ function SkiRegionPage() {
                   {paragraph}
                 </p>
               ))}
+              {section.photo ? (
+                <figure className="mt-4 overflow-hidden rounded-xl border border-line bg-foam">
+                  <img
+                    src={section.photo.src}
+                    alt={section.photo.alt}
+                    width={1400}
+                    height={900}
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-photo w-full object-cover"
+                  />
+                  <figcaption className="px-4 py-3 text-base leading-relaxed text-ink">{section.photo.caption}</figcaption>
+                </figure>
+              ) : null}
             </section>
           ))}
         </div>
