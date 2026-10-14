@@ -364,7 +364,6 @@ export const destinations: Destination[] = [
     lede: "Horseshoe Bay has blush-pink sand, and the towns still have a British colonial charm. A seven-night cruise from Boston, New York, or Baltimore gives you easy sea days each way and a long stay on the island.",
     paragraphs: [
       "Most Bermuda cruises run about seven nights and depart from Boston, New York, or Baltimore. Ships dock at the Royal Naval Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi. Hamilton is a scenic 20-minute ferry across the harbor, and St. George's, with its quiet pastel streets, is about an hour by bus. Many ships stay overnight, so you can see the beach and both towns without rushing back for an afternoon sailing. A fish sandwich on raisin bread is the lunch people look for. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly sail there. On a five-hour stop you stay near the Dockyard, unless you take an excursion sold by the ship. If that tour runs late, the ship waits. A taxi or a tour you booked on your own does not make the ship wait.",
-      "A cruise that departs from Boston still has a day at sea each way. That cruise is shorter than a Caribbean cruise that departs from New York. The ocean is part of either cruise.",
       "Bermuda also works as a destination of its own: an island stay, or a sailing that departs from the island. The two combine easily, and we will arrange both.",
     ],
     lists: [
