@@ -82,7 +82,7 @@ const doors: Door[] = [
   {
     kicker: "Beach",
     title: "Resorts",
-    body: "The room opens onto the water. We book Sandals, Beaches, Hyatt, Secrets, and Club Med.",
+    body: "The room opens onto the water at Sandals, Beaches, Hyatt, Secrets, and Club Med.",
     image: "/media/card-resorts.webp",
     mobileImage: "/media/card-resorts-sm.webp",
     alt: "An overwater villa with its own pool on a turquoise lagoon",
@@ -94,7 +94,7 @@ const doors: Door[] = [
   {
     kicker: "Snow",
     title: "Ski",
-    body: "You point the skis downhill and the speed arrives all at once. Club Med often includes the meals and the lift pass. At hotels in Aspen, Banff, the Alps, and Niseko, the pass is usually separate.",
+    body: "You point the skis downhill and the speed arrives all at once. Club Med often includes the meals and the lift pass, while a hotel in Aspen, Banff, the Alps, or Niseko usually leaves the pass separate.",
     image: "/media/card-ski.webp",
     mobileImage: "/media/card-ski-sm.webp",
     alt: "A person in a red jacket facing the Matterhorn across a snowfield",
@@ -106,7 +106,7 @@ const doors: Door[] = [
   {
     kicker: "Small ships",
     title: "Expedition",
-    body: "You ride a small boat to a beach of ice, and there is no town there. Those cruises go to Antarctica, the Arctic, and the Galápagos.",
+    body: "You ride a small boat ashore, sometimes onto a beach of ice where there is no town. These cruises go to Antarctica, the Arctic, and the Galápagos.",
     image: "/media/card-expedition.webp",
     mobileImage: "/media/card-expedition-sm.webp",
     alt: "An expedition ship among Antarctic ice, with a turquoise iceberg in front",
@@ -188,7 +188,7 @@ function Home() {
                   <span className="mt-2 block font-medium italic text-gold">booked with care.</span>
                 </h1>
                 <p className="hero-copy mt-4 max-w-xl text-base text-foam sm:mt-6 sm:text-lg">
-                  When we book a cruise, a resort, a ski vacation, or a rail trip, one agent handles it from the first quote until you are home.
+                  One agent handles the booking from the first quote until you are home, whether the trip is a cruise, a resort, a ski vacation, or a rail trip.
                 </p>
                 <div className="mt-6 w-full sm:mt-8 sm:inline-flex sm:w-auto sm:flex-col sm:items-center">
                   <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
@@ -268,9 +268,9 @@ function Home() {
           </p>
           <ol className="mt-6 grid gap-4 md:grid-cols-3">
             {[
-              ["1. Tell us the trip", "Use the form, call, or text. Name the place and the dates."],
-              ["2. We send the price", "You see the sailing or the hotel, the cabin or the room, and the flights if you want them. You approve it before anything is booked."],
-              ["3. You pay the supplier", "The card payment goes to the cruise line, the resort, or the operator. We do not hold the card."],
+              ["1. Tell us the trip", "Call, text, or use the form, and name the place and the dates."],
+              ["2. We send the price", "You see the sailing or the hotel, the cabin or the room, and the flights if you want them included. Nothing is booked until you approve it."],
+              ["3. You pay the supplier", "The payment goes to the cruise line, the resort, or the operator. We do not hold the card."],
             ].map(([title, text]) => (
               <li key={title} className="rounded-xl border border-line bg-foam p-5">
                 <h3 className="font-display text-2xl text-ink">{title}</h3>

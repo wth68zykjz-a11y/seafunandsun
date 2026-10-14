@@ -22,7 +22,7 @@ export const guides: Guide[] = [
     title: "Alaska cruise from Seattle or Vancouver",
     description:
       "Seattle is the usual departure port for a round-trip Alaska cruise. Vancouver is the usual departure port for a one-way cruise to Seward or Whittier. Sea Fun & Sun, Farmington, Connecticut.",
-    lede: "Seattle and Vancouver are departure ports, not the cruise. Leaving from one or the other changes the airports, whether you need a passport to board, and whether the ship returns to the same city.",
+    lede: "Leaving from Seattle or from Vancouver changes the flights, whether you need a passport to board, and whether the ship returns to the same city.",
     image: "/media/ports/seattle.jpg",
     alt: "The Seattle waterfront, a departure port for Alaska cruises",
     note: "Holland America and Princess sail from Vancouver often. Norwegian, Royal Caribbean, Carnival, Celebrity, Princess, and Holland America sail from Seattle. A past-guest number, or a military discount, belongs on the quote.",
