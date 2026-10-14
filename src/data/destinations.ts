@@ -98,11 +98,11 @@ export const destinations: Destination[] = [
     card: "Islands & reefs",
     image: "/media/caribbean.jpg",
     alt: "A quiet Caribbean cove with pale sand and clear water",
-    lede: "With more sailings than any other region, the Caribbean gives you incredible flexibility to curate the exact island escape you are envisioning. From exploring the coral reefs of the Western Caribbean to swimming the deep, reliably warm waters of Aruba and Bonaire on a Southern route, we will match the ship to your travel style, rather than picking a ship and looking for a trip to fit it.",
+    lede: "With more sailings than any other region, the Caribbean gives you incredible flexibility to curate the exact island escape you are envisioning. From exploring the coral reefs of the Western Caribbean to swimming the deep, reliably warm waters of Aruba and Bonaire on a Southern route, enjoy a personalized approach that matches the ideal ship to your unique travel style, ensuring your vacation fits you perfectly from the start.",
     ledeMore:
       "Your departure port dictates your island time. While cruises leaving from the Northeast require a few days at sea to reach the warm weather, departing from Florida or San Juan maximizes your time in port. The logistics of exploring are incredibly easy on these routes: in Nassau, walk just five minutes from the cruise terminal gates to the famous straw market, and in San Juan, begin your ascent to the historic El Morro fortress the moment you step off the pier.",
     paragraphs: [
-      "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. Cruises also start in San Juan, and in some seasons in Fort-de-France, Martinique. A cruise that starts in San Juan reaches those islands in seven nights without the sea days a cruise from Florida needs. A cruise starts in Fort-de-France when MSC Opera or a smaller French ship is based there for the season. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip, rather than picking a ship and then looking for a trip.",
+      "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. Cruises also start in San Juan, and in some seasons in Fort-de-France, Martinique. A cruise that starts in San Juan reaches those islands in seven nights without the sea days a cruise from Florida needs. A cruise starts in Fort-de-France when MSC Opera or a smaller French ship is based there for the season. Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest sail these routes, ensuring the itinerary dictates the ship choice, rather than settling for a ship and hoping the route fits.",
       "Cruises that depart from the Northeast have more days at sea. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port.",
       "A western Caribbean cruise often includes Cozumel and Grand Cayman. An eastern one often includes St. Thomas, St. Maarten, and, on a longer sailing, Antigua or Martinique. A southern routing includes Aruba, Bonaire, and Curaçao. The port page says where the ship docks, and how far the sights are from the pier.",
       "A seven-night cruise that starts in Miami is usually a Bahamas cruise, a western Caribbean cruise to Cozumel and Grand Cayman, or an eastern one to St. Thomas and St. Maarten. Two or three of those nights are at sea. A seven-night cruise that starts in San Juan usually includes four or five ports, such as St. Thomas, St. Maarten, Antigua, St. Lucia, Barbados, St. Kitts, or Aruba, Bonaire, and Curaçao, and one or two nights at sea. Miami has more ships and more sailing dates, including the largest ships. The ships that start and end in San Juan are mid-size. Royal Caribbean does that year-round, on ships such as Rhapsody of the Seas and Vision of the Seas. Celebrity and Norwegian do it on some sailings. The Icon-class ships stop in San Juan. A cruise on those ships usually starts in Florida. Old San Juan is beside the dock. A taxi from the Miami terminal reaches South Beach, so a night there is a separate booking. A passport is the document to carry from either port, because several of the islands are foreign.",
@@ -171,11 +171,11 @@ export const destinations: Destination[] = [
     card: "Ports & culture",
     image: "/media/mediterranean.jpg",
     alt: "A whitewashed harbor town above a small Mediterranean port",
-    lede: "Immerse yourself in centuries of history and culture across the Mediterranean and the Adriatic. Wake up in the cosmopolitan heart of Barcelona one morning, and anchor in a boutique harbor so small you can see the cliffside villas right from the railing the next. We will help you choose the right ship based on the ports that matter most to you, whether you prefer the peak heat of August or the cooler, quieter shoulder months.",
+    lede: "Immerse yourself in centuries of history and culture across the Mediterranean and the Adriatic. Wake up in the cosmopolitan heart of Barcelona one morning, and anchor in a boutique harbor so small you can see the cliffside villas right from the railing the next. Discover the perfect ship based on the ports that matter most to you, whether you prefer the peak heat of August or the cooler, quieter shoulder months.",
     ledeMore:
       "Exploring Mediterranean ports requires a bit of planning. While you can walk directly into Barcelona's Gothic Quarter from some piers, reaching Rome's Colosseum requires an hour-and-a-half journey from the port of Civitavecchia. We recommend dedicating your morning to one major site—like the Acropolis in Athens or the ruins of Pompeii—rather than rushing through multiple cities before your ship departs in the afternoon.",
     paragraphs: [
-      "Cruises usually run seven to fourteen nights and depart from Barcelona, Civitavecchia for Rome, and Piraeus for Athens. Royal Caribbean, MSC, Norwegian, Celebrity, and Cunard all sail the region, and the luxury lines sail it too. When the itinerary says Venice, the ship usually docks at Ravenna or Trieste, not in the lagoon. We compare the routes, the ports, and what the fare includes, then match the ship to how you like to travel.",
+      "Cruises usually run seven to fourteen nights and depart from Barcelona, Civitavecchia for Rome, and Piraeus for Athens. Royal Caribbean, MSC, Norwegian, Celebrity, and Cunard all sail the region, and the luxury lines sail it too. When the itinerary says Venice, the ship usually docks at Ravenna or Trieste, not in the lagoon. Explore side-by-side comparisons of routes, ports, and included fares to find an itinerary that perfectly matches your travel style.",
       "A Greek-island cruise of about a week tends to include Athens, Santorini, Mykonos, and Crete. An Adriatic cruise of about a week tends to include Dubrovnik, Kotor, and Split, with the ship in Ravenna or Trieste rather than Venice. A cruise of about a week that starts in Barcelona tends to include Palma, Marseille, Nice, or Monaco. You can walk straight into Barcelona’s Gothic Quarter from some piers. The Colosseum is in Rome, about an hour to an hour and a half from Civitavecchia. The Acropolis is in Athens, about 30 to 45 minutes from Piraeus. Pompeii, the Roman city buried by Vesuvius, is the stop near Naples. Give the morning to one of those great sights. A 14- to 18-day cruise from the United Kingdom can include ports from more than one of those coasts.",
     ],
     lists: [
@@ -265,11 +265,11 @@ export const destinations: Destination[] = [
       {
         heading: "Worth going ashore for",
         items: [
-          "A canal boat and a cheese hall in Bruges",
-          "The cliffs of Étretat with a Normandy lunch",
-          "The Alcázar gardens in Seville, and flamenco when the ship stays late enough",
-          "Pompeii, the Roman city buried by Vesuvius",
-          "Tuscany — hills, vineyards, and a village lunch",
+          "Take a scenic canal boat tour and sample local cheeses in Bruges.",
+          "Admire the dramatic cliffs of Étretat before enjoying a traditional Normandy lunch.",
+          "Stroll through the Alcázar gardens in Seville, and catch a Flamenco show during late port stays.",
+          "Explore the remarkably preserved ruins of Pompeii, the Roman city buried by Mount Vesuvius.",
+          "Tour the rolling hills and vineyards of Tuscany, complete with a charming village lunch.",
           "The Louvre is in Paris. It holds the Mona Lisa and the Winged Victory of Samothrace. Notre-Dame and the Eiffel Tower are in the city too. The ship docks at Le Havre. Paris is about two hours from the pier. Shangri-La Paris, looking toward the tower, is a hotel for the nights before or after the cruise.",
           "Westminster Abbey and the Tower of London are in London. The ship docks at Southampton. London is about an hour and a half to two hours from the pier. The Savoy is a hotel for the nights before or after the cruise.",
           "Belém, Alfama, and Time Out Market are in Lisbon. The Four Seasons Hotel Ritz is a hotel for the nights before or after the cruise.",
@@ -514,11 +514,11 @@ export const destinations: Destination[] = [
       {
         heading: "In port",
         items: [
-          "Lighthouse walks, and a clam bake: clams, lobster, corn, and potatoes steamed together",
-          "Cape Cod beach towns — Chatham, Hyannis, Provincetown",
-          "Snorkel cays off Bermuda, when the routing goes there",
-          "Old Quebec or Halifax, at your own pace",
-          "A Boston harbor food crawl",
+          "Take scenic lighthouse walks and indulge in a traditional clam bake featuring steamed clams, lobster, corn, and potatoes.",
+          "Wander through quintessential Cape Cod beach towns like Chatham, Hyannis, and Provincetown.",
+          "Snorkel with rays off the coast of Bermuda on select longer itineraries.",
+          "Explore the historic streets of Old Quebec or Halifax at your own leisurely pace.",
+          "Savor local flavors on a Boston harbor food crawl.",
         ],
       },
     ],
@@ -712,7 +712,7 @@ export const destinations: Destination[] = [
     lede: "Singapore and Tokyo are where these cruises begin. After that the South China Sea is a long stretch of open water, so the flights belong in the same booking as the cruise.",
     paragraphs: [
       "Princess, Holland America, Celebrity, Royal Caribbean, and Norwegian sail from Singapore, Tokyo, and Hong Kong. Cunard does not sail a weekly cruise from those cities. It comes through on a longer voyage. We compare the ones that are actually scheduled, and we match the routing to the time you have.",
-      "The ports are unlike a standard Caribbean or Mediterranean list. Tell us the dates, and we will shape the trip around the ones you care about.",
+      "The ports are unlike a standard Caribbean or Mediterranean list. Share your preferred travel dates, and enjoy a custom itinerary shaped exactly around the destinations you care about most.",
     ],
     lists: [
       {
