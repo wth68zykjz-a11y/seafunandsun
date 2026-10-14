@@ -299,7 +299,7 @@ export function DestinationArticle({
         ) : null}
         <div className="mt-10 grid items-start gap-4 lg:grid-cols-2">
           {place.lists.map((list) => (
-            <article key={list.heading} className="rounded-xl border border-line bg-foam p-5 sm:p-6">
+            <article key={list.heading} className={`rounded-xl border border-line bg-foam p-5 sm:p-6 ${list.items.some((item) => item.length > 280) ? "lg:col-span-2" : ""}`}>
               <h2 className="font-display text-2xl">{list.heading}</h2>
               <ul className="mt-4 grid gap-3 text-base leading-relaxed text-ink">
                 {list.items.map((item) => (

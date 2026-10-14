@@ -640,9 +640,17 @@ export const destinations: Destination[] = [
       "An expedition landing is a true adventure rather than a typical port visit. After gearing up in the ship-provided boots and parkas, you ride an agile Zodiac boat directly onto a rugged beach or ice flow. Because wild environments dictate these itineraries, your expert expedition guides adapt the daily schedule to the weather, ensuring you get the best—and safest—possible experience among the penguins, seals, and glaciers. On perfectly calm days, many ships even launch kayaks for closer exploration.",
     paragraphs: [
       "Lindblad, Ponant, and Hapag-Lloyd sail Antarctica, the Arctic, and the Galápagos, along with the expedition ships of Viking and Silversea. Those same small ships also sail Patagonia. UnCruise sails Alaska and the Pacific Northwest. It does not sail Antarctica or the Galápagos.",
-      "A landing feels different from a pier. You pull on the boots and parka the ship provides and ride a Zodiac onto a beach or the ice. The expedition team sets the day around the weather, and the guides set how close you stand to penguins or seals. When the water is calm, many ships will put kayaks in. A Galápagos landing is on an island, not on ice.",
+      "Because the White Continent changes dramatically over its short summer, matching your travel month to your wildlife goals is essential.",
     ],
     lists: [
+      {
+        heading: "Antarctica, by month",
+        items: [
+          "November (Pristine Ice & Courtship). November marks the breaking of the winter pack ice, revealing pristine, untouched snowscapes before the summer arrivals step foot on them. The sea ice is at its thickest, making it the perfect time for ships equipped with ice-strengthened hulls to carve through massive floes. Ashore, Adelie, Gentoo, and Chinstrap penguins pair up and frantically build their pebble nests, while massive male Elephant and Weddell seals battle to establish their breeding territories.",
+          "December & January (The Midnight Sun & Hatching Chicks). Peak Antarctic summer brings the warmest temperatures of the year and up to 24 hours of continuous daylight, allowing your expedition guides to schedule late-evening coastal cruises under a brilliant, surreal sky. Life explodes across the peninsula during these months. Penguin eggs hatch, filling the rookeries with fuzzy chicks demanding constant feeding, and the first major waves of migrating humpback and minke whales arrive to feed in the nutrient-rich waters.",
+          "February & March (Peak Whale Watching & Deep Exploration). By late summer, receding ice levels allow expedition ships to push much further south, frequently crossing the Antarctic Circle. This is the undisputed peak for whale watching, with humpbacks, minkes, and orcas surfacing right alongside Zodiac boats. On land, the penguin rookeries shift into a new gear as the chicks molt their fuzzy coats and take to the shallow waters to learn how to swim, drawing the attention of patrolling leopard seals.",
+        ],
+      },
       {
         heading: "Where the zodiacs go",
         items: [
