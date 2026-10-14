@@ -15,6 +15,7 @@ export type Destination = {
   image: string;
   alt: string;
   lede: string;
+  ledeMore?: string;
   paragraphs: string[];
   lists: { heading: string; items: string[] }[];
   when: string;
@@ -97,7 +98,9 @@ export const destinations: Destination[] = [
     card: "Islands & reefs",
     image: "/media/caribbean.jpg",
     alt: "A quiet Caribbean cove with pale sand and clear water",
-    lede: "The Caribbean has more sailings than any other region we book, so there is room to find the island escape that fits. The western routes are reefs and beaches. A southern routing reaches the warm water of Aruba and Bonaire. In Nassau the straw market is a five-minute walk from the ship. In San Juan the walk up to El Morro starts the moment you step off the pier.",
+    lede: "Because the Caribbean offers more sailings than any other region, we have the incredible flexibility to curate the exact island escape you are envisioning. If your perfect day involves vibrant coral reefs and expansive, sun-drenched beaches, we will guide you toward the Western routes. If you are chasing deep, reliably warm waters, we will chart a Southern itinerary toward the stunning shores of Aruba and Bonaire.",
+    ledeMore:
+      "Beyond selecting the right ship and route, we focus on ensuring your time in port is effortless. We know exactly which harbors offer immediate, seamless access to local culture. In historic San Juan, your adventure begins the moment you step off the pier, with the scenic walk up to the breathtaking El Morro fortress waiting right at the harbor's edge. In Nassau, we can point you toward the vibrant local straw market, just a short five-minute stroll from your gangway.",
     paragraphs: [
       "Round-trip cruises run seven to eleven nights and depart from Miami, Fort Lauderdale, Galveston, New Orleans, and Tampa. Caribbean cruises also depart from New York, New Jersey, and Maryland. Cruises also start in San Juan, and in some seasons in Fort-de-France, Martinique. A cruise that starts in San Juan reaches those islands in seven nights without the sea days a cruise from Florida needs. A cruise starts in Fort-de-France when MSC Opera or a smaller French ship is based there for the season. We compare Royal Caribbean, Carnival, Norwegian, Celebrity, Princess, and the rest, and we match the ship to the trip, rather than picking a ship and then looking for a trip.",
       "Cruises that depart from the Northeast have more days at sea. From New York, New Jersey, or Maryland, the ship needs extra days to reach the islands and extra days to come home. A Florida sailing of the same length spends more of those nights in port.",
