@@ -361,22 +361,21 @@ export const destinations: Destination[] = [
     card: "Pink sand beaches",
     image: "/media/bermuda.jpg",
     alt: "Pink sand and clear shallow water on an empty Bermuda beach",
-    lede: "Horseshoe Bay has blush-pink sand, and the towns still have a British colonial charm. A seven-night cruise from Boston, New York, or Baltimore gives you easy sea days each way and a long stay on the island.",
+    lede: "Horseshoe Bay has blush-pink sand, and the towns still have a British colonial charm.",
     paragraphs: [
-      "Most Bermuda cruises run about seven nights and depart from Boston, New York, or Baltimore. Ships dock at the Royal Naval Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi. Hamilton is a scenic 20-minute ferry across the harbor, and St. George's, with its quiet pastel streets, is about an hour by bus. Many ships stay overnight, so you can see the beach and both towns without rushing back for an afternoon sailing. A fish sandwich on raisin bread is the lunch people look for. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly sail there. On a five-hour stop you stay near the Dockyard, unless you take an excursion sold by the ship. If that tour runs late, the ship waits. A taxi or a tour you booked on your own does not make the ship wait.",
+      "Most Bermuda cruises run about seven nights and depart from Boston, New York, or Baltimore. Ships dock at the Royal Naval Dockyard, on the west end. Many stay overnight, so there is time for the beach and both towns. Royal Caribbean, Carnival, Norwegian, and Celebrity are the lines that regularly sail there.",
     ],
     lists: [
       {
         heading: "In port",
         items: [
           "Horseshoe Bay, about 30 minutes by taxi from the Dockyard",
-          "You can swim at the beach beside the Dockyard when the ship is only there for a few hours",
+          "A small beach beside the Dockyard, if the ship is only there for a few hours",
           "Hamilton, about 20 minutes by ferry",
           "St. George's, at the east end, about an hour by bus",
           "Gibbs Hill lighthouse, above the south shore",
-          "The ferry across Hamilton Harbour",
+          "A fish sandwich on raisin bread, in Hamilton",
           "A drink of rum and pineapple",
-          "A fish sandwich on raisin bread, the lunch people look for in Hamilton",
         ],
       },
       {
@@ -389,8 +388,8 @@ export const destinations: Destination[] = [
         ],
       },
     ],
-    when: "The cruise season runs from April through October. The weather is easier in late spring and early fall. A five-hour stop is rarely enough for Horseshoe Bay, Hamilton, and St. George's.",
-    planning: "Ask whether the ship stays overnight. That is enough time for Horseshoe Bay, Hamilton, and St. George's. On a short stop, take the excursion sold by the ship if you leave the Dockyard, because the ship waits if that tour is late.",
+    when: "The cruise season runs from April through October. The weather is easier in late spring and early fall.",
+    planning: "Tell us whether you want Boston, New York, or Baltimore, and whether that sailing stays overnight.",
     itineraries: [
       {
         title: "Bermuda overnight",

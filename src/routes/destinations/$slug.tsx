@@ -42,7 +42,7 @@ const ashoreNotes: Record<string, string> = {
   hawaii:
     "The sail between the islands takes longer than a short Caribbean cruise, and Pride of America often stays into the evening. You might use that time at a beach, in the car, or on the north shore. Pearl Harbor is easier before or after a California crossing, while you are staying on Oahu. A luau still needs the ship in port after dark.",
   bermuda:
-    "Many Bermuda sailings stay overnight at the Dockyard, on the west end. Horseshoe Bay is about 30 minutes by taxi. Hamilton is about 20 minutes by ferry. St. George's is about an hour by bus. An overnight is enough time for the beach, Hamilton, and St. George's. On a short stop, use the excursion sold by the ship if you want to leave the Dockyard. If that tour is late, the ship waits. Sailings from Boston, New York, or Baltimore include sea days each way.",
+    "Horseshoe Bay’s sand is pale pink from crushed shell and coral. That beach is not at the pier. The Dockyard has a small beach if the ship is only there for a few hours.",
   "northern-europe":
     "Most Baltic and Norway stops end in the afternoon. Bryggen is the old wharf in Bergen. Nyhavn is the canal in Copenhagen. The Rijksmuseum is in Amsterdam, and it holds Rembrandt’s The Night Watch. Ocean ships dock at IJmuiden, not in the canals. The museum is about 30 to 45 minutes from the pier. An overnight in Copenhagen or Stockholm leaves the evening free. Extra nights in London, Amsterdam, or Copenhagen are for a museum and a neighborhood.",
   "canada-new-england":
@@ -69,7 +69,7 @@ const ashoreLeads: Record<string, string> = {
   mediterranean: "The Gothic Quarter is in Barcelona. The Colosseum is in Rome. Civitavecchia is about an hour to an hour and a half away. The Acropolis is in Athens, about 30 to 45 minutes from Piraeus.",
   european: "A stop in Lisbon, at the London ports, or in a Mediterranean city is short if the ship leaves in the afternoon. If you add nights before or after, you can see one of them properly.",
   hawaii: "Time between the islands runs longer than a Caribbean stop. Pride of America often stays into the evening. A luau still needs the ship in port after dark.",
-  bermuda: "The ship is at the Dockyard. Horseshoe Bay is about 30 minutes by taxi, Hamilton is about 20 minutes by ferry, and St. George's is about an hour by bus. If the ship stays overnight, there is time for all three.",
+  bermuda: "King’s Wharf is the dock. The fort and the shops are a walk from the ship. The rest of the island is a taxi, a bus, or the ferry.",
   "northern-europe": "Bryggen is the old wharf in Bergen. Nyhavn is the canal in Copenhagen. The Rijksmuseum is in Amsterdam, and it holds Rembrandt’s The Night Watch. Ocean ships dock at IJmuiden, not in the canals. The museum is about 30 to 45 minutes from the pier.",
   "canada-new-england": "Boston Harbor and the Freedom Trail are in Boston. In Quebec, Upper Town and the Château Frontenac sit above the St. Lawrence. A fall sailing is more likely to leave late than a short summer stop.",
   river: "The ship ties up in town, often into the evening. You walk off into Budapest, Vienna, or a village.",

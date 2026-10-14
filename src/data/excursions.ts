@@ -648,7 +648,7 @@ export const portGuides: Record<string, PortGuide> = {
       { label: "Time in port", text: "Ships usually stay more than a day, so you do not have to see the island between breakfast and the time you have to be back on the ship." },
       { label: "Worth the time", text: "Stop in St. George’s to see St. Peter’s Church. The town is quiet enough that you do not need a timed tour. In Hamilton, order a fish sandwich on raisin bread." },
       { label: "Travelers", text: "This suits people who want a short sailing from the East Coast, with time on one island." },
-      { label: "Also", text: "You can go to Horseshoe Bay, and you can go into Hamilton or St. George’s." },
+      { label: "Also", text: "Tobacco Bay, near St. George's, is a sheltered beach with rock formations. Crystal Caves is a short visit, and cooler than the beach." },
     ],
     outings: [
       { fits: "People who will take the pink sand in the morning, before the beach fills.", bring: "Reef shoes if the walk in is rocky. The sand itself is soft." },
