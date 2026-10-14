@@ -8,6 +8,7 @@ export type SkiPage = {
   image: string;
   alt: string;
   photos: SkiPhoto[];
+  paragraphs: string[];
   sections?: { heading: string; paragraphs: string[]; photo?: SkiPhoto }[];
 };
 
