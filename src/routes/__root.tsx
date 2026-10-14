@@ -65,13 +65,7 @@ function RootShell({ children }: { children: ReactNode }) {
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,72,500;0,72,600;1,72,500&family=Marcellus&family=Outfit:wght@400;500;600&display=optional';l.media='print';l.onload=function(){this.media='all'};document.head.appendChild(l)})();",
-          }}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "window.addEventListener('load',function(){var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-R12KCXY9XE';s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-R12KCXY9XE');});",
+              "window.addEventListener('load',function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,72,500;0,72,600;1,72,500&family=Marcellus&family=Outfit:wght@400;500;600&display=optional';document.head.appendChild(l);var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-R12KCXY9XE';s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-R12KCXY9XE');});",
           }}
         />
         <HeadContent />

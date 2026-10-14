@@ -187,7 +187,7 @@ export function DestinationArticle({
         )}
       />
       <section className="mx-auto grid max-w-6xl items-stretch gap-6 px-4 pt-8 lg:grid-cols-2">
-        <img src={place.image} alt={place.alt} fetchPriority="high" decoding="async" className="h-full min-h-72 w-full rounded-xl object-cover" />
+        <img src={place.image} alt={place.alt} width={1100} height={733} fetchPriority="high" decoding="async" className="h-full min-h-72 w-full rounded-xl object-cover" />
         <div className="flex flex-col justify-center rounded-xl px-6 py-8 text-foam lg:px-8" style={{ backgroundColor: tone }}>
           <p className="text-base text-foam">
             {rail ? (

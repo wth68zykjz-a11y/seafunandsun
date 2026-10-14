@@ -135,18 +135,19 @@ function DoorCard({ door, first = false }: { door: Door; first?: boolean }) {
   const small = door.mobileImage ?? door.image;
   const face = (
     <>
-      <img
-        src={small}
-        srcSet={`${small} 640w, ${door.image} 1200w`}
-        sizes="(max-width: 640px) 92vw, (max-width: 1280px) 46vw, 30vw"
-        alt={door.alt}
-        width={640}
-        height={427}
-        loading={first ? "eager" : "lazy"}
-        decoding="async"
-        fetchPriority={first ? "high" : "low"}
-        className="h-56 w-full object-cover sm:h-64"
-      />
+      <picture>
+        <source media="(min-width: 640px)" srcSet={door.image} />
+        <img
+          src={small}
+          alt={door.alt}
+          width={640}
+          height={427}
+          loading={first ? "eager" : "lazy"}
+          decoding="async"
+          fetchPriority={first ? "high" : "low"}
+          className="h-56 w-full object-cover sm:h-64"
+        />
+      </picture>
       <div className="flex flex-1 flex-col p-5">
         <p className="text-sm font-semibold uppercase tracking-[0.12em] text-tide">{door.kicker}</p>
         <h2 className="mt-2 font-display text-3xl text-ink">{door.title}</h2>
@@ -235,7 +236,7 @@ function Home() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 pb-16">
+        <section className="below-fold mx-auto max-w-6xl px-4 pb-16">
           <Link to="/sailings" hash="promotions" className="grid overflow-hidden rounded-xl border border-line bg-foam md:grid-cols-[18rem_1fr]">
             <img
               src="/media/page-sailings-sm.webp"
@@ -255,7 +256,7 @@ function Home() {
           </Link>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 pb-16">
+        <section className="below-fold mx-auto max-w-6xl px-4 pb-16">
           <h2 className="font-display text-3xl text-ink sm:text-4xl">Contact us to start planning your vacation.</h2>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-ink">
             Call, text, or use the form. We arrange the trip from your home to the destination, and the return.
@@ -298,7 +299,7 @@ function Home() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 pb-16">
+        <section className="below-fold mx-auto max-w-6xl px-4 pb-16">
           <h2 className="font-display text-3xl sm:text-4xl">Frequently asked questions</h2>
           <div className="mt-6 divide-y divide-line border-y border-line">
             {faqs.map((item) => (
@@ -322,7 +323,7 @@ function Home() {
           </div>
         </section>
 
-        <section id="quote" className="relative mx-auto grid max-w-6xl scroll-mt-24 gap-8 px-4 pb-20 lg:grid-cols-2">
+        <section id="quote" className="below-fold relative mx-auto grid max-w-6xl scroll-mt-24 gap-8 px-4 pb-20 lg:grid-cols-2">
           <div>
             <p className="text-sm font-medium text-tide">A quote</p>
             <h2 className="mt-2 font-display text-3xl sm:text-4xl">A few details are enough to begin.</h2>

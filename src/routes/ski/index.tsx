@@ -30,6 +30,8 @@ function SkiPage() {
         <img
           src="/media/ski-alps.jpg"
           alt="A person in a red jacket facing the Matterhorn across a snowfield"
+          width={1100}
+          height={733}
           fetchPriority="high"
           decoding="async"
           className="aspect-photo w-full rounded-xl object-cover"

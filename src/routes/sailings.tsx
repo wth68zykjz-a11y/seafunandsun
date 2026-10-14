@@ -357,7 +357,7 @@ function SailingsPage() {
         </Link>
       </div>
       <div className="mx-auto mt-8 max-w-6xl px-4">
-        <img src="/media/page-sailings.jpg" alt="The bow of a white ship in calm water at golden hour" loading="lazy" decoding="async" className="aspect-photo max-h-72 w-full rounded-xl object-cover" />
+        <img src="/media/page-sailings-sm.webp" alt="The bow of a white ship in calm water at golden hour" width={640} height={427} loading="lazy" decoding="async" className="aspect-photo max-h-72 w-full rounded-xl object-cover" />
       </div>
       <section id="promotions" className="mx-auto mt-10 max-w-6xl scroll-mt-24 px-4 pb-20">
         <DealsOfTheWeek offers={feed.offers.map(labelExplora)} />

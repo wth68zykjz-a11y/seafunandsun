@@ -76,6 +76,8 @@ function ResortsPage() {
         <img
           src="/media/resort-villas.jpg"
           alt="Overwater villas on a turquoise lagoon, seen from above"
+          width={1100}
+          height={733}
           fetchPriority="high"
           decoding="async"
           className="aspect-photo w-full rounded-xl object-cover"
