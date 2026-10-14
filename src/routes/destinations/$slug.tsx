@@ -20,7 +20,7 @@ const destinationSeo: Record<string, { title: string; description: string }> = {
       "Find your ideal Caribbean escape. We compare western reef routes, southern island loops, and eastern sailings departing from Florida and San Juan.",
   },
   european: {
-    title: "European Cruises & Atlantic City Voyages | Sea Fun & Sun",
+    title: "European Cruises & Atlantic Coast Voyages | Sea Fun & Sun",
     description:
       "Sail from Lisbon to London and Amsterdam. Let our expert agents handle the complex port distances and map out your dream European cruise and hotel stay.",
   },
