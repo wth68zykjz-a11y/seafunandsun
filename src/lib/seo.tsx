@@ -234,6 +234,82 @@ export function faqLd(faqs: { q: string; a: string }[]) {
   };
 }
 
+function placeNames(lines: string[]) {
+  const names: string[] = [];
+  const seen = new Set<string>();
+  for (const line of lines) {
+    let text = line.trim();
+    const colon = text.indexOf(":");
+    if (colon > 0 && colon < 28) text = text.slice(colon + 1);
+    for (const bit of text.split(/,|—|–|\bor\b|\bfor\b/)) {
+      const name = bit
+        .trim()
+        .replace(/^(and|or|from|a|an)\s+/i, "")
+        .replace(/\s+from the ship.*$/i, "")
+        .replace(/\s+with\s+.*$/i, "")
+        .replace(/\s+on the\s+.*$/i, "")
+        .replace(/\.$/, "")
+        .trim();
+      const key = name.toLowerCase();
+      if (!name || seen.has(key) || name.length > 40 || name.split(/\s+/).length > 5) continue;
+      if (/^(with|if|from|a|an)\b/i.test(name)) continue;
+      if (/day at sea|pier|wildlife|routing|passport|currency|round trip|nights|sailings|float|whale/i.test(name)) continue;
+      seen.add(key);
+      names.push(name);
+      if (names.length >= 12) return names;
+    }
+  }
+  return names;
+}
+
+export function touristDestinationLd(place: {
+  slug: string;
+  title: string;
+  lede: string;
+  image: string;
+  itineraries: { ports: string[] }[];
+}) {
+  const url = absoluteUrl(`/destinations/${place.slug}`);
+  const places = placeNames(place.itineraries.flatMap((item) => item.ports));
+  return {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    "@id": `${url}#destination`,
+    name: place.title,
+    description: clip(place.lede, 300),
+    url,
+    image: absoluteUrl(place.image),
+    touristType: "Cruise passengers",
+    provider: { "@id": `${siteUrl}/#agency` },
+    ...(places.length
+      ? { containsPlace: places.map((name) => ({ "@type": "Place", name })) }
+      : {}),
+  };
+}
+
+export function destinationListLd(items: { slug: string; title: string; lede: string; image: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": `${siteUrl}/destinations#list`,
+    name: "Cruise regions",
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.title,
+      url: absoluteUrl(`/destinations/${item.slug}`),
+      item: {
+        "@type": "TouristDestination",
+        name: item.title,
+        description: clip(item.lede, 160),
+        url: absoluteUrl(`/destinations/${item.slug}`),
+        image: absoluteUrl(item.image),
+      },
+    })),
+  };
+}
+
 export function breadcrumbLd(items: { name: string; path: string }[]) {
   return {
     "@context": "https://schema.org",

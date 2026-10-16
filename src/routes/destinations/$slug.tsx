@@ -6,7 +6,7 @@ import { railPages } from "@/data/rail-pages";
 import { shoreNote, shores, portGuides } from "@/data/excursions";
 import { portActivityBySlug } from "@/data/port-activities";
 import { destinationPhotos, type DestinationPhoto } from "@/data/destination-photos";
-import { breadcrumbLd, clip, JsonLd, pageHead } from "@/lib/seo";
+import { breadcrumbLd, clip, JsonLd, pageHead, touristDestinationLd } from "@/lib/seo";
 
 const destinationSeo: Record<string, { title: string; description: string }> = {
   alaskan: {
@@ -241,6 +241,7 @@ export function DestinationArticle({
               ],
         )}
       />
+      {rail ? null : <JsonLd data={touristDestinationLd(place)} />}
       <section className="mx-auto grid max-w-6xl items-stretch gap-6 px-4 pt-8 lg:grid-cols-2">
         <img src={place.image} alt={place.alt} width={1100} height={733} fetchPriority="high" decoding="async" className="h-full min-h-72 w-full rounded-xl object-cover" />
         <div className="flex flex-col justify-center rounded-xl px-6 py-8 text-foam lg:px-8" style={{ backgroundColor: tone }}>

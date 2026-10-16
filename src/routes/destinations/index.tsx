@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageIntro, Shell } from "@/components/site-chrome";
 import { orderedDestinations } from "@/data/destinations";
 import { portActivityBySlug } from "@/data/port-activities";
-import { pageHead } from "@/lib/seo";
+import { destinationListLd, JsonLd, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/destinations/")({
   head: () =>
@@ -36,6 +36,13 @@ const hub: Record<string, { line: string; draws: string[] }> = {
 function DestinationsPage() {
   return (
     <Shell>
+      <JsonLd
+        data={destinationListLd(
+          orderedDestinations()
+            .filter((item) => item.slug !== "rail")
+            .map((item) => ({ slug: item.slug, title: item.title, lede: item.lede, image: item.image })),
+        )}
+      />
       <PageIntro
         kicker="Destinations"
         title="Cruise regions."
