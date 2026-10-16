@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { bookingEmail, facebook, instagram, licenseLine } from "@/data/links";
+import { bookingEmail, facebook, instagram } from "@/data/links";
 
 export const siteUrl = "https://seafunandsun.com";
 export const siteName = "Sea Fun & Sun";
@@ -56,26 +56,43 @@ export function pageHead(opts: {
 
 export function agencyGraph() {
   const id = `${siteUrl}/#agency`;
+  const offer = (name: string, path: string, description: string) => ({
+    "@type": "Offer",
+    itemOffered: {
+      "@type": "Service",
+      name,
+      description,
+      url: absoluteUrl(path),
+      provider: { "@id": id },
+      areaServed: { "@type": "Country", name: "United States" },
+    },
+  });
   return {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "TravelAgency",
+        "@type": ["TravelAgency", "LocalBusiness"],
         "@id": id,
-        name: siteName,
-        alternateName: ["Sea Fun and Sun", "Sea Fun & Sun Travel Company"],
+        name: "Sea Fun & Sun Travel Company",
+        legalName: siteName,
+        alternateName: ["Sea Fun and Sun", "Sea Fun & Sun"],
         url: siteUrl,
-        image: absoluteUrl("/og.jpg"),
-        logo: absoluteUrl("/favicon.svg"),
+        image: [absoluteUrl("/og.jpg"), absoluteUrl("/media/hero.jpg")],
+        logo: {
+          "@type": "ImageObject",
+          url: absoluteUrl("/favicon.svg"),
+          caption: siteName,
+        },
         telephone: "+1-959-666-2062",
         email: bookingEmail,
         founder: {
           "@type": "Person",
           name: "Laura S",
-          jobTitle: "Travel agent",
+          jobTitle: "Travel advisor",
+          worksFor: { "@id": id },
         },
         description:
-          "Independent travel company in Farmington, Connecticut. Books cruises, expedition ships, all-inclusive resorts, ski vacations, and rail trips, including luxury European trains. No separate agent fee. Payment goes to the supplier.",
+          "Independent travel agency in Farmington, Connecticut. Books ocean and river cruises, expedition ships, all-inclusive resorts, ski vacations, and scenic rail journeys for travelers across the United States.",
         address: {
           "@type": "PostalAddress",
           addressLocality: "Farmington",
@@ -91,18 +108,76 @@ export function agencyGraph() {
         hasMap: "https://www.google.com/maps/search/?api=1&query=Farmington%2C%20Connecticut",
         areaServed: [
           { "@type": "City", name: "Farmington" },
-          { "@type": "State", name: "Connecticut" },
+          { "@type": "AdministrativeArea", name: "Connecticut" },
           { "@type": "Country", name: "United States" },
         ],
         currenciesAccepted: "USD",
+        paymentAccepted: "Credit card",
         openingHoursSpecification: {
           "@type": "OpeningHoursSpecification",
           dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           opens: "09:00",
           closes: "18:00",
         },
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+1-959-666-2062",
+          email: bookingEmail,
+          contactType: "reservations",
+          areaServed: "US",
+          availableLanguage: ["English"],
+        },
+        potentialAction: {
+          "@type": "ReserveAction",
+          name: "Request a quote",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: `${siteUrl}/quote`,
+            inLanguage: "en-US",
+            actionPlatform: ["https://schema.org/DesktopWebPlatform", "https://schema.org/MobileWebPlatform"],
+          },
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Vacations",
+          itemListElement: [
+            offer(
+              "Ocean and river cruises",
+              "/destinations",
+              "Ocean cruises, river cruises, and expedition sailings, with the flight and extra nights priced separately.",
+            ),
+            offer(
+              "Expedition cruises",
+              "/destinations/expedition",
+              "Small-ship expedition cruises to Antarctica, the Arctic, and the Galápagos.",
+            ),
+            offer(
+              "All-inclusive resorts",
+              "/resorts",
+              "All-inclusive beach resorts, including Sandals, Beaches, Hyatt, Secrets, and Club Med.",
+            ),
+            offer(
+              "Ski vacations",
+              "/ski",
+              "Ski trips at Club Med and at hotels in North America, the Alps, and Japan.",
+            ),
+            offer(
+              "Rail journeys",
+              "/rail",
+              "Scenic rail trips, including Amtrak, VIA Rail, and European sleeper trains.",
+            ),
+          ],
+        },
+        memberOf: {
+          "@type": "Organization",
+          name: "A.S.A.P. Cruises Inc.",
+        },
+        identifier: [
+          { "@type": "PropertyValue", name: "Florida Seller of Travel", value: "ST15578" },
+          { "@type": "PropertyValue", name: "California Seller of Travel", value: "2090937-50" },
+          { "@type": "PropertyValue", name: "Washington UBID", value: "603189022" },
+        ],
         sameAs: [instagram, facebook],
-        identifier: licenseLine,
         knowsAbout: [
           "Ocean cruises",
           "River cruises",
@@ -114,7 +189,6 @@ export function agencyGraph() {
           "Club Med ski resorts",
           "Luxury ski resorts",
           "Luxury European trains",
-          "Disney cruises and park trips",
         ],
       },
       {
@@ -125,7 +199,7 @@ export function agencyGraph() {
         publisher: { "@id": id },
         inLanguage: "en-US",
         description:
-          "Cruises, expedition ships, resorts, ski vacations, and rail trips from an independent travel company in Farmington, Connecticut. Call, text, or email to plan the trip. There is no public fare search, and no separate agent fee.",
+          "Cruises, expedition ships, resorts, ski vacations, and rail trips from an independent travel agency in Farmington, Connecticut.",
       },
     ],
   };
@@ -135,10 +209,19 @@ export function faqLd(faqs: { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${siteUrl}/#faq`,
+    url: siteUrl,
+    name: "Frequently asked questions",
+    isPartOf: { "@id": `${siteUrl}/#website` },
+    about: { "@id": `${siteUrl}/#agency` },
+    inLanguage: "en-US",
     mainEntity: faqs.map((item) => ({
       "@type": "Question",
       name: item.q,
-      acceptedAnswer: { "@type": "Answer", text: item.a },
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
     })),
   };
 }
