@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { QuoteForm } from "@/components/quote-form";
 import { Shell } from "@/components/site-chrome";
 import { portActivityBySlug } from "@/data/port-activities";
-import { breadcrumbLd, clip, JsonLd, pageHead } from "@/lib/seo";
+import { attractionListLd, breadcrumbLd, clip, JsonLd, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/in-port/$region")({
   loader: ({ params }) => {
@@ -85,6 +85,7 @@ function InPortPage() {
             { name: "In port", path: `/in-port/${page.slug}` },
           ])}
         />
+        <JsonLd data={attractionListLd(page)} />
         <article className="mx-auto max-w-6xl px-4 pt-8 pb-20 sm:pt-12">
           <p className="text-base leading-relaxed text-ink">
             <Link to="/destinations/$slug" params={{ slug: page.slug }} className="font-medium text-tide">

@@ -287,6 +287,153 @@ export function touristDestinationLd(place: {
   };
 }
 
+const railTrains: Record<string, { name: string; provider: string; from: string; to?: string }[]> = {
+  "california-zephyr": [{ name: "California Zephyr", provider: "Amtrak", from: "Chicago", to: "Emeryville" }],
+  "empire-builder": [
+    { name: "Empire Builder", provider: "Amtrak", from: "Chicago", to: "Seattle" },
+    { name: "Empire Builder", provider: "Amtrak", from: "Chicago", to: "Portland" },
+  ],
+  "southwest-chief": [{ name: "Southwest Chief", provider: "Amtrak", from: "Chicago", to: "Los Angeles" }],
+  "coast-starlight": [{ name: "Coast Starlight", provider: "Amtrak", from: "Seattle", to: "Los Angeles" }],
+  "grand-canyon-railway": [{ name: "Grand Canyon Railway", provider: "Grand Canyon Railway", from: "Williams", to: "Grand Canyon South Rim" }],
+  "northeast-trains": [
+    { name: "Adirondack", provider: "Amtrak", from: "New York", to: "Montreal" },
+    { name: "Vermonter", provider: "Amtrak", from: "Washington", to: "St. Albans" },
+    { name: "Downeaster", provider: "Amtrak", from: "Boston", to: "Brunswick" },
+  ],
+  "the-canadian": [{ name: "The Canadian", provider: "VIA Rail", from: "Toronto", to: "Vancouver" }],
+  "european-sleepers": [
+    { name: "Venice Simplon-Orient-Express", provider: "Belmond", from: "Paris", to: "Venice" },
+    { name: "La Dolce Vita Orient Express", provider: "La Dolce Vita Orient Express", from: "Rome", to: "Venice" },
+    { name: "La Dolce Vita Orient Express", provider: "La Dolce Vita Orient Express", from: "Palermo", to: "Rome" },
+    { name: "Golden Eagle Danube Express", provider: "Golden Eagle", from: "Venice", to: "Istanbul" },
+    { name: "Royal Scotsman", provider: "Belmond", from: "Edinburgh" },
+  ],
+  "alpine-trains": [
+    { name: "Glacier Express", provider: "Glacier Express", from: "Zermatt", to: "St. Moritz" },
+    { name: "Bernina Express", provider: "RhB", from: "St. Moritz", to: "Tirano" },
+  ],
+};
+
+export function trainTripsLd(page: { slug: string; lede: string; photos: { src: string }[] }) {
+  const trips = railTrains[page.slug];
+  if (!trips?.length) return null;
+  const url = absoluteUrl(`/rail/${page.slug}`);
+  const image = page.photos[0]?.src ? absoluteUrl(page.photos[0].src) : undefined;
+  return {
+    "@context": "https://schema.org",
+    "@graph": trips.map((trip) => ({
+      "@type": "TrainTrip",
+      name: trip.to ? `${trip.name}, ${trip.from} to ${trip.to}` : trip.name,
+      trainName: trip.name,
+      description: clip(page.lede, 300),
+      url,
+      ...(image ? { image } : {}),
+      provider: { "@type": "Organization", name: trip.provider },
+      departureStation: { "@type": "TrainStation", name: trip.from },
+      ...(trip.to ? { arrivalStation: { "@type": "TrainStation", name: trip.to } } : {}),
+    })),
+  };
+}
+
+export function touristTripsLd(place: {
+  slug: string;
+  itineraries: { title: string; nights: string; season: string; path: string; ports: string[] }[];
+}) {
+  const url = absoluteUrl(`/destinations/${place.slug}`);
+  const trips = place.itineraries
+    .map((item) => {
+      const places = placeNames(item.ports);
+      return {
+        "@type": "TouristTrip",
+        name: item.title,
+        description: clip(`${item.nights}. ${item.path}. ${item.season}.`, 300),
+        url,
+        touristType: "Cruise passengers",
+        provider: { "@id": `${siteUrl}/#agency` },
+        ...(places.length
+          ? {
+              itinerary: {
+                "@type": "ItemList",
+                itemListElement: places.map((name, index) => ({
+                  "@type": "ListItem",
+                  position: index + 1,
+                  name,
+                  item: { "@type": "Place", name },
+                })),
+              },
+            }
+          : {}),
+      };
+    })
+    .filter((trip) => trip.itinerary);
+  if (!trips.length) return null;
+  return { "@context": "https://schema.org", "@graph": trips };
+}
+
+export function skiDestinationLd(page: { slug: string; title: string; lede: string; image: string }) {
+  const url = absoluteUrl(`/ski/${page.slug}`);
+  return {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    "@id": `${url}#destination`,
+    name: page.title,
+    description: clip(page.lede, 300),
+    url,
+    image: absoluteUrl(page.image),
+    touristType: "Skiers",
+    provider: { "@id": `${siteUrl}/#agency` },
+  };
+}
+
+export function cityListLd(
+  path: string,
+  cities: { name: string; place: string; description: string; image: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Departure cities",
+    url: absoluteUrl(path),
+    numberOfItems: cities.length,
+    itemListElement: cities.map((city, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "City",
+        name: city.name,
+        description: clip(city.description, 220),
+        image: absoluteUrl(city.image),
+        containedInPlace: { "@type": "AdministrativeArea", name: city.place },
+      },
+    })),
+  };
+}
+
+export function attractionListLd(page: {
+  slug: string;
+  stops: { name: string; text: string; photos?: { src: string }[] }[];
+}) {
+  const stops = page.stops.filter((stop) => !/scenic sail/i.test(stop.name));
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Places you can visit from the ship",
+    url: absoluteUrl(`/in-port/${page.slug}`),
+    numberOfItems: stops.length,
+    itemListElement: stops.map((stop, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "TouristAttraction",
+        name: stop.name,
+        description: clip(stop.text, 300),
+        ...(stop.photos?.[0]?.src ? { image: absoluteUrl(stop.photos[0].src) } : {}),
+      },
+    })),
+  };
+}
+
 export function destinationListLd(items: { slug: string; title: string; lede: string; image: string }[]) {
   return {
     "@context": "https://schema.org",

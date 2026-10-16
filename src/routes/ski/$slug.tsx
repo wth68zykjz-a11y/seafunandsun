@@ -2,7 +2,7 @@ import { Link, createFileRoute, notFound } from "@tanstack/react-router";
 import { QuoteForm } from "@/components/quote-form";
 import { Shell } from "@/components/site-chrome";
 import { skiPageBySlug, skiPages } from "@/data/ski-pages";
-import { JsonLd, breadcrumbLd, clip, pageHead } from "@/lib/seo";
+import { JsonLd, breadcrumbLd, clip, pageHead, skiDestinationLd } from "@/lib/seo";
 
 export const Route = createFileRoute("/ski/$slug")({
   loader: ({ params }) => {
@@ -45,6 +45,7 @@ function SkiRegionPage() {
           { name: page.nav, path: `/ski/${page.slug}` },
         ])}
       />
+      <JsonLd data={skiDestinationLd(page)} />
       <article className="mx-auto max-w-3xl px-4 py-10">
         <p className="text-sm font-medium text-tide">Ski</p>
         <h1 className="mt-2 font-display text-3xl text-ink sm:text-4xl">{page.title}</h1>

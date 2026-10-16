@@ -4,7 +4,7 @@ import { cruisePlaces } from "@/data/place-names";
 import { portPageBySlug, portPages, type Port, type PortCall } from "@/data/ports";
 import { CabinGuide } from "@/components/cabin-guide";
 import { LocalClock } from "@/components/local-clock";
-import { clip, pageHead } from "@/lib/seo";
+import { cityListLd, clip, JsonLd, pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/ports/$region")({
   loader: ({ params }) => {
@@ -122,6 +122,24 @@ function PortRegionPage() {
           className="pointer-events-none absolute inset-x-0 top-0 h-auto w-full opacity-[0.08]"
         />
         <div className="relative z-10">
+      <JsonLd
+        data={cityListLd(`/ports/${page.slug}`, [
+          ...page.sections.flatMap((region) =>
+            region.ports.map((port) => ({
+              name: port.name,
+              place: port.place,
+              description: port.goes,
+              image: port.image,
+            })),
+          ),
+          ...(page.calls ?? []).map((call) => ({
+            name: call.name,
+            place: call.place,
+            description: call.note,
+            image: call.image,
+          })),
+        ])}
+      />
       <PageIntro kicker="Departure ports" title={page.title} lede={page.lede} />
       <nav className="mx-auto flex max-w-6xl flex-wrap gap-2 px-4 pb-8" aria-label="Port regions">
         {portPages.map((item) => (
