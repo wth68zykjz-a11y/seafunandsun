@@ -71,13 +71,20 @@ export function agencyGraph() {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["TravelAgency", "LocalBusiness"],
+        "@type": ["LocalBusiness", "TravelAgency"],
         "@id": id,
         name: "Sea Fun & Sun Travel Company",
         legalName: siteName,
         alternateName: ["Sea Fun and Sun", "Sea Fun & Sun"],
         url: siteUrl,
-        image: [absoluteUrl("/og.jpg"), absoluteUrl("/media/hero.jpg")],
+        slogan: "The right trip, booked with care.",
+        publicAccess: false,
+        image: {
+          "@type": "ImageObject",
+          url: absoluteUrl("/og.jpg"),
+          width: 1200,
+          height: 630,
+        },
         logo: {
           "@type": "ImageObject",
           url: absoluteUrl("/favicon.svg"),
@@ -197,6 +204,7 @@ export function agencyGraph() {
         name: siteName,
         url: siteUrl,
         publisher: { "@id": id },
+        mainEntity: { "@id": id },
         inLanguage: "en-US",
         description:
           "Cruises, expedition ships, resorts, ski vacations, and rail trips from an independent travel agency in Farmington, Connecticut.",
