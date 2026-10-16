@@ -1,10 +1,15 @@
-import { Link, createFileRoute, notFound } from "@tanstack/react-router";
+import { Link, createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { QuoteForm } from "@/components/quote-form";
 import { Shell } from "@/components/site-chrome";
 import { railPageBySlug, railPages } from "@/data/rail-pages";
 import { JsonLd, breadcrumbLd, clip, pageHead, trainTripsLd } from "@/lib/seo";
 
 export const Route = createFileRoute("/rail/$slug")({
+  beforeLoad: ({ params }) => {
+    if (params.slug === "zephyr-dining") {
+      throw redirect({ to: "/rail/$slug", params: { slug: "california-zephyr" }, statusCode: 301 });
+    }
+  },
   loader: ({ params }) => {
     const page = railPageBySlug(params.slug);
     if (!page) throw notFound();
