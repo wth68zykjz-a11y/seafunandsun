@@ -13,7 +13,7 @@ export const railPages: RailPage[] = [
   {
     slug: "california-zephyr",
     nav: "California Zephyr",
-    title: "California Zephyr scenic stops",
+    title: "California Zephyr",
     lede: "Chicago to Emeryville, and the canyons are the miles between the stations. You see them from the glass car.",
     photos: [
       {
