@@ -313,7 +313,7 @@ export const railPages: RailPage[] = [
       {
         heading: "Meals",
         paragraphs: [
-          "Sleeper Plus includes breakfast, lunch, and dinner in the dining car. Breakfast starts at 6:30. You choose one of two seatings for lunch and dinner. There is always a vegetarian dish. VIA changes the menu. Breakfast has included a chef’s omelette. Dinner has included trout, pesto chicken, and beef. Wine is sold by the glass.",
+          "Sleeper Plus includes breakfast, lunch, and dinner in the dining car. Breakfast starts at 6:30. You choose one of two seatings for lunch and dinner. There is always a vegetarian dish. Wine is sold by the glass.",
           "VIA changes the menu. Breakfast has included a chef’s omelette. Lunch has included a pulled-turkey wrap and ginger beef on rice. Dinner has included trout, pesto chicken, and beef. The dishes on your date can differ.",
         ],
       },
