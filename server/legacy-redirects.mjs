@@ -30,7 +30,7 @@ const legacy = {
   "/rail.html": "/rail",
   "/quote.html": "/quote",
   "/sailings.html": "/sailings",
-  "/itineraries.html": "/itineraries",
+  "/itineraries.html": "/destinations",
   "/ports.html": "/ports",
   "/panama-canal-cruises.html": "/destinations/panama-canal",
   "/index.html": "/",
