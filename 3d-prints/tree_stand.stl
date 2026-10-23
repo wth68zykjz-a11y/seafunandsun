@@ -1,0 +1,9 @@
+solid tree_stand
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 127.000000 0.000000 8.000000
+      vertex 126.388460 12.448177 8.000000
+      vertex 0.000000 0.000000 8.000000
+    endloop
+  endfacet
+endsolid tree_stand
