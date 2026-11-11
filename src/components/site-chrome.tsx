@@ -385,6 +385,8 @@ export function Footer() {
               </li>
               <li><Link to="/rail" className="hover:text-foam">Rail & Land Journeys</Link></li>
               <li><Link to="/sailings" hash="promotions" className="hover:text-foam">Current Promotions</Link></li>
+              <li><Link to="/about" className="hover:text-foam">About</Link></li>
+              <li><Link to="/contact" className="hover:text-foam">Contact</Link></li>
             </ul>
           </div>
           <div>
@@ -407,6 +409,10 @@ export function Footer() {
           <p>Booking engine powered by Outside Agents · Independent Affiliate of A.S.A.P. Cruises Inc.</p>
           <p>FL Seller of Travel ST15578 · CA Seller of Travel 2090937-50 · WA UBID 603189022</p>
           <p>
+            <Link to="/about" className="underline-offset-2 hover:underline">About</Link>
+            {" · "}
+            <Link to="/contact" className="underline-offset-2 hover:underline">Contact</Link>
+            {" · "}
             <Link to="/policies/$doc" params={{ doc: "terms" }} className="underline-offset-2 hover:underline">Terms</Link>
             {" · "}
             <Link to="/policies/$doc" params={{ doc: "refund" }} className="underline-offset-2 hover:underline">Refunds</Link>

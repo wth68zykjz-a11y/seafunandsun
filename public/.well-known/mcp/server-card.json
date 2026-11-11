@@ -1,0 +1,35 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/server-card/v1.json",
+  "name": "Sea Fun & Sun",
+  "version": "1.0.0",
+  "description": "Independent travel agency tools for quoting cruises, resorts, ski trips, and rail journeys.",
+  "endpoint": "https://seafunandsun.com/mcp",
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    }
+  },
+  "tools": [
+    {
+      "name": "request_quote",
+      "description": "Start a quote request for a cruise, resort, ski, expedition, or rail trip.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "destination": { "type": "string", "description": "Desired destination" },
+          "tripType": { "type": "string", "description": "cruise, resort, ski, expedition, rail, or other" },
+          "dates": { "type": "string", "description": "Approximate travel dates" },
+          "notes": { "type": "string", "description": "Any additional details" }
+        }
+      }
+    },
+    {
+      "name": "get_contact",
+      "description": "Return phone and email contact information for Sea Fun & Sun.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}
