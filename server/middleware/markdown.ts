@@ -1,7 +1,9 @@
 /**
- * Content negotiation: when an agent requests Accept: text/markdown
- * (or text/plain) for the homepage, return a clean Markdown representation
- * instead of HTML. Dramatically reduces token cost for AI agents.
+ * Content negotiation + Link header advertising.
+ *
+ * - When Accept prefers text/markdown, return a clean Markdown homepage.
+ * - Always emit an RFC 8288 Link header on the homepage pointing at /llms.txt
+ *   (and a Markdown alternate) so agents can discover the lighter representation.
  */
 
 const HOME_MARKDOWN = `# Sea Fun & Sun
@@ -42,17 +44,21 @@ const HOME_MARKDOWN = `# Sea Fun & Sun
 Full facts for assistants: https://seafunandsun.com/llms.txt
 `;
 
+const LINK_HEADER =
+  '</llms.txt>; rel="describedby"; type="text/plain", </>; rel="alternate"; type="text/markdown"';
+
 interface MarkdownEvent {
   url: URL;
   req: { method: string; headers: Headers };
 }
 
-export default function markdownNegotiation(event: MarkdownEvent, next: () => unknown) {
+export default async function markdownNegotiation(event: MarkdownEvent, next: () => Promise<Response> | Response) {
   const method = (event.req.method ?? "GET").toUpperCase();
   if (method !== "GET" && method !== "HEAD") return next();
 
   const path = event.url.pathname;
-  if (path !== "/" && path !== "") return next();
+  const isHome = path === "/" || path === "";
+  if (!isHome) return next();
 
   const accept = event.req.headers.get("accept") ?? "";
   const wantsMarkdown =
@@ -60,14 +66,29 @@ export default function markdownNegotiation(event: MarkdownEvent, next: () => un
     accept.includes("text/x-markdown") ||
     (accept.includes("text/plain") && !accept.includes("text/html"));
 
-  if (!wantsMarkdown) return next();
+  if (wantsMarkdown) {
+    return new Response(HOME_MARKDOWN, {
+      status: 200,
+      headers: {
+        "content-type": "text/markdown; charset=utf-8",
+        "cache-control": "public, max-age=3600",
+        vary: "Accept",
+        link: LINK_HEADER,
+      },
+    });
+  }
 
-  return new Response(HOME_MARKDOWN, {
-    status: 200,
-    headers: {
-      "content-type": "text/markdown; charset=utf-8",
-      "cache-control": "public, max-age=3600",
-      vary: "Accept",
-    },
-  });
+  // Normal HTML response — still advertise the Markdown / llms.txt resources.
+  const response = await next();
+  if (response instanceof Response) {
+    const headers = new Headers(response.headers);
+    headers.append("link", LINK_HEADER);
+    headers.set("vary", [headers.get("vary"), "Accept"].filter(Boolean).join(", "));
+    return new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers,
+    });
+  }
+  return response;
 }
