@@ -68,6 +68,55 @@ function RootShell({ children }: { children: ReactNode }) {
               "window.addEventListener('load',function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,72,500;0,72,600;1,72,500&family=Marcellus&family=Outfit:wght@400;500;600&display=optional';document.head.appendChild(l);var s=document.createElement('script');s.src='https://www.googletagmanager.com/gtag/js?id=G-R12KCXY9XE';s.async=true;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-R12KCXY9XE');});",
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){
+  function register(){
+    var mc = (typeof navigator!=='undefined' && navigator.modelContext) || (typeof document!=='undefined' && document.modelContext);
+    if(!mc || typeof mc.registerTool!=='function') return;
+    try {
+      mc.registerTool({
+        name: 'request_quote',
+        description: 'Open the quote form so a traveler can request a cruise, resort, ski, or rail trip from Sea Fun & Sun. Use this when someone wants to start planning a vacation.',
+        inputSchema: {
+          type: 'object',
+          properties: {
+            destination: { type: 'string', description: 'Where they want to go (optional)' },
+            tripType: { type: 'string', description: 'cruise, resort, ski, expedition, rail, or other (optional)' }
+          }
+        },
+        execute: async function(input){
+          var url = '/quote';
+          if(input && (input.destination || input.tripType)){
+            var q = new URLSearchParams();
+            if(input.destination) q.set('destination', input.destination);
+            if(input.tripType) q.set('type', input.tripType);
+            url += '?' + q.toString();
+          }
+          window.location.href = url;
+          return { content: [{ type: 'text', text: 'Opening the quote form.' }] };
+        }
+      });
+      mc.registerTool({
+        name: 'get_contact',
+        description: 'Return the phone number and email for Sea Fun & Sun so an agent can help a traveler reach the agency.',
+        inputSchema: { type: 'object', properties: {} },
+        execute: async function(){
+          return {
+            content: [{
+              type: 'text',
+              text: 'Phone/text: (959) 666-2062\nEmail: Booking@Seafunandsun.com\nBased in Farmington, Connecticut. Weekdays about 9 AM\u20136 PM Eastern.'
+            }]
+          };
+        }
+      });
+    } catch(e) {}
+  }
+  if(document.readyState==='complete') register();
+  else window.addEventListener('load', register);
+})();`,
+          }}
+        />
         <HeadContent />
       </head>
       <body>
