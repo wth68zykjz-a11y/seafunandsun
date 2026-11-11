@@ -128,7 +128,12 @@ export function QuoteForm({
   }
 
   return (
-    <form onSubmit={onSubmit} className="mx-auto w-full max-w-lg rounded-xl border border-line bg-foam p-4 shadow-card lg:mx-0">
+    <form
+      onSubmit={onSubmit}
+      toolname="request_quote"
+      tooldescription="Request a quote for a cruise, resort, ski vacation, expedition, or rail trip from Sea Fun & Sun. Provide destination and dates."
+      className="mx-auto w-full max-w-lg rounded-xl border border-line bg-foam p-4 shadow-card lg:mx-0"
+    >
       <h3 className="font-display text-xl text-ink">Request a quote</h3>
       <p className="mt-1 text-base leading-relaxed text-ink">Tell us your name, your email, and where you want to go. We reply the same day in most cases. There is no separate agent fee.</p>
       {chooseTrip ? (
